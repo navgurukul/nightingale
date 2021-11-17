@@ -1,0 +1,106 @@
+.about-page {
+  background-color: #fff;
+  text-align: center;
+  font-family: "Lusitana", Fallback, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.page-section {
+  margin: 40px 0;
+}
+
+.section-title {
+  margin-top: 80px;
+  /* margin-bottom: 10px; */
+  font-size: 32px;
+  line-height: 42px;
+  font-family: Lusitana;
+  font-weight: 700;
+}
+
+.underliner{
+border: 1px solid #F05F40;
+/* background-color: #F05F40;; */
+width: 60px;
+/* text-align: center; */
+/* align-items: center; */
+margin-left: 805px;
+}
+
+.bg-img {
+width: 35%;
+margin: 80px 0 0 80px;
+}
+
+.Ellipse_1 {
+width: 300px;
+position: absolute;
+margin-top: 70px;
+/* margin-left: 10px; */
+}
+
+.Ellipse_2 {
+width: 260px;
+position: absolute;
+margin: 40px 0 0 430px;
+/* margin-top: 40px;
+margin-left: 430px; */
+}
+
+.Ellipse_3 {
+width: 260px;
+position: absolute;
+margin: 280px 0 0 280px;
+/* margin-top: 280px;
+margin-left: 280px; */
+}
+
+.about-page-content {
+font-weight: 400;
+/* font-family: Nunito Sans; */
+font-size: 18px;
+line-height: 28px;
+margin: 40px 425px 0 500px;
+text-align: left;
+}
+
+.about-content {
+font-weight: 400;
+/* font-family: Nunito Sans; */
+font-size: 17.9px;
+line-height: 28px;
+margin: 30px 425px 0 505px;
+text-align: left;
+}
+
+@media screen and (max-width: 667px) {
+  .underliner {
+    margin-left: 150px;
+    width: 70px;
+  }
+  img.bg-img { 
+    width: 250px; 
+    margin: 40px 0 30px 0;
+  }
+  img.Ellipse_1 {
+    width: 110px;
+    margin: 52px 0 0 0;
+  }
+  img.Ellipse_2 {
+    width: 110px;
+    margin: 40px 0 80px 155px;
+  }
+  img.Ellipse_3 {
+    width: 110px;
+    margin: 150px 0 80px 90px;
+  }
+  .about-page-content {
+    margin: 20px;
+    font-size: 14px;
+  }
+  .about-content {
+    margin: 20px;
+    font-size: 14px;
+  }
+}
