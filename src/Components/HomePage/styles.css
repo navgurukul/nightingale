@@ -1,0 +1,239 @@
+.bg {
+    background: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    width: 100%;
+    height: 670px;
+}
+
+.btn-buttons {
+    background-color: rgba(240, 95, 64, 1) !important;
+}
+
+.underliner {
+    border: 1px solid #f05f40;
+    width: 60px;
+    margin: auto;
+}
+
+.rgba-black-strong {
+    background: linear-gradient(
+        179.02deg,
+        rgba(0, 0, 0, 0.84) 12.49%,
+        rgba(0, 0, 0, 0.6) 54.02%,
+        rgba(0, 0, 0, 0) 99.16%
+    );
+
+    height: 670px;
+}
+.primary-hr {
+    max-width: 100px;
+    border-color: #f05f40 !important;
+    background-color: #f05f40 !important;
+    border-width: 3px !important;
+}
+
+.komal {
+    /* margin: 10px; */
+    /* background-color: royalblue; */
+    line-height: 1.4;
+    max-width: 430px;
+    color: #ffffff;
+    font-size: 40px;
+    margin-top: 10%;
+    font-family: Lusitana;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.komal-p {
+    /* margin: 10px; */
+    max-width: 500px;
+    font-size: 21px;
+    /* font-family: Nunito Sans; */
+    font-style: normal;
+    font-family: Lusitana;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.Initiatives-bg-color {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 350px;
+    border-radius: 15px !important;
+}
+
+.bg-image1 {
+    background: url("./assets/job-courses.png");
+
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 15px !important;
+    height: 350px;
+    background-position: center;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+}
+
+.bg-image2 {
+    background: url("./assets/online-with-meraki.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 15px !important;
+    height: 350px;
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+}
+
+.bg-image3 {
+    background: url("./assets/CIF.png");
+    background-repeat: no-repeat;
+    border-radius: 15px !important;
+    /* width: 100%; */
+    height: 350px;
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+}
+
+.bg-image4 {
+    background: url("./assets/NG\ labs.png");
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    border-radius: 15px !important;
+    height: 350px;
+    background-position: center;
+    /* background-size: cover; */
+    background-size: 100% 100%;
+}
+
+.software-development-img {
+    background: url("./assets/bg\ \(1\).png");
+    background-repeat: no-repeat;
+    margin-top: 85px;
+}
+
+
+.card-main-text {
+    margin-top: 190px;
+    /* margin-bottom: 30px; */
+}
+.card-heading {
+    font-size: 23px;
+    font-family: Lusitana;
+    font-style: normal;
+    font-weight: bold;
+    /* margin-top: 20px; */
+}
+.card-dic {
+    max-width: 390px;
+    line-height: 1.5;
+    font-size: 19px;
+    font-family: Nunito Sans;
+    font-style: normal;
+    /* margin-bottom: 30px; */
+}
+
+.count {
+    font-size: 55px;
+    color: rgba(240, 95, 64, 1);
+    margin: 20px;
+}
+.impactellipse {
+    margin-top: 45px;
+}
+
+.impact {
+    background-color: rgba(252, 223, 217, 1);
+}
+
+.Impact-that-matters {
+    padding: 45px;
+    margin-bottom: 20px !important;
+}
+
+.partner {
+    background-color: rgba(240, 95, 64, 1) !important;
+
+    font-size: 20px !important;
+}
+
+.supporters {
+    background: #f9f9f9;
+    padding: 70px;
+}
+/* 
+.kom{
+    width: 50%;
+    height: 50px;
+} */
+
+#testimonial {
+    padding: 30px 0px 20px;
+    /* color: #fff; */
+    background-color: #f9f9f9;
+}
+#testimonial h2 {
+    /* font-style: italic; */
+    /* color: #fff; */
+    font-size: 26px;
+    text-align: center;
+    padding: 25px;
+}
+#testimonial .client-img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin: 0px auto;
+    border-radius: 100%;
+    position: absolute;
+    left: 0px;
+}
+#testimonial .carousel-content {
+    padding: 20px 0px 20px 100px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+#testimonial h3 {
+    font-size: 17px;
+    /* color: #fff; */
+    margin-bottom: 30px;
+    /* font-style: italic; */
+    text-align: right;
+}
+#testimonial p {
+    font-size: 15px;
+}
+#testimonial .client-img img {
+    width: 100%;
+}
+#testimonial .carousel-control-prev,
+#testimonial .carousel-control-next {
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 576px) {
+    #testimonial .carousel-content {
+        padding: 20px 0px 20px 0px;
+        width: 100%;
+    }
+    #testimonial .client-img {
+        margin: 20px auto;
+        position: static;
+    }
+    #testimonial h3,
+    #testimonial p {
+        text-align: center;
+    }
+}
+
+.logo-img {
+    /* height: 100%; */
+    /* max-height: 100%; */
+    width: auto;
+}
