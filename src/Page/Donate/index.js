@@ -19,7 +19,7 @@ function Donate() {
                 </ul>
               </div>
               <div class="col-md-3">
-                <ul class="nav-footer">
+                <ul class="nav-footer ac">
                   <li>navgurukulf@kotak</li>
                   <li>Navgurukul Foundation for Social Welfare</li>
                   <li>0512251778</li>
@@ -128,8 +128,8 @@ function Donate() {
             </div>
           </div> */}
           <div>
-            <div className="bg-image">
-              <div className="bg-color"></div>
+            <div className="donate-bg-image">
+              {/* <div className="bg-color"></div> */}
               <h2 className="donate-title">Your Donations Create Impact</h2>
               <div className="donate-underliner"></div>
               <img
@@ -154,6 +154,7 @@ function Donate() {
               </div>
               {/* </div> */}
             </div>
+            <div className="bg-color"></div>
             <img
               src={require("./assets/bg.png").default}
               className="donate-bg"

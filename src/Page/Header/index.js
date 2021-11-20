@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import JobCourse from "../JobCourse";
 import "./styles.css";
 
 function Header() {
@@ -60,19 +61,7 @@ function Header() {
 
       {/* <div className="collapse navbar-collapse" id="navbarSupportedContent"> */}
       <div class="collapse navbar-collapse" id="navbar-list-2">
-        <ul className="navbar-nav mr-auto">
-          {/* <li className="nav-item active">
-            <a className="nav-link" href="#">
-              Home <span className="sr-only">(current)</span>
-            </a>
-          </li> */}
-          {/* <li className="nav-item nav-logo">
-            <img
-              src={require("./assets/logo.png").default}
-              // className="nav-logo"
-            />
-          </li> */}
-          {/* <img classNameName="meraki" src={require("./assets/logo.png")} /> */}
+        <ul className="navbar-nav mr-auto nav-font-color">
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle header-title"
@@ -89,11 +78,15 @@ function Header() {
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
             >
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="/job-course">
                 Guaranteed Job Courses
               </a>
               {/* <div className="dropdown-divider"></div> */}
-              <a className="dropdown-item" href="#">
+              <a
+                className="dropdown-item"
+                href="https://www.merakilearn.org/"
+                target="_blank"
+              >
                 Learn Online with Meraki
               </a>
               {/* <div className="dropdown-divider"></div> */}
@@ -107,10 +100,10 @@ function Header() {
             </div>
           </li>
         </ul>
-        <ul className="navbar-nav">
+        <ul className="navbar-nav nav-font-color">
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle"
+              className="nav-link dropdown-toggle header-title"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -124,13 +117,13 @@ function Header() {
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
             >
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="/">
                 Our Story
               </a>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="/team">
                 Team
               </a>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="/gallery">
                 Gallery
               </a>
               <a className="dropdown-item" href="#">
@@ -140,7 +133,7 @@ function Header() {
           </li>
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle"
+              className="nav-link dropdown-toggle header-title"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -157,7 +150,7 @@ function Header() {
               <a className="dropdown-item" href="#">
                 Partner With Us
               </a>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="/donate">
                 Donate
               </a>
               <a className="dropdown-item" href="#">
@@ -169,19 +162,25 @@ function Header() {
             </div>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">
+            {/* <a className="nav-link disabled header-title" href="#"> */}
+            <a className="nav-link header-title" href="/hiring">
               Hire from NG
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled" href="#">
+            {/* <a className="nav-link disabled header-title" href="#"> */}
+            <a
+              className="nav-link header-title"
+              href="https://www.merakilearn.org/"
+              target="_blank"
+            >
               Meraki
             </a>
           </li>
           <div className="divider language"></div>
           <li className="nav-item dropdown language">
             <a
-              className="nav-link dropdown-toggle"
+              className="nav-link dropdown-toggle header-title"
               href="#"
               id="navbarDropdown"
               role="button"

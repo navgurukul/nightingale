@@ -12,37 +12,32 @@
 }
 
 .header-title {
-    color: black;
+    color: #2E2E2E !important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
 }
+
+/* ul.nav-font-color > li a {
+    color: #2E2E2E !important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Nunito Sans;
+  } */
+
+  /* ul.nav-font-color > li a {
+    color: #2E2E2E !important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  } */
+
 
 .nav-logo {
     width: 60%;
-    /* padding-right: 20px;
-    padding-left: 10px; */
     padding: 0 40px 0 10px;
 }
-
-/* .ng-logo {
-    width: 40%;
-} */
-
-/* .navbar-nav {
-    background-color: aquamarine !important;
-    padding-left: 2%;
-    padding-right: 70px;
-} */
-
-
-
-/* idk for what */
-/* .bg-custom-1 {
-    background-color: #85144b;
-  }
-  
-  .bg-custom-2 {
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-  } */
-
 
  
 @media screen and (max-width: 667px) { 

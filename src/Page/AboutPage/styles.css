@@ -1,7 +1,7 @@
 .about-page {
   background-color: #fff;
   text-align: center;
-  font-family: "Lusitana", Fallback, -apple-system, BlinkMacSystemFont,
+  font-family: "Lusitana", "Nunito Sans", Fallback, -apple-system, BlinkMacSystemFont,
   "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
   "Droid Sans", "Helvetica Neue", sans-serif;
 }
