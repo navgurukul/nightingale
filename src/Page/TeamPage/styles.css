@@ -1,0 +1,165 @@
+.team-page {
+    background-color: #fff;
+    text-align: center;
+    font-family: "Lusitana", "Nunito Sans", Fallback, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+  
+.team-section {
+    margin: 40px 0;
+}
+  
+.team-section-title {
+    margin-top: 80px;
+    font-size: 32px;
+    line-height: 42px;
+    font-family: Lusitana;
+    font-weight: 700;
+}
+  
+.team-underliner{
+  border: 0.5px solid #F05F40;
+  background-color: #F05F40;
+  width: 60px;
+  margin-left: 805px;
+}
+
+.team-page-content {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 30px 425px 0 500px;
+}
+
+
+.career-button {
+    background-color: #F05F40;
+    border: 1px solid #F05F40;
+    color: #fff;
+    padding: 10px 13px 10px 13px;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 33%;
+    margin: 25px 0 0 85px;
+}
+
+.volunteer-button {
+    background-color: #fff;
+    border: 1px solid #F05F40;
+    color: #F05F40;
+    padding: 10px 13px 10px 13px;
+    border-radius: 5px;
+    font-weight: 500;
+    width: 33%;
+    margin: 25px 0 0 25px;
+}
+
+.career-button:hover {
+    color: #fff;
+    background-color: #ee4924;
+    border: 1px solid #ee4924;
+}
+
+.volunteer-button:hover {
+    color: #fff;
+    background-color: #ee4924;
+    border: 1px solid #ee4924;
+}
+
+.core-team {
+    position: absolute;
+    margin-left: 680px;
+}
+  
+.our-suppoters {
+    margin-left: 250px;
+}
+
+.Meraki-section-title {
+    background: #ffffff;
+    border: none;
+    margin-top: 100px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(150, 146, 153);
+}
+
+.Meraki-section-title:focus {
+    color: rgb(23, 3, 43);
+}
+
+hr.hr-line {
+    display: none;
+}
+
+.team-img {
+    width: 20%;
+}
+
+.core-team-underliner {
+    border: 0.5px solid #F05F40;
+    background-color: #F05F40;
+    width: 60px;
+}
+
+.card-details {
+    position: relative;
+    padding: 52px;
+    width: 250px;
+}
+
+.hide {
+    display: none;
+  }
+
+.card-details:hover > .hide {
+    display: block;
+    position: absolute;
+    top: 0;
+    box-shadow: 0px 4px 5px rgba(46, 46, 46, 0.06),
+      0px 1px 10px rgba(46, 46, 46, 0.04), 0px 2px 4px rgba(46, 46, 46, 0.08);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 5px 0 15px 25px ;
+    font-size: 14px;
+    line-height: 20px;
+    width: 350px;
+    margin: 16px;
+    text-align: left;
+}
+
+.team-info-card-img {
+    width: 152px;
+
+}
+  
+.team-info-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+  
+.team-info-card-designation {
+    font-size: 16px;
+    color: rgb(134, 138, 138);
+    line-height: 1.5;
+    max-width: 220px;
+    margin-left: 15px;
+}
+
+.core-team {
+    position: absolute;
+    margin-left: 680px;
+  }
+  
+  .our-suppoters {
+    margin-left: 250px;
+  }
+
+  .team-info-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
