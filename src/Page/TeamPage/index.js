@@ -27,19 +27,19 @@ const teamMembers = [
       "D A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
   },
   {
-    name: "Anand Patel",
+    name: "Poonam Singh Bagh",
     designation: "CEO, Navgurukul & Meraki",
     description:
       "D A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
   },
   {
-    name: "Anand Patel",
+    name: "Saquib Nasim",
     designation: "CEO, Navgurukul & Meraki",
     description:
       "D A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
   },
   {
-    name: "Anand Patel",
+    name: "Komal Ahire",
     designation: "CEO, Navgurukul & Meraki",
     description:
       "D A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
@@ -188,7 +188,23 @@ function TeamPage() {
             {members.map((item) => {
               return (
                 <>
-                  <div class="card-details">
+                  <div
+                    class="card card-details"
+                    // style={{ width: "18rem" }}
+                  >
+                    <img
+                      // className="card-img-top card-img"
+                      className="card-img-top"
+                      src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
+                      alt="Card image cap"
+                    />
+                    <div className="team-info-card-title">{item.name}</div>
+                    <p class="card-text hide">
+                      <div className="team-info-card-title">{item.name}</div>
+                      <div>{item.description}</div>
+                    </p>
+                  </div>
+                  {/* <div class="card-details">
                     <img
                       src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
                       // src={require("./assets/teamMember.png")}
@@ -203,8 +219,7 @@ function TeamPage() {
                       <div className="team-info-card-title">{item.name}</div>
                       <div>{item.description}</div>
                     </div>
-                  </div>
-                  {/* <div className="hide">{item.description}</div> */}
+                  </div> */}
                 </>
               );
             })}

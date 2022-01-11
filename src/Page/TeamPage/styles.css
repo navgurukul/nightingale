@@ -105,8 +105,13 @@ hr.hr-line {
 
 .card-details {
     position: relative;
+    border: none;
     padding: 52px;
     width: 250px;
+}
+
+.card-img {
+    border-radius: 50%;
 }
 
 .hide {
@@ -130,12 +135,14 @@ hr.hr-line {
 }
 
 .team-info-card-img {
+    border-radius: 50%;
     width: 152px;
 
 }
   
 .team-info-card-title {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 28px;
     font-weight: bold;
     margin-top: 12px;
     margin-bottom: 10px;

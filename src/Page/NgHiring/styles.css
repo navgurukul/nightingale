@@ -20,6 +20,7 @@
 
 .title-underliner{
     border: 1px solid #F05F40;
+    background-color: #F05F40;
     width: 60px;
     align-items: center;
     margin-left: 805px;
