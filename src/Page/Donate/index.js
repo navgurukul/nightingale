@@ -9,51 +9,19 @@ function Donate() {
         <section className="donate-page-section">
           <h2 className="section-donate-title">Donate to NavGurukul</h2>
           <hr className="main-hr mt-2" />
-          <div className="container mt-5 donation-details-container w-100 d-flex flex-column justify-content-center align-items-center">
-            <div className="row d-flex justify-content-center">
-              <div class="col-md-3 ">
-                <ul class="nav-footer p-0 ac-details w-100 ">
-                  <li className="w-100">UPI ID</li>
-                  <li>Name</li>
-                  <li>Account Number</li>
-                  <li>IFSC Code</li>
-                </ul>
-              </div>
-              <div class="col-md-3 ml-4 donation-details">
-                <ul class="nav-footer p-0 mx-3">
-                  <li>navgurukulf@kotak</li>
-                  <li className="w-100">
-                    Navgurukul Foundation for Social Welfare
-                  </li>
-                  <li>0512251778</li>
-                  <li>KKBK0004260</li>
-                </ul>
-              </div>
+          <div className="d-flex account-details  justify-content-center align-items-center">
+            <div className="d-flex flex-column text-left fw-semiBold">
+              <span>UPI ID</span>
+              <span>Name</span>
+              <span>Account Number</span>
+              <span>IFSC Code</span>
             </div>
-            {/* <div className="row">
-              <div className="col-sm">
-                <p>Name</p>
-              </div>
-              <div className="col-sm">
-                <p>Navgurukul Foundation for Social Welfare</p>
-              </div>
+            <div className=" d-flex flex-column text-left pl-2 pl-md-4 ">
+              <span>navgurukulf@kotak</span>
+              <span>Navgurukul Foundation for Social Welfare</span>
+              <span>0512251778</span>
+              <span>KKBK0004260</span>
             </div>
-            <div className="row">
-              <div className="col-sm">
-                <p>Account Number</p>
-              </div>
-              <div className="col-sm">
-                <p>0512251778</p>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-sm">
-                <p>IFSC Code</p>
-              </div>
-              <div className="col-sm">
-                <p>KKBK0004260</p>
-              </div>
-            </div> */}
           </div>
           <hr className="w-30 partition-line" style={{ color: "#cdcdcd" }}></hr>
 
@@ -64,11 +32,11 @@ function Donate() {
             </p>
           </div>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
-          <button type="button" class="donate-page-button">
+          <button type="button" class="donate-page-button ng-labs-btn">
             Donate to Navgurukul
           </button>
           <div className="donate-content mt-5 d-flex justify-content-center align-items-center w-100">
-          <p className="w-75 mt-5">
+            <p className="w-75 mt-5">
               You may also pledge a <b> monthly donation </b> to us. Any pledged
               amount is a huge support for us. Just having you by our side fills
               us with gratitude & an energy to do better.
@@ -187,7 +155,7 @@ function Donate() {
             Are you a corporation and taken an interest in what we do?
           </h2>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
-          <button type="button" class="contact-button">
+          <button type="button" class="ng-labs-btn contact-button">
             Contact Us for CSR Enquiries
           </button>
         </section>

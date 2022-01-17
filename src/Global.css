@@ -93,6 +93,7 @@ input:focus {
 .ng-labs-btn {
   background-color: var(--primary);
   border-color: var(--primary);
+  cursor: pointer;
 }
 .ng-labs-btn:hover,
 .ng-labs-btn:active,

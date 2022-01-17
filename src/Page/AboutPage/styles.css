@@ -58,7 +58,8 @@ font-weight: 400;
 /* font-family: Nunito Sans; */
 font-size: 18px;
 line-height: 28px;
-margin: 80px 425px 0 500px;
+/* margin: 80px 425px 0 500px; */
+margin: 80px 0;
 text-align: left;
 }
 
@@ -67,7 +68,7 @@ font-weight: 400;
 /* font-family: Nunito Sans; */
 font-size: 17.9px;
 line-height: 28px;
-margin: 30px 425px 0 505px;
+margin: 30px 0;
 text-align: left;
 }
 
@@ -99,5 +100,8 @@ text-align: left;
   .about-content {
     margin: 20px;
     font-size: 14px;
+  }
+  .about-content p,.about-page-content p{
+    width: 90% !important;
   }
 }

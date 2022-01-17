@@ -309,10 +309,13 @@
   margin: 25px 0 0 13px;
 }
 
-.donate-button:hover {
+.donate-button:hover,
+.donate-button:focus,
+.donate-button:active {
   color: #fff;
   background-color: #f05f40;
-  border: 1px solid #f05f40;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem #f58d76 !important;
 }
 
 .about-donation p {
@@ -403,7 +406,13 @@
   font-size: 17.9px;
   line-height: 28px;
 }
-
+.payment-row {
+  width: 500px;
+}
+.account-details span {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 .hiring-page-button {
   background-color: #f05f40;
   border: #f05f40;
@@ -447,7 +456,7 @@
   .donation-impact-data span {
     margin-block: 20px !important;
   }
-  .donation-impact-data-2{
+  .donation-impact-data-2 {
     margin-block: 0px !important;
   }
 
@@ -533,5 +542,12 @@
     font-size: 20px;
     line-height: 28px;
     margin: 0 10px 20px 10px;
+  }
+  .account-details {
+    margin-left: 10px;
+  }
+  .account-details span {
+    margin-bottom: 7px;
+    font-size: 12px;
   }
 }

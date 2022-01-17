@@ -23,14 +23,14 @@ function AboutPage() {
             />
             <img src={require("./assets/bg.png").default} className="bg-img" />
           </div>
-          <div className="about-page-content">
-            <p>
+          <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
+            <p className="w-50">
               Started in 2016, Navgurukul runs one-year residential course for
               students from underserved and diverse communities. Students after
               pursuing our course are awarded Certificate in Software
               Programming.
             </p>
-            <p>
+            <p className="w-50 mt-3">
               In last five years, more than 160 students from marginalised areas
               have got jobs as Software Programs and have donated back more than
               28 Lacs in donation. We have diversified to add School of Design
@@ -42,8 +42,8 @@ function AboutPage() {
         <section className="page-section">
           <h2 className="section-title">Vision</h2>
           <hr className="mt-2" />
-          <div className="about-content">
-            <p>
+          <div className="about-content d-flex flex-column justify-content-center align-items-center">
+            <p className="w-50">
               We envision a world where everyone has access to an affordable
               world class education that enables them to live up to their
               highest potential
@@ -53,13 +53,13 @@ function AboutPage() {
         <section className="page-section">
           <h2 className="section-title">Our Values</h2>
           <hr className="mt-2" />
-          <div className="about-content">
-            <p>
+          <div className="about-content d-flex flex-column justify-content-center align-items-center">
+            <p className="w-50">
               In order to follow through on our commitments, achieve our
               mission, and realise our vision, we’ve created a set of values
               made easy to remember through our acronym VELOCITY.
             </p>
-            <p>
+            <p className="w-50 mt-3">
               Let’s break it down: V - Velocity, E - Entrepreneurial Mindset, L
               - Love for customers, O - Out of the box thinking, C -
               Collaboration, I - Impact, T - Trust, Y - You.
