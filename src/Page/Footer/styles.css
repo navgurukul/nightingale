@@ -97,11 +97,15 @@ ul.nav-footer > li a {
 .details {
     display: flex;
     padding-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
 
 .social-media {
     display: flex;
-    padding-left: 1195px;
+    /* padding-left: 1195px; */
+    margin-block: 30px;
 }
 
 .facebook {
@@ -114,7 +118,8 @@ ul.nav-footer > li a {
 
 .policy {
     display: flex;
-    position: absolute;
+    /* position: absolute; */
+    /* align-items: center; */
 }
 
 .hiring {
@@ -148,18 +153,19 @@ ul.nav-footer > li a {
     .title-container {
         margin-bottom: 43px;
     }
-    .social-media {
+    
+    .details{
         padding: 10px 0 0 20px;
-    }
-    .policy {
-        padding: 70px 0 0 20px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
     }
     .navgurukul{
         /* position: absolute; */
         padding-top: 250px;
     }
     .footer-details {
-        padding: 100px 0 0 20px;
+        padding: 33px 0 0 20px;
         text-align: left;
     }
     .title{

@@ -242,7 +242,7 @@
 .donation-impact-data p {
   font-size: 18px;
 }
-.donation-impact-data-2{
+.donation-impact-data-2 {
   margin-top: 200px !important;
 }
 .section-donate-title {
@@ -429,13 +429,28 @@
   font-weight: 500;
   margin-top: 25px;
 }
-
+.donation-impact-data {
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 667px) {
-  
   .donate-underliner {
     margin-left: 160px;
     width: 50px;
   }
+  .middleImg {
+    display: none;
+  }
+  .donation-impact-data {
+    flex-direction: column;
+    margin-block: 0 !important;
+  }
+  .donation-impact-data span {
+    margin-block: 20px !important;
+  }
+  .donation-impact-data-2{
+    margin-block: 0px !important;
+  }
+
   .donation-details-container {
     margin: 25px 8px 0 0;
     /* padding: 0; */

@@ -205,6 +205,10 @@ function Footer() {
 
         <div className="footer-divider"></div>
         <div className="details">
+          <div className="policy">
+            <div>Legal & Privacy Policy</div>
+            <div className="hiring">Hire From Us</div>
+          </div>
           <div className="social-media">
             <div className="facebook">
               <img src={fb} />
@@ -216,10 +220,7 @@ function Footer() {
               <img src={twitter} />
             </div>
           </div>
-          <div className="policy">
-            <div>Legal & Privacy Policy</div>
-            <div className="hiring">Hire From Us</div>
-          </div>
+
           {/* <div className="navgurukul">© 2021 Navgurukul</div> */}
 
           {/* <div className="social-media">
