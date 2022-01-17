@@ -12,13 +12,15 @@ import NgLabs from "../Page/NGLabs";
 import Programmer from "../Page/Programmer";
 import CifPage from "../Page/CIFpage";
 import Partners from "../Page/Partners";
+import Home from "../Page/HomePage";
 
 function Routing() {
   return (
     <>
       <Header />
       <Switch>
-        <Route exact path="/" component={AboutPage} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={AboutPage} />
         <Route exact path="/donate" component={Donate} />
         <Route exact path="/hiring" component={NgHiring} />
         <Route exact path="/job-course" component={JobCourse} />

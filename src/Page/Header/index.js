@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-color">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/">
         <img
           src={require("./assets/logo.png").default}
           // className="nav-logo"
@@ -90,11 +90,11 @@ function Header() {
                 Learn Online with Meraki
               </a>
               {/* <div className="dropdown-divider"></div> */}
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="/cif">
                 Code India Fellowships
               </a>
               {/* <div className="dropdown-divider"></div> */}
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="/nglabs">
                 NG Labs
               </a>
             </div>
@@ -117,7 +117,7 @@ function Header() {
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
             >
-              <a className="dropdown-item" href="/">
+              <a className="dropdown-item" href="/about">
                 Our Story
               </a>
               <a className="dropdown-item" href="/team">
@@ -147,7 +147,7 @@ function Header() {
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
             >
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="partners">
                 Partner With Us
               </a>
               <a className="dropdown-item" href="/donate">

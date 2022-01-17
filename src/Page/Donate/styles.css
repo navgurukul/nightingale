@@ -313,7 +313,7 @@
 .donate-button:focus,
 .donate-button:active {
   color: #fff;
-  background-color: #f05f40;
+  background-color: #f05f40 !important;
   border-color: var(--primary) !important;
   box-shadow: 0 0 0 0.2rem #f58d76 !important;
 }

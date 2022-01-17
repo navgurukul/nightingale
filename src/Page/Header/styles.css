@@ -17,6 +17,9 @@
     font-size: 18px;
     line-height: 28px;
 }
+.navbar a:active{
+    background-color: transparent;
+}
 
 /* ul.nav-font-color > li a {
     color: #2E2E2E !important;
