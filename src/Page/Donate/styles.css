@@ -203,295 +203,320 @@
     }
 } */
 
-
 .donate-page {
-    background-color: #fff;
-    text-align: center;
-    font-family: "Lusitana", Fallback, -apple-system, BlinkMacSystemFont,
+  background-color: #fff;
+  text-align: center;
+  font-family: "Lusitana", Fallback, -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
 }
-
-.donate-page-section {
-    margin: 40px 0;
+.donate-page .main-hr {
+  width: 6rem;
+  border: transparent;
+  border-top: 3px solid #f05f40;
+}
+.partition-line {
+  border-top: 2px solid #cdcdcd;
 }
 
+.donate-page-image-section {
+  margin: 40px 0;
+  background-image: url("./assets/bg.png");
+  height: 730px;
+  width: 100%;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+.middleImg {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.donation-impact-data h3 {
+  color: var(--primary);
+  font-size: 72px;
+}
+.donation-impact-data p {
+  font-size: 18px;
+}
+.donation-impact-data-2{
+  margin-top: 200px !important;
+}
 .section-donate-title {
-    margin-top: 80px;
-    /* margin-bottom: 10px; */
-    font-size: 32px;
-    line-height: 42px;
-    font-family: Lusitana;
-    font-weight: 700;
-}
-  
-.donate-underliner {
-  border: 1px solid #F05F40;
-  background-color: #F05F40;;
-  width: 60px;
-  /* text-align: center; */
-  align-items: center;
-  margin-left: 800px;
+  margin-top: 80px;
+  /* margin-bottom: 10px; */
+  font-size: 32px;
+  line-height: 42px;
+  font-family: Lusitana;
+  font-weight: 700;
 }
 
 .donation-details-container {
-    text-align: left;
-    margin: 25px 448px 0 583px;
+  text-align: left;
+  /* margin: 25px 448px 0 583px; */
 }
 
 .ac-details {
-    font-weight: 500;
+  font-weight: 500;
 }
-
+.donation-details-container ul li {
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
 .donate-liner {
-    border: 1px solid #CDCDCD;
-    background-color: #CDCDCD;
-    width: 400px;
-    /* text-align: center; */
-    align-items: center;
-    margin-left: 630px;
+  border: 1px solid #cdcdcd;
+  background-color: #cdcdcd;
+  width: 400px;
+  /* text-align: center; */
+  align-items: center;
+  margin-left: 10px auto;
 }
 
 .donatation-payment {
-    font-weight: 500;
-/* font-family: Nunito Sans; */
-    font-size: 17.9px;
-    line-height: 28px;
-    margin: 40px 425px 0 505px;
+  font-weight: 500;
+  /* font-family: Nunito Sans; */
+  font-size: 17.9px;
+  line-height: 28px;
+  /* margin: 40px 425px 0 505px; */
 }
 
-.donate-page-button{
-    background-color: #F05F40;
-    border: 1px solid #F05F40;
-    color: #fff;
-    padding: 10px 13px 10px 13px;
-    border-radius: 5px;
-    font-weight: 500;
-    margin-top: 25px;
+.donate-page-button {
+  background-color: #f05f40;
+  border: 1px solid #f05f40;
+  color: #fff;
+  padding: 10px 13px 10px 13px;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 25px;
 }
 
 .donate-button-container {
-    padding-left: 115px;
+  padding-left: 115px;
 }
 
 .donate-button {
-    background-color: #fff;
-    border: 1px solid #F05F40;
-    color: #F05F40;
-    padding: 10px 13px 10px 13px;
-    border-radius: 5px;
-    font-weight: 500;
-    /* margin-top: 25px;
+  background-color: #fff;
+  border: 1px solid #f05f40;
+  color: #f05f40;
+  padding: 10px 13px 10px 13px;
+  border-radius: 5px;
+  font-weight: 500;
+  /* margin-top: 25px;
     margin-left: 13px; */
-    margin: 25px 0 0 13px;
+  margin: 25px 0 0 13px;
 }
 
 .donate-button:hover {
-    color: #fff;
-    background-color: #F05F40;
-    border: 1px solid #F05F40;
+  color: #fff;
+  background-color: #f05f40;
+  border: 1px solid #f05f40;
 }
 
-.about-donation {
-    font-weight: 400;
-    color: #818181;
-    font-family: Nunito Sans;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 27px 665px 70px 690px;
+.about-donation p {
+  font-weight: 400;
+  color: #818181;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  line-height: 20px;
+  /* margin: 27px 665px 70px 690px; */
+  margin-top: 30px;
+  width: 300px;
 }
 
 .donate-bg {
-    /* background-image: url('./assets/bg.png'); */
-    height: 847px;
-    /* background-repeat: no-repeat; */
-    /* background-size: 100% 100%; */
-    padding-top: 1px;
+  /* background-image: url('./assets/bg.png'); */
+  height: 847px;
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
+  padding-top: 1px;
 }
 
 .donate-bg-image {
-    position: absolute;
+  position: absolute;
 }
 
 .bg-color {
-    /* position: absolute; */
-    display: none;
-    background-color: #FCDFD9;
-    width: 375px;
-    height: 100px;
+  /* position: absolute; */
+  display: none;
+  background-color: #fcdfd9;
+  width: 375px;
+  height: 100px;
 }
 
 .donate-title {
-    margin: 80px 0 10px 628px;
-    font-size: 32px;
-    line-height: 42px;
-    font-family: Lusitana;
-    font-weight: 700;
+  margin: 80px 0 10px 628px;
+  font-size: 32px;
+  line-height: 42px;
+  font-family: Lusitana;
+  font-weight: 700;
 }
 
 .donation-impact-underliner {
-    border: 1px solid #F05F40;
-    background-color: #F05F40;;
-    width: 60px;
-    /* text-align: center; */
-    align-items: center;
-    margin-left: 805px;
+  border: 1px solid #f05f40;
+  background-color: #f05f40;
+  width: 60px;
+  /* text-align: center; */
+  align-items: center;
+  margin-left: 805px;
 }
 
 .donate-bg2 {
-    margin-top: 150px;
-    margin-left: 670px;
+  margin-top: 150px;
+  margin-left: 670px;
 }
 
 .Ellipse {
-    position: absolute;
-    margin-top: 190px;
-    margin-left: 740px;
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 740px;
 }
 
 .number {
-    color: #F05F40;
-    font-size: 80px;
-    font-family: Lusitana;
-    font-weight: 700;
+  color: #f05f40;
+  font-size: 80px;
+  font-family: Lusitana;
+  font-weight: 700;
 }
 
 .jobs {
-    position: absolute;
-    top: 180px;
-    left: 300px;
+  position: absolute;
+  top: 180px;
+  left: 300px;
 }
 
 .online-students {
-    position: absolute;
-    top: 170px;
-    left: 1130px;
+  position: absolute;
+  top: 170px;
+  left: 1130px;
 }
 
 .states {
-    margin-top: 70px;
-    margin-left: 650px;
+  margin-top: 70px;
+  margin-left: 650px;
 }
 
 .donate-content {
-    font-weight: 400;
-    font-size: 17.9px;
-    line-height: 28px;
-    margin: 60px 425px 0 505px;
+  font-weight: 400;
+  font-size: 17.9px;
+  line-height: 28px;
 }
 
 .hiring-page-button {
-    background-color: #F05F40;
-    border: #F05F40;
-    color: #fff;
-    padding: 10px 45px 10px 45px;
-    border-radius: 8px;
-    font-weight: 500;
-    margin-top: 25px;
-    letter-spacing: 1px;
+  background-color: #f05f40;
+  border: #f05f40;
+  color: #fff;
+  padding: 10px 45px 10px 45px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 25px;
+  letter-spacing: 1px;
 }
 
 .link {
-    color: #F05F40;
-    text-decoration: underline;
+  color: #f05f40;
+  text-decoration: underline;
 }
 
 .contact-button {
-    background-color: #F05F40;
-    border: 1px solid #F05F40;
-    color: #fff;
-    padding: 10px 13px 10px 13px;
-    border-radius: 5px;
-    font-weight: 500;
-    margin-top: 25px;
+  background-color: #f05f40;
+  border: 1px solid #f05f40;
+  color: #fff;
+  padding: 10px 13px 10px 13px;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 25px;
 }
 
 @media screen and (max-width: 667px) {
-    .donate-underliner {
-      margin-left: 160px;
-      width: 50px;
-    }
-    .donation-details-container{
-        margin: 25px 8px 0 0;
-        /* padding: 0; */
-    }
-    .donate-liner {
-        width: 330px;
-        margin-left: 20px;
-    }
-    .donatation-payment {
-        font-size: 15px;
-        line-height: 20px;
-        margin: 40px 5px 0 5px;
-    }
-    .donate-page-button {
-        padding: 10px 80px 10px 80px;
-        margin-top: 3px;
-    }
-    .donate-button-container {
-        padding: 0;
-    }
-    .donate-button {
-        margin-left: 0px;
-        width: 300px;
-    }
-    .contact-button {
-        padding: 10px 60px 10px 60px;
-        margin-top: 3px;
-    }
-    .donate-content {
-        margin: 35px 20px 0 25px;
-        text-align: left;
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .about-donation {
-        margin: 35px 30px 0 35px;
-    }
-    .donate-title {
-        margin: 30px 8px 15px 40px;
-        font-size: 22px;
-        line-height: 28px;
-    }  
-    .donate-bg {
-        display: none;
-    }
-    .donate-bg2 {
-        display: none;
-    }
-    .Ellipse {
-        display: none;
-    }
-    .number {
-        color: #F05F40;
-        font-size: 48px;
-        font-family: Lusitana;
-        font-weight: 700;
-        line-height: 56px;
-    }
-    .jobs {
-        /* position: absolute; */
-        top: 95px;
-        left: 80px;
-    }
-    .online-students {
-        top: 218px;
-        left: 120px;
-    }
-    
-    .states {
-        margin-top: 255px;
-        margin-left: 40px;
-    }
-    .bg-color {
-        display: block;
-        background-color: #FCDFD9;
-        width: 375px;
-        height: 456px;
-    }
-    .section-donate-title {
-        font-size: 20px;
-        line-height: 28px;
-        margin: 0 10px 20px 10px;
-    }
+  
+  .donate-underliner {
+    margin-left: 160px;
+    width: 50px;
+  }
+  .donation-details-container {
+    margin: 25px 8px 0 0;
+    /* padding: 0; */
+  }
+  .donate-liner {
+    width: 330px;
+    margin-left: 20px;
+  }
+  .donatation-payment {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 40px 5px 0 5px;
+  }
+  .donate-page-button {
+    padding: 10px 80px 10px 80px;
+    margin-top: 3px;
+  }
+  .donate-button-container {
+    padding: 0;
+  }
+  .donate-button {
+    margin-left: 0px;
+    width: 300px;
+  }
+  .contact-button {
+    padding: 10px 60px 10px 60px;
+    margin-top: 3px;
+  }
+  .donate-content {
+    margin: 35px 20px 0 25px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-donation {
+    margin: 35px 30px 0 35px;
+  }
+  .donate-title {
+    margin: 30px 8px 15px 40px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .donate-bg {
+    display: none;
+  }
+  .donate-bg2 {
+    display: none;
+  }
+  .Ellipse {
+    display: none;
+  }
+  .number {
+    color: #f05f40;
+    font-size: 48px;
+    font-family: Lusitana;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  .jobs {
+    /* position: absolute; */
+    top: 95px;
+    left: 80px;
+  }
+  .online-students {
+    top: 218px;
+    left: 120px;
+  }
+
+  .states {
+    margin-top: 255px;
+    margin-left: 40px;
+  }
+  .bg-color {
+    display: block;
+    background-color: #fcdfd9;
+    width: 375px;
+    height: 456px;
+  }
+  .section-donate-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 10px 20px 10px;
+  }
 }

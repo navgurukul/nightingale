@@ -82,37 +82,66 @@ const volunteers = [
 export { teamMembers, volunteers };
 
 function TeamPage() {
-  const [members, setMembers] = useState(teamMembers);
+  console.log("run");
+  const [members, setMembers] = useState({
+    teamMembers: true,
+    volunteers: false,
+  });
+  const toIterate = members.teamMembers ? teamMembers : volunteers;
   return (
     <main className="team-page">
       <div className="team-content">
-        <section className="team-section">
+        <section className="team-section d-flex flex-column justify-content-center align-items-center">
           <h2 className="team-section-title">Our Team</h2>
-          <div className="team-underliner"></div>
-          <div className="team-page-content">
+          <hr className="mt-2" />
+          <div className="team-page-content w-50">
             <p>
               We are a collective of full timers and volunteers that form the
               backbone aiming to bring affordable education to underprivileged
               girl students across India.
             </p>
           </div>
-          <div className="container team-button-container">
+          <div className="container ">
             <div className="row">
-              <div class="col-md col-sm-12">
-                <button type="button" class="btn btn-primary career-button">
+              <div class="col-md team-button-container d-flex justify-content-center align-items-center col-sm-12">
+                <button type="button" class="btn ng-labs-btn mx-5 my-2 career-button">
                   Careers at Navgurukul
                 </button>
-                <button type="button" class="btn btn-primary volunteer-button">
+                <button type="button" class="btn btn-primary mx-5 my-2 volunteer-button">
                   Volunteer with us
                 </button>
               </div>
             </div>
           </div>
         </section>
-        <section className="team-section">
+        <section className="team-section w-100 d-flex flex-column justify center align-items-center">
           <h2 className="team-section-title">Core Members</h2>
-          <div className="team-underliner"></div>
-          <div className="core-team">
+          <hr className="mt-2" />
+          <div className="all-members-btns d-flex justify-content-center align-items-center w-100">
+            <span
+              onClick={() => {
+                setMembers({ volunteers: false, teamMembers: true });
+              }}
+              className="core-team-members members-selector"
+              style={
+                members.teamMembers ? { borderBottom: "2px solid #f05f40" } : {}
+              }
+            >
+              Core Team
+            </span>
+            <span
+              onClick={() => {
+                setMembers({ teamMembers: false, volunteers: true });
+              }}
+              className="our-supporters members-selector"
+              style={
+                members.volunteers ? { borderBottom: "2px solid #f05f40" } : {}
+              }
+            >
+              Our Supporters
+            </span>
+          </div>
+          {/* <div className="core-team">
             <button
               className="Meraki-section-title"
               onClick={() => {
@@ -122,7 +151,6 @@ function TeamPage() {
               Core Team
             </button>
             <div className="core-team-underliner"></div>
-            {/* <hr class="hr-line" /> */}
           </div>
           <div className="our-suppoters">
             <button
@@ -134,7 +162,7 @@ function TeamPage() {
               Our Supporters
             </button>
             <hr class="hr-line" />
-          </div>
+          </div> */}
           {/* <img
             src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
             class="float-left rounded-circle"
@@ -160,7 +188,7 @@ function TeamPage() {
               );
             })}
           </div> */}
-          <div className="container team-info-cards-container">
+          <div className="container  team-info-cards-container">
             {/* <div className="row">
               <div class="col-md-3 col-sm-12">
                 <img
@@ -185,7 +213,7 @@ function TeamPage() {
                 />
               </div>
             </div> */}
-            {members.map((item) => {
+            {toIterate.map((item) => {
               return (
                 <>
                   <div
@@ -194,7 +222,7 @@ function TeamPage() {
                   >
                     <img
                       // className="card-img-top card-img"
-                      className="card-img-top"
+                      className="card-img-top team-info-card-img"
                       src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
                       alt="Card image cap"
                     />

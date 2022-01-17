@@ -5,34 +5,34 @@ function JobCourse() {
   return (
     <main className="job-course-page">
       <h2 className="job-course-title">Gauranteed Job Courses</h2>
-      <div className="job-course-content">
-        <p>
+      <div className="job-course-content w-100 d-flex justify-content-center">
+        <p className="w-40">
           Fully-funded one-year software engineering program to youth from
           low-income families.
         </p>
       </div>
-      <p className="job-course-subtitle">Who would you like to become?</p>
-      <div className="container">
+      <p className="job-course-subtitle">Choose Your Gurukul</p>
+      <div className="container ">
         <div className="row">
-          <div className="col col-md-6">
+          <div className="col my-3 col-md-6">
             <div className="card programmer-img-card">
-              <div class="card-body">
+              <div class="card-body p-0 pt-3">
                 <img
                   src={require("./assets/programmers.png").default}
                   className="job-course-img"
                 />
-                <p>Programmers’ Gurukul</p>
+                <p className="mt-3 mb-3 fs-1.1">Programmers’ Gurukul</p>
               </div>
             </div>
           </div>
-          <div className="col col-md-6">
+          <div className="col my-3 col-md-6">
             <div className="card design-img-card">
-              <div class="card-body">
+              <div class="card-body p-0 pt-3">
                 <img
                   src={require("./assets/designers.png").default}
                   className="job-course-img"
                 />
-                <p>Designers’ Gurukul</p>
+                <p className="mt-3 mb-3 fs-1.1" >Designers’ Gurukul</p>
               </div>
             </div>
           </div>

@@ -19,13 +19,10 @@
   font-weight: 700;
 }
 
-.underliner{
-border: 1px solid #F05F40;
-background-color: #F05F40;
-width: 60px;
-/* text-align: center; */
-/* align-items: center; */
-margin-left: 805px;
+.about-page hr {
+  width: 6rem;
+  border: transparent;
+  border-top: 3px solid #f05f40;
 }
 
 .bg-img {
@@ -61,7 +58,7 @@ font-weight: 400;
 /* font-family: Nunito Sans; */
 font-size: 18px;
 line-height: 28px;
-margin: 40px 425px 0 500px;
+margin: 80px 425px 0 500px;
 text-align: left;
 }
 

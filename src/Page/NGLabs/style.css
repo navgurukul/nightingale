@@ -1,0 +1,139 @@
+.right img {
+  position: absolute;
+  right: 0;
+  height: 384px;
+}
+.right .vector-svg {
+  position: absolute;
+  right: -3em;
+  top: -1em;
+  height: 464px;
+}
+.ng-labs .container {
+  width: 78%;
+}
+.ng-labs .btn {
+  padding: 0.5rem 7rem;
+  margin-block: 0.5em;
+  font-size: 1.1em;
+}
+.ng-labs hr {
+  width: 6rem;
+  border: transparent;
+  border-top: 3px solid #f05f40;
+}
+.ng-labs .card {
+  width: 20em;
+  height: 100%;
+  box-shadow: 0px 3px 2px rgba(46, 46, 46, 0.06),
+    0px 2px 2px rgba(46, 46, 46, 0.04), 0px 2px 5px rgba(46, 46, 46, 0.08);
+  border-radius: 8px;
+}
+.ng-labs .card h2 {
+  font-family: Lusitana;
+}
+
+.timeline img {
+  height: 30em;
+}
+
+@media screen and (max-width: 1220px) {
+  .right img {
+    right: 0;
+    height: 20em;
+  }
+  .right .vector-svg {
+    right: -4.5em;
+    top: -1em;
+    height: 25em;
+  }
+  .main .container {
+    width: 85%;
+  }
+  .main .btn {
+    padding: 0.5em 3em;
+    font-size: 1em;
+  }
+  .timeline img {
+    height: 25em;
+  }
+}
+@media screen and (max-width: 864px) {
+  .col-img {
+    width: 0;
+    display: none;
+  }
+  .col-data {
+    width: 100%;
+    align-items: center;
+  }
+  .main .btn {
+    padding: 0.5em 5em;
+    font-size: 1em;
+  }
+  .projects {
+    margin-top: 5em;
+  }
+  .timeline img {
+    height: 19em;
+  }
+  h1 {
+    font-size: 2.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main {
+    margin-top: 3em !important;
+  }
+  .projects {
+    margin-top: 3rem !important;
+  }
+  .main h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.7em;
+  }
+  .ng-labs .btn {
+    padding: 0.5em 4em;
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .timeline img {
+    height: 13em;
+  }
+  .main .btn {
+    padding: 0.5em 4em;
+    font-size: 0.9em;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .main .container {
+    width: 100% !important;
+  }
+  p {
+    margin-top: 16px;
+    margin-bottom: 1rem;
+    font-size: 0.95em;
+  }
+}
+@media screen and (max-width: 330px) {
+  .main .btn {
+    padding: 0.5em 1.5em;
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 1.15em;
+  }
+  .main h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .timeline img {
+    height: 10em;
+  }
+  .ng-labs .btn {
+    padding: 0.5em 2em;
+  }
+}

@@ -7,7 +7,7 @@ function AboutPage() {
       <div className="page-content">
         <section className="page-section">
           <h2 className="section-title">Our Story</h2>
-          <div className="underliner"></div>
+          <hr className="mt-2" />
           <div>
             <img
               src={require("./assets/Ellipse_1.png").default}
@@ -41,7 +41,7 @@ function AboutPage() {
         </section>
         <section className="page-section">
           <h2 className="section-title">Vision</h2>
-          <div className="underliner"></div>
+          <hr className="mt-2" />
           <div className="about-content">
             <p>
               We envision a world where everyone has access to an affordable
@@ -52,7 +52,7 @@ function AboutPage() {
         </section>
         <section className="page-section">
           <h2 className="section-title">Our Values</h2>
-          <div className="underliner"></div>
+          <hr className="mt-2" />
           <div className="about-content">
             <p>
               In order to follow through on our commitments, achieve our

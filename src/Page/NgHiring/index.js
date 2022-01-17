@@ -7,8 +7,8 @@ function NgHiring() {
       <div className="page-content">
         <section className="hiring-page-section">
           <h2 className="hiring-section-title">Hire from Us</h2>
-          <div className="title-underliner"></div>
-          <div>
+          <hr className="my-3" />
+          <div className="mb-5">
             <img
               src={require("./assets/Ellipse_1.png").default}
               className="Ellipse_1"
@@ -23,7 +23,7 @@ function NgHiring() {
             />
             <img src={require("./assets/bg.png").default} className="bg-img" />
           </div>
-          <div className="hiring-page-content">
+          <div className="mt-5 hiring-page-content">
             <p>
               We are a collective of full timers and volunteers that form the
               backbone aiming to bring affordable education to underprivileged
@@ -45,7 +45,7 @@ function NgHiring() {
         </section>
         <section className="hiring-page-section">
           <h2 className="hiring-section-title">Meet Our Recent Graduates</h2>
-          <div className="title-underliner"></div>
+          <hr />
         </section>
       </div>
     </main>

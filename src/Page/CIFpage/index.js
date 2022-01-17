@@ -1,0 +1,219 @@
+import React from "react";
+import "./style.css";
+import "../../Global.css"
+import code from "./assets/code.svg"
+import chat from "./assets/chat.svg"
+import form from "./assets/form.svg"
+import greaterThan from "./assets/greater-than.svg"
+
+function CifPage() {
+  return (
+    <div className="CifPage d-flex flex-column justify-content-center">
+      <div className="hero w-100 text-white d-flex justify-content-center align-items-center float-left">
+        <div className="data text-center">
+          <h1 className="fw-bold fs-2.7">Code India Fellowships</h1>
+          <p className="fs-1.1">
+            Nurture Programming skills in the next generation of India's youth
+            with your expertise
+          </p>
+          <button className="btn btn-primary text-white mb-1 py-2 px-8 ng-labs-btn fw-bold">
+            Apply to CIF
+          </button>
+        </div>
+      </div>
+      <div className="cif text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-3">
+        <h1 className="fw-bold fs-2.7">What’s Code India Fellowhip</h1>
+        <hr />
+        <div className="container w-50">
+          <p className="text-start">
+            We are proud to announce the Code India Fellowship, an incredible
+            opportunity for the most passionate individuals of our country to
+            help take programming and coding to the remotest parts of India.
+          </p>
+          <p className="text-start">
+            Aspiring to impart the knowledge, skills and a certain strength of
+            character to the young minds of tomorrow, the Code India Fellowship
+            is designed specifically to help better our future while
+            simultaneously giving our fellows a chance to recognize the current
+            realities of what life is like on the other side.
+          </p>
+          <p className="text-start">
+            The Code India Fellows will be placed in different organisations in
+            different parts of the country like Delhi, Bangalore, Jammu,
+            Dharamshala, etc, for the duration of a year, to teach coding and
+            programming to the local children, with an emphasized focus on young
+            girls. Tasked with the responsibility of overseeing the growth and
+            educational journey of young children, our fellows have the explicit
+            satisfaction of helping students, across the country, take their
+            first steps into a brighter future.
+          </p>
+        </div>
+      </div>
+      <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
+        <h1 className="fw-bold fs-2.7">What We Offer</h1>
+        <hr />
+        <div className="container w-50 text-start mb-1">
+          <div className="row m-1 d-flex">
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              <span className="fw-bold">Stipend: </span>INR 25,000 per month
+            </div>
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              Free boarding and lodging
+            </div>
+          </div>
+          <div className="row m-1 d-flex">
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              Training to become equipeed with in-house education practices of
+              the programme
+            </div>
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              Opportunities to better understand tenets of civic professionalism
+              and social responsibility
+            </div>
+          </div>
+          <div className="row m-1 d-flex">
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              Chance to learn skills of self-reliance, willpower, patience,
+              creativity and leadership
+            </div>
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              Opportunity to foster the growth of the children that come from
+              some of the most disadvantaged communities in India
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
+        <h1 className="fw-bold fs-2.7">Who We Are Looking For</h1>
+        <hr />
+        <div className="container text-start mb-1 w-50">
+          <div className="row m-1 d-flex">
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              People motivated to bring a positive change in the lives of
+              children that did not have the same opportunities as us
+            </div>
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              Professional experience in programming (frontend, backend or both)
+            </div>
+          </div>
+          <div className="row m-1 d-flex">
+            <div className="col-sm-6 px-4 mb-3 position-relative">
+              Aptitude for critical thinking and problem solving
+            </div>
+          </div>
+          <span className="text-gray">
+            We encourage women to apply. This is a spectacular opportunity for
+            freshers and recent graduates who are passionate to work in the
+            field of social work.
+          </span>
+        </div>
+      </div>
+      <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
+        <h1 className="fw-bold fs-2.7 ">Role Description</h1>
+        <hr />
+        <div className="container text-start mb-1 w-50">
+          <div className="sub-section mb-5">
+            <h2 className="fs-1.7 mb-3 fw-bold">Teaching</h2>
+            <ul>
+              <li>
+                Support young children by teaching programming or coding through
+                application of innovative teaching techniques
+              </li>
+              <li>
+                Help with curriculum design involving its structure, forms of
+                delivery, method of assessment and approach to teaching
+              </li>
+              <li>
+                Mentor the students in their study and help them with learning
+                problems
+              </li>
+              <li>Formulate methods for evaluating teaching outcomes</li>
+            </ul>
+          </div>
+          <div className="sub-section mb-5">
+            <h2 className="fs-1.7 mb-3 fw-bold">
+              Managing people and resources
+            </h2>
+            <ul>
+              <li>Manage your teaching and administrative activities</li>
+              <li>
+                Prioritise the tasks as per the agreed objectives to ensure they
+                are completed on time
+              </li>
+              <li>
+                Appreciating the individual needs of students, their
+                circumstances and tailoring the support according to it
+              </li>
+            </ul>
+          </div>
+          <div className="sub-section mb-5">
+            <h2 className="fs-1.7 mb-3 fw-bold">Academic administration</h2>
+            <ul>
+              <li>
+                Undertaking various administrative responsibilities as required,
+                including assessment of progress, student attendance, teaching
+                quality, student experience, etc
+              </li>
+              <li>
+                Participating in regular interactions with other CIF fellows and
+                be a part of the peer-to-peer learning process
+              </li>
+            </ul>
+          </div>
+          <div className="sub-section mb-5">
+            <h2 className="fs-1.7 mb-3 fw-bold">Documentation and reporting</h2>
+            To document your journey as a fellow and prepare a report at the end
+            of the Fellowship
+          </div>
+        </div>
+      </div>
+      <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
+        <h1 className="fw-bold fs-2.7">Application Process</h1>
+        <hr />
+        <div className="container text-center w-90 mb-3">
+          <div className="row d-flex flex-column flex-md-row align-items-center">
+            <div className="column d-flex fw-600 fs-1.1 align-items-center mb-3 mb-md-0 col-md-4 justify-content-md-end justify-content-center">
+              <img src={form} alt="" className="mr-0.5" />
+              Fill the Application form
+            </div>
+            <div className="sign fs-1.5 position-relative col-md-1 mb-3 mb-md-0 justify-content-md-end">
+              <img src={greaterThan} alt="" className="mr-0.5" />
+            </div>
+            <div className="column d-flex fw-600 fs-1.1 align-items-center col-md-2 mb-3 mb-md-0 justify-content-md-end justify-content-center">
+              <img src={code} alt="" className="mr-0.5" />
+              Basic coding test
+            </div>
+            <div className="sign fs-1.5 position-relative col-md-1 mb-3 mb-md-0 justify-content-md-end">
+              <img src={greaterThan} alt="" className="mr-0.5" />
+            </div>
+            <div className="column d-flex fw-600 fs-1.1 align-items-center col-md-4 mb-3 mb-md-0 justify-content-md-start justify-content-center">
+              <img src={chat} alt="" className="mr-0.5" />
+              In-person/Online conversation
+            </div>
+          </div>
+        </div>
+        <span className="w-40 fs-1.2 mb-3">
+          Are you ready to nurture programming skills in the next generation of
+          India’s youth with your expertise
+        </span>
+        <button className="btn btn-primary fw-600 fs-1.5 mb-3 text-white ng-labs-btn">Apply to CIF</button>
+      </div>
+      <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5 fs-1.1">
+        <h1 className="fw-bold fs-2.7">Have Questions?</h1>
+        <hr />
+        <p className="fs-1.3">Connect with us anytime for more information</p>
+        <div className="contact row flex-column flex-sm-row w-50 my-2 fw-600 fs-1.2 text-primary">
+          <div className="email col text-decoration-none">
+            <span className="text-black">Via email: </span>
+            <a href="mailto:cif@navgurukul.org" className="text-primary">cif@navgurukul.org</a>{" "}
+          </div>
+          <div className="phone col">
+            <span className="text-black text-decoration-none">Via phone: </span>+91 8891300300
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default CifPage;
