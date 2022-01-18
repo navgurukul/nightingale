@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
-
+import Slider from "./Slider";
+import PartnerSlider from "./PartnerSlider";
 import { supportByLinks, partners } from "./config/index.js";
 
 function Home() {
@@ -25,7 +26,10 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                <button type="button" class="btn ng-labs-btn btn-buttons text-white ">
+                <button
+                  type="button"
+                  class="btn ng-labs-btn btn-buttons text-white "
+                >
                   Students
                 </button>
                 <button
@@ -41,6 +45,11 @@ function Home() {
         </div>
       </div>
       {/* </div> */}
+      <section className="media-scroll-section d-flex flex-column justify-content-center">
+        <h2 className="align-self-center mt-4">In the Media</h2>
+        <hr className="mt-2 mb-0 align-self-center" />
+        <Slider />
+      </section>
 
       <section className="mt-5">
         <h1 className="text-center ">Our Initiatives</h1>
@@ -81,8 +90,7 @@ function Home() {
                       </p>
                     </div>
                   </div>
-                </a>
-                href{" "}
+                </a>{" "}
               </div>
             </div>
           </div>
@@ -190,8 +198,11 @@ function Home() {
                 })}
             </section>  */}
 
-      <section className="container text-center  mt-5">
-        <h1> Bring a change! </h1>
+      <section className="our-partners text-center mx-3 my-5">
+        <h2 className="align-self-center mt-4">Our Partners</h2>
+        <hr className="mt-3 mb-0 align-self-center" />
+        <PartnerSlider />
+        <h2> Bring a change! </h2>
         <div class="d-grid  col-4 mx-auto mt-4 ">
           <button class="btn ng-labs-btn  text-white partner " type="button">
             Partner with us
@@ -241,7 +252,7 @@ function Home() {
 
  */}
 
-      <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mt-5">
+      <section className="d-flex home-page-supporters p-5 flex-column align-items-center justify-content-center mt-5">
         <h2>Our Supporters</h2>
         <hr className="mb-5" />
         <div class="container ">

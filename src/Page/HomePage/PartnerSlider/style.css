@@ -1,0 +1,53 @@
+.partners-carousal-cards {
+  /* padding: 0 200px; */
+  display: flex;
+}
+.partition-carousal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 40px;
+}
+.partition-carousal-content-img {
+  height: 64px;
+  width: 64px;
+}
+.partners-carousal-arrow--left {
+  left: 35px;
+}
+
+.partners-carousal-arrow--right {
+  left: auto;
+  right: 40px;
+}
+.partition-carousal-content span {
+  color: #818181;
+}
+@media screen and (max-width: 900px) {
+  .carousal-content {
+    padding: 50px;
+  }
+  .arrow--left {
+    left: 20px;
+  }
+  .arrow--right {
+    left: auto;
+    right: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .partition-carousal-content{
+    padding-inline: 20px ;
+  }
+  .partners-carousal-arrow--left {
+    left: 5px;
+  }
+  .partners-carousal-arrow--right{
+    left: auto;
+    right: 5px;
+  }
+  .partition-carousal-content p {
+    padding-top: 5px;
+  }
+}
