@@ -16,7 +16,7 @@
   background-color: transparent;
 }
 .carousal-content {
-  padding: 0 200px;
+  padding: 0 20%;
   display: flex;
   align-items: center;
 }
@@ -75,12 +75,12 @@
 }
 
 .arrow--left {
-  left: 150px;
+  left: 200px;
 }
 
 .arrow--right {
   left: auto;
-  right: 180px;
+  right: 220px;
 }
 
 .arrow--disabled {

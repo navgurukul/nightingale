@@ -7,7 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 40px;
+  padding-inline: 100px;
+  text-align: left;
 }
 .partition-carousal-content-img {
   height: 64px;
