@@ -66,6 +66,9 @@ input:focus {
 .mt-0\.5 {
   margin-top: 0.5rem !important;
 }
+.mx-6{
+  margin-inline: 6.5rem;
+}
 .fs-1\.7 {
   font-size: 1.7em !important;
 }

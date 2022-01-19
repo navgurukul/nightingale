@@ -147,10 +147,10 @@ ul.nav-footer > li a {
 
 @media screen and (max-width: 667px) {
   .footer-container {
-    height: 990px;
+    height: 100%
   }
   .inner-container {
-    margin: 20px;
+    margin: 0 20px;
   }
   .ng-logo {
     margin-left: 40px;

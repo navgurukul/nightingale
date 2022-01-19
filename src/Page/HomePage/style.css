@@ -1,4 +1,4 @@
-.bg {
+.home-page-bg {
   background: url("./assets/bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -197,18 +197,23 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media screen and (max-width: 1200px) {
+  .our-partners {
+    margin-inline: 20px !important;
+  }
+}
 @media (max-width: 576px) {
-  #testimonial .carousel-content {
-    padding: 20px 0px 20px 0px;
-    width: 100%;
+  .card-main-text {
+    margin-top: 150px;
   }
-  #testimonial .client-img {
-    margin: 20px auto;
-    position: static;
+  .home-page-hero-section-data {
+    max-width: 600px;
+    font-size: 24px;
+    margin-top: 10%;
   }
-  #testimonial h3,
-  #testimonial p {
-    text-align: center;
+  .home-page-bg,
+  .rgba-black-strong {
+    height: 400px;
   }
 }
 

@@ -12,7 +12,7 @@ function Home() {
   return (
     <>
       {/* <div className="container-fluid"> */}
-      <div className="bg text-white home-page-ng ">
+      <div className="home-page-bg text-white home-page-ng ">
         <div class="rgba-black-strong">
           <div className="container">
             <div class="row ">
@@ -198,7 +198,7 @@ function Home() {
                 })}
             </section>  */}
 
-      <section className="our-partners text-center mx-3 my-5">
+      <section className="our-partners text-center mx-6 my-5">
         <h2 className="align-self-center mt-4 section-head">Our Partners</h2>
         <hr className="mt-3 mb-0 align-self-center heading-hr" />
         <PartnerSlider />
