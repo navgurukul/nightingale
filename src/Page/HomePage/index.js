@@ -17,24 +17,24 @@ function Home() {
           <div className="container">
             <div class="row ">
               <div class="col-lg-12 mt-5  ">
-                <h1 class="h1-responsive font-weight-bold  komal ">
+                <h2 class="h1-responsive section-head  home-page-hero-section-data ">
                   {" "}
                   The Gurukul for the New Age India and its New Generation{" "}
-                </h1>
-                <p className="mt-3 komal-p">
+                </h2>
+                <p className="mt-3 section-para home-page-hero-section-data-p">
                   {" "}
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
                 <button
                   type="button"
-                  class="btn ng-labs-btn btn-buttons text-white "
+                  class="btn ng-labs-btn section-para mt-2 mr-2 text-white "
                 >
                   Students
                 </button>
                 <button
                   type="button"
-                  class="btn ng-labs-btn btn-buttons text-white"
+                  class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
                   style={{ marginLeft: "10px" }}
                 >
                   Partners
@@ -46,27 +46,26 @@ function Home() {
       </div>
       {/* </div> */}
       <section className="media-scroll-section d-flex flex-column justify-content-center">
-        <h2 className="align-self-center mt-4">In the Media</h2>
-        <hr className="mt-2 mb-0 align-self-center" />
+        <h2 className="align-self-center section-head mt-4">In the Media</h2>
+        <hr className="mt-2 mb-0 align-self-center heading-hr" />
         <Slider />
       </section>
 
-      <section className="mt-5">
-        <h1 className="text-center ">Our Initiatives</h1>
-        <div className=" underliner"></div>
-
+      <section className="mt-5 our-initiatives">
+        <h2 className="text-center section-head">Our Initiatives</h2>
+        <hr className="heading-hr" />
         <div class="container mt-5">
           <div class="row">
-            <div class="col-lg-6 col-md-12 mb-6 mb-lg-0">
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
               <div class="bg-image1 card  shadow-1-strong">
                 <Link to="/job-course">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white  ">
-                      <h5 class="card-title card-main-text card-heading ">
+                      <h5 class="card-title section-head card-main-text  card-heading ">
                         {" "}
                         Guaranteed Job Courses{" "}
                       </h5>
-                      <p class="card-text mt-2 card-dic">
+                      <p class="card-text section-para  mt-2 card-dic">
                         Fully-funded courses in software engineering and design
                         with guaranteed jobs
                       </p>
@@ -81,10 +80,10 @@ function Home() {
                 <a href="https://www.merakilearn.org/">
                   <div className="Initiatives-bg-color">
                     <div className="card-body text-white">
-                      <h5 class="card-title card-main-text  card-heading ">
+                      <h5 class="card-title section-head card-main-text  card-heading ">
                         Learn Online with Meraki{" "}
                       </h5>
-                      <p class="card-text mt-2  card-dic ">
+                      <p class="card-text mt-2 section-para  card-dic ">
                         Get started with programming in Python, English and
                         Typing
                       </p>
@@ -97,16 +96,16 @@ function Home() {
         </div>
         <div class="container mt-4">
           <div class="row">
-            <div class="col-lg-6 col-md-12 mb-6 mb-lg-0">
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
               <div class="bg-image3 card shadow-1-strong">
                 <Link to="/cif">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white">
-                      <h5 class="card-title card-main-text card-heading">
+                      <h5 class="card-title section-head card-main-text card-heading">
                         {" "}
                         Code India Fellowships
                       </h5>
-                      <p class="card-text mt-2 card-dic">
+                      <p class="card-text section-para mt-2 card-dic">
                         Nurture programming skills in the next generation of
                         India’s youth with your expertise
                       </p>
@@ -121,11 +120,11 @@ function Home() {
                 <Link to="/nglabs">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white">
-                      <h5 class="card-title card-main-text card-heading">
+                      <h5 class="card-title section-head card-main-text card-heading">
                         {" "}
                         NG Labs{" "}
                       </h5>
-                      <p class="card-text mt-2 card-dic">
+                      <p class="card-text section-para mt-2 card-dic">
                         Experiments in non-profit space for otherwise for-profit
                         solutions such as non-profit Uber
                       </p>
@@ -139,8 +138,8 @@ function Home() {
       </section>
 
       <section className="container  text-center w-50 fs-1.1 mt-5">
-        <p>
-          <span className="fw-semiBold">Techalms Consulting:</span> A talent
+        <p className="section-para ">
+          <span className="fw-bold">Techalms Consulting:</span> A talent
           group ready to fly in, solve your problems and leave by leaving happy
           faces at the clientplace{" "}
         </p>
@@ -151,15 +150,16 @@ function Home() {
       <section>
         <div class="container-fluid impact mt-5  ">
           <div class="container text-center ">
-            <h1 className="text-center  Impact-that-matters ">
+            <h1 className="text-center section-head Impact-that-matters ">
               Impact that matters!
-              <div className="underliner mt-2"></div>
+              {/* <div className="underliner mt-2"></div> */}
+              <hr className="heading-hr" />
             </h1>
 
             <div class="row">
               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <h1 className="count">160+</h1>
-                <p> Software Development Jobs</p>
+                <h1 className="count section-head">160+</h1>
+                <p className="section-para fs-1.1"> Software Development Jobs</p>
               </div>
 
               <div class="col-lg-4 mb-4 mb-lg-0">
@@ -168,13 +168,13 @@ function Home() {
                     className="mx-auto impactellipse"
                     src={require("./assets/impactellipse.png").default}
                   />
-                  <h1 className="mt-5 count"> 5 </h1>
-                  <p>States across India </p>
+                  <h1 className="mt-5 count section-head"> 5 </h1>
+                  <p className="section-para fs-1.1">States across India </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-4 mb-lg-0 ">
-                <h1 className="count ">400+</h1>
-                <p> Online Students </p>
+                <h1 className="count section-head">400+</h1>
+                <p className="section-para fs-1.1"> Online Students </p>
               </div>
             </div>
           </div>
@@ -199,10 +199,10 @@ function Home() {
             </section>  */}
 
       <section className="our-partners text-center mx-3 my-5">
-        <h2 className="align-self-center mt-4">Our Partners</h2>
-        <hr className="mt-3 mb-0 align-self-center" />
+        <h2 className="align-self-center mt-4 section-head">Our Partners</h2>
+        <hr className="mt-3 mb-0 align-self-center heading-hr" />
         <PartnerSlider />
-        <h2> Bring a change! </h2>
+        <h2 className="section-head"> Bring a change! </h2>
         <div class="d-grid  col-4 mx-auto mt-4 ">
           <button class="btn ng-labs-btn  text-white partner " type="button">
             Partner with us
@@ -252,9 +252,9 @@ function Home() {
 
  */}
 
-      <section className="d-flex home-page-supporters p-5 flex-column align-items-center justify-content-center mt-5">
-        <h2>Our Supporters</h2>
-        <hr className="mb-5" />
+      <section className="d-flex home-page-supporters p-5 flex-column align-items-center justify-content-center mb-0 mt-5">
+        <h2 className="section-head">Our Supporters</h2>
+        <hr className="mb-5 heading-hr" />
         <div class="container ">
           <div class="row">
             <div class="col-md-12 col-12">

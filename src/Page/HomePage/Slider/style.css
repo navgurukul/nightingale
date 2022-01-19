@@ -24,7 +24,11 @@
   /* width: 100%; */
   font-weight: 300;
   padding: 30px;
-  font-size: 15px;
+  font-family: Lusitana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
 }
 .carousal-image-container {
   height: 80px;

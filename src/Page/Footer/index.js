@@ -111,7 +111,7 @@ function Footer() {
         <div className="title-container">
           <div className="row">
             <div class="col-md-3">
-              <ul class="nav-footer">
+              <ul class="nav-footer fs-1.1">
                 <li>
                   <a href="#" className="row-title">
                     About

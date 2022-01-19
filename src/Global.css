@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
 :root {
   --primary: #f05f40;
-  --danger: #ff4136;
+  --btnHover: #ec4a26;
+  --danger: #ff342a;
   --navGrey: #333333;
   --bgBlack: #1a1c1f;
   --bgCard: #2f323a;
@@ -19,13 +22,13 @@ input:focus {
   outline: none;
 }
 .fw-semiBold {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .fw-bold {
   font-weight: 900;
 }
 .fw-4old {
-  font-weight: 400;
+  font-weight: 400 !;
 }
 .fs-1\.2 {
   font-size: 1.2rem !important;
@@ -94,11 +97,33 @@ input:focus {
   background-color: var(--primary);
   border-color: var(--primary);
   cursor: pointer;
+  transition: all ease-in 0.2s;
 }
-.ng-labs-btn:hover,
+.ng-labs-btn:hover {
+  background-color: var(--btnHover) !important;
+  border-color: var(--btnHover) !important;
+}
+
 .ng-labs-btn:active,
 .ng-labs-btn:focus {
-  background-color: var(--primary) !important;
-  border-color: var(--primary) !important;
+  background-color: var(--btnHover) !important;
+  border-color: var(--btnHover) !important;
   box-shadow: 0 0 0 0.2rem #f58d76 !important;
+}
+.heading-hr {
+  width: 6rem !important;
+  border: transparent !important;
+  border-top: 3px solid #f05f40 !important;
+}
+
+.section-head {
+  font-family: Lusitana !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+
+.section-para {
+  font-family: Nunito Sans !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
 }

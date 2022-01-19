@@ -81,13 +81,11 @@ function Slider() {
                   <img className="carousal-img" src={image} />
                 </div>
                 <p>
-                  <i>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text. There are many variations of passages
-                    of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form
-                  </i>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text. There are many variations of passages of
+                  Lorem Ipsum available, but the majority have suffered
+                  alteration in some form
                 </p>
               </div>
             </div>
@@ -97,13 +95,11 @@ function Slider() {
                   <img className="carousal-img" src={image} />
                 </div>
                 <p>
-                  <i>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. There are many variations of passages of Lorem
-                    Ipsum available. Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry
-                  </i>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  There are many variations of passages of Lorem Ipsum
+                  available. Lorem Ipsum is simply dummy text of the printing
+                  and typesetting industry
                 </p>
               </div>
             </div>
@@ -113,13 +109,11 @@ function Slider() {
                   <img className="carousal-img" src={image} />
                 </div>
                 <p>
-                  <i>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form. There are many variations of passages of Lorem Ipsum
-                    available. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry
-                  </i>
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form. There are many variations of passages of Lorem Ipsum
+                  available. Lorem Ipsum is simply dummy text of the printing
+                  and typesetting industry
                 </p>
               </div>
             </div>
@@ -129,13 +123,11 @@ function Slider() {
                   <img className="carousal-img" src={image} />
                 </div>
                 <p>
-                  <i>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text. There are many variations of passages
-                    of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form
-                  </i>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text. There are many variations of passages of
+                  Lorem Ipsum available, but the majority have suffered
+                  alteration in some form
                 </p>
               </div>
             </div>

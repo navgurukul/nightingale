@@ -10,6 +10,11 @@
   padding-inline: 100px;
   text-align: left;
 }
+.partition-carousal-content p,
+.partition-carousal-content-name,
+.partition-carousal-content span {
+  font-weight: 700 !important;
+}
 .partition-carousal-content-img {
   height: 64px;
   width: 64px;
@@ -38,13 +43,13 @@
   }
 }
 @media screen and (max-width: 500px) {
-  .partition-carousal-content{
-    padding-inline: 20px ;
+  .partition-carousal-content {
+    padding-inline: 20px;
   }
   .partners-carousal-arrow--left {
     left: 5px;
   }
-  .partners-carousal-arrow--right{
+  .partners-carousal-arrow--right {
     left: auto;
     right: 5px;
   }

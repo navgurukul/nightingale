@@ -2,23 +2,8 @@
   background: url("./assets/bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* background-size: cover; */
   width: 100%;
-  height: 670px;
-}
-
-.btn-buttons {
-  background-color: rgba(240, 95, 64, 1) !important;
-}
-.home-page-supporters hr {
-  width: 6rem;
-  border: transparent;
-  border-top: 3px solid #f05f40;
-}
-.underliner {
-  border: 1px solid #f05f40;
-  width: 60px;
-  margin: auto;
+  height: 800px;
 }
 
 .rgba-black-strong {
@@ -28,61 +13,53 @@
     rgba(0, 0, 0, 0.6) 54.02%,
     rgba(0, 0, 0, 0) 99.16%
   );
-
-  height: 670px;
+  height: 800px;
 }
-.primary-hr,
-.media-scroll-section hr,
-.our-partners hr {
-  width: 100px;
-  border-color: #f05f40 !important;
-  background-color: #f05f40 !important;
-  border-width: 3px !important;
-}
-
-.komal {
-  /* margin: 10px; */
-  /* background-color: royalblue; */
+.home-page-hero-section-data {
   line-height: 1.4;
-  max-width: 430px;
+  max-width: 570px;
   color: #ffffff;
   font-size: 40px;
   margin-top: 10%;
-  font-family: Lusitana;
   font-style: normal;
   font-weight: 500;
 }
 
-.komal-p {
-  /* margin: 10px; */
-  max-width: 500px;
-  font-size: 21px;
-  /* font-family: Nunito Sans; */
-  font-style: normal;
-  font-family: Lusitana;
-  font-style: normal;
-  font-weight: normal;
+.home-page-hero-section-data-p {
+  max-width: 570px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .Initiatives-bg-color {
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 52.6%,
+    rgba(0, 0, 0, 0.8) 100%
   );
+  border-radius: 16px;
   height: 350px;
   border-radius: 15px !important;
 }
-
+.our-initiatives .card {
+  transition: all ease-in 0.2s;
+}
+.our-initiatives .card:hover {
+  filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.06))
+    drop-shadow(0px 6px 30px rgba(0, 0, 0, 0.04))
+    drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.08));
+}
+.our-initiatives .card:hover a:hover {
+  text-decoration: none;
+}
 .bg-image1 {
   background: url("./assets/job-courses.png");
-
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 15px !important;
   height: 350px;
   background-position: center;
-  /* background-size: cover; */
   background-size: 100% 100%;
 }
 
@@ -92,8 +69,6 @@
   width: 100%;
   border-radius: 15px !important;
   height: 350px;
-  /* background-position: center; */
-  /* background-size: cover; */
   background-size: 100% 100%;
 }
 
@@ -103,8 +78,6 @@
   border-radius: 15px !important;
   width: 100%;
   height: 350px;
-  /* background-position: center; */
-  /* background-size: cover; */
   background-size: 100% 100%;
 }
 
@@ -115,7 +88,6 @@
   border-radius: 15px !important;
   height: 350px;
   background-position: center;
-  /* background-size: cover; */
   background-size: 100% 100%;
 }
 
@@ -127,28 +99,23 @@
 
 .card-main-text {
   margin-top: 190px;
-  /* margin-bottom: 30px; */
 }
 .card-heading {
   font-size: 23px;
-  font-family: Lusitana;
   font-style: normal;
   font-weight: bold;
-  /* margin-top: 20px; */
 }
 .card-dic {
   max-width: 390px;
   line-height: 1.5;
   font-size: 19px;
-  font-family: Nunito Sans;
   font-style: normal;
-  /* margin-bottom: 30px; */
 }
 
 .count {
   font-size: 55px;
   color: rgba(240, 95, 64, 1);
-  margin: 20px;
+  margin: 8px;
 }
 .impactellipse {
   margin-top: 45px;
