@@ -27,128 +27,160 @@ function Arrow(props) {
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
-  const [sliderRef, instanceRef] = useKeenSlider({
-    initial: 0,
-    loop: true,
-    slideChanged(slider) {
-      setCurrentSlide(slider.track.details.rel);
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      initial: 0,
+      loop: true,
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel);
+      },
+      created() {
+        setLoaded(true);
+      },
     },
-    created() {
-      setLoaded(true);
-    },
-  });
+    [
+      (slider) => {
+        let timeout;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 2000);
+        }
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener("mouseout", () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNextTimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
   // const [partitionSlider, ]
   return (
-      <div className="slider pb-5">
-        <>
-          <div className="navigation-wrapper">
-            <div ref={sliderRef} className="keen-slider">
-              <div className="keen-slider__slide number-slide">
-                <div className="carousal-content">
-                  <div className="carousal-image-container">
-                    <img className="carousal-img" src={image} />
-                  </div>
-                  <p>
-                    <i>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text. There are many variations of passages
-                      of Lorem Ipsum available, but the majority have suffered
-                      alteration in some form
-                    </i>
-                  </p>
+    <div className="slider pb-5">
+      <>
+        <div className="navigation-wrapper">
+          <div ref={sliderRef} className="keen-slider">
+            <div className="keen-slider__slide number-slide">
+              <div className="carousal-content">
+                <div className="carousal-image-container">
+                  <img className="carousal-img" src={image} />
                 </div>
-              </div>
-              <div className="keen-slider__slide number-slide">
-                <div className="carousal-content">
-                  <div className="carousal-image-container">
-                    <img className="carousal-img" src={image} />
-                  </div>
-                  <p>
-                    <i>
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking at
-                      its layout. There are many variations of passages of Lorem
-                      Ipsum available. Lorem Ipsum is simply dummy text of the
-                      printing and typesetting industry
-                    </i>
-                  </p>
-                </div>
-              </div>
-              <div className="keen-slider__slide number-slide">
-                <div className="carousal-content">
-                  <div className="carousal-image-container">
-                    <img className="carousal-img" src={image} />
-                  </div>
-                  <p>
-                    <i>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in some
-                      form. There are many variations of passages of Lorem Ipsum
-                      available. Lorem Ipsum is simply dummy text of the printing
-                      and typesetting industry
-                    </i>
-                  </p>
-                </div>
-              </div>
-              <div className="keen-slider__slide number-slide">
-                <div className="carousal-content">
-                  <div className="carousal-image-container">
-                    <img className="carousal-img" src={image} />
-                  </div>
-                  <p>
-                    <i>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text. There are many variations of passages
-                      of Lorem Ipsum available, but the majority have suffered
-                      alteration in some form
-                    </i>
-                  </p>
-                </div>
+                <p>
+                  <i>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text. There are many variations of passages
+                    of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form
+                  </i>
+                </p>
               </div>
             </div>
-            {loaded && instanceRef.current && (
-              <>
-                <Arrow
-                  left
-                  onClick={(e) =>
-                    e.stopPropagation() || instanceRef.current?.prev()
-                  }
-                  disabled={currentSlide === 0}
-                />
-
-                <Arrow
-                  onClick={(e) =>
-                    e.stopPropagation() || instanceRef.current?.next()
-                  }
-                  disabled={
-                    currentSlide ===
-                    instanceRef.current.track.details.slides.length - 1
-                  }
-                />
-              </>
-            )}
+            <div className="keen-slider__slide number-slide">
+              <div className="carousal-content">
+                <div className="carousal-image-container">
+                  <img className="carousal-img" src={image} />
+                </div>
+                <p>
+                  <i>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. There are many variations of passages of Lorem
+                    Ipsum available. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry
+                  </i>
+                </p>
+              </div>
+            </div>
+            <div className="keen-slider__slide number-slide">
+              <div className="carousal-content">
+                <div className="carousal-image-container">
+                  <img className="carousal-img" src={image} />
+                </div>
+                <p>
+                  <i>
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form. There are many variations of passages of Lorem Ipsum
+                    available. Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry
+                  </i>
+                </p>
+              </div>
+            </div>
+            <div className="keen-slider__slide number-slide">
+              <div className="carousal-content">
+                <div className="carousal-image-container">
+                  <img className="carousal-img" src={image} />
+                </div>
+                <p>
+                  <i>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text. There are many variations of passages
+                    of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form
+                  </i>
+                </p>
+              </div>
+            </div>
           </div>
           {loaded && instanceRef.current && (
-            <div className="dots">
-              {[
-                ...Array(instanceRef.current.track.details.slides.length).keys(),
-              ].map((idx) => {
-                return (
-                  <button
-                    key={idx}
-                    onClick={() => {
-                      instanceRef.current?.moveToIdx(idx);
-                    }}
-                    className={"dot" + (currentSlide === idx ? " active" : "")}
-                  ></button>
-                );
-              })}
-            </div>
+            <>
+              <Arrow
+                left
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.prev()
+                }
+                disabled={currentSlide === 0}
+              />
+
+              <Arrow
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.next()
+                }
+                disabled={
+                  currentSlide ===
+                  instanceRef.current.track.details.slides.length - 1
+                }
+              />
+            </>
           )}
-        </>
-      </div>
+        </div>
+        {loaded && instanceRef.current && (
+          <div className="dots">
+            {[
+              ...Array(instanceRef.current.track.details.slides.length).keys(),
+            ].map((idx) => {
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    instanceRef.current?.moveToIdx(idx);
+                  }}
+                  className={"dot" + (currentSlide === idx ? " active" : "")}
+                ></button>
+              );
+            })}
+          </div>
+        )}
+      </>
+    </div>
   );
 }
 
