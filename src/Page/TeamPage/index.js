@@ -92,10 +92,10 @@ function TeamPage() {
     <main className="team-page">
       <div className="team-content">
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
-          <h2 className="team-section-title">Our Team</h2>
-          <hr className="mt-2" />
+          <h2 className="section-head">Our Team</h2>
+          <hr className="mt-2 heading-hr" />
           <div className="team-page-content w-50">
-            <p>
+            <p className="section-para">
               We are a collective of full timers and volunteers that form the
               backbone aiming to bring affordable education to underprivileged
               girl students across India.
@@ -104,27 +104,42 @@ function TeamPage() {
           <div className="container ">
             <div className="row">
               <div class="col-md team-button-container d-flex justify-content-center align-items-center col-sm-12">
-                <button type="button" class="btn ng-labs-btn mx-5 my-2 career-button">
+                <button
+                  type="button"
+                  class="btn section-para ng-labs-btn my-2 mx-3 career-button"
+                >
                   Careers at Navgurukul
                 </button>
-                <button type="button" class="btn btn-primary mx-5 my-2 volunteer-button">
+                <button
+                  type="button"
+                  class="btn section-para btn-primary mx-3 my-2 volunteer-button"
+                >
                   Volunteer with us
                 </button>
               </div>
             </div>
           </div>
         </section>
-        <section className="team-section w-100 d-flex flex-column justify center align-items-center">
-          <h2 className="team-section-title">Core Members</h2>
-          <hr className="mt-2" />
+        <section className="team-section w-100 mt-4 d-flex flex-column justify center align-items-center">
+          {/* <h2 className="section-head">Core Members</h2>
+          <hr className="mt-2" /> */}
           <div className="all-members-btns d-flex justify-content-center align-items-center w-100">
             <span
               onClick={() => {
                 setMembers({ volunteers: false, teamMembers: true });
               }}
-              className="core-team-members members-selector"
+              className={
+                members.teamMembers
+                  ? "section-head core-team-members members-selector"
+                  : "section-para core-team-members members-selector"
+              }
               style={
-                members.teamMembers ? { borderBottom: "2px solid #f05f40" } : {}
+                members.teamMembers
+                  ? {
+                      borderBottom: "3px solid #f05f40",
+                      fontWeight: "bold !important",
+                    }
+                  : {}
               }
             >
               Core Team
@@ -133,9 +148,13 @@ function TeamPage() {
               onClick={() => {
                 setMembers({ teamMembers: false, volunteers: true });
               }}
-              className="our-supporters members-selector"
+              className={
+                members.volunteers
+                  ? "section-head core-team-members members-selector"
+                  : "section-para core-team-members members-selector"
+              }
               style={
-                members.volunteers ? { borderBottom: "2px solid #f05f40" } : {}
+                members.volunteers ? { borderBottom: "3px solid #f05f40" } : {}
               }
             >
               Our Supporters
@@ -188,7 +207,7 @@ function TeamPage() {
               );
             })}
           </div> */}
-          <div className="container  team-info-cards-container">
+          <div className="container px-0 team-info-cards-container">
             {/* <div className="row">
               <div class="col-md-3 col-sm-12">
                 <img
@@ -222,14 +241,15 @@ function TeamPage() {
                   >
                     <img
                       // className="card-img-top card-img"
-                      className="card-img-top team-info-card-img"
+                      className="card-img-top team-info-card-img img-card-hover"
                       src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
                       alt="Card image cap"
                     />
                     <div className="team-info-card-title">{item.name}</div>
+                    <div className="section-para">{item.designation}</div>
                     <p class="card-text hide">
-                      <div className="team-info-card-title">{item.name}</div>
-                      <div>{item.description}</div>
+                      <div className="team-info-card-title section-head">{item.name}</div>
+                      <div className="section-para">{item.description}</div>
                     </p>
                   </div>
                   {/* <div class="card-details">

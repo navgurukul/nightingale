@@ -1,9 +1,6 @@
 .team-page {
   background-color: #fff;
   text-align: center;
-  font-family: "Lusitana", "Nunito Sans", Fallback, -apple-system,
-    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .team-section {
@@ -31,8 +28,12 @@
   /* width: ; */
   /* margin: 30px 425px 0 500px; */
 }
+.team-page button {
+  padding: 10px 40px;
+  width: 280px;
+}
 
-.career-button {
+/* .career-button {
   background-color: #f05f40;
   border: 1px solid #f05f40;
   color: #fff;
@@ -40,88 +41,56 @@
   border-radius: 5px;
   font-weight: 500;
   width: 280px;
-  /* width: 33%; */
-  /* margin: 25px 0 0 85px; */
-}
+} */
 
 .volunteer-button {
   background-color: #fff;
-  border: 1px solid #f05f40;
-  color: #f05f40;
-  padding: 10px 40px;
-  border-radius: 5px;
-  font-weight: 500;
-  width: 280px;
-  /* width: 33%; */
-  /* margin: 25px 0 0 25px; */
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  transition: all ease-in 0.2s;
 }
 
-.career-button:hover {
+.volunteer-button:hover {
   color: #fff;
-  background-color: #ee4924;
-  border: 1px solid #ee4924;
+  background-color: var(--btnHover);
+  border: 1px solid var(--btnHover);
 }
 
-.volunteer-button:hover,
+/* .volunteer-button:hover, */
 .volunteer-button:active,
 .volunteer-button:focus {
   color: #fff;
-  background-color: var(--primary) !important;
-  border-color: var(--primary) !important;
+  background-color: var(--btnHover) !important;
+  border-color: var(--btnHover) !important;
   box-shadow: 0 0 0 0.2rem #f58d76 !important;
 }
-
-.core-team {
-  position: absolute;
-  margin-left: 680px;
-}
-
-.our-suppoters {
-  margin-left: 250px;
-}
-
-.Meraki-section-title {
-  background: #ffffff;
-  border: none;
-  margin-top: 100px;
-  margin-right: 10px;
-  font-size: 20px;
-  color: rgb(150, 146, 153);
-}
-
-.Meraki-section-title:focus {
-  color: rgb(23, 3, 43);
-}
-
-hr.hr-line {
-  display: none;
-}
-
 .team-img {
   width: 20%;
 }
-
-.core-team-underliner {
-  border: 0.5px solid #f05f40;
-  background-color: #f05f40;
-  width: 60px;
-}
-
 .card-details {
   position: relative;
   border: none;
-  padding: 52px;
-  width: 250px;
+  padding: 30px 0px;
+  width: 282px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   align-items: center;
+  transition: all ease-in-out 0.2s;
 }
 
 .card-img {
   border-radius: 50%;
 }
-
+.team-info-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: all ease-in 0.2s;
+}
+.team-info-cards-container:hover .card {
+  opacity: 0.5;
+}
 .hide {
   display: none;
 }
@@ -133,9 +102,9 @@ hr.hr-line {
   right: 75%;
   box-shadow: 0px 4px 5px rgba(46, 46, 46, 0.06),
     0px 1px 10px rgba(46, 46, 46, 0.04), 0px 2px 4px rgba(46, 46, 46, 0.08);
-  border-radius: 10px 0 10px 10px;
+  border-radius: 10px;
   background-color: #fff;
-  padding: 5px 0 15px 25px;
+  padding: 5px 10px 15px 25px;
   font-size: 14px;
   width: 300px;
   margin: 16px;
@@ -143,6 +112,13 @@ hr.hr-line {
   z-index: 9;
   border: 2px solid var(--primary);
   box-sizing: border-box;
+}
+.card-details:hover .img-card-hover {
+  border: 3px solid var(--primary);
+}
+.team-info-cards-container .card-details:hover {
+  transform: scale(1.1);
+  opacity: 1;
 }
 .all-members-btns {
   margin: 20px 0;
@@ -153,11 +129,6 @@ hr.hr-line {
   border: 2px solid transparent;
   transition: all ease-in-out 0.2s;
 }
-.active {
-  border-bottom: 2px solid #f05f40;
-  background-color: #f05f40;
-  width: 60px;
-}
 .core-team-members,
 .our-supporters {
   margin-inline: 20px;
@@ -166,6 +137,10 @@ hr.hr-line {
   border-radius: 50%;
   width: 120px;
   height: 120px;
+  border: 3px solid transparent;
+  transition: all ease-in 0.2s;
+  padding: 0px;
+  box-sizing: content-box;
 }
 
 .team-info-card-title {
@@ -184,26 +159,15 @@ hr.hr-line {
   margin-left: 15px;
 }
 
-.core-team {
-  position: absolute;
-  margin-left: 680px;
-}
-
-.our-suppoters {
-  margin-left: 250px;
-}
-
-.team-info-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 @media screen and (max-width: 650px) {
   .team-page-content {
     width: 80% !important;
   }
   .team-button-container {
     flex-direction: column;
+  }
+  .team-info-cards-container{
+    justify-content: center;
   }
   .card-details:hover > .hide {
     top: 100%;
@@ -213,6 +177,6 @@ hr.hr-line {
     width: 300px;
     margin: 16px;
     border-radius: 10px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 }

@@ -101,6 +101,7 @@ input:focus {
   border-color: var(--primary);
   cursor: pointer;
   transition: all ease-in 0.2s;
+  color: white;
 }
 .ng-labs-btn:hover {
   background-color: var(--btnHover) !important;
