@@ -204,7 +204,7 @@ function Home() {
         <PartnerSlider />
         <h2 className="section-head"> Bring a change! </h2>
         <div class="d-grid  col-4 mx-auto mt-4 ">
-          <button class="btn ng-labs-btn  text-white partner " type="button">
+          <button class="btn ng-labs-btn our-partner-btn section-para text-white partner " type="button">
             Partner with us
           </button>
         </div>

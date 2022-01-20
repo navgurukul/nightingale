@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import JobCourse from "../JobCourse";
 import "./styles.css";
+import externalLink from "./assets/external-link.png"
 
 function Header() {
   const [toggle, setToggle] = useState(true);
@@ -123,11 +124,12 @@ function Header() {
               <a className="dropdown-item" href="/team">
                 Team
               </a>
-              <a className="dropdown-item" href="/gallery">
+              {/* <a className="dropdown-item" href="/gallery">
                 Gallery
-              </a>
-              <a className="dropdown-item" href="#">
+              </a> */}
+              <a className="dropdown-item mr-2" target="_blank" href="https://medium.com/navgurukul">
                 Blog
+                <img className="ml-2" src={externalLink}></img>
               </a>
             </div>
           </li>
