@@ -1,75 +1,29 @@
 .about-page {
   background-color: #fff;
   text-align: center;
-  font-family: "Lusitana", "Nunito Sans", Fallback, -apple-system, BlinkMacSystemFont,
-  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-  "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lusitana", "Nunito Sans", Fallback, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .page-section {
   margin: 40px 0;
 }
 
-.section-title {
-  margin-top: 80px;
-  /* margin-bottom: 10px; */
-  font-size: 32px;
-  line-height: 42px;
-  font-family: Lusitana;
-  font-weight: 700;
-}
-
-.about-page hr {
-  width: 6rem;
-  border: transparent;
-  border-top: 3px solid #f05f40;
-}
-
-.bg-img {
-width: 35%;
-margin: 80px 0 0 80px;
-}
-
-.Ellipse_1 {
-width: 300px;
-position: absolute;
-margin-top: 70px;
-/* margin-left: 10px; */
-}
-
-.Ellipse_2 {
-width: 260px;
-position: absolute;
-margin: 40px 0 0 430px;
-/* margin-top: 40px;
-margin-left: 430px; */
-}
-
-.Ellipse_3 {
-width: 260px;
-position: absolute;
-margin: 280px 0 0 280px;
-/* margin-top: 280px;
-margin-left: 280px; */
-}
-
 .about-page-content {
-font-weight: 400;
-/* font-family: Nunito Sans; */
-font-size: 18px;
-line-height: 28px;
-/* margin: 80px 425px 0 500px; */
-margin: 80px 0;
-text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 80px 0;
+  text-align: left;
 }
 
 .about-content {
-font-weight: 400;
-/* font-family: Nunito Sans; */
-font-size: 17.9px;
-line-height: 28px;
-margin: 30px 0;
-text-align: left;
+  font-weight: 400;
+  font-size: 17.9px;
+  line-height: 28px;
+  margin: 30px 0;
+  text-align: left;
 }
 
 @media screen and (max-width: 667px) {
@@ -77,21 +31,9 @@ text-align: left;
     margin-left: 150px;
     width: 70px;
   }
-  img.bg-img { 
-    width: 250px; 
-    margin: 40px 0 30px 0;
-  }
-  img.Ellipse_1 {
-    width: 110px;
-    margin: 52px 0 0 0;
-  }
-  img.Ellipse_2 {
-    width: 110px;
-    margin: 40px 0 80px 155px;
-  }
-  img.Ellipse_3 {
-    width: 110px;
-    margin: 150px 0 80px 90px;
+  .backgroundImg{
+    height: 230px;
+    /* width: 300px; */
   }
   .about-page-content {
     margin: 20px;
@@ -101,7 +43,8 @@ text-align: left;
     margin: 20px;
     font-size: 14px;
   }
-  .about-content p,.about-page-content p{
+  .about-content p,
+  .about-page-content p {
     width: 90% !important;
   }
 }
