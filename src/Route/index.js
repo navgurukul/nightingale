@@ -13,6 +13,7 @@ import Programmer from "../Page/Programmer";
 import CifPage from "../Page/CIFpage";
 import Partners from "../Page/Partners";
 import Home from "../Page/HomePage";
+import Designers from "../Page/Designers";
 
 function Routing() {
   return (
@@ -27,6 +28,7 @@ function Routing() {
         <Route exact path="/team" component={TeamPage} />
         <Route exact path="/nglabs" component={NgLabs} />
         <Route exact path="/programmer" component={Programmer} />
+        <Route exact path="/designer" component={Designers} />
         <Route exact path="/cif" component={CifPage} />
         <Route exact path="/partners" component={Partners} />
         {/* <Route exact path="/involved" component={GetInvolved} /> */}
