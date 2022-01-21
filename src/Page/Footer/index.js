@@ -103,7 +103,7 @@ import linkedin from "./assets/linkedin.png";
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className="footer-container f-Nuni">
       <div className="inner-container">
         <div className="ng-logo">
           <img src={require("./assets/logo.png").default} />
