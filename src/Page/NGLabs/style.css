@@ -36,7 +36,10 @@
 .timeline img {
   height: 30em;
 }
-
+.idea button {
+  width: 352px;
+  padding: 8px 16px !important;
+}
 @media screen and (max-width: 1220px) {
   .right img {
     right: 0;
@@ -77,7 +80,7 @@
   .timeline img {
     height: 19em;
   }
-  h1 {
+  h2 {
     font-size: 2.2em;
   }
 }
@@ -88,7 +91,7 @@
   .projects {
     margin-top: 3rem !important;
   }
-  .main h1 {
+  .main h2 {
     font-size: 1.8em;
     margin-bottom: 0.7em;
   }
@@ -96,7 +99,7 @@
     padding: 0.5em 4em;
     font-size: 1em;
   }
-  h1 {
+  h2 {
     font-size: 1.5em;
   }
   .timeline img {
@@ -117,6 +120,9 @@
     margin-bottom: 1rem;
     font-size: 0.95em;
   }
+  .idea button{
+    max-width: 250px;
+  }
 }
 @media screen and (max-width: 330px) {
   .main .btn {
@@ -126,7 +132,7 @@
   h1 {
     font-size: 1.15em;
   }
-  .main h1 {
+  .main h2 {
     font-size: 1.5rem !important;
   }
 

@@ -60,6 +60,9 @@ input:focus {
 .mt-9 {
   margin-top: 9rem !important;
 }
+.mt-15 {
+  margin-top: 15rem !important;
+}
 .px-8 {
   padding-inline: 8rem !important;
 }
