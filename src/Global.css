@@ -27,8 +27,8 @@ input:focus {
 .fw-bold {
   font-weight: 900;
 }
-.fw-4old {
-  font-weight: 400 !;
+.fw-400 {
+  font-weight: 400 !important;
 }
 .fs-1\.2 {
   font-size: 1.2rem !important;

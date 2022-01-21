@@ -10,34 +10,34 @@ function CifPage() {
   return (
     <div className="CifPage d-flex flex-column justify-content-center">
       <div className="hero w-100 text-white d-flex justify-content-center align-items-center float-left">
-        <div className="data text-center">
-          <h1 className="fw-bold fs-2.7">Code India Fellowships</h1>
-          <p className="fs-1.1">
+        <div className="data d-flex flex-column align-items-center text-center">
+          <h2 className="fw-bold section-head fs-2.7">Code India Fellowships</h2>
+          <p className="fs-1.1 mt-2 section-para w-75">
             Nurture Programming skills in the next generation of India's youth
             with your expertise
           </p>
-          <button className="btn btn-primary text-white mb-1 py-2 px-8 ng-labs-btn fw-bold">
+          <button className="btn btn-primary fw-semiBold f-Nuni text-white mb-1 py-2 px-8 ng-labs-btn fw-bold">
             Apply to CIF
           </button>
         </div>
       </div>
       <div className="cif text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-3">
-        <h1 className="fw-bold fs-2.7">What’s Code India Fellowhip</h1>
-        <hr />
+        <h2 className="fw-bold fs-2.7">What’s Code India Fellowhip</h2>
+        <hr className="heading-hr" />
         <div className="container w-50">
-          <p className="text-start">
+          <p className="text-start section-para">
             We are proud to announce the Code India Fellowship, an incredible
             opportunity for the most passionate individuals of our country to
             help take programming and coding to the remotest parts of India.
           </p>
-          <p className="text-start">
+          <p className="text-start section-para">
             Aspiring to impart the knowledge, skills and a certain strength of
             character to the young minds of tomorrow, the Code India Fellowship
             is designed specifically to help better our future while
             simultaneously giving our fellows a chance to recognize the current
             realities of what life is like on the other side.
           </p>
-          <p className="text-start">
+          <p className="text-start section-para">
             The Code India Fellows will be placed in different organisations in
             different parts of the country like Delhi, Bangalore, Jammu,
             Dharamshala, etc, for the duration of a year, to teach coding and
@@ -50,10 +50,10 @@ function CifPage() {
         </div>
       </div>
       <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
-        <h1 className="fw-bold fs-2.7">What We Offer</h1>
-        <hr />
-        <div className="container w-50 text-start mb-1">
-          <div className="row m-1 d-flex">
+        <h2 className="fw-bold fs-2.7 section-head">What We Offer</h2>
+        <hr className="heading-hr mb-4" />
+        <div className="container w-50 f-Nuni text-start mb-1">
+          <div className="row m-1 d-flex ">
             <div className="col-sm-6 px-4 mb-3 position-relative">
               <span className="fw-bold">Stipend: </span>INR 25,000 per month
             </div>
@@ -84,9 +84,9 @@ function CifPage() {
         </div>
       </div>
       <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
-        <h1 className="fw-bold fs-2.7">Who We Are Looking For</h1>
-        <hr />
-        <div className="container text-start mb-1 w-50">
+        <h2 className="fw-bold fs-2.7 section-head">Who We Are Looking For</h2>
+        <hr className="heading-hr mb-4" />
+        <div className="container f-Nuni text-start mb-1 w-50">
           <div className="row m-1 d-flex">
             <div className="col-sm-6 px-4 mb-3 position-relative">
               People motivated to bring a positive change in the lives of
@@ -109,11 +109,11 @@ function CifPage() {
         </div>
       </div>
       <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
-        <h1 className="fw-bold fs-2.7 ">Role Description</h1>
-        <hr />
-        <div className="container text-start mb-1 w-50">
+        <h2 className="fw-bold fs-2.7 section-head">Role Description</h2>
+        <hr className="heading-hr mb-4" />
+        <div className="container f-Nuni text-start mb-1 w-50">
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7 mb-3 fw-bold">Teaching</h2>
+            <h2 className="fs-1.7  mb-3 fw-bold">Teaching</h2>
             <ul>
               <li>
                 Support young children by teaching programming or coding through
@@ -131,7 +131,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7 mb-3 fw-bold">
+            <h2 className="fs-1.7 mb-3 fw-bold section-head">
               Managing people and resources
             </h2>
             <ul>
@@ -147,7 +147,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7 mb-3 fw-bold">Academic administration</h2>
+            <h2 className="fs-1.7 mb-3 fw-bold section-head">Academic administration</h2>
             <ul>
               <li>
                 Undertaking various administrative responsibilities as required,
@@ -161,25 +161,25 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7 mb-3 fw-bold">Documentation and reporting</h2>
+            <h2 className="fs-1.7 mb-3 fw-bold section-head">Documentation and reporting</h2>
             To document your journey as a fellow and prepare a report at the end
             of the Fellowship
           </div>
         </div>
       </div>
       <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
-        <h1 className="fw-bold fs-2.7">Application Process</h1>
-        <hr />
+        <h2 className="fw-bold fs-2.7 section-head">Application Process</h2>
+        <hr className="heading-hr mb-4" />
         <div className="container text-center w-90 mb-3">
-          <div className="row d-flex flex-column flex-md-row align-items-center">
-            <div className="column d-flex fw-600 fs-1.1 align-items-center mb-3 mb-md-0 col-md-4 justify-content-md-end justify-content-center">
+          <div className="row f-Nuni my-2 d-flex flex-column flex-md-row align-items-center">
+            <div className="column d-flex fw-600 fs-1.1 align-items-center mb-3 mb-md-0 col-md-3 justify-content-md-end justify-content-center">
               <img src={form} alt="" className="mr-0.5" />
               Fill the Application form
             </div>
             <div className="sign fs-1.5 position-relative col-md-1 mb-3 mb-md-0 justify-content-md-end">
               <img src={greaterThan} alt="" className="mr-0.5" />
             </div>
-            <div className="column d-flex fw-600 fs-1.1 align-items-center col-md-2 mb-3 mb-md-0 justify-content-md-end justify-content-center">
+            <div className="column d-flex fw-600 fs-1.1 align-items-center col-md-3 mb-3 mb-md-0 justify-content-md-center justify-content-center">
               <img src={code} alt="" className="mr-0.5" />
               Basic coding test
             </div>
@@ -192,22 +192,22 @@ function CifPage() {
             </div>
           </div>
         </div>
-        <span className="w-40 fs-1.2 mb-3">
+        <span className="w-40 fs-1.2 mb-3 section-para">
           Are you ready to nurture programming skills in the next generation of
           India’s youth with your expertise
         </span>
-        <button className="btn btn-primary fw-600 fs-1.5 mb-3 text-white ng-labs-btn">Apply to CIF</button>
+        <button className="btn btn-primary fw-600 f-Nuni fs-1.5 mb-3 text-white ng-labs-btn">Apply to CIF</button>
       </div>
       <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5 fs-1.1">
-        <h1 className="fw-bold fs-2.7">Have Questions?</h1>
-        <hr />
-        <p className="fs-1.3">Connect with us anytime for more information</p>
-        <div className="contact row flex-column flex-sm-row w-50 my-2 fw-600 fs-1.2 text-primary">
-          <div className="email col text-decoration-none">
+        <h2 className="fw-bold fs-2.7">Have Questions?</h2>
+        <hr className="heading-hr mb-4" />
+        <p className="fs-1.3 section-para">Connect with us anytime for more information</p>
+        <div className="contact row flex-column flex-sm-row w-40 my-2 fw-600 fs-1.2 text-primary">
+          <div className="email col f-Nuni text-decoration-none">
             <span className="text-black">Via email: </span>
             <a href="mailto:cif@navgurukul.org" className="text-primary">cif@navgurukul.org</a>{" "}
           </div>
-          <div className="phone col">
+          <div className="phone col f-Nuni">
             <span className="text-black text-decoration-none">Via phone: </span>+91 8891300300
           </div>
         </div>

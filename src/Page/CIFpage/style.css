@@ -107,7 +107,7 @@ h2 {
   }
 }
 @media screen and (max-width: 580px) {
-  .hero .data h1 {
+  .hero .data h2 {
     font-size: 2em !important;
   }
   .hero .data p {
@@ -120,6 +120,9 @@ h2 {
   .application h1,
   .questions h1 {
     font-size: 1.8em !important;
+  }
+  .CifPage .container {
+    width: 90% !important;
   }
 }
 @media screen and (max-width: 478px) {
@@ -138,18 +141,18 @@ h2 {
   .hero {
     height: auto;
   }
-  .hero .data h1 {
+  .hero .data h2 {
     font-size: 1.5em !important;
   }
   .hero .data p {
     font-size: 0.8em !important;
   }
-  .cif h1,
-  .offer h1,
-  .looking h1,
-  .description h1,
-  .application h1,
-  .questions h1 {
+  .cif h2,
+  .offer h2,
+  .looking h2,
+  .description h2,
+  .application h2,
+  .questions h2 {
     font-size: 1.6rem !important;
   }
   .container {
@@ -179,12 +182,12 @@ h2 {
   }
 }
 @media screen and (max-width: 345px) {
-  .cif h1,
-  .offer h1,
-  .looking h1,
-  .description h1,
-  .application h1,
-  .questions h1 {
+  .cif h2,
+  .offer h2,
+  .looking h2,
+  .description h2,
+  .application h2,
+  .questions h2 {
     font-size: 1.3rem !important;
   }
   .description h2 {
