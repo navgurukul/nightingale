@@ -247,7 +247,6 @@
 }
 .section-donate-title {
   margin-top: 80px;
-  /* margin-bottom: 10px; */
   font-size: 32px;
   line-height: 42px;
   font-family: Lusitana;
@@ -256,7 +255,6 @@
 
 .donation-details-container {
   text-align: left;
-  /* margin: 25px 448px 0 583px; */
 }
 
 .ac-details {
@@ -270,7 +268,6 @@
   border: 1px solid #cdcdcd;
   background-color: #cdcdcd;
   width: 400px;
-  /* text-align: center; */
   align-items: center;
   margin-left: 10px auto;
 }
@@ -303,10 +300,7 @@
   padding: 10px 13px 10px 13px;
   border-radius: 5px;
   font-weight: 500;
-  /* margin-top: 25px;
-    margin-left: 13px; */
   margin: 25px 0 0 13px;
-  /* width: 250px; */
 }
 
 .donate-button:hover,
@@ -324,16 +318,12 @@
   font-family: Nunito Sans;
   font-size: 14px;
   line-height: 20px;
-  /* margin: 27px 665px 70px 690px; */
   margin-top: 30px;
   width: 300px;
 }
 
 .donate-bg {
-  /* background-image: url('./assets/bg.png'); */
   height: 847px;
-  /* background-repeat: no-repeat; */
-  /* background-size: 100% 100%; */
   padding-top: 1px;
 }
 
@@ -342,7 +332,6 @@
 }
 
 .bg-color {
-  /* position: absolute; */
   display: none;
   background-color: #fcdfd9;
   width: 375px;
@@ -361,7 +350,6 @@
   border: 1px solid #f05f40;
   background-color: #f05f40;
   width: 60px;
-  /* text-align: center; */
   align-items: center;
   margin-left: 805px;
 }
@@ -462,7 +450,6 @@
 
   .donation-details-container {
     margin: 25px 8px 0 0;
-    /* padding: 0; */
   }
   .donate-liner {
     width: 330px;
@@ -519,7 +506,6 @@
     line-height: 56px;
   }
   .jobs {
-    /* position: absolute; */
     top: 95px;
     left: 80px;
   }
