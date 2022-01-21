@@ -202,7 +202,10 @@
         padding-top: 1px;
     }
 } */
-
+*:focus-visible,
+*:focus {
+  outline: none;
+}
 .donate-page {
   background-color: #fff;
   text-align: center;
@@ -303,12 +306,16 @@
   margin: 25px 0 0 13px;
 }
 
-.donate-button:hover,
+.donate-button:hover {
+  background-color: var(--btnHover);
+  border: 1px solid var(--btnHover);
+}
+
 .donate-button:focus,
 .donate-button:active {
   color: #fff;
-  background-color: #f05f40 !important;
-  border-color: var(--primary) !important;
+  background-color: var(--btnHover) !important;
+  border-color: var(--btnHover) !important;
   box-shadow: 0 0 0 0.2rem #f58d76 !important;
 }
 
