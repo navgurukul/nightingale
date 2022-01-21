@@ -32,7 +32,7 @@ function JobCourse() {
             </Link>
           </div>
           <div className="col my-3 col-md-6">
-            <Link to="#">
+            <Link to="/designer">
               <div className="card design-img-card">
                 <div class="card-body p-0 pt-3">
                   <img
