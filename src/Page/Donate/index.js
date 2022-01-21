@@ -6,17 +6,17 @@ function Donate() {
   return (
     <main className="donate-page d-flex flex-column justify-content-center align-items-center">
       <div className="page-content w-100 d-flex flex-column justify-content-center align-items-center">
-        <section className="donate-page-section">
-          <h2 className="section-donate-title">Donate to NavGurukul</h2>
-          <hr className="main-hr mt-2" />
+        <section className="donate-page-section mt-4">
+          <h2 className="section-head mt-5 ">Donate to NavGurukul</h2>
+          <hr className="main-hr mt-2 mb-4" />
           <div className="d-flex account-details  justify-content-center align-items-center">
-            <div className="d-flex flex-column text-left fw-semiBold">
+            <div className="d-flex flex-column f-Nuni text-left fw-semiBold">
               <span>UPI ID</span>
               <span>Name</span>
               <span>Account Number</span>
               <span>IFSC Code</span>
             </div>
-            <div className=" d-flex flex-column text-left pl-2 pl-md-4 ">
+            <div className=" d-flex section-para flex-column text-left pl-2 pl-md-4 ">
               <span>navgurukulf@kotak</span>
               <span>Navgurukul Foundation for Social Welfare</span>
               <span>0512251778</span>
@@ -26,17 +26,17 @@ function Donate() {
           <hr className="w-30 partition-line" style={{ color: "#cdcdcd" }}></hr>
 
           <div className="donatation-payment mt-5 d-flex justify-content-center align-items-center w-100">
-            <p className="w-100">
+            <p className="w-100 f-Nuni fw-semiBold">
               You can also directly pay (2% charge but quick) using our payment
               gateway
             </p>
           </div>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
-          <button type="button" class="donate-page-button ng-labs-btn">
+          <button type="button" class="donate-page-button f-Nuni fw-semiBold ng-labs-btn">
             Donate to Navgurukul
           </button>
-          <div className="donate-content mt-5 d-flex justify-content-center align-items-center w-100">
-            <p className="w-75 mt-5">
+          <div className="donate-content mt-2 d-flex justify-content-center align-items-center w-100">
+            <p className="w-75 mt-5 f-Nuni">
               You may also pledge a <b> monthly donation </b> to us. Any pledged
               amount is a huge support for us. Just having you by our side fills
               us with gratitude & an energy to do better.
@@ -44,23 +44,23 @@ function Donate() {
           </div>
           <div className="container  donate-button-container">
             <div className="row">
-              <div class="col-md col-sm-12">
-                <button type="button" class="btn btn-primary donate-button">
+              <div class="col-md col-sm-12 ">
+                <button type="button" class="fw-semiBold btn btn-primary donate-button">
                   ₹ 101 / month
                 </button>
-                <button type="button" class="btn btn-primary donate-button">
+                <button type="button" class="fw-semiBold btn btn-primary donate-button">
                   ₹ 501 per month
                 </button>
-                <button type="button" class="btn btn-primary donate-button">
+                <button type="button" class="btn fw-semiBold btn-primary donate-button">
                   ₹ 1001 per month
                 </button>
-                <button type="button" class="btn btn-primary donate-button">
+                <button type="button" class="btn btn-primary fw-semiBold donate-button">
                   ₹ 2501 per month
                 </button>
-                <button type="button" class="btn btn-primary donate-button">
+                <button type="button" class="btn btn-primary fw-semiBold donate-button">
                   ₹ 5001 per month
                 </button>
-                <button type="button" class="btn btn-primary donate-button">
+                <button type="button" class="btn btn-primary fw-semiBold donate-button">
                   ₹ 10001 per month
                 </button>
               </div>
@@ -74,23 +74,23 @@ function Donate() {
           </div>
         </section>
         <section className="donate-page-section donate-page-image-section w-100">
-          <h2 className="mt-5 mb-3">Your Donations Create Impact</h2>
-          <hr className="main-hr mt-2" />
+          <h2 className="mt-5 mb-3 section-head">Your Donations Create Impact</h2>
+          <hr className="mt-2 heading-hr" />
           <img className="middleImg" src={middleImg}></img>
           <div className="donation-impact-data w-100 d-flex justify-content-around my-5">
             <span>
-              <h3>160+</h3>
-              <p>Software Development Jobs</p>
+              <h3 className="section-head">160+</h3>
+              <p className="f-Nuni">Software Development Jobs</p>
             </span>
             <span>
-              <h3>4000+</h3>
-              <p>Online Students</p>
+              <h3 className="section-head">4000+</h3>
+              <p className="f-Nuni">Online Students</p>
             </span>
           </div>
           <div className="donation-impact-data donation-impact-data-2 w-100 d-flex justify-content-around my-5">
             <span>
-              <h3>5</h3>
-              <p>States across India</p>
+              <h3 className="section-head">5</h3>
+              <p className="f-Nuni">States across India</p>
             </span>
           </div>
           {/* <div className="donate-bg">
@@ -150,12 +150,12 @@ function Donate() {
             /> */}
           {/* </div> */}
         </section>
-        <section className="donate-page-section">
-          <h2 className="section-donate-title">
+        <section className="donate-page-section mb-5">
+          <h2 className="section-head ">
             Are you a corporation and taken an interest in what we do?
           </h2>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
-          <button type="button" class="ng-labs-btn contact-button">
+          <button type="button" class="fw-semiBold donate-page-button f-Nuni ng-labs-btn contact-button">
             Contact Us for CSR Enquiries
           </button>
         </section>
