@@ -36,7 +36,7 @@ function NgLabs() {
           </div>
         </div>
       </div>
-      <div className="projects mt-5 mt-15  d-flex flex-column justify-content-center align-items-center">
+      <div className="projects d-flex flex-column justify-content-center align-items-center">
         <h2 className="mb-0 fs-2.5 section-head">Current Projects</h2>
         <hr className="heading-hr" />
         <div className="container w-70 my-5 mb-2">
