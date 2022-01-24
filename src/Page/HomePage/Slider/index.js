@@ -71,7 +71,7 @@ function Slider() {
   );
   // const [partitionSlider, ]
   return (
-    <div className="slider pb-5">
+    <div className="slider">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">

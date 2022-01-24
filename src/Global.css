@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+* {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Lusitana !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
 :root {
   --primary: #f05f40;
   --btnHover: #ec4a26;
@@ -106,7 +119,8 @@ input:focus {
   transition: all ease-in 0.2s;
   color: white;
   border-radius: 8px;
-  /* width: 352px; */
+  font-family: Nunito Sans !important;
+  font-weight: 700;
 }
 .ng-labs-btn:hover {
   background-color: var(--btnHover) !important;
@@ -125,17 +139,17 @@ input:focus {
   border-top: 3px solid #f05f40 !important;
 }
 
-.section-head {
+/* .section-head {
   font-family: Lusitana !important;
   font-style: normal !important;
   font-weight: 600 !important;
-}
-
+} */
+/* 
 .section-para {
   font-family: Nunito Sans !important;
   font-style: normal !important;
   font-weight: 200 !important;
-}
+} */
 .f-luis {
   font-family: Luistana !important;
 }

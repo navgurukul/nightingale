@@ -10,7 +10,7 @@ function Home() {
   const [partner, setPartner] = useState(partners);
   console.log(partners, "komal");
   return (
-    <>
+    <div className="navgurukul-homepage">
       {/* <div className="container-fluid"> */}
       <div className="home-page-bg text-white home-page-ng ">
         <div class="rgba-black-strong">
@@ -26,32 +26,36 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                <button
-                  type="button"
-                  class="btn ng-labs-btn section-para mt-2 mr-2 text-white "
-                >
-                  Students
-                </button>
-                <button
-                  type="button"
-                  class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
-                  style={{ marginLeft: "10px" }}
-                >
-                  Partners
-                </button>
+                <Link to="/hiring">
+                  <button
+                    type="button"
+                    class="btn ng-labs-btn section-para mt-2 mr-2 text-white "
+                  >
+                    Students
+                  </button>
+                </Link>
+                <Link to="/partners">
+                  <button
+                    type="button"
+                    class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
+                    style={{ marginLeft: "10px" }}
+                  >
+                    Partners
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
       {/* </div> */}
-      <section className="media-scroll-section d-flex flex-column justify-content-center">
-        <h2 className="align-self-center section-head mt-4">In the Media</h2>
+      <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
+        <h2 className="align-self-center section-head ">In the Media</h2>
         <hr className="mt-2 mb-0 align-self-center heading-hr" />
         <Slider />
       </section>
 
-      <section className="mt-5 our-initiatives">
+      <section className="my-5 our-initiatives">
         <h2 className="text-center section-head">Our Initiatives</h2>
         <hr className="heading-hr" />
         <div class="container mt-5">
@@ -137,29 +141,32 @@ function Home() {
         </div>
       </section>
 
-      <section className="container  text-center w-50 fs-1.1 mt-5">
+      <section className="container  text-center w-50 fs-1.1 my-5">
         <p className="section-para ">
-          <span className="fw-bold">Techalms Consulting:</span> A talent
-          group ready to fly in, solve your problems and leave by leaving happy
-          faces at the clientplace{" "}
+          <span className="fw-bold">Techalms Consulting:</span> A talent group
+          ready to fly in, solve your problems and leave by leaving happy faces
+          at the clientplace{" "}
         </p>
 
         <p className="text-secondary"> Coming soon.........</p>
       </section>
 
       <section>
-        <div class="container-fluid impact mt-5  ">
+        <div class="container-fluid impact py-5  ">
           <div class="container text-center ">
-            <h1 className="text-center section-head Impact-that-matters ">
+            <h2 className="text-center section-head Impact-that-matters ">
               Impact that matters!
               {/* <div className="underliner mt-2"></div> */}
               <hr className="heading-hr" />
-            </h1>
+            </h2>
 
             <div class="row">
               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 <h1 className="count section-head">160+</h1>
-                <p className="section-para fs-1.1"> Software Development Jobs</p>
+                <p className="section-para fs-1.1">
+                  {" "}
+                  Software Development Jobs
+                </p>
               </div>
 
               <div class="col-lg-4 mb-4 mb-lg-0">
@@ -202,9 +209,13 @@ function Home() {
         <h2 className="align-self-center mt-4 section-head">Our Partners</h2>
         <hr className="mt-3 mb-0 align-self-center heading-hr" />
         <PartnerSlider />
-        <h2 className="section-head"> Bring a change! </h2>
-        <div class="d-grid  col-4 mx-auto mt-4 ">
-          <button class="btn ng-labs-btn our-partner-btn section-para text-white partner " type="button">
+
+        <div class="d-flex flex-column align-items-center justify-content-center align-items-center my-5 ">
+          <h2 className="section-head mb-4"> Bring a change! </h2>
+          <button
+            class="btn ng-labs-btn our-partner-btn section-para text-white partner "
+            type="button"
+          >
             Partner with us
           </button>
         </div>
@@ -295,7 +306,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
