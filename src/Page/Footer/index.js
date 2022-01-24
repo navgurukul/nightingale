@@ -103,14 +103,14 @@ import linkedin from "./assets/linkedin.png";
 
 function Footer() {
   return (
-    <div className="footer-container f-Nuni">
+    <div className="footer-container f-Nuni pb-5">
       <div className="inner-container">
         <div className="ng-logo">
           <img src={require("./assets/logo.png").default} />
         </div>
-        <div className="title-container">
-          <div className="row">
-            <div class="col-md-3">
+        <div className="title-container d-flex">
+          <div className="row w-100 justify-content-between">
+            <div class="col-md-2 p-0">
               <ul class="nav-footer fs-1.1">
                 <li>
                   <a href="#" className="row-title">
@@ -131,8 +131,8 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class="col-md-3">
-              <ul class="nav-footer">
+            <div class="col-md-2 p-0">
+              <ul class="nav-footer fs-1.1">
                 <li>
                   <a href="#" className="row-title">
                     Our Initiatives
@@ -152,8 +152,8 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class="col-md-3">
-              <ul class="nav-footer">
+            <div class="col-md-2 p-0">
+              <ul class="nav-footer fs-1.1">
                 <li>
                   <a href="#" className="row-title">
                     Get Involved
@@ -173,7 +173,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2 p-0">
               <ul class="nav-footer">
                 <li>
                   <a href="#" className="row-title">
@@ -209,6 +209,7 @@ function Footer() {
             <div>Legal & Privacy Policy</div>
             <div className="hiring">Hire From Us</div>
           </div>
+          <div className="copyright">© 2021 Navgurukul</div>
           <div className="social-media">
             <div className="facebook">
               <img src={fb} />
@@ -240,7 +241,7 @@ function Footer() {
             Registered as Navgurukul Foundation for Social Welfare
           </p>
           <p className="sub-title">CIN Number: U85300HR2016NPL066468</p>
-          <p className="sub-title">
+          <p className="sub-title m-0">
             Let’s talk at{" "}
             <a href="#" className="email">
               hi@navgurukul.org
