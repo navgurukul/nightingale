@@ -1,10 +1,7 @@
 .CifPage .container {
   text-align: left !important;
 }
-.CifPage h1,
-h2 {
-  font-family: Lusitana !important;
-}
+
 .hero {
   height: 60vh;
   max-height: 60vh;

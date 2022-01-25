@@ -9,9 +9,9 @@ function Designers() {
   const [state, setState] = useState("");
   return (
     <div className="programmers d-flex flex-column justify-content-center">
-      <div className="header w-100">
+      <div className="header w-100 ">
         <div
-          className="alert alert-danger d-flex justify-content-between align-items-center"
+          className="alert alert-danger d-flex justify-content-between py-3 align-items-center"
           role="alert"
         >
           <h2 className="fs-1.5 section-head text-black fw-bold mb-0">
@@ -119,7 +119,7 @@ function Designers() {
         </h2>
         <hr className="heading-hr" />
         <div className="container w-100 my-4 d-flex align-items-center justify-content-center">
-          <div className="row d-flex flex-md-row flex-column justify-content-center w-90">
+          <div className="row d-flex flex-md-row flex-column justify-content-center w-100">
             <div className="col-12 col-md-6 my-2 d-flex justify-content-center">
               <div className="card p-3 d-flex flex-column mh-10 bg-bg-card-1 justify-content-top align-items-center text-left text-sm-center w-100 rounded border-0 ">
                 <h2 className="fw-bold my-1 section-head fs-1.7 text-center">
@@ -130,7 +130,7 @@ function Designers() {
                   the test online by registering their phone number
                 </p>
               </div>
-            </div>
+            </div>  
             {/* <div className="col-2"></div> */}
             <div className="col-12 col-md-6 my-2 d-flex justify-content-center">
               <div className="card p-3 d-flex flex-column mh-10 justify-content-top bg-bg-card-2 align-items-center text-left text-sm-center w-100 rounded border-0 second-card">
@@ -165,9 +165,9 @@ function Designers() {
         </div>
       </div>
       <div className="next-step my-2 my-sm-5 d-flex flex-column align-items-center">
-        <h2 className="fw-semiBold section-head">Ready for the Next Step?</h2>
-        <hr className="mb-3" />
-        <div className="input d-flex flex-column justify-content-center align-items-start text-left p-1 ">
+        <h2 className="fw-semiBold mb-3 section-head">Ready for the Next Step?</h2>
+        {/* <hr className="heading-hr mb-3 mt-3" /> */}
+        <div className="input d-flex flex-column justify-content-center align-items-center mt-3 text-left w-100  ">
           {/* <label className="text-muted my-1 fs-1.1" htmlFor="number">
             Phone Number
           </label>

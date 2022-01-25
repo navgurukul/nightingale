@@ -1,12 +1,15 @@
 .hero-P {
   min-height: 350px;
 }
-
+.programmers button{
+  height: 42px;
+}
 .text-primary {
   color: var(--primary) !important;
 }
 .bg-bg-card-1 {
   background-color: var(--bg-card-1);
+  
 }
 .bg-bg-card-2 {
   background-color: var(--bg-card-2);
@@ -113,7 +116,7 @@ video {
   .programmers-main-video {
     min-height: 204px !important;
   }
-  .hero-P .left-P{
+  .hero-P .left-P {
     margin-top: 1rem !important;
   }
   .left-P h1 {
