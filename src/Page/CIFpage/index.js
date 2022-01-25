@@ -6,25 +6,25 @@ import chat from "./assets/chat.svg"
 import form from "./assets/form.svg"
 import greaterThan from "./assets/greater-than.svg"
 
-function CifPage() {
+function CifPage() {  
   return (
     <div className="CifPage d-flex flex-column justify-content-center">
       <div className="hero w-100 text-white d-flex justify-content-center align-items-center float-left">
         <div className="data d-flex flex-column align-items-center text-center">
-          <h2 className="fw-bold section-head fs-2.7">Code India Fellowships</h2>
+          <h2 className="fw-bold section-head fs-2.6">Code India Fellowships</h2>
           <p className="fs-1.1 mt-2 section-para w-75">
             Nurture Programming skills in the next generation of India's youth
             with your expertise
           </p>
-          <button className="btn btn-primary fw-semiBold f-Nuni text-white mb-1 py-2 px-8 ng-labs-btn fw-bold">
+          <button className="btn btn-primary fw-semiBold f-Nuni text-white fs-1.2 mb-1 py-2 px-8 ng-labs-btn fw-bold">
             Apply to CIF
           </button>
         </div>
       </div>
       <div className="cif text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-3">
-        <h2 className="fw-bold fs-2.7">What’s Code India Fellowhip</h2>
+        <h2 className="fw-bold fs-2">What’s Code India Fellowship</h2>
         <hr className="heading-hr" />
-        <div className="container w-50">
+        <div className="container w-50 mt-3">
           <p className="text-start section-para">
             We are proud to announce the Code India Fellowship, an incredible
             opportunity for the most passionate individuals of our country to
@@ -50,9 +50,9 @@ function CifPage() {
         </div>
       </div>
       <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
-        <h2 className="fw-bold fs-2.7 section-head">What We Offer</h2>
+        <h2 className="fw-bold fs-2 section-head">What We Offer</h2>
         <hr className="heading-hr mb-4" />
-        <div className="container w-50 f-Nuni text-start mb-1">
+        <div className="container w-50 f-Nuni text-start mt-3">
           <div className="row m-1 d-flex ">
             <div className="col-sm-6 px-4 mb-3 position-relative">
               <span className="fw-bold">Stipend: </span>INR 25,000 per month
@@ -84,9 +84,9 @@ function CifPage() {
         </div>
       </div>
       <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
-        <h2 className="fw-bold fs-2.7 section-head">Who We Are Looking For</h2>
-        <hr className="heading-hr mb-4" />
-        <div className="container f-Nuni text-start mb-1 w-50">
+        <h2 className="fw-bold fs-2 section-head">Who We Are Looking For</h2>
+        <hr className="heading-hr mb-3" />
+        <div className="container f-Nuni text-start mb-1 mt-3 w-50">
           <div className="row m-1 d-flex">
             <div className="col-sm-6 px-4 mb-3 position-relative">
               People motivated to bring a positive change in the lives of
@@ -109,11 +109,11 @@ function CifPage() {
         </div>
       </div>
       <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
-        <h2 className="fw-bold fs-2.7 section-head">Role Description</h2>
-        <hr className="heading-hr mb-4" />
-        <div className="container f-Nuni text-start mb-1 w-50">
+        <h2 className="fw-bold fs-2 section-head">Role Description</h2>
+        <hr className="heading-hr mb-3" />
+        <div className="container f-Nuni text-start mb-1 mt-3 w-50">
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7  mb-3 fw-bold">Teaching</h2>
+            <h2 className="fs-1.2  mb-3 fw-bold">Teaching</h2>
             <ul>
               <li>
                 Support young children by teaching programming or coding through
@@ -131,7 +131,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7 mb-3 fw-bold section-head">
+            <h2 className="fs-1.2 mb-3 fw-bold section-head">
               Managing people and resources
             </h2>
             <ul>
@@ -147,7 +147,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7 mb-3 fw-bold section-head">Academic administration</h2>
+            <h2 className="fs-1.2 mb-3 fw-bold section-head">Academic administration</h2>
             <ul>
               <li>
                 Undertaking various administrative responsibilities as required,
@@ -161,7 +161,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.7 mb-3 fw-bold section-head">Documentation and reporting</h2>
+            <h2 className="fs-1.2 mb-3 fw-bold section-head">Documentation and reporting</h2>
             To document your journey as a fellow and prepare a report at the end
             of the Fellowship
           </div>
@@ -169,8 +169,8 @@ function CifPage() {
       </div>
       <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
         <h2 className="fw-bold fs-2.7 section-head">Application Process</h2>
-        <hr className="heading-hr mb-4" />
-        <div className="container text-center w-90 mb-3">
+        <hr className="heading-hr mb-3" />
+        <div className="container text-center w-90 my-3">
           <div className="row f-Nuni my-2 d-flex flex-column flex-md-row align-items-center">
             <div className="column d-flex fw-600 fs-1.1 align-items-center mb-3 mb-md-0 col-md-3 justify-content-md-end justify-content-center">
               <img src={form} alt="" className="mr-0.5" />
@@ -196,12 +196,12 @@ function CifPage() {
           Are you ready to nurture programming skills in the next generation of
           India’s youth with your expertise
         </span>
-        <button className="btn btn-primary fw-600 f-Nuni fs-1.5 mb-3 text-white ng-labs-btn">Apply to CIF</button>
+        <button className="btn btn-primary fw-semiBold f-Nuni text-white fs-1.2 mb-1 py-2 px-8 ng-labs-btn fw-bold">Apply to CIF</button>
       </div>
       <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5 fs-1.1">
         <h2 className="fw-bold fs-2.7">Have Questions?</h2>
-        <hr className="heading-hr mb-4" />
-        <p className="fs-1.3 section-para">Connect with us anytime for more information</p>
+        <hr className="heading-hr mb-3" />
+        <p className="fs-1.3 mt-3 section-para">Connect with us anytime for more information</p>
         <div className="contact row flex-column flex-sm-row w-40 my-2 fw-600 fs-1.2 text-primary">
           <div className="email col f-Nuni text-decoration-none">
             <span className="text-black">Via email: </span>
