@@ -113,7 +113,7 @@ function Designers() {
           </div>
         </div>
       </div> */}
-      <div className="test-p my-2 my-sm-5 d-flex flex-column align-items-center">
+      <div className="test-p my-2 mb-sm-5 d-flex flex-column align-items-center">
         <h2 className="fw-semiBold section-head">
           Conduct a Test in Your Locality
         </h2>
@@ -122,7 +122,7 @@ function Designers() {
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100">
             <div className="col-12 col-md-6 my-2 d-flex justify-content-center">
               <div className="card p-3 d-flex flex-column mh-10 bg-bg-card-1 justify-content-top align-items-center text-left text-sm-center w-100 rounded border-0 ">
-                <h2 className="fw-bold my-1 section-head fs-1.7 text-center">
+                <h2 className="fw-bold my-1 section-head text-center">
                   Online Tests
                 </h2>
                 <p className="my-1 section-para">
@@ -134,7 +134,7 @@ function Designers() {
             {/* <div className="col-2"></div> */}
             <div className="col-12 col-md-6 my-2 d-flex justify-content-center">
               <div className="card p-3 d-flex flex-column mh-10 justify-content-top bg-bg-card-2 align-items-center text-left text-sm-center w-100 rounded border-0 second-card">
-                <h2 className="fw-bold my-1 section-head fs-1.7 text-center">
+                <h2 className="fw-bold my-1 section-head text-center">
                   Offline Tests
                 </h2>
                 <p className="my-1 section-para">
