@@ -1,7 +1,15 @@
 .hero-P {
   min-height: 350px;
 }
-
+.programmers button {
+  height: 42px;
+}
+.programmers h2 {
+  font-size: 32px;
+}
+.programmers .card h2 {
+  font-size: 24px;
+}
 .text-primary {
   color: var(--primary) !important;
 }
@@ -58,9 +66,9 @@ video {
     width: 450px;
     height: 255px;
   }
-  .left-P h1 {
-    font-size: 2rem;
-    margin-bottom: 0 rem;
+  .left-P h2 {
+    font-size: 2rem !important;
+    margin-bottom: 0 rem !important;
     font-weight: 700;
   }
   .students .container .row {
@@ -101,8 +109,8 @@ video {
   }
 }
 @media screen and (max-width: 750px) {
-  .left-P h1 {
-    padding-left: 1.3em;
+  .left-P h2 {
+    padding-left: 1.3em !important;
   }
 }
 @media screen and (max-width: 550px) {
@@ -113,14 +121,14 @@ video {
   .programmers-main-video {
     min-height: 204px !important;
   }
-  .hero-P .left-P{
+  .hero-P .left-P {
     margin-top: 1rem !important;
   }
-  .left-P h1 {
-    padding-inline: 0.5em;
+  .left-P h2 {
+    padding-inline: 0.5em !important;
   }
-  h1 {
-    font-size: 1.8rem;
+  .programmers h2 {
+    font-size: 1.8rem !important;
   }
   .student-video-parent {
     height: fit-content;
@@ -142,7 +150,7 @@ video {
     min-height: 147px !important;
     align-items: center;
   }
-  .left-P h1 {
+  .left-P h2 {
     font-size: 1.8rem;
   }
   .input {
@@ -158,7 +166,7 @@ video {
     width: 300px;
     /* height: 180px; */
   }
-  h1 {
+  h2 {
     font-size: 1.6rem;
   }
   .input .text {
@@ -181,11 +189,11 @@ video {
   .hero-P video {
     width: 260px;
   }
-  .left-P h1 {
-    font-size: 1.4rem;
+  .left-P h2 {
+    font-size: 1.4rem !important;
   }
-  h1 {
-    font-size: 1.25rem;
+  .programmers h2 {
+    font-size: 1.25rem !important;
   }
   .test-p .card {
     min-width: 16rem;
