@@ -181,7 +181,7 @@ function Header() {
               <img className="ml-2" src={externalLink}></img>
             </a>
           </li>
-          <div className="divider language"></div>
+          <div className="divider language mr-3"></div>
           <li className="nav-item dropdown language">
             <a
               className="nav-link dropdown-toggle header-title"

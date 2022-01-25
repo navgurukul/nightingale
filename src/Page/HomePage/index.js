@@ -17,7 +17,7 @@ function Home() {
           <div className="container">
             <div class="row ">
               <div class="col-lg-12 mt-5  ">
-                <h2 class="h1-responsive section-head  home-page-hero-section-data ">
+                <h2 class="h1-responsive section-head fs-2.6 home-page-hero-section-data ">
                   {" "}
                   The Gurukul for the New Age India and its New Generation{" "}
                 </h2>
