@@ -189,7 +189,7 @@ function Partners() {
           </div>
         </div>
       </div>
-      <div className="partners-support-section d-flex flex-column w-100 align-items-center m-0 justify-content-center">
+      <div className="partners-support-section d-flex flex-column w-100 align-items-center mb-5 justify-content-center">
         <h2 className="mt-2 section-head w-50 text-center fs-2">
           Have you taken an interest in what we do and want to support us?
         </h2>

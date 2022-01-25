@@ -15,7 +15,7 @@ function Programmer() {
           role="alert"
         >
           <h2 className="fs-1.5 section-head text-black fw-bold mb-0">
-            Programmer’ Gurukul
+            Programmers’ Gurukul{" "}
           </h2>
           <span className="desktop d-block f-Nuni  fs-1.2 text-primary fw-bold">
             Change Gurukul
