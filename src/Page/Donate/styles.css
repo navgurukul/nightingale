@@ -246,7 +246,7 @@
   font-size: 18px;
 }
 .donation-impact-data-2 {
-  margin-top: 200px !important;
+  margin-top: 270px !important;
 }
 .section-donate-title {
   margin-top: 80px;
@@ -290,10 +290,6 @@
   font-weight: 500;
   margin-top: 25px;
   width: 352px;
-}
-
-.donate-button-container {
-  padding-left: 115px;
 }
 
 .donate-button {
