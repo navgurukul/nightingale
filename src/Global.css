@@ -76,6 +76,9 @@ input:focus {
 .fs-2\.8 {
   font-size: 2.85rem !important;
 }
+.fs-3\.5 {
+  font-size: 3.5rem !important;
+}
 .mt-9 {
   margin-top: 9rem !important;
 }
@@ -127,6 +130,7 @@ input:focus {
   border-radius: 8px;
   font-family: Nunito Sans !important;
   font-weight: 700;
+  height: 48px;
 }
 .ng-labs-btn:hover {
   background-color: var(--btnHover) !important;

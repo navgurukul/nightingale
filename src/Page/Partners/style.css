@@ -9,6 +9,7 @@
   border-radius: 8px;
   width: 430px;
   min-width: 250px;
+  transition: all ease-in 0.3s;
 }
 .partners .btn {
   padding: 0.5rem 0;
@@ -17,22 +18,63 @@
 .partners .all-partners-row {
   flex-wrap: wrap;
 }
-@media screen and (max-width:550px) {
+.partners .section-head {
+  font-family: Lusitana !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+}
+@media screen and (max-width: 1640px) {
+  .partners .card {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .all-partners {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .partners .card {
+    width: 320px;
+  }
+  .social-media-icons{
+    width: 30% !important;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .partners .card {
+    width: 300px;
+  }
+  .all-partners {
+    width: 95% !important;
+  }
+}
+@media screen and (max-width: 970px) {
+  .partners .card {
+    width: 480px;
+  }
+  .social-media-icons{
+    width: 20% !important;
+  }
+}
+@media screen and (max-width: 550px) {
   .partner-content-data {
     width: 70% !important;
   }
-  .partners h2{
-      font-size: 1.3rem;
+  .partners h2 {
+    font-size: 1.3rem;
   }
-  .partners h3{
-      font-size: 1.3rem;
-      margin-bottom: 2px !important;
+  .partners h3 {
+    font-size: 1.3rem;
+    margin-bottom: 2px !important;
   }
-  .partners-support-section h2{
-      width: 90% !important;
+  .partners-support-section h2 {
+    width: 90% !important;
   }
   .partners .btn {
     padding: 0.3rem 4rem;
     font-size: 1rem !important;
+  }.social-media-icons{
+    width: 30% !important;
   }
 }
