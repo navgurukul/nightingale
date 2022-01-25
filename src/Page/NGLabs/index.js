@@ -17,7 +17,7 @@ function NgLabs() {
               <h2 className="mb-3 fs-2.25 section-head ">
                 Nurturing High-Impact Projects in the Non-Profit Space
               </h2>
-              <p className="f-Nuni">
+              <p className="f-Nuni mb-3">
                 We aim to work on various experiments and scale the ones that
                 become successful. NavGurukul labs will seed open source
                 projects that we believe can directly or indirectly contribute
@@ -39,7 +39,7 @@ function NgLabs() {
       <div className="projects d-flex flex-column justify-content-center align-items-center">
         <h2 className="mb-0 fs-2.5 section-head">Current Projects</h2>
         <hr className="heading-hr" />
-        <div className="container w-70 my-5 mb-2">
+        <div className="container w-50 my-5 mb-2">
           <div className="row">
             <div className="col d-flex justify-content-center align-items-center my-3">
               <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">

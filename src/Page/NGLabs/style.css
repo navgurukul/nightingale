@@ -14,7 +14,7 @@
 }
 .ng-labs .btn {
   padding: 0.5rem 7rem;
-  margin-block: 0.5em;
+  /* margin-block: 0.5em; */
   font-size: 1.1em;
 }
 .ng-labs hr {
@@ -33,7 +33,7 @@
   font-family: Lusitana;
 }
 .ng-labs .projects{
-  margin-top: 14rem !important;
+  margin-top: 14rem ;
 }
 .timeline img {
   height: 30em;
@@ -75,6 +75,9 @@
   .main .btn {
     padding: 0.5em 5em;
     font-size: 1em;
+  }
+  .ng-labs .main{
+    margin-top: 3rem !important;
   }
   .projects {
     margin-top: 5em !important;
