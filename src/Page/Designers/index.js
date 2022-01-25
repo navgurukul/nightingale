@@ -149,8 +149,8 @@ function Designers() {
       </div>
       <div className="students my-2 my-sm-5 d-flex flex-column align-items-center">
         <h2 className="fw-semiBold">Hear From Our Students</h2>
-        <hr className="heading-hr" />
-        <div className="container w-100 mt-3 mt-sm-5 d-flex justify-content-center">
+        <hr className="heading-hr mb-3" />
+        <div className="container w-100 mt-3  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
             <div className="col-12 col-md-4 my-3 d-flex justify-content-center ">
               <video src={video} width="330px" controls></video>
