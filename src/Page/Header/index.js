@@ -104,7 +104,7 @@ function Header() {
         <ul className="navbar-nav nav-font-color">
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle header-title"
+              className="nav-link dropdown-toggle header-title mr-3"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -135,7 +135,7 @@ function Header() {
           </li>
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle header-title"
+              className="nav-link dropdown-toggle header-title mr-3"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -155,8 +155,9 @@ function Header() {
               <a className="dropdown-item" href="/donate">
                 Donate
               </a>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item mr-2" href="#">
                 Career
+                <img className="ml-2" src={externalLink}></img>
               </a>
               <a className="dropdown-item" href="#">
                 Volunteer
@@ -165,18 +166,19 @@ function Header() {
           </li>
           <li className="nav-item">
             {/* <a className="nav-link disabled header-title" href="#"> */}
-            <a className="nav-link header-title" href="/hiring">
+            <a className="nav-link header-title mr-3" href="/hiring">
               Hire from NG
             </a>
           </li>
           <li className="nav-item">
             {/* <a className="nav-link disabled header-title" href="#"> */}
             <a
-              className="nav-link header-title"
+              className="nav-link header-title d-flex align-items-center mr-3"
               href="https://www.merakilearn.org/"
               target="_blank"
             >
               Meraki
+              <img className="ml-2" src={externalLink}></img>
             </a>
           </li>
           <div className="divider language"></div>
@@ -193,6 +195,9 @@ function Header() {
               English
             </a>
             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a className="dropdown-item" href="#">
+                English
+              </a>
               <a className="dropdown-item" href="#">
                 Hindi
               </a>

@@ -36,12 +36,12 @@ function NgHiring() {
             </p>
           </div>
         </section>
-        <section className="hiring-page-section my-5">
+        {/* <section className="hiring-page-section my-5">
           <h2 className="hiring-section-title section-head mt-3">
             Meet Our Recent Graduates
           </h2>
           <hr className="heading-hr" />
-        </section>
+        </section> */}
       </div>
     </main>
   );
