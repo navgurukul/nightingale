@@ -19,6 +19,7 @@
 }
 .navbar a:active{
     background-color: transparent;
+    color: black;
 }
 
 /* ul.nav-font-color > li a {
