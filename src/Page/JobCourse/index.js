@@ -17,7 +17,7 @@ function JobCourse() {
       <div className="container ">
         <div className="row">
           <div className="col my-3 col-md-6">
-            <Link to="/programmer ">
+            <Link to="/programmer">
               <div className="card programmer-img-card">
                 <div class="card-body p-0 pt-3">
                   <img
