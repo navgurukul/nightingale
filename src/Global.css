@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 * {
   font-family: "Nunito Sans", sans-serif !important;
+  /* font-size: 1.13rem; */
+}
+*:focus-visible,
+*:focus {
+  outline: none;
 }
 h1,
 h2,
@@ -131,6 +136,7 @@ input:focus {
   font-family: Nunito Sans !important;
   font-weight: 700;
   height: 48px;
+  font-size: 1.13em;
 }
 .ng-labs-btn:hover {
   background-color: var(--btnHover) !important;

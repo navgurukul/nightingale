@@ -209,9 +209,6 @@
 .donate-page {
   background-color: #fff;
   text-align: center;
-  font-family: "Lusitana", Fallback, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .donate-page .main-hr {
   width: 6rem;
@@ -234,7 +231,7 @@
 }
 .middleImg {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -285,7 +282,7 @@
   background-color: #f05f40;
   border: 1px solid #f05f40;
   color: #fff;
-  padding: 10px 13px 10px 13px;
+  /* padding: 10px 13px 10px 13px; */
   border-radius: 5px;
   font-weight: 500;
   margin-top: 25px;
@@ -433,9 +430,8 @@
   flex-wrap: wrap;
 }
 @media screen and (max-width: 667px) {
-  .donate-underliner {
-    margin-left: 160px;
-    width: 50px;
+  .donate-page button{
+    font-size: 1rem;
   }
   .middleImg {
     display: none;

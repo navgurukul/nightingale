@@ -31,7 +31,7 @@ function Partners() {
           backbone of our operations. Our partners share our values, our
           partners share our impact.
         </div>
-        <button className="btn btn-primary section-para ng-labs-btn fs-1.3 mt-4">
+        <button className="btn btn-primary section-para ng-labs-btn mt-4">
           Partner With Us
         </button>
       </div>
@@ -193,7 +193,7 @@ function Partners() {
         <h2 className="mt-2 section-head w-50 text-center fs-2">
           Have you taken an interest in what we do and want to support us?
         </h2>
-        <button className="btn btn-primary section-para ng-labs-btn fs-1.2 mt-4">
+        <button className="btn btn-primary section-para ng-labs-btn mt-4">
           Contact Us for CSR Enquiries
         </button>
       </div>

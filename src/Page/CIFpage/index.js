@@ -16,7 +16,7 @@ function CifPage() {
             Nurture Programming skills in the next generation of India's youth
             with your expertise
           </p>
-          <button className="btn btn-primary fw-semiBold f-Nuni text-white fs-1.2 mb-1 py-2 px-8 ng-labs-btn fw-bold">
+          <button className="btn btn-primary fw-semiBold f-Nuni text-white mb-1 py-2 px-8 ng-labs-btn fw-bold">
             Apply to CIF
           </button>
         </div>
@@ -196,7 +196,7 @@ function CifPage() {
           Are you ready to nurture programming skills in the next generation of
           India’s youth with your expertise
         </span>
-        <button className="btn btn-primary fw-semiBold f-Nuni text-white fs-1.2 mb-1 py-2 px-8 ng-labs-btn fw-bold">Apply to CIF</button>
+        <button className="btn btn-primary fw-semiBold f-Nuni text-white mb-1 py-2 px-8 ng-labs-btn fw-bold">Apply to CIF</button>
       </div>
       <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5 fs-1.1">
         <h2 className="fw-bold fs-2.7">Have Questions?</h2>

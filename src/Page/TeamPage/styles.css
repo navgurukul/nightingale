@@ -48,6 +48,9 @@
   border: 1px solid var(--primary);
   color: var(--primary);
   transition: all ease-in 0.2s;
+  font-size: 1.13rem;
+  font-weight: 700;
+  border-radius: 8px;
 }
 
 .volunteer-button:hover {

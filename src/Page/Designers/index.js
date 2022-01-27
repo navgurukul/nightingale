@@ -54,7 +54,7 @@ function Designers() {
                 and potential.
               </p>
               <button
-                className="btn btn-primary text-white w-100 my-1 fs-sm-1.2 fs-1.1 ng-labs-btn"
+                className="btn btn-primary text-white w-100 my-1 fs-sm-1.2  ng-labs-btn"
                 onClick={() => {
                   setState("");
                 }}
@@ -181,7 +181,7 @@ function Designers() {
             }}
           /> */}
           <button
-            className="btn btn-primary f-Nuni fw-semiBold text-white w-100 my-1 fs-1.1 ng-labs-btn"
+            className="btn btn-primary f-Nuni fw-semiBold text-white w-100 my-1 ng-labs-btn"
             onClick={() => {
               setState("");
             }}

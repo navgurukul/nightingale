@@ -151,9 +151,9 @@ function Home() {
         <p className="text-secondary"> Coming soon.........</p>
       </section>
 
-      <section>
-        <div class="container-fluid impact py-5  ">
-          <div class="container text-center ">
+      <section className="container-fluid impact">
+        <div class=" py-5  w-100">
+          <div class="container text-center w-100">
             <h2 className="text-center section-head Impact-that-matters ">
               Impact that matters!
               {/* <div className="underliner mt-2"></div> */}
@@ -162,7 +162,7 @@ function Home() {
 
             <div class="row">
               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <h1 className="count section-head">160+</h1>
+                <h2 className="count section-head">160+</h2>
                 <p className="section-para fs-1.1">
                   {" "}
                   Software Development Jobs
@@ -175,12 +175,12 @@ function Home() {
                     className="mx-auto impactellipse"
                     src={require("./assets/impactellipse.png").default}
                   />
-                  <h1 className="mt-5 count section-head"> 5 </h1>
+                  <h2 className="mt-5 count section-head"> 5 </h2>
                   <p className="section-para fs-1.1">States across India </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-4 mb-lg-0 ">
-                <h1 className="count section-head">400+</h1>
+                <h2 className="count section-head">400+</h2>
                 <p className="section-para fs-1.1"> Online Students </p>
               </div>
             </div>

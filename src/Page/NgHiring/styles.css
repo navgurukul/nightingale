@@ -18,6 +18,9 @@
   font-size: 18px;
   line-height: 28px;
 }
+.ng-hiring-page a:hover {
+  color: var(--btnHover);
+}
 
 @media screen and (max-width: 667px) {
   .hiring-page-content {
