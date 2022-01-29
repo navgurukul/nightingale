@@ -34,6 +34,13 @@
   color: black;
   transition: all ease 0.2s;
 }
+/* .nav-item{
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+.nav-item:hover {
+  border-bottom: 2px solid var(--primary);
+} */
 .nav-link:hover,
 .navbar a:hover {
   color: var(--primary) !important;

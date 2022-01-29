@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 // import JobCourse from "../JobCourse";
+import { FiExternalLink } from "react-icons/fi";
 import "./styles.css";
 import externalLink from "./assets/external-link.png";
 
@@ -88,7 +89,7 @@ function Header() {
                 href="https://www.merakilearn.org/"
                 target="_blank"
               >
-                Learn Online with Meraki
+                Learn Online with Meraki <FiExternalLink className="ml-2" />
               </a>
               {/* <div className="dropdown-divider"></div> */}
               <a className="dropdown-item" href="/cif">
@@ -133,7 +134,7 @@ function Header() {
                 href="https://medium.com/navgurukul"
               >
                 Blog
-                <img className="ml-2" src={externalLink}></img>
+                <FiExternalLink className="ml-2" />
               </a>
             </div>
           </li>
@@ -165,10 +166,14 @@ function Header() {
                 target="_blank"
               >
                 Career
-                <img className="ml-2" src={externalLink}></img>
+                <FiExternalLink className="ml-2" />
               </a>
-              <a className="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform" target="_blank">
-                Volunteer
+              <a
+                className="dropdown-item"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform"
+                target="_blank"
+              >
+                Volunteer <FiExternalLink className="ml-2" />
               </a>
             </div>
           </li>
@@ -186,7 +191,7 @@ function Header() {
               target="_blank"
             >
               Meraki
-              <img className="ml-2" src={externalLink}></img>
+              <FiExternalLink className="ml-2" />
             </a>
           </li>
           <div className="divider language mr-3"></div>
