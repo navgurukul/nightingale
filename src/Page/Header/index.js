@@ -7,7 +7,7 @@ function Header() {
   const [toggle, setToggle] = useState(true);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-color">
+    <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
       <a class="navbar-brand" href="/">
         <img
           src={require("./assets/logo.png").default}
