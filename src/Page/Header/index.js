@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import JobCourse from "../JobCourse";
 import "./styles.css";
-import externalLink from "./assets/external-link.png"
+import externalLink from "./assets/external-link.png";
 
 function Header() {
   const [toggle, setToggle] = useState(true);
@@ -127,7 +127,11 @@ function Header() {
               {/* <a className="dropdown-item" href="/gallery">
                 Gallery
               </a> */}
-              <a className="dropdown-item mr-2" target="_blank" href="https://medium.com/navgurukul">
+              <a
+                className="dropdown-item mr-2"
+                target="_blank"
+                href="https://medium.com/navgurukul"
+              >
                 Blog
                 <img className="ml-2" src={externalLink}></img>
               </a>
@@ -155,11 +159,15 @@ function Header() {
               <a className="dropdown-item" href="/donate">
                 Donate
               </a>
-              <a className="dropdown-item mr-2" href="#">
+              <a
+                className="dropdown-item mr-2"
+                href="https://admissions.navgurukul.org/"
+                target="_blank"
+              >
                 Career
                 <img className="ml-2" src={externalLink}></img>
               </a>
-              <a className="dropdown-item" href="#">
+              <a className="dropdown-item" href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform" target="_blank">
                 Volunteer
               </a>
             </div>
