@@ -156,7 +156,7 @@
 }
 @media (max-width: 576px) {
   .card-main-text {
-    margin-top: 150px;
+    margin-top: 130px;
   }
   .home-page-hero-section-data {
     max-width: 600px;
@@ -166,6 +166,9 @@
   .home-page-bg,
   .rgba-black-strong {
     height: 400px;
+  }
+  .home-page-bg h2{
+    font-size: 1.5rem !important;
   }
 }
 
