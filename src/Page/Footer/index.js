@@ -100,6 +100,8 @@ import "./styles.css";
 import fb from "./assets/fb.png";
 import twitter from "./assets/twitter.png";
 import linkedin from "./assets/linkedin.png";
+import { Link } from "react-router-dom";
+import { FiExternalLink } from "react-icons/fi";
 
 function Footer() {
   return (
@@ -111,77 +113,85 @@ function Footer() {
         <div className="title-container d-flex">
           <div className="row w-100 justify-content-between">
             <div class="col-md-2 p-0">
-              <ul class="nav-footer fs-1.1">
+              <ul class="nav-footer ">
+                <li className="row-title">About</li>
                 <li>
-                  <a href="#" className="row-title">
-                    About
+                  <Link to="/about">Our Story</Link>
+                </li>
+                <li>
+                  <Link to="/team">Team</Link>
+                </li>
+                <li>
+                  <Link to="/">Gallary</Link>
+                </li>
+                <li>
+                  <a
+                    href="https://medium.com/navgurukul"
+                    target="_blank"
+                    className="d-flex align-items-center"
+                  >
+                    Blog <FiExternalLink className="ml-2" />
                   </a>
-                </li>
-                <li>
-                  <a href="#">Our Story</a>
-                </li>
-                <li>
-                  <a href="#">Team</a>
-                </li>
-                <li>
-                  <a href="#">Gallery</a>
-                </li>
-                <li>
-                  <a href="#">Blog</a>
                 </li>
               </ul>
             </div>
             <div class="col-md-2 p-0">
-              <ul class="nav-footer fs-1.1">
+              <ul class="nav-footer ">
+                <li className="row-title">Our Initiatives</li>
                 <li>
-                  <a href="#" className="row-title">
-                    Our Initiatives
+                  <Link to="/job-course">Guaranteed Job Courses</Link>
+                </li>
+                <li>
+                  <a
+                    href="https://www.merakilearn.org/"
+                    target="_blank"
+                    className="d-flex align-items-center"
+                  >
+                    Meraki <FiExternalLink className="ml-2" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">Guaranteed Job Courses</a>
+                  <Link to="/cif">Code India Fellowships</Link>
                 </li>
                 <li>
-                  <a href="#">Meraki</a>
-                </li>
-                <li>
-                  <a href="#">Code India Fellowships</a>
-                </li>
-                <li>
-                  <a href="#">NG Labs</a>
+                  <Link to="/nglabs">NG Labs</Link>
                 </li>
               </ul>
             </div>
             <div class="col-md-2 p-0">
-              <ul class="nav-footer fs-1.1">
-                <li>
-                  <a href="#" className="row-title">
-                    Get Involved
-                  </a>
-                </li>
+              <ul class="nav-footer ">
+                <li className="row-title">Get Involved</li>
                 <li className="titlesss">
-                  <a href="#">Be a Partner</a>
+                  <Link to="/partners">Be a Partner</Link>
                 </li>
                 <li>
-                  <a href="#">Donate</a>
+                  <Link to="/donate">Donate</Link>
                 </li>
                 <li>
-                  <a href="#">Careers</a>
+                  <a
+                    href="https://admissions.navgurukul.org/"
+                    target="_blank"
+                    className="d-flex align-items-center"
+                  >
+                    Careers <FiExternalLink className="ml-2" />
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Volunteer</a>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform"
+                    target="_blank"
+                    className="d-flex align-items-center"
+                  >
+                    Volunteer <FiExternalLink className="ml-2" />
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="col-md-2 p-0">
               <ul class="nav-footer">
+                <li className="row-title">Learn Online</li>
                 <li>
-                  <a href="#" className="row-title">
-                    Learn Online
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                  <a href="https://www.merakilearn.org/" target="_blank">
                     <div className="merakilogo">
                       <img src={require("./assets/Merakilogo.png").default} />
                     </div>
@@ -191,7 +201,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.merakilearn.org/" target="_blank">
                     <div className="playstore-logo">
                       <img src={require("./assets/playstore.png").default} />
                     </div>

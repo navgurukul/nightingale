@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { useEffect } from "react";
+import { withRouter } from "react-router-dom";
 import Header from "../Page/Header";
 import GetInvolved from "../Page/GetInvolved";
 import Footer from "../Page/Footer";
@@ -15,10 +17,24 @@ import Partners from "../Page/Partners";
 import Home from "../Page/HomePage";
 import Designers from "../Page/Designers";
 
+function ScrollToTop({ history }) {
+  useEffect(() => {
+    const unlisten = history.listen(() => {
+      window.scrollTo(0, 0);
+    });
+    return () => {
+      unlisten();
+    };
+  }, []);
+
+  return null;
+}
+const Scroller = withRouter(ScrollToTop);
 function Routing() {
   return (
     <>
       <Header />
+      <Scroller />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={AboutPage} />

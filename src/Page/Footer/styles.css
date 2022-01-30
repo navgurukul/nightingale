@@ -68,13 +68,14 @@ ul.nav-footer > li a {
 
 .playstore-logo {
   position: absolute;
-  padding-top: 35px;
+  padding-top: 40px;
+  padding-left: 3px;
 }
 
 .playstore {
   position: absolute;
-  font-size: 13px;
-  padding: 40px 0 0 25px;
+  /* font-size: 13px; */
+  padding: 42px 0 0 25px;
   font-weight: 400;
   color: #2e2e2e;
 }
