@@ -38,16 +38,16 @@ ul.nav-footer {
   /* font-size: 1.1rem; */
 }
 
-ul.nav-footer > li a {
+.footer-container a {
   color: #2e2e2e;
 }
 
-.row-title {
+.footer-container .row-title {
   font-weight: 600;
   color: #2e2e2e;
 }
 
-.row-title:hover {
+.footer-container .row-title:hover {
   text-decoration: none;
   color: #2e2e2e;
 }
@@ -57,22 +57,22 @@ ul.nav-footer > li a {
     color: #2E2E2E;
 } */
 
-.sub-row-title:hover {
+.footer-container .sub-row-title:hover {
   text-decoration: none;
   color: #2e2e2e;
 }
 
-.col-md-3 .row-sub-title {
+.footer-container .col-md-3 .row-sub-title {
   padding: 12px 120px 0 120px;
 }
 
-.playstore-logo {
+.footer-container .playstore-logo {
   position: absolute;
   padding-top: 40px;
   padding-left: 3px;
 }
 
-.playstore {
+.footer-container .playstore {
   position: absolute;
   /* font-size: 13px; */
   padding: 42px 0 0 25px;
@@ -80,9 +80,9 @@ ul.nav-footer > li a {
   color: #2e2e2e;
 }
 
-.footer-divider {
-  border: 1px solid #cdcdcd;
-  background-color: #cdcdcd;
+.footer-container .footer-divider {
+  border: 1px solid #2e2e2e;
+  background-color: #2e2e2e;
 }
 
 .footer-details {
@@ -90,24 +90,23 @@ ul.nav-footer > li a {
   letter-spacing: 0.3px;
   text-align: center;
   padding-top: 20px;
-
 }
 /* .footer-details p {
   margin: 0;
 } */
-.title {
+.footer-container .title {
   font-size: 15px;
   font-weight: 600;
   line-height: 20px;
 }
 
-.sub-title {
+.footer-container .sub-title {
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
 }
 
-.details {
+.footer-container .details {
   display: flex;
   padding-top: 25px;
   align-items: center;
@@ -115,40 +114,40 @@ ul.nav-footer > li a {
   flex-wrap: wrap-reverse;
 }
 
-.social-media {
+.footer-container .social-media {
   display: flex;
   /* padding-left: 1195px; */
   margin-block: 30px;
 }
 
-.facebook {
+.footer-container .facebook {
   margin-right: 17px;
 }
 
-.linkedin {
+.footer-container .linkedin {
   margin-right: 17px;
 }
 
-.policy {
+.footer-container .policy {
   display: flex;
   /* position: absolute; */
   /* align-items: center; */
 }
 
-.hiring {
+.footer-container .hiring {
   margin-left: 20px;
 }
 
-.navgurukul {
+.footer-container .navgurukul {
   position: absolute;
   margin-left: 600px;
 }
 
-.email {
+.footer-container .email {
   color: #eb835b;
 }
 
-.email:hover {
+.footer-container .email:hover {
   text-decoration: none;
   color: #eb835b;
 }
