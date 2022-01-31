@@ -3,7 +3,7 @@
   right: 0;
   height: 384px;
 }
-.ng-labs a{
+.ng-labs a {
   color: black;
   text-decoration: none;
 }
@@ -37,11 +37,14 @@
 .ng-labs .card h2 {
   font-family: Lusitana;
 }
-.ng-labs .projects{
-  margin-top: 14rem ;
+.ng-labs .projects {
+  margin-top: 14rem;
 }
 .timeline img {
   height: 458px;
+}
+.ng-labs .idea {
+  margin-bottom: 9.875rem;
 }
 .idea button {
   width: 352px;
@@ -81,7 +84,7 @@
     padding: 0.5em 5em;
     font-size: 1em;
   }
-  .ng-labs .main{
+  .ng-labs .main {
     margin-top: 3rem !important;
   }
   .projects {
@@ -130,7 +133,7 @@
     margin-bottom: 1rem;
     font-size: 0.95em;
   }
-  .idea button{
+  .idea button {
     max-width: 250px;
   }
 }

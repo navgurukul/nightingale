@@ -67,14 +67,14 @@ function NgLabs() {
           </div>
         </div>
       </div>
-      <div className="timeline my-4 d-flex flex-column justify-content-center align-items-center mb-1">
+      {/* <div className="timeline my-4 d-flex flex-column justify-content-center align-items-center mb-1">
         <h2 className="section-head fs-2">Project Timeline (Next 12 months)</h2>
         <hr className="heading-hr" />
         <div className="container w-75 my-5 mb-2 d-flex flex-column justify-content-center align-items-center">
           <img src={Timeline} alt="" className="mb-5" />
         </div>
-      </div>
-      <div className="idea d-flex flex-column justify-content-center align-items-center mb-4">
+      </div> */}
+      <div className="idea d-flex flex-column justify-content-center align-items-center">
         <h2 className="mb-4 section-head fs-2">Have an Idea in Works?</h2>
 
         <button className="btn btn-primary f-Nuni fw-semiBold text-white ng-labs-btn">
