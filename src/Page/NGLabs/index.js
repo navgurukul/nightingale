@@ -46,8 +46,8 @@ function NgLabs() {
               <a href="https://www.merakilearn.org/">
                 <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
                   <img src={icon1} alt="" />
-                  <h2 className="fs-1.7 mt-2 fw-bold">Meraki</h2>
-                  <p className="fs-1.2 f-Nuni fw-400">
+                  <h2 className="fs-1.5 mt-3 fw-bold">Meraki</h2>
+                  <p className="fw-400">
                     Some outrageous impact of the project
                   </p>
                 </div>
@@ -57,8 +57,8 @@ function NgLabs() {
               <a href="#">
                 <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
                   <img src={icon2} alt="" />
-                  <h2 className="fs-1.7 mt-2 fw-bold">Conscious Ad Network</h2>
-                  <p className="fs-1.2 f-Nuni fw-400">
+                  <h2 className="fs-1.5 mt-3 fw-bold">Conscious Ad Network</h2>
+                  <p className="fw-400">
                     Some outrageous impact of the project
                   </p>
                 </div>
