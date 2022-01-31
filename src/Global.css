@@ -107,6 +107,10 @@ input:focus {
 .w-70 {
   width: 70% !important;
 }
+.w-60 {
+  width: 60% !important;
+  /* justify-content: ; */
+}
 .w-80 {
   width: 80% !important;
 }
@@ -138,7 +142,7 @@ input:focus {
   font-family: Nunito Sans !important;
   font-weight: 700;
   height: 48px;
-  font-size: 1.13em;
+  font-size: 1.125em;
 }
 .ng-labs-btn:hover {
   background-color: var(--btnHover) !important;

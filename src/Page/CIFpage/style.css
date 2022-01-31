@@ -1,9 +1,6 @@
 .CifPage .container {
   text-align: left !important;
 }
-.CifPage button{
-  height: 48px;
-}
 .CifPage .hero {
   height: 60vh;
   max-height: 60vh;
@@ -14,7 +11,7 @@
   background-origin: border-box;
 }
 /* .CifPage .hero h2 { */
-  /* font-size: 42px; */
+/* font-size: 42px; */
 
 .CifPage .container .col-sm-6::before {
   background-image: url("./assets/Shape.svg");
@@ -53,6 +50,11 @@
 .CifPage .btn {
   padding: 0.25rem 6rem;
 }
+@media screen and (max-width: 1500px) {
+  .application .container {
+    width: 70% !important;
+  }
+}
 @media screen and (max-width: 1100px) {
   .CifPage .hero {
     height: 50vh;
@@ -65,6 +67,13 @@
   }
   .application .container {
     width: 100% !important;
+    margin-inline: 20px;
+  }
+  .application .row {
+    flex-direction: column !important;
+  }
+  .sign {
+    transform: rotate(90deg);
   }
   .application span {
     width: 50% !important;
@@ -74,6 +83,9 @@
   }
 }
 @media screen and (max-width: 760px) {
+  .CifPage{
+    overflow-x: hidden;
+  }
   .CifPage .hero {
     height: 40vh;
   }
@@ -140,7 +152,7 @@
   }
 }
 @media screen and (max-width: 380px) {
-  .CifPage .hero{
+  .CifPage .hero {
     height: auto;
   }
   .hero .data h2 {
