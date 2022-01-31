@@ -75,7 +75,7 @@ ul.nav-footer {
 .footer-container .playstore {
   position: absolute;
   /* font-size: 13px; */
-  padding: 42px 0 0 25px;
+  margin: 42px 0 0 25px;
   font-weight: 400;
   color: #2e2e2e;
 }
@@ -84,12 +84,14 @@ ul.nav-footer {
   border: 1px solid #2e2e2e;
   background-color: #2e2e2e;
 }
-
+.footer-container .copyright {
+  margin-bottom: 10px;
+}
 .footer-details {
   color: #2e2e2e;
   letter-spacing: 0.3px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 /* .footer-details p {
   margin: 0;
@@ -108,7 +110,7 @@ ul.nav-footer {
 
 .footer-container .details {
   display: flex;
-  padding-top: 25px;
+  padding-top: 32px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
@@ -116,20 +118,28 @@ ul.nav-footer {
 
 .footer-container .social-media {
   display: flex;
+  margin-bottom: 10px;
   /* padding-left: 1195px; */
-  margin-block: 30px;
+  /* margin-block: 30px; */
 }
 
 .footer-container .facebook {
   margin-right: 17px;
 }
-
+.socialmedia-icon {
+  cursor: pointer;
+  transition: all ease 2s;
+}
+.footer-container .socialmedia-icon:hover .svg-background {
+  fill: #ffffff;
+}
 .footer-container .linkedin {
   margin-right: 17px;
 }
 
 .footer-container .policy {
   display: flex;
+  margin-bottom: 10px;
   /* position: absolute; */
   /* align-items: center; */
 }
@@ -169,8 +179,8 @@ ul.nav-footer {
   .details {
     padding: 10px 0 0 20px;
     flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-end !important;
   }
   .navgurukul {
     /* position: absolute; */
