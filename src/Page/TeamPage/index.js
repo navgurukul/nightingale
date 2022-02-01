@@ -173,7 +173,7 @@ function TeamPage() {
                 members.teamMembers
                   ? {
                       borderBottom: "3px solid #f05f40",
-                      fontWeight: "bold !important",
+                      fontWeight: "bold",
                     }
                   : {}
               }
@@ -190,7 +190,9 @@ function TeamPage() {
                   : "section-para core-team-members members-selector"
               }
               style={
-                members.volunteers ? { borderBottom: "3px solid #f05f40" } : {}
+                members.volunteers
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
               }
             >
               Our Supporters

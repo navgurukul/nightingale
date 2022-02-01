@@ -23,7 +23,6 @@
 
 .team-page-content {
   font-weight: 400;
-  font-size: 18px;
   line-height: 28px;
   /* width: ; */
   /* margin: 30px 425px 0 500px; */
@@ -133,7 +132,6 @@
 }
 .members-selector {
   cursor: pointer;
-  font-size: 20px;
   border: 2px solid transparent;
   transition: all ease-in-out 0.2s;
 }
@@ -156,7 +154,6 @@
   
 }
 .team-info-card-title {
-  font-size: 18px;
   line-height: 28px;
   font-weight: bold;
   margin-top: 12px;
