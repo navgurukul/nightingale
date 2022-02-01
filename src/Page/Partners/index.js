@@ -46,9 +46,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -57,9 +58,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -68,9 +70,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
           </div>
@@ -81,9 +84,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -92,9 +96,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -103,9 +108,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
           </div>
@@ -124,9 +130,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -135,9 +142,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -146,9 +154,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
           </div>
@@ -159,9 +168,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -170,9 +180,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
@@ -181,9 +192,10 @@ function Partners() {
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
               </p>
-              <div className="social-media-icons d-flex justify-content-between w-25 mb-3">
+              <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
                 <img className="social-icon" src={linkedin}></img>
                 <img className="social-icon" src={twitter}></img>
+                <img className="social-icon" src={www}></img>
               </div>
             </div>
           </div>
