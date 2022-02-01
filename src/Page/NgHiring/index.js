@@ -29,7 +29,7 @@ function NgHiring() {
           <div className="hiring-page-content">
             <p className="section-para mb-5">
               Contact us directly at{" "}
-              <a href="#" className="link">
+              <a href="mailto:tnp@navgurukul.org" className="link">
                 tnp@navgurukul.org
               </a>{" "}
               for hiring or freelancing projects.

@@ -229,7 +229,7 @@ function CifPage() {
         <div className="contact row flex-column flex-sm-row w-40 my-2 fw-600 text-primary">
           <div className="email col text-decoration-none">
             <span className="text-black">Via email: </span>
-            <a href="mailto:cif@navgurukul.org" className="text-primary">
+            <a href=":cif@navgurukul.org" className="text-primary">
               cif@navgurukul.org
             </a>{" "}
           </div>
