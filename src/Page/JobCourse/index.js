@@ -13,7 +13,7 @@ function JobCourse() {
           low-income families.
         </p>
       </div>
-      <p className="job-course-subtitle">Choose Your Gurukul</p>
+      <p className="job-course-subtitle fs-1.5">Choose Your Gurukul</p>
       <div className="container ">
         <div className="row">
           <div className="col my-3 col-md-6">
@@ -24,7 +24,7 @@ function JobCourse() {
                     src={require("./assets/programmers.png").default}
                     className="job-course-img"
                   />
-                  <p className="mt-3 mb-3 px-2 fs-1.1 section-para">
+                  <p className="mt-3 mb-3 px-2">
                     Programmers’ Gurukul
                   </p>
                 </div>
@@ -39,7 +39,7 @@ function JobCourse() {
                     src={require("./assets/designers.png").default}
                     className="job-course-img"
                   />
-                  <p className="mt-3 px-2 mb-3 fs-1.1 section-para">
+                  <p className="mt-3 px-2 mb-3">
                     Designers’ Gurukul
                   </p>
                 </div>

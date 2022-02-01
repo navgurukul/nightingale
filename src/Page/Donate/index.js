@@ -8,9 +8,9 @@ function Donate() {
       <div className="page-content w-100 d-flex flex-column justify-content-center align-items-center">
         <section className="donate-page-section mt-4">
           <h2 className="section-head mt-5 ">Donate to NavGurukul</h2>
-          <hr className="main-hr mt-2 mb-4" />
-          <div className="d-flex account-details  justify-content-center align-items-center">
-            <div className="d-flex flex-column f-Nuni text-left fw-semiBold">
+          <hr className="main-hr mt-3 mb-4" />
+          <div className="d-flex account-details mt-4 justify-content-center align-items-center">
+            <div className="d-flex flex-column text-left fw-semiBold">
               <span>UPI ID</span>
               <span>Name</span>
               <span>Account Number</span>
@@ -26,7 +26,7 @@ function Donate() {
           <hr className="w-30 partition-line" style={{ color: "#cdcdcd" }}></hr>
 
           <div className="donatation-payment mt-5 d-flex justify-content-center align-items-center w-100">
-            <p className="w-100 f-Nuni fw-semiBold">
+            <p className="w-100 fw-semiBold">
               You can also directly pay (2% charge but quick) using our payment
               gateway
             </p>
@@ -34,7 +34,7 @@ function Donate() {
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
-            class="donate-page-button f-Nuni fw-semiBold ng-labs-btn"
+            class="donate-page-button ng-labs-btn"
             onClick={(e) => {
               e.preventDefault();
               window.open("https://www.instamojo.com/@navgurukul/", "_blank");
@@ -43,7 +43,7 @@ function Donate() {
             Donate to Navgurukul
           </button>
           <div className="donate-content mt-2 d-flex justify-content-center align-items-center w-100">
-            <p className="w-75 mt-5 f-Nuni">
+            <p className="w-75 mt-5">
               You may also pledge a <b> monthly donation </b> to us. Any pledged
               amount is a huge support for us. Just having you by our side fills
               us with gratitude & an energy to do better.
@@ -149,17 +149,17 @@ function Donate() {
           <div className="donation-impact-data w-100 d-flex justify-content-around my-5">
             <span>
               <h3 className="section-head">160+</h3>
-              <p className="f-Nuni">Software Development Jobs</p>
+              <p className="">Software Development Jobs</p>
             </span>
             <span>
               <h3 className="section-head">4000+</h3>
-              <p className="f-Nuni">Online Students</p>
+              <p className="">Online Students</p>
             </span>
           </div>
           <div className="donation-impact-data donation-impact-data-2 w-100 d-flex justify-content-around my-5">
             <span>
               <h3 className="section-head">5</h3>
-              <p className="f-Nuni">States across India</p>
+              <p className="">States across India</p>
             </span>
           </div>
           {/* <div className="donate-bg">
@@ -219,14 +219,14 @@ function Donate() {
             /> */}
           {/* </div> */}
         </section>
-        <section className="donate-page-section mb-5">
+        <section className="donate-page-section csr-queries">
           <h2 className="section-head ">
             Are you a corporation and taken an interest in what we do?
           </h2>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
-            class="fw-semiBold donate-page-button f-Nuni ng-labs-btn contact-button"
+            class="fw-semiBold donate-page-button ng-labs-btn contact-button"
           >
             Contact Us for CSR Enquiries
           </button>

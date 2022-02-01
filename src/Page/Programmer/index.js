@@ -19,7 +19,7 @@ function Programmer() {
             Programmers’ Gurukul{" "}
           </h2>
           <Link to="/job-course">
-            <span className="desktop d-block f-Nuni text-primary fw-bold">
+            <span className="desktop d-block text-primary fw-bold">
               Change Gurukul
             </span>
           </Link>
@@ -47,12 +47,12 @@ function Programmer() {
                 setState(e.target.value);
               }}
             /> */}
-              <p className="f-Nuni my-2">
+              <p className="my-2">
                 Study in an immersive environment at one of our campuses in
                 Pune, Bengaluru or Dharamshala (for boys) with peer learning and
                 mentors helping you at each turn.
               </p>
-              <p className="f-Nuni my-2">
+              <p className="my-2">
                 To be a part of the Gurukul, all it takes is some determination
                 and potential.
               </p>
@@ -196,7 +196,7 @@ function Programmer() {
         /> */}
           {/* <a></a> */}
           <button
-            className="btn btn-primary f-Nuni fw-semiBold text-white w-100 my-1 ng-labs-btn"
+            className="btn btn-primary text-white w-100 my-1 ng-labs-btn"
             onClick={(e) => {
               e.preventDefault();
               window.open("https://admissions.navgurukul.org/", "_blank");

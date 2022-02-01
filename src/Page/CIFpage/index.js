@@ -58,7 +58,7 @@ function CifPage() {
           </p>
         </div>
       </div>
-      <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
+      <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2">
         <h2>What We Offer</h2>
         <hr className="heading-hr mb-4" />
         <div className="container w-50 text-start mt-3">
@@ -92,7 +92,7 @@ function CifPage() {
           </div>
         </div>
       </div>
-      <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
+      <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 ">
         <h2>Who We Are Looking For</h2>
         <hr className="heading-hr mb-3" />
         <div className="container f-Nuni text-start mb-1 mt-3 w-50">
@@ -117,7 +117,7 @@ function CifPage() {
           </span>
         </div>
       </div>
-      <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 fs-1.1">
+      <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2">
         <h2>Role Description</h2>
         <hr className="heading-hr mb-3" />
         <div className="container f-Nuni text-start mb-1 mt-3 w-50">
@@ -222,7 +222,7 @@ function CifPage() {
           Apply to CIF
         </button>
       </div>
-      <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5 fs-1.1">
+      <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5">
         <h2>Have Questions?</h2>
         <hr className="heading-hr mb-3" />
         <p className="mt-3">Connect with us anytime for more information</p>
