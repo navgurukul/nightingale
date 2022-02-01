@@ -91,15 +91,15 @@ function PartnerSlider() {
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
                   <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name f-Nuni fw-semiBold mt-3">
+                  <div className="partition-carousal-content-name fw-semiBold mt-3">
                     Nasa
                   </div>
-                  <p className="f-Nuni">
+                  <p className="mb-3">
                     “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 f-Nuni fw-semiBold">
+                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>
@@ -107,15 +107,15 @@ function PartnerSlider() {
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
                   <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name f-Nuni fw-semiBold mt-3">
+                  <div className="partition-carousal-content-name fw-semiBold mt-3">
                     Hope Foundation
                   </div>
-                  <p className="f-Nuni">
+                  <p className="mb-3">
                     “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 f-Nuni fw-semiBold">
+                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>
@@ -123,15 +123,15 @@ function PartnerSlider() {
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
                   <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name f-Nuni fw-semiBold mt-3">
+                  <div className="partition-carousal-content-name fw-semiBold mt-3">
                     Dole
                   </div>
-                  <p className="f-Nuni">
+                  <p className="mb-3">
                     “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 f-Nuni fw-semiBold">
+                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>
@@ -139,15 +139,15 @@ function PartnerSlider() {
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
                   <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name f-Nuni fw-semiBold mt-3">
+                  <div className="partition-carousal-content-name fw-semiBold mt-3">
                     Bunnie
                   </div>
-                  <p className="f-Nuni">
+                  <p className="mb-3">
                     “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 f-Nuni fw-semiBold">
+                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>

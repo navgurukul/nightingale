@@ -50,7 +50,7 @@ function Home() {
       </div>
       {/* </div> */}
       <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
-        <h2 className="align-self-center section-head ">In the Media</h2>
+        <h2 className="align-self-center">In the Media</h2>
         <hr className="mt-2 mb-0 align-self-center heading-hr" />
         <Slider />
       </section>
@@ -141,7 +141,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="container  text-center w-50 fs-1.1 my-5">
+      <section className="container  text-center w-50 my-5">
         <p className="section-para ">
           <span className="fw-bold">Techalms Consulting:</span> A talent group
           ready to fly in, solve your problems and leave by leaving happy faces
@@ -163,7 +163,7 @@ function Home() {
             <div class="row">
               <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 <h2 className="count section-head">160+</h2>
-                <p className="section-para fs-1.1">
+                <p className="section-para">
                   {" "}
                   Software Development Jobs
                 </p>
@@ -176,12 +176,12 @@ function Home() {
                     src={require("./assets/impactellipse.png").default}
                   />
                   <h2 className="mt-5 count section-head"> 5 </h2>
-                  <p className="section-para fs-1.1">States across India </p>
+                  <p className="section-para">States across India </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-4 mb-lg-0 ">
                 <h2 className="count section-head">400+</h2>
-                <p className="section-para fs-1.1"> Online Students </p>
+                <p className="section-para"> Online Students </p>
               </div>
             </div>
           </div>

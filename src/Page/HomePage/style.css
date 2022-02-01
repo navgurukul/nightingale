@@ -21,13 +21,11 @@
   line-height: 1.4;
   max-width: 570px;
   color: #ffffff;
-  font-size: 42px;
   margin-top: 10%;
 }
 
 .home-page-hero-section-data-p {
   max-width: 570px;
-  font-size: 18px;
   line-height: 28px;
 }
 
@@ -108,7 +106,6 @@
 .card-dic {
   max-width: 390px;
   line-height: 1.5;
-  font-size: 19px;
   font-style: normal;
 }
 
@@ -135,7 +132,6 @@
 
 .partner {
   background-color: rgba(240, 95, 64, 1) !important;
-  font-size: 20px !important;
 }
 .our-partner-btn {
   width: 352px;
