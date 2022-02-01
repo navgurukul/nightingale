@@ -166,15 +166,14 @@ ul.nav-footer {
   .inner-container {
     margin: 0 20px;
   }
-  .ng-logo {
-    margin-left: 40px;
-  }
   .title-container {
     margin-bottom: 43px;
   }
-
+  .nav-footer{
+    margin-bottom: 2rem;
+  }
   .details {
-    padding: 10px 0 0 20px;
+    padding: 10px 0;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-end !important;
@@ -184,7 +183,7 @@ ul.nav-footer {
     padding-top: 250px;
   }
   .footer-details {
-    padding: 33px 0 0 20px;
+    padding: 0px;
     text-align: left;
   }
   /* .title {

@@ -8,7 +8,7 @@
   outline: none;
 }
 body {
-  font-size: 1.125rem ;
+  font-size: 1.125rem;
 }
 h1,
 h2,
@@ -181,4 +181,12 @@ input:focus {
 .f-Nuni {
   font-family: Nunito Sans !important;
   /* font-weight: bold !important; */
+}
+@media screen and (max-width: 667px) {
+  h2 {
+    font-size: 20px !important;
+  }
+  body {
+    font-size: 0.875rem;
+  }
 }

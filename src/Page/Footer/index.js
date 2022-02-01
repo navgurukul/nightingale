@@ -111,7 +111,7 @@ function Footer() {
         </div>
         <div className="title-container d-flex">
           <div className="row w-100 justify-content-between">
-            <div class="col-md-2 p-0">
+            <div class="col-md-2 p-0 ">
               <ul class="nav-footer ">
                 <li className="row-title">About</li>
                 <li>
