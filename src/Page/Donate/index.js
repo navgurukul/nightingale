@@ -32,7 +32,14 @@ function Donate() {
             </p>
           </div>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
-          <button type="button" class="donate-page-button f-Nuni fw-semiBold ng-labs-btn">
+          <button
+            type="button"
+            class="donate-page-button f-Nuni fw-semiBold ng-labs-btn"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open("https://www.instamojo.com/@navgurukul/", "_blank");
+            }}
+          >
             Donate to Navgurukul
           </button>
           <div className="donate-content mt-2 d-flex justify-content-center align-items-center w-100">
@@ -45,23 +52,83 @@ function Donate() {
           <div className="container  donate-button-container">
             <div className="row">
               <div class="col-md col-sm-12 ">
-                <button type="button" class="fw-semiBold btn btn-primary donate-button">
-                  ₹ 101 / month
+                <button
+                  type="button"
+                  class="fw-semiBold btn btn-primary donate-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://app.lotuspay.com/merchant/plan/AL0092PDFN2KYC",
+                      "_blank"
+                    );
+                  }}
+                >
+                  ₹ 100 / month
                 </button>
-                <button type="button" class="fw-semiBold btn btn-primary donate-button">
-                  ₹ 501 per month
+                <button
+                  type="button"
+                  class="fw-semiBold btn btn-primary donate-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://app.lotuspay.com/merchant/plan/AL00681BQGXHMI",
+                      "_blank"
+                    );
+                  }}
+                >
+                  ₹ 500 per month
                 </button>
-                <button type="button" class="btn fw-semiBold btn-primary donate-button">
-                  ₹ 1001 per month
+                <button
+                  type="button"
+                  class="btn fw-semiBold btn-primary donate-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://app.lotuspay.com/merchant/plan/AL0074EBKKW2EI",
+                      "_blank"
+                    );
+                  }}
+                >
+                  ₹ 1000 per month
                 </button>
-                <button type="button" class="btn btn-primary fw-semiBold donate-button">
-                  ₹ 2501 per month
+                <button
+                  type="button"
+                  class="btn btn-primary fw-semiBold donate-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://app.lotuspay.com/merchant/plan/AL0022DKW1KZGD",
+                      "_blank"
+                    );
+                  }}
+                >
+                  ₹ 2500 per month
                 </button>
-                <button type="button" class="btn btn-primary fw-semiBold donate-button">
-                  ₹ 5001 per month
+                <button
+                  type="button"
+                  class="btn btn-primary fw-semiBold donate-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://app.lotuspay.com/merchant/plan/AL0042NG8XJV3P",
+                      "_blank"
+                    );
+                  }}
+                >
+                  ₹ 5000 per month
                 </button>
-                <button type="button" class="btn btn-primary fw-semiBold donate-button">
-                  ₹ 10001 per month
+                <button
+                  type="button"
+                  class="btn btn-primary fw-semiBold donate-button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(
+                      "https://app.lotuspay.com/merchant/plan/AL0012PAC9ZPYV",
+                      "_blank"
+                    );
+                  }}
+                >
+                  ₹ 10000 per month
                 </button>
               </div>
             </div>
@@ -74,7 +141,9 @@ function Donate() {
           </div>
         </section>
         <section className="donate-page-section donate-page-image-section w-100">
-          <h2 className="mt-5 mb-3 section-head">Your Donations Create Impact</h2>
+          <h2 className="mt-5 mb-3 section-head">
+            Your Donations Create Impact
+          </h2>
           <hr className="mt-2 heading-hr" />
           <img className="middleImg" src={middleImg}></img>
           <div className="donation-impact-data w-100 d-flex justify-content-around my-5">
@@ -155,7 +224,10 @@ function Donate() {
             Are you a corporation and taken an interest in what we do?
           </h2>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
-          <button type="button" class="fw-semiBold donate-page-button f-Nuni ng-labs-btn contact-button">
+          <button
+            type="button"
+            class="fw-semiBold donate-page-button f-Nuni ng-labs-btn contact-button"
+          >
             Contact Us for CSR Enquiries
           </button>
         </section>
