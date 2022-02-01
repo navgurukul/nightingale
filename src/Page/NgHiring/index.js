@@ -26,7 +26,7 @@ function NgHiring() {
           >
             Download Placement Brief
           </button>
-          <div className="hiring-page-content">
+          <div className="hiring-page-content d-flex justify-content-center ">
             <p className="section-para mb-5">
               Contact us directly at{" "}
               <a href="mailto:tnp@navgurukul.org" className="link">

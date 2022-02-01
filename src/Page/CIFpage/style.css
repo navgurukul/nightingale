@@ -169,9 +169,6 @@
   .questions h2 {
     font-size: 1.6rem !important;
   }
-  .container {
-    font-size: 0.8em;
-  }
   .container .col-sm-6::before {
     width: 15px;
     height: 15px;

@@ -47,7 +47,7 @@
   border: 1px solid var(--primary);
   color: var(--primary);
   transition: all ease-in 0.2s;
-  font-size: 1.13rem;
+  font-size: 1.125rem;
   font-weight: 700;
   border-radius: 8px;
 }
@@ -148,10 +148,9 @@
   padding: 0px;
   box-sizing: content-box;
 }
-.team-card-info{
+.team-card-info {
   position: relative;
   z-index: 2;
-  
 }
 .team-info-card-title {
   line-height: 28px;
@@ -178,6 +177,12 @@
   .team-info-cards-container {
     justify-content: center;
   }
+  .card-details .hide {
+    height: 0px;
+    position: relative;
+    transition-property: height;
+    transition-duration: 2s;
+  }
   .card-details:hover > .hide {
     top: 100%;
     right: 0%;
@@ -187,5 +192,18 @@
     margin: 16px;
     border-radius: 10px;
     transform: translate(-55%, -15%);
+    height: 100%;
+  }
+  .team-page .card-details {
+    width: 155px;
+  }
+  .team-info-card-img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    border: 3px solid transparent;
+    transition: all ease-in 0.2s;
+    padding: 0px;
+    box-sizing: content-box;
   }
 }

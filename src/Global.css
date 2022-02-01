@@ -180,7 +180,6 @@ input:focus {
 }
 .f-Nuni {
   font-family: Nunito Sans !important;
-  /* font-weight: bold !important; */
 }
 @media screen and (max-width: 667px) {
   h2 {
@@ -188,5 +187,8 @@ input:focus {
   }
   body {
     font-size: 0.875rem;
+  }
+  button{
+    font-size: 0.875rem !important;
   }
 }
