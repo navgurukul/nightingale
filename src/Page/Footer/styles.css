@@ -2,6 +2,7 @@
   background-color: #fcdfd9;
   width: 100%;
   height: 100%;
+  /* font-size: 14px; */
 }
 
 .inner-container {
@@ -35,7 +36,6 @@ ul.nav-footer {
 .nav-footer li {
   margin-bottom: 10px;
   /* width: 30px; */
-  /* font-size: 1.1rem; */
 }
 
 .footer-container a {
@@ -74,7 +74,6 @@ ul.nav-footer {
 
 .footer-container .playstore {
   position: absolute;
-  /* font-size: 13px; */
   margin: 42px 0 0 25px;
   font-weight: 400;
   color: #2e2e2e;
@@ -97,13 +96,11 @@ ul.nav-footer {
   margin: 0;
 } */
 .footer-container .title {
-  font-size: 15px;
   font-weight: 600;
   line-height: 20px;
 }
 
 .footer-container .sub-title {
-  font-size: 15px;
   font-weight: 400;
   line-height: 20px;
 }
@@ -190,7 +187,7 @@ ul.nav-footer {
     padding: 33px 0 0 20px;
     text-align: left;
   }
-  .title {
+  /* .title {
     font-size: 14px;
-  }
+  } */
 }

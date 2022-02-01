@@ -104,7 +104,7 @@ import { FiExternalLink } from "react-icons/fi";
 
 function Footer() {
   return (
-    <div className="footer-container f-Nuni pb-5">
+    <div className="footer-container pb-5">
       <div className="inner-container">
         <div className="ng-logo">
           <img src={require("./assets/logo.png").default} />
