@@ -14,17 +14,17 @@ function NgLabs() {
       <div className="main mt-7 mb-2">
         <div className="container ">
           <div className="row">
-            <div className="col-md d-flex flex-column justify-content-center fs-1.2 align-items-center align-items-md-start">
-              <h2 className="mb-3 fs-2 section-head ">
+            <div className="col-md d-flex flex-column justify-content-center align-items-center align-items-md-start">
+              <h2 className="mb-3">
                 Nurturing High-Impact Projects in the Non-Profit Space
               </h2>
-              <p className="f-Nuni mb-3">
+              <p className="mb-3">
                 We aim to work on various experiments and scale the ones that
                 become successful. NavGurukul labs will seed open source
                 projects that we believe can directly or indirectly contribute
                 to the improvement of education system in India
               </p>
-              <button className="btn f-Nuni fw-semiBold btn-primary text-white ng-labs-btn">
+              <button className="btn btn-primary text-white ng-labs-btn">
                 Seek Incubation Support
               </button>
             </div>
@@ -38,7 +38,7 @@ function NgLabs() {
         </div>
       </div>
       <div className="projects d-flex flex-column justify-content-center align-items-center">
-        <h2 className="mb-0 fs-2 section-head">Current Projects</h2>
+        <h2 className="mb-0">Current Projects</h2>
         <hr className="heading-hr" />
         <div className="container w-50 my-5 mb-2">
           <div className="row">
@@ -75,7 +75,7 @@ function NgLabs() {
         </div>
       </div> */}
       <div className="idea d-flex flex-column justify-content-center align-items-center">
-        <h2 className="mb-4 section-head fs-2">Have an Idea in Works?</h2>
+        <h2 className="mb-4">Have an Idea in Works?</h2>
 
         <button className="btn btn-primary f-Nuni fw-semiBold text-white ng-labs-btn">
           Seek Incubation Support
