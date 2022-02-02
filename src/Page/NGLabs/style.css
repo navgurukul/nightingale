@@ -40,6 +40,9 @@
 .ng-labs .projects {
   margin-top: 14rem;
 }
+.ng-labs .projects .card h2 {
+  font-size: 1.5rem;
+}
 .timeline img {
   height: 458px;
 }
@@ -105,22 +108,10 @@
     margin-top: 3rem !important;
   }
   .main h2 {
-    font-size: 1.8em;
     margin-bottom: 0.7em;
-  }
-  .ng-labs .btn {
-    padding: 0.5em 4em;
-    font-size: 1em;
-  }
-  h2 {
-    font-size: 1.5em;
   }
   .timeline img {
     height: 13em;
-  }
-  .main .btn {
-    padding: 0.5em 4em;
-    font-size: 0.9em;
   }
   .container {
     width: 90% !important;
@@ -128,9 +119,11 @@
   .main .container {
     width: 100% !important;
   }
-
-  .idea button {
-    max-width: 250px;
+  .ng-labs button {
+    max-width: 328px;
+  }
+  .ng-labs .projects .card h2 {
+    font-size: 1rem !important;
   }
 }
 @media screen and (max-width: 330px) {
@@ -138,13 +131,6 @@
     padding: 0.5em 1.5em;
     font-size: 1.1rem;
   }
-  h1 {
-    font-size: 1.15em;
-  }
-  .main h2 {
-    font-size: 1.5rem !important;
-  }
-
   .timeline img {
     height: 10em;
   }
