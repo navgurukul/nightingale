@@ -17,6 +17,7 @@
   );
   height: 800px;
 }
+
 .home-page-hero-section-data {
   line-height: 1.4;
   max-width: 570px;
@@ -121,7 +122,7 @@
 .impact {
   background-image: url("./assets/backgroundImg.png");
   background-position: center;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -152,18 +153,53 @@
 }
 @media (max-width: 576px) {
   .card-main-text {
-    margin-top: 130px;
+    margin-top: 45px;
   }
   .home-page-hero-section-data {
     max-width: 600px;
     font-size: 24px;
     margin-top: 10%;
   }
+
+  .our-initiatives .container,
+  .initiative-card-parent,
+  .rgba-black-strong .container {
+    padding: 0;
+  }
+  .impact .count {
+    font-size: 3rem !important;
+  }
+  .impactellipse{
+    display: none;
+  }
+  .software-development-img{
+    background-image: none;
+  }
+  .software-development-img{
+    margin-top: 0;
+  }
+  .homepage-hero-data {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .home-page-hero-btns button {
+    width: 156px;
+  }
+  .initiative-card {
+    width: 328px;
+    height: 220px;
+  }
+  .Initiatives-bg-color {
+    width: 328px;
+    height: 220px;
+  }
   .home-page-bg,
   .rgba-black-strong {
     height: 400px;
   }
-  .home-page-bg h2{
+  .home-page-bg h2 {
     font-size: 1.5rem !important;
   }
 }

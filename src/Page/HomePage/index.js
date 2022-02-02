@@ -16,7 +16,7 @@ function Home() {
         <div class="rgba-black-strong">
           <div className="container">
             <div class="row ">
-              <div class="col-lg-12 mt-5  ">
+              <div class="col-lg-12 homepage-hero-data mt-5">
                 <h2 class="h1-responsive section-head fs-2.6 home-page-hero-section-data ">
                   {" "}
                   The Gurukul for the New Age India and its New Generation{" "}
@@ -26,23 +26,25 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                <Link to="/hiring">
-                  <button
-                    type="button"
-                    class="btn ng-labs-btn section-para mt-2 mr-2 text-white "
-                  >
-                    Students
-                  </button>
-                </Link>
-                <Link to="/partners">
-                  <button
-                    type="button"
-                    class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
-                    style={{ marginLeft: "10px" }}
-                  >
-                    Partners
-                  </button>
-                </Link>
+                <div className="d-flex home-page-hero-btns justify-content-sm-start justify-content-center">
+                  <Link to="/hiring">
+                    <button
+                      type="button"
+                      class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
+                    >
+                      Students
+                    </button>
+                  </Link>
+                  <Link to="/partners">
+                    <button
+                      type="button"
+                      class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
+                      style={{ marginLeft: "10px" }}
+                    >
+                      Partners
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -60,8 +62,8 @@ function Home() {
         <hr className="heading-hr" />
         <div class="container mt-5">
           <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-              <div class="bg-image1 card  shadow-1-strong">
+            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-lg-0">
+              <div class="bg-image1 initiative-card card  shadow-1-strong">
                 <Link to="/job-course">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white  ">
@@ -79,8 +81,8 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-6 mb-6 mb-lg-0">
-              <div className="bg-image2 card  shadow-1-strong">
+            <div className="col-lg-6 initiative-card-parent mb-6 mb-lg-0">
+              <div className="bg-image2 initiative-card card  shadow-1-strong">
                 <a href="https://www.merakilearn.org/">
                   <div className="Initiatives-bg-color">
                     <div className="card-body text-white">
@@ -100,8 +102,8 @@ function Home() {
         </div>
         <div class="container mt-4">
           <div class="row">
-            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-              <div class="bg-image3 card shadow-1-strong">
+            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-lg-0">
+              <div class="bg-image3 initiative-card card shadow-1-strong">
                 <Link to="/cif">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white">
@@ -119,8 +121,8 @@ function Home() {
               </div>
             </div>
 
-            <div class="col-lg-6 mb-6 mb-lg-0">
-              <div class="bg-image4 card shadow-1-strong">
+            <div class="col-lg-6 initiative-card-parent mb-6 mb-lg-0">
+              <div class="bg-image4 initiative-card card shadow-1-strong">
                 <Link to="/nglabs">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white">
@@ -161,12 +163,9 @@ function Home() {
             </h2>
 
             <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <div class="col-lg-4 col-md-12 mb-lg-0">
                 <h2 className="count section-head">160+</h2>
-                <p className="section-para">
-                  {" "}
-                  Software Development Jobs
-                </p>
+                <p className="section-para"> Software Development Jobs</p>
               </div>
 
               <div class="col-lg-4 mb-4 mb-lg-0">
@@ -263,39 +262,39 @@ function Home() {
 
  */}
 
-      <section className="d-flex home-page-supporters p-5 flex-column align-items-center justify-content-center mb-0 mt-5">
+      <section className="d-flex home-page-supporters py-5 flex-column align-items-center justify-content-center mb-0 mt-5">
         <h2 className="section-head">Our Supporters</h2>
         <hr className="mb-5 heading-hr" />
         <div class="container ">
           <div class="row">
             <div class="col-md-12 col-12">
               <div class="row">
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                   <img
                     className="logo-img"
                     src={require("./logos/infosys.png").default}
                   />
                 </div>
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                   <img
                     className="logo-img"
                     src={require("./logos/amazo.png").default}
                   />
                 </div>
 
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                   <img
                     className="logo-img"
                     src={require("./logos/microsoft.png").default}
                   />
                 </div>
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                   <img
                     className="logo-img"
                     src={require("./logos/wipro.png").default}
                   />
                 </div>
-                <div class="col">
+                <div class="col d-flex justify-content-center">
                   <img
                     className="logo-img"
                     src={require("./logos/The-north-ace.png").default}

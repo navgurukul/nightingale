@@ -29,7 +29,7 @@
 }
 @media screen and (max-width: 900px) {
   .carousal-content {
-    padding: 50px;
+    padding: 0 50px;
   }
   .arrow--left {
     left: 20px;
@@ -37,6 +37,9 @@
   .arrow--right {
     left: auto;
     right: 40px;
+  }
+  .carousal-image-container{
+    margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 500px) {

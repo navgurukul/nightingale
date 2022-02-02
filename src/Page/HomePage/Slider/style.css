@@ -99,7 +99,7 @@
 }
 @media screen and (max-width: 900px) {
   .carousal-content {
-    padding: 50px;
+    padding: 0 50px;
   }
   .arrow--left {
     left: 20px;
@@ -111,7 +111,7 @@
 }
 @media screen and (max-width: 500px) {
   .carousal-content {
-    padding: 30px;
+    padding: 0 30px;
     flex-direction: column;
   }
   .arrow--left {
