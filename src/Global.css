@@ -191,4 +191,7 @@ input:focus {
   button{
     font-size: 0.875rem !important;
   }
+  .ng-labs-btn{
+    max-width: 328px;
+  }
 }

@@ -69,4 +69,8 @@
     background-color: #f9bfb3;
     border: none;
   }
+  .navbar-brand img {
+    width: 132px;
+    height: 32px;
+  }
 }

@@ -210,6 +210,9 @@
   background-color: #fff;
   text-align: center;
 }
+.donate-page .page-content {
+  width: 100%;
+}
 .donate-page .main-hr {
   width: 6rem;
   border: transparent;
@@ -329,7 +332,9 @@
 .donate-bg-image {
   position: absolute;
 }
-
+.donate-page-image-section {
+  width: 100% !important;
+}
 .bg-color {
   display: none;
   background-color: #fcdfd9;
@@ -427,8 +432,18 @@
   flex-wrap: wrap;
 }
 @media screen and (max-width: 667px) {
+  .donate-page .w-100 {
+    width: 90% !important;
+  }
   .donate-page button {
     font-size: 1rem;
+  }
+  .account-details {
+    justify-content: space-around !important;
+  }
+  
+  .donate-page .partition-line {
+    width: 90% !important;
   }
   .middleImg {
     display: none;
@@ -477,8 +492,11 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .donate-content p {
+    width: 90% !important;
+  }
   .about-donation {
-    margin: 35px 30px 0 35px;
+    margin: 35px 30px 0 15px;
   }
   .donate-title {
     margin: 30px 8px 15px 40px;
@@ -509,7 +527,6 @@
     top: 218px;
     left: 120px;
   }
-
   .states {
     margin-top: 255px;
     margin-left: 40px;

@@ -5,7 +5,7 @@ import middleImg from "./assets/midImg.png";
 function Donate() {
   return (
     <main className="donate-page d-flex flex-column justify-content-center align-items-center">
-      <div className="page-content w-100 d-flex flex-column justify-content-center align-items-center">
+      <div className="page-content d-flex flex-column justify-content-center align-items-center">
         <section className="donate-page-section mt-4">
           <h2 className="section-head mt-5 ">Donate to NavGurukul</h2>
           <hr className="main-hr mt-3 mb-4" />
@@ -140,13 +140,13 @@ function Donate() {
             </p>
           </div>
         </section>
-        <section className="donate-page-section donate-page-image-section w-100">
+        <section className="donate-page-section donate-page-image-section">
           <h2 className="mt-5 mb-3 section-head">
             Your Donations Create Impact
           </h2>
           <hr className="mt-2 heading-hr" />
           <img className="middleImg" src={middleImg}></img>
-          <div className="donation-impact-data w-100 d-flex justify-content-around my-5">
+          <div className="donation-impact-data d-flex justify-content-around my-5">
             <span>
               <h3 className="section-head">160+</h3>
               <p className="">Software Development Jobs</p>
@@ -156,7 +156,7 @@ function Donate() {
               <p className="">Online Students</p>
             </span>
           </div>
-          <div className="donation-impact-data donation-impact-data-2 w-100 d-flex justify-content-around my-5">
+          <div className="donation-impact-data donation-impact-data-2 d-flex justify-content-around my-5">
             <span>
               <h3 className="section-head">5</h3>
               <p className="">States across India</p>
