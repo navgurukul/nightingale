@@ -99,7 +99,7 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>
@@ -115,7 +115,7 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>
@@ -131,7 +131,7 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>
@@ -147,7 +147,7 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="fs-0.9 align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-semiBold">
                     - Suresh G, Program Director
                   </span>
                 </div>
