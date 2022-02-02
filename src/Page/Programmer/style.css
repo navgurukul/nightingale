@@ -53,7 +53,7 @@ video {
   /* width: 450px; */
   height: 285px;
 }
-.programmers .next-step{
+.programmers .next-step {
   margin-bottom: 9.875rem;
 }
 .next-step .btn {
@@ -71,7 +71,6 @@ video {
     height: 255px;
   }
   .left-P h2 {
-    font-size: 2rem !important;
     margin-bottom: 0 rem !important;
     font-weight: 700;
   }
@@ -113,11 +112,7 @@ video {
     width: 85%;
   }
 }
-@media screen and (max-width: 750px) {
-  .left-P h2 {
-    padding-left: 1.3em !important;
-  }
-}
+
 @media screen and (max-width: 550px) {
   .hero-P video {
     width: 400px;
@@ -132,8 +127,9 @@ video {
   .left-P h2 {
     padding-inline: 0.5em !important;
   }
-  .programmers h2 {
-    font-size: 1.8rem !important;
+
+  .programmers .section-head {
+    font-size: 1.3rem !important;
   }
   .student-video-parent {
     height: fit-content;
@@ -145,19 +141,27 @@ video {
   .test-p {
     margin-top: 2.5rem !important;
   }
+  .hero-P {
+    padding: 0 !important;
+  }
+  .programmers .students .row,
+  .test-p .container .row {
+    margin-inline: 0 !important;
+  }
+  .programmers .next-step {
+    margin-bottom: 2.875rem;
+  }
 }
 @media screen and (max-width: 430px) {
   .hero-P video {
-    width: 350px;
+    /* width: 75%; */
     height: 200px;
   }
   .programmers-main-video {
     min-height: 147px !important;
     align-items: center;
   }
-  .left-P h2 {
-    font-size: 1.8rem;
-  }
+
   .input {
     margin-inline: 1rem;
     width: 90%;
@@ -174,29 +178,18 @@ video {
   .input .text {
     font-size: 0.9em !important;
   }
-  .input .btn {
-    font-size: 0.9em !important;
-  }
   .input label {
     font-size: 0.9em !important;
   }
 }
 @media screen and (max-width: 370px) {
-  .header h2 {
-    font-size: 1.05em !important;
-  }
-  .header span {
+  /* .header span {
     font-size: 0.95em !important;
-  }
+  } */
   .hero-P video {
     width: 260px;
   }
-  .left-P h2 {
-    font-size: 1.4rem !important;
-  }
-  .programmers h2 {
-    font-size: 1.25rem !important;
-  }
+
   .test-p .card {
     min-width: 16rem;
     min-height: 10rem;
@@ -206,7 +199,12 @@ video {
     height: 148px;
   }
   .hero-P video {
-    width: 350px;
     height: 147px;
+  }
+  .test-p {
+    margin-top: 6rem !important;
+  }
+  .programmers .btn {
+    max-width: 251px !important;
   }
 }

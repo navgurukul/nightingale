@@ -19,6 +19,7 @@ h6 {
   font-family: Lusitana !important;
   font-style: normal !important;
   font-weight: 600 !important;
+  /* padding-inline: 0.2rem; */
 }
 :root {
   --primary: #f05f40;
@@ -188,10 +189,10 @@ input:focus {
   body {
     font-size: 0.875rem !important;
   }
-  button{
+  button {
     font-size: 0.875rem !important;
   }
-  .ng-labs-btn{
+  .ng-labs-btn {
     max-width: 328px;
   }
 }

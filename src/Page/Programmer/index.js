@@ -15,7 +15,7 @@ function Programmer() {
           className="alert alert-danger d-flex justify-content-between py-3 align-items-center"
           role="alert"
         >
-          <h2 className="fs-1.5 section-head text-black fw-bold mb-0">
+          <h2 className="section-head text-black fw-bold mb-0">
             Programmers’ Gurukul{" "}
           </h2>
           <Link to="/job-course">
@@ -28,7 +28,7 @@ function Programmer() {
       <div className="hero-P container my-2 my-sm-5">
         <div className="row d-flex justify-content-between flex-md-column-reverse flex-lg-row flex-md-row">
           <div className="col left-P d-flex flex-column align-items-start">
-            <h2 className="section-head">
+            <h2 className="">
               Navgurukul One-Year Software Engineering Course
             </h2>
             <div className="input d-flex flex-column justify-content-center align-items-start text-left p-1 w-90">
