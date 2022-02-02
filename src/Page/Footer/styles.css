@@ -169,7 +169,7 @@ ul.nav-footer {
   .title-container {
     margin-bottom: 43px;
   }
-  .nav-footer{
+  .nav-footer {
     margin-bottom: 2rem;
   }
   .details {
@@ -185,6 +185,12 @@ ul.nav-footer {
   .footer-details {
     padding: 0px;
     text-align: left;
+  }
+  .ng-logo img {
+    display: none;
+  }
+  .ng-logo {
+    padding: 0;
   }
   /* .title {
     font-size: 14px;

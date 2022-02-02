@@ -11,6 +11,9 @@
   min-width: 250px;
   transition: all ease-in 0.3s;
 }
+.partnerInfo .card {
+  font-size: 1.5rem;
+}
 .partners .btn {
   padding: 0.5rem 0;
   width: 352px;
@@ -37,7 +40,7 @@
   .partners .card {
     width: 320px;
   }
-  .social-media-icons{
+  .social-media-icons {
     width: 30% !important;
   }
 }
@@ -53,7 +56,7 @@
   .partners .card {
     width: 480px;
   }
-  .social-media-icons{
+  .social-media-icons {
     width: 20% !important;
   }
 }
@@ -74,7 +77,17 @@
   .partners .btn {
     padding: 0.3rem 4rem;
     font-size: 1rem !important;
-  }.social-media-icons{
+  }
+  .social-media-icons {
     width: 30% !important;
   }
+  .partnerInfo .card {
+    font-size: 0.875rem;
+  }
+  .partnerInfo .card span{
+    font-size: 2rem !important;
+  }
+  /* .partners-data{
+    margin-top: 0 !important;
+  } */
 }

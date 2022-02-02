@@ -9,20 +9,20 @@ function Partners() {
   return (
     <div className="partners d-flex flex-column justify-content-center w-100">
       <div className="partnerInfo align-items-center d-flex flex-column mb-5 justify-content-center w-100 mt-5">
-        <h2 className="mt-2 section-head fs-2">Partner Highlights</h2>
+        <h2 className="mt-2 section-head">Partner Highlights</h2>
         <hr className="mt-2 heading-hr" />
         <div className="card-row flex-sm-row flex-column w-75 d-flex justify-content-center align-items-center bg-white">
           <div className="card w-25 my-3 bg-white py-3 d-flex justify-content-center mx-3 align-items-center">
             <span className="fs-3.5 text-primary section-head">50</span>
-            <p className="fs-1.5 fw-400 ">Total Partners</p>
+            <p className="fw-400 ">Total Partners</p>
           </div>
           <div className="card w-25 my-3 bg-white py-3 d-flex justify-content-center mx-3 align-items-center">
             <span className="fs-3.5 text-primary section-head">2000 +</span>
-            <p className="fs-1.5 fw-400">Students</p>
+            <p className="fw-400">Students</p>
           </div>
           <div className="card w-25 my-3 bg-white py-3 d-flex justify-content-center mx-3 align-items-center">
             <span className="fs-3.5 text-primary section-head">8</span>
-            <p className="fs-1.5 fw-400">Indian States</p>
+            <p className="fw-400">Indian States</p>
           </div>
         </div>
         <div className="partner-content-data w-40 text-center section-para fw-400 d-flex align-items-center justify-content-center mb-2 mt-4">
@@ -36,7 +36,7 @@ function Partners() {
         </button>
       </div>
       <div className="partners-data w-100 my-5 d-flex align-items-center flex-column">
-        <h2 className="mt-2 section-head fs-2">Recent Partners</h2>
+        <h2 className="mt-2 section-head">Recent Partners</h2>
         <hr className="mt-2 heading-hr" />
         <div className="all-partners w-80 d-flex flex-column">
           <div className="all-partners-row d-flex justify-content-around w-100 align-items-center my-1">
@@ -118,7 +118,7 @@ function Partners() {
         </div>
       </div>
       <div className="partners-data w-100 my-5 d-flex align-items-center flex-column">
-        <h2 className="mt-2 section-head fs-2">
+        <h2 className="mt-2 section-head">
           Long Term Partners (With us {">"} 1 Year)
         </h2>
         <hr className="mt-2 heading-hr" />
@@ -202,7 +202,7 @@ function Partners() {
         </div>
       </div>
       <div className="partners-support-section d-flex flex-column w-100 align-items-center mb-5 justify-content-center">
-        <h2 className="mt-2 section-head w-50 text-center fs-2">
+        <h2 className="mt-2 section-head w-50 text-center">
           Have you taken an interest in what we do and want to support us?
         </h2>
         <button className="btn btn-primary section-para ng-labs-btn mt-4">
