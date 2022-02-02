@@ -38,7 +38,7 @@ function Home() {
                   <Link to="/partners">
                     <button
                       type="button"
-                      class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
+                      class="btn ng-labs-btn section-para mt-2 mr-0 text-white"
                       style={{ marginLeft: "10px" }}
                     >
                       Partners

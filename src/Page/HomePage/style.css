@@ -197,7 +197,8 @@
   }
   .home-page-bg,
   .rgba-black-strong {
-    height: 400px;
+    /* width: 360px; */
+    height: 360px !important;
   }
   .home-page-bg h2 {
     font-size: 1.5rem !important;

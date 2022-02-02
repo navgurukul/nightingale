@@ -13,7 +13,7 @@ function JobCourse() {
           low-income families.
         </p>
       </div>
-      <p className="job-course-subtitle fs-1.5">Choose Your Gurukul</p>
+      <h2 className="job-course-subtitle f-Nuni">Choose Your Gurukul</h2>
       <div className="container ">
         <div className="row">
           <div className="col my-3 col-md-6">
