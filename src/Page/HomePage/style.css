@@ -169,13 +169,13 @@
   .impact .count {
     font-size: 3rem !important;
   }
-  .impactellipse{
+  .impactellipse {
     display: none;
   }
-  .software-development-img{
+  .software-development-img {
     background-image: none;
   }
-  .software-development-img{
+  .software-development-img {
     margin-top: 0;
   }
   .homepage-hero-data {
@@ -188,12 +188,12 @@
     width: 156px;
   }
   .initiative-card {
-    width: 328px;
-    height: 220px;
+    max-width: 328px;
+    max-height: 220px;
   }
   .Initiatives-bg-color {
-    width: 328px;
-    height: 220px;
+    max-width: 328px;
+    max-height: 220px;
   }
   .home-page-bg,
   .rgba-black-strong {
@@ -205,8 +205,17 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .home-page-hero-btns button {
+    width: 100px;
+  }
+  .our-partner-btn {
+    width: 250px;
+  }
+  .home-page-hero-section-data-p {
+    margin-block: 0;
+  }
+}
 .logo-img {
-  /* height: 100%; */
-  /* max-height: 100%; */
   width: auto;
 }
