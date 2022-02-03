@@ -98,14 +98,17 @@
   opacity: 0.5;
 }
 .hide {
-  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
 }
 
 .card-details:hover > .hide {
-  display: block;
+  visibility: visible;
+  pointer-events: all;
   position: absolute;
   top: 10%;
-  right: 90%;
+  /* right: 90%; */
   box-shadow: 0px 4px 5px rgba(46, 46, 46, 0.06),
     0px 1px 10px rgba(46, 46, 46, 0.04), 0px 2px 4px rgba(46, 46, 46, 0.08);
   border-radius: 10px;
@@ -120,12 +123,19 @@
   box-sizing: border-box;
   opacity: 1;
 }
+.card-details:hover .right {
+  right: 90%;
+}
+.card-details:hover .left {
+  left: 90%;
+}
 .card-details:hover .img-card-hover {
   border: 3px solid var(--primary);
 }
 .team-info-cards-container .card:hover {
   transform: scale(1.1);
   opacity: 1;
+  z-index: 2;
 }
 .all-members-btns {
   margin: 20px 0;
@@ -166,8 +176,28 @@
   max-width: 220px;
   margin-left: 15px;
 }
+.description-dropdown {
+  /* position: absolute; */
+  width: 270px;
+  text-align: start;
+  /* border: 2px solid var(--primary); */
+  box-shadow: 0px 4px 5px rgba(46, 46, 46, 0.06),
+    0px 1px 10px rgba(46, 46, 46, 0.04), 0px 2px 4px rgba(46, 46, 46, 0.08);
+  border-radius: 10px;
+  background-color: #fff;
+  /* padding: 5px 10px 15px 25px; */
+  font-size: 14px;
+  padding-inline: 25px;
+  height: 0;
+  overflow-y: hidden;
+  transition: all ease-in 0.2s;
+  position: relative;
+}
+.description-dropdown-name {
+  margin-bottom: 10px;
+}
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 850px) {
   .team-page-content {
     width: 80% !important;
   }
@@ -175,26 +205,16 @@
     flex-direction: column;
   }
   .team-info-cards-container {
-    justify-content: center;
+    justify-content: space-between;
   }
   .card-details .hide {
-    height: 0px;
-    position: relative;
-    transition-property: height;
-    transition-duration: 2s;
+    display: none;
   }
   .card-details:hover > .hide {
-    top: 100%;
-    right: 0%;
-    left: 50%;
-    padding: 5px 0 15px 25px;
-    width: 300px;
-    margin: 16px;
-    border-radius: 10px;
-    transform: translate(-55%, -15%);
-    height: 100%;
+    display: none;
   }
-  .team-page .card-details {
+  .team-page .card-details,
+  .Card-content {
     width: 155px;
   }
   .team-info-card-img {
@@ -205,5 +225,20 @@
     transition: all ease-in 0.2s;
     padding: 0px;
     box-sizing: content-box;
+  }
+  .Card-content:hover .description-dropdown {
+    margin-top: 25px;
+  }
+  .Card-content:hover .description-dropdown {
+    margin-top: 30px;
+    height: auto;
+    padding: 10px 25px;
+    border: 2px solid var(--primary);
+  }
+  .right {
+    right: 100%;
+  }
+  .left {
+    left: 0%;
   }
 }

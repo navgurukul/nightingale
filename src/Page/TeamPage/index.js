@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
+import React, {
+  useState,
+  useEffect,
+  useCallback,
+  useRef,
+  createRef,
+} from "react";
 import "./styles.css";
 import abhishek from "./assets/abhishek.jpg";
 import komal from "./assets/komal.jpeg";
@@ -84,6 +90,35 @@ function TeamPage() {
     volunteers: false,
   });
   const toIterate = members.teamMembers ? teamMembers : volunteers;
+
+  const elements = useRef([]);
+  elements.current = [...Array(toIterate.length)].map((el, i) => {
+    return createRef();
+  });
+
+  const desktopcards = useRef([]);
+  desktopcards.current = [...Array(toIterate.length)].map((el, i) => {
+    return createRef();
+  });
+  useEffect(() => {
+    elements.current.map((e) => {
+      cardAlignment(e.current);
+    });
+    desktopcards.current.map((e) => {
+      cardAlignment(e.current);
+    });
+    console.log(desktopcards);
+    return () => {};
+  });
+
+  function cardAlignment(ele) {
+    let width = window.innerWidth;
+    console.log(width);
+    const currentPosition = ele.getBoundingClientRect();
+    console.log(currentPosition.x);
+    const partition = currentPosition.x > width / 2 ? "right" : "left";
+    ele.classList.add(partition);
+  }
 
   // useEffect(() => {
   //   return () => {};
@@ -270,29 +305,45 @@ function TeamPage() {
                 />
               </div>
             </div> */}
-            {toIterate.map((item) => {
+            {toIterate.map((item, index) => {
               return (
                 <>
-                  <div
-                    class="card card-details"
-                    // style={{ width: "18rem" }}
-                  >
-                    <div className="team-card-info">
-                      <img
-                        // className="card-img-top card-img"
-                        className="card-img-top team-info-card-img img-card-hover"
-                        src={item.url}
-                        alt="Card image cap"
-                      />
-                      <div className="team-info-card-title">{item.name}</div>
-                      <div className="section-para">{item.designation}</div>
+                  <div className="Card-content flex flex-column">
+                    <div
+                      class="card card-details"
+                      // style={{ width: "18rem" }}
+                    >
+                      <div className="team-card-info">
+                        <img
+                          // className="card-img-top card-img"
+                          className="card-img-top team-info-card-img img-card-hover"
+                          src={item.url}
+                          alt="Card image cap"
+                        />
+                        <div className="team-info-card-title">{item.name}</div>
+                        <div className="section-para">{item.designation}</div>
+                      </div>
+                      <p
+                        class="card-text hide"
+                        ref={desktopcards.current[index]}
+                      >
+                        <div className="team-info-card-title section-head">
+                          {item.name}
+                        </div>
+                        <div className="section-para">{item.description}</div>
+                      </p>
                     </div>
-                    <p class="card-text hide">
-                      <div className="team-info-card-title section-head">
+                    <div
+                      className="description-dropdown d-flex flex-column justify-content-start align-items-start"
+                      ref={elements.current[index]}
+                    >
+                      <div className="description-dropdown-name fw-bold">
                         {item.name}
                       </div>
-                      <div className="section-para">{item.description}</div>
-                    </p>
+                      <div className="description-dropdown-description">
+                        {item.description}
+                      </div>
+                    </div>
                   </div>
                   {/* <div class="card-details">
                     <img
