@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+}
 *:focus-visible,
 *:focus {
   outline: none;
@@ -23,6 +26,9 @@ h6 {
   font-family: Lusitana;
   font-style: normal;
   font-weight: 600;
+}
+h3 {
+  font-size: 32px;
 }
 :root {
   --primary: #f05f40;
@@ -165,6 +171,8 @@ input:focus {
   width: 6rem !important;
   border: transparent !important;
   border-top: 3px solid #f05f40 !important;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .f-luis {
@@ -174,7 +182,7 @@ input:focus {
   font-family: Nunito Sans !important;
 }
 @media screen and (max-width: 667px) {
-  h2 {
+  h3 {
     font-size: 20px !important;
   }
   body {

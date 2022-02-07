@@ -38,11 +38,20 @@
     left: auto;
     right: 40px;
   }
-  .carousal-image-container{
+  .carousal-image-container {
     margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 500px) {
+  .media-slider p {
+    font-family: Luistana;
+    font-size: 0.875rem;
+    line-height: 20px;
+  }
+  .slider .arrow{
+    height: 15px;
+    width: 15px;
+  }
   .partition-carousal-content {
     padding-inline: 20px;
   }

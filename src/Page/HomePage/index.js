@@ -17,11 +17,11 @@ function Home() {
           <div className="container">
             <div class="row ">
               <div class="col-lg-12 homepage-hero-data mt-5">
-                <h2 class="h1-responsive section-head fs-2.6 home-page-hero-section-data ">
+                <h2 class="fs-2.6 home-page-hero-section-data mb-3">
                   {" "}
                   The Gurukul for the New Age India and its New Generation{" "}
                 </h2>
-                <p className="mt-3 section-para home-page-hero-section-data-p">
+                <p className="mt-0 section-para home-page-hero-section-data-p mb-3">
                   {" "}
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
@@ -30,7 +30,7 @@ function Home() {
                   <Link to="/hiring">
                     <button
                       type="button"
-                      class="btn regular-btn section-para mt-2 mr-2 text-white"
+                      class="btn regular-btn section-para mt-0 mr-3 text-white"
                     >
                       Students
                     </button>
@@ -38,8 +38,7 @@ function Home() {
                   <Link to="/partners">
                     <button
                       type="button"
-                      class="btn regular-btn section-para mt-2 mr-0 text-white"
-                      style={{ marginLeft: "10px" }}
+                      class="btn regular-btn section-para mt-0 mr-0 text-white"
                     >
                       Partners
                     </button>
@@ -52,13 +51,13 @@ function Home() {
       </div>
       {/* </div> */}
       <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
-        <h2 className="align-self-center">In the Media</h2>
-        <hr className="mt-2 mb-0 align-self-center heading-hr" />
+        <h3 className="align-self-center mb-3">In the Media</h3>
+        <hr className="align-self-center heading-hr" />
         <Slider />
       </section>
 
-      <section className="my-5 our-initiatives">
-        <h2 className="text-center section-head">Our Initiatives</h2>
+      <section className="my-5 d-flex flex-column align-items-center our-initiatives">
+        <h3 className="text-center  mb-3">Our Initiatives</h3>
         <hr className="heading-hr" />
         <div class="container mt-5">
           <div class="row">
@@ -67,11 +66,11 @@ function Home() {
                 <Link to="/job-course">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white  ">
-                      <h5 class="card-title section-head card-main-text  card-heading ">
+                      <h3 class="card-title mb-3   card-main-text  card-heading ">
                         {" "}
                         Guaranteed Job Courses{" "}
-                      </h5>
-                      <p class="card-text section-para  mt-2 card-dic">
+                      </h3>
+                      <p class="card-text section-para   card-dic">
                         Fully-funded courses in software engineering and design
                         with guaranteed jobs
                       </p>
@@ -86,10 +85,10 @@ function Home() {
                 <a href="https://www.merakilearn.org/">
                   <div className="Initiatives-bg-color">
                     <div className="card-body text-white">
-                      <h5 class="card-title section-head card-main-text  card-heading ">
+                      <h3 class="card-title mb-3  card-main-text  card-heading ">
                         Learn Online with Meraki{" "}
-                      </h5>
-                      <p class="card-text mt-2 section-para  card-dic ">
+                      </h3>
+                      <p class="card-text  section-para  card-dic ">
                         Get started with programming in Python, English and
                         Typing
                       </p>
@@ -107,11 +106,11 @@ function Home() {
                 <Link to="/cif">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white">
-                      <h5 class="card-title section-head card-main-text card-heading">
+                      <h3 class="card-title mb-3   card-main-text card-heading">
                         {" "}
                         Code India Fellowships
-                      </h5>
-                      <p class="card-text section-para mt-2 card-dic">
+                      </h3>
+                      <p class="card-text section-para  card-dic">
                         Nurture programming skills in the next generation of
                         India’s youth with your expertise
                       </p>
@@ -126,11 +125,11 @@ function Home() {
                 <Link to="/nglabs">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white">
-                      <h5 class="card-title section-head card-main-text card-heading">
+                      <h3 class="card-title mb-3   card-main-text card-heading">
                         {" "}
                         NG Labs{" "}
-                      </h5>
-                      <p class="card-text section-para mt-2 card-dic">
+                      </h3>
+                      <p class="card-text section-para  card-dic">
                         Experiments in non-profit space for otherwise for-profit
                         solutions such as non-profit Uber
                       </p>
@@ -143,28 +142,27 @@ function Home() {
         </div>
       </section>
 
-      <section className="container  text-center w-50 my-5">
+      <section className="container text-left text-md-center w-50 my-5">
         <p className="section-para ">
           <span className="fw-bold">Techalms Consulting:</span> A talent group
           ready to fly in, solve your problems and leave by leaving happy faces
           at the clientplace{" "}
         </p>
 
-        <p className="text-secondary"> Coming soon.........</p>
+        <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
 
-      <section className="container-fluid impact">
-        <div class=" py-5  w-100">
-          <div class="container text-center w-100">
-            <h2 className="text-center section-head Impact-that-matters ">
+      <section className="container-fluid impact ">
+        <div class=" py-5 w-100">
+          <div class="container d-flex flex-column text-center w-100">
+            <h3 className="text-center  Impact-that-matters mb-3">
               Impact that matters!
               {/* <div className="underliner mt-2"></div> */}
-              <hr className="heading-hr" />
-            </h2>
-
+            </h3>
+            <hr className="heading-hr align-self-center" />
             <div class="row">
               <div class="col-lg-4 col-md-12 mb-lg-0">
-                <h2 className="count section-head">160+</h2>
+                <span className="count d-block">160+</span>
                 <p className="section-para"> Software Development Jobs</p>
               </div>
 
@@ -174,12 +172,12 @@ function Home() {
                     className="mx-auto impactellipse"
                     src={require("./assets/impactellipse.png").default}
                   />
-                  <h2 className="mt-5 count section-head"> 5 </h2>
+                  <span className="mt-5 count d-block"> 5 </span>
                   <p className="section-para">States across India </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-4 mb-lg-0 ">
-                <h2 className="count section-head">400+</h2>
+                <span className="count d-block">400+</span>
                 <p className="section-para"> Online Students </p>
               </div>
             </div>
@@ -204,13 +202,13 @@ function Home() {
                 })}
             </section>  */}
 
-      <section className="our-partners text-center mx-6 my-5">
-        <h2 className="align-self-center mt-4 section-head">Our Partners</h2>
-        <hr className="mt-3 mb-0 align-self-center heading-hr" />
+      <section className="our-partners text-center mx-6 my-5 d-flex flex-column">
+        <h3 className="align-self-center mb-3 ">Our Partners</h3>
+        <hr className="align-self-center heading-hr" />
         <PartnerSlider />
 
-        <div class="d-flex flex-column align-items-center justify-content-center align-items-center my-5 ">
-          <h2 className="section-head mb-4"> Bring a change! </h2>
+        <div class="d-flex flex-column align-items-center justify-content-center align-items-center mb-5 ">
+          <h3 className=" mb-4"> Bring a change! </h3>
           <button
             class="btn regular-btn our-partner-btn section-para text-white partner "
             type="button"
@@ -263,8 +261,8 @@ function Home() {
  */}
 
       <section className="d-flex home-page-supporters py-5 flex-column align-items-center justify-content-center mb-0 mt-5">
-        <h2 className="section-head">Our Supporters</h2>
-        <hr className="mb-5 heading-hr" />
+        <h3 className=" mb-3">Our Supporters</h3>
+        <hr className="heading-hr" />
         <div class="container ">
           <div class="row">
             <div class="col-md-12 col-12">

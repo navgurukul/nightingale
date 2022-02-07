@@ -88,13 +88,13 @@ function PartnerSlider() {
   return (
     <div className="slider pb-5">
       <>
-        <div className="navigation-wrapper mt-5">
+        <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
             <div className="partners-carousal-cards">
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mt-3">
+                  <img className="partition-carousal-content-img mb-3" src={image} />
+                  <div className="partition-carousal-content-name fw-semiBold mb-3">
                     Nasa
                   </div>
                   <p className="mb-3">
@@ -109,8 +109,8 @@ function PartnerSlider() {
               </div>
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mt-3">
+                  <img className="partition-carousal-content-img mb-3" src={image} />
+                  <div className="partition-carousal-content-name fw-semiBold mb-3">
                     Hope Foundation
                   </div>
                   <p className="mb-3">
@@ -125,8 +125,8 @@ function PartnerSlider() {
               </div>
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mt-3">
+                  <img className="partition-carousal-content-img mb-3" src={image} />
+                  <div className="partition-carousal-content-name fw-semiBold mb-3">
                     Dole
                   </div>
                   <p className="mb-3">
@@ -141,8 +141,8 @@ function PartnerSlider() {
               </div>
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mt-3">
+                  <img className="partition-carousal-content-img mb-3" src={image} />
+                  <div className="partition-carousal-content-name fw-semiBold mb-3">
                     Bunnie
                   </div>
                   <p className="mb-3">
