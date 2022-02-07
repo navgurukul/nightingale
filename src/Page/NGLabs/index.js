@@ -24,7 +24,7 @@ function NgLabs() {
                 projects that we believe can directly or indirectly contribute
                 to the improvement of education system in India
               </p>
-              <button className="btn btn-primary text-white ng-labs-btn">
+              <button className="btn btn-primary text-white regular-btn">
                 Seek Incubation Support
               </button>
             </div>
@@ -77,7 +77,7 @@ function NgLabs() {
       <div className="idea d-flex flex-column justify-content-center align-items-center">
         <h2 className="mb-4">Have an Idea in Works?</h2>
 
-        <button className="btn btn-primary f-Nuni fw-semiBold text-white ng-labs-btn">
+        <button className="btn btn-primary f-Nuni fw-semiBold text-white regular-btn">
           Seek Incubation Support
         </button>
       </div>

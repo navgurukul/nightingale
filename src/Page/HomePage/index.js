@@ -30,7 +30,7 @@ function Home() {
                   <Link to="/hiring">
                     <button
                       type="button"
-                      class="btn ng-labs-btn section-para mt-2 mr-2 text-white"
+                      class="btn regular-btn section-para mt-2 mr-2 text-white"
                     >
                       Students
                     </button>
@@ -38,7 +38,7 @@ function Home() {
                   <Link to="/partners">
                     <button
                       type="button"
-                      class="btn ng-labs-btn section-para mt-2 mr-0 text-white"
+                      class="btn regular-btn section-para mt-2 mr-0 text-white"
                       style={{ marginLeft: "10px" }}
                     >
                       Partners
@@ -212,7 +212,7 @@ function Home() {
         <div class="d-flex flex-column align-items-center justify-content-center align-items-center my-5 ">
           <h2 className="section-head mb-4"> Bring a change! </h2>
           <button
-            class="btn ng-labs-btn our-partner-btn section-para text-white partner "
+            class="btn regular-btn our-partner-btn section-para text-white partner "
             type="button"
           >
             Partner with us

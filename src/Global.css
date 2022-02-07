@@ -1,25 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
-* {
-  font-family: "Nunito Sans", sans-serif !important;
-}
+
 *:focus-visible,
 *:focus {
   outline: none;
 }
 body {
   font-size: 1.125rem;
+  font-family: "Nunito Sans", sans-serif;
 }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: Lusitana !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-  /* padding-inline: 0.2rem; */
+  font-family: Lusitana;
+  font-style: normal;
+  font-weight: 600;
 }
 :root {
   --primary: #f05f40;
@@ -136,25 +139,24 @@ input:focus {
 .mr-0\.5 {
   margin-right: 0.5rem !important;
 }
-.ng-labs-btn {
+.regular-btn {
   background-color: var(--primary);
   border-color: var(--primary);
   cursor: pointer;
   transition: all ease-in 0.2s;
   color: white;
   border-radius: 8px;
-  font-family: Nunito Sans !important;
   font-weight: 700;
   height: 48px;
   font-size: 1.125em;
 }
-.ng-labs-btn:hover {
+.regular-btn:hover {
   background-color: var(--btnHover) !important;
   border-color: var(--btnHover) !important;
 }
 
-.ng-labs-btn:active,
-.ng-labs-btn:focus {
+.regular-btn:active,
+.regular-btn:focus {
   background-color: var(--btnHover) !important;
   border-color: var(--btnHover) !important;
   box-shadow: 0 0 0 0.2rem #f58d76 !important;
@@ -165,17 +167,6 @@ input:focus {
   border-top: 3px solid #f05f40 !important;
 }
 
-/* .section-head {
-  font-family: Lusitana !important;
-  font-style: normal !important;
-  font-weight: 600 !important;
-} */
-/* 
-.section-para {
-  font-family: Nunito Sans !important;
-  font-style: normal !important;
-  font-weight: 200 !important;
-} */
 .f-luis {
   font-family: Luistana !important;
 }
@@ -192,7 +183,7 @@ input:focus {
   button {
     font-size: 0.875rem !important;
   }
-  .ng-labs-btn {
+  .regular-btn {
     max-width: 328px;
   }
 }

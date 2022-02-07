@@ -58,7 +58,7 @@ function Programmer() {
               </p>
 
               <button
-                className="btn btn-primary text-white w-100 my-1 fs-sm-1.2  ng-labs-btn"
+                className="btn btn-primary text-white w-100 my-1 fs-sm-1.2  regular-btn"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open("https://admissions.navgurukul.org/", "_blank");
@@ -196,7 +196,7 @@ function Programmer() {
         /> */}
           {/* <a></a> */}
           <button
-            className="btn btn-primary text-white w-100 my-1 ng-labs-btn"
+            className="btn btn-primary text-white w-100 my-1 regular-btn"
             onClick={(e) => {
               e.preventDefault();
               window.open("https://admissions.navgurukul.org/", "_blank");

@@ -22,7 +22,7 @@ function NgHiring() {
           </div>
           <button
             type="button"
-            class="btn mb-4 f-Nuni fw-semiBold py-2 ng-labs-btn"
+            class="btn mb-4 f-Nuni fw-semiBold py-2 regular-btn"
           >
             Download Placement Brief
           </button>

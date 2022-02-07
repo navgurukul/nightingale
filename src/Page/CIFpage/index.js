@@ -17,7 +17,7 @@ function CifPage() {
             with your expertise
           </p>
           <button
-            className="btn btn-primary mb-1 py-2 px-8 ng-labs-btn fw-bold"
+            className="btn btn-primary mb-1 py-2 px-8 regular-btn fw-bold"
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -210,7 +210,7 @@ function CifPage() {
           India’s youth with your expertise
         </span>
         <button
-          className="btn btn-primary text-white mb-1 py-2 px-8 ng-labs-btn fw-bold"
+          className="btn btn-primary text-white mb-1 py-2 px-8 regular-btn fw-bold"
           onClick={(e) => {
             e.preventDefault();
             window.open(

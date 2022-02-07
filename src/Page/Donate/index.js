@@ -34,7 +34,7 @@ function Donate() {
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
-            class="donate-page-button ng-labs-btn"
+            class="donate-page-button regular-btn"
             onClick={(e) => {
               e.preventDefault();
               window.open("https://www.instamojo.com/@navgurukul/", "_blank");
@@ -226,7 +226,7 @@ function Donate() {
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
-            class="fw-semiBold donate-page-button ng-labs-btn contact-button"
+            class="fw-semiBold donate-page-button regular-btn contact-button"
           >
             Contact Us for CSR Enquiries
           </button>

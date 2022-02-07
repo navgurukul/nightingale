@@ -163,7 +163,7 @@ function TeamPage() {
               <div class="col-md team-button-container d-flex justify-content-center align-items-center col-sm-12">
                 <button
                   type="button"
-                  class="btn section-para ng-labs-btn my-2 mx-3 career-button"
+                  class="btn section-para regular-btn my-2 mx-3 career-button"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
