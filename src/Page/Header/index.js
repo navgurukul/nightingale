@@ -194,8 +194,8 @@ function Header() {
               <FiExternalLink className="ml-2" />
             </a>
           </li>
-          <div className="divider language mr-3"></div>
-          <li className="nav-item dropdown language">
+          {/* <div className="divider language mr-3"></div> */}
+          {/* <li className="nav-item dropdown language">
             <a
               className="nav-link dropdown-toggle header-title"
               href="#"
@@ -215,7 +215,7 @@ function Header() {
                 Hindi
               </a>
             </div>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

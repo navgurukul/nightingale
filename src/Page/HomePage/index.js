@@ -17,7 +17,7 @@ function Home() {
           <div className="container">
             <div class="row ">
               <div class="col-lg-12 homepage-hero-data mt-5">
-                <h2 class="fs-2.6 home-page-hero-section-data mb-3">
+                <h2 class="  home-page-hero-section-data mb-3">
                   {" "}
                   The Gurukul for the New Age India and its New Generation{" "}
                 </h2>
@@ -172,7 +172,7 @@ function Home() {
                     className="mx-auto impactellipse"
                     src={require("./assets/impactellipse.png").default}
                   />
-                  <span className="mt-5 count d-block"> 5 </span>
+                  <span className="mt-md-5 mt-4 count d-block"> 5 </span>
                   <p className="section-para">States across India </p>
                 </div>
               </div>

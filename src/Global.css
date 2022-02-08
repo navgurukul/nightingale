@@ -8,10 +8,17 @@
 *:focus {
   outline: none;
 }
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 body {
   font-size: 1.125rem;
   font-family: "Nunito Sans", sans-serif;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -44,69 +51,9 @@ h3 {
   --bg-card-2: #e6e6e6;
   --gray: #6c757d;
 }
+/* margins */
 .mt-7 {
   margin-top: 7rem !important;
-}
-textarea:focus,
-input:focus {
-  outline: none;
-}
-.fw-semiBold {
-  font-weight: 700 !important;
-}
-.fw-bold {
-  font-weight: 900;
-}
-.fw-400 {
-  font-weight: 400 !important;
-}
-.fs-1\.2 {
-  font-size: 1.2rem !important;
-}
-.fs-1\.3 {
-  font-size: 1.3rem !important;
-}
-.fs-1\.1 {
-  font-size: 1.1rem !important;
-}
-.fs-1\.13 {
-  font-size: 1.13rem !important;
-}
-.fs-1\.125 {
-  font-size: 1.125rem !important;
-}
-.fs-0\.9 {
-  font-size: 0.96rem !important;
-}
-.fs-1\.5 {
-  font-size: 1.5rem !important;
-}
-.fs-1\.7 {
-  font-size: 1.7rem !important;
-}
-.fs-2\.25 {
-  font-size: 2.25rem !important;
-}
-.fs-2 {
-  font-size: 2rem !important;
-}
-.fs-2\.6 {
-  font-size: 2.6rem !important;
-}
-.fs-2\.8 {
-  font-size: 2.85rem !important;
-}
-.fs-3\.5 {
-  font-size: 3.5rem !important;
-}
-.mt-9 {
-  margin-top: 9rem !important;
-}
-.mt-15 {
-  margin-top: 15rem !important;
-}
-.px-8 {
-  padding-inline: 8rem !important;
 }
 .mt-0\.5 {
   margin-top: 0.5rem !important;
@@ -114,15 +61,45 @@ input:focus {
 .mx-6 {
   margin-inline: 6.5rem;
 }
-.fs-1\.7 {
-  font-size: 1.7em !important;
+.mr-0\.5 {
+  margin-right: 0.5rem !important;
 }
+.mh-10 {
+  min-height: 10em !important;
+}
+
+/* font*/
+
+.fw-bold {
+  font-weight: 900;
+}
+.fs-1\.5 {
+  font-size: 1.5rem !important;
+}
+.f-luis {
+  font-family: Luistana !important;
+}
+.f-Nuni {
+  font-family: Nunito Sans !important;
+}
+
+/* paddings */
+
+.px-8 {
+  padding-inline: 8rem !important;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+/* widths  */
+
 .w-70 {
   width: 70% !important;
 }
 .w-60 {
   width: 60% !important;
-  /* justify-content: ; */
 }
 .w-80 {
   width: 80% !important;
@@ -136,15 +113,9 @@ input:focus {
 .w-30 {
   width: 30% !important;
 }
-.mh-10 {
-  min-height: 10em !important;
-}
-.fw-600 {
-  font-weight: 600;
-}
-.mr-0\.5 {
-  margin-right: 0.5rem !important;
-}
+
+/* buttons and components */
+
 .regular-btn {
   background-color: var(--primary);
   border-color: var(--primary);
@@ -175,12 +146,6 @@ input:focus {
   margin-bottom: 2rem;
 }
 
-.f-luis {
-  font-family: Luistana !important;
-}
-.f-Nuni {
-  font-family: Nunito Sans !important;
-}
 @media screen and (max-width: 667px) {
   h3 {
     font-size: 20px !important;

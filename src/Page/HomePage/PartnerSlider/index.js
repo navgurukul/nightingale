@@ -93,8 +93,11 @@ function PartnerSlider() {
             <div className="partners-carousal-cards">
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img mb-3" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mb-3">
+                  <img
+                    className="partition-carousal-content-img mb-3"
+                    src={image}
+                  />
+                  <div className="partition-carousal-content-name fw-bold mb-3">
                     Nasa
                   </div>
                   <p className="mb-3">
@@ -102,15 +105,18 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-bold">
                     - Suresh G, Program Director
                   </span>
                 </div>
               </div>
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img mb-3" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mb-3">
+                  <img
+                    className="partition-carousal-content-img mb-3"
+                    src={image}
+                  />
+                  <div className="partition-carousal-content-name fw-bold mb-3">
                     Hope Foundation
                   </div>
                   <p className="mb-3">
@@ -118,15 +124,18 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-bold">
                     - Suresh G, Program Director
                   </span>
                 </div>
               </div>
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img mb-3" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mb-3">
+                  <img
+                    className="partition-carousal-content-img mb-3"
+                    src={image}
+                  />
+                  <div className="partition-carousal-content-name fw-bold mb-3">
                     Dole
                   </div>
                   <p className="mb-3">
@@ -134,15 +143,18 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-bold">
                     - Suresh G, Program Director
                   </span>
                 </div>
               </div>
               <div className="keen-slider__slide number-slide">
                 <div className="partition-carousal-content my-3">
-                  <img className="partition-carousal-content-img mb-3" src={image} />
-                  <div className="partition-carousal-content-name fw-semiBold mb-3">
+                  <img
+                    className="partition-carousal-content-img mb-3"
+                    src={image}
+                  />
+                  <div className="partition-carousal-content-name fw-bold mb-3">
                     Bunnie
                   </div>
                   <p className="mb-3">
@@ -150,7 +162,7 @@ function PartnerSlider() {
                     duis ullamco cillum dolor. Voluptate exercitation incididunt
                     aliquip deserunt reprehenderit elit laborum.”
                   </p>
-                  <span className="align-self-end mr-3 fw-semiBold">
+                  <span className="align-self-end mr-3 fw-bold">
                     - Suresh G, Program Director
                   </span>
                 </div>

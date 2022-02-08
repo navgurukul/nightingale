@@ -13,19 +13,19 @@ function Partners() {
         <hr className="mt-2 heading-hr" />
         <div className="card-row flex-sm-row flex-column w-75 d-flex justify-content-center align-items-center bg-white">
           <div className="card w-25 my-3 bg-white py-3 d-flex justify-content-center mx-3 align-items-center">
-            <span className="fs-3.5 text-primary section-head">50</span>
-            <p className="fw-400 ">Total Partners</p>
+            <span className=" text-primary section-head">50</span>
+            <p>Total Partners</p>
           </div>
           <div className="card w-25 my-3 bg-white py-3 d-flex justify-content-center mx-3 align-items-center">
-            <span className="fs-3.5 text-primary section-head">2000 +</span>
-            <p className="fw-400">Students</p>
+            <span className=" text-primary section-head">2000 +</span>
+            <p>Students</p>
           </div>
           <div className="card w-25 my-3 bg-white py-3 d-flex justify-content-center mx-3 align-items-center">
-            <span className="fs-3.5 text-primary section-head">8</span>
-            <p className="fw-400">Indian States</p>
+            <span className=" text-primary section-head">8</span>
+            <p>Indian States</p>
           </div>
         </div>
-        <div className="partner-content-data w-40 text-center section-para fw-400 d-flex align-items-center justify-content-center mb-2 mt-4">
+        <div className="partner-content-data w-40 text-center section-para d-flex align-items-center justify-content-center mb-2 mt-4">
           Our partners help us give access to aspirational careers to youth who
           want to grow but don’t have means to do so. Our partnerships are the
           backbone of our operations. Our partners share our values, our
@@ -41,7 +41,7 @@ function Partners() {
         <div className="all-partners w-80 d-flex flex-column">
           <div className="all-partners-row d-flex justify-content-around w-100 align-items-center my-1">
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -53,7 +53,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -65,7 +65,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -79,7 +79,7 @@ function Partners() {
           </div>
           <div className="all-partners-row d-flex justify-content-around w-100 align-items-center my-1">
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -91,7 +91,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -103,7 +103,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -125,7 +125,7 @@ function Partners() {
         <div className="all-partners w-80 d-flex flex-column">
           <div className="all-partners-row d-flex justify-content-around w-100 align-items-center my-1">
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -137,7 +137,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -149,7 +149,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -163,7 +163,7 @@ function Partners() {
           </div>
           <div className="all-partners-row d-flex justify-content-around w-100 align-items-center my-1">
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -175,7 +175,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}
@@ -187,7 +187,7 @@ function Partners() {
               </div>
             </div>
             <div className="card my-3 bg-white py-3 px-4">
-              <h3 className="fw-semiBold mb-2 fs-1.125">Hope Foundation</h3>
+              <h3 className="fw-bold mb-2  ">Hope Foundation</h3>
               <p className="my-1 mb-2">
                 Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis
                 ullamco cillum dolor.{" "}

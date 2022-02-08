@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function JobCourse() {
   return (
     <main className="job-course-page">
-      <h2 className="job-course-title section-head fs-3">
+      <h2 className="job-course-title section-head ">
         Gauranteed Job Courses
       </h2>
       <div className="job-course-content w-100 d-flex justify-content-center">

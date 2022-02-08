@@ -33,13 +33,13 @@ function Programmer() {
             </h2>
             <div className="input d-flex flex-column justify-content-center align-items-start text-left p-1 w-90">
               {/* <label
-              className="text-muted my-1 fs-sm-1.2 fs-1.1"
+              className="text-muted my-1 fs-sm-1.2 "
               htmlFor="number"
             >
               Phone Number
             </label> */}
               {/* <input
-              className="border-0 w-100 p-2 fs-1.1 text-black mb-2"
+              className="border-0 w-100 p-2  text-black mb-2"
               type="text"
               placeholder=""
               value={state}
@@ -67,7 +67,7 @@ function Programmer() {
                 Take Test
               </button>
 
-              {/* <div className="text fs-sm-1.2 fs-1.1 my-1">
+              {/* <div className="text my-1">
               Had a test already?{" "}
               <span className="text-primary">Check status here</span>
             </div> */}
@@ -85,7 +85,7 @@ function Programmer() {
         </div>
       </div>
       {/* <div className="benefits d-flex flex-column justify-content-center align-items-center my-2 my-sm-5 ">
-      <h2 className="fw-semiBold section-head">Course Benefits</h2>
+      <h2 className="">Course Benefits</h2>
       <hr className="heading-hr" />
       <div className="container w-80 mt-4">
         <div className="row d-flex flex-md-row flex-column justify-content-center align-items-center ">
@@ -120,9 +120,7 @@ function Programmer() {
       </div>
     </div> */}
       <div className="test-p my-2 mb-sm-5 d-flex flex-column align-items-center">
-        <h2 className="fw-semiBold section-head">
-          Conduct a Test in Your Locality
-        </h2>
+        <h2 className="mb-3">Conduct a Test in Your Locality</h2>
         <hr className="heading-hr" />
         <div className="container w-100 my-4 d-flex align-items-center justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100">
@@ -160,7 +158,7 @@ function Programmer() {
         </div>
       </div>
       <div className="students my-2 my-sm-5 d-flex flex-column align-items-center">
-        <h2 className="fw-semiBold">Hear From Our Students</h2>
+        <h2 className="mb-3">Hear From Our Students</h2>
         <hr className="heading-hr mb-3" />
         <div className="container w-100 mt-3  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
@@ -177,16 +175,14 @@ function Programmer() {
         </div>
       </div>
       <div className="next-step mt-2 mt-sm-5 d-flex flex-column align-items-center">
-        <h2 className="fw-semiBold mb-3 section-head">
-          Ready for the Next Step?
-        </h2>
+        <h2 className="mb-3">Ready for the Next Step?</h2>
         {/* <hr className="heading-hr mb-3 mt-3" /> */}
         <div className="input d-flex flex-column justify-content-center align-items-center mt-3 text-left w-100  ">
-          {/* <label className="text-muted my-1 fs-1.1" htmlFor="number">
+          {/* <label className="text-muted my-1 " htmlFor="number">
           Phone Number
         </label>
         <input
-          className="border-0 w-100 p-2 fs-1.1 text-black mb-2"
+          className="border-0 w-100 p-2 text-black mb-2"
           type="text"
           placeholder=""
           value={state}
@@ -204,7 +200,7 @@ function Programmer() {
           >
             Take Test
           </button>
-          {/* <div className="text fs-1.1 my-1">
+          {/* <div className="text my-1">
           Had a test already?{" "}
           <span className="text-primary">Check status here</span>
         </div> */}

@@ -11,7 +11,7 @@ function CifPage() {
     <div className="CifPage d-flex flex-column justify-content-center">
       <div className="hero w-100 text-white d-flex justify-content-center align-items-center float-left">
         <div className="data d-flex flex-column align-items-center text-center">
-          <h2 className="fs-2.6">Code India Fellowships</h2>
+          <h2 className=" ">Code India Fellowships</h2>
           <p className="mt-2 w-75">
             Nurture Programming skills in the next generation of India's youth
             with your expertise
@@ -122,7 +122,7 @@ function CifPage() {
         <hr className="heading-hr mb-3" />
         <div className="container f-Nuni text-start mb-1 mt-3 w-50">
           <div className="sub-section mb-5">
-            <h2 className="fs-1.2  mb-3 fw-bold">Teaching</h2>
+            <h2 className="mb-3 fw-bold">Teaching</h2>
             <ul>
               <li>
                 Support young children by teaching programming or coding through
@@ -140,7 +140,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.2 mb-3 fw-bold section-head">
+            <h2 className="mb-3 fw-bold section-head">
               Managing people and resources
             </h2>
             <ul>
@@ -156,7 +156,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.2 mb-3 fw-bold section-head">
+            <h2 className="mb-3 fw-bold section-head">
               Academic administration
             </h2>
             <ul>
@@ -172,7 +172,7 @@ function CifPage() {
             </ul>
           </div>
           <div className="sub-section mb-5">
-            <h2 className="fs-1.2 mb-3 fw-bold section-head">
+            <h2 className="mb-3 fw-bold section-head">
               Documentation and reporting
             </h2>
             To document your journey as a fellow and prepare a report at the end

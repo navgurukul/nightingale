@@ -47,7 +47,7 @@ function NgLabs() {
                 <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
                   <img src={icon1} alt="" />
                   <h2 className="mt-3 fw-bold">Meraki</h2>
-                  <p className="fw-400">
+                  <p>
                     Some outrageous impact of the project
                   </p>
                 </div>
@@ -58,7 +58,7 @@ function NgLabs() {
                 <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
                   <img src={icon2} alt="" />
                   <h2 className="mt-3 fw-bold">Conscious Ad Network</h2>
-                  <p className="fw-400">
+                  <p>
                     Some outrageous impact of the project
                   </p>
                 </div>
@@ -68,7 +68,7 @@ function NgLabs() {
         </div>
       </div>
       {/* <div className="timeline my-4 d-flex flex-column justify-content-center align-items-center mb-1">
-        <h2 className="section-head fs-2">Project Timeline (Next 12 months)</h2>
+        <h2 className="">Project Timeline (Next 12 months)</h2>
         <hr className="heading-hr" />
         <div className="container w-75 my-5 mb-2 d-flex flex-column justify-content-center align-items-center">
           <img src={Timeline} alt="" className="mb-5" />
@@ -77,7 +77,7 @@ function NgLabs() {
       <div className="idea d-flex flex-column justify-content-center align-items-center">
         <h2 className="mb-4">Have an Idea in Works?</h2>
 
-        <button className="btn btn-primary f-Nuni fw-semiBold text-white regular-btn">
+        <button className="btn btn-primary f-Nuni fw-bold text-white regular-btn">
           Seek Incubation Support
         </button>
       </div>
