@@ -185,23 +185,6 @@ function Home() {
         </div>
       </section>
 
-      {/* <section className="container text-center mt-5">
-                <h1> Our Partners  </h1>
-
-                <p>Navgurukul offers a fully-funded skilling </p>
-            </section> */}
-
-      {/* <section class="container">
-                {supports.map((item) => {
-                    console.log(item, 'name ')
-                    return (
-                        <div class="slide-content" style={{ outline: "none !important;" }}>
-                            <a href={item.link} target="_blank" class="nounderline d-flex justify-content-center py-4" rel="nofollow"><img src={item.image.default} style={{ maxWidth: "100%" }} /></a>
-                        </div>
-                    );
-                })}
-            </section>  */}
-
       <section className="our-partners text-center mx-6 my-5 d-flex flex-column">
         <h3 className="align-self-center mb-3 ">Our Partners</h3>
         <hr className="align-self-center heading-hr" />
@@ -218,47 +201,7 @@ function Home() {
         </div>
       </section>
 
-      {/* <section >
-                <div className="  supporters text-center">
-                    <h1 >Our Supporters</h1>
-                    <div className="container" style={{ backgroundColor: 'pink' }}>
-                        <div class="row ">
-                            <div class="col-md-12 col-12">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                    </ol>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img class="  kom " src={require('../logos/wipro.png').default} alt="First slide" />
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class=" kom " src={require('../logos/amazo.png').default} alt="Second slide" />
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class=" kom" src={require('../logos/mrst.png').default} alt="Third slide" style={{ width: '20%' }} />
-                                        </div>
-
-                                    </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
- */}
+    
 
       <section className="d-flex home-page-supporters py-5 flex-column align-items-center justify-content-center mb-0 mt-5">
         <h3 className=" mb-3">Our Supporters</h3>

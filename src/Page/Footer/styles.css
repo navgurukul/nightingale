@@ -123,12 +123,20 @@ ul.nav-footer {
 .footer-container .facebook {
   margin-right: 17px;
 }
-.socialmedia-icon {
+.socialmedia-icon,
+.svg-background,
+svg rect {
   cursor: pointer;
-  transition: all ease 2s;
+  transition: all ease 0.2s;
 }
-.footer-container .socialmedia-icon:hover .svg-background {
+/* .footer-container .socialmedia-icon:hover .svg-background {
   fill: #ffffff;
+} */
+.svg-background:hover .socialmedia-icon {
+  fill: white;
+}
+.svg-background:hover rect {
+  fill: var(--primary);
 }
 .footer-container .linkedin {
   margin-right: 17px;
