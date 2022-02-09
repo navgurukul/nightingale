@@ -11,8 +11,14 @@
   min-width: 250px;
   transition: all ease-in 0.3s;
 }
-.partnerInfo .card {
+
+.partnerInfo .card  {
   font-size: 1.5rem;
+  cursor: auto;
+}
+
+.partnerInfo .card span {
+  font-size: 3.5rem;
 }
 .partners .btn {
   padding: 0.5rem 0;
@@ -62,16 +68,10 @@
 }
 @media screen and (max-width: 550px) {
   .partner-content-data {
-    width: 70% !important;
+    width: 90% !important;
+    text-align: left !important;
   }
-  .partners h2 {
-    font-size: 1.3rem;
-  }
-  .partners h3 {
-    font-size: 1.3rem;
-    margin-bottom: 2px !important;
-  }
-  .partners-support-section h2 {
+  .partners-support-section h3 {
     width: 90% !important;
   }
   .partners .btn {
@@ -79,7 +79,7 @@
     font-size: 1rem !important;
   }
   .social-media-icons {
-    width: 30% !important;
+    width: 40% !important;
   }
   .partnerInfo .card {
     font-size: 0.875rem;

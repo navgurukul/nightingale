@@ -44,7 +44,7 @@ video {
   max-width: 352px;
 }
 @media screen and (max-width: 1200px) {
-  .container {
+  .programmers .container {
     width: 100%;
   }
   .hero-P .row {

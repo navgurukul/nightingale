@@ -187,18 +187,17 @@ h4 {
 
 @media screen and (max-width: 667px) {
   h2 {
-    font-size: 24px !important;
+    font-size: 24px;
   }
   h3 {
-    font-size: 20px !important;
+    font-size: 20px;
   }
   body {
     font-size: 0.875rem !important;
   }
-  .regular-btn {
+  .regular-btn,
+  .dashed-btn {
     font-size: 0.875rem !important;
-  }
-  .regular-btn {
-    max-width: 328px;
+    width: 90% !important;
   }
 }

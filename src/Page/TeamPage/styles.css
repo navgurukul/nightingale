@@ -158,6 +158,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .team-page .container{
+    width: 90%;
+  }
   .team-page-content {
     width: 80% !important;
   }
