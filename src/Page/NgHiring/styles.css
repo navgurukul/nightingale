@@ -1,10 +1,7 @@
 .ng-hiring-page {
   background-color: #fff;
   text-align: center;
-  font-family: "Lusitana", Fallback, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
-}
+ }
 
 .hiring-page-section {
   margin: 40px 0;
@@ -24,7 +21,6 @@
 @media screen and (max-width: 667px) {
   .hiring-page-content {
     margin: 40px 0px;
-    font-size: 14px;
     line-height: 20px;
     text-align: left;
   }
@@ -33,11 +29,6 @@
     
   }
   .hiring-section-title {
-    font-size: 21px;
     line-height: 28px;
-  }
-  .title-underliner {
-    margin-left: 150px;
-    width: 70px;
   }
 }

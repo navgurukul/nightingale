@@ -7,9 +7,9 @@ function Donate() {
     <main className="donate-page d-flex flex-column justify-content-center align-items-center">
       <div className="page-content d-flex flex-column justify-content-center align-items-center">
         <section className="donate-page-section mt-4 d-flex flex-column align-items-center">
-          <h2 className="section-head mt-5 mb-3">Donate to NavGurukul</h2>
-          <hr className="heading-hr" />
-          <div className="d-flex account-details justify-content-center align-items-center">
+          <h3 className="section-head mt-5 mb-3">Donate to NavGurukul</h3>
+          <hr className="heading-hr mb-3" />
+          <div className="d-flex account-details mt-3 justify-content-center align-items-center">
             <div className="d-flex flex-column text-left fw-bold">
               <span>UPI ID</span>
               <span>Name</span>
@@ -54,7 +54,7 @@ function Donate() {
               <div class="col-md col-sm-12 ">
                 <button
                   type="button"
-                  class="btn btn-primary donate-button"
+                  class="btn btn-primary donate-button dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -67,7 +67,7 @@ function Donate() {
                 </button>
                 <button
                   type="button"
-                  class="btn btn-primary donate-button"
+                  class="btn btn-primary donate-button dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -80,7 +80,7 @@ function Donate() {
                 </button>
                 <button
                   type="button"
-                  class="btn btn-primary donate-button"
+                  class="btn btn-primary donate-button dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -93,7 +93,7 @@ function Donate() {
                 </button>
                 <button
                   type="button"
-                  class="btn btn-primary  donate-button"
+                  class="btn btn-primary  donate-button dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -106,7 +106,7 @@ function Donate() {
                 </button>
                 <button
                   type="button"
-                  class="btn btn-primary  donate-button"
+                  class="btn btn-primary  donate-button dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -119,7 +119,7 @@ function Donate() {
                 </button>
                 <button
                   type="button"
-                  class="btn btn-primary  donate-button"
+                  class="btn btn-primary  donate-button dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -141,29 +141,29 @@ function Donate() {
           </div>
         </section>
         <section className="d-flex flex-column donate-page-section donate-page-image-section">
-          <h2 className="mt-5 mb-3 section-head">
+          <h3 className="mt-5 mb-3 section-head">
             Your Donations Create Impact
-          </h2>
+          </h3>
           <hr className="heading-hr align-self-center" />
           <img className="middleImg" src={middleImg}></img>
           <div className="donation-impact-data d-flex justify-content-around my-5">
             <span>
-              <h3 className="section-head">160+</h3>
+              <span className="section-head">160+</span>
               <p className="">Software Development Jobs</p>
             </span>
             <span>
-              <h3 className="section-head">4000+</h3>
+              <span className="section-head">4000+</span>
               <p className="">Online Students</p>
             </span>
           </div>
           <div className="donation-impact-data donation-impact-data-2 d-flex justify-content-around mt-5">
             <span>
-              <h3 className="section-head">5</h3>
+              <span className="section-head">5</span>
               <p className="">States across India</p>
             </span>
           </div>
           {/* <div className="donate-bg">
-            <h2 className="donate-title">Your Donations Create Impact</h2>
+            <h3 className="donate-title">Your Donations Create Impact</h3>
             <div className="donate-underliner"></div>
             <img
               src={require("./assets/Ellipse.png").default}
@@ -188,7 +188,7 @@ function Donate() {
           </div> */}
           {/* <div>
             <div className="donate-bg-image">
-              <h2 className="donate-title">Your Donations Create Impact</h2>
+              <h3 className="donate-title">Your Donations Create Impact</h3>
               <div className="donate-underliner"></div>
               <img
                 src={require("./assets/Ellipse.png").default}
@@ -220,9 +220,9 @@ function Donate() {
           {/* </div> */}
         </section>
         <section className="donate-page-section csr-queries mt-5">
-          <h2 className="section-head ">
+          <h3 className="section-head mb-3">
             Are you a corporation and taken an interest in what we do?
-          </h2>
+          </h3>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"

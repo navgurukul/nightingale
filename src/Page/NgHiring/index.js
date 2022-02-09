@@ -6,10 +6,10 @@ function NgHiring() {
   return (
     <main className="ng-hiring-page">
       <div className="page-content">
-        <section className="hiring-page-section mb-5">
-          <h2 className="section-head mt-5">Hire from Us</h2>
-          <hr className="heading-hr" />
-          <div className="mt-5">
+        <section className="hiring-page-section d-flex flex-column mb-5">
+          <h2 className="section-head mt-5 mb-3">Hire from Us</h2>
+          <hr className="heading-hr align-self-center mb-3" />
+          <div className="mt-3">
             <img src={backgroundImg} className="backgroundImg" />
           </div>
           <div className="mt-4 mb-2 d-flex w-100 justify-content-center hiring-page-content">
@@ -22,7 +22,7 @@ function NgHiring() {
           </div>
           <button
             type="button"
-            class="btn mb-4 f-Nuni fw-bold py-2 regular-btn"
+            class="btn mb-4 f-Nuni fw-bold py-2 regular-btn align-self-center"
           >
             Download Placement Brief
           </button>

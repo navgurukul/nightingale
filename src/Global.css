@@ -175,6 +175,7 @@ h4 {
 
 .regular-btn:focus,
 .dashed-btn:focus {
+  outline: none !important;
   box-shadow: none !important;
 }
 .heading-hr {

@@ -202,10 +202,7 @@
         padding-top: 1px;
     }
 } */
-*:focus-visible,
-*:focus {
-  outline: none;
-}
+
 .donate-page {
   background-color: #fff;
   text-align: center;
@@ -213,11 +210,7 @@
 .donate-page .page-content {
   width: 100%;
 }
-.donate-page .main-hr {
-  width: 6rem;
-  border: transparent;
-  border-top: 3px solid #f05f40;
-}
+
 .partition-line {
   border-top: 2px solid #cdcdcd;
 }
@@ -240,19 +233,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.donation-impact-data h3 {
-  color: var(--primary);
-  font-size: 72px;
-}
 .donation-impact-data-2 {
   margin-top: 200px !important;
 }
 .section-donate-title {
   margin-top: 80px;
-  font-size: 32px;
   line-height: 42px;
-  font-family: Lusitana;
-  font-weight: 700;
 }
 
 .donation-details-container {
@@ -291,34 +277,13 @@
 }
 
 .donate-button {
-  background-color: #fff;
-  border: 1px solid #f05f40;
-  color: #f05f40;
   padding: 10px 13px 10px 13px;
-  border-radius: 5px;
-  font-weight: 500;
   margin: 25px 0 0 13px;
-  font-size: 1.125rem;
-}
-
-.donate-button:hover {
-  background-color: var(--btnHover);
-  border: 1px solid var(--btnHover);
-}
-
-.donate-button:focus,
-.donate-button:active {
-  color: #fff;
-  background-color: var(--btnHover) !important;
-  border-color: var(--btnHover) !important;
-  box-shadow: 0 0 0 0.2rem #f58d76 !important;
 }
 
 .about-donation p {
   font-weight: 400;
   color: #818181;
-  font-family: Nunito Sans;
-  font-size: 14px;
   line-height: 20px;
   margin-top: 30px;
   width: 300px;
@@ -344,19 +309,8 @@
 
 .donate-title {
   margin: 80px 0 10px 628px;
-  font-size: 32px;
-  line-height: 42px;
-  font-family: Lusitana;
-  font-weight: 700;
 }
 
-.donation-impact-underliner {
-  border: 1px solid #f05f40;
-  background-color: #f05f40;
-  width: 60px;
-  align-items: center;
-  margin-left: 805px;
-}
 
 .donate-bg2 {
   margin-top: 150px;
@@ -369,9 +323,9 @@
   margin-left: 740px;
 }
 
-.number {
+.donation-impact-data .section-head {
   color: #f05f40;
-  font-size: 80px;
+  font-size: 72px;
   font-family: Lusitana;
   font-weight: 700;
 }
@@ -435,13 +389,10 @@
   .donate-page .w-100 {
     width: 90% !important;
   }
-  .donate-page button {
-    font-size: 1rem;
-  }
   .account-details {
     justify-content: space-around !important;
   }
-  
+
   .donate-page .partition-line {
     width: 90% !important;
   }
@@ -467,7 +418,6 @@
     margin-left: 20px;
   }
   .donatation-payment {
-    font-size: 15px;
     line-height: 20px;
     margin: 40px 5px 0 5px;
   }
@@ -489,7 +439,6 @@
   .donate-content {
     margin: 35px 20px 0 25px;
     text-align: left;
-    font-size: 14px;
     line-height: 20px;
   }
   .donate-content p {
@@ -500,7 +449,6 @@
   }
   .donate-title {
     margin: 30px 8px 15px 40px;
-    font-size: 22px;
     line-height: 28px;
   }
   .donate-bg {
@@ -512,12 +460,8 @@
   .Ellipse {
     display: none;
   }
-  .number {
-    color: #f05f40;
+  .donation-impact-data .section-head {
     font-size: 48px;
-    font-family: Lusitana;
-    font-weight: 700;
-    line-height: 56px;
   }
   .jobs {
     top: 95px;
@@ -538,7 +482,6 @@
     height: 456px;
   }
   .section-donate-title {
-    font-size: 20px;
     line-height: 28px;
     margin: 0 10px 20px 10px;
   }
@@ -547,6 +490,8 @@
   }
   .account-details span {
     margin-bottom: 7px;
-    font-size: 12px;
+  }
+  .donate-page-image-section {
+    height: 620px;
   }
 }
