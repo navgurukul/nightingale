@@ -6,9 +6,9 @@ function AboutPage() {
   return (
     <main className="about-page">
       <div className="page-content">
-        <section className="page-section">
-          <h2 className="section-head">Our Story</h2>
-          <hr className="heading-hr mt-2" />
+        <section className="page-section d-flex flex-column ">
+          <h3 className="section-head mb-3">Our Story</h3>
+          <hr className="heading-hr mb-3 align-self-center" />
           <div>
             <img src={backgroundImg} className="backgroundImg" />
           </div>
@@ -28,9 +28,9 @@ function AboutPage() {
             </p>
           </div>
         </section>
-        <section className="page-section">
-          <h2 className="section-head">Vision</h2>
-          <hr className="heading-hr mt-2" />
+        <section className="page-section d-flex flex-column">
+          <h3 className="section-head mb-3">Vision</h3>
+          <hr className="heading-hr mb-3 align-self-center" />
           <div className="about-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 section-para">
               We envision a world where everyone has access to an affordable
@@ -39,9 +39,9 @@ function AboutPage() {
             </p>
           </div>
         </section>
-        <section className="page-section">
-          <h2 className="section-head">Our Values</h2>
-          <hr className="heading-hr mt-2" />
+        <section className="page-section d-flex flex-column">
+          <h3 className="section-head mb-3">Our Values</h3>
+          <hr className="heading-hr mb-3 align-self-center" />
           <div className="about-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 section-para">
               In order to follow through on our commitments, achieve our

@@ -149,8 +149,8 @@ function TeamPage() {
     <main className="team-page">
       <div className="team-content">
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
-          <h2 className="section-head">Our Team</h2>
-          <hr className="mt-2 heading-hr" />
+          <h3 className="section-head mb-3">Our Team</h3>
+          <hr className="heading-hr " />
           <div className="team-page-content w-50">
             <p className="section-para">
               We are a collective of full timers and volunteers that form the
@@ -176,7 +176,7 @@ function TeamPage() {
                 </button>
                 <button
                   type="button"
-                  class="btn section-para btn-primary mx-3 my-2 volunteer-button"
+                  class="btn section-para btn-primary mx-3 my-2 dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -192,7 +192,7 @@ function TeamPage() {
           </div>
         </section>
         <section className="team-section w-100 mt-4 d-flex flex-column justify center align-items-center">
-          {/* <h2 className="section-head">Core Members</h2>
+          {/* <h3 className="section-head">Core Members</h3>
           <hr className="mt-2" /> */}
           <div className="all-members-btns d-flex justify-content-center align-items-center w-100">
             <span

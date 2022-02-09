@@ -9,63 +9,20 @@
 
 .team-section-title {
   margin-top: 80px;
-  font-size: 32px;
-  line-height: 42px;
-  font-family: Lusitana;
-  font-weight: 700;
+  line-height: 42px
 }
 
-.team-page hr {
-  width: 6rem;
-  border: transparent;
-  border-top: 3px solid #f05f40;
-}
 
 .team-page-content {
   font-weight: 400;
   line-height: 28px;
-  /* width: ; */
-  /* margin: 30px 425px 0 500px; */
 }
 .team-page button {
-  padding: 10px 40px;
-  width: 280px;
+  padding-inline: 40px;
+  width: 320px;
 }
 
-/* .career-button {
-  background-color: #f05f40;
-  border: 1px solid #f05f40;
-  color: #fff;
-  padding: 10px 40px;
-  border-radius: 5px;
-  font-weight: 500;
-  width: 280px;
-} */
 
-.volunteer-button {
-  background-color: #fff;
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  transition: all ease-in 0.2s;
-  font-size: 1.125rem;
-  font-weight: 700;
-  border-radius: 8px;
-}
-
-.volunteer-button:hover {
-  color: #fff;
-  background-color: var(--btnHover);
-  border: 1px solid var(--btnHover);
-}
-
-/* .volunteer-button:hover, */
-.volunteer-button:active,
-.volunteer-button:focus {
-  color: #fff;
-  background-color: var(--btnHover) !important;
-  border-color: var(--btnHover) !important;
-  box-shadow: 0 0 0 0.2rem #f58d76 !important;
-}
 .team-img {
   width: 20%;
 }
@@ -134,6 +91,8 @@
 }
 .team-info-cards-container .card:hover {
   transform: scale(1.1);
+  border: 2px solid transparent;
+  box-shadow: none;
   opacity: 1;
   z-index: 2;
 }
@@ -148,6 +107,7 @@
 .core-team-members,
 .our-supporters {
   margin-inline: 20px;
+  padding: 10px 20px;
 }
 .team-info-card-img {
   border-radius: 50%;

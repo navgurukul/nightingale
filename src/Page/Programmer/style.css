@@ -107,6 +107,7 @@ video {
   }
   .hero-P .left-P {
     margin-top: 1rem !important;
+    align-items: center !important;
   }
   .left-P h2 {
     padding-inline: 0.5em !important;
@@ -127,6 +128,10 @@ video {
   }
   .hero-P {
     padding: 0 !important;
+    width: 95% !important;
+  }
+  .hero-P h3 {
+    margin-left: 1rem;
   }
   .programmers .students .row,
   .test-p .container .row {
@@ -139,7 +144,7 @@ video {
 @media screen and (max-width: 430px) {
   .hero-P video {
     /* width: 75%; */
-    height: 200px;
+    height: 208px;
   }
   .programmers-main-video {
     min-height: 147px !important;
@@ -147,8 +152,9 @@ video {
   }
 
   .input {
-    margin-inline: 1rem;
-    width: 90%;
+    /* margin-inline: 0.5rem; */
+    width: 90% !important;
+    align-items: center !important;
   }
   .test-p .card {
     min-width: 18rem;
