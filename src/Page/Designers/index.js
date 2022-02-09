@@ -15,9 +15,9 @@ function Programmer() {
           className="alert alert-danger d-flex justify-content-between py-3 align-items-center"
           role="alert"
         >
-          <h2 className="fs-1.5 section-head text-black fw-bold mb-0">
+          <h4 className="fs-1.5 section-head text-black fw-bold mb-0">
             Designers’ Gurukul
-          </h2>
+          </h4>
           <Link to="/job-course">
             <span className="desktop d-block text-primary fw-bold">
               Change Gurukul
@@ -28,25 +28,11 @@ function Programmer() {
       <div className="hero-P container my-2 my-sm-5">
         <div className="row d-flex justify-content-between flex-md-column-reverse flex-lg-row flex-md-row">
           <div className="col left-P d-flex flex-column align-items-start">
-            <h2 className="section-head">
+            <h3 className="section-head">
               Navgurukul One-Year Graphic Design Course
-            </h2>
+            </h3>
             <div className="input d-flex flex-column justify-content-center align-items-start text-left p-1 w-90">
-              {/* <label
-              className="text-muted my-1 fs-sm-1.2 "
-              htmlFor="number"
-            >
-              Phone Number
-            </label> */}
-              {/* <input
-              className="border-0 w-100 p-2  text-black mb-2"
-              type="text"
-              placeholder=""
-              value={state}
-              onChange={(e) => {
-                setState(e.target.value);
-              }}
-            /> */}
+              
               <p className="my-2">
                 Study in an immersive environment at one of our campuses in
                 Pune, Bengaluru or Dharamshala (for boys) with peer learning and
@@ -85,7 +71,7 @@ function Programmer() {
         </div>
       </div>
       {/* <div className="benefits d-flex flex-column justify-content-center align-items-center my-2 my-sm-5 ">
-      <h2 className="">Course Benefits</h2>
+      <h3 className="">Course Benefits</h3>
       <hr className="heading-hr" />
       <div className="container w-80 mt-4">
         <div className="row d-flex flex-md-row flex-column justify-content-center align-items-center ">
@@ -120,9 +106,9 @@ function Programmer() {
       </div>
     </div> */}
       <div className="test-p my-2 mb-sm-5 d-flex flex-column align-items-center">
-        <h2 className="mb-3">Conduct a Test in Your Locality</h2>
-        <hr className="heading-hr" />
-        <div className="container w-100 my-4 d-flex align-items-center justify-content-center">
+        <h3 className="mb-3">Conduct a Test in Your Locality</h3>
+        <hr className="heading-hr mb-3" />
+        <div className="container w-100 my-3 d-flex align-items-center justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100">
             <div className="col-12 col-md-6 my-2 d-flex justify-content-center">
               <div
@@ -132,21 +118,20 @@ function Programmer() {
                   window.open("https://admissions.navgurukul.org/", "_blank");
                 }}
               >
-                <h2 className="fw-bold my-1 section-head text-center">
+                <h4 className="fw-bold my-1 section-head text-center">
                   Online Tests
-                </h2>
+                </h4>
                 <p className="my-1 section-para">
                   Anyone with a smartphone or access to Laptop/Computer can give
                   the test online by registering their phone number
                 </p>
               </div>
             </div>
-            {/* <div className="col-2"></div> */}
             <div className="col-12 col-md-6 my-2 d-flex justify-content-center">
               <div className="card p-3 d-flex flex-column mh-10 justify-content-top bg-bg-card-2 align-items-center text-left text-sm-center w-100 rounded border-0 second-card">
-                <h2 className="fw-bold my-1 section-head text-center">
+                <h4 className="fw-bold my-1 section-head text-center">
                   Offline Tests
-                </h2>
+                </h4>
                 <p className="my-1 section-para">
                   If you are proctoring the exam, we will send you the test
                   papers. Upon completion, you can simply send the photos of the
@@ -157,42 +142,29 @@ function Programmer() {
           </div>
         </div>
       </div>
-      <div className="students my-2 my-sm-5 d-flex flex-column align-items-center">
-        <h2 className="mb-3">Hear From Our Students</h2>
+      <div className="students my-2 my-sm-5  d-flex flex-column align-items-center">
+        <h3 className="mb-3">Hear From Our Students</h3>
         <hr className="heading-hr mb-3" />
         <div className="container w-100 mt-3  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
             <div className="col-12 col-md-4 my-3 d-flex justify-content-center ">
-              <video src={video} width="360" height="200" controls></video>
+              <video src={video} width="340" height="190" controls></video>
             </div>
             <div className="col-12 col-md-4 my-3 d-flex justify-content-center">
-              <video src={video} width="360" height="200" controls></video>
+              <video src={video} width="340" height="190" controls></video>
             </div>
             <div className="col-12 col-md-4 my-3 d-flex justify-content-center">
-              <video src={video} width="360" height="200" controls></video>
+              <video src={video} width="340" height="190" controls></video>
             </div>
           </div>
         </div>
       </div>
       <div className="next-step mt-2 mt-sm-5 d-flex flex-column align-items-center">
-        <h2 className="mb-3">Ready for the Next Step?</h2>
-        {/* <hr className="heading-hr mb-3 mt-3" /> */}
+        <h3 className="mb-3">Ready for the Next Step?</h3>
         <div className="input d-flex flex-column justify-content-center align-items-center mt-3 text-left w-100  ">
-          {/* <label className="text-muted my-1 " htmlFor="number">
-          Phone Number
-        </label>
-        <input
-          className="border-0 w-100 p-2 text-black mb-2"
-          type="text"
-          placeholder=""
-          value={state}
-          onChange={(e) => {
-            setState(e.target.value);
-          }}
-        /> */}
-          {/* <a></a> */}
+          
           <button
-            className="btn btn-primary text-white w-100 my-1 regular-btn"
+            className="btn btn-primary text-white align-self-center w-100 my-1 regular-btn"
             onClick={(e) => {
               e.preventDefault();
               window.open("https://admissions.navgurukul.org/", "_blank");
@@ -200,10 +172,6 @@ function Programmer() {
           >
             Take Test
           </button>
-          {/* <div className="text my-1">
-          Had a test already?{" "}
-          <span className="text-primary">Check status here</span>
-        </div> */}
         </div>
       </div>
     </div>

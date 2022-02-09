@@ -1,12 +1,6 @@
 .hero-P {
   min-height: 350px;
 }
-.programmers h2 {
-  font-size: 32px;
-}
-.programmers .card h2 {
-  font-size: 24px;
-}
 .programmers a:hover {
   text-decoration: none;
 }
@@ -30,34 +24,24 @@
 .input .btn {
   border-radius: 8px;
 }
-.left-P h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0rem;
-  font-weight: 700;
-}
+
 video {
   border-radius: 20px;
 }
 .row {
   margin-left: 0;
 }
-.programmers .card {
-  box-shadow: 0px 1px 2px rgba(46, 46, 46, 0.06),
-    0px 2px 1px rgba(46, 46, 46, 0.04), 0px 1px 5px rgba(46, 46, 46, 0.08);
-  border-radius: 8px;
-}
 .programmers-main-video {
   min-height: 255px !important;
 }
 .hero-P video {
-  /* width: 450px; */
   height: 285px;
 }
 .programmers .next-step {
   margin-bottom: 9.875rem;
 }
 .next-step .btn {
-  max-width: 352px !important;
+  max-width: 352px;
 }
 @media screen and (max-width: 1200px) {
   .container {

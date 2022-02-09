@@ -15,9 +15,9 @@ function NgLabs() {
         <div className="container ">
           <div className="row">
             <div className="col-md d-flex flex-column justify-content-center align-items-center align-items-md-start">
-              <h2 className="mb-3">
+              <h3 className="mb-3">
                 Nurturing High-Impact Projects in the Non-Profit Space
-              </h2>
+              </h3>
               <p className="mb-3">
                 We aim to work on various experiments and scale the ones that
                 become successful. NavGurukul labs will seed open source
@@ -38,15 +38,15 @@ function NgLabs() {
         </div>
       </div>
       <div className="projects d-flex flex-column justify-content-center align-items-center">
-        <h2 className="mb-0">Current Projects</h2>
-        <hr className="heading-hr" />
-        <div className="container w-50 my-5 mb-2">
+        <h3 className="mb-3">Current Projects</h3>
+        <hr className="heading-hr mb-3" />
+        <div className="container w-50 my-3 mb-5">
           <div className="row">
             <div className="col d-flex justify-content-center align-items-center my-3">
               <a href="https://www.merakilearn.org/">
                 <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
                   <img src={icon1} alt="" />
-                  <h2 className="mt-3 fw-bold">Meraki</h2>
+                  <h4 className="mt-3 fw-bold">Meraki</h4>
                   <p>
                     Some outrageous impact of the project
                   </p>
@@ -57,7 +57,7 @@ function NgLabs() {
               <a href="#">
                 <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
                   <img src={icon2} alt="" />
-                  <h2 className="mt-3 fw-bold">Conscious Ad Network</h2>
+                  <h4 className="mt-3 fw-bold">Conscious Ad Network</h4>
                   <p>
                     Some outrageous impact of the project
                   </p>
@@ -68,16 +68,16 @@ function NgLabs() {
         </div>
       </div>
       {/* <div className="timeline my-4 d-flex flex-column justify-content-center align-items-center mb-1">
-        <h2 className="">Project Timeline (Next 12 months)</h2>
+        <h3 className="">Project Timeline (Next 12 months)</h3>
         <hr className="heading-hr" />
         <div className="container w-75 my-5 mb-2 d-flex flex-column justify-content-center align-items-center">
           <img src={Timeline} alt="" className="mb-5" />
         </div>
       </div> */}
       <div className="idea d-flex flex-column justify-content-center align-items-center">
-        <h2 className="mb-4">Have an Idea in Works?</h2>
+        <h3 className="mb-4">Have an Idea in Works?</h3>
 
-        <button className="btn btn-primary f-Nuni fw-bold text-white regular-btn">
+        <button className="btn btn-primary text-white regular-btn">
           Seek Incubation Support
         </button>
       </div>
