@@ -1,14 +1,10 @@
 .job-course-page {
   background-color: #fff;
   text-align: center;
-  font-family: "Lusitana", Fallback, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .job-course-title {
   margin-top: 80px;
-  font-size: 42px;
 }
 
 .job-course-content {
@@ -41,14 +37,8 @@
   width: 50%;
   height: 150px;
 }
-.job-course-page .card {
-  transition: all ease-in 0.2s;
-  border: 2px solid transparent;
-  cursor: pointer;
-}
-.job-course-page .card:hover {
-  border: 2px solid var(--primary);
-}
+
+
 .job-course-page a {
   color: black;
   text-decoration: none;
@@ -66,12 +56,10 @@
 @media screen and (max-width: 667px) {
   .job-course-title {
     margin-top: 40px;
-    font-size: 24px;
     line-height: 32px;
     letter-spacing: 1px;
   }
   .job-course-content {
-    font-size: 14px;
     line-height: 20px;
     /* margin: 20px 25px 0 25px; */
   }
@@ -88,12 +76,10 @@
     height: 120px;
   }
   .coming-soon {
-    font-size: 14px;
     line-height: 20px;
     margin: 35px 0 25px 0;
   }
   .job-course-subtitle {
-    font-size: 17px;
     line-height: 20px;
     margin: 35px 0 30px 0;
   }

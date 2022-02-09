@@ -9,15 +9,15 @@ import greaterThan from "./assets/greater-than.svg";
 function CifPage() {
   return (
     <div className="CifPage d-flex flex-column justify-content-center">
-      <div className="hero w-100 text-white d-flex justify-content-center align-items-center float-left">
+      <div className="hero w-100 text-white d-flex justify-content-center align-items-center mb-5 float-left">
         <div className="data d-flex flex-column align-items-center text-center">
-          <h2 className=" ">Code India Fellowships</h2>
-          <p className="mt-2 w-75">
+          <h2 className="mb-2">Code India Fellowships</h2>
+          <p className="w-75 mb-3">
             Nurture Programming skills in the next generation of India's youth
             with your expertise
           </p>
           <button
-            className="btn btn-primary mb-1 py-2 px-8 regular-btn fw-bold"
+            className="btn btn-primary py-2 px-8 regular-btn fw-bold"
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -30,9 +30,9 @@ function CifPage() {
           </button>
         </div>
       </div>
-      <div className="cif text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-3">
-        <h2>What’s Code India Fellowship</h2>
-        <hr className="heading-hr" />
+      <div className="cif text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+        <h3 className="mb-3">What’s Code India Fellowship</h3>
+        <hr className="heading-hr mt-0 mb-4" />
         <div className="container w-50 mt-3">
           <p className="text-start">
             We are proud to announce the Code India Fellowship, an incredible
@@ -58,9 +58,9 @@ function CifPage() {
           </p>
         </div>
       </div>
-      <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2">
-        <h2>What We Offer</h2>
-        <hr className="heading-hr mb-4" />
+      <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+        <h3 className="mb-3">What We Offer</h3>
+        <hr className="heading-hr mb-3" />
         <div className="container w-50 text-start mt-3">
           <div className="row m-1 d-flex ">
             <div className="col-sm-6 px-4 mb-3 position-relative">
@@ -92,8 +92,8 @@ function CifPage() {
           </div>
         </div>
       </div>
-      <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2 ">
-        <h2>Who We Are Looking For</h2>
+      <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+        <h3 className="mb-3">Who We Are Looking For</h3>
         <hr className="heading-hr mb-3" />
         <div className="container f-Nuni text-start mb-1 mt-3 w-50">
           <div className="row m-1 d-flex">
@@ -117,12 +117,12 @@ function CifPage() {
           </span>
         </div>
       </div>
-      <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2">
-        <h2>Role Description</h2>
+      <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+        <h3 className="mb-3">Role Description</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container f-Nuni text-start mb-1 mt-3 w-50">
-          <div className="sub-section mb-5">
-            <h2 className="mb-3 fw-bold">Teaching</h2>
+        <div className="container text-start mb-1 mt-3 w-50">
+          <div className="sub-section">
+            <span className="mb-3 d-block fw-bold">Teaching</span>
             <ul>
               <li>
                 Support young children by teaching programming or coding through
@@ -139,10 +139,10 @@ function CifPage() {
               <li>Formulate methods for evaluating teaching outcomes</li>
             </ul>
           </div>
-          <div className="sub-section mb-5">
-            <h2 className="mb-3 fw-bold section-head">
+          <div className="sub-section">
+            <span className="mb-3 fw-bold d-block">
               Managing people and resources
-            </h2>
+            </span>
             <ul>
               <li>Manage your teaching and administrative activities</li>
               <li>
@@ -155,10 +155,10 @@ function CifPage() {
               </li>
             </ul>
           </div>
-          <div className="sub-section mb-5">
-            <h2 className="mb-3 fw-bold section-head">
+          <div className="sub-section">
+            <span className="mb-3 fw-bold d-block">
               Academic administration
-            </h2>
+            </span>
             <ul>
               <li>
                 Undertaking various administrative responsibilities as required,
@@ -171,17 +171,17 @@ function CifPage() {
               </li>
             </ul>
           </div>
-          <div className="sub-section mb-5">
-            <h2 className="mb-3 fw-bold section-head">
+          <div className="sub-section">
+            <span className="mb-3 fw-bold d-block">
               Documentation and reporting
-            </h2>
+            </span>
             To document your journey as a fellow and prepare a report at the end
             of the Fellowship
           </div>
         </div>
       </div>
-      <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-2">
-        <h2>Application Process</h2>
+      <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+        <h3 className="mb-3">Application Process</h3>
         <hr className="heading-hr mb-3" />
         <div className="container text-center w-50 mt-3">
           <div className="row my-2 d-flex flex-column flex-md-row align-items-center justify-content-around">
@@ -223,7 +223,7 @@ function CifPage() {
         </button>
       </div>
       <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5">
-        <h2>Have Questions?</h2>
+        <h3 className="mb-3">Have Questions?</h3>
         <hr className="heading-hr mb-3" />
         <p className="mt-3">Connect with us anytime for more information</p>
         <div className="contact row flex-column flex-sm-row w-40 my-2 fw-600 text-primary">

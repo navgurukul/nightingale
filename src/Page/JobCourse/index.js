@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 function JobCourse() {
   return (
     <main className="job-course-page">
-      <h2 className="job-course-title section-head ">
+      <h3 className="job-course-title section-head ">
         Gauranteed Job Courses
-      </h2>
+      </h3>
       <div className="job-course-content w-100 d-flex justify-content-center">
         <p className="w-40 section-para">
           Fully-funded one-year software engineering program to youth from
           low-income families.
         </p>
       </div>
-      <h2 className="job-course-subtitle f-Nuni">Choose Your Gurukul</h2>
+      <h4 className="job-course-subtitle">Choose Your Gurukul</h4>
       <div className="container ">
         <div className="row">
           <div className="col my-3 col-md-6">

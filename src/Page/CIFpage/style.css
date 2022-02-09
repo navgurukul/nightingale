@@ -10,8 +10,6 @@
   background-size: cover;
   background-origin: border-box;
 }
-/* .CifPage .hero h2 { */
-/* font-size: 42px; */
 
 .CifPage .container .col-sm-6::before {
   background-image: url("./assets/Shape.svg");
@@ -27,11 +25,9 @@
   top: 5%;
 }
 .description .sub-section {
-  margin-bottom: 2.6rem;
+  margin-bottom: 2rem;
 }
-.application .sign {
-  width: 2em !important;
-}
+/*  */
 .application .sign img {
   width: 15px;
   height: 15px;
@@ -41,14 +37,9 @@
   transform: translateX(-50%);
   transform: rotate(-90deg);
 }
-.text-black {
-  color: black;
-}
+
 .email .text-primary:hover {
   color: var(--primary) !important;
-}
-.CifPage .btn {
-  padding: 0.25rem 6rem;
 }
 @media screen and (max-width: 1500px) {
   .application .container {
@@ -59,9 +50,7 @@
   .CifPage .hero {
     height: 50vh;
   }
-  .data h1 {
-    font-size: 2.5em !important;
-  }
+
   .CifPage .container {
     width: 70% !important;
   }
@@ -83,60 +72,32 @@
   }
 }
 @media screen and (max-width: 760px) {
-  .CifPage{
+  .CifPage {
     overflow-x: hidden;
   }
   .CifPage .hero {
     height: 40vh;
   }
-  .hero .data h1 {
-    font-size: 2.2em !important;
-  }
-  .hero .data p {
-    font-size: 1em !important;
-  }
-  .cif h1,
-  .offer h1,
-  .looking h1,
-  .description h1,
-  .application h1,
-  .questions h1 {
-    font-size: 2em !important;
-  }
-  .container {
+  .CifPage .container {
     width: 90% !important;
   }
   .container .row {
     width: 100%;
   }
-  .application span {
+  .CifPage .application span {
     width: 85% !important;
   }
-  .questions .row {
+  .CifPage .questions .row {
     width: 100% !important;
     height: 60px;
   }
-  .sign {
+  .CifPage .sign {
     transform: rotate(90deg);
   }
 }
 @media screen and (max-width: 580px) {
-  .hero .data h2 {
-    font-size: 2em !important;
-  }
-  .hero .data p {
-    font-size: 0.95em !important;
-  }
-  .cif h1,
-  .offer h1,
-  .looking h1,
-  .description h1,
-  .application h1,
-  .questions h1 {
-    font-size: 1.8em !important;
-  }
   .CifPage .container {
-    width: 90% !important;
+    width: 95% !important;
   }
 }
 @media screen and (max-width: 478px) {
@@ -150,64 +111,27 @@
     left: -1%;
     top: 10%;
   }
+  .hero .btn{
+    margin-bottom: 1rem;
+  }
+  .hero h2{
+    margin-top: 1rem;
+  }
 }
 @media screen and (max-width: 380px) {
   .CifPage .hero {
     height: auto;
-  }
-  .hero .data h2 {
-    font-size: 1.5em !important;
-  }
-  .hero .data p {
-    font-size: 0.8em !important;
-  }
-  .cif h2,
-  .offer h2,
-  .looking h2,
-  .description h2,
-  .application h2,
-  .questions h2 {
-    font-size: 1.6rem !important;
   }
   .container .col-sm-6::before {
     width: 15px;
     height: 15px;
     left: -1%;
   }
-  .application span {
-    font-size: 0.9em !important;
-  }
-  .CifPage .btn {
-    font-size: 1em !important;
-    padding: 0.5rem 4.5rem !important;
-  }
-  .questions p {
-    font-size: 1rem !important;
-  }
-  .description .container h2 {
-    font-size: 1.2em !important;
-  }
   .contact .col {
-    font-size: 1rem !important;
     margin-bottom: 1rem;
   }
 }
 @media screen and (max-width: 345px) {
-  .cif h2,
-  .offer h2,
-  .looking h2,
-  .description h2,
-  .application h2,
-  .questions h2 {
-    font-size: 1.3rem !important;
-  }
-  .description h2 {
-    font-size: 1.3em;
-  }
-
-  .application .sign {
-    font-size: 0.7rem !important;
-  }
   .sign img {
     margin: 0 !important;
   }
