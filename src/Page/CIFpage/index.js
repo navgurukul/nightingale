@@ -180,7 +180,7 @@ function CifPage() {
           </div>
         </div>
       </div>
-      <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+      <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5 mx-3 mx-md-0">
         <h3 className="mb-3">Application Process</h3>
         <hr className="heading-hr mb-3" />
         <div className="container text-center w-50 mt-3">

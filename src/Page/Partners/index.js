@@ -8,7 +8,7 @@ import www from "./assets/www_png.png";
 function Partners() {
   return (
     <div className="partners d-flex flex-column justify-content-center w-100">
-      <div className="partnerInfo align-items-center d-flex flex-column mb-5 justify-content-center w-100 mt-5">
+      <div className="container partnerInfo align-items-center d-flex flex-column mb-5 justify-content-center w-100 mt-5">
         <h3 className="mt-2 section-head mb-3">Partner Highlights</h3>
         <hr className="mb-3 heading-hr" />
         <div className="card-row flex-sm-row flex-column w-75 d-flex justify-content-center align-items-center bg-white">
@@ -201,7 +201,7 @@ function Partners() {
           </div>
         </div>
       </div>
-      <div className="partners-support-section d-flex flex-column w-100 align-items-center mb-5 pb-5 justify-content-center">
+      <div className="container partners-support-section d-flex flex-column w-100 align-items-center mb-5 pb-5 justify-content-center">
         <h3 className="mt-2 section-head w-50 text-center">
           Have you taken an interest in what we do and want to support us?
         </h3>

@@ -156,7 +156,7 @@ function Home() {
       </section>
 
       <section className="container-fluid impact ">
-        <div class=" py-5 w-100">
+        <div class=" py-0 py-md-5 pt-5 w-100">
           <div class="container d-flex flex-column text-center w-100">
             <h3 className="text-center  Impact-that-matters mb-3">
               Impact that matters!
@@ -188,7 +188,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="our-partners text-center mx-6 my-5 d-flex flex-column">
+      <section className="our-partners text-center mx-6 my-0 mt-5 my-md-5 d-flex flex-column">
         <h3 className="align-self-center mb-3 ">Our Partners</h3>
         <hr className="align-self-center heading-hr" />
         <PartnerSlider />
@@ -204,7 +204,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="d-flex home-page-supporters py-5 flex-column align-items-center justify-content-center mb-0 mt-5">
+      <section className="d-flex home-page-supporters py-5 flex-column align-items-center justify-content-center mb-0 mt-0 mt-md-5">
         <h3 className=" mb-3">Our Supporters</h3>
         <hr className="heading-hr" />
         <div class="container ">

@@ -12,7 +12,7 @@ function NgLabs() {
   return (
     <div className="ng-labs d-flex flex-column justify-content-center">
       <div className="main mt-7 mb-2">
-        <div className="container ">
+        <div className="container px-0 px-md-3">
           <div className="row">
             <div className="col-md d-flex flex-column justify-content-center align-items-center align-items-md-start">
               <h3 className="mb-3">
@@ -74,7 +74,7 @@ function NgLabs() {
           <img src={Timeline} alt="" className="mb-5" />
         </div>
       </div> */}
-      <div className="idea d-flex flex-column justify-content-center align-items-center">
+      <div className="container idea d-flex flex-column justify-content-center align-items-center px-0 px-md-3">
         <h3 className="mb-4">Have an Idea in Works?</h3>
 
         <button className="btn btn-primary text-white regular-btn">

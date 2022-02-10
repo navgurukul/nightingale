@@ -6,7 +6,7 @@ function Donate() {
   return (
     <main className="donate-page d-flex flex-column justify-content-center align-items-center">
       <div className="page-content d-flex flex-column justify-content-center align-items-center">
-        <section className="donate-page-section mt-4 d-flex flex-column align-items-center">
+        <section className="container donate-page-section mt-4 d-flex flex-column align-items-center">
           <h3 className="section-head mt-5 mb-3">Donate to NavGurukul</h3>
           <hr className="heading-hr mb-3" />
           <div className="d-flex account-details mt-3 justify-content-center align-items-center">
@@ -25,7 +25,7 @@ function Donate() {
           </div>
           <hr className="w-30 partition-line" style={{ color: "#cdcdcd" }}></hr>
 
-          <div className="donatation-payment mt-5 d-flex justify-content-center align-items-center w-100">
+          <div className="donatation-payment mt-md-5 mt-0 d-flex justify-content-center align-items-center w-100">
             <p className="w-100 fw-bold">
               You can also directly pay (2% charge but quick) using our payment
               gateway
@@ -43,7 +43,7 @@ function Donate() {
             Donate to Navgurukul
           </button>
           <div className="donate-content mt-2 d-flex justify-content-center align-items-center w-100">
-            <p className="w-75 mt-5">
+            <p className="w-75 mt-3 mt-md-5">
               You may also pledge a <b> monthly donation </b> to us. Any pledged
               amount is a huge support for us. Just having you by our side fills
               us with gratitude & an energy to do better.
@@ -51,7 +51,7 @@ function Donate() {
           </div>
           <div className="container  donate-button-container">
             <div className="row">
-              <div class="col-md col-sm-12 ">
+              <div class="col-md col-sm-12 px-0 pxmd-3">
                 <button
                   type="button"
                   class="btn btn-primary donate-button dashed-btn"
@@ -219,7 +219,7 @@ function Donate() {
             /> */}
           {/* </div> */}
         </section>
-        <section className="donate-page-section csr-queries mt-5">
+        <section className="container donate-page-section csr-queries mt-5">
           <h3 className="section-head mb-3">
             Are you a corporation and taken an interest in what we do?
           </h3>

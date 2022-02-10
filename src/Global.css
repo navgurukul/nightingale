@@ -193,12 +193,15 @@ h4 {
   h3 {
     font-size: 20px;
   }
+  h4 {
+    font-size: 16px;
+  }
   body {
     font-size: 0.875rem !important;
   }
   .regular-btn,
   .dashed-btn {
     font-size: 0.875rem !important;
-    width: 90% !important;
+    width: 100% !important;
   }
 }

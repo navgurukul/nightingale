@@ -6,7 +6,7 @@ function NgHiring() {
   return (
     <main className="ng-hiring-page">
       <div className="page-content">
-        <section className="hiring-page-section d-flex flex-column mb-5">
+        <section className=" container hiring-page-section d-flex flex-column mb-5">
           <h2 className="section-head mt-5 mb-3">Hire from Us</h2>
           <hr className="heading-hr align-self-center mb-3" />
           <div className="mt-3">
