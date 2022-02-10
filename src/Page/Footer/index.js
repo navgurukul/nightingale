@@ -213,7 +213,7 @@ function Footer() {
         </div>
 
         <div className="footer-divider"></div>
-        <div className="details">
+        <div className="details position-relative">
           <div className="policy">
             <Link to="/">
               <div>Legal & Privacy Policy</div>
@@ -222,7 +222,7 @@ function Footer() {
               <div className="hiring">Hire From NG</div>
             </Link>
           </div>
-          <div className="copyright">© 2021 Navgurukul</div>
+          <div className="copyright position-absolute">© 2021 Navgurukul</div>
           <div className="social-media">
             <div className="facebook">
               <a href="https://www.facebook.com/navgurukul/" target="_blank">

@@ -2,7 +2,7 @@
   background-color: #fcdfd9;
   width: 100%;
   height: 100%;
-  /* font-size: 14px; */
+  font-size: 14px;
 }
 
 .inner-container {
@@ -22,7 +22,6 @@
 }
 .footer-container ul {
   padding: 0;
-  /* width */
 }
 .merakilearn {
   position: absolute;
@@ -162,14 +161,29 @@ svg rect {
   color: #eb835b;
 }
 
+.footer-container .details .copyright {
+  left: 50%;
+  transform: translateX(-50%);
+}
 .footer-container .email:hover {
   text-decoration: none;
   color: #eb835b;
 }
 
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 1000px) {
+  .inner-container {
+    margin: 0 60px;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .footer-container {
     height: 100%;
+  }
+  .footer-container .details .copyright {
+    left: 0;
+    transform: none;
+    position: relative !important;
   }
   .inner-container {
     margin: 0 20px;
@@ -186,10 +200,6 @@ svg rect {
     justify-content: flex-start;
     align-items: flex-end !important;
   }
-  .navgurukul {
-    /* position: absolute; */
-    padding-top: 250px;
-  }
   .footer-details {
     padding: 0px;
     text-align: left;
@@ -200,7 +210,4 @@ svg rect {
   .ng-logo {
     padding: 0;
   }
-  /* .title {
-    font-size: 14px;
-  } */
 }

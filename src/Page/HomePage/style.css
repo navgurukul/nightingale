@@ -14,19 +14,16 @@
   );
   height: 800px;
 }
-
 .home-page-hero-section-data {
   line-height: 1.4;
   max-width: 570px;
   color: #ffffff;
   margin-top: 10%;
 }
-
 .home-page-hero-section-data-p {
   max-width: 570px;
   line-height: 28px;
 }
-
 .Initiatives-bg-color {
   background: linear-gradient(
     180deg,
@@ -44,6 +41,7 @@
   filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.06))
     drop-shadow(0px 6px 30px rgba(0, 0, 0, 0.04))
     drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.08));
+  border: 2px solid transparent;
 }
 .our-initiatives .card:hover a:hover {
   text-decoration: none;
@@ -57,7 +55,6 @@
   background-position: center;
   background-size: 100% 100%;
 }
-
 .bg-image2 {
   background: url("./assets/online-with-meraki.png");
   background-repeat: no-repeat;
@@ -96,7 +93,6 @@
   margin-top: 180px;
 }
 .card-heading {
-  font-size: 32px;
   font-style: normal;
   font-weight: bold;
 }
@@ -197,6 +193,9 @@
   }
   .home-page-bg h2 {
     font-size: 1.5rem !important;
+  }
+  .navgurukul-homepage .container {
+    width: 90% !important;
   }
 }
 

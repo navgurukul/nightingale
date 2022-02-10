@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Slider from "./Slider";
 import PartnerSlider from "./PartnerSlider";
 import { supportByLinks, partners } from "./config/index.js";
@@ -8,6 +8,7 @@ import { supportByLinks, partners } from "./config/index.js";
 function Home() {
   const [supports, setSupports] = useState(supportByLinks);
   const [partner, setPartner] = useState(partners);
+  const history = useHistory();
   console.log(partners, "komal");
   return (
     <div className="navgurukul-homepage">
@@ -26,23 +27,25 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                <div className="d-flex home-page-hero-btns justify-content-sm-start justify-content-center">
-                  <Link to="/hiring">
-                    <button
-                      type="button"
-                      class="btn regular-btn section-para mt-0 mr-3 text-white"
-                    >
-                      Students
-                    </button>
-                  </Link>
-                  <Link to="/partners">
-                    <button
-                      type="button"
-                      class="btn regular-btn section-para mt-0 mr-0 text-white"
-                    >
-                      Partners
-                    </button>
-                  </Link>
+                <div className="d-flex home-page-hero-btns justify-content-sm-start mx-3 justify-content-center">
+                  <button
+                    type="button"
+                    class="btn regular-btn section-para mt-0 mr-3 text-white"
+                    onClick={() => {
+                      history.push("/hiring");
+                    }}
+                  >
+                    Students
+                  </button>
+                  <button
+                    type="button"
+                    class="btn regular-btn section-para mt-0 mr-0 text-white"
+                    onClick={() => {
+                      history.push("/partners");
+                    }}
+                  >
+                    Partners
+                  </button>
                 </div>
               </div>
             </div>
@@ -200,8 +203,6 @@ function Home() {
           </button>
         </div>
       </section>
-
-    
 
       <section className="d-flex home-page-supporters py-5 flex-column align-items-center justify-content-center mb-0 mt-5">
         <h3 className=" mb-3">Our Supporters</h3>
