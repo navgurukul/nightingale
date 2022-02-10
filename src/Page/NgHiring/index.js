@@ -6,14 +6,14 @@ function NgHiring() {
   return (
     <main className="ng-hiring-page">
       <div className="page-content">
-        <section className=" container hiring-page-section d-flex flex-column mb-5">
-          <h2 className="section-head mt-5 mb-3">Hire from Us</h2>
+        <section className="container hiring-page-section d-flex flex-column w-100 mb-5">
+          <h3 className="section-head mt-3 mt-md-5 mb-3">Hire from Us</h3>
           <hr className="heading-hr align-self-center mb-3" />
           <div className="mt-3">
             <img src={backgroundImg} className="backgroundImg" />
           </div>
           <div className="mt-4 mb-2 d-flex w-100 justify-content-center hiring-page-content">
-            <p className="section-para w-50">
+            <p className="section-para w-70">
               Our Software Engineering and Graphic Design graduates are skilled
               to be productive from Day 1. Take a look at these{" "}
               <b className="fw-bold"> diamond in the roughs</b> who are polished
@@ -37,9 +37,9 @@ function NgHiring() {
           </div>
         </section>
         {/* <section className="hiring-page-section my-5">
-          <h2 className="hiring-section-title section-head mt-3">
+          <h3 className="hiring-section-title section-head mt-3">
             Meet Our Recent Graduates
-          </h2>
+          </h3>
           <hr className="heading-hr" />
         </section> */}
       </div>

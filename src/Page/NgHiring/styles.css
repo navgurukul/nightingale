@@ -3,9 +3,7 @@
   text-align: center;
  }
 
-.hiring-page-section {
-  margin: 40px 0;
-}
+
 .hiring-page-section button {
   width: 352px;
 }
@@ -20,7 +18,7 @@
 
 @media screen and (max-width: 667px) {
   .hiring-page-content {
-    margin: 40px 0px;
+    margin: 20px 0px;
     line-height: 20px;
     text-align: left;
   }
