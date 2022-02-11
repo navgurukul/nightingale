@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <main className="about-page">
       <div className="page-content">
-        <section className="page-section d-flex flex-column ">
+        <section className="page-section d-flex flex-column mb-0">
           <h3 className="section-head mb-3">Our Story</h3>
           <hr className="heading-hr mb-3 align-self-center" />
           <div>
@@ -28,7 +28,7 @@ function AboutPage() {
             </p>
           </div>
         </section>
-        <section className="page-section d-flex flex-column">
+        <section className="page-section d-flex flex-column mt-0">
           <h3 className="section-head mb-3">Vision</h3>
           <hr className="heading-hr mb-3 align-self-center" />
           <div className="about-content d-flex flex-column justify-content-center align-items-center">

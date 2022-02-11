@@ -35,7 +35,7 @@ function Partners() {
           Partner With Us
         </button>
       </div>
-      <div className="partners-data w-100 my-5 d-flex align-items-center flex-column">
+      <div className="partners-data w-100 mt-5 mb-0 mb-md-5 d-flex align-items-center flex-column">
         <h3 className="mb-3 section-head">Recent Partners</h3>
         <hr className="mb-3 heading-hr" />
         <div className="all-partners w-80 d-flex flex-column">

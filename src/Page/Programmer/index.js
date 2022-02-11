@@ -15,8 +15,8 @@ function Programmer() {
           className="alert alert-danger d-flex justify-content-between py-3 align-items-center"
           role="alert"
         >
-          <h4 className="fs-1.5 section-head text-black fw-bold mb-0">
-            Programmer's Gurukul
+          <h4 className=" section-head text-black fw-bold mb-0">
+            Programmers’ Gurukul
           </h4>
           <Link to="/job-course">
             <span className="desktop d-block text-primary fw-bold">

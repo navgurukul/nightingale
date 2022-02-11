@@ -15,7 +15,7 @@ function Programmer() {
           className="alert alert-danger d-flex justify-content-between py-3 align-items-center"
           role="alert"
         >
-          <h4 className="fs-1.5 section-head text-black fw-bold mb-0">
+          <h4 className=" section-head text-black fw-bold mb-0">
             Designers’ Gurukul
           </h4>
           <Link to="/job-course">
@@ -162,7 +162,6 @@ function Programmer() {
       <div className="next-step mt-2 mt-sm-5 d-flex flex-column align-items-center">
         <h3 className="mb-3">Ready for the Next Step?</h3>
         <div className="input d-flex flex-column justify-content-center align-items-center mt-3 text-left w-100  ">
-          
           <button
             className="btn btn-primary text-white align-self-center w-100 my-1 regular-btn"
             onClick={(e) => {

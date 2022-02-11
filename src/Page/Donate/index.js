@@ -156,7 +156,7 @@ function Donate() {
               <p className="">Online Students</p>
             </span>
           </div>
-          <div className="donation-impact-data donation-impact-data-2 d-flex justify-content-around mt-5">
+          <div className="donation-impact-data donation-impact-data-2 d-flex justify-content-around mt-5 ">
             <span>
               <span className="section-head">5</span>
               <p className="">States across India</p>
