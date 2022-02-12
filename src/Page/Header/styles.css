@@ -49,9 +49,11 @@
   display: block;
 }
 
-.dropdown > .dropdown-toggle:active {
+
+/* I commented this so header is working fine  */
+/* .dropdown > .dropdown-toggle:active {
   pointer-events: none;
-}
+} */
 
 .nav-logo {
   width: 60%;
@@ -69,7 +71,7 @@
     background-color: #f9bfb3;
     border: none;
   }
-  .navbar-brand img {
+  /* .navbar-brand img {
     width: 132px;
     height: 32px;
   }
@@ -77,5 +79,5 @@
     color: #16181b;
     text-decoration: none;
     background-color: transparent;
-  }
+  } */
 }
