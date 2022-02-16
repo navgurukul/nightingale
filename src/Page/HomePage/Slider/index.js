@@ -1,5 +1,6 @@
 import "./style.css";
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import image from "./images/impactellipse.png";
@@ -10,45 +11,45 @@ import students from "./images/Students.jpg";
 import betterIndia from "./images/thebetterindia.jpeg";
 import logicalIndia from "./images/thelogicalindia.png";
 
-const mediaContent = [
-  {
-    image: timesOfIndia,
-    description: "These school dropouts have cracked the code to a better life",
-    url: "https://timesofindia.indiatimes.com/home/sunday-times/these-school-dropouts-have-cracked-the-code-to-a-better-life/articleshow/71458732.cms",
-  },
-  {
-    image: betterIndia,
-    description:
-      "Dropout Are Skilling Underprivileged Students to Get IT Jobs in a Year.",
-    url: "https://www.thebetterindia.com/102699/navgurukul-skilling-underprivileged-delhi-computer-engineering-jobs/",
-  },
-  {
-    image: timesOfIndia,
-    description: "How a gurukul for coders is changing lives",
-    url: "https://timesofindia.indiatimes.com/home/sunday-times/how-a-gurukul-for-coders-is-changing-lives/articleshow/60896051.cms",
-  },
-  {
-    image: logicalIndia,
-    description: "How a gurukul for coders is changing lives...",
-    url: "https://thelogicalindian.com/story-feed/get-inspired/navgurukul/",
-  },
-  {
-    image: quartz,
-    description: "IIT grads? No, it’s the school dropouts...",
-    url: "https://qz.com/india/1086297/iit-grads-no-its-the-school-dropouts-who-are-hot-property-in-indian-it-now/  ",
-  },
-  {
-    image: forbes,
-    description: "NavGurukul: Cracking the code to success...",
-    url: "https://www.forbesindia.com/article/30-under-30-2020/navgurukul-cracking-the-code-to-success/57717/1",
-  },
-  {
-    image: students,
-    description:
-      "Coding has been a career option for decades in India, but it is now attracting the lower strata as well",
-    url: "https://www.business-standard.com/article/current-affairs/how-coding-is-becoming-a-reality-for-those-at-the-bottom-of-the-pyramid-120090400021_1.html",
-  },
-];
+// const mediaContent = [
+//   {
+//     image: timesOfIndia,
+//     description: "These school dropouts have cracked the code to a better life",
+//     url: "https://timesofindia.indiatimes.com/home/sunday-times/these-school-dropouts-have-cracked-the-code-to-a-better-life/articleshow/71458732.cms",
+//   },
+//   {
+//     image: betterIndia,
+//     description:
+//       "Dropout Are Skilling Underprivileged Students to Get IT Jobs in a Year.",
+//     url: "https://www.thebetterindia.com/102699/navgurukul-skilling-underprivileged-delhi-computer-engineering-jobs/",
+//   },
+//   {
+//     image: timesOfIndia,
+//     description: "How a gurukul for coders is changing lives",
+//     url: "https://timesofindia.indiatimes.com/home/sunday-times/how-a-gurukul-for-coders-is-changing-lives/articleshow/60896051.cms",
+//   },
+//   {
+//     image: logicalIndia,
+//     description: "How a gurukul for coders is changing lives...",
+//     url: "https://thelogicalindian.com/story-feed/get-inspired/navgurukul/",
+//   },
+//   {
+//     image: quartz,
+//     description: "IIT grads? No, it’s the school dropouts...",
+//     url: "https://qz.com/india/1086297/iit-grads-no-its-the-school-dropouts-who-are-hot-property-in-indian-it-now/  ",
+//   },
+//   {
+//     image: forbes,
+//     description: "NavGurukul: Cracking the code to success...",
+//     url: "https://www.forbesindia.com/article/30-under-30-2020/navgurukul-cracking-the-code-to-success/57717/1",
+//   },
+//   {
+//     image: students,
+//     description:
+//       "Coding has been a career option for decades in India, but it is now attracting the lower strata as well",
+//     url: "https://www.business-standard.com/article/current-affairs/how-coding-is-becoming-a-reality-for-those-at-the-bottom-of-the-pyramid-120090400021_1.html",
+//   },
+// ];
 
 function Arrow(props) {
   const disabeld = props.disabled ? " arrow--disabled" : "";
@@ -71,6 +72,14 @@ function Arrow(props) {
   );
 }
 function Slider() {
+  useEffect(() => {
+    axios({
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/media.json`,
+    }).then((res) => {
+      setMedia(res.data);
+    });
+  }, []);
+  const [media, setMedia] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider(
@@ -116,20 +125,21 @@ function Slider() {
     ]
   );
   // const [partitionSlider, ]
+  if (!Object.keys(media).length) return <></>;
   return (
     <div className="media-slider slider">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
-            {mediaContent.map((item) => {
+            {Object.keys(media).map((item) => {
               return (
-                <a href={item.url} target="_blank">
+                <a href={media[item].Website} target="_blank">
                   <div className="keen-slider__slide number-slide">
                     <div className="carousal-content">
                       <div className="carousal-image-container">
-                        <img className="carousal-img" src={item.image} />
+                        <img className="carousal-img" src={media[item].Logo} />
                       </div>
-                      <p>{item.description}</p>
+                      <p>{media[item].Description}</p>
                     </div>
                   </div>
                 </a>

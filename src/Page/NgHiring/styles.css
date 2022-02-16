@@ -1,8 +1,7 @@
 .ng-hiring-page {
   background-color: #fff;
   text-align: center;
- }
-
+}
 
 .hiring-page-section button {
   width: 352px;
@@ -15,7 +14,28 @@
 .ng-hiring-page a:hover {
   color: var(--btnHover);
 }
-
+.hring-card-img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 3px solid transparent;
+  transition: all ease-in 0.2s;
+  padding: 0px;
+  box-sizing: content-box;
+}
+.hiring-page-card-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  transition: all ease-in 0.2s;
+  margin-bottom: 14.375rem;
+}
+.hiring-page-card-container .card {
+  width: 275px;
+  margin: 5px;
+  padding-block: 30px;
+}
 @media screen and (max-width: 667px) {
   .hiring-page-content {
     margin: 20px 0px;
@@ -24,9 +44,19 @@
   }
   .hiring-page-content .section-para {
     width: 100% !important;
-    
   }
   .hiring-section-title {
     line-height: 28px;
+  }
+  .hiring-page-card-container{
+    justify-content: space-between;
+    width: 90% !important;
+  }
+  .hiring-page-card-container .card{
+    width: 155px;
+  }
+  .hring-card-img {
+    width: 64px;
+    height: 64px;
   }
 }

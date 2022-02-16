@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Link, useHistory } from "react-router-dom";
 import Slider from "./Slider";
@@ -6,8 +8,16 @@ import PartnerSlider from "./PartnerSlider";
 import { supportByLinks, partners } from "./config/index.js";
 
 function Home() {
-  const [supports, setSupports] = useState(supportByLinks);
-  const [partner, setPartner] = useState(partners);
+  useEffect(() => {
+    axios({
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/supporters.json`,
+    }).then((res) => {
+      setSupports(res.data);
+    });
+  }, []);
+  const [supports, setSupports] = useState([]);
+  console.log(supports);
+  // const [partner, setPartner] = useState(partners);
   const history = useHistory();
   console.log(partners, "komal");
   return (
@@ -64,7 +74,7 @@ function Home() {
         <hr className="heading-hr" />
         <div class="container mt-5">
           <div class="row">
-            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-lg-0">
+            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
               <div class="bg-image1 initiative-card card  shadow-1-strong">
                 <Link to="/job-course">
                   <div className="Initiatives-bg-color">
@@ -83,7 +93,7 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-lg-6 initiative-card-parent mb-6 mb-lg-0">
+            <div className="col-lg-6 initiative-card-parent mb-md-2">
               <div className="bg-image2 initiative-card card  shadow-1-strong">
                 <a href="https://www.merakilearn.org/">
                   <div className="Initiatives-bg-color">
@@ -104,7 +114,7 @@ function Home() {
         </div>
         <div class="container mt-4">
           <div class="row">
-            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-lg-0">
+            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
               <div class="bg-image3 initiative-card card shadow-1-strong">
                 <Link to="/cif">
                   <div className="Initiatives-bg-color">
@@ -123,7 +133,7 @@ function Home() {
               </div>
             </div>
 
-            <div class="col-lg-6 initiative-card-parent mb-6 mb-lg-0">
+            <div class="col-lg-6 initiative-card-parent mb-md-2">
               <div class="bg-image4 initiative-card card shadow-1-strong">
                 <Link to="/nglabs">
                   <div className="Initiatives-bg-color">
@@ -208,42 +218,20 @@ function Home() {
         <h3 className=" mb-3">Our Supporters</h3>
         <hr className="heading-hr" />
         <div class="container ">
-          <div class="row">
-            <div class="col-md-12 col-12">
-              <div class="row">
-                <div class="col d-flex justify-content-center">
-                  <img
-                    className="logo-img"
-                    src={require("./logos/infosys.png").default}
-                  />
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <img
-                    className="logo-img"
-                    src={require("./logos/amazo.png").default}
-                  />
-                </div>
-
-                <div class="col d-flex justify-content-center">
-                  <img
-                    className="logo-img"
-                    src={require("./logos/microsoft.png").default}
-                  />
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <img
-                    className="logo-img"
-                    src={require("./logos/wipro.png").default}
-                  />
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <img
-                    className="logo-img"
-                    src={require("./logos/The-north-ace.png").default}
-                  />
-                </div>
-              </div>
-            </div>
+          <div class="row d-flex align-items-center justify-content-center justify-content-md-start">
+            {Object.keys(supports).length ? (
+              Object.keys(supports).map((item) => {
+                return (
+                  <a href={supports[item].Website} className="supporters-link mx-5 py-3">
+                    <div class="col d-flex justify-content-center">
+                      <img className="logo-img" src={supports[item].Logo} />
+                    </div>
+                  </a>
+                );
+              })
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </section>
@@ -252,3 +240,6 @@ function Home() {
 }
 
 export default Home;
+// (
+//
+// )

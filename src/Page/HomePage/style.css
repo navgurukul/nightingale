@@ -135,7 +135,15 @@
 .home-page-supporters {
   background-color: #f9f9f9;
 }
-
+.supporters-link {
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+}
+.supporters-link img {
+  width: 150px;
+  height: 100%;
+}
 @media screen and (max-width: 1200px) {
   .our-partners {
     margin-inline: 20px !important;

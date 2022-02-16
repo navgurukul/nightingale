@@ -1,5 +1,6 @@
 import "./style.css";
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import image from "./images/impactellipse.png";
@@ -28,6 +29,15 @@ function Arrow(props) {
 }
 
 function PartnerSlider() {
+  useEffect(() => {
+    axios({
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/partners.json`,
+    }).then((res) => {
+      setPartners(res.data);
+    });
+  }, []);
+  const [partners, setPartners] = useState([]);
+  // console.log(partners);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider(
@@ -66,7 +76,7 @@ function PartnerSlider() {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 2000);
+          }, 3000);
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
@@ -85,88 +95,32 @@ function PartnerSlider() {
       },
     ]
   );
+  if (!Object.keys(partners).length) return <></>;
   return (
     <div className="slider pb-5">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
             <div className="partners-carousal-cards">
-              <div className="keen-slider__slide number-slide">
-                <div className="partition-carousal-content my-3">
-                  <img
-                    className="partition-carousal-content-img mb-3"
-                    src={image}
-                  />
-                  <div className="partition-carousal-content-name fw-bold mb-3">
-                    Nasa
+              {Object.keys(partners).map((item) => {
+                return (
+                  <div className="keen-slider__slide number-slide d-flex align-items-start">
+                    <div className="partition-carousal-content my-3">
+                      <img
+                        className="partition-carousal-content-img mb-3"
+                        src={partners[item].Logo}
+                      />
+                      <div className="partition-carousal-content-name fw-bold mb-3">
+                        {partners[item].Name}
+                      </div>
+                      <p className="mb-3">{partners[item].Content}</p>
+                      {/* <span className="align-self-end mr-3 fw-bold">
+                        - Suresh G, Program Director
+                      </span> */}
+                    </div>
                   </div>
-                  <p className="mb-3">
-                    “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
-                    duis ullamco cillum dolor. Voluptate exercitation incididunt
-                    aliquip deserunt reprehenderit elit laborum.”
-                  </p>
-                  <span className="align-self-end mr-3 fw-bold">
-                    - Suresh G, Program Director
-                  </span>
-                </div>
-              </div>
-              <div className="keen-slider__slide number-slide">
-                <div className="partition-carousal-content my-3">
-                  <img
-                    className="partition-carousal-content-img mb-3"
-                    src={image}
-                  />
-                  <div className="partition-carousal-content-name fw-bold mb-3">
-                    Hope Foundation
-                  </div>
-                  <p className="mb-3">
-                    “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
-                    duis ullamco cillum dolor. Voluptate exercitation incididunt
-                    aliquip deserunt reprehenderit elit laborum.”
-                  </p>
-                  <span className="align-self-end mr-3 fw-bold">
-                    - Suresh G, Program Director
-                  </span>
-                </div>
-              </div>
-              <div className="keen-slider__slide number-slide">
-                <div className="partition-carousal-content my-3">
-                  <img
-                    className="partition-carousal-content-img mb-3"
-                    src={image}
-                  />
-                  <div className="partition-carousal-content-name fw-bold mb-3">
-                    Dole
-                  </div>
-                  <p className="mb-3">
-                    “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
-                    duis ullamco cillum dolor. Voluptate exercitation incididunt
-                    aliquip deserunt reprehenderit elit laborum.”
-                  </p>
-                  <span className="align-self-end mr-3 fw-bold">
-                    - Suresh G, Program Director
-                  </span>
-                </div>
-              </div>
-              <div className="keen-slider__slide number-slide">
-                <div className="partition-carousal-content my-3">
-                  <img
-                    className="partition-carousal-content-img mb-3"
-                    src={image}
-                  />
-                  <div className="partition-carousal-content-name fw-bold mb-3">
-                    Bunnie
-                  </div>
-                  <p className="mb-3">
-                    “Nulla Lorem mollit cupidatat irure. Laborum magna nulla
-                    duis ullamco cillum dolor. Voluptate exercitation incididunt
-                    aliquip deserunt reprehenderit elit laborum.”
-                  </p>
-                  <span className="align-self-end mr-3 fw-bold">
-                    - Suresh G, Program Director
-                  </span>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
           {loaded && instanceRef.current && (

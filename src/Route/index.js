@@ -40,11 +40,11 @@ function Routing() {
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/donate" component={Donate} />
         <Route exact path="/hiring" component={NgHiring} />
-        <Route exact path="/job-course" component={JobCourse} />
+        <Route exact path="/job-course" component={Programmer} />
         <Route exact path="/team" component={TeamPage} />
         <Route exact path="/nglabs" component={NgLabs} />
         <Route exact path="/programmer" component={Programmer} />
-        <Route exact path="/designer" component={Designers} />
+        {/* <Route exact path="/designer" component={Designers} /> */}
         <Route exact path="/cif" component={CifPage} />
         <Route exact path="/partners" component={Partners} />
         {/* <Route exact path="/involved" component={GetInvolved} /> */}
