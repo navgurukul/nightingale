@@ -53,7 +53,7 @@ h4 {
 .card:hover {
   border: 2px solid var(--primary);
   box-shadow: 0px 16px 24px rgba(46, 46, 46, 0.06),
-    0px 6px 30px rgba(46, 46, 46, 0.04), 0px 8px 10px rgba(46, 46, 46, 0.08);
+    0px 6px 30px rgba(46, 46, 46, 0.04), 0px 8px 10px rgba(46, 46, 46, 0.08) !important;
 }
 
 :root {
@@ -106,6 +106,9 @@ h4 {
 }
 .text-black {
   color: black;
+}
+.text-primary {
+  color: var(--primary) !important;
 }
 /* paddings */
 
