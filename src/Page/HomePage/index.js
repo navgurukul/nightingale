@@ -5,6 +5,7 @@ import "./style.css";
 import { Link, useHistory } from "react-router-dom";
 import Slider from "./Slider";
 import PartnerSlider from "./PartnerSlider";
+import SupporterSlider from "./SupporterSlider";
 import { supportByLinks, partners } from "./config/index.js";
 
 function Home() {
@@ -218,11 +219,15 @@ function Home() {
         <h3 className=" mb-3">Our Supporters</h3>
         <hr className="heading-hr" />
         <div class="container ">
-          <div class="row d-flex align-items-center justify-content-center justify-content-md-start">
+          <SupporterSlider />
+          {/* <div class="row d-flex align-items-center justify-content-center justify-content-md-start">
             {Object.keys(supports).length ? (
               Object.keys(supports).map((item) => {
                 return (
-                  <a href={supports[item].Website} className="supporters-link mx-5 py-3">
+                  <a
+                    href={supports[item].Website}
+                    className="supporters-link mx-5 py-3"
+                  >
                     <div class="col d-flex justify-content-center">
                       <img className="logo-img" src={supports[item].Logo} />
                     </div>
@@ -232,7 +237,7 @@ function Home() {
             ) : (
               <></>
             )}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>

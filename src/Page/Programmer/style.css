@@ -7,10 +7,16 @@
 .phases_card_container .card {
   background: #ffffff;
   box-shadow: 0px 1px 2px rgba(46, 46, 46, 0.06),
-    0px 2px 1px rgba(46, 46, 46, 0.04), 0px 1px 5px rgba(46, 46, 46, 0.08);
+    0px 2px 1px rgba(46, 46, 46, 0.04), 0px 1px 5px rgba(46, 46, 46, 0.08) !important;
   border-radius: 8px;
-  max-width: 320px;
+  max-width: 335px;
+  cursor: auto;
 }
+.phases_card_container .card:hover {
+  border: 2px solid transparent;
+  box-shadow: none;
+}
+
 .phases_card_container {
   flex-wrap: wrap;
 }

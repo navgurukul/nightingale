@@ -1,4 +1,6 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
+import { useKeenSlider } from "keen-slider/react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Vector from "./assets/Vector";
 import "./style.css";
@@ -9,6 +11,14 @@ import icon2 from "./assets/icon2.png";
 import Timeline from "./assets/Timeline.png";
 
 function NgLabs() {
+  useEffect(() => {
+    axios({
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/projects.json`,
+    }).then((res) => {
+      setProjects(res.data);
+    });
+  }, []);
+  const [projects, setProjects] = useState([]);
   return (
     <div className="ng-labs d-flex flex-column justify-content-center">
       <div className="main mt-7 mb-2">
@@ -38,32 +48,57 @@ function NgLabs() {
         </div>
       </div>
       <div className="projects d-flex flex-column justify-content-center align-items-center">
-        <h3 className="mb-3">Current Projects</h3>
+        <h3 className="mb-3">Active Projects</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container w-50 my-3 mb-5">
+        <div className="container px-0 mt-3 w-100">
           <div className="row">
-            <div className="col d-flex justify-content-center align-items-center my-3">
-              <a href="https://www.merakilearn.org/">
-                <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
-                  <img src={icon1} alt="" />
-                  <h4 className="mt-3 fw-bold">Meraki</h4>
-                  <p>
-                    Some outrageous impact of the project
-                  </p>
-                </div>
+            {console.log(Object.keys(projects), "aaa")}
+            {Object.keys(projects).length ? (
+              Object.keys(projects).map((item) => {
+                if (projects[item].Status === "Active") {
+                  // console.log(projects[item]);
+                  return (
+                    <div className="col-md-4 px-0 d-flex justify-content-center">
+                      <div
+                        className="card w-100"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(projects[item]["Deployed URL"]);
+                        }}
+                      >
+                        <div className="image-container">
+                          <img src={projects[item].Thumbnail} />
+                        </div>
+                        <hr className="card_partion_line" />
+                        <div className="p-3">
+                          <p className="fw-bold mb-2">
+                            {projects[item].Workstream}
+                          </p>
+                          <p className="description mb-2">
+                            {projects[item]["Value prop"]}
+                          </p>
+                          {/* <span className="status">Active</span> */}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+              })
+            ) : (
+              <></>
+            )}
+          </div>
+          <div className="text-start text-md-center">
+            <p>
+              Check out our full list of
+              <a
+                className="text-primary fw-bold"
+                href="https://www.notion.so/navgurukul/Projects-85a6f1c9d26643be9d4054ec49704c28"
+              >
+                {" "}
+                active, ongoing and planned projects
               </a>
-            </div>
-            <div className="col d-flex justify-content-center align-items-center my-3">
-              <a href="#">
-                <div className="card p-4 d-flex flex-column justify-content-center align-items-center text-center mb-1 rounded border-white">
-                  <img src={icon2} alt="" />
-                  <h4 className="mt-3 fw-bold">Conscious Ad Network</h4>
-                  <p>
-                    Some outrageous impact of the project
-                  </p>
-                </div>
-              </a>
-            </div>
+            </p>
           </div>
         </div>
       </div>

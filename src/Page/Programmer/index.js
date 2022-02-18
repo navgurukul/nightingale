@@ -10,7 +10,7 @@ function Programmer() {
   const [state, setState] = useState("");
   return (
     <div className="programmers d-flex flex-column justify-content-center">
-      <div className="header w-100 ">
+      {/* <div className="header w-100 ">
         <div
           className="alert alert-danger d-flex justify-content-between py-3 align-items-center"
           role="alert"
@@ -24,7 +24,7 @@ function Programmer() {
             </span>
           </Link>
         </div>
-      </div>
+      </div> */}
       <div className="hero-P container my-2 my-sm-5">
         <div className="row d-flex justify-content-between flex-md-column-reverse flex-lg-row flex-md-row">
           <div className="col left-P d-flex flex-column align-items-start">
@@ -72,8 +72,8 @@ function Programmer() {
       <section className="new_programme d-flex flex-column align-items-center">
         <h3 className="mb-3">Who this Programme is for?</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-1 mt-3 w-50">
-          <ul>
+        <div className="container text-start mb-0 mt-3 w-50">
+          <ul className="mb-0">
             <li>
               Youth from underprivileged or low income communities who can’t
               afford expensive college education
@@ -92,7 +92,7 @@ function Programmer() {
       <section className="programme_phases  d-flex flex-column align-items-center">
         <h3 className="mb-3">Programme Phases</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-1 mt-0 mt-md-3 px-md-3 px-0 w-90">
+        <div className="container text-start mb-0 mt-0 mt-md-3 px-md-3 px-0 w-90">
           <div className="phases_card_container d-flex justify-content-between">
             <div className="card my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
               <h4 className="mb-3">Foundational Bootcamp</h4>
@@ -103,18 +103,16 @@ function Programmer() {
               <span className="text-secondary">Duration: 1 to 2 months</span>
             </div>
             <div className="card my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
-              <h4 className="mb-3">Foundational Bootcamp</h4>
+              <h4 className="mb-3">Coding Camp</h4>
               <p className="mb-3">
-                Building blocks of learning habits for logical and English
-                skillss
+                Learn coding skills along with English and leadership skills
               </p>
-              <span className="text-secondary">Duration: 1 to 2 months</span>
+              <span className="text-secondary">Duration: 5 to 6 months</span>
             </div>
             <div className="card my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
-              <h4 className="mb-3">Foundational Bootcamp</h4>
+              <h4 className="mb-3"> Interview Camp</h4>
               <p className="mb-3">
-                Building blocks of learning habits for logical and English
-                skillss
+                Work on interview skills and get a overview of office style work
               </p>
               <span className="text-secondary">Duration: 1 to 2 months</span>
             </div>
@@ -124,8 +122,8 @@ function Programmer() {
       <section className="new_programme_skills  d-flex flex-column align-items-center">
         <h3 className="mb-3">What Skills Do We Teach?</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-1 mt-3 w-50">
-          <ul>
+        <div className="container text-start mb-0 mt-3 w-50">
+          <ul className="mb-0">
             <li className="mb-3 points">
               <span className="fw-bold">Front end development :</span> Web and
               mobile development in Javascript, React.js and Android
@@ -138,7 +136,7 @@ function Programmer() {
               <span className="fw-bold">Hands-on projects :</span> Clone
               projects for products such as Whatsapp and Facebook
             </li>
-            <li className="mb-3 points">
+            <li className="mb-0 points">
               <span className="fw-bold">Soft Skills :</span> English speaking,
               team work, emotional intelligence and leadership skills
             </li>
@@ -149,15 +147,15 @@ function Programmer() {
         <h3 className="mb-3">Our Campuses</h3>
         <hr className="heading-hr mb-3" />
 
-        <div className="container text-start mb-1 mt-3 w-100">
+        <div className="container text-start mb-0 mt-3 w-100">
           {" "}
-          <p className="mt-0 text-center">
+          <p className="mt-0 mb-3 pb-0 pb-md-3 text-center">
             Three campuses at Pune, Bengaluru and Dharamsala (for boys) each
           </p>
           <div className="row">
             <div className="col-12 col-md-6 pl-0">
               <p className="fw-bold">Facilities</p>
-              <ul>
+              <ul className="mb-0">
                 <li className="mb-3 points">
                   Equipped with shared dorms, fully functional kitchen and other
                   amenities of daily use
@@ -169,7 +167,7 @@ function Programmer() {
                   Provision of laptop, internet, mentors, english classes,
                   mental health counselling
                 </li>
-                <li className="mb-3 points">
+                <li className="mb-0 points">
                   <span className="fw-bold">
                     All expenses are paid by Navgurukul and free for the student
                   </span>
@@ -178,7 +176,7 @@ function Programmer() {
             </div>
             <div className="col-12 col-md-6 pl-0">
               <p className="fw-bold">Lifestyle and Culture</p>
-              <ul>
+              <ul className="mb-0">
                 <li className="mb-3 points">
                   Self responsibility to take care of activities with discipline
                 </li>
@@ -193,7 +191,7 @@ function Programmer() {
                   in compassionate approach to making a safe space for students
                   to learn in
                 </li>
-                <li className="mb-3 points">
+                <li className="mb-0 points">
                   We constantly work towards diversity without discrimination
                   based no caste, class, gender and life experiences
                 </li>
@@ -208,7 +206,7 @@ function Programmer() {
         <p className="mt-3">Tests can be taken by online or offline means</p>
         <div className="container text-start mb-1 mt-3 w-50 pl-0">
           <p className="fw-bold mb-3">Admission Criteria</p>
-          <ul className="mb-3 pl-4">
+          <ul className="mb-3 pl-4 pb-3">
             <li>Anyone above 16 years of age</li>
             <li>
               Give and pass the test and interview based on 10th level maths
@@ -224,29 +222,32 @@ function Programmer() {
               in urban areas and 10,000 INR in rural areas
             </li>
           </ul>
-          <p className="fw-bold mb-3">Admission Criteria</p>
-          <p className="mb-3">
-            <span className="fw-bold">Maths Test :</span> Questions from 8th to
-            10th grade on ratios and proportions, unitary method, percentages
-            and algebra. This test is 1.5 hrs long.
-          </p>
-          <p className="mb-3">
-            <span className="fw-bold">English Interview :</span> As a second
-            step, we will call you within 2 days for the English interview. The
-            topics are general and you talk to a person for 10 to 15 minutes. We
-            assess your fluency level, grammar and confidence. It does not need
-            to be perfect.
-          </p>
-          <p className="mb-3">
-            <span className="fw-bold">Algebra Interview :</span> A 40 to 50
-            minutes of telephonic interview to test knowledge of basic algebra
-            (linear equations).
-          </p>
-          <p className="mb-3 pb-3">
-            <span className="fw-bold">Culture Fit Interview :</span> 30 minutes
-            telephonic interview to understand the applicants motivations and
-            see if they would enjoy Navgurukul community and learning culture.
-          </p>
+          <div className="pb-3">
+            <p className="fw-bold mb-3">Admission Process</p>
+            <p className="mb-3">
+              <span className="fw-bold">Maths Test :</span> Questions from 8th
+              to 10th grade on ratios and proportions, unitary method,
+              percentages and algebra. This test is 1.5 hrs long.
+            </p>
+            <p className="mb-3">
+              <span className="fw-bold">English Interview :</span> As a second
+              step, we will call you within 2 days for the English interview.
+              The topics are general and you talk to a person for 10 to 15
+              minutes. We assess your fluency level, grammar and confidence. It
+              does not need to be perfect.
+            </p>
+            <p className="mb-3">
+              <span className="fw-bold">Algebra Interview :</span> A 40 to 50
+              minutes of telephonic interview to test knowledge of basic algebra
+              (linear equations).
+            </p>
+            <p className="mb-3">
+              <span className="fw-bold">Culture Fit Interview :</span> 30
+              minutes telephonic interview to understand the applicants
+              motivations and see if they would enjoy Navgurukul community and
+              learning culture.
+            </p>
+          </div>
           <p className="fw-bold mb-3">How to Prepare for the test?</p>
           <ul className="mb-0 pl-4">
             <li>

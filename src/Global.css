@@ -15,8 +15,10 @@ input:focus {
 }
 
 body {
+  margin: 0;
   font-size: 1.125rem;
   font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5 !important;
 }
 
 code {
@@ -33,6 +35,7 @@ h6 {
   font-family: Lusitana;
   font-style: normal;
   font-weight: 600;
+  line-height: 1.5 !important;
 }
 h2 {
   font-size: 42px;
@@ -69,6 +72,7 @@ h4 {
   --bg-card-1: #fcdfd9;
   --bg-card-2: #e6e6e6;
   --gray: #6c757d;
+  --active: #e9f5e9;
 }
 /* margins */
 .mt-7 {

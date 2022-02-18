@@ -102,12 +102,14 @@ function NgHiring() {
               gems now.
             </p>
           </div>
-          <button
-            type="button"
-            class="btn mb-4 f-Nuni fw-bold py-2 regular-btn align-self-center"
-          >
-            Download Placement Brief
-          </button>
+          <a href="./assets/placement-pdf.pdf" download="Placement Brief -Navgurukul">
+            <button
+              type="button"
+              class="btn mb-4 f-Nuni fw-bold py-2 regular-btn align-self-center"
+            >
+              Download Placement Brief
+            </button>
+          </a>
           <div className="hiring-page-content d-flex justify-content-center ">
             <p className="section-para">
               Contact us directly at{" "}

@@ -120,9 +120,9 @@ function Footer() {
                 <li>
                   <Link to="/team">Team</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/">Gallary</Link>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://medium.com/navgurukul"

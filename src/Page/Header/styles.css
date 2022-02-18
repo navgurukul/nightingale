@@ -71,7 +71,7 @@
     background-color: #f9bfb3;
     border: none;
   }
-  /* .navbar-brand img {
+  .navbar-brand img {
     width: 132px;
     height: 32px;
   }
@@ -79,5 +79,5 @@
     color: #16181b;
     text-decoration: none;
     background-color: transparent;
-  } */
+  }
 }
