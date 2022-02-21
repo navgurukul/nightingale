@@ -9,16 +9,16 @@ import SupporterSlider from "./SupporterSlider";
 import { supportByLinks, partners } from "./config/index.js";
 
 function Home() {
-  useEffect(() => {
-    axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/supporters.json`,
-    }).then((res) => {
-      setSupports(res.data);
-    });
-  }, []);
-  const [supports, setSupports] = useState([]);
-  console.log(supports);
-  // const [partner, setPartner] = useState(partners);
+  // useEffect(() => {
+  //   axios({
+  //     url: `https://anandpatel504.github.io/tarabai-shinde/data/supporters.json`,
+  //   }).then((res) => {
+  //     setSupports(res.data);
+  //   });
+  // }, []);
+  // const [supports, setSupports] = useState([]);
+  // // console.log(supports);
+  // // const [partner, setPartner] = useState(partners);
   const history = useHistory();
   console.log(partners, "komal");
   return (

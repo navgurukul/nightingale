@@ -1,149 +1,31 @@
-import React, {
-  useState,
-  useEffect,
-  useCallback,
-  useRef,
-  createRef,
-} from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
-import abhishek from "./assets/abhishek.jpg";
-import komal from "./assets/komal.jpeg";
-import nilu from "./assets/nilu.jpeg";
-import nitesh from "./assets/nitesh.jpg";
-import shehnaz from "./assets/shehnaz.jpeg";
+import axios from "axios";
+import Tippy from "@tippyjs/react";
+import user from "./assets/user-icon.png";
 
-const teamMembers = [
-  {
-    name: "ABHISHEK GUPTA",
-    url: abhishek,
-    designation: "CEO & Co-founder",
-    description:
-      "IITD ‘13 CS Graduate. Co-founded Zumbl.com and FranklyMe. Zumbl was acquired and FranklyMe raised more than 2.6M$ from Matrix Partners and others. Was working with Education Department, Delhi Government before NavGurukul.",
-  },
-  {
-    name: "NILAM KUMARI",
-    url: nilu,
-    designation: "Technical Associate, Bangalore",
-    description:
-      "Nilam belongs to Kishangan, Bihar. She has done her graduation. Her father a small farmer. She wants to explore tech and non teach.Currently she is working as an team member with Navgurukul and she wants to work with girls.",
-  },
-  {
-    name: "KOMAL BHATT",
-    url: komal,
-    designation: "Tech and Academics Associate",
-    description:
-      "A NavGurukul alumna, she learned about herself more as a council member & through volunteering opportunities. She leads the curriculum development.",
-  },
-  {
-    name: "NITESH SHARMA",
-    url: nitesh,
-    designation: "Admissions Team",
-    description:
-      "A NavGurukul alumnus, Nitesh completed BCA from Sant Singaji Institute Of Science & Management. Interested in social welfare and solving problems through facilitation and ground-work.",
-  },
-  {
-    name: "SHAHNAAZ NAAZMEEN",
-    url: shehnaz,
-    designation: "Tech Facility Incharge",
-    description:
-      "Shahnaaz hails from Gulberga, Karnataka. She joined NavGurukul a year back where she found her dream to work with Youth in Technology domain. While pursuing her course, she supported various students to prepare for their Aspirational jobs. Currently, she leads the tech curriculum development in NavGurukul and manages the Pune campus.",
-  },
-];
-
-const volunteers = [
-  {
-    name: "Poonam Singh Bagh",
-    url: shehnaz,
-    designation: "CEO, Navgurukul & Meraki",
-    description:
-      "A... A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
-  },
-  {
-    name: "Saquib Nasim",
-    url: shehnaz,
-    designation: "CEO, Navgurukul & Meraki",
-    description:
-      "B... A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
-  },
-  {
-    name: "Komal Ahire",
-    url: shehnaz,
-    designation: "CEO, Navgurukul & Meraki",
-    description:
-      "C... A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
-  },
-  {
-    name: "Anand Patel",
-    url: shehnaz,
-    designation: "CEO, Navgurukul & Meraki",
-    description:
-      "D... A NavGurukul alumnus, Flyod completed BCA from Sant Singaji Institute Of Science & Management.",
-  },
-];
-
-export { teamMembers, volunteers };
+function Popup(props) {
+  return (
+    <div className="description-popup">
+      <p className="fw-bold mt-3">{props.Name}</p>
+      <p className="mt-0">{props.Content}</p>
+    </div>
+  );
+}
 
 function TeamPage() {
-  console.log("run");
+  useEffect(() => {
+    axios({
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/meraki_team.json`,
+    }).then((res) => {
+      setTeam(res.data);
+    });
+  }, []);
+  const [team, setTeam] = useState([]);
   const [members, setMembers] = useState({
     teamMembers: true,
     volunteers: false,
   });
-  const toIterate = members.teamMembers ? teamMembers : volunteers;
-
-  const elements = useRef([]);
-  elements.current = [...Array(toIterate.length)].map((el, i) => {
-    return createRef();
-  });
-
-  const desktopcards = useRef([]);
-  desktopcards.current = [...Array(toIterate.length)].map((el, i) => {
-    return createRef();
-  });
-  useEffect(() => {
-    elements.current.map((e) => {
-      cardAlignment(e.current);
-    });
-    desktopcards.current.map((e) => {
-      cardAlignment(e.current);
-    });
-    console.log(desktopcards);
-    return () => {};
-  });
-
-  function cardAlignment(ele) {
-    let width = window.innerWidth;
-    console.log(width);
-    const currentPosition = ele.getBoundingClientRect();
-    console.log(currentPosition.x);
-    const partition = currentPosition.x > width / 2 ? "right" : "left";
-    ele.classList.add(partition);
-  }
-
-  // useEffect(() => {
-  //   return () => {};
-  // }, [teamMembers, volunteers]);
-
-  // function shuffleArray(array) {
-  //   let currentIndex = array.length,
-  //     randomIndex;
-  //   while (currentIndex != 0) {
-  //     // Pick a remaining element...
-  //     randomIndex = Math.floor(Math.random() * currentIndex);
-  //     currentIndex--;
-  //     [array[currentIndex], array[randomIndex]] = [
-  //       array[randomIndex],
-  //       array[currentIndex],
-  //     ];
-  //   }
-
-  //   return array;
-  // }
-
-  // const memoizedCallback = useMemo(() => {
-  //   shuffleArray(teamMembers);
-  //   shuffleArray(volunteers);
-  // }, [teamMembers, volunteers]);
 
   return (
     <main className="team-page">
@@ -233,137 +115,54 @@ function TeamPage() {
               Our Supporters
             </span>
           </div>
-          {/* <div className="core-team">
-            <button
-              className="Meraki-section-title"
-              onClick={() => {
-                setMembers(teamMembers);
-              }}
-            >
-              Core Team
-            </button>
-            <div className="core-team-underliner"></div>
-          </div>
-          <div className="our-suppoters">
-            <button
-              className="Meraki-section-title"
-              onClick={() => {
-                setMembers(volunteers);
-              }}
-            >
-              Our Supporters
-            </button>
-            <hr class="hr-line" />
-          </div> */}
-          {/* <img
-            src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
-            class="float-left rounded-circle"
-          /> */}
-          {/* <div className="team-info-cards-container">
-            {console.log("members", members)}
-            {members.map((item) => {
-              return (
-                <>
-                  <div class="card-details">
-                    <img
-                      src={require("./assets/teamMember.png")}
-                      className="team-info-card-img"
-                      //   className="bio-social-media-image"
-                    />
-                    <div className="team-info-card-title">{item.name}</div>
-                    <div className="team-info-card-designation">
-                      {item.designation}
-                    </div>
-                    <div className="hide">{item.description}</div>
-                  </div>
-                </>
-              );
-            })}
-          </div> */}
-          <div className="container px-0 team-info-cards-container">
-            {/* <div className="row">
-              <div class="col-md-3 col-sm-12">
-                <img
-                  src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
-                  class="team-img"
-                />
-                <img
-                  src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
-                  class="team-img"
-                />
-                <img
-                  src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
-                  class="team-img"
-                />
-                <img
-                  src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
-                  class="team-img"
-                />
-                <img
-                  src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
-                  class="team-img"
-                />
-              </div>
-            </div> */}
-            {toIterate.map((item, index) => {
-              return (
-                <>
-                  <div className="Card-content flex flex-column">
-                    <div
-                      class="card card-details"
-                      // style={{ width: "18rem" }}
-                    >
-                      <div className="team-card-info">
-                        <img
-                          // className="card-img-top card-img"
-                          className="card-img-top team-info-card-img img-card-hover"
-                          src={item.url}
-                          alt="Card image cap"
+
+          <div className="container px-0 team-info-cards-container justify-content-md-start">
+            {Object.keys(team).length ? (
+              Object.keys(team).map((item) => {
+                const condition = members.teamMembers
+                  ? "teamMembers"
+                  : "volunteers";
+                if (
+                  (condition === "volunteers" &&
+                    team[item].Association === "Volunteer") ||
+                  (condition === "teamMembers" &&
+                    team[item].Association !== "Volunteer")
+                ) {
+                  return (
+                    <Tippy
+                      animation="fade"
+                      duration={[500, 0]}
+                      placement={
+                        window.screen.availWidth < 650 ? "bottom" : "right"
+                      }
+                      content={
+                        <Popup
+                          Name={team[item].Name}
+                          Content={team[item].Content}
                         />
-                        <div className="team-info-card-title">{item.name}</div>
-                        <div className="section-para">{item.designation}</div>
-                      </div>
-                      <p
-                        class="card-text hide"
-                        ref={desktopcards.current[index]}
-                      >
-                        <div className="team-info-card-title section-head">
-                          {item.name}
-                        </div>
-                        <div className="section-para">{item.description}</div>
-                      </p>
-                    </div>
-                    <div
-                      className="description-dropdown d-flex flex-column justify-content-start align-items-start"
-                      ref={elements.current[index]}
+                      }
                     >
-                      <div className="description-dropdown-name fw-bold">
-                        {item.name}
+                      <div className="Card-content flex flex-column col-6 col-md-4">
+                        <div className="card card-details">
+                          <img
+                            className="card-img-top team-info-card-img img-card-hover"
+                            src={team[item].Photo ? team[item].Photo : user}
+                          />
+                          <p className="team-info-card-title">
+                            {team[item].Name}
+                          </p>
+                          <p className="section-para">
+                            {team[item]["Area of expertise/skills"]}
+                          </p>
+                        </div>
                       </div>
-                      <div className="description-dropdown-description">
-                        {item.description}
-                      </div>
-                    </div>
-                  </div>
-                  {/* <div class="card-details">
-                    <img
-                      src="https://www.socialsamosa.com/wp-content/uploads/2019/11/Guru-Nanak-Dev-Ji.jpg"
-                      // src={require("./assets/teamMember.png")}
-                      className="team-info-card-img"
-                      //   className="bio-social-media-image"
-                    />
-                    <div className="team-info-card-title">{item.name}</div>
-                    <div className="team-info-card-designation">
-                      {item.designation}
-                    </div>
-                    <div className="hide">
-                      <div className="team-info-card-title">{item.name}</div>
-                      <div>{item.description}</div>
-                    </div>
-                  </div> */}
-                </>
-              );
-            })}
+                    </Tippy>
+                  );
+                }
+              })
+            ) : (
+              <></>
+            )}
           </div>
         </section>
       </div>

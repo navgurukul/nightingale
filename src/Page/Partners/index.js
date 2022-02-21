@@ -48,24 +48,36 @@ function Partners() {
         <h3 className="mb-3 section-head">Recent Partners</h3>
         <hr className="mb-3 heading-hr" />
         <div className="all-partners w-80 d-flex flex-column">
-          <div className="all-partners-row d-flex justify-content-around w-100 align-items-start my-1">
+          <div className="all-partners-row d-flex justify-content-around w-100 my-1">
             {Object.keys(partners).length ? (
               Object.keys(partners).map((item) => {
                 return (
-                  <div className="card my-3 bg-white py-3 px-4">
+                  <div className="card my-3 bg-white py-3 px-4 position-relative">
                     <h4 className="fw-bold mb-2">{partners[item].Name}</h4>
                     <span className="status mb-2">{partners[item].Type}</span>
-                    <p className="my-1 mb-2">{partners[item].Content}</p>
-                    <div className="social-media-icons d-flex justify-content-between w-40 mb-3">
-                      <a href={partners[item].LinkedIn} target="_blank">
-                        <img className="social-icon" src={linkedin}></img>
-                      </a>
-                      <a href={partners[item].Twitter} target="_blank">
-                        <img className="social-icon" src={twitter}></img>
-                      </a>
-                      <a href={partners[item].Website} target="_blank">
-                        <img className="social-icon" src={www}></img>
-                      </a>
+                    <p className="my-1 mb-5">{partners[item].Content}</p>
+                    <div className="social-media-icons d-flex  w-40 mb-3 position-absolute">
+                      {partners[item].LinkedIn ? (
+                        <a href={partners[item].LinkedIn} target="_blank">
+                          <img className="social-icon mr-3" src={linkedin}></img>
+                        </a>
+                      ) : (
+                        <></>
+                      )}
+                      {partners[item].Twitter ? (
+                        <a href={partners[item].Twitter} target="_blank">
+                          <img className="social-icon mr-3" src={twitter}></img>
+                        </a>
+                      ) : (
+                        <></>
+                      )}
+                      {partners[item].Website ? (
+                        <a href={partners[item].Website} target="_blank">
+                          <img className="social-icon mr-3" src={www}></img>
+                        </a>
+                      ) : (
+                        <></>
+                      )}
                     </div>
                   </div>
                 );

@@ -134,7 +134,7 @@ function Donate() {
             </div>
           </div>
           <div className="about-donation w-100 d-flex flex-column justify-content-center align-items-center">
-            <p>
+            <p className="w-50">
               Any amount donated to NavGurukul will be eligible/ not eligible
               for tax exemption under 80CCC.
             </p>

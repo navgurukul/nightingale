@@ -103,6 +103,7 @@ function PartnerSlider() {
           <div ref={sliderRef} className="keen-slider">
             <div className="partners-carousal-cards">
               {Object.keys(partners).map((item) => {
+                // const [readmore,setReadmore] = useState({})
                 return (
                   <div className="keen-slider__slide number-slide d-flex align-items-start">
                     <div className="partition-carousal-content my-3">
@@ -114,9 +115,6 @@ function PartnerSlider() {
                         {partners[item].Name}
                       </div>
                       <p className="mb-3">{partners[item].Content}</p>
-                      {/* <span className="align-self-end mr-3 fw-bold">
-                        - Suresh G, Program Director
-                      </span> */}
                     </div>
                   </div>
                 );

@@ -1,90 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Tippy from "@tippyjs/react";
 import "./styles.css";
 import backgroundImg from "./assets/section-bg.png";
+import user from "./assets/user-icon.png";
 
-import abhishek from "./assets/abhishek.jpg";
-import komal from "./assets/komal.jpeg";
-import nilu from "./assets/nilu.jpeg";
-import nitesh from "./assets/nitesh.jpg";
-import shehnaz from "./assets/shehnaz.jpeg";
-
-const alumniArray = [
-  {
-    name: "ABHISHEK GUPTA",
-    url: abhishek,
-    designation: "CEO & Co-founder",
-    description:
-      "IITD ‘13 CS Graduate. Co-founded Zumbl.com and FranklyMe. Zumbl was acquired and FranklyMe raised more than 2.6M$ from Matrix Partners and others. Was working with Education Department, Delhi Government before NavGurukul.",
-  },
-  {
-    name: "NILAM KUMARI",
-    url: nilu,
-    designation: "Technical Associate, Bangalore",
-    description:
-      "Nilam belongs to Kishangan, Bihar. She has done her graduation. Her father a small farmer. She wants to explore tech and non teach.Currently she is working as an team member with Navgurukul and she wants to work with girls.",
-  },
-  {
-    name: "KOMAL BHATT",
-    url: komal,
-    designation: "Tech and Academics Associate",
-    description:
-      "A NavGurukul alumna, she learned about herself more as a council member & through volunteering opportunities. She leads the curriculum development.",
-  },
-  {
-    name: "NITESH SHARMA",
-    url: nitesh,
-    designation: "Admissions Team",
-    description:
-      "A NavGurukul alumnus, Nitesh completed BCA from Sant Singaji Institute Of Science & Management. Interested in social welfare and solving problems through facilitation and ground-work.",
-  },
-  {
-    name: "SHAHNAAZ NAAZMEEN",
-    url: shehnaz,
-    designation: "Tech Facility Incharge",
-    description:
-      "Shahnaaz hails from Gulberga, Karnataka. She joined NavGurukul a year back where she found her dream to work with Youth in Technology domain. While pursuing her course, she supported various students to prepare for their Aspirational jobs. Currently, she leads the tech curriculum development in NavGurukul and manages the Pune campus.",
-  },
-  {
-    name: "ABHISHEK GUPTA",
-    url: abhishek,
-    designation: "CEO & Co-founder",
-    description:
-      "IITD ‘13 CS Graduate. Co-founded Zumbl.com and FranklyMe. Zumbl was acquired and FranklyMe raised more than 2.6M$ from Matrix Partners and others. Was working with Education Department, Delhi Government before NavGurukul.",
-  },
-  {
-    name: "NILAM KUMARI",
-    url: nilu,
-    designation: "Technical Associate, Bangalore",
-    description:
-      "Nilam belongs to Kishangan, Bihar. She has done her graduation. Her father a small farmer. She wants to explore tech and non teach.Currently she is working as an team member with Navgurukul and she wants to work with girls.",
-  },
-  {
-    name: "KOMAL BHATT",
-    url: komal,
-    designation: "Tech and Academics Associate",
-    description:
-      "A NavGurukul alumna, she learned about herself more as a council member & through volunteering opportunities. She leads the curriculum development.",
-  },
-  {
-    name: "NITESH SHARMA",
-    url: nitesh,
-    designation: "Admissions Team",
-    description:
-      "A NavGurukul alumnus, Nitesh completed BCA from Sant Singaji Institute Of Science & Management. Interested in social welfare and solving problems through facilitation and ground-work.",
-  },
-  {
-    name: "SHAHNAAZ NAAZMEEN",
-    url: shehnaz,
-    designation: "Tech Facility Incharge",
-    description:
-      "Shahnaaz hails from Gulberga, Karnataka. She joined NavGurukul a year back where she found her dream to work with Youth in Technology domain. While pursuing her course, she supported various students to prepare for their Aspirational jobs. Currently, she leads the tech curriculum development in NavGurukul and manages the Pune campus.",
-  },
-];
-export { alumniArray };
+function Popup(props) {
+  return (
+    <div className="description-popup">
+      <p className="fw-bold mt-3">{props.Name}</p>
+      <p className="mt-0">{props.Content}</p>
+    </div>
+  );
+}
 
 function NgHiring() {
-  const [alumni, setAlumni] = useState(alumniArray);
-  console.log(alumni);
+  useEffect(() => {
+    axios({
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/alumni.json`,
+    }).then((res) => {
+      setTeam(res.data);
+    });
+  }, []);
+  const [team, setTeam] = useState([]);
   return (
     <main className="ng-hiring-page">
       <div className="page-content">
@@ -102,7 +40,10 @@ function NgHiring() {
               gems now.
             </p>
           </div>
-          <a href="./assets/placement-pdf.pdf" download="Placement Brief -Navgurukul">
+          <a
+            href="./assets/placement-pdf.pdf"
+            download="Placement Brief -Navgurukul"
+          >
             <button
               type="button"
               class="btn mb-4 f-Nuni fw-bold py-2 regular-btn align-self-center"
@@ -126,24 +67,44 @@ function NgHiring() {
           </h3>
           <hr className="heading-hr align-self-center mb-3" />
           <div className="container hiring-page-card-container px-0 d-flex">
-            {alumni.map((item, index) => {
-              return (
-                <>
-                  <div className="card">
-                    <div className="">
-                      <img
-                        // className="card-img-top card-img"
-                        className="card-img-top mb-3 hring-card-img"
-                        src={item.url}
-                        alt="Card image cap"
-                      />
-                      <div className="fw-bold mb-1">{item.name}</div>
-                      <div className="section-para">{item.designation}</div>
-                    </div>
-                  </div>
-                </>
-              );
-            })}
+            {Object.keys(team).length ? (
+              Object.keys(team).map((item) => {
+                {
+                  return (
+                    <Tippy
+                      animation="fade"
+                      duration={[500, 0]}
+                      placement={
+                        window.screen.availWidth < 650 ? "bottom" : "right"
+                      }
+                      content={
+                        <Popup
+                          Name={team[item].Name}
+                          Content={team[item].Content}
+                        />
+                      }
+                    >
+                      <div className="Card-content flex flex-column col-6 col-md-4">
+                        <div className="card card-details">
+                          <img
+                            className="card-img-top team-info-card-img img-card-hover"
+                            src={team[item].Photo ? team[item].Photo : user}
+                          />
+                          <p className="team-info-card-title">
+                            {team[item].Name}
+                          </p>
+                          <p className="section-para">
+                            {team[item]["Area of expertise/skills"]}
+                          </p>
+                        </div>
+                      </div>
+                    </Tippy>
+                  );
+                }
+              })
+            ) : (
+              <></>
+            )}
           </div>
         </section>
       </div>

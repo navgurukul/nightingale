@@ -52,7 +52,6 @@ function NgLabs() {
         <hr className="heading-hr mb-3" />
         <div className="container px-0 mt-3 w-100">
           <div className="row">
-            {console.log(Object.keys(projects), "aaa")}
             {Object.keys(projects).length ? (
               Object.keys(projects).map((item) => {
                 if (projects[item].Status === "Active") {
@@ -88,7 +87,7 @@ function NgLabs() {
               <></>
             )}
           </div>
-          <div className="text-start text-md-center">
+          {/* <div className="text-start text-md-center">
             <p>
               Check out our full list of
               <a
@@ -99,7 +98,7 @@ function NgLabs() {
                 active, ongoing and planned projects
               </a>
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="timeline my-4 d-flex flex-column justify-content-center align-items-center mb-1">
