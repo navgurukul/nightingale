@@ -48,7 +48,7 @@ video {
   min-height: 255px !important;
 }
 .hero-P video {
-  height: 285px;
+  height: 282px;
 }
 .programmers .next-step {
   margin-bottom: 9.875rem;
@@ -255,11 +255,9 @@ video {
   }
 }
 @media screen and (max-width: 370px) {
-  /* .header span {
-    font-size: 0.95em !important;
-  } */
   .hero-P video {
-    width: 260px;
+    width: 100%;
+    height: auto;
   }
 
   .test-p .card {
@@ -267,16 +265,30 @@ video {
     min-height: 10rem;
   }
   .students video {
-    width: 260px;
-    height: 148px;
-  }
-  .hero-P video {
-    height: 147px;
+    width: 100%;
+    height: auto;
   }
   .test-p {
     margin-top: 6rem !important;
   }
   .programmers .btn {
     max-width: 251px !important;
+  }
+}
+@media screen and (max-width: 290px) {
+  .programmers-main-video {
+    min-height: 140px !important;
+    align-items: center;
+  }
+  .hero-P video {
+    width: 250px;
+    height: 130px;
+  }
+  .students video {
+    width: 100%;
+    height: 125px;
+  }
+  .new_programme {
+    margin-top: 5.5rem;
   }
 }

@@ -107,6 +107,7 @@ function SupporterSlider() {
                     <div className="partition-carousal-content my-3">
                       <a
                         href={supports[item].Website}
+                        target="_blank"
                         className="supporters-link mx-5 py-3"
                       >
                         <div class="col d-flex justify-content-center">

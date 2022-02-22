@@ -40,7 +40,13 @@ function Partners() {
           backbone of our operations. Our partners share our values, our
           partners share our impact.
         </div>
-        <button className="btn btn-primary section-para regular-btn mt-4">
+        <button
+          className="btn btn-primary section-para regular-btn mt-4"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
+          }}
+        >
           Partner With Us
         </button>
       </div>
@@ -59,7 +65,10 @@ function Partners() {
                     <div className="social-media-icons d-flex  w-40 mb-3 position-absolute">
                       {partners[item].LinkedIn ? (
                         <a href={partners[item].LinkedIn} target="_blank">
-                          <img className="social-icon mr-3" src={linkedin}></img>
+                          <img
+                            className="social-icon mr-3"
+                            src={linkedin}
+                          ></img>
                         </a>
                       ) : (
                         <></>
@@ -188,7 +197,16 @@ function Partners() {
         <h3 className="mt-2 section-head w-50 text-center">
           Have you taken an interest in what we do and want to support us?
         </h3>
-        <button className="btn btn-primary section-para regular-btn mt-4">
+        <button
+          className="btn btn-primary section-para regular-btn mt-4"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
+              "_blank"
+            );
+          }}
+        >
           Contact Us for CSR Enquiries
         </button>
       </div>

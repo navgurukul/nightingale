@@ -97,7 +97,7 @@ function PartnerSlider() {
   );
   if (!Object.keys(partners).length) return <></>;
   return (
-    <div className="slider pb-5">
+    <div className="slider partner-slider pb-5">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">

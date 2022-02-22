@@ -41,7 +41,7 @@ function NgHiring() {
             </p>
           </div>
           <a
-            href="./assets/placement-pdf.pdf"
+            href="./assets/placement.pdf"
             download="Placement Brief -Navgurukul"
           >
             <button

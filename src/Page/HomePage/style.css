@@ -131,7 +131,9 @@
 
 .media-scroll-section {
   background-color: #f9f9f9;
-}.supporters {
+  padding-inline: 15%;
+}
+.supporters {
   /* background: #f9f9f9; */
   padding: 70px;
 }
@@ -204,6 +206,9 @@
   }
   .navgurukul-homepage .container {
     width: 90% !important;
+  }
+  .media-scroll-section {
+    padding-inline: 10%;
   }
 }
 

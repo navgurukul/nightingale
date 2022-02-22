@@ -227,6 +227,13 @@ function Donate() {
           <button
             type="button"
             class=" donate-page-button regular-btn contact-button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
+                "_blank"
+              );
+            }}
           >
             Contact Us for CSR Enquiries
           </button>

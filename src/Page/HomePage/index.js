@@ -38,7 +38,7 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                <div className="d-flex home-page-hero-btns justify-content-sm-start mx-3 justify-content-center">
+                <div className="d-flex home-page-hero-btns justify-content-sm-start mr-3 justify-content-center">
                   <button
                     type="button"
                     class="btn regular-btn section-para mt-0 mr-3 text-white"
@@ -209,6 +209,10 @@ function Home() {
           <button
             class="btn regular-btn our-partner-btn section-para text-white partner "
             type="button"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
+            }}
           >
             Partner with us
           </button>

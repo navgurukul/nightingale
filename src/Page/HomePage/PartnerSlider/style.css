@@ -28,13 +28,13 @@
   color: #818181;
 }
 @media screen and (max-width: 900px) {
-  .carousal-content {
+  .partner-slider .carousal-content {
     padding: 0 50px;
   }
-  .arrow--left {
+  .partner-slider .arrow--left {
     left: 20px;
   }
-  .arrow--right {
+  .partner-slider .arrow--right {
     left: auto;
     right: 40px;
   }
