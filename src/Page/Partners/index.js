@@ -17,10 +17,10 @@ function Partners() {
   const [partners, setPartners] = useState([]);
   return (
     <div className="partners d-flex flex-column justify-content-center w-100">
-      <div className="container partnerInfo align-items-center d-flex flex-column mb-5 justify-content-center w-100 mt-5">
+      <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100 mt-5">
         <h3 className="mt-2 section-head mb-3">Partner Highlights</h3>
         <hr className="mb-3 heading-hr" />
-        <div className="card-row flex-sm-row flex-column w-75 d-flex justify-content-center align-items-center bg-white">
+        {/* <div className="card-row flex-sm-row flex-column w-75 d-flex justify-content-center align-items-center bg-white">
           <div className="card w-25 my-3 bg-white py-3 d-flex justify-content-center mx-3 align-items-center">
             <span className=" text-primary section-head">50</span>
             <p>Total Partners</p>
@@ -33,7 +33,7 @@ function Partners() {
             <span className=" text-primary section-head">8</span>
             <p>Indian States</p>
           </div>
-        </div>
+        </div> */}
         <div className="partner-content-data w-40 text-center section-para d-flex align-items-center justify-content-center mb-2 mt-4">
           Our partners help us give access to aspirational careers to youth who
           want to grow but don’t have means to do so. Our partnerships are the
@@ -50,7 +50,7 @@ function Partners() {
           Partner With Us
         </button>
       </div>
-      <div className="partners-data w-100 mt-5 mb-0 mb-md-5 d-flex align-items-center flex-column">
+      <div className="partners-data w-100 mb-0 mb-md-5 d-flex align-items-center flex-column">
         <h3 className="mb-3 section-head">Recent Partners</h3>
         <hr className="mb-3 heading-hr" />
         <div className="all-partners w-80 d-flex flex-column">

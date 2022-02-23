@@ -34,7 +34,7 @@
   height: 458px;
 }
 .ng-labs .idea {
-  margin-bottom: 9.875rem;
+  margin-bottom: 8.125rem;
 }
 .idea button {
   width: 352px;
@@ -55,7 +55,7 @@
 }
 .ng-labs .projects .card {
   /* width: 256px; */
-  height:fit-content;
+  height: fit-content;
   margin-right: 32px;
   margin-bottom: 32px;
   border: none;
@@ -130,7 +130,6 @@
   .ng-labs .projects .container .row {
     justify-content: center;
   }
-  
 }
 @media screen and (max-width: 450px) {
   .main {
@@ -152,8 +151,9 @@
     width: 100% !important;
   }
   .ng-labs .main .btn {
-    padding: 0.5rem 6rem;
-  }.ng-labs .projects .card {
+    padding: 0;
+  }
+  .ng-labs .projects .card {
     margin-right: 0px;
   }
 }
@@ -166,5 +166,8 @@
   }
   .ng-labs .btn {
     padding: 0.5em 2em;
+  }
+  .ng-labs .idea {
+    margin-bottom: 5rem !important;
   }
 }

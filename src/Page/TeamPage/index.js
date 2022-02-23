@@ -3,11 +3,29 @@ import "./styles.css";
 import axios from "axios";
 import Tippy from "@tippyjs/react";
 import user from "./assets/user-icon.png";
+import LinkedIn from "../Components/LinkedIn";
+import Twitter from "../Components/Twitter";
 
 function Popup(props) {
   return (
     <div className="description-popup">
-      <p className="fw-bold mt-3">{props.Name}</p>
+      <div className="d-flex align-items-center">
+        <p className="fw-bold mt-3 mr-3">{props.Name}</p>
+        {props.linkedin ? (
+          <a href={props.linkedin} className="mr-3">
+            <LinkedIn />
+          </a>
+        ) : (
+          <></>
+        )}
+        {props.twitter ? (
+          <a href={props.twitter}>
+            <Twitter />
+          </a>
+        ) : (
+          <></>
+        )}
+      </div>
       <p className="mt-0">{props.Content}</p>
     </div>
   );
@@ -16,7 +34,7 @@ function Popup(props) {
 function TeamPage() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/meraki_team.json`,
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/ng_team.json`,
     }).then((res) => {
       setTeam(res.data);
     });
@@ -131,6 +149,7 @@ function TeamPage() {
                   return (
                     <Tippy
                       animation="fade"
+                      interactive="true"
                       duration={[500, 0]}
                       placement={
                         window.screen.availWidth < 650 ? "bottom" : "right"
@@ -139,6 +158,8 @@ function TeamPage() {
                         <Popup
                           Name={team[item].Name}
                           Content={team[item].Content}
+                          linkedin={team[item].LinkedIn}
+                          twitter={team[item].Twitter}
                         />
                       }
                     >
@@ -152,7 +173,7 @@ function TeamPage() {
                             {team[item].Name}
                           </p>
                           <p className="section-para">
-                            {team[item]["Area of expertise/skills"]}
+                            {team[item].Designation}
                           </p>
                         </div>
                       </div>

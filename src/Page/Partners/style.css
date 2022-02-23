@@ -11,7 +11,9 @@
   min-width: 250px;
   transition: all ease-in 0.3s;
 }
-
+.partnerInfo{
+  margin-bottom: 80px;
+}
 .partnerInfo .card {
   font-size: 1.5rem;
   cursor: auto;
