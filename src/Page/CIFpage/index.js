@@ -9,7 +9,7 @@ import greaterThan from "./assets/greater-than.svg";
 function CifPage() {
   return (
     <div className="CifPage d-flex flex-column justify-content-center">
-      <div className="hero w-100 text-white d-flex justify-content-center align-items-center mb-5 float-left">
+      <div className="hero w-100 text-white d-flex justify-content-center align-items-ce float-left">
         <div className="data d-flex flex-column align-items-center text-center">
           <h2 className="mb-2">Code India Fellowships</h2>
           <p className="w-75 mb-3">
@@ -30,7 +30,7 @@ function CifPage() {
           </button>
         </div>
       </div>
-      <div className="cif text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+      <div className="cif text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">What’s Code India Fellowship</h3>
         <hr className="heading-hr mt-0 mb-4" />
         <div className="container w-50 mt-3">
@@ -58,7 +58,7 @@ function CifPage() {
           </p>
         </div>
       </div>
-      <div className="offer text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+      <div className="offer text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">What We Offer</h3>
         <hr className="heading-hr mb-3" />
         <div className="container w-50 text-start mt-3">
@@ -92,7 +92,7 @@ function CifPage() {
           </div>
         </div>
       </div>
-      <div className="looking text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+      <div className="looking text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Who We Are Looking For</h3>
         <hr className="heading-hr mb-3" />
         <div className="container f-Nuni text-start mb-1 mt-3 w-50">
@@ -117,7 +117,7 @@ function CifPage() {
           </span>
         </div>
       </div>
-      <div className="description text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5">
+      <div className="description text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Role Description</h3>
         <hr className="heading-hr mb-3" />
         <div className="container text-start mb-1 mt-3 w-50">
@@ -180,7 +180,7 @@ function CifPage() {
           </div>
         </div>
       </div>
-      <div className="application text-center d-flex flex-column align-items-center justify-content-center mt-0 mb-5 mx-3 mx-md-0">
+      <div className="application text-center d-flex flex-column align-items-center justify-content-center  mx-3 mx-md-0">
         <h3 className="mb-3">Application Process</h3>
         <hr className="heading-hr mb-3" />
         <div className="container text-center w-50 mt-3">
@@ -222,7 +222,7 @@ function CifPage() {
           Apply to CIF
         </button>
       </div>
-      <div className="questions text-center d-flex flex-column align-items-center justify-content-center mt-5 mb-5">
+      <div className="questions text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Have Questions?</h3>
         <hr className="heading-hr mb-3" />
         <p className="mt-3">Connect with us anytime for more information</p>

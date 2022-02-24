@@ -34,7 +34,7 @@ function Partners() {
             <p>Indian States</p>
           </div>
         </div> */}
-        <div className="partner-content-data w-40 text-center section-para d-flex align-items-center justify-content-center mb-2 mt-4">
+        <div className="partner-content-data col-8 section-para d-flex align-items-center justify-content-center mb-2 mt-4">
           Our partners help us give access to aspirational careers to youth who
           want to grow but don’t have means to do so. Our partnerships are the
           backbone of our operations. Our partners share our values, our
@@ -53,7 +53,7 @@ function Partners() {
       <div className="partners-data w-100 mb-0 mb-md-5 d-flex align-items-center flex-column">
         <h3 className="mb-3 section-head">Recent Partners</h3>
         <hr className="mb-3 heading-hr" />
-        <div className="all-partners w-80 d-flex flex-column">
+        <div className="all-partners w-75 d-flex flex-column">
           <div className="all-partners-row d-flex justify-content-around w-100 my-1">
             {Object.keys(partners).length ? (
               Object.keys(partners).map((item) => {

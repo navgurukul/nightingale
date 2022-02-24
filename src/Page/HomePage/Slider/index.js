@@ -105,7 +105,7 @@ function Slider() {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 100000);
+          }, 5000);
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {

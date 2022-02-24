@@ -96,7 +96,7 @@ function SupporterSlider() {
   );
   if (!Object.keys(supports).length) return <></>;
   return (
-    <div className="slider pb-5">
+    <div className="slider pb-5 container">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">

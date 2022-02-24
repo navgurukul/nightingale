@@ -4,11 +4,29 @@ import Tippy from "@tippyjs/react";
 import "./styles.css";
 import backgroundImg from "./assets/section-bg.png";
 import user from "./assets/user-icon.png";
+import LinkedIn from "../Components/LinkedIn";
+import Twitter from "../Components/Twitter";
 
 function Popup(props) {
   return (
     <div className="description-popup">
-      <p className="fw-bold mt-3">{props.Name}</p>
+      <div className="d-flex align-items-center">
+        <p className="fw-bold mt-3 mr-3">{props.Name}</p>
+        {props.linkedin ? (
+          <a href={props.linkedin} className="mr-3">
+            <LinkedIn />
+          </a>
+        ) : (
+          <></>
+        )}
+        {props.twitter ? (
+          <a href={props.twitter}>
+            <Twitter />
+          </a>
+        ) : (
+          <></>
+        )}
+      </div>
       <p className="mt-0">{props.Content}</p>
     </div>
   );
@@ -73,6 +91,7 @@ function NgHiring() {
                   return (
                     <Tippy
                       animation="fade"
+                      interactive="true"
                       duration={[500, 0]}
                       placement={
                         window.screen.availWidth < 650 ? "bottom" : "right"
@@ -81,10 +100,12 @@ function NgHiring() {
                         <Popup
                           Name={team[item].Name}
                           Content={team[item].Content}
+                          linkedin={team[item].LinkedIn}
+                          twitter={team[item].Twitter}
                         />
                       }
                     >
-                      <div className="Card-content flex flex-column col-6 col-md-4">
+                      <div className="Card-content flex flex-column col-6 col-md-3">
                         <div className="card card-details">
                           <img
                             className="card-img-top team-info-card-img img-card-hover"

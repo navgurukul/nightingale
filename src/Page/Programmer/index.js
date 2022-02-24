@@ -302,16 +302,16 @@ function Programmer() {
         <hr className="heading-hr mb-3" />
         <div className="container w-100 mt-3  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
-            <div className="col-12 col-md-4 my-3 d-flex align-items-center flex-column">
-              <video src={video} width="340" height="190" controls></video>
+            <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
+              <video src={video} width="390"  controls></video>
               <p className="mt-3 text-center fw-bold">Priyanka's Journey at Navgurukul</p>
             </div>
-            <div className="col-12 col-md-4 my-3 d-flex align-items-center flex-column">
-              <video src={video} width="340" height="190" controls></video>
+            <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
+              <video src={video} width="390"  controls></video>
               <p className="mt-3 text-center fw-bold">Neha's learning experience during COVID</p>
             </div>
-            <div className="col-12 col-md-4 my-3 d-flex align-items-center flex-column">
-              <video src={video} width="340" height="190" controls></video>
+            <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
+              <video src={video} width="390"  controls></video>
               <p className="mt-3 text-center fw-bold">Soni's multiculural experience in Navgurukul</p>
             </div>
           </div>

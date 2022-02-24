@@ -7,8 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 60px;
-  padding-right: 40px;
+  /* padding-inline: 60px;
+  padding-right: 40px; */
   text-align: left;
 }
 
@@ -17,17 +17,17 @@
   width: 64px;
 }
 .partners-carousal-arrow--left {
-  left: 35px;
+  left: -5%;
 }
 
 .partners-carousal-arrow--right {
   left: auto;
-  right: 40px;
+  right: -5%;
 }
 .partition-carousal-content span {
   color: #818181;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .partner-slider .carousal-content {
     padding: 0 50px;
   }

@@ -133,7 +133,7 @@ function TeamPage() {
               Our Supporters
             </span>
           </div>
-
+          {/* <h4>We will be adding our volunteers soon...</h4> */}
           <div className="container px-0 team-info-cards-container justify-content-md-start">
             {Object.keys(team).length ? (
               Object.keys(team).map((item) => {
@@ -163,7 +163,7 @@ function TeamPage() {
                         />
                       }
                     >
-                      <div className="Card-content flex flex-column col-6 col-md-4">
+                      <div className="Card-content flex flex-column col-6 col-md-3">
                         <div className="card card-details">
                           <img
                             className="card-img-top team-info-card-img img-card-hover"

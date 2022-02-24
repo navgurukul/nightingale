@@ -89,6 +89,10 @@
   background-repeat: no-repeat;
   margin-top: 85px;
 }
+.external-link-icon{
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
 
 .card-main-text {
   margin-top: 180px;
@@ -145,6 +149,9 @@
 .supporters-link img {
   width: 150px;
   height: 100%;
+}
+.our-partners{
+  margin-bottom: 80px ;
 }
 @media screen and (max-width: 1200px) {
   .our-partners {

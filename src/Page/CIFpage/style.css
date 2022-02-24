@@ -32,7 +32,7 @@
   width: 15px;
   height: 15px;
   position: absolute;
-  top: -5px;
+  top: -7px;
   left: 40%;
   transform: translateX(-50%);
   transform: rotate(-90deg);
@@ -40,6 +40,15 @@
 
 .email .text-primary:hover {
   color: var(--primary) !important;
+}
+.CifPage .hero,
+.CifPage .cif,
+.CifPage .offer,
+.CifPage .looking,
+.CifPage .description,
+.CifPage .application,
+.CifPage .questions {
+  margin-bottom: 80px;
 }
 @media screen and (max-width: 1500px) {
   .application .container {
@@ -111,10 +120,10 @@
     left: -1%;
     top: 10%;
   }
-  .hero .btn{
+  .hero .btn {
     margin-bottom: 1rem;
   }
-  .hero h2{
+  .hero h2 {
     margin-top: 1rem;
   }
 }

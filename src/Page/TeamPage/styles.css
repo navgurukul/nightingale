@@ -53,14 +53,13 @@
   opacity: 0.5;
 }
 
-
 .description-popup {
   pointer-events: all;
   box-shadow: 0px 4px 5px rgba(46, 46, 46, 0.06),
     0px 1px 10px rgba(46, 46, 46, 0.04), 0px 2px 4px rgba(46, 46, 46, 0.08);
   border-radius: 10px;
   background-color: #fff;
-  padding: 0 16px ;
+  padding: 0 16px;
   width: 300px;
   text-align: left;
   z-index: 9;
@@ -116,7 +115,6 @@
   margin-left: 15px;
 }
 
-
 @media screen and (max-width: 850px) {
   .team-page .container {
     width: 90%;
@@ -135,6 +133,10 @@
   .Card-content {
     width: 155px;
   } */
+  .Card-content,
+  .Card-content .card {
+    cursor: auto !important;
+  }
   .team-info-card-img {
     border-radius: 50%;
     width: 64px;
@@ -144,7 +146,7 @@
     padding: 0px;
     box-sizing: content-box;
   }
-  .description-popup{
+  .description-popup {
     min-width: 335px;
   }
 }

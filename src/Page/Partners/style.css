@@ -11,7 +11,7 @@
   min-width: 250px;
   transition: all ease-in 0.3s;
 }
-.partnerInfo{
+.partnerInfo {
   margin-bottom: 80px;
 }
 .partnerInfo .card {
@@ -56,9 +56,9 @@
 /* .all-partners .card {
   height: 450px;
 } */
-@media screen and (max-width: 1640px) {
+@media screen and (max-width: 1700px) {
   .partners .card {
-    width: 380px;
+    width: 360px;
   }
 }
 @media screen and (max-width: 1440px) {

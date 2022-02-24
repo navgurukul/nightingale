@@ -6,19 +6,10 @@ import { Link, useHistory } from "react-router-dom";
 import Slider from "./Slider";
 import PartnerSlider from "./PartnerSlider";
 import SupporterSlider from "./SupporterSlider";
+import { FiExternalLink } from "react-icons/fi";
 import { supportByLinks, partners } from "./config/index.js";
 
 function Home() {
-  // useEffect(() => {
-  //   axios({
-  //     url: `https://anandpatel504.github.io/tarabai-shinde/data/supporters.json`,
-  //   }).then((res) => {
-  //     setSupports(res.data);
-  //   });
-  // }, []);
-  // const [supports, setSupports] = useState([]);
-  // // console.log(supports);
-  // // const [partner, setPartner] = useState(partners);
   const history = useHistory();
   console.log(partners, "komal");
   return (
@@ -99,9 +90,12 @@ function Home() {
                 <a href="https://www.merakilearn.org/">
                   <div className="Initiatives-bg-color">
                     <div className="card-body text-white">
-                      <h3 class="card-title mb-3  card-main-text  card-heading ">
-                        Learn Online with Meraki{" "}
-                      </h3>
+                      <div className="d-flex align-items-end">
+                        <h3 class="card-title mb-3  card-main-text text-center card-heading ">
+                          Learn Online with Meraki{" "}
+                        </h3>
+                        <FiExternalLink className="ml-3 external-link-icon" />
+                      </div>
                       <p class="card-text  section-para  card-dic ">
                         Get started with programming in Python, English and
                         Typing
@@ -199,12 +193,12 @@ function Home() {
         </div>
       </section>
 
-      <section className="our-partners text-center mx-6 my-0 mt-5 my-md-5 d-flex flex-column">
+      <section className="our-partners text-center  mt-5  d-flex flex-column">
         <h3 className="align-self-center mb-3 ">Our Partners</h3>
         <hr className="align-self-center heading-hr" />
         <PartnerSlider />
 
-        <div class="d-flex flex-column align-items-center justify-content-center align-items-center mb-5 ">
+        <div class="d-flex flex-column align-items-center justify-content-center align-items-center ">
           <h3 className=" mb-4"> Bring a change! </h3>
           <button
             class="btn regular-btn our-partner-btn section-para text-white partner "
@@ -219,7 +213,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="d-flex home-page-supporters py-5 flex-column align-items-center justify-content-center mb-0 mt-0 mt-md-5">
+      <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-0 ">
         <h3 className=" mb-3">Our Supporters</h3>
         <hr className="heading-hr" />
         <div class="container ">

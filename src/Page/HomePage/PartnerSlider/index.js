@@ -76,7 +76,7 @@ function PartnerSlider() {
           if (mouseOver) return;
           timeout = setTimeout(() => {
             slider.next();
-          }, 3000);
+          }, 10000);
         }
         slider.on("created", () => {
           slider.container.addEventListener("mouseover", () => {
@@ -97,7 +97,7 @@ function PartnerSlider() {
   );
   if (!Object.keys(partners).length) return <></>;
   return (
-    <div className="slider partner-slider pb-5">
+    <div className="slider partner-slider pb-5 container">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
@@ -105,7 +105,7 @@ function PartnerSlider() {
               {Object.keys(partners).map((item) => {
                 // const [readmore,setReadmore] = useState({})
                 return (
-                  <div className="keen-slider__slide number-slide d-flex align-items-start">
+                  <div className="keen-slider__slide number-slide d-flex align-items-start col-md-3">
                     <div className="partition-carousal-content my-3">
                       <img
                         className="partition-carousal-content-img mb-3"
@@ -114,7 +114,7 @@ function PartnerSlider() {
                       <div className="partition-carousal-content-name fw-bold mb-3">
                         {partners[item].Name}
                       </div>
-                      <p className="mb-3">{partners[item].Content}</p>
+                      <p className="mb-3 px-0">{partners[item].Content}</p>
                     </div>
                   </div>
                 );

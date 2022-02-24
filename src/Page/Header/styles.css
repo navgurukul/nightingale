@@ -45,9 +45,11 @@
 .navbar a:hover {
   color: var(--primary) !important;
 }
+/* 
+for open dropdown on hover
 .dropdown:hover > .dropdown-menu {
   display: block;
-}
+} */
 
 
 /* I commented this so header is working fine  */

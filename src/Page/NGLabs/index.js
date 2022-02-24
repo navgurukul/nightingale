@@ -57,7 +57,7 @@ function NgLabs() {
                 if (projects[item].Status === "Active") {
                   // console.log(projects[item]);
                   return (
-                    <div className="col-md-4 px-0 d-flex justify-content-center">
+                    <div className="col-md-3 px-0 d-flex justify-content-center">
                       <div
                         className="card w-100"
                         onClick={(e) => {
