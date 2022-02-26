@@ -150,7 +150,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="container text-left text-md-center w-50 my-5">
+      <section className="container consult text-left text-md-center w-50 mt-5">
         <p className="section-para ">
           <span className="fw-bold">Techalms Consulting:</span> A talent group
           ready to fly in, solve your problems and leave by leaving happy faces
@@ -160,12 +160,11 @@ function Home() {
         <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
 
-      <section className="container-fluid impact ">
+      {/* <section className="container-fluid impact ">
         <div class=" py-0 py-md-5 pt-5 w-100">
           <div class="container d-flex flex-column text-center w-100">
             <h3 className="text-center  Impact-that-matters mb-3">
               Impact that matters!
-              {/* <div className="underliner mt-2"></div> */}
             </h3>
             <hr className="heading-hr align-self-center" />
             <div class="row">
@@ -191,9 +190,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="our-partners text-center  mt-5  d-flex flex-column">
+      <section className="our-partners text-center  d-flex flex-column">
         <h3 className="align-self-center mb-3 ">Our Partners</h3>
         <hr className="align-self-center heading-hr" />
         <PartnerSlider />

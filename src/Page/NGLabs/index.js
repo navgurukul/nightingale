@@ -34,9 +34,12 @@ function NgLabs() {
                 projects that we believe can directly or indirectly contribute
                 to the improvement of education system in India
               </p>
-              <button className="btn btn-primary text-white regular-btn">
+              {/* <button className="btn btn-primary text-white regular-btn">
                 Seek Incubation Support
-              </button>
+              </button> */}
+              <p className="fw-bold">
+              Incubator applications opening up soon...
+              </p>
             </div>
             <div className="col-md col-sm-12 col-img">
               <div className="right position-relative">
@@ -108,13 +111,13 @@ function NgLabs() {
           <img src={Timeline} alt="" className="mb-5" />
         </div>
       </div> */}
-      <div className="container idea d-flex flex-column justify-content-center align-items-center px-0 px-md-3">
+      {/* <div className="container idea d-flex flex-column justify-content-center align-items-center px-0 px-md-3">
         <h3 className="mb-4">Have an Idea in Works?</h3>
 
         <button className="btn btn-primary text-white regular-btn">
           Seek Incubation Support
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

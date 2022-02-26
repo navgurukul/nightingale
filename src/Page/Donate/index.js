@@ -140,7 +140,7 @@ function Donate() {
             </p>
           </div>
         </section>
-        <section className="d-flex flex-column donate-page-section donate-page-image-section">
+        {/* <section className="d-flex flex-column donate-page-section donate-page-image-section">
           <h3 className="mt-5 mb-3 section-head">
             Your Donations Create Impact
           </h3>
@@ -162,71 +162,16 @@ function Donate() {
               <p className="">States across India</p>
             </span>
           </div>
-          {/* <div className="donate-bg">
-            <h3 className="donate-title">Your Donations Create Impact</h3>
-            <div className="donate-underliner"></div>
-            <img
-              src={require("./assets/Ellipse.png").default}
-              className="Ellipse"
-            />
-            <img
-              src={require("./assets/bg_2.png").default}
-              className="donate-bg2"
-            />
-            <div className="jobs">
-              <p className="number">160+</p>
-              <p>Software Development Jobs</p>
-            </div>
-            <div className="online-students">
-              <p className="number">4000+</p>
-              <p>Online Students</p>
-            </div>
-            <div className="states">
-              <p className="number">5</p>
-              <p>States across India</p>
-            </div>
-          </div> */}
-          {/* <div>
-            <div className="donate-bg-image">
-              <h3 className="donate-title">Your Donations Create Impact</h3>
-              <div className="donate-underliner"></div>
-              <img
-                src={require("./assets/Ellipse.png").default}
-                className="Ellipse"
-              />
-              <img
-                src={require("./assets/bg_2.png").default}
-                className="donate-bg2"
-              />
-              <div className="jobs">
-                <p className="number">160+</p>
-                <p>Software Development Jobs</p>
-              </div>
-              <div className="online-students">
-                <p className="number">4000+</p>
-                <p>Online Students</p>
-              </div>
-              <div className="states">
-                <p className="number">5</p>
-                <p>States across India</p>
-              </div>
-              {/* </div> */}
-          {/* </div>
-            <div className="bg-color"></div>
-            <img
-              src={require("./assets/bg.png").default}
-              className="donate-bg w-100"
-            /> */}
-          {/* </div> */}
-        </section>
-        <section className="container donate-page-section csr-queries mt-5">
+          
+        </section> */}
+        <section className="container donate-page-section csr-queries ">
           <h3 className="section-head mb-3">
             Are you a corporation and taken an interest in what we do?
           </h3>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
-            class=" donate-page-button regular-btn contact-button"
+            class=" donate-page-button regular-btn mt-0 contact-button"
             onClick={(e) => {
               e.preventDefault();
               window.open(

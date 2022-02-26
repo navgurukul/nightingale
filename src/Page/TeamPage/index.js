@@ -67,7 +67,7 @@ function TeamPage() {
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
-                      "https://navgurukul.zohorecruit.in/jobs/Careers",
+                      "https://www.notion.so/navgurukul/NG-Job-Board-cc0fc74362214e4a8d31a061ad9559ba",
                       "_blank"
                     );
                   }}
@@ -170,7 +170,7 @@ function TeamPage() {
                             src={team[item].Photo ? team[item].Photo : user}
                           />
                           <p className="team-info-card-title">
-                            {team[item].Name}
+                            {team[item].Name ? team[item].Name : "Name awaited"}
                           </p>
                           <p className="section-para">
                             {team[item].Designation}

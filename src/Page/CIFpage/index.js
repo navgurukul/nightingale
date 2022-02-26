@@ -9,7 +9,7 @@ import greaterThan from "./assets/greater-than.svg";
 function CifPage() {
   return (
     <div className="CifPage d-flex flex-column justify-content-center">
-      <div className="hero w-100 text-white d-flex justify-content-center align-items-ce float-left">
+      <div className="hero w-100 text-white d-flex justify-content-center align-items-center float-left">
         <div className="data d-flex flex-column align-items-center text-center">
           <h2 className="mb-2">Code India Fellowships</h2>
           <p className="w-75 mb-3">

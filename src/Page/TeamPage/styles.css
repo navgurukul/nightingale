@@ -66,6 +66,7 @@
   border: 2px solid var(--primary);
   box-sizing: border-box;
   opacity: 1;
+  right: 300px;
 }
 .card-details:hover .img-card-hover {
   border: 3px solid var(--primary);

@@ -26,6 +26,7 @@
 }
 .bg-bg-card-2 {
   background-color: var(--bg-card-2);
+  cursor: auto;
 }
 .input {
   width: 25em;
@@ -51,7 +52,8 @@ video {
   height: 282px;
 }
 .programmers .next-step {
-  margin-bottom: 9.875rem;
+  margin-bottom: 5rem;
+  /* in design 188px */
 }
 .next-step .btn {
   max-width: 352px;

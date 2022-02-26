@@ -51,14 +51,14 @@ function Partners() {
         </button>
       </div>
       <div className="partners-data w-100 mb-0 mb-md-5 d-flex align-items-center flex-column">
-        <h3 className="mb-3 section-head">Recent Partners</h3>
+        <h3 className="mb-3 section-head">Our Partners</h3>
         <hr className="mb-3 heading-hr" />
         <div className="all-partners w-75 d-flex flex-column">
           <div className="all-partners-row d-flex justify-content-around w-100 my-1">
             {Object.keys(partners).length ? (
               Object.keys(partners).map((item) => {
                 return (
-                  <div className="card my-3 bg-white py-3 px-4 position-relative">
+                  <div className="card mb-5 bg-white py-3 px-4 position-relative">
                     <h4 className="fw-bold mb-2">{partners[item].Name}</h4>
                     <span className="status mb-2">{partners[item].Type}</span>
                     <p className="my-1 mb-5">{partners[item].Content}</p>

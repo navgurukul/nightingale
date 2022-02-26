@@ -200,7 +200,7 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.google.com/" target="_blank">
+                  <a href="https://play.google.com/store/apps/details?id=org.merakilearn" target="_blank">
                     <div className="playstore-logo">
                       <img src={require("./assets/playstore.png").default} />
                     </div>
