@@ -6,9 +6,6 @@ import Vector from "./assets/Vector";
 import "./style.css";
 import "../../Global.css";
 import svgbackground from "./assets/bg.svg";
-import icon1 from "./assets/icon1.png";
-import icon2 from "./assets/icon2.png";
-import Timeline from "./assets/Timeline.png";
 
 function NgLabs() {
   useEffect(() => {
@@ -34,9 +31,7 @@ function NgLabs() {
                 projects that we believe can directly or indirectly contribute
                 to the improvement of education system in India
               </p>
-              {/* <button className="btn btn-primary text-white regular-btn">
-                Seek Incubation Support
-              </button> */}
+              
               <p className="fw-bold">
               Incubator applications opening up soon...
               </p>
@@ -79,7 +74,6 @@ function NgLabs() {
                           <p className="description mb-2">
                             {projects[item]["Value prop"]}
                           </p>
-                          {/* <span className="status">Active</span> */}
                         </div>
                       </div>
                     </div>
@@ -90,27 +84,10 @@ function NgLabs() {
               <></>
             )}
           </div>
-          {/* <div className="text-start text-md-center">
-            <p>
-              Check out our full list of
-              <a
-                className="text-primary fw-bold"
-                href="https://www.notion.so/navgurukul/Projects-85a6f1c9d26643be9d4054ec49704c28"
-              >
-                {" "}
-                active, ongoing and planned projects
-              </a>
-            </p>
-          </div> */}
+          
         </div>
       </div>
-      {/* <div className="timeline my-4 d-flex flex-column justify-content-center align-items-center mb-1">
-        <h3 className="">Project Timeline (Next 12 months)</h3>
-        <hr className="heading-hr" />
-        <div className="container w-75 my-5 mb-2 d-flex flex-column justify-content-center align-items-center">
-          <img src={Timeline} alt="" className="mb-5" />
-        </div>
-      </div> */}
+      
       {/* <div className="container idea d-flex flex-column justify-content-center align-items-center px-0 px-md-3">
         <h3 className="mb-4">Have an Idea in Works?</h3>
 

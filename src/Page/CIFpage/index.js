@@ -171,7 +171,7 @@ function CifPage() {
               </li>
             </ul>
           </div>
-          <div className="sub-section">
+          <div className="sub-section mb-0">
             <span className="mb-3 fw-bold d-block">
               Documentation and reporting
             </span>

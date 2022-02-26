@@ -11,10 +11,8 @@ import { supportByLinks, partners } from "./config/index.js";
 
 function Home() {
   const history = useHistory();
-  console.log(partners, "komal");
   return (
     <div className="navgurukul-homepage">
-      {/* <div className="container-fluid"> */}
       <div className="home-page-bg text-white home-page-ng ">
         <div class="rgba-black-strong">
           <div className="container">

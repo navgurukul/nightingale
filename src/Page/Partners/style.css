@@ -105,8 +105,8 @@
   .social-media-icons {
     width: 40% !important;
   }
-  .partnerInfo .card {
-    font-size: 0.875rem;
+  .all-partners .card {
+    margin-inline: 0.5rem;
   }
   .partnerInfo .card span {
     font-size: 2rem !important;

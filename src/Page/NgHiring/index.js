@@ -6,6 +6,7 @@ import backgroundImg from "./assets/section-bg.png";
 import user from "./assets/user-icon.png";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
+import pdf from "./assets/placement.pdf";
 
 function Popup(props) {
   return (
@@ -58,10 +59,7 @@ function NgHiring() {
               gems now.
             </p>
           </div>
-          <a
-            href="./assets/placement.pdf"
-            download="Placement Brief -Navgurukul"
-          >
+          <a href={pdf} download="Placement Brief - Navgurukul">
             <button
               type="button"
               class="btn mb-4 f-Nuni fw-bold py-2 regular-btn align-self-center"
