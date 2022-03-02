@@ -17,7 +17,20 @@ function AboutPage() {
               Started in 2016, Navgurukul runs one-year residential course for
               students from underserved and diverse communities. Students after
               pursuing our course are awarded Certificate in Software
-              Programming.
+              Programming. The {" "}
+              <span
+                className="text-primary mou-pdf"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "http://navgurukul.org/assets/static/mou_dgt_diploma-in-software-programming.pdf",
+                    "_blank"
+                  );
+                }}
+              >
+                MOU certificate
+              </span>{" "}
+              is issued by DGT, Government of India .
             </p>
             <p className="w-50 mt-3 section-para mb-0">
               In last five years, more than 160 students from marginalised areas

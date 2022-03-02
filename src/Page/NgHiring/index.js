@@ -28,7 +28,16 @@ function Popup(props) {
           <></>
         )}
       </div>
-      <p className="mt-0">{props.Content}</p>
+      <p
+        className="mt-0"
+        style={
+          props.Content === "Awaiting content from team member"
+            ? { color: "grey" }
+            : {}
+        }
+      >
+        {props.Content}
+      </p>
     </div>
   );
 }
@@ -96,8 +105,11 @@ function NgHiring() {
                       }
                       content={
                         <Popup
-                          Name={team[item].Name}
-                          Content={team[item].Content}
+                          Name={team[item].Name || "Awaiting Member's Name"}
+                          Content={
+                            (team[item].Content.length && team[item].Content) ||
+                            "Awaiting content from team member"
+                          }
                           linkedin={team[item].LinkedIn}
                           twitter={team[item].Twitter}
                         />
@@ -109,11 +121,22 @@ function NgHiring() {
                             className="card-img-top team-info-card-img img-card-hover"
                             src={team[item].Photo ? team[item].Photo : user}
                           />
-                          <p className="team-info-card-title">
-                            {team[item].Name}
+                          <p
+                            style={team[item].Name ? {} : { color: "grey" }}
+                            className="team-info-card-title"
+                          >
+                            {team[item].Name
+                              ? team[item].Name
+                              : "Awaiting Member's Name"}
                           </p>
-                          <p className="section-para">
-                            {team[item]["Area of expertise/skills"]}
+                          <p
+                            style={
+                              team[item].Designation ? {} : { color: "grey" }
+                            }
+                            className="section-para"
+                          >
+                            {team[item].Designation ||
+                              "Awaiting description from team member"}
                           </p>
                         </div>
                       </div>

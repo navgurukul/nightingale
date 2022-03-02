@@ -1,7 +1,7 @@
 .about-page {
   background-color: #fff;
   text-align: center;
-  }
+}
 
 .page-section {
   margin: 40px 0;
@@ -16,13 +16,19 @@
   margin: 30px 0;
   text-align: left;
 }
-
+.mou-pdf {
+  cursor: pointer;
+  font-weight: 600;
+}
+.mou-pdf:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 667px) {
   .underliner {
     margin-left: 150px;
     width: 70px;
   }
-  .backgroundImg{
+  .backgroundImg {
     height: 230px;
     /* width: 300px; */
   }
