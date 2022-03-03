@@ -200,7 +200,10 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://play.google.com/store/apps/details?id=org.merakilearn" target="_blank">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=org.merakilearn"
+                    target="_blank"
+                  >
                     <div className="playstore-logo">
                       <img src={require("./assets/playstore.png").default} />
                     </div>
@@ -215,7 +218,7 @@ function Footer() {
         <div className="footer-divider"></div>
         <div className="details position-relative">
           <div className="policy">
-            <Link to="/">
+            <Link to="/privacy">
               <div>Legal & Privacy Policy</div>
             </Link>
             <Link to="/hiring">

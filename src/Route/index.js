@@ -16,6 +16,7 @@ import CifPage from "../Page/CIFpage";
 import Partners from "../Page/Partners";
 import Home from "../Page/HomePage";
 import Designers from "../Page/Designers";
+import Privacy from "../Page/Privacy";
 
 function ScrollToTop({ history }) {
   useEffect(() => {
@@ -47,7 +48,7 @@ function Routing() {
         {/* <Route exact path="/designer" component={Designers} /> */}
         <Route exact path="/cif" component={CifPage} />
         <Route exact path="/partners" component={Partners} />
-        {/* <Route exact path="/involved" component={GetInvolved} /> */}
+        <Route exact path="/privacy" component={Privacy} />
       </Switch>
       <Footer />
     </>

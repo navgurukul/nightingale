@@ -38,7 +38,8 @@
   transform: rotate(-90deg);
 }
 
-.email .text-primary:hover {
+.email .text-primary:hover,
+.email .text-primary:focus {
   color: var(--primary) !important;
 }
 .CifPage .hero,
