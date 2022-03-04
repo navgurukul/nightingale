@@ -70,41 +70,7 @@ function Programmer() {
           </div>
         </div>
       </div>
-      {/* <div className="benefits d-flex flex-column justify-content-center align-items-center my-2 my-sm-5 ">
-      <h3 className="">Course Benefits</h3>
-      <hr className="heading-hr" />
-      <div className="container w-80 mt-4">
-        <div className="row d-flex flex-md-row flex-column justify-content-center align-items-center ">
-          <div className="col-md-4 col-12 d-flex justify-content-center align-items-center text-center my-4">
-            <div className="card border-0 d-flex justify-content-center align-items-center p-3">
-              <img src={icon1} alt="" className="pt-2" />
-              <p className="mt-2">
-                Some outrageous benefit that breaks the fabric of tech
-                industry
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4 col-12 d-flex justify-content-center align-items-center text-center my-4">
-            <div className="card border-0 d-flex justify-content-center align-items-center p-3">
-              <img src={icon2} alt="" className="pt-2" />
-              <p className="mt-2">
-                Some outrageous benefit that breaks the fabric of tech
-                industry
-              </p>
-            </div>
-          </div>
-          <div className="col-md-4 col-12 d-flex justify-content-center align-items-center text-center my-4">
-            <div className="card border-0 d-flex justify-content-center align-items-center p-3">
-              <img src={icon2} alt="" className="pt-2" />
-              <p className="mt-2">
-                Some outrageous benefit that breaks the fabric of tech
-                industry
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> */}
+      
       <div className="test-p my-2 mb-sm-5 d-flex flex-column align-items-center">
         <h3 className="mb-3">Conduct a Test in Your Locality</h3>
         <hr className="heading-hr mb-3" />

@@ -15,37 +15,7 @@ function Header() {
           // className="nav-logo"
         />
       </a>
-      {/* {toggle ? (
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar-list-2"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          onClick={() => {
-            setToggle(!toggle);
-          }}
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      ) : (
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar-list-2"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-          onClick={() => {
-            setToggle(!toggle);
-          }}
-        >
-          &
-        </button>
-      )} */}
+
       <button
         class="navbar-toggler"
         type="button"
@@ -54,14 +24,10 @@ function Header() {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
-        // onClick={() => {
-        //   setToggle(!toggle);
-        // }}
       >
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      {/* <div className="collapse navbar-collapse" id="navbarSupportedContent"> */}
       <div class="collapse navbar-collapse" id="navbar-list-2">
         <ul className="navbar-nav mr-auto nav-font-color">
           <li className="nav-item dropdown">
@@ -83,7 +49,6 @@ function Header() {
               <a className="dropdown-item" href="/job-course">
                 Guaranteed Job Courses
               </a>
-              {/* <div className="dropdown-divider"></div> */}
               <a
                 className="dropdown-item"
                 href="https://www.merakilearn.org/"
@@ -91,11 +56,9 @@ function Header() {
               >
                 Learn Online with Meraki <FiExternalLink className="ml-2" />
               </a>
-              {/* <div className="dropdown-divider"></div> */}
               <a className="dropdown-item" href="/cif">
                 Code India Fellowships
               </a>
-              {/* <div className="dropdown-divider"></div> */}
               <a className="dropdown-item" href="/nglabs">
                 NG Labs
               </a>
@@ -125,9 +88,7 @@ function Header() {
               <a className="dropdown-item" href="/team">
                 Team
               </a>
-              {/* <a className="dropdown-item" href="/gallery">
-                Gallery
-              </a> */}
+
               <a
                 className="dropdown-item mr-2"
                 target="_blank"
@@ -194,28 +155,6 @@ function Header() {
               <FiExternalLink className="ml-2" />
             </a>
           </li>
-          {/* <div className="divider language mr-3"></div> */}
-          {/* <li className="nav-item dropdown language">
-            <a
-              className="nav-link dropdown-toggle header-title"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              English
-            </a>
-            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a className="dropdown-item" href="#">
-                English
-              </a>
-              <a className="dropdown-item" href="#">
-                Hindi
-              </a>
-            </div>
-          </li> */}
         </ul>
       </div>
     </nav>

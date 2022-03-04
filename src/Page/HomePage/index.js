@@ -7,7 +7,6 @@ import Slider from "./Slider";
 import PartnerSlider from "./PartnerSlider";
 import SupporterSlider from "./SupporterSlider";
 import { FiExternalLink } from "react-icons/fi";
-import { supportByLinks, partners } from "./config/index.js";
 
 function Home() {
   const history = useHistory();
@@ -215,24 +214,6 @@ function Home() {
         <hr className="heading-hr" />
         <div class="container ">
           <SupporterSlider />
-          {/* <div class="row d-flex align-items-center justify-content-center justify-content-md-start">
-            {Object.keys(supports).length ? (
-              Object.keys(supports).map((item) => {
-                return (
-                  <a
-                    href={supports[item].Website}
-                    className="supporters-link mx-5 py-3"
-                  >
-                    <div class="col d-flex justify-content-center">
-                      <img className="logo-img" src={supports[item].Logo} />
-                    </div>
-                  </a>
-                );
-              })
-            ) : (
-              <></>
-            )}
-          </div> */}
         </div>
       </section>
     </div>
@@ -240,6 +221,4 @@ function Home() {
 }
 
 export default Home;
-// (
-//
-// )
+

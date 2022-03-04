@@ -34,28 +34,10 @@
   color: black;
   transition: all ease 0.2s;
 }
-/* .nav-item{
-  box-sizing: border-box;
-  border: 2px solid transparent;
-}
-.nav-item:hover {
-  border-bottom: 2px solid var(--primary);
-} */
 .nav-link:hover,
 .navbar a:hover {
   color: var(--primary) !important;
 }
-/* 
-for open dropdown on hover
-.dropdown:hover > .dropdown-menu {
-  display: block;
-} */
-
-
-/* I commented this so header is working fine  */
-/* .dropdown > .dropdown-toggle:active {
-  pointer-events: none;
-} */
 
 .nav-logo {
   width: 60%;

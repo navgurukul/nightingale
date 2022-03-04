@@ -10,21 +10,7 @@ function Programmer() {
   const [state, setState] = useState("");
   return (
     <div className="programmers d-flex flex-column justify-content-center">
-      {/* <div className="header w-100 ">
-        <div
-          className="alert alert-danger d-flex justify-content-between py-3 align-items-center"
-          role="alert"
-        >
-          <h4 className=" section-head text-black fw-bold mb-0">
-            Programmers’ Gurukul
-          </h4>
-          <Link to="/job-course">
-            <span className="desktop d-block text-primary fw-bold">
-              Change Gurukul
-            </span>
-          </Link>
-        </div>
-      </div> */}
+      
       <div className="hero-P container my-2 my-sm-5">
         <div className="row d-flex justify-content-between flex-md-column-reverse flex-lg-row flex-md-row">
           <div className="col left-P d-flex flex-column align-items-start">

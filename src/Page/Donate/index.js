@@ -31,7 +31,6 @@ function Donate() {
               gateway
             </p>
           </div>
-          {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
             class="donate-page-button regular-btn"

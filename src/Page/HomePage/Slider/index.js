@@ -3,53 +3,6 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import image from "./images/impactellipse.png";
-import timesOfIndia from "./images/timesofindia.jpg";
-import forbes from "./images/forbes.png";
-import quartz from "./images/quartz.jpg";
-import students from "./images/Students.jpg";
-import betterIndia from "./images/thebetterindia.jpeg";
-import logicalIndia from "./images/thelogicalindia.png";
-
-// const mediaContent = [
-//   {
-//     image: timesOfIndia,
-//     description: "These school dropouts have cracked the code to a better life",
-//     url: "https://timesofindia.indiatimes.com/home/sunday-times/these-school-dropouts-have-cracked-the-code-to-a-better-life/articleshow/71458732.cms",
-//   },
-//   {
-//     image: betterIndia,
-//     description:
-//       "Dropout Are Skilling Underprivileged Students to Get IT Jobs in a Year.",
-//     url: "https://www.thebetterindia.com/102699/navgurukul-skilling-underprivileged-delhi-computer-engineering-jobs/",
-//   },
-//   {
-//     image: timesOfIndia,
-//     description: "How a gurukul for coders is changing lives",
-//     url: "https://timesofindia.indiatimes.com/home/sunday-times/how-a-gurukul-for-coders-is-changing-lives/articleshow/60896051.cms",
-//   },
-//   {
-//     image: logicalIndia,
-//     description: "How a gurukul for coders is changing lives...",
-//     url: "https://thelogicalindian.com/story-feed/get-inspired/navgurukul/",
-//   },
-//   {
-//     image: quartz,
-//     description: "IIT grads? No, it’s the school dropouts...",
-//     url: "https://qz.com/india/1086297/iit-grads-no-its-the-school-dropouts-who-are-hot-property-in-indian-it-now/  ",
-//   },
-//   {
-//     image: forbes,
-//     description: "NavGurukul: Cracking the code to success...",
-//     url: "https://www.forbesindia.com/article/30-under-30-2020/navgurukul-cracking-the-code-to-success/57717/1",
-//   },
-//   {
-//     image: students,
-//     description:
-//       "Coding has been a career option for decades in India, but it is now attracting the lower strata as well",
-//     url: "https://www.business-standard.com/article/current-affairs/how-coding-is-becoming-a-reality-for-those-at-the-bottom-of-the-pyramid-120090400021_1.html",
-//   },
-// ];
 
 function Arrow(props) {
   const disabeld = props.disabled ? " arrow--disabled" : "";

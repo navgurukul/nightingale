@@ -88,13 +88,7 @@ function NgLabs() {
         </div>
       </div>
       
-      {/* <div className="container idea d-flex flex-column justify-content-center align-items-center px-0 px-md-3">
-        <h3 className="mb-4">Have an Idea in Works?</h3>
 
-        <button className="btn btn-primary text-white regular-btn">
-          Seek Incubation Support
-        </button>
-      </div> */}
     </div>
   );
 }

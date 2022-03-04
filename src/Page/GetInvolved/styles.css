@@ -39,8 +39,6 @@
 
 .img-container {
     background-color: black;
-    /* background-image: linear-gradient(rgb(71, 69, 69), rgb(17, 17, 16)); */
-    /* background-image: linear-gradient(rgb(131, 128, 128), rgb(7, 7, 7), rgb(17, 17, 16)); */
     background-image: linear-gradient(rgb(78, 76, 76), rgb(7, 7, 7));
 }
 

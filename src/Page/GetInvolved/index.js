@@ -10,104 +10,21 @@ import Footer from "../Footer";
 function GetInvolved() {
   return (
     <>
-      {/* <p className="support-title">Get Involved</p>
-      <div className="container">
-        <div className="row">
-          <div className="col-sm">
-            <div className="card">
-              <img
-                className="card-img-top"
-                src="https://iso.500px.com/wp-content/uploads/2019/10/ON-THE-LI-RIVER-BY-TOBIAS-HAGG-1500x1000.jpeg"
-                // src={require("./assets/Rectangle-1.png")}
-                //   src="Rectangle-1.png"
-              />
-            </div>
-          </div>
-          <div className="col-sm">
-            <div className="card">
-              <img
-                className="card-img-top"
-                src="https://iso.500px.com/wp-content/uploads/2019/10/ON-THE-LI-RIVER-BY-TOBIAS-HAGG-1500x1000.jpeg"
-                // src={require("./assets/Rectangle-1.png")}
-                //   src="Rectangle-1.png"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm">
-            <div className="card">
-              <img
-                className="card-img-top"
-                src="https://iso.500px.com/wp-content/uploads/2019/10/ON-THE-LI-RIVER-BY-TOBIAS-HAGG-1500x1000.jpeg"
-                // src={require("./assets/Rectangle-1.png")}
-                //   src="Rectangle-1.png"
-              />
-            </div>
-          </div>
-          <div className="col-sm">
-            <div className="card">
-              <img
-                className="card-img-top"
-                src="https://iso.500px.com/wp-content/uploads/2019/10/ON-THE-LI-RIVER-BY-TOBIAS-HAGG-1500x1000.jpeg"
-                // src={require("./assets/Rectangle-1.png")}
-                //   src="Rectangle-1.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
-      {/* <main className="home">
-        <div className="page-content">
-          <h1 className="page-title">
-            Let income not be a barrier to your career dreams
-          </h1>
-          <section className="page-section first-page-section">
-            <p className="page-subtitle">Get Involved</p>
-            <p className="page-subtitle">
-              ksjdfdslfsdfmlskfmlkesdlmfksmldkflsdkflksdlfklsdmkfdsmlkf <br />
-              sklfjslkjqlkdjqklsjdklqsjdkqsdjklqdjklqsdjklqsjdqlkjd
-            </p>
-            <button className="primary-btn">Start Learning</button>
-            <button
-              className="primary-btn primary-btn--inverted home-playstore-download-btn"
-              style={{ marginLeft: 20 }}
-            >
-              <span className="home-playstore-btn-text">Download Meraki</span>
-            </button>
-          </section>
-        </div>
-      </main> */}
       <main className="home">
         <div className="page-content">
-          {/* <h1 className="page-title">
-            Let income not be a barrier to your career dreams
-          </h1> */}
           <section className="page-section first-page-section">
             <p className="page-subtitle">Get Involved</p>
             <p className="page-subtitle">
               ksjdfdslfsdfmlskfmlkesdlmfksmldkflsdkflksdlfklsdmkfdsmlkf <br />
               sklfjslkjqlkdjqklsjdklqsjdkqsdjklqdjklqsdjklqsjdqlkjd
             </p>
-            {/* <button className="primary-btn">Start Learning</button>
-            <button
-              className="primary-btn primary-btn--inverted home-playstore-download-btn"
-              style={{ marginLeft: 20 }}
-            >
-              <span className="home-playstore-btn-text">Download Meraki</span>
-            </button> */}
           </section>
           <div className="container">
             <div className="row row-card">
               <div className="col-sm">
                 <div className="card">
                   <div className="img-container">
-                    <img
-                      className="card-img"
-                      // src="https://iso.500px.com/wp-content/uploads/2019/10/ON-THE-LI-RIVER-BY-TOBIAS-HAGG-1500x1000.jpeg"
-                      // src={require("../GetInvolved/assets/Rectangle1.png")}
-                      src={img1}
-                    />
+                    <img className="card-img" src={img1} />
                   </div>
                   <div className="content">
                     <p>Sponsors</p>

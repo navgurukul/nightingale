@@ -34,8 +34,6 @@
   pointer-events: none;
 }
 .hiring-page-card-container .card {
-  /* width: 275px; */
-  /* margin: 5px; */
   padding-block: 30px;
 }
 .hiring-page-card-container:hover .card-details {
