@@ -2,7 +2,7 @@ git branch -f gh-pages
 
 git checkout gh-pages
 
-git reset --hard origin/maain
+git reset --hard origin/main
 
 npm run build
 
