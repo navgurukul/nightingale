@@ -5,6 +5,9 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import icon1 from "./assets/icon1.png";
 import icon2 from "./assets/icon2.png";
 import video from "./assets/video.mp4";
+import subVideo1 from "./assets/subVideo1.mp4";
+import subVideo2 from "./assets/subVideo2.mp4";
+import subVideo3 from "./assets/subVideo3.mp4";
 
 function Programmer() {
   const [state, setState] = useState("");
@@ -289,15 +292,15 @@ function Programmer() {
         <div className="container w-100 mt-3  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
-              <video src={video} width="390"  controls></video>
+              <video src={subVideo1} width="390" height="225" controls></video>
               <p className="mt-3 text-center fw-bold">Priyanka's Journey at Navgurukul</p>
             </div>
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
-              <video src={video} width="390"  controls></video>
-              <p className="mt-3 text-center fw-bold">Neha's learning experience during COVID</p>
+              <video src={subVideo2} width="390" height="225" controls></video>
+              <p className="mt-3 text-center fw-bold">Pooja's learning experience during COVID</p>
             </div>
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
-              <video src={video} width="390"  controls></video>
+              <video src={subVideo3} width="390" height="225" controls></video>
               <p className="mt-3 text-center fw-bold">Soni's multiculural experience in Navgurukul</p>
             </div>
           </div>
