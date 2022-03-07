@@ -6,6 +6,18 @@ import user from "./assets/user-icon.png";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
 
+function shuffleObject(obj) {
+  let newObj = {};
+  var keys = Object.keys(obj);
+  keys.sort(function (a, b) {
+    return Math.random() - 0.5;
+  });
+  keys.forEach(function (k) {
+    newObj[k] = obj[k];
+  });
+  return newObj;
+}
+
 function Popup(props) {
   return (
     <div className="description-popup">
@@ -144,8 +156,8 @@ function TeamPage() {
           </div>
           {/* <h4>We will be adding our volunteers soon...</h4> */}
           <div className="container px-0 team-info-cards-container justify-content-md-start">
-            {Object.keys(team).length ? (
-              Object.keys(team).map((item) => {
+            {Object.keys(shuffleObject(team)).length ? (
+              Object.keys(shuffleObject(team)).map((item) => {
                 const condition = members.teamMembers
                   ? "teamMembers"
                   : "volunteers";
@@ -187,7 +199,11 @@ function TeamPage() {
                           <div className="card card-details">
                             <img
                               className="card-img-top team-info-card-img img-card-hover"
-                              src={team[item].Photo ? team[item].Photo : user}
+                              src={team[item].Photo}
+                              alt={team[item].Name.substring(
+                                0,
+                                team[item].Name.indexOf(" ")
+                              )}
                             />
                             <p
                               style={team[item].Name ? {} : { color: "grey" }}

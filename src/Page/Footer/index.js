@@ -126,7 +126,7 @@ function Footer() {
               <div className="hiring">Hire From NG</div>
             </Link>
           </div>
-          <div className="copyright position-absolute">© 2021 Navgurukul</div>
+          <div className="copyright position-absolute">© 2022 Navgurukul</div>
           <div className="social-media">
             <div className="facebook">
               <a href="https://www.facebook.com/navgurukul/" target="_blank">

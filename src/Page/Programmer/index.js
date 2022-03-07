@@ -13,7 +13,6 @@ function Programmer() {
   const [state, setState] = useState("");
   return (
     <div className="programmers d-flex flex-column justify-content-center">
-      
       <div className="hero-P container my-2 my-sm-5">
         <div className="row d-flex justify-content-between flex-md-column-reverse flex-lg-row flex-md-row">
           <div className="col left-P d-flex flex-column align-items-start">
@@ -54,6 +53,7 @@ function Programmer() {
               height="300px"
               className="programmers-main-video"
               controls
+              alt="Experiance at Navgurukul"
             ></video>
           </div>
         </div>
@@ -292,16 +292,40 @@ function Programmer() {
         <div className="container w-100 mt-3  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
-              <video src={subVideo1} width="390" height="225" controls></video>
-              <p className="mt-3 text-center fw-bold">Priyanka's Journey at Navgurukul</p>
+              <video
+                src={subVideo1}
+                alt="Priyanka's Journey at Navgurukul"
+                width="390"
+                height="225"
+                controls
+              ></video>
+              <p className="mt-3 text-center fw-bold">
+                Priyanka's Journey at Navgurukul
+              </p>
             </div>
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
-              <video src={subVideo2} width="390" height="225" controls></video>
-              <p className="mt-3 text-center fw-bold">Pooja's learning experience during COVID</p>
+              <video
+                src={subVideo2}
+                alt="Pooja's learning experience during COVID"
+                width="390"
+                height="225"
+                controls
+              ></video>
+              <p className="mt-3 text-center fw-bold">
+                Pooja's learning experience during COVID
+              </p>
             </div>
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
-              <video src={subVideo3} width="390" height="225" controls></video>
-              <p className="mt-3 text-center fw-bold">Soni's multiculural experience in Navgurukul</p>
+              <video
+                src={subVideo3}
+                alt="Soni's multiculural experience in Navgurukul"
+                width="390"
+                height="225"
+                controls
+              ></video>
+              <p className="mt-3 text-center fw-bold">
+                Soni's multiculural experience in Navgurukul
+              </p>
             </div>
           </div>
         </div>

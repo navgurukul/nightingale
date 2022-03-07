@@ -31,9 +31,9 @@ function NgLabs() {
                 projects that we believe can directly or indirectly contribute
                 to the improvement of education system in India
               </p>
-              
+
               <p className="fw-bold">
-              Incubator applications opening up soon...
+                Incubator applications opening up soon...
               </p>
             </div>
             <div className="col-md col-sm-12 col-img">
@@ -64,7 +64,13 @@ function NgLabs() {
                         }}
                       >
                         <div className="image-container">
-                          <img src={projects[item].Thumbnail} />
+                          <img
+                            src={projects[item].Thumbnail}
+                            alt={projects[item].Workstream.substring(
+                              0,
+                              projects[item].Workstream.indexOf(" ")
+                            )}
+                          />
                         </div>
                         <hr className="card_partion_line" />
                         <div className="p-3">
@@ -84,11 +90,8 @@ function NgLabs() {
               <></>
             )}
           </div>
-          
         </div>
       </div>
-      
-
     </div>
   );
 }

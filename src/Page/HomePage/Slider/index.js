@@ -90,7 +90,14 @@ function Slider() {
                   <div className="keen-slider__slide number-slide">
                     <div className="carousal-content">
                       <div className="carousal-image-container">
-                        <img className="carousal-img" src={media[item].Logo} />
+                        <img
+                          className="carousal-img"
+                          src={media[item].Logo}
+                          alt={media[item].Name.substring(
+                            0,
+                            media[item].Name.indexOf(" ")
+                          )}
+                        />
                       </div>
                       <p>{media[item].Description}</p>
                     </div>
