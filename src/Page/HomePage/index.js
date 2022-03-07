@@ -24,26 +24,7 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                {/* <div className="d-flex home-page-hero-btns justify-content-sm-start mr-3 justify-content-center">
-                  <button
-                    type="button"
-                    class="btn regular-btn section-para mt-0 mr-3 text-white"
-                    onClick={() => {
-                      history.push("/hiring");
-                    }}
-                  >
-                    Students
-                  </button>
-                  <button
-                    type="button"
-                    class="btn regular-btn section-para mt-0 mr-0 text-white"
-                    onClick={() => {
-                      history.push("/partners");
-                    }}
-                  >
-                    Partners
-                  </button>
-                </div> */}
+                
               </div>
             </div>
           </div>
@@ -65,7 +46,10 @@ function Home() {
               <div class="bg-image1 initiative-card card  shadow-1-strong">
                 <Link to="/job-course">
                   <div className="Initiatives-bg-color">
-                    <div class="card-body text-white  ">
+                    <div
+                      class="card-body text-white  "
+                      title="Guaranteed Job Courses"
+                    >
                       <h3 class="card-title mb-3   card-main-text  card-heading ">
                         {" "}
                         Guaranteed Job Courses{" "}
@@ -85,7 +69,10 @@ function Home() {
                 <a href="https://www.merakilearn.org/">
                   <div className="Initiatives-bg-color">
                     <div className="card-body text-white">
-                      <div className="d-flex align-items-end">
+                      <div
+                        className="d-flex align-items-end"
+                        title="Learn Online with Meraki"
+                      >
                         <h3 class="card-title mb-3  card-main-text text-center card-heading ">
                           Learn Online with Meraki{" "}
                         </h3>
@@ -108,7 +95,10 @@ function Home() {
               <div class="bg-image3 initiative-card card shadow-1-strong">
                 <Link to="/cif">
                   <div className="Initiatives-bg-color">
-                    <div class="card-body text-white">
+                    <div
+                      class="card-body text-white"
+                      title="Code India Fellowships"
+                    >
                       <h3 class="card-title mb-3   card-main-text card-heading">
                         {" "}
                         Code India Fellowships
@@ -127,7 +117,7 @@ function Home() {
               <div class="bg-image4 initiative-card card shadow-1-strong">
                 <Link to="/nglabs">
                   <div className="Initiatives-bg-color">
-                    <div class="card-body text-white">
+                    <div class="card-body text-white" title="NG Labs">
                       <h3 class="card-title mb-3   card-main-text card-heading">
                         {" "}
                         NG Labs{" "}
@@ -155,37 +145,6 @@ function Home() {
         <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
 
-      {/* <section className="container-fluid impact ">
-        <div class=" py-0 py-md-5 pt-5 w-100">
-          <div class="container d-flex flex-column text-center w-100">
-            <h3 className="text-center  Impact-that-matters mb-3">
-              Impact that matters!
-            </h3>
-            <hr className="heading-hr align-self-center" />
-            <div class="row">
-              <div class="col-lg-4 col-md-12 mb-lg-0">
-                <span className="count d-block">160+</span>
-                <p className="section-para"> Software Development Jobs</p>
-              </div>
-
-              <div class="col-lg-4 mb-4 mb-lg-0">
-                <div className="software-development-img">
-                  <img
-                    className="mx-auto impactellipse"
-                    src={require("./assets/impactellipse.png").default}
-                  />
-                  <span className="mt-md-5 mt-4 count d-block"> 5 </span>
-                  <p className="section-para">States across India </p>
-                </div>
-              </div>
-              <div class="col-lg-4 mb-4 mb-lg-0 ">
-                <span className="count d-block">400+</span>
-                <p className="section-para"> Online Students </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="our-partners text-center  d-flex flex-column">
         <h3 className="align-self-center mb-3 ">Our Partners</h3>

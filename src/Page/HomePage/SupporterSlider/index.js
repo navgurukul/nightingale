@@ -111,7 +111,14 @@ function SupporterSlider() {
                         className="supporters-link mx-5 py-3"
                       >
                         <div class="col d-flex justify-content-center">
-                          <img className="logo-img" src={supports[item].Logo} />
+                          <img
+                            className="logo-img"
+                            src={supports[item].Logo}
+                            alt={supports[item]["Supporter Name"].substring(
+                              0,
+                              supports[item]["Supporter Name"].indexOf(" ")
+                            )}
+                          />
                         </div>
                       </a>
                     </div>

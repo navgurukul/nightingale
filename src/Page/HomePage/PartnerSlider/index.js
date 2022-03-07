@@ -110,6 +110,10 @@ function PartnerSlider() {
                       <img
                         className="partition-carousal-content-img mb-3"
                         src={partners[item].Logo}
+                        alt={partners[item].Name.substring(
+                          0,
+                          partners[item].Name.indexOf(" ")
+                        )}
                       />
                       <div className="partition-carousal-content-name fw-bold mb-3">
                         {partners[item].Name}

@@ -8,6 +8,18 @@ import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
 import pdf from "./assets/placement.pdf";
 
+function shuffleObject(obj) {
+  let newObj = {};
+  var keys = Object.keys(obj);
+  keys.sort(function (a, b) {
+    return Math.random() - 0.5;
+  });
+  keys.forEach(function (k) {
+    newObj[k] = obj[k];
+  });
+  return newObj;
+}
+
 function Popup(props) {
   return (
     <div className="description-popup">
@@ -92,8 +104,8 @@ function NgHiring() {
           </h3>
           <hr className="heading-hr align-self-center mb-3" />
           <div className="container hiring-page-card-container px-0 d-flex">
-            {Object.keys(team).length ? (
-              Object.keys(team).map((item) => {
+            {Object.keys(shuffleObject(team)).length ? (
+              Object.keys(shuffleObject(team)).map((item) => {
                 {
                   return (
                     <Tippy
@@ -120,6 +132,10 @@ function NgHiring() {
                           <img
                             className="card-img-top team-info-card-img img-card-hover"
                             src={team[item].Photo ? team[item].Photo : user}
+                            alt={team[item].Name.substring(
+                              0,
+                              team[item].Name.indexOf(" ")
+                            )}
                           />
                           <p
                             style={team[item].Name ? {} : { color: "grey" }}
