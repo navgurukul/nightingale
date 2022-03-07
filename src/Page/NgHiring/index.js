@@ -14,14 +14,14 @@ function Popup(props) {
       <div className="d-flex align-items-center">
         <p className="fw-bold mt-3 mr-3">{props.Name}</p>
         {props.linkedin ? (
-          <a href={props.linkedin} className="mr-3">
+          <a href={props.linkedin} target="_blank" className="mr-3">
             <LinkedIn />
           </a>
         ) : (
           <></>
         )}
         {props.twitter ? (
-          <a href={props.twitter}>
+          <a href={props.twitter} target="_blank">
             <Twitter />
           </a>
         ) : (

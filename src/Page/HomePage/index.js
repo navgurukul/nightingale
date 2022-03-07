@@ -1,5 +1,3 @@
-// import React, { useState } from "react";
-import axios from "axios";
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Link, useHistory } from "react-router-dom";
@@ -26,7 +24,7 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                <div className="d-flex home-page-hero-btns justify-content-sm-start mr-3 justify-content-center">
+                {/* <div className="d-flex home-page-hero-btns justify-content-sm-start mr-3 justify-content-center">
                   <button
                     type="button"
                     class="btn regular-btn section-para mt-0 mr-3 text-white"
@@ -45,7 +43,7 @@ function Home() {
                   >
                     Partners
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -221,4 +219,3 @@ function Home() {
 }
 
 export default Home;
-
