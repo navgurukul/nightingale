@@ -12,14 +12,14 @@ function Popup(props) {
       <div className="d-flex align-items-center">
         <p className="fw-bold mt-3 mr-3">{props.Name}</p>
         {props.linkedin ? (
-          <a href={props.linkedin} className="mr-3">
+          <a href={props.linkedin} target="_blank" className="mr-3">
             <LinkedIn />
           </a>
         ) : (
           <></>
         )}
         {props.twitter ? (
-          <a href={props.twitter}>
+          <a href={props.twitter} target="_blank">
             <Twitter />
           </a>
         ) : (
@@ -155,53 +155,61 @@ function TeamPage() {
                   (condition === "teamMembers" &&
                     team[item].Association !== "Volunteer")
                 ) {
-                  return (
-                    <Tippy
-                      animation="fade"
-                      interactive="true"
-                      duration={[500, 0]}
-                      placement={
-                        window.screen.availWidth < 650 ? "bottom" : "right"
-                      }
-                      content={
-                        <Popup
-                          Name={team[item].Name || "Awaiting Member's Name"}
-                          Content={
-                            (team[item].Content.length && team[item].Content) ||
-                            "Awaiting content from team member"
-                          }
-                          linkedin={team[item].LinkedIn}
-                          twitter={team[item].Twitter}
-                        />
-                      }
-                    >
-                      <div className="Card-content flex flex-column col-6 col-md-3">
-                        <div className="card card-details">
-                          <img
-                            className="card-img-top team-info-card-img img-card-hover"
-                            src={team[item].Photo ? team[item].Photo : user}
-                          />
-                          <p
-                            style={team[item].Name ? {} : { color: "grey" }}
-                            className="team-info-card-title"
-                          >
-                            {team[item].Name
-                              ? team[item].Name
-                              : "Awaiting Member's Name"}
-                          </p>
-                          <p
-                            style={
-                              team[item].Designation ? {} : { color: "grey" }
+                  if (
+                    team[item].Photo &&
+                    team[item].Name &&
+                    team[item].Content.length &&
+                    team[item].Content &&
+                    team[item].Designation
+                  )
+                    return (
+                      <Tippy
+                        animation="fade"
+                        interactive="true"
+                        duration={[500, 0]}
+                        placement={
+                          window.screen.availWidth < 650 ? "bottom" : "right"
+                        }
+                        content={
+                          <Popup
+                            Name={team[item].Name || "Awaiting Member's Name"}
+                            Content={
+                              (team[item].Content.length &&
+                                team[item].Content) ||
+                              "Awaiting content from team member"
                             }
-                            className="section-para"
-                          >
-                            {team[item].Designation ||
-                              "Awaiting description from team member"}
-                          </p>
+                            linkedin={team[item].Linkedin}
+                            twitter={team[item].Twitter}
+                          />
+                        }
+                      >
+                        <div className="Card-content flex flex-column col-6 col-md-3">
+                          <div className="card card-details">
+                            <img
+                              className="card-img-top team-info-card-img img-card-hover"
+                              src={team[item].Photo ? team[item].Photo : user}
+                            />
+                            <p
+                              style={team[item].Name ? {} : { color: "grey" }}
+                              className="team-info-card-title"
+                            >
+                              {team[item].Name
+                                ? team[item].Name
+                                : "Awaiting Member's Name"}
+                            </p>
+                            <p
+                              style={
+                                team[item].Designation ? {} : { color: "grey" }
+                              }
+                              className="section-para"
+                            >
+                              {team[item].Designation ||
+                                "Awaiting description from team member"}
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                    </Tippy>
-                  );
+                      </Tippy>
+                    );
                 }
               })
             ) : (

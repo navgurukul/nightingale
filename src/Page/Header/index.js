@@ -118,15 +118,15 @@ function Header() {
               <a className="dropdown-item" href="partners">
                 Partner With Us
               </a>
-              <a className="dropdown-item" href="/donate">
+              {/* <a className="dropdown-item" href="/donate">
                 Donate
-              </a>
+              </a> */}
               <a
                 className="dropdown-item mr-2"
-                href="https://admissions.navgurukul.org/"
+                href="https://recruiterflow.com/navgurukul/jobs"
                 target="_blank"
               >
-                Career
+                Careers
                 <FiExternalLink className="ml-2" />
               </a>
               <a
@@ -138,8 +138,13 @@ function Header() {
               </a>
             </div>
           </li>
+
           <li className="nav-item">
-            {/* <a className="nav-link disabled header-title" href="#"> */}
+            <a className="nav-link header-title mr-3" href="/donate">
+              Donate
+            </a>
+          </li>
+          <li className="nav-item">
             <a className="nav-link header-title mr-3" href="/hiring">
               Hire from NG
             </a>
