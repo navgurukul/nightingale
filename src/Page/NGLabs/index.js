@@ -19,9 +19,9 @@ function NgLabs() {
   return (
     <div className="ng-labs d-flex flex-column justify-content-center">
       <div className="main mt-7 mb-2">
-        <div className="container px-0 px-md-3">
+        <div className="container px-0 ">
           <div className="row">
-            <div className="col-md d-flex flex-column justify-content-center align-items-center align-items-md-start">
+            <div className="col-md d-flex flex-column pl-0 justify-content-center align-items-center align-items-md-start">
               <h3 className="mb-3">
                 Nurturing High-Impact Projects in the Non-Profit Space
               </h3>

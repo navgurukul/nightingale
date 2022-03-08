@@ -47,9 +47,7 @@
 .projects {
   margin-bottom: 5rem;
 }
-.ng-labs .projects .container {
-  max-width: 1200px !important;
-}
+
 .ng-labs .row {
   flex-wrap: wrap;
 }

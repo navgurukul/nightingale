@@ -17,7 +17,7 @@ function AboutPage() {
               Started in 2016, Navgurukul runs one-year residential course for
               students from underserved and diverse communities. Students after
               pursuing our course are awarded Certificate in Software
-              Programming. The {" "}
+              Programming. The{" "}
               <span
                 className="text-primary mou-pdf"
                 onClick={(e) => {
@@ -33,7 +33,7 @@ function AboutPage() {
               is issued by DGT, Government of India .
             </p>
             <p className="w-50 mt-3 section-para mb-0">
-              In last five years, more than 160 students from marginalised areas
+              In last five years, more than 250 students from marginalised areas
               have got jobs as Software Programs and have donated back more than
               28 Lacs in donation. We have diversified to add School of Design
               We have also started initiatives to conduct experiments for
@@ -61,10 +61,13 @@ function AboutPage() {
               mission, and realise our vision, we’ve created a set of values
               made easy to remember through our acronym VELOCITY.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
-              Let’s break it down: V - Velocity, E - Entrepreneurial Mindset, L
-              - Love for customers, O - Out of the box thinking, C -
-              Collaboration, I - Impact, T - Trust, Y - You.
+            <p className="w-50 mt-3 section-para mb-0 d-flex flex-column">
+              Let’s break it down: <span>V - Velocity</span>
+              <span> E - Entrepreneurial Mindset</span>{" "}
+              <span> L - Love for customers</span>{" "}
+              <span> O - Out of the box thinking</span>{" "}
+              <span> C - Collaboration</span> <span>I - Impact</span>
+              <span> T - Trust</span> <span>Y - You</span>
             </p>
           </div>
         </section>

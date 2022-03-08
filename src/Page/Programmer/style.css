@@ -100,10 +100,7 @@ video {
 .programme_admissions {
   margin-bottom: 6rem;
 }
-.students .container {
-  max-width: 1300px;
-  /* default video size : 340 190 */
-}
+
 .students .container p {
   width: 80%;
 }

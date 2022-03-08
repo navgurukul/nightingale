@@ -295,8 +295,8 @@ function Programmer() {
               <video
                 src={subVideo1}
                 alt="Priyanka's Journey at Navgurukul"
-                width="390"
-                height="225"
+                width="340"
+                height="195"
                 controls
               ></video>
               <p className="mt-3 text-center fw-bold">
@@ -307,8 +307,8 @@ function Programmer() {
               <video
                 src={subVideo2}
                 alt="Pooja's learning experience during COVID"
-                width="390"
-                height="225"
+                width="340"
+                height="195"
                 controls
               ></video>
               <p className="mt-3 text-center fw-bold">
@@ -319,8 +319,8 @@ function Programmer() {
               <video
                 src={subVideo3}
                 alt="Soni's multiculural experience in Navgurukul"
-                width="390"
-                height="225"
+                width="340"
+                height="195"
                 controls
               ></video>
               <p className="mt-3 text-center fw-bold">

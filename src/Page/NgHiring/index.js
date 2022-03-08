@@ -80,7 +80,11 @@ function NgHiring() {
               gems now.
             </p>
           </div>
-          <a href={pdf} download="Placement Brief - Navgurukul">
+          <a
+            href="https://nightingale1.s3.ap-south-1.amazonaws.com/pdf/placement.pdf"
+            download="Placement Brief - Navgurukul"
+            target="_blank"
+          >
             <button
               type="button"
               class="btn mb-4 f-Nuni fw-bold py-2 regular-btn align-self-center"
