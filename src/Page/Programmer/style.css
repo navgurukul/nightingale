@@ -104,7 +104,7 @@ video {
 .students .container p {
   width: 80%;
 }
-.students .video-container{
+.students .video-container {
   height: fit-content;
 }
 @media screen and (max-width: 1200px) {
@@ -132,6 +132,7 @@ video {
   }
   .students video {
     width: 500px;
+    height: 294px;
   }
   .benifits .container {
     width: 100%;

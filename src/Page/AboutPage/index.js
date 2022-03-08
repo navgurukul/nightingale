@@ -10,7 +10,7 @@ function AboutPage() {
           <h3 className="section-head mb-3">Our Story</h3>
           <hr className="heading-hr mb-3 align-self-center" />
           <div>
-            <img src={backgroundImg} className="backgroundImg" />
+            <img src="https://nightingale1.s3.ap-south-1.amazonaws.com/images/section-bg.png" className="backgroundImg" />
           </div>
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 section-para">
@@ -23,7 +23,7 @@ function AboutPage() {
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(
-                    "http://navgurukul.org/assets/static/mou_dgt_diploma-in-software-programming.pdf",
+                    "https://nightingale1.s3.ap-south-1.amazonaws.com/pdf/mou_dgt_diploma-in-software-programming.pdf",
                     "_blank"
                   );
                 }}
