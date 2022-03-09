@@ -293,7 +293,7 @@ function Programmer() {
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
               <video
-                src={subVideo1}
+                src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/WhatsApp+Video+2022-02-19+at+18.39.06.mp4"
                 alt="Priyanka's Journey at Navgurukul"
                 width="340"
                 height="195"
@@ -305,7 +305,7 @@ function Programmer() {
             </div>
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
               <video
-                src={subVideo2}
+                src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/Neha-+Sarjapur+Campus.mp4"
                 alt="Pooja's learning experience during COVID"
                 width="340"
                 height="195"
@@ -317,7 +317,7 @@ function Programmer() {
             </div>
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
               <video
-                src={subVideo3}
+                src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/NEW+student+experience.mp4"
                 alt="Soni's multiculural experience in Navgurukul"
                 width="340"
                 height="195"
