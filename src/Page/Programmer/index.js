@@ -40,15 +40,11 @@ function Programmer() {
                 Take Test
               </button>
 
-              {/* <div className="text my-1">
-              Had a test already?{" "}
-              <span className="text-primary">Check status here</span>
-            </div> */}
             </div>
           </div>
           <div className="programmers-main-video col d-flex justify-content-center">
             <video
-              src={video}
+              src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/NEW+student+experience.mp4"
               width="500px"
               height="300px"
               className="programmers-main-video"
@@ -61,29 +57,31 @@ function Programmer() {
       <section className="new_programme d-flex flex-column align-items-center">
         <h3 className="mb-3">Who this Programme is for?</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-0 mt-3 w-50">
-          <ul className="mb-0">
-            <li>
-              Youth from underprivileged or low income communities who can’t
-              afford expensive college education
-            </li>
-            <li>
-              Students with college degrees who haven’t been able to get a good
-              job because of lack of social or economic means.
-            </li>
-            <li>
-              Many of our current students are ones whose parents have humble
-              backgrounds and working as a huosehelp, auto-drivers etc.
-            </li>
-          </ul>
+        <div className="container text-start mb-0 mt-3 d-flex justify-content-center align-items-center">
+          <div className="col-12 col-md-8">
+            <ul className="mb-0 ">
+              <li>
+                Youth from underprivileged or low income communities who can’t
+                afford expensive college education
+              </li>
+              <li>
+                Students with college degrees who haven’t been able to get a
+                good job because of lack of social or economic means.
+              </li>
+              <li>
+                Many of our current students are ones whose parents have humble
+                backgrounds and working as a huosehelp, auto-drivers etc.
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section className="programme_phases  d-flex flex-column align-items-center">
         <h3 className="mb-3">Programme Phases</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-0 mt-0 mt-md-3 px-md-3 px-0 w-90">
+        <div className="container text-start mb-0 mt-0 mt-md-3 px-md-3 px-0 ">
           <div className="phases_card_container d-flex justify-content-between">
-            <div className="card my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
+            <div className="card  col-12 col-md-4 my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
               <h4 className="mb-3">Foundational Bootcamp</h4>
               <p className="mb-3">
                 Building blocks of learning habits for logical and English
@@ -91,14 +89,14 @@ function Programmer() {
               </p>
               <span className="text-secondary">Duration: 1 to 2 months</span>
             </div>
-            <div className="card my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
+            <div className="card  col-12 col-md-4 my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
               <h4 className="mb-3">Coding Camp</h4>
               <p className="mb-3">
                 Learn coding skills along with English and leadership skills
               </p>
               <span className="text-secondary">Duration: 5 to 6 months</span>
             </div>
-            <div className="card my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
+            <div className="card  col-12 col-md-4 my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
               <h4 className="mb-3"> Interview Camp</h4>
               <p className="mb-3">
                 Work on interview skills and get a overview of office style work
@@ -111,25 +109,27 @@ function Programmer() {
       <section className="new_programme_skills  d-flex flex-column align-items-center">
         <h3 className="mb-3">What Skills Do We Teach?</h3>
         <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-0 mt-3 w-50">
-          <ul className="mb-0">
-            <li className="mb-3 points">
-              <span className="fw-bold">Front end development :</span> Web and
-              mobile development in Javascript, React.js and Android
-            </li>
-            <li className="mb-3 points">
-              <span className="fw-bold">Back end development :</span> Python,
-              Node.js, Javascript
-            </li>
-            <li className="mb-3 points">
-              <span className="fw-bold">Hands-on projects :</span> Clone
-              projects for products such as Whatsapp and Facebook
-            </li>
-            <li className="mb-0 points">
-              <span className="fw-bold">Soft Skills :</span> English speaking,
-              team work, emotional intelligence and leadership skills
-            </li>
-          </ul>
+        <div className="container d-flex justify-content-center text-start mb-0 mt-3">
+          <div className="col-12 col-md-8">
+            <ul className="mb-0">
+              <li className="mb-3 points">
+                <span className="fw-bold">Front end development :</span> Web and
+                mobile development in Javascript, React.js and Android
+              </li>
+              <li className="mb-3 points">
+                <span className="fw-bold">Back end development :</span> Python,
+                Node.js, Javascript
+              </li>
+              <li className="mb-3 points">
+                <span className="fw-bold">Hands-on projects :</span> Clone
+                projects for products such as Whatsapp and Facebook
+              </li>
+              <li className="mb-0 points">
+                <span className="fw-bold">Soft Skills :</span> English speaking,
+                team work, emotional intelligence and leadership skills
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section className="our_campus  d-flex flex-column align-items-center">
@@ -193,60 +193,65 @@ function Programmer() {
         <h3 className="mb-3">Admissions</h3>
         <hr className="heading-hr mb-3" />
         <p className="mt-3">Tests can be taken by online or offline means</p>
-        <div className="container text-start mb-1 mt-3 w-50 pl-0">
-          <p className="fw-bold mb-3">Admission Criteria</p>
-          <ul className="mb-3 pl-4 pb-3">
-            <li>Anyone above 16 years of age</li>
-            <li>
-              Give and pass the test and interview based on 10th level maths
-            </li>
-            <li>
-              No prior education level expectation: Our students have been
-              school and college dropouts, 10th or 12th pass as well as degree
-              holders such as BSc, BTech
-            </li>
-            <li>Some level of English is good to have</li>
-            <li>
-              All students are from low income families of less than 15,000 INR
-              in urban areas and 10,000 INR in rural areas
-            </li>
-          </ul>
-          <div className="pb-3">
-            <p className="fw-bold mb-3">Admission Process</p>
-            <p className="mb-3">
-              <span className="fw-bold">Maths Test :</span> Questions from 8th
-              to 10th grade on ratios and proportions, unitary method,
-              percentages and algebra. This test is 1.5 hrs long.
-            </p>
-            <p className="mb-3">
-              <span className="fw-bold">English Interview :</span> As a second
-              step, we will call you within 2 days for the English interview.
-              The topics are general and you talk to a person for 10 to 15
-              minutes. We assess your fluency level, grammar and confidence. It
-              does not need to be perfect.
-            </p>
-            <p className="mb-3">
-              <span className="fw-bold">Algebra Interview :</span> A 40 to 50
-              minutes of telephonic interview to test knowledge of basic algebra
-              (linear equations).
-            </p>
-            <p className="mb-3">
-              <span className="fw-bold">Culture Fit Interview :</span> 30
-              minutes telephonic interview to understand the applicants
-              motivations and see if they would enjoy Navgurukul community and
-              learning culture.
-            </p>
+
+        <div className="container text-start mb-1 mt-3 d-flex flex-column align-items-center justify-content-center text-start pl-0">
+          <div className="col-12 col-md-8">
+            <p className="fw-bold mb-3">Admission Criteria</p>
+            <ul className="mb-3 pl-4 pb-3">
+              <li>Anyone above 16 years of age</li>
+              <li>
+                Give and pass the test and interview based on 10th level maths
+              </li>
+              <li>
+                No prior education level expectation: Our students have been
+                school and college dropouts, 10th or 12th pass as well as degree
+                holders such as BSc, BTech
+              </li>
+              <li>Some level of English is good to have</li>
+              <li>
+                All students are from low income families of less than 15,000
+                INR in urban areas and 10,000 INR in rural areas
+              </li>
+            </ul>
+            <div className="pb-3">
+              <p className="fw-bold mb-3">Admission Process</p>
+              <p className="mb-3">
+                <span className="fw-bold">Maths Test :</span> Questions from 8th
+                to 10th grade on ratios and proportions, unitary method,
+                percentages and algebra. This test is 1.5 hrs long.
+              </p>
+              <p className="mb-3">
+                <span className="fw-bold">English Interview :</span> As a second
+                step, we will call you within 2 days for the English interview.
+                The topics are general and you talk to a person for 10 to 15
+                minutes. We assess your fluency level, grammar and confidence.
+                It does not need to be perfect.
+              </p>
+              <p className="mb-3">
+                <span className="fw-bold">Algebra Interview :</span> A 40 to 50
+                minutes of telephonic interview to test knowledge of basic
+                algebra (linear equations).
+              </p>
+              <p className="mb-3">
+                <span className="fw-bold">Culture Fit Interview :</span> 30
+                minutes telephonic interview to understand the applicants
+                motivations and see if they would enjoy Navgurukul community and
+                learning culture.
+              </p>
+            </div>
+            <p className="fw-bold mb-3">How to Prepare for the test?</p>
+            <ul className="mb-0 pl-4">
+              <li>
+                Revise basic algebra problems from 8th to 10th level mathematics
+              </li>
+              <li>
+                There will be both easy and medium level questions For English,
+              </li>
+              <li>
+                just speak as much as possible to the best of your ability
+              </li>
+            </ul>
           </div>
-          <p className="fw-bold mb-3">How to Prepare for the test?</p>
-          <ul className="mb-0 pl-4">
-            <li>
-              Revise basic algebra problems from 8th to 10th level mathematics
-            </li>
-            <li>
-              There will be both easy and medium level questions For English,
-            </li>
-            <li>just speak as much as possible to the best of your ability</li>
-          </ul>
         </div>
       </section>
       <div className="test-p mb-2 mb-sm-5 d-flex flex-column align-items-center">
