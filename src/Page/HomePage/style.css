@@ -48,7 +48,7 @@
   text-decoration: none;
 }
 .bg-image1 {
-  background: url("./assets/job-courses.png");
+  background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/job-courses.png");
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 15px;
@@ -57,7 +57,7 @@
   background-size: 100% 100%;
 }
 .bg-image2 {
-  background: url("./assets/online-with-meraki.png");
+  background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/meraki.png");
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 15px;
@@ -66,7 +66,7 @@
 }
 
 .bg-image3 {
-  background: url("./assets/CIF.png");
+  background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/CIF.png");
   background-repeat: no-repeat;
   border-radius: 15px;
   width: 100%;
@@ -75,7 +75,7 @@
 }
 
 .bg-image4 {
-  background: url("./assets/NG\ labs.png");
+  background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/NG-labs.png");
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 15px;

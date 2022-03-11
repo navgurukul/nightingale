@@ -99,6 +99,7 @@
   transition: all ease-in 0.2s;
   padding: 0px;
   box-sizing: content-box;
+  object-fit: cover;
 }
 
 .team-info-card-title {
