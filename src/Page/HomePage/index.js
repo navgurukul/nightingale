@@ -66,7 +66,7 @@ function Home() {
 
             <div className="col-lg-6 initiative-card-parent mb-md-2">
               <div className="bg-image2 initiative-card card  shadow-1-strong">
-                <a href="https://www.merakilearn.org/">
+                <a href="https://www.merakilearn.org/" target="_blank">
                   <div className="Initiatives-bg-color">
                     <div className="card-body text-white">
                       <div
