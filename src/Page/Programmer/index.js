@@ -44,7 +44,7 @@ function Programmer() {
           </div>
           <div className="programmers-main-video col d-flex justify-content-center">
             <video
-              src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/NEW+student+experience.mp4"
+              src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/NAVGURUKUL.mp4"
               width="500px"
               height="300px"
               className="programmers-main-video"
