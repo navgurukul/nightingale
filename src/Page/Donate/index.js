@@ -23,9 +23,9 @@ function Donate() {
               <span>KKBK0004260</span>
             </div>
           </div>
-          <hr className="w-30 partition-line" style={{ color: "#cdcdcd" }}></hr>
+          <hr className="w-30 partition-line mb-0" style={{ color: "#cdcdcd" }}></hr>
 
-          <div className="donatation-payment mt-md-5 mt-0 d-flex justify-content-center align-items-center w-100">
+          <div className="donatation-payment mt-md-3 pt-3 mt-0 d-flex justify-content-center align-items-center w-100">
             <p className="w-100 fw-bold">
               You can also directly pay (2% charge but quick) using our payment
               gateway
@@ -42,7 +42,7 @@ function Donate() {
             Donate to Navgurukul
           </button>
           <div className="donate-content mt-2 d-flex justify-content-center align-items-center w-100">
-            <p className="w-75 mt-3 mt-md-5">
+            <p className="w-75 mt-3 mt-md-5 pt-3">
               You may also pledge a <b> monthly donation </b> to us. Any pledged
               amount is a huge support for us. Just having you by our side fills
               us with gratitude & an energy to do better.
@@ -133,7 +133,7 @@ function Donate() {
             </div>
           </div>
           <div className="about-donation w-100 d-flex flex-column justify-content-center align-items-center">
-            <p className="w-50">
+            <p className="w-50 mb-0">
               Any amount donated to NavGurukul will be eligible/ not eligible
               for tax exemption under 80CCC.
             </p>

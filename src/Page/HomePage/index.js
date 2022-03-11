@@ -24,7 +24,6 @@ function Home() {
                   We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India
                 </p>
-                
               </div>
             </div>
           </div>
@@ -144,7 +143,6 @@ function Home() {
 
         <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
-
 
       <section className="our-partners text-center  d-flex flex-column">
         <h3 className="align-self-center mb-3 ">Our Partners</h3>
