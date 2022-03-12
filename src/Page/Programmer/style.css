@@ -208,11 +208,7 @@ video {
   .new_programme {
     margin-top: 2rem;
   }
-  /* .new_programme .container,
-  .new_programme_skills .container,
-  .programme_admissions .container {
-    width: 90% !important;
-  } */
+
   .new_programme_skills .points::before,
   .our_campus .points::before {
     left: -10%;

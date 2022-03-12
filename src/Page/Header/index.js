@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import JobCourse from "../JobCourse";
 import { FiExternalLink } from "react-icons/fi";
 import "./styles.css";
 import externalLink from "./assets/external-link.png";

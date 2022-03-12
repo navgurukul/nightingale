@@ -1,5 +1,4 @@
 .partners-carousal-cards {
-  /* padding: 0 200px; */
   display: flex;
 }
 .partition-carousal-content {
@@ -7,8 +6,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding-inline: 60px;
-  padding-right: 40px; */
   text-align: center;
 }
 

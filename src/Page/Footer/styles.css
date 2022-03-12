@@ -51,10 +51,7 @@ ul.nav-footer {
   color: #2e2e2e;
 }
 
-/* .sub-row-title {
-    font-weight: 400;
-    color: #2E2E2E;
-} */
+
 
 .footer-container .sub-row-title:hover {
   text-decoration: none;
@@ -128,9 +125,7 @@ svg rect {
   cursor: pointer;
   transition: all ease 0.2s;
 }
-/* .footer-container .socialmedia-icon:hover .svg-background {
-  fill: #ffffff;
-} */
+
 .svg-background:hover .socialmedia-icon {
   fill: white;
 }
@@ -144,8 +139,6 @@ svg rect {
 .footer-container .policy {
   display: flex;
   margin-bottom: 10px;
-  /* position: absolute; */
-  /* align-items: center; */
 }
 
 .footer-container .hiring {
