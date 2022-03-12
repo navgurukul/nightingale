@@ -34,7 +34,7 @@ function Programmer() {
                 className="btn btn-primary text-white w-100 my-1 fs-sm-1.2  regular-btn"
                 onClick={(e) => {
                   e.preventDefault();
-                  window.open("https://admissions.navgurukul.org/", "_blank");
+                  window.open("https://www.merakilearn.org/admission", "_blank");
                 }}
               >
                 Take Test
@@ -44,7 +44,7 @@ function Programmer() {
           </div>
           <div className="programmers-main-video col d-flex justify-content-center">
             <video
-              src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/NAVGURUKUL.mp4"
+              src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/NEW+student+experience.mp4"
               width="500px"
               height="300px"
               className="programmers-main-video"
@@ -264,7 +264,7 @@ function Programmer() {
                 className="card p-3 d-flex flex-column mh-10 bg-bg-card-1 justify-content-top align-items-center text-left text-sm-center w-100 rounded border-0 "
                 onClick={(e) => {
                   e.preventDefault();
-                  window.open("https://admissions.navgurukul.org/", "_blank");
+                  window.open("https://www.merakilearn.org/admission", "_blank");
                 }}
               >
                 <h4 className="fw-bold my-1 section-head text-center">
@@ -342,7 +342,7 @@ function Programmer() {
             className="btn btn-primary text-white align-self-center w-100 my-1 regular-btn"
             onClick={(e) => {
               e.preventDefault();
-              window.open("https://admissions.navgurukul.org/", "_blank");
+              window.open("https://www.merakilearn.org/admission", "_blank");
             }}
           >
             Take Test
