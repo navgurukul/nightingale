@@ -99,6 +99,11 @@ function Header() {
               </a>
             </div>
           </li>
+          <li className="nav-item">
+            <a className="nav-link header-title mr-3" href="/campus">
+              Our Campuses
+            </a>
+          </li>
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle header-title mr-3"
