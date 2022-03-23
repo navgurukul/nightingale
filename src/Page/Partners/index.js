@@ -50,6 +50,13 @@ function Partners() {
                     <span className="status mb-2">{partners[item].Type}</span>
                     <p className="my-1 mb-5">{partners[item].Content}</p>
                     <div className="social-media-icons d-flex  w-40 mb-3 position-absolute">
+                      {partners[item].Website ? (
+                        <a href={partners[item].Website} target="_blank">
+                          <img className="social-icon mr-3" src={www}></img>
+                        </a>
+                      ) : (
+                        <></>
+                      )}
                       {partners[item].LinkedIn ? (
                         <a href={partners[item].LinkedIn} target="_blank">
                           <img
@@ -63,13 +70,6 @@ function Partners() {
                       {partners[item].Twitter ? (
                         <a href={partners[item].Twitter} target="_blank">
                           <img className="social-icon mr-3" src={twitter}></img>
-                        </a>
-                      ) : (
-                        <></>
-                      )}
-                      {partners[item].Website ? (
-                        <a href={partners[item].Website} target="_blank">
-                          <img className="social-icon mr-3" src={www}></img>
                         </a>
                       ) : (
                         <></>
@@ -90,7 +90,7 @@ function Partners() {
           Have you taken an interest in what we do and want to support us?
         </h3>
         <button
-          className="btn btn-primary section-para regular-btn mt-4"
+          className="btn btn-primary section-para regular-btn mt-4 mb-3"
           onClick={(e) => {
             e.preventDefault();
             window.open(

@@ -170,7 +170,7 @@ function Donate() {
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
-            class=" donate-page-button regular-btn mt-0 contact-button"
+            class=" donate-page-button regular-btn mt-0 contact-button mb-3"
             onClick={(e) => {
               e.preventDefault();
               window.open(

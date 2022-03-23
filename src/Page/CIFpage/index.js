@@ -123,7 +123,7 @@ function CifPage() {
         <div className="container text-start mb-1 w-50">
           <div className="sub-section">
             <span className="mb-3 d-block fw-bold">Teaching</span>
-            <ul>
+            <ul className="ml-3 pl-2 pl-md-3">
               <li>
                 Support young children by teaching programming or coding through
                 application of innovative teaching techniques
@@ -143,7 +143,7 @@ function CifPage() {
             <span className="mb-3 fw-bold d-block">
               Managing people and resources
             </span>
-            <ul>
+            <ul className="ml-3 pl-2 pl-md-3">
               <li>Manage your teaching and administrative activities</li>
               <li>
                 Prioritise the tasks as per the agreed objectives to ensure they
@@ -159,7 +159,7 @@ function CifPage() {
             <span className="mb-3 fw-bold d-block">
               Academic administration
             </span>
-            <ul>
+            <ul className="ml-3 pl-2 pl-md-3">
               <li>
                 Undertaking various administrative responsibilities as required,
                 including assessment of progress, student attendance, teaching
