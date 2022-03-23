@@ -37,9 +37,9 @@ function Home() {
       </section>
 
       <section className="my-5 d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center  mb-3">Our Initiatives</h3>
+        <h3 className="text-center mb-3">Our Initiatives</h3>
         <hr className="heading-hr" />
-        <div class="container mt-5">
+        <div class="container mt-0">
           <div class="row">
             <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
               <div class="bg-image1 initiative-card card  shadow-1-strong">

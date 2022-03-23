@@ -193,7 +193,7 @@ h4 {
   border: transparent !important;
   border-top: 3px solid #f05f40 !important;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.625rem;
 }
 
 @media screen and (max-width: 667px) {

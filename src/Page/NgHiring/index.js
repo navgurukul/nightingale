@@ -110,7 +110,13 @@ function NgHiring() {
           <div className="container hiring-page-card-container px-0 d-flex">
             {Object.keys(shuffleObject(team)).length ? (
               Object.keys(shuffleObject(team)).map((item) => {
-                {
+                {if (
+                  team[item].Photo &&
+                  team[item].Name &&
+                  team[item].Content.length &&
+                  team[item].Content &&
+                  team[item].Designation
+                )
                   return (
                     <Tippy
                       animation="fade"
