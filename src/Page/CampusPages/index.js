@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
+import axios from "axios";
 import campusImg1 from "./assets/campus_1.png";
 import campusImg2 from "./assets/campus_2.png";
 import avatar from "./assets/bg.png";
@@ -10,79 +11,83 @@ function CampusPages() {
   const [data, setData] = useState(Campus_data[campus]);
   useEffect(() => {
     setData(Campus_data[campus]);
+    axios({
+      url: `https://anandpatel504.github.io/tarabai-shinde/data/campuses.json`,
+    }).then((res) => {
+      console.log(Object.entries(res.data));
+    });
   }, [campus]);
+  // console.log(Object.entries(Campus_data));
   return (
     <div className="campus-page d-flex flex-column justify-content-center">
       <div className="campus-description mb-3 d-flex flex-column justify-content-center align-items-center">
         <h3 className="mb-3">Our Campuses</h3>
         <hr className="heading-hr mt-0" />
-
-        <div className="campuses d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3">
-          <div className="campus-btn mr-2">
-            <label className="d-flex align-items-center">
-              <input
-                className="mr-1 mr-md-2"
-                name="campuses"
-                type="radio"
-                value="Pune"
-                onClick={(e) => {
-                  setCampus(e.target.value);
-                  // setCampus("Pune");
-                }}
-                checked={campus === "Pune"}
-              />
+        <div className="container d-flex justify-content-center align-items-center">
+          <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3">
+            <span
+              className="campus-btn"
+              name="campuses"
+              value="Pune"
+              onClick={(e) => {
+                setCampus("Pune");
+              }}
+              style={
+                campus === "Pune"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
               Pune
-            </label>
-          </div>
-          <div className="campus-btn mr-2">
-            <label className="d-flex align-items-center">
-              <input
-                className="mr-1 mr-md-2"
-                name="campuses"
-                type="radio"
-                value="Bengaluru"
-                onClick={(e) => {
-                  setCampus(e.target.value);
-                  // setCampus("Bengaluru");
-                }}
-                checked={campus === "Bengaluru"}
-              />
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              value="Bengaluru"
+              onClick={(e) => {
+                setCampus("Bengaluru");
+              }}
+              style={
+                campus === "Bengaluru"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
               Bengaluru
-            </label>
-          </div>
-          <div className="campus-btn mr-2">
-            <label className="d-flex align-items-center">
-              <input
-                className="mr-1 mr-md-2"
-                name="campuses"
-                type="radio"
-                value="Sarjapur"
-                onClick={(e) => {
-                  setCampus(e.target.value);
-                  // setCampus("Sarjapur");
-                }}
-                checked={campus === "Sarjapur"}
-              />
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              value="Sarjapur"
+              onClick={(e) => {
+                setCampus("Sarjapur");
+              }}
+              style={
+                campus === "Sarjapur"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
               Sarjapur
-            </label>
-          </div>
-          <div className="campus-btn mr-2">
-            <label className="d-flex align-items-center">
-              <input
-                className="mr-1 mr-md-2"
-                name="campuses"
-                type="radio"
-                value="Dharamshala"
-                onClick={(e) => {
-                  setCampus(e.target.value);
-                  // setCampus("Dharamshala");
-                }}
-                checked={campus === "Dharamshala"}
-              />
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              value="Dharamshala"
+              onClick={(e) => {
+                setCampus("Dharamshala");
+              }}
+              style={
+                campus === "Dharamshala"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
               Dharamshala
-            </label>
+            </span>
           </div>
         </div>
+
         <div className="container d-flex-column d-md-flex">
           <div className="col-12 col-md-5 d-flex flex-column">
             <h4 className="mb-3 campus-name">{data.name}</h4>

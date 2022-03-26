@@ -1,5 +1,6 @@
-.campus-page .campus-btn label {
+.campus-page .campus-btn {
   cursor: pointer;
+  padding: 10px 25px;
 }
 .campus-page .campus-btn input {
   margin-right: 10px;
@@ -32,7 +33,7 @@ input[type="radio"]:checked {
   height: 360px;
 }
 .campus-dividerLine {
-  border-top: 1px solid transparent ;
+  border-top: 1px solid transparent;
 }
 @media screen and (max-width: 650px) {
   .campus_map,
@@ -47,5 +48,16 @@ input[type="radio"]:checked {
   .campus-dividerLine {
     border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
     margin-inline: 1rem;
+  }
+  .campus-page .campus-btn {
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .campus-page .campus-btn {
+    cursor: pointer;
+    padding: 0px;
+    margin: 0 5px;
   }
 }
