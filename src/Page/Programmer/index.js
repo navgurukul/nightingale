@@ -56,8 +56,8 @@ function Programmer() {
       </div>
       <section className="new_programme d-flex flex-column align-items-center">
         <h3 className="mb-3">Who this Programme is for?</h3>
-        <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-0 mt-3 d-flex justify-content-center align-items-center">
+        <hr className="heading-hr" />
+        <div className="container text-start mb-0 d-flex justify-content-center align-items-center">
           <div className="col-12 col-md-8">
             <ul className="mb-0 ">
               <li>
@@ -78,8 +78,8 @@ function Programmer() {
       </section>
       <section className="programme_phases  d-flex flex-column align-items-center">
         <h3 className="mb-3">Programme Phases</h3>
-        <hr className="heading-hr mb-3" />
-        <div className="container text-start mb-0 mt-0 mt-md-3 px-md-3 px-0 ">
+        <hr className="heading-hr" />
+        <div className="container text-start mb-0 mt-0 px-md-3 px-0 ">
           <div className="phases_card_container d-flex justify-content-between">
             <div className="card  col-12 col-md-4 my-3 my-md-0 text-center py-4 px-2 mx-0 mx-md-3">
               <h4 className="mb-3">Foundational Bootcamp</h4>
@@ -108,8 +108,8 @@ function Programmer() {
       </section>
       <section className="new_programme_skills  d-flex flex-column align-items-center">
         <h3 className="mb-3">What Skills Do We Teach?</h3>
-        <hr className="heading-hr mb-3" />
-        <div className="container d-flex justify-content-center text-start mb-0 mt-3">
+        <hr className="heading-hr" />
+        <div className="container d-flex justify-content-center text-start mb-0">
           <div className="col-12 col-md-8">
             <ul className="mb-0">
               <li className="mb-3 points">
@@ -134,9 +134,9 @@ function Programmer() {
       </section>
       <section className="our_campus  d-flex flex-column align-items-center">
         <h3 className="mb-3">Our Campuses</h3>
-        <hr className="heading-hr mb-3" />
+        <hr className="heading-hr" />
 
-        <div className="container text-start mb-0 mt-3 w-100">
+        <div className="container text-start mb-0  w-100">
           {" "}
           <p className="mt-0 mb-3 pb-0 pb-md-3 text-center">
             Three campuses at Pune, Bengaluru and Dharamsala (for boys) each
@@ -191,8 +191,8 @@ function Programmer() {
       </section>
       <section className="programme_admissions  d-flex flex-column align-items-center">
         <h3 className="mb-3">Admissions</h3>
-        <hr className="heading-hr mb-3" />
-        <p className="mt-3">Tests can be taken by online or offline means</p>
+        <hr className="heading-hr" />
+        <p>Tests can be taken by online or offline means</p>
 
         <div className="container text-start mb-1 mt-3 d-flex flex-column align-items-center justify-content-center text-start pl-0">
           <div className="col-12 col-md-8">
@@ -256,8 +256,8 @@ function Programmer() {
       </section>
       <div className="test-p mb-2 mb-sm-5 d-flex flex-column align-items-center">
         <h3 className="mb-3">Conduct a Test in Your Locality</h3>
-        <hr className="heading-hr mb-3" />
-        <div className="container w-100 my-3 d-flex align-items-center justify-content-center">
+        <hr className="heading-hr" />
+        <div className="container w-100 mb-3 d-flex align-items-center justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100">
             <div className="col-12 col-md-6 my-2 d-flex justify-content-center">
               <div
@@ -293,8 +293,8 @@ function Programmer() {
       </div>
       <div className="students my-2 my-sm-5  d-flex flex-column align-items-center">
         <h3 className="mb-3">Hear From Our Students</h3>
-        <hr className="heading-hr mb-3" />
-        <div className="container w-100 mt-3  d-flex justify-content-center">
+        <hr className="heading-hr" />
+        <div className="container w-100  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
             <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
               <video

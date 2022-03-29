@@ -6,8 +6,8 @@ function Privacy() {
     <div className="privacy d-flex flex-column justify-content-center">
       <div className="privacy_privacy-policy text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Privacy Policy</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             NavGurukul Foundation for Social Welfare runs various campuses
             across the country offering software engineering and graphic design
@@ -28,8 +28,8 @@ function Privacy() {
       </div>
       <div className="privacy_info-collection text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Information Collection and Use</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             For a better experience, while using our service, we may require you
             to provide us with certain personally identifiable information,
@@ -41,8 +41,8 @@ function Privacy() {
       </div>
       <div className="privacy_log-data text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3"> Log Data</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             We want to inform you that whenever you use our service, in the case
             of an error in the app we collect data and information (through
@@ -56,8 +56,8 @@ function Privacy() {
       </div>
       <div className="privacy_cookies text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Cookies</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             Cookies are files with a small amount of data that are commonly used
             as anonymous unique identifiers. These are sent to your browser from
@@ -77,8 +77,8 @@ function Privacy() {
       </div>
       <div className="privacy_service-providers text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Service Providers</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left mb-1">
             We may employ third-party companies and individuals due to the
             following reasons:
@@ -102,8 +102,8 @@ function Privacy() {
       </div>
       <div className="privacy_security text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3"> Security</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             We value your trust in providing us your personal information, thus
             we are striving to use commercially acceptable means of protecting
@@ -115,8 +115,8 @@ function Privacy() {
       </div>
       <div className="privacy_other-sites text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Links to Other Sites</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             This service may contain links to other sites. If you click on a
             third-party link, you will be directed to that site. Note that these
@@ -129,8 +129,8 @@ function Privacy() {
       </div>
       <div className="privacy_children-policy text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Children’s Privacy</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             These services do not address anyone under the age of 13. We do not
             knowingly collect personally identifiable information from children
@@ -144,8 +144,8 @@ function Privacy() {
       </div>
       <div className="privacy_changes-policy text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Changes to this Privacy Policy</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             We may update our privacy policy from time to time. Thus, you are
             advised to review this page periodically for any changes. We will
@@ -156,8 +156,8 @@ function Privacy() {
       </div>
       <div className="privacy_contact-us text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Contact Us</h3>
-        <hr className="heading-hr mt-0 mb-3" />
-        <div className="container w-50 mt-3">
+        <hr className="heading-hr mt-0 " />
+        <div className="container w-50">
           <p className="text-left">
             If you have any questions or suggestions about our privacy policy,
             do not hesitate to contact us at{" "}

@@ -8,8 +8,8 @@ function Donate() {
       <div className="page-content d-flex flex-column justify-content-center align-items-center">
         <section className="container donate-page-section mt-4 d-flex flex-column align-items-center">
           <h3 className="section-head mt-5 mb-3">Donate to NavGurukul</h3>
-          <hr className="heading-hr mb-3" />
-          <div className="d-flex account-details mt-3 justify-content-center align-items-center">
+          <hr className="heading-hr" />
+          <div className="d-flex account-details justify-content-center align-items-center">
             <div className="d-flex flex-column text-left fw-bold">
               <span>UPI ID</span>
               <span>Name</span>
@@ -41,7 +41,7 @@ function Donate() {
           >
             Donate to Navgurukul
           </button>
-          <div className="donate-content mt-2 d-flex justify-content-center align-items-center w-100">
+          <div className="donate-content d-flex justify-content-center align-items-center w-100">
             <p className="w-75 mt-3 mt-md-5 pt-3">
               You may also pledge a <b> monthly donation </b> to us. Any pledged
               amount is a huge support for us. Just having you by our side fills
@@ -170,7 +170,7 @@ function Donate() {
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"
-            class=" donate-page-button regular-btn mt-0 contact-button"
+            class=" donate-page-button regular-btn mt-0 contact-button mb-3"
             onClick={(e) => {
               e.preventDefault();
               window.open(

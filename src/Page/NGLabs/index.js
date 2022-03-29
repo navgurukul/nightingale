@@ -47,8 +47,8 @@ function NgLabs() {
       </div>
       <div className="projects d-flex flex-column justify-content-center align-items-center">
         <h3 className="mb-3">Active Projects</h3>
-        <hr className="heading-hr mb-3" />
-        <div className="container px-0 mt-3 w-100">
+        <hr className="heading-hr" />
+        <div className="container px-0 w-100">
           <div className="row">
             {Object.keys(projects).length ? (
               Object.keys(projects).map((item) => {
