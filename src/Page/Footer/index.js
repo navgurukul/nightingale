@@ -69,7 +69,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://recruiterflow.com/navgurukul/jobsgit"
+                    href="https://recruiterflow.com/navgurukul/jobs"
                     target="_blank"
                     className="d-flex align-items-center"
                   >
