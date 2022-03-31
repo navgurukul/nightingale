@@ -46,6 +46,7 @@ h3 {
 h4 {
   font-size: 1.5rem;
 }
+
 /* cards */
 .card {
   transition: all ease-in 0.2s;
@@ -83,6 +84,9 @@ h4 {
 }
 .mb-6 {
   margin-bottom: 5rem;
+}
+.mt-6 {
+  margin-top: 5rem;
 }
 .mx-6 {
   margin-inline: 6.5rem;
