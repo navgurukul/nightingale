@@ -1,6 +1,7 @@
 import React from "react";
-// AiOutlineClose
-import { AiOutlineClose } from "react-icons/ai";
+// BsArrowsAngleExpand
+
+
 
 function Modal({ clickedImg, setClickedImg }) {
   const handleClick = (e) => {
@@ -15,6 +16,7 @@ function Modal({ clickedImg, setClickedImg }) {
         <span className="dismiss" onClick={handleClick}>
           X
         </span>
+        {/* <BsArrowsAngleExpand /> */}
       </div>
     </>
   );

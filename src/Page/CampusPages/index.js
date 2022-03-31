@@ -5,6 +5,7 @@ import campusImg1 from "./assets/campus_1.png";
 import campusImg2 from "./assets/campus_2.png";
 import Campus_data from "./data";
 import Modal from "./components/Modal";
+import { BsArrowsAngleExpand } from "react-icons/bs";
 
 function CampusPages() {
   const [clickedImg, setClickedImg] = useState(null);
@@ -30,7 +31,7 @@ function CampusPages() {
       <div className="campus-description mb-3 d-flex flex-column justify-content-center align-items-center">
         <h3 className="mb-3 mt-5">Our Campuses</h3>
         <hr className="heading-hr mt-0" />
-        <div className="container d-flex justify-content-center align-items-center">
+        <div className="container d-flex justify-content-center align-items-center mt-2">
           <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3">
             <span
               className="campus-btn"
@@ -149,7 +150,7 @@ function CampusPages() {
               {Array.isArray(data[campus].Photos) ? (
                 data[campus].Photos.map((photo) => {
                   return (
-                    <div className="col-12 my-3 my-md-3 col-md-6">
+                    <div className="col-12 my-3 my-md-3 col-md-6 image_wrapper">
                       <img
                         className="campus_shortImg"
                         src={photo}
@@ -157,11 +158,12 @@ function CampusPages() {
                           handleClick(photo);
                         }}
                       />
+                      <BsArrowsAngleExpand className="expand_arrow" />
                     </div>
                   );
                 })
               ) : (
-                <div className="col-12 my-3 my-md-3 col-md-6">
+                <div className="col-12 my-3 my-md-3 col-md-6 image_wrapper">
                   <img
                     className="campus_shortImg"
                     data-toggle="modal"
@@ -173,6 +175,7 @@ function CampusPages() {
                       );
                     }}
                   />
+                  <BsArrowsAngleExpand className="expand_arrow" />
                 </div>
               )}
             </div>
