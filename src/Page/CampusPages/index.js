@@ -3,20 +3,20 @@ import "./style.css";
 import axios from "axios";
 import campusImg1 from "./assets/campus_1.png";
 import campusImg2 from "./assets/campus_2.png";
-import Campus_data from "./data";
 import Modal from "./components/Modal";
 import { BsArrowsAngleExpand } from "react-icons/bs";
+import ApiList from "../../Config/Api";
 
 function CampusPages() {
   const [clickedImg, setClickedImg] = useState(null);
   const [campus, setCampus] = useState("Pune Campus");
-  const [data, setData] = useState(Campus_data[campus]);
+  const [data, setData] = useState();
   const handleClick = (item) => {
     setClickedImg(item);
   };
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/campuses.json`,
+      url: ApiList.CampusesList,
     }).then((res) => {
       setData(
         Object.keys(res.data).reduce((prev, next) => {

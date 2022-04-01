@@ -7,6 +7,7 @@ import user from "./assets/user-icon.png";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
 import pdf from "./assets/placement.pdf";
+import ApiList from "../../Config/Api";
 
 function shuffleObject(obj) {
   let newObj = {};
@@ -57,7 +58,7 @@ function Popup(props) {
 function NgHiring() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/alumni.json`,
+      url: ApiList.AlumniList,
     }).then((res) => {
       setTeam(res.data);
     });

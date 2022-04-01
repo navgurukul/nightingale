@@ -3,6 +3,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import ApiList from "../../../Config/Api";
 
 function Arrow(props) {
   const disabeld = props.disabled ? " arrow--disabled" : "";
@@ -27,7 +28,7 @@ function Arrow(props) {
 function Slider() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/media.json`,
+      url: ApiList.MediaList,
     }).then((res) => {
       setMedia(res.data);
     });

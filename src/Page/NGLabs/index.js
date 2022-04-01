@@ -6,11 +6,12 @@ import Vector from "./assets/Vector";
 import "./style.css";
 import "../../Global.css";
 import svgbackground from "./assets/bg.svg";
+import ApiList from "../../Config/Api";
 
 function NgLabs() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/projects.json`,
+      url: ApiList.ProjectsList,
     }).then((res) => {
       setProjects(res.data);
     });

@@ -5,6 +5,7 @@ import Tippy from "@tippyjs/react";
 import user from "./assets/user-icon.png";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
+import ApiList from "../../Config/Api";
 
 function shuffleObject(obj) {
   let newObj = {};
@@ -55,7 +56,7 @@ function Popup(props) {
 function TeamPage() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/ng_team.json`,
+      url: ApiList.TeamList,
     }).then((res) => {
       setTeam(res.data);
     });

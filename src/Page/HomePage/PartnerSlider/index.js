@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import image from "./images/impactellipse.png";
+import ApiList from "../../../Config/Api";
 
 function Arrow(props) {
   const disabeld = props.disabled ? " arrow--disabled" : "";
@@ -31,7 +32,7 @@ function Arrow(props) {
 function PartnerSlider() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/partners.json`,
+      url: ApiList.PartnersList,
     }).then((res) => {
       setPartners(res.data);
     });
