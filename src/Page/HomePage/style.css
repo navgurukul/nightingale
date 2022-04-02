@@ -32,8 +32,8 @@
     rgba(0, 0, 0, 0.4) 52.6%,
     rgba(0, 0, 0, 0.8) 100%
   );
-  height: 350px;
-  border-radius: 15px;
+  height: 100%;
+  border-radius: 16px;
 }
 .our-initiatives .card {
   transition: all ease-in 0.2s;
@@ -51,37 +51,38 @@
   background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/job-courses.png");
   background-repeat: no-repeat;
   width: 100%;
-  border-radius: 15px;
-  height: 350px;
+  border-radius: 16px;
+  height: 100%;
   background-position: center;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
 }
 .bg-image2 {
   background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/meraki.png");
   background-repeat: no-repeat;
   width: 100%;
-  border-radius: 15px;
-  height: 350px;
-  background-size: 100% 100%;
+  border-radius: 16px;
+  height: 100%;
+  /* background-size: 100% 100%; */
 }
 
 .bg-image3 {
   background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/CIF.png");
   background-repeat: no-repeat;
-  border-radius: 15px;
+  border-radius: 16px;
   width: 100%;
-  height: 350px;
-  background-size: 100% 100%;
+  height: 100%;
+  background-position: center;
+  /* background-size: 100% 100%; */
 }
 
 .bg-image4 {
   background: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/NG-labs.png");
   background-repeat: no-repeat;
   width: 100%;
-  border-radius: 15px;
-  height: 350px;
+  border-radius: 16px;
+  height: 100%;
   background-position: center;
-  background-size: 100% 100%;
+  /* background-size: 100% 100%; */
 }
 
 .software-development-img {
