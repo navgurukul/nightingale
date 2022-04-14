@@ -92,6 +92,22 @@ input[type="radio"]:checked {
 .image_wrapper:hover .expand_arrow {
   display: block;
 }
+.campus_skeleton-img {
+  animation: skeleton-loading 1s linear infinite alternate;
+  height: 350px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
 @media screen and (max-width: 650px) {
   .campus_map,
   .campus_shortImg,
@@ -109,6 +125,9 @@ input[type="radio"]:checked {
   .campus-page .campus-btn {
     cursor: pointer;
     padding: 10px;
+  }
+  .campus_skeleton-img {
+    height: 220px;
   }
 }
 @media screen and (max-width: 350px) {

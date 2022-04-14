@@ -6,11 +6,14 @@ import campusImg2 from "./assets/campus_2.png";
 import Campus_data from "./data";
 import Modal from "./components/Modal";
 import { BsArrowsAngleExpand } from "react-icons/bs";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function CampusPages() {
   const [clickedImg, setClickedImg] = useState(null);
   const [campus, setCampus] = useState("Pune Campus");
   const [data, setData] = useState(Campus_data[campus]);
+  const [imgCount, setImgCount] = useState(0);
+  const [isLoading, SetIsLoading] = useState(true);
   const handleClick = (item) => {
     setClickedImg(item);
   };
@@ -25,6 +28,16 @@ function CampusPages() {
       );
     });
   }, [campus]);
+  useEffect(() => {
+    if (
+      data &&
+      data[campus] &&
+      Array.isArray(data[campus].Photos) &&
+      imgCount === data[campus].Photos.length
+    ) {
+      SetIsLoading(false);
+    }
+  }, [imgCount]);
 
   return (
     <div className="campus-page d-flex flex-column justify-content-center">
@@ -38,6 +51,8 @@ function CampusPages() {
               name="campuses"
               onClick={(e) => {
                 setCampus("Pune Campus");
+                setImgCount(0);
+                SetIsLoading(true);
               }}
               style={
                 campus === "Pune Campus"
@@ -52,6 +67,8 @@ function CampusPages() {
               name="campuses"
               onClick={(e) => {
                 setCampus("Bangalore Campus");
+                setImgCount(0);
+                SetIsLoading(true);
               }}
               style={
                 campus === "Bangalore Campus"
@@ -66,6 +83,8 @@ function CampusPages() {
               name="campuses"
               onClick={(e) => {
                 setCampus("Sarjapur Campus");
+                setImgCount(0);
+                SetIsLoading(true);
               }}
               style={
                 campus === "Sarjapur Campus"
@@ -80,6 +99,8 @@ function CampusPages() {
               name="campuses"
               onClick={(e) => {
                 setCampus("Tripura Campus");
+                setImgCount(0);
+                SetIsLoading(true);
               }}
               style={
                 campus === "Tripura Campus"
@@ -94,6 +115,8 @@ function CampusPages() {
               name="campuses"
               onClick={(e) => {
                 setCampus("Dharmshala Campus");
+                setImgCount(0);
+                SetIsLoading(true);
               }}
               style={
                 campus === "Dharmshala Campus"
@@ -147,15 +170,42 @@ function CampusPages() {
         <div className="campus-gallary mt-3 pb-3 mb-5">
           <div className="container">
             <div className="row pb-3">
+              {isLoading ? (
+                Array.isArray(data[campus].Photos) ? (
+                  data[campus].Photos.map((photo) => {
+                    return (
+                      <div className=" col-12 my-3 my-md-3 col-md-6">
+                        <div className="campus_skeleton-img"></div>
+                      </div>
+                    );
+                  })
+                ) : (
+                  <></>
+                )
+              ) : (
+                <></>
+              )}
               {Array.isArray(data[campus].Photos) ? (
                 data[campus].Photos.map((photo) => {
                   return (
-                    <div className="col-12 my-3 my-md-3 col-md-6 image_wrapper">
+                    <div
+                      className={`${
+                        !isLoading ? "" : "d-none"
+                      } col-12 my-3 my-md-3 col-md-6 image_wrapper`}
+                    >
                       <img
-                        className="campus_shortImg"
+                        effect="blur"
+                        className="campus_shortImg ph-picture "
                         src={photo}
                         onClick={() => {
                           handleClick(photo);
+                        }}
+                        height="100%"
+                        style={{ height: "100%", width: "100%" }}
+                        onLoad={() => {
+                          setImgCount((count) => {
+                            return count + 1;
+                          });
                         }}
                       />
                       <BsArrowsAngleExpand className="expand_arrow" />
@@ -165,7 +215,8 @@ function CampusPages() {
               ) : (
                 <div className="col-12 my-3 my-md-3 col-md-6 image_wrapper">
                   <img
-                    className="campus_shortImg"
+                    effect="blur"
+                    className="campus_shortImg ph-picture"
                     data-toggle="modal"
                     data-target="#exampleModalLong"
                     src={data[campus].Photos ? data[campus].Photos : campusImg1}
