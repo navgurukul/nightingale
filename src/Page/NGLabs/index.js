@@ -10,7 +10,7 @@ import svgbackground from "./assets/bg.svg";
 function NgLabs() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/projects.json`,
+      url: `https://navgurukul.github.io/tarabai-shinde/data/projects.json`,
     }).then((res) => {
       setProjects(res.data);
     });

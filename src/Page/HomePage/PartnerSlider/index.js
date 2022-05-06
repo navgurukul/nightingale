@@ -31,7 +31,7 @@ function Arrow(props) {
 function PartnerSlider() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/partners.json`,
+      url: `https://navgurukul.github.io/tarabai-shinde/data/partners.json`,
     }).then((res) => {
       setPartners(res.data);
     });

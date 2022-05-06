@@ -19,7 +19,7 @@ function CampusPages() {
   };
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/campuses.json`,
+      url: `https://navgurukul.github.io/tarabai-shinde/data/campuses.json`,
     }).then((res) => {
       setData(
         Object.keys(res.data).reduce((prev, next) => {

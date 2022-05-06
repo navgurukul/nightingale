@@ -9,7 +9,7 @@ import www from "./assets/www_png.png";
 function Partners() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/partners.json`,
+      url: `https://navgurukul.github.io/tarabai-shinde/data/partners.json`,
     }).then((res) => {
       setPartners(res.data);
     });

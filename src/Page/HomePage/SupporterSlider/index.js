@@ -30,7 +30,7 @@ function Arrow(props) {
 function SupporterSlider() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/supporters.json`,
+      url: `https://navgurukul.github.io/tarabai-shinde/data/supporters.json`,
     }).then((res) => {
       setSupports(res.data);
     });
