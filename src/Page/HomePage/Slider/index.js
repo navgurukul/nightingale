@@ -27,7 +27,7 @@ function Arrow(props) {
 function Slider() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/media.json`,
+      url: `https://navgurukul.github.io/tarabai-shinde/data/media.json`,
     }).then((res) => {
       setMedia(res.data);
     });

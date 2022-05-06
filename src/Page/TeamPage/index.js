@@ -55,7 +55,7 @@ function Popup(props) {
 function TeamPage() {
   useEffect(() => {
     axios({
-      url: `https://anandpatel504.github.io/tarabai-shinde/data/ng_team.json`,
+      url: `https://navgurukul.github.io/tarabai-shinde/data/ng_team.json`,
     }).then((res) => {
       setTeam(res.data);
     });

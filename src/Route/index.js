@@ -18,6 +18,7 @@ import Home from "../Page/HomePage";
 import Designers from "../Page/Designers";
 import Privacy from "../Page/Privacy";
 import CampusPages from "../Page/CampusPages";
+import PageNotFound from "../Page/PageNotFound";
 
 function ScrollToTop({ history }) {
   useEffect(() => {
@@ -51,6 +52,7 @@ function Routing() {
         <Route exact path="/partners" component={Partners} />
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/campus" component={CampusPages} />
+        <Route exact path="*/" component={PageNotFound} />
 
       </Switch>
       <Footer />

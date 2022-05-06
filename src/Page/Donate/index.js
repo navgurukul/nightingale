@@ -62,7 +62,7 @@ function Donate() {
                     );
                   }}
                 >
-                  ₹ 100 / month
+                  ₹ 100 per month
                 </button>
                 <button
                   type="button"
