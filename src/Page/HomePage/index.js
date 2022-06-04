@@ -6,11 +6,13 @@ import PartnerSlider from "./PartnerSlider";
 import SupporterSlider from "./SupporterSlider";
 import { FiExternalLink } from "react-icons/fi";
 
+import { Col, Container,Row } from "react-bootstrap";
+
 function Home() {
   const history = useHistory();
   return (
-    <div className="navgurukul-homepage">
-      <div className="home-page-bg text-white home-page-ng ">
+    <div className="navgurukul-homepage container-fluid">
+      {/* <div className="home-page-bg text-white home-page-ng ">
         <div class="rgba-black-strong">
           <div className="container">
             <div class="row ">
@@ -27,33 +29,52 @@ function Home() {
               </div>
             </div>
           </div>
+        </div> */}
+       <div className="container-fluid">
+        <div class="row">
+          <div className="col-md-1"></div>
+          <div class="col-md-3 mt-7">
+          <h2 className="  media-font mt-7">
+             The <span className="text-primary">Gurukul</span> for the <span className="BackColor"> New Age India</span> and its New Generation{" "}
+             </h2>{" "}
+             <p className="media-font">
+             We are a non-profit dedicated to bring affordable tech
+                  education to underprivileged girls in India{" "}
+             </p>
+          </div>
+          <div className="col-md-1"></div>
+          <div class="col-md">
+          <img src={require("./assets/student.jpg").default} className="home-image"/>
+          </div>
+
         </div>
       </div>
-      {/* </div> */}
+      
       <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
-        <h3 className="align-self-center mb-3">In the Media</h3>
-        <hr className="align-self-center heading-hr" />
+        <h3 className="align-self-center media-font mb-3">In the Media</h3>
+        
         <Slider />
       </section>
-
       <section className="my-5 d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center mb-3">Our Initiatives</h3>
-        <hr className="heading-hr" />
+        <h3 className="text-center mb-3 media-font" >Our Initiatives</h3>
+        {/* <hr className="heading-hr" /> */}
         <div class="container mt-0">
           <div class="row">
             <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
-              <div class="bg-image1 initiative-card card  shadow-1-strong">
+              <div class="bg-image1 initiative-card card  shadow-1-strong ">
                 <Link to="/job-course">
-                  <div className="Initiatives-bg-color">
+                  <div className="Initiatives-bg-color ">
                     <div
                       class="card-body text-white  "
-                      title="Guaranteed Job Courses"
-                    >
-                      <h3 class="card-title mb-3   card-main-text  card-heading ">
+                      title= "Guaranteed Job Courses">
+                      < h3 class="card-title mb-3   card-main-text  card-heading ">
+                        <span className="BackColor">
                         {" "}
-                        Guaranteed Job Courses{" "}
+                        Guaranteed Job Courses {" "}
+                        </span>
+                        
                       </h3>
-                      <p class="card-text section-para   card-dic">
+                      <p class="card-text section-para   card-dic ">
                         Fully-funded courses in software engineering and design
                         with guaranteed jobs
                       </p>
@@ -62,7 +83,6 @@ function Home() {
                 </Link>
               </div>
             </div>
-
             <div className="col-lg-6 initiative-card-parent mb-md-2">
               <div className="bg-image2 initiative-card card  shadow-1-strong">
                 <a href="https://www.merakilearn.org/" target="_blank">
@@ -73,9 +93,10 @@ function Home() {
                         title="Learn Online with Meraki"
                       >
                         <h3 class="card-title mb-3  card-main-text text-center card-heading ">
-                          Learn Online with Meraki{" "}
+                          
+                          <span className="BackColor">Learn Online with Meraki{" "} </span>
                         </h3>
-                        <FiExternalLink className="ml-3 external-link-icon" />
+                        {/* <FiExternalLink className="ml-3 external-link-icon" /> */}
                       </div>
                       <p class="card-text  section-para  card-dic ">
                         Get started with programming in Python, English and
@@ -100,7 +121,8 @@ function Home() {
                     >
                       <h3 class="card-title mb-3   card-main-text card-heading">
                         {" "}
-                        Code India Fellowships
+                        <span className="BackColor"> Code India Fellowships</span>
+                        
                       </h3>
                       <p class="card-text section-para  card-dic">
                         Nurture programming skills in the next generation of
@@ -118,8 +140,7 @@ function Home() {
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white" title="NG Labs">
                       <h3 class="card-title mb-3   card-main-text card-heading">
-                        {" "}
-                        NG Labs{" "}
+                        <span className="BackColor">Navgurukul Labs</span>
                       </h3>
                       <p class="card-text section-para  card-dic">
                         Experiments in non-profit space for otherwise for-profit

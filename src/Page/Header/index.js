@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import "./styles.css";
 import externalLink from "./assets/external-link.png";
-
+import {BiChevronsDown} from "react-icons/bi"
 function Header() {
   const [toggle, setToggle] = useState(true);
 
@@ -32,15 +32,17 @@ function Header() {
         <ul className="navbar-nav mr-auto nav-font-color">
           <li className="nav-item dropdown">
             <a
-              className="nav-link dropdown-toggle header-title"
+              className="nav-link header-title"
               href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
+              
             >
               Our Initiatives
+              <BiChevronsDown className="downIcon"/>
             </a>
             <div
               className="dropdown-menu dropdown-items"

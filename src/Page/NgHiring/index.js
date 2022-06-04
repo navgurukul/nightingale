@@ -123,14 +123,14 @@ function NgHiring() {
                       interactive="true"
                       duration={[500, 0]}
                       placement={
-                        window.screen.availWidth < 650 ? "bottom" : "right"
+                        window.screen.availWidth < 650 ? "bottom " : "right"
                       }
                       content={
                         <Popup
                           Name={team[item].Name || "Awaiting Member's Name"}
                           Content={
                             (team[item].Content.length && team[item].Content) ||
-                            "Awaiting content from team member"
+                            " Awaiting content from team member "
                           }
                           linkedin={team[item].LinkedIn}
                           twitter={team[item].Twitter}

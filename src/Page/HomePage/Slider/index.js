@@ -80,14 +80,14 @@ function Slider() {
   // const [partitionSlider, ]
   if (!Object.keys(media).length) return <></>;
   return (
-    <div className="media-slider slider">
+    <div className="media-slider slider ">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
             {Object.keys(media).map((item) => {
               return (
                 <a href={media[item].Website} target="_blank">
-                  <div className="keen-slider__slide number-slide">
+                  <div className="keen-slider__slide number-slide ">
                     <div className="carousal-content">
                       <div className="carousal-image-container">
                         <img
@@ -99,7 +99,7 @@ function Slider() {
                           )}
                         />
                       </div>
-                      <p>{media[item].Description}</p>
+                      <p className="descrip">{media[item].Description}</p>
                     </div>
                   </div>
                 </a>
@@ -148,24 +148,28 @@ function Slider() {
               </div>
             </div> */}
           </div>
+          
           {loaded && instanceRef.current && (
             <>
               <Arrow
-                left
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.prev()
-                }
-                disabled={currentSlide === 0}
+              left
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
+               
               />
 
               <Arrow
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.next()
-                }
-                disabled={
-                  currentSlide ===
-                  instanceRef.current.track.details.slides.length - 1
-                }
+              right
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
+              disabled={currentSlide === 0}
+               
               />
             </>
           )}
