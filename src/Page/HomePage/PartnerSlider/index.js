@@ -99,28 +99,33 @@ function PartnerSlider() {
   return (
     <div className="slider partner-slider pb-5 container">
       <>
-        <div className="navigation-wrapper">
+        <div className="navigation-wrapper mb-5">
           <div ref={sliderRef} className="keen-slider">
-            <div className="partners-carousal-cards">
+            <div className="partners-carousal-cards ">
               {Object.keys(partners).map((item) => {
                 // const [readmore,setReadmore] = useState({})
                 return (
-                  <div className="keen-slider__slide number-slide d-flex align-items-start col-md-3">
+                  <div>
+                    <div className="keen-slider__slide number-slide d-flex align-items-start col-md-3 card Card-dotted">
                     <div className="partition-carousal-content my-3">
                       <img
-                        className="partition-carousal-content-img mb-3"
+                        className="partition-carousal-content-img mb-5"
                         src={partners[item].Logo}
                         alt={partners[item].Name.substring(
                           0,
                           partners[item].Name.indexOf(" ")
                         )}
                       />
-                      <div className="partition-carousal-content-name fw-bold mb-3">
+                      <div className="partition-carousal-content-name">
+                      <div className=" fw-bold mb-3">
                         {partners[item].Name}
                       </div>
                       <p className="mb-3 px-0">{partners[item].Content}</p>
+                      </div>
                     </div>
                   </div>
+                  </div>
+                  
                 );
               })}
             </div>

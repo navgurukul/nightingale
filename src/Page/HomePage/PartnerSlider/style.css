@@ -2,6 +2,7 @@
   /* padding: 0 200px; */
   display: flex;
 }
+
 .partition-carousal-content {
   display: flex;
   flex-direction: column;
@@ -11,13 +12,24 @@
   padding-right: 40px; */
   text-align: center;
 }
-
+.partition-carousal-content-name{
+  text-align: left;
+  justify-items: left;
+}
 .partition-carousal-content-img {
-  height: 64px;
-  width: 64px;
+  height: 85px;
+  width: 85px;
+  margin-top: 20px;
+  border:1px black solid;
+  border-radius: 50px;
+  
 }
 .partners-carousal-arrow--left {
   left: -5%;
+}
+.Card-dotted{
+  border: 2px dashed var(--primary);
+  border-radius: 30px;
 }
 
 .partners-carousal-arrow--right {

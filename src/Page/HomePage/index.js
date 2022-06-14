@@ -34,9 +34,9 @@ function Home() {
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md-3 mt-7">
-          <h2 className="  media-font mt-7">
-             The <span className="text-primary">Gurukul</span> for the <span className="BackColor"> New Age India</span> and its New Generation{" "}
-             </h2>{" "}
+          <h3 className="  media-font mt-7">
+             The <span className="text-primary">Gurukul</span> for the<br/> <span className="BackColor"> New Age India</span> and its New Generation{" "}
+             </h3>{" "}
              <p className="media-font">
              We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India{" "}
@@ -52,7 +52,6 @@ function Home() {
       
       <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
         <h3 className="align-self-center media-font mb-3">In the Media</h3>
-        
         <Slider />
       </section>
       <section className="my-5 d-flex flex-column align-items-center our-initiatives">
@@ -67,7 +66,7 @@ function Home() {
                     <div
                       class="card-body text-white  "
                       title= "Guaranteed Job Courses">
-                      < h3 class="card-title mb-3   card-main-text  card-heading ">
+                      < h3 class="card-title mb-1   card-main-text  card-heading ">
                         <span className="BackColor">
                         {" "}
                         Guaranteed Job Courses {" "}
@@ -92,7 +91,7 @@ function Home() {
                         className="d-flex align-items-end"
                         title="Learn Online with Meraki"
                       >
-                        <h3 class="card-title mb-3  card-main-text text-center card-heading ">
+                        <h3 class="card-title mb-1  card-main-text text-center card-heading ">
                           
                           <span className="BackColor">Learn Online with Meraki{" "} </span>
                         </h3>
@@ -119,7 +118,7 @@ function Home() {
                       class="card-body text-white"
                       title="Code India Fellowships"
                     >
-                      <h3 class="card-title mb-3   card-main-text card-heading">
+                      <h3 class="card-title mb-1   card-main-text card-heading">
                         {" "}
                         <span className="BackColor"> Code India Fellowships</span>
                         
@@ -139,7 +138,7 @@ function Home() {
                 <Link to="/nglabs">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white" title="NG Labs">
-                      <h3 class="card-title mb-3   card-main-text card-heading">
+                      <h3 class="card-title mb-1   card-main-text card-heading">
                         <span className="BackColor">Navgurukul Labs</span>
                       </h3>
                       <p class="card-text section-para  card-dic">
@@ -154,10 +153,9 @@ function Home() {
           </div>
         </div>
       </section>
-
       <section className="container consult text-left text-md-center w-50 mt-5">
-        <p className="section-para ">
-          <span className="fw-bold">Techalms Consulting:</span> A talent group
+        <p className="section-para para-item ">
+          <span className="fw-bold ">Techalms Consulting:</span> A talent group
           ready to fly in, solve your problems and leave by leaving happy faces
           at the clientplace{" "}
         </p>
@@ -187,7 +185,7 @@ function Home() {
 
       <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-0 ">
         <h3 className=" mb-3">Our Supporters</h3>
-        <hr className="heading-hr" />
+        {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />
         </div>

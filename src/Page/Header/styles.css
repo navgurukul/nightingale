@@ -35,16 +35,20 @@
   font-size: 18px;
   color: black;
   transition: all ease 0.2s;
-  /* font-family: 'Roboto', sans-serif; */
-}
-a{
   font-family: 'Roboto', sans-serif;
-  
+  font-style: thin;
+  font-weight:  300;
+
 }
 .nav-link:hover,
-.navbar a:hover {
+.navbar a:hover{
   color: var(--primary) !important;
+
 }
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
+
 
 .nav-logo {
   width: 60%;

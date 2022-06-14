@@ -10,7 +10,7 @@
   max-height: 100vh;
 }
 .media-slider p {
-  font-family: Luistana !important;
+  font-family: Roboto, sans-serif !important;
   font-size: 1.5rem;
 }
 .media-slider a:hover {
@@ -23,8 +23,10 @@
 .carousal-content {
   padding-left: 80px;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+  
 }
 .navigation-wrapper p {
   /* width: 100%; */
@@ -39,7 +41,8 @@
 .carousal-image-container {
   height: 100%;
   display: flex;
-  align-items: center;
+  margin-left: 100px;
+  margin-right: 50px;
   width: 280px;
   padding: 10px;
   border-radius: 50%;
@@ -48,6 +51,7 @@
 .carousal-img {
   height: 100%;
   width: 182px;
+
 }
 
 .dots {
@@ -59,14 +63,18 @@
 .backgrey {
   background-color:#F5F5F5;
 }
-
+.descrip{
+  margin: auto;
+  padding-top: 20px;
+  text-align: left;
+}
 .dot {
   border: none;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #c5c5c5;
-  margin: 0 5px;
+  margin: 0 8px;
   padding: 2px;
   cursor: pointer;
 }
@@ -113,6 +121,9 @@
   .arrow--right {
     left: auto;
     right: 0px;
+  }
+  .carousal-image-container {
+    margin: 0;
   }
 }
 @media screen and (max-width: 900px) {

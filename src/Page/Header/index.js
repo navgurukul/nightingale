@@ -6,7 +6,8 @@ import externalLink from "./assets/external-link.png";
 import {BiChevronsDown} from "react-icons/bi"
 function Header() {
   const [toggle, setToggle] = useState(true);
-
+  const [showDropdown, setShowDropdown] = useState(false);
+  console.log(showDropdown)
   return (
     <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
       <a class="navbar-brand" href="/">
@@ -17,7 +18,7 @@ function Header() {
       </a>
 
       <button
-        class="navbar-toggler"
+        class="navbar-toggler hover"
         type="button"
         data-toggle="collapse"
         data-target="#navbar-list-2"
@@ -30,7 +31,13 @@ function Header() {
 
       <div class="collapse navbar-collapse" id="navbar-list-2">
         <ul className="navbar-nav mr-auto nav-font-color">
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown "
+          onMouseEnter={()=>setShowDropdown(true)}
+          onMouseLeave={()=>
+            
+            setShowDropdown(false)}
+          
+          >
             <a
               className="nav-link header-title"
               href="#"
@@ -40,16 +47,22 @@ function Header() {
               aria-haspopup="true"
               aria-expanded="false"
               
+              
             >
               Our Initiatives
-              <BiChevronsDown className="downIcon"/>
+              
             </a>
+            
             <div
               className="dropdown-menu dropdown-items"
-              aria-labelledby="navbarDropdown"
+              aria-labelledby="navbarDropdown" 
+             show={showDropdown}
+              
             >
+              
               <a className="dropdown-item" href="/job-course">
                 Guaranteed Job Courses
+                
               </a>
               <a
                 className="dropdown-item"
@@ -68,15 +81,18 @@ function Header() {
           </li>
         </ul>
         <ul className="navbar-nav nav-font-color">
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown"
+            
+          >
             <a
-              className="nav-link dropdown-toggle header-title mr-3"
+              className="nav-link  header-title mr-3"
               href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
+              
             >
               About
             </a>
@@ -107,8 +123,19 @@ function Header() {
             </a>
           </li>
           <li className="nav-item dropdown">
+            {/* <a
+              className="nav-link
+               dropdown-toggle
+                header-title mr-3"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              // data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            > */}
             <a
-              className="nav-link dropdown-toggle header-title mr-3"
+              className="nav-link header-title mr-3"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -134,14 +161,14 @@ function Header() {
                 target="_blank"
               >
                 Careers
-                <FiExternalLink className="ml-2" />
+                
               </a>
               <a
                 className="dropdown-item"
                 href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform"
                 target="_blank"
               >
-                Volunteer <FiExternalLink className="ml-2" />
+                Volunteer 
               </a>
             </div>
           </li>
@@ -164,7 +191,7 @@ function Header() {
               target="_blank"
             >
               Meraki
-              <FiExternalLink className="ml-2" />
+              {/* <FiExternalLink className="ml-2" /> */}
             </a>
           </li>
         </ul>
