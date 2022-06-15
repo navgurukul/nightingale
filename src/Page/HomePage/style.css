@@ -9,8 +9,9 @@
   /* background-color: transparent; */
   
 }
-h3{
-  font-family: 'Roboto', sans-serif;
+
+.head-div{
+  margin-top: 15%;
 }
 .rgba-black-strong {
   background: linear-gradient(
@@ -190,6 +191,9 @@ h3{
 @media (max-width: 576px) {
   .card-main-text {
     margin-top: 85px;
+  }
+  .para-item{
+    margin:0px;
   }
   .home-page-hero-section-data {
     max-width: 600px;

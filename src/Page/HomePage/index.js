@@ -33,8 +33,8 @@ function Home() {
        <div className="container-fluid">
         <div class="row">
           <div className="col-md-1"></div>
-          <div class="col-md-3 mt-7">
-          <h3 className="  media-font mt-7">
+          <div class="col-md-3 head-div">
+          <h3 className="  media-font ">
              The <span className="text-primary">Gurukul</span> for the<br/> <span className="BackColor"> New Age India</span> and its New Generation{" "}
              </h3>{" "}
              <p className="media-font">
@@ -164,8 +164,8 @@ function Home() {
       </section>
 
       <section className="our-partners text-center  d-flex flex-column">
-        <h3 className="align-self-center mb-3 ">Our Partners</h3>
-        <hr className="align-self-center heading-hr" />
+        <h3 className="align-self-center mb-5 ">Our Partners</h3>
+        {/* <hr className="align-self-center heading-hr" /> */}
         <PartnerSlider />
 
         <div class="d-flex flex-column align-items-center justify-content-center align-items-center ">
