@@ -4,7 +4,7 @@
 .CifPage .hero {
   height: 60vh;
   max-height: 60vh;
-  background-image: url("./assets/cif-bg.png");
+  background-image: url("https://nightingale1.s3.ap-south-1.amazonaws.com/images/cif-hero.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;

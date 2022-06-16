@@ -139,30 +139,7 @@ function Donate() {
             </p>
           </div>
         </section>
-        {/* <section className="d-flex flex-column donate-page-section donate-page-image-section">
-          <h3 className="mt-5 mb-3 section-head">
-            Your Donations Create Impact
-          </h3>
-          <hr className="heading-hr align-self-center" />
-          <img className="middleImg" src={middleImg}></img>
-          <div className="donation-impact-data d-flex justify-content-around my-5">
-            <span>
-              <span className="section-head">160+</span>
-              <p className="">Software Development Jobs</p>
-            </span>
-            <span>
-              <span className="section-head">4000+</span>
-              <p className="">Online Students</p>
-            </span>
-          </div>
-          <div className="donation-impact-data donation-impact-data-2 d-flex justify-content-around mt-5 ">
-            <span>
-              <span className="section-head">5</span>
-              <p className="">States across India</p>
-            </span>
-          </div>
-          
-        </section> */}
+        
         <section className="container donate-page-section csr-queries ">
           <h3 className="section-head mb-3">
             Are you a corporation and taken an interest in what we do?

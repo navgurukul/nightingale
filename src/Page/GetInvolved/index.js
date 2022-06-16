@@ -40,8 +40,6 @@ function GetInvolved() {
                   <div className="img-container">
                     <img
                       className="card-img"
-                      // src="https://iso.500px.com/wp-content/uploads/2019/10/ON-THE-LI-RIVER-BY-TOBIAS-HAGG-1500x1000.jpeg"
-                      // src={require("../GetInvolved/assets/Rectangle-2.png")}
                       src={img2}
                     />
                   </div>
@@ -81,8 +79,6 @@ function GetInvolved() {
                   <div className="img-container">
                     <img
                       className="card-img"
-                      // src="https://iso.500px.com/wp-content/uploads/2019/10/ON-THE-LI-RIVER-BY-TOBIAS-HAGG-1500x1000.jpeg"
-                      // src={require("../GetInvolved/assets/Rectangle-4.png")}
                       src={img4}
                     />
                   </div>

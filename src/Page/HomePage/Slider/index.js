@@ -105,48 +105,7 @@ function Slider() {
                 </a>
               );
             })}
-            {/* <div className="keen-slider__slide number-slide">
-              <div className="carousal-content">
-                <div className="carousal-image-container">
-                  <img className="carousal-img" src={image} />
-                </div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  There are many variations of passages of Lorem Ipsum
-                  available. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry
-                </p>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide">
-              <div className="carousal-content">
-                <div className="carousal-image-container">
-                  <img className="carousal-img" src={image} />
-                </div>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form. There are many variations of passages of Lorem Ipsum
-                  available. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry
-                </p>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide">
-              <div className="carousal-content">
-                <div className="carousal-image-container">
-                  <img className="carousal-img" src={image} />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text. There are many variations of passages of
-                  Lorem Ipsum available, but the majority have suffered
-                  alteration in some form
-                </p>
-              </div>
-            </div> */}
+           
           </div>
           {loaded && instanceRef.current && (
             <>
