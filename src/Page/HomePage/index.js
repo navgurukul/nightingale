@@ -51,11 +51,11 @@ function Home() {
       </div>
       
       <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
-        <h3 className="align-self-center media-font mb-3">In the Media</h3>
+        <h3 className="align-self-center media-font mb-3 mt-3">In the <span className="BackColor">Media</span></h3>
         <Slider />
       </section>
       <section className="my-5 d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center mb-3 media-font" >Our Initiatives</h3>
+        <h3 className="text-center mb-4 media-font" >Our <span className="BackColor">Initiatives</span></h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container mt-0">
           <div class="row">
@@ -164,7 +164,7 @@ function Home() {
       </section>
 
       <section className="our-partners text-center  d-flex flex-column">
-        <h3 className="align-self-center mb-5 ">Our Partners</h3>
+        <h3 className="align-self-center mb-5 ">Our <span className="BackColor">Partners</span></h3>
         {/* <hr className="align-self-center heading-hr" /> */}
         <PartnerSlider />
 
@@ -184,7 +184,7 @@ function Home() {
       </section>
 
       <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-0 ">
-        <h3 className=" mb-3">Our Supporters</h3>
+        <h3 className=" mb-3">Our <span className="BackColor">Supporters</span></h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />

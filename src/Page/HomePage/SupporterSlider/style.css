@@ -32,7 +32,7 @@
     left: 0%;
   }
   .supporter-carousal-arrow--right {
-    right: 10%;
+    right: -1;
   }
   .supporter-carousal-cards .logo-img {
     width: 200px;

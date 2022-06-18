@@ -15,6 +15,7 @@
 .partition-carousal-content-name{
   text-align: left;
   justify-items: left;
+  
 }
 .partition-carousal-content-img {
   height: 85px;
@@ -30,6 +31,11 @@
 .Card-dotted{
   border: 2px dashed var(--primary);
   border-radius: 30px;
+}
+.backcolor{
+  background-color: var(--primary);
+  color: white;
+  padding: 3px;
 }
 
 .partners-carousal-arrow--right {

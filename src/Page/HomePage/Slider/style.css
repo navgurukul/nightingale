@@ -1,7 +1,8 @@
 [class^="number-slide"],
 [class*=" number-slide"] {
   background: transparent;
-  display: flex;
+  /* display: flex; */
+ 
   align-items: center;
   /* justify-content: center; */
   color: black;
@@ -26,6 +27,7 @@
   align-items: center;
   justify-content: center;
   padding-right: 50px;
+  margin-top: 30px;
   
 }
 .navigation-wrapper p {
@@ -40,9 +42,9 @@
 }
 .carousal-image-container {
   height: 100%;
-  display: flex;
-  margin-left: 100px;
-  margin-right: 50px;
+  /* display: flex; */
+  /* margin-left: 100px;
+  margin-right: 50px; */
   width: 280px;
   padding: 10px;
   border-radius: 50%;

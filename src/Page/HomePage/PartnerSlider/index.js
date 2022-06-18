@@ -107,7 +107,7 @@ function PartnerSlider() {
                 return (
                   <div>
                     <div className="keen-slider__slide number-slide d-flex align-items-start col-md-3 card Card-dotted">
-                    <div className="partition-carousal-content my-3">
+                    <div className="partition-carousal-content my-3 " >
                       <img
                         className="partition-carousal-content-img mb-5"
                         src={partners[item].Logo}
@@ -117,10 +117,11 @@ function PartnerSlider() {
                         )}
                       />
                       <div className="partition-carousal-content-name">
-                      <div className=" fw-bold mb-3">
-                        {partners[item].Name}
+                      <div className=" fw-bold mb-3 " color="white" >
+                        <span className="backcolor">{partners[item].Name}</span>
+                        
                       </div>
-                      <p className="mb-3 px-0">{partners[item].Content}</p>
+                      <p className="mb-3 px-0" color="white"> {partners[item].Content}</p>
                       </div>
                     </div>
                   </div>

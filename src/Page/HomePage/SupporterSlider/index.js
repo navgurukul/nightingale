@@ -138,6 +138,7 @@ function SupporterSlider() {
               />
 
               <Arrow
+              right
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.next()
                 }
