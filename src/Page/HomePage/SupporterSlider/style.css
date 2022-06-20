@@ -10,6 +10,9 @@
 }
 .supporter-carousal-cards .logo-img {
   width: 250px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1200px) {
   .supporter-carousal-arrow--left {

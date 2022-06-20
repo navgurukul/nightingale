@@ -11,7 +11,7 @@ import { Col, Container,Row } from "react-bootstrap";
 function Home() {
   const history = useHistory();
   return (
-    <div className="navgurukul-homepage container-fluid">
+    <div className="navgurukul-homepage ">
       {/* <div className="home-page-bg text-white home-page-ng ">
         <div class="rgba-black-strong">
           <div className="container">
@@ -30,25 +30,25 @@ function Home() {
             </div>
           </div>
         </div> */}
-       <div className="container-fluid">
+       <div ></div>
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md-3 head-div">
-          <h3 className="  media-font ">
+          <h3 className=" media-font ">
              The <span className="text-primary">Gurukul</span> for the<br/> <span className="BackColor"> New Age India</span> and its New Generation{" "}
              </h3>{" "}
-             <p className="media-font">
+             <p >
              We are a non-profit dedicated to bring affordable tech
                   education to underprivileged girls in India{" "}
              </p>
           </div>
-          <div className="col-md-1"></div>
+          {/* <div className="col-md-1"></div> */}
           <div class="col-md">
           <img src={require("./assets/student.jpg").default} className="home-image"/>
           </div>
 
         </div>
-      </div>
+      
       
       <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
         <h3 className="align-self-center media-font mb-3 mt-3">In the <span className="BackColor">Media</span></h3>
@@ -66,13 +66,13 @@ function Home() {
                     <div
                       class="card-body text-white  "
                       title= "Guaranteed Job Courses">
-                      < h3 class="card-title mb-1   card-main-text  card-heading ">
+                      < h4 class="card-title mb-1   card-main-text  card-heading ">
                         <span className="BackColor">
                         {" "}
                         Guaranteed Job Courses {" "}
                         </span>
                         
-                      </h3>
+                      </h4>
                       <p class="card-text section-para   card-dic ">
                         Fully-funded courses in software engineering and design
                         with guaranteed jobs
@@ -91,10 +91,10 @@ function Home() {
                         className="d-flex align-items-end"
                         title="Learn Online with Meraki"
                       >
-                        <h3 class="card-title mb-1  card-main-text text-center card-heading ">
+                        <h4 class="card-title mb-1  card-main-text text-center card-heading ">
                           
                           <span className="BackColor">Learn Online with Meraki{" "} </span>
-                        </h3>
+                        </h4>
                         {/* <FiExternalLink className="ml-3 external-link-icon" /> */}
                       </div>
                       <p class="card-text  section-para  card-dic ">
@@ -118,11 +118,11 @@ function Home() {
                       class="card-body text-white"
                       title="Code India Fellowships"
                     >
-                      <h3 class="card-title mb-1   card-main-text card-heading">
+                      <h4 class="card-title mb-1   card-main-text card-heading">
                         {" "}
                         <span className="BackColor"> Code India Fellowships</span>
                         
-                      </h3>
+                      </h4>
                       <p class="card-text section-para  card-dic">
                         Nurture programming skills in the next generation of
                         India’s youth with your expertise
@@ -138,9 +138,9 @@ function Home() {
                 <Link to="/nglabs">
                   <div className="Initiatives-bg-color">
                     <div class="card-body text-white" title="NG Labs">
-                      <h3 class="card-title mb-1   card-main-text card-heading">
+                      <h4 class="card-title mb-1   card-main-text card-heading">
                         <span className="BackColor">Navgurukul Labs</span>
-                      </h3>
+                      </h4>
                       <p class="card-text section-para  card-dic">
                         Experiments in non-profit space for otherwise for-profit
                         solutions such as non-profit Uber

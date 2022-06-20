@@ -118,7 +118,7 @@ function PartnerSlider() {
                       />
                       <div className="partition-carousal-content-name">
                       <div className=" fw-bold mb-3 " color="white" >
-                        <span className="backcolor">{partners[item].Name}</span>
+                        <span >{partners[item].Name}</span>
                         
                       </div>
                       <p className="mb-3 px-0" color="white"> {partners[item].Content}</p>
