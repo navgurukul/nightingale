@@ -211,3 +211,8 @@ svg rect {
     padding: 0;
   }
 }
+.nav-footer li a:hover, .policy a
+:hover{
+  color: var(--primary);
+  text-decoration: none;
+}

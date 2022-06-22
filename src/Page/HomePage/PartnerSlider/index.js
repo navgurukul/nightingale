@@ -121,7 +121,7 @@ function PartnerSlider() {
                         <span >{partners[item].Name}</span>
                         
                       </div>
-                      <p className="mb-3 px-0" color="white"> {partners[item].Content}</p>
+                      <p className="mb-3 px-0 font" color="white"> {partners[item].Content}</p>
                       </div>
                     </div>
                   </div>
