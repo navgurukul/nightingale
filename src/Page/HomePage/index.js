@@ -30,7 +30,7 @@ function Home() {
             </div>
           </div>
         </div> */}
-       <div ></div>
+       <div  className="container-xxl">
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md-3 head-div">
@@ -46,6 +46,7 @@ function Home() {
           <div class="col-md ">
           <img src={require("./assets/student.jpg").default} className="home-image"/>
           </div>
+        </div>
         </div>
       
       

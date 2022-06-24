@@ -29,7 +29,7 @@ function GetInvolved() {
                   <div className="content">
                     <p>Sponsors</p>
                     <p>
-                      Your Sponsor can lead us <br /> to future India Education
+                      YNavGurukul one year software engineering residential courseour Sponsor can lead us <br /> to future India Education
                     </p>
                     <p>Know More</p>
                   </div>
