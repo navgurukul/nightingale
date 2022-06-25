@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import JobCourse from "../JobCourse";
 import { FiExternalLink } from "react-icons/fi";
+import {BiChevronDown} from 'react-icons/bi'
 import "./styles.css";
 import externalLink from "./assets/external-link.png";
 import {BiChevronsDown} from "react-icons/bi"
@@ -50,6 +51,7 @@ function Header() {
               
             >
               Our Initiatives
+              <BiChevronDown />
               
             </a>
             
@@ -92,10 +94,12 @@ function Header() {
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              
             >
               About
+              <BiChevronDown />
+
             </a>
+           
             <div
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
@@ -144,6 +148,8 @@ function Header() {
               aria-expanded="false"
             >
               Get Involved
+              <BiChevronDown />
+
             </a>
             <div
               className="dropdown-menu dropdown-items"
@@ -160,7 +166,7 @@ function Header() {
                 href="https://recruiterflow.com/navgurukul/jobs"
                 target="_blank"
               >
-                Careers
+                Careers<FiExternalLink className="ml-2" />
                 
               </a>
               <a
@@ -168,14 +174,14 @@ function Header() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform"
                 target="_blank"
               >
-                Volunteer 
+                Volunteer <FiExternalLink className="ml-2" />
               </a>
             </div>
           </li>
 
           <li className="nav-item">
             <a className="nav-link header-title mr-3" href="/donate">
-              Donate
+              Donate 
             </a>
           </li>
           <li className="nav-item">
@@ -191,7 +197,7 @@ function Header() {
               target="_blank"
             >
               Meraki
-              {/* <FiExternalLink className="ml-2" /> */}
+              <FiExternalLink className="ml-2" />
             </a>
           </li>
         </ul>

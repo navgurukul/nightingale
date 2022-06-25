@@ -16,32 +16,25 @@
 .partition-carousal-content-name{
   text-align: left;
   justify-items: left;
+  
 
   
 }
 .partition-carousal-content-img {
-  height: 70px;
+  height: 100px;
   width: 90px;
   margin-top: 30px;
+  object-fit: scale-down;
 
 } 
 .partners-carousal-arrow--left {
   left: -5%;
 }
-.Card-dotted:nth-child(2n){
-  background-color: orange;
-  border-radius: 40px;
-}
 
-.Card-dotted:nth-child(2n+1){
+
+.Card-dotted{
   background-color:rgb(253, 243, 240) ;
   border-radius: 40px;
-}
-
-.backcolor{
-  background-color: var(--primary);
-  color: white;
-  padding: 3px;
 }
 
 .partners-carousal-arrow--right {
@@ -49,8 +42,7 @@
   right: -5%;
 }
 .partition-carousal-content span {
-  color: white;
-  background-color: var(--primary);
+
   padding: 5px;
   font-size: 20px;
 }

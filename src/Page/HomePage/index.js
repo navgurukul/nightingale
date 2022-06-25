@@ -30,23 +30,23 @@ function Home() {
             </div>
           </div>
         </div> */}
-       <div ></div>
+       <div  className="container-xxl">
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md-3 head-div">
-          <h3 className=" media-font ">
-             The <span className="text-primary">Gurukul</span> for the<br/> <span className="BackColor"> New Age India</span> and its New Generation{" "}
-             </h3>{" "}
-             <p >
-             We are a non-profit dedicated to bring affordable tech
-                  education to underprivileged girls in India{" "}
-             </p>
+            <h2 className=" heading-line ">
+              The <span className="text-primary">Gurukul</span> for the <br/><span className="BackColor"> New Age India</span> and its New Generation{" "}
+              </h2>{" "}
+              <p  className="font heading-line">
+              We are a non-profit dedicated to bring affordable tech
+                    education to underprivileged girls in India.{" "}
+              </p>
           </div>
-          {/* <div className="col-md-1"></div> */}
-          <div class="col-md">
+          <div className="col-md-1"></div>
+          <div class="col-md ">
           <img src={require("./assets/student.jpg").default} className="home-image"/>
           </div>
-
+        </div>
         </div>
       
       
@@ -154,8 +154,8 @@ function Home() {
         </div>
       </section>
       <section className="container consult text-left text-md-center w-50 mt-5">
-        <p className="section-para para-item ">
-          <span className="fw-bold ">Techalms Consulting:</span> A talent group
+        <p className="section-para para-item  ">
+          <span className="fw-bold  ">Techalms Consulting:</span> A talent group
           ready to fly in, solve your problems and leave by leaving happy faces
           at the clientplace{" "}
         </p>
@@ -169,7 +169,7 @@ function Home() {
         <PartnerSlider />
 
         <div class="d-flex flex-column align-items-center justify-content-center align-items-center ">
-          <h3 className=" mb-4"> Bring a change! </h3>
+          <h4 className=" mb-4"> Bring a change! </h4>
           <button
             class="btn regular-btn our-partner-btn section-para text-white partner "
             type="button"
@@ -183,8 +183,8 @@ function Home() {
         </div>
       </section>
 
-      <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-0 ">
-        <h3 className=" mb-3">Our <span className="BackColor">Supporters</span></h3>
+      <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-5 ">
+        <h3 className=" mb-3 ">Our <span className="BackColor">Supporters</span></h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />

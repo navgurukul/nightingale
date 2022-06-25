@@ -13,11 +13,12 @@ function Programmer() {
   const [state, setState] = useState("");
   return (
     <div className="programmers d-flex flex-column justify-content-center">
-      <div className="hero-P container my-2 my-sm-5">
-        <div className="row d-flex justify-content-between flex-md-column-reverse flex-lg-row flex-md-row">
+      {/* <div className="hero-P my-2 my-sm-5"> */}
+        {/* <div className="row d-flex justify-content-between flex-md-column-reverse flex-lg-row flex-md-row">
           <div className="col left-P d-flex flex-column align-items-start">
             <h3 className="section-head">
-              Navgurukul One-Year Software Engineering Course
+              NavGurukul one year software engineering residential course
+
             </h3>
             <div className="input d-flex flex-column justify-content-center align-items-start text-left p-1 w-90">
               <p className="my-2">
@@ -52,14 +53,79 @@ function Programmer() {
               alt="Experiance at Navgurukul"
             ></video>
           </div>
-        </div>
+        </div> */}
+        <div className="row ">
+          <div className="col-md-1"></div>
+          <div className="col-md-3 hero-P">
+            <h2>
+            <span className="text-primary">NavGurukul</span> one year<span className="BackColor"> software engineering</span> residential course
+            </h2>
+            <p>
+            Study in an immersive environment at one of our campuses in Pune, 
+            Bengaluru or Dharamshala (for boys) with peer learning and mentors 
+            helping you at each turn. <br/> <br/>To be a part of the Gurukul, 
+            all it takes is some determination and potential.
+
+            </p>
+            <button
+                className="btn btn-primary text-white w-100 my-2 fs-sm-1.2  regular-btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://www.merakilearn.org/admission", "_blank");
+                }}
+              >
+                Take the Test
+              </button>
+          </div>
+          <div className="col-md-1"></div>
+          <div className="col-md col-sm">
+          <img src={require("./assets/student-min.jpg").default} className="home-image"/>
+
+          </div>
+
+       
+
       </div>
-      <section className="new_programme d-flex flex-column align-items-center">
-        <h3 className="mb-3">Who this Programme is for?</h3>
-        <hr className="heading-hr" />
-        <div className="container text-start mb-0 d-flex justify-content-center align-items-center">
-          <div className="col-12 col-md-8">
-            <ul className="mb-0 ">
+      <section className="news-program">
+        <div className="">
+          <div className="row mt-5">
+            <div className="col-md-1"> </div>
+            <div className="col-md-3 mt-7" >
+              <h2 className="text-white">Listen to our students’ experiences at NavGurukul</h2>
+
+            </div>
+            <div className="col-md-1"></div>
+            <div className="col-md-6 align-center" >
+              <img src={require("./assets/program.jpg").default} className="program-img-1"/>
+            </div>
+
+          </div>
+          <div className="row mt-5 mb-5">
+            <div className="col-md-1"></div>
+            <div className="col-md-6">
+              <img src={require("./assets/program.jpg").default} className="program-img-1"/>
+            </div>
+            <div className="col-md-1"></div>
+            <div className="col-md-3">
+                <h2 className="align-left mt-7" >Watch more about NavGurukul and our programs</h2>
+            </div>
+
+          </div>
+
+        </div>
+        
+      </section>
+      <section className="new_programme align-items-center mt-5">
+        <h3 className="mb-3 text-center">Who this <span className="BackColor">Programme</span> is for?</h3>
+        {/* <hr className="heading-hr" /> */}
+        <div className="row text-start mb-0   align-items-left">
+          <div className="col-md-1"></div>
+          <div className="col-md-5">
+            <img src={require("./assets/img_1.jpg").default} className="program-img-1"/>
+          </div>
+          <div className="col-md-1"></div>
+          <div className=" col-md-3 mt-6">
+            <ul >
               <li>
                 Youth from underprivileged or low income communities who can’t
                 afford expensive college education
@@ -74,10 +140,11 @@ function Programmer() {
               </li>
             </ul>
           </div>
+          
         </div>
       </section>
-      <section className="programme_phases  d-flex flex-column align-items-center">
-        <h3 className="mb-3">Programme Phases</h3>
+      {/* <section className="programme_phases  d-flex flex-column align-items-center">
+        <h3 className="mb-3">Programme <span className="BackColor">Phases</span></h3>
         <hr className="heading-hr" />
         <div className="container text-start mb-0 mt-0 px-md-3 px-0 ">
           <div className="phases_card_container d-flex justify-content-between">
@@ -105,6 +172,36 @@ function Programmer() {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="programme_phases align-items-center justify-content-center flex-column "> 
+        <h3 className="mb-5 text-center">Programme <span className="BackColor"> Phases</span></h3>
+        <div className=" phases_card_container align-items-center  justify-content-between">
+        <div className="row ">
+        <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5 ">
+          <h4 className="mb-3">Foundational Bootcamp</h4>
+              <p className="mb-3">
+                Building blocks of learning habits for logical and English
+                skillss</p>
+              <span className="text-secondary">Duration: 1 to 2 months</span>
+
+          </div>
+          <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5">
+          <h4 className="mb-3">Coding Bootcamp</h4>
+              <p className="mb-3">
+              Learn coding skills along with English and leadership skills.</p>
+              <span className="text-secondary">Duration : 5 to 6 months
+</span>
+
+          </div>
+          <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5">
+          <h4 className="mb-3">Interview Bootcamp
+</h4>
+              <p className="mb-3">
+              Work on interview skills and get an overview of office style work.</p>
+              <span className="text-secondary">Duration : 1 to 2 months</span>
+          </div>
+        </div>
+        </div>  
       </section>
       <section className="new_programme_skills  d-flex flex-column align-items-center">
         <h3 className="mb-3">What Skills Do We Teach?</h3>
