@@ -57,10 +57,10 @@ function Programmer() {
         <div className="row ">
           <div className="col-md-1"></div>
           <div className="col-md-3 hero-P">
-            <h2>
+            <h2 className="heading-line">
             <span className="text-primary">NavGurukul</span> one year<span className="BackColor"> software engineering</span> residential course
             </h2>
-            <p>
+            <p className="font">
             Study in an immersive environment at one of our campuses in Pune, 
             Bengaluru or Dharamshala (for boys) with peer learning and mentors 
             helping you at each turn. <br/> <br/>To be a part of the Gurukul, 
@@ -91,7 +91,7 @@ function Programmer() {
           <div className="row mt-5">
             <div className="col-md-1"> </div>
             <div className="col-md-3 mt-7" >
-              <h2 className="text-white">Listen to our students’ experiences at NavGurukul</h2>
+              <h2 className="text-white heading-line">Listen to our students’ experiences at NavGurukul</h2>
 
             </div>
             <div className="col-md-1"></div>
@@ -107,7 +107,7 @@ function Programmer() {
             </div>
             <div className="col-md-1"></div>
             <div className="col-md-3">
-                <h2 className="align-left mt-7" >Watch more about NavGurukul and our programs</h2>
+                <h2 className="text-white text-right mt-7 heading-line" >Watch more about NavGurukul and our programs</h2>
             </div>
 
           </div>
@@ -116,7 +116,7 @@ function Programmer() {
         
       </section>
       <section className="new_programme align-items-center mt-5">
-        <h3 className="mb-3 text-center">Who this <span className="BackColor">Programme</span> is for?</h3>
+        <h3 className="mb-5 text-center">Who this <span className="BackColor">Programme</span> is for?</h3>
         {/* <hr className="heading-hr" /> */}
         <div className="row text-start mb-0   align-items-left">
           <div className="col-md-1"></div>
@@ -124,19 +124,28 @@ function Programmer() {
             <img src={require("./assets/img_1.jpg").default} className="program-img-1"/>
           </div>
           <div className="col-md-1"></div>
-          <div className=" col-md-3 mt-6">
+          <div className=" col-md-3 mt-6 font ">
             <ul >
               <li>
+                <span className="li-points">
                 Youth from underprivileged or low income communities who can’t
                 afford expensive college education
+                </span>
+                
               </li>
               <li>
+                <span className="li-points">
                 Students with college degrees who haven’t been able to get a
                 good job because of lack of social or economic means.
+                </span>
+                
               </li>
               <li>
+                <span className="li-points">
                 Many of our current students are ones whose parents have humble
                 backgrounds and working as a huosehelp, auto-drivers etc.
+                </span>
+                
               </li>
             </ul>
           </div>
@@ -178,25 +187,24 @@ function Programmer() {
         <div className=" phases_card_container align-items-center  justify-content-between">
         <div className="row ">
         <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5 ">
-          <h4 className="mb-3">Foundational Bootcamp</h4>
-              <p className="mb-3">
+          <h4 className="mb-3 "><span className="BackColor">Foundational Bootcamp</span></h4>
+              <p className="mb-3 font">
                 Building blocks of learning habits for logical and English
-                skillss</p>
+                skills.</p>
               <span className="text-secondary">Duration: 1 to 2 months</span>
 
           </div>
           <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5">
-          <h4 className="mb-3">Coding Bootcamp</h4>
-              <p className="mb-3">
+          <h4 className="mb-3 ">
+            <span className="BackColor">Coding Bootcamp</span></h4>
+              <p className="mb-3 font">
               Learn coding skills along with English and leadership skills.</p>
-              <span className="text-secondary">Duration : 5 to 6 months
-</span>
+              <span className="text-secondary">Duration : 5 to 6 months</span>
 
           </div>
           <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5">
-          <h4 className="mb-3">Interview Bootcamp
-</h4>
-              <p className="mb-3">
+          <h4 className="mb-3 "><span className="BackColor">Interview Bootcamp</span></h4>
+              <p className="mb-3 font">
               Work on interview skills and get an overview of office style work.</p>
               <span className="text-secondary">Duration : 1 to 2 months</span>
           </div>

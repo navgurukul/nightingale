@@ -1,5 +1,6 @@
 .hero-P {
-  margin-top: 12%;
+  margin-top: 9%;
+  padding: 0px 0px;
 }
 .programmers a:hover {
   text-decoration: none;
@@ -16,14 +17,16 @@
   border-radius: 20px;
  
 }
-.align-left{
-  text-align: right;
-  color: white;
+.li-points{
+  position: relative;
+  left: 30px
+
 }
+
 .program-phase_col{
   border: 2px dashed var(--primary);
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 440px;
   cursor: auto;
   align-items: center;
   justify-content: center;
