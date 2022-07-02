@@ -184,7 +184,11 @@ function Home() {
       </section>
 
       <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-5 ">
+
         <h3 className=" mb-4">Our <span className="BackColor  "> Supporters</span></h3>
+
+        <h3 className=" mb-3 ">Our <span className="BackColor">Supporters</span></h3>
+
         {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />
