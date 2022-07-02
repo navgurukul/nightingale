@@ -270,6 +270,7 @@ video {
   .hero-P video {
     /* width: 75%; */
     height: 208px;
+    margin-top: 0px;
   }
   .programmers-main-video {
     min-height: 147px !important;
