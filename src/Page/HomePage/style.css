@@ -23,10 +23,10 @@
 
 }
 .BackColor{
-  /* background-color:var(--primary) ; */
+  background-color:var(--primary) ;
   color: white;
-  background: linear-gradient(to top, var(--primary) 50%, white 50%);
-  color: black
+  /* background: linear-gradient(to top, var(--primary) 50%, white 50%);
+  color: black */
 }
 .home-image{
   width: 100%;
