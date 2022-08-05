@@ -88,7 +88,7 @@ function Slider() {
               return (
                 <a href={media[item].Website} target="_blank">
                   <div className="keen-slider__slide number-slide ">
-                    <div className="carousal-content row">
+                    <div className="carousal-content row mb-3">
 
                       <div className="carousal-image-container col-sm-2">
                         <img
@@ -102,7 +102,7 @@ function Slider() {
                       </div>
                      <div className="col-sm-1"></div>
                       <div className="col-sm-5">
-                      <p>{media[item].Description}</p>
+                      <p className="font">{media[item].Description}</p>
                       </div>
                       
                     </div>

@@ -24,9 +24,8 @@
 }
 .BackColor{
   background-color:var(--primary) ;
-  color: white;
-  /* background: linear-gradient(to top, var(--primary) 50%, white 50%);
-  color: black */
+  color:white
+  
 }
 .home-image{
   width: 100%;
@@ -77,7 +76,7 @@
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 18px;
-  height: 370px;
+  height: 330px;
   background-position: center;
   background-size: 100% 100%;
 }
@@ -86,7 +85,7 @@
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 18px;
-  height: 370px;
+  height: 330px;
   background-size: 100% 100%;
 }
 
@@ -95,7 +94,7 @@
   background-repeat: no-repeat;
   border-radius: 18px;
   width: 100%;
-  height: 370px;
+  height: 320px;
   background-size: 100% 100%;
 }
 
@@ -104,7 +103,7 @@
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 18px;
-  height: 370px;
+  height: 320px;
   background-position: center;
   background-size: 100% 100%;
 }
@@ -120,7 +119,7 @@
 }
 
 .card-main-text {
-  margin-top: 220px;
+  margin-top: 180px;
   font-family: 'Roboto', sans-serif;
   
 }
@@ -133,8 +132,8 @@
  
 }
 .heading-line{
-  line-height: 1.3!important;
-  margin-top: 30px;
+  line-height: 1.2!important;
+  /* margin-top: 30px; */
 }
 .card-dic {
   max-width: 390px;
@@ -196,6 +195,7 @@
   text-align: left;
   margin:15px 150px;
   font-style: Light;
+  font-weight: 300;
 }
 @media screen and (max-width: 1200px) {
   .our-partners {
@@ -223,7 +223,9 @@
     font-size: 24px;
     margin-top: 10%;
   }
-
+  .head-div{
+    margin-top: 0px;
+  }
   .our-initiatives .container,
   .initiative-card-parent,
   .rgba-black-strong .container {
