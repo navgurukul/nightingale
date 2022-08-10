@@ -27,7 +27,8 @@
   align-items: center;
   justify-content: center;
   padding-right: 50px;
-  margin-top: 60px;
+  margin-top: 0px;
+  padding-top: 55px;
   
 }
 .navigation-wrapper p {
@@ -47,6 +48,7 @@
   /* margin-left: 100px;
   margin-right: 50px; */
   width: 280px;
+  object-fit: contain;
   padding: 10px;
   border-radius: 50%;
 }

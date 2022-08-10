@@ -30,7 +30,7 @@ function Home() {
             </div>
           </div>
         </div> */}
-       <div  className="container-xxl">
+       <div  className="">
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md-3 head-div">
@@ -55,7 +55,7 @@ function Home() {
         <Slider />
       </section>
       <section className="my-5 d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center mb-4 media-font" >Our <span className="BackColor">Initiatives</span></h3>
+        <h3 className="text-center mb-5 media-font" >Our <span className="BackColor">Initiatives</span></h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container mt-0">
           <div class="row">
@@ -163,7 +163,7 @@ function Home() {
         <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
 
-      <section className="our-partners text-center  d-flex flex-column">
+      <section className="our-partners text-center  d-flex flex-column mb-2">
         <h3 className="align-self-center mb-5 ">Our <span className="BackColor">Partners</span></h3>
         {/* <hr className="align-self-center heading-hr" /> */}
         <PartnerSlider />
@@ -184,7 +184,7 @@ function Home() {
       </section>
 
       <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-5 ">
-        <h3 className=" mb-3 ">Our <span className="BackColor">Supporters</span></h3>
+        <h3 className=" mb-3">Our <span className="BackColor">Supporters</span></h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />
