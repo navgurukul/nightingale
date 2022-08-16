@@ -1,9 +1,12 @@
 .hero-P {
   margin-top: 9%;
-  padding: 0px 0px;
+  
 }
 .programmers a:hover {
   text-decoration: none;
+}
+.points-p {
+  padding: 32px;
 }
 .news-program{
   background-color: #ef7a5aff;
@@ -55,7 +58,7 @@
 
 .li-points{
   position: relative;
-  left: 30px
+  left: 32px
 }
 .program-phase_col{
   border: 2px dashed var(--primary);
@@ -211,6 +214,7 @@ video {
   .hero-P  {
     margin-top: 0px;
   }
+
   .left-P {
     display: flex;
     flex-direction: column;
@@ -245,6 +249,9 @@ video {
   .left-P h2 {
     padding-inline: 0.5em !important;
   }
+  .li-points{
+    left: 0px;
+  }
 
   .programmers .section-head {
     font-size: 1.3rem !important;
@@ -260,7 +267,7 @@ video {
     margin-top: 2.5rem !important;
   } */
   .hero-P {
-    padding: 0 !important;
+    padding: 14px;
     width: 95% !important;
   }
   .hero-P h3 {
@@ -296,6 +303,11 @@ video {
   .phases_card_container {
     justify-content: center !important;
     align-items: center;
+    
+  }
+  .program-phase_col {
+    max-width: 350px;
+    margin: 16px;
   }
   .our_campus ul {
     padding-left: 2rem;

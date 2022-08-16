@@ -13,11 +13,11 @@ function Programmer() {
     <div className="programmers d-flex flex-column justify-content-center">
         <div className="row ">
           <div className="col-md-1"></div>
-          <div className="col-md-3 col-12 hero-P">
+          <div className="col-md-3  hero-P ">
             <h2 className="heading-line">
             <span className="text-primary">NavGurukul</span> one year<span className="BackColor"> software engineering</span> residential course
             </h2>
-            <p className="font">
+            <p className="font para-line">
             Study in an immersive environment at one of our campuses in Pune, 
             Bengaluru or Dharamshala (for boys) with peer learning and mentors 
             helping you at each turn. <br/> <br/>To be a part of the Gurukul, 
@@ -25,7 +25,7 @@ function Programmer() {
 
             </p>
             <button
-                className="btn btn-primary text-white w-100 my-2 fs-sm-1.2  regular-btn"
+                className="btn btn-primary text-white w-100 my-0 fs-sm-1.2  regular-btn"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open("https://www.merakilearn.org/admission", "_blank");
@@ -35,7 +35,7 @@ function Programmer() {
               </button>
           </div>
           <div className="col-md-1"></div>
-          <div className="col-md col-12">
+          <div className="col-md ">
           <img src={require("./assets/student-min.jpg").default} className="home-image"/>
 
           </div>
@@ -44,8 +44,8 @@ function Programmer() {
 
       </div>
       <section className="news-program">
-        <div className="">
-          <div className="row mt-5">
+        <div >
+          <div className="row mt-5 ml-2">
             <div className="col-md-1"> </div>
             <div className="col-md-3 mt-7 col-12" >
               <h2 className="text-white heading-line">Listen to our students’ experiences at NavGurukul</h2>
@@ -83,10 +83,10 @@ function Programmer() {
             <img src={require("./assets/img_1.jpg").default} className="program-img-1"/>
           </div>
           <div className="col-md-1"></div>
-          <div className=" col-md-3 mt-6 font  col-12">
+          <div className=" col-md-3 mt-6 font  col-12 ">
             <ul >
               <li>
-                <span className="li-points">
+                <span className="li-points ">
                 Youth from underprivileged or low income communities who can’t
                 afford expensive college education
                 </span>
@@ -116,24 +116,24 @@ function Programmer() {
         <h3 className="mb-5 text-center">Programme <span className="BackColor"> Phases</span></h3>
         <div className=" phases_card_container align-items-center  justify-content-between">
         <div className="row ">
-        <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5 col-12 ">
+        <div className="col-md-4 text-left program-phase_col py-4 px-5  mx-md-5 col-12 ">
           <h4 className="mb-3 "><span className="BackColor">Foundational Bootcamp</span></h4>
-              <p className="mb-3 font">
+              <p className="mb-3 font ">
                 Building blocks of learning habits for logical and English
                 skills.</p>
               <span className="font-italic">Duration: 1 to 2 months</span>
 
           </div>
-          <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5 col-12">
+          <div className="col-md-4 text-left program-phase_col py-4 px-5  mx-md-5 col-12">
           <h4 className="mb-3 ">
             <span className="BackColor">Coding Bootcamp</span></h4>
-              <p className="mb-3 font">
+              <p className="mb-3 font ">
               Learn coding skills along with English and leadership skills.</p>
               <span className="font-italic">Duration : 5 to 6 months</span>
           </div>
-          <div className="col-md-4 text-left program-phase_col py-4 px-5 mx-0 mx-md-5 col-12">
+          <div className="col-md-4 text-left program-phase_col py-4 px-5  mx-md-5 col-12">
           <h4 className="mb-3 "><span className="BackColor">Interview Bootcamp</span></h4>
-              <p className="mb-3 font">
+              <p className="mb-3 font ">
               Work on interview skills and get an overview of office style work.</p>
               <span className="font-italic">Duration : 1 to 2 months</span>
           </div>
@@ -189,9 +189,9 @@ function Programmer() {
         <p className="mt-0 mb-4 pb-0 pb-md-3 text-center">
             Three campuses at Pune, Bengaluru and Dharamsala (for boys) each
           </p>
-        <div className="row mb-4">
+        {/* <div className="row mb-4">
           <div className="col-md-1"></div>
-          <div className="col-md-4 col-12 mt-5">
+          <div className="col-md-4 col-12 mt-5 ml-2">
           <p className="fw-bold ">Facilities</p>
          
             <ul>
@@ -229,6 +229,47 @@ function Programmer() {
             className="program-img-1"/>
           </div>
 
+        </div> */}
+        <div className="row">
+        <div className="col-md-1"></div>
+        <div className="col-md-4 mt-5">
+        <p className="fw-bold ">Facilities</p>
+        <ul>
+          <li className="mb-3 points font">
+          <span className="li-points">
+              Equipped with shared dorms, fully functional kitchen and other
+                  amenities of daily use
+              </span>
+          </li>
+          <li className="mb-3 points font">
+                <span className="li-points">
+                Classrooms and large residential spaces
+
+                </span>
+                </li>
+                <li className="mb-3 points font">
+                <span className="li-points">
+                Provision of laptop, internet, mentors, english classes,
+                  mental health counselling 
+                </span>
+                  
+                 </li>
+                <li className="mb-0 points font">
+                  <span className="fw-bold li-points">
+                    All expenses are paid by Navgurukul and free for the student
+                  </span>
+                </li>
+          
+        </ul>
+
+        </div>
+        <div className="col-md-1"></div>
+        <div className="col-md-5">
+        <img src={require("./assets/Img_program.jpg").default } 
+            className="program-img-1"/>
+
+        </div>
+
         </div>
         <div className="row mb-4">
           <div className="col-md-1"></div>
@@ -237,7 +278,7 @@ function Programmer() {
             
             className="program-img-1"/>
           </div><div className="col-md-1"></div>
-          <div className="col-md-4 col-10 mt-5">
+          <div className="col-md-4 col-10 mt-5 ">
           <p className="fw-bold">Lifestyle and Culture</p>
               <ul className="mb-0">
                 <li className="mb-3 points font">
