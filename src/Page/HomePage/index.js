@@ -33,11 +33,11 @@ function Home() {
        <div  className="">
         <div class="row">
           <div className="col-md-1"></div>
-          <div class="col-md-3 head-div">
+          <div class="col-md-3 head-div ">
             <h2 className=" heading-line ">
               The <span className="text-primary">Gurukul</span> for the <br/><span className="BackColor"> New Age India</span> and its New Generation{" "}
               </h2>{" "}
-              <p  className="font heading-line">
+              <p  className="font para-line">
               We are a non-profit dedicated to bring affordable tech
                     education to underprivileged girls in India.{" "}
               </p>
@@ -59,10 +59,10 @@ function Home() {
         {/* <hr className="heading-hr" /> */}
         <div class="container mt-0">
           <div class="row">
-            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
-              <div class="bg-image1 initiative-card card  shadow-1-strong ">
+            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2 ">
+              <div class="bg-image1 initiative-card card  shadow-1-strong rgba-black-strong">
                 <Link to="/job-course">
-                  <div className="Initiatives-bg-color ">
+                  <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white  "
                       title= "Guaranteed Job Courses">
@@ -85,10 +85,10 @@ function Home() {
             <div className="col-lg-6 initiative-card-parent mb-md-2">
               <div className="bg-image2 initiative-card card  shadow-1-strong">
                 <a href="https://www.merakilearn.org/" target="_blank">
-                  <div className="Initiatives-bg-color">
-                    <div className="card-body text-white">
+                  <div className="Initiatives-bg-color rgba-black-strong">
+                    <div className="card-body text-white ">
                       <div
-                        className="d-flex align-items-end"
+                        className="d-flex align-items-end "
                         title="Learn Online with Meraki"
                       >
                         <h4 class="card-title mb-1  card-main-text text-center card-heading ">
@@ -113,7 +113,7 @@ function Home() {
             <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
               <div class="bg-image3 initiative-card card shadow-1-strong">
                 <Link to="/cif">
-                  <div className="Initiatives-bg-color">
+                  <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white"
                       title="Code India Fellowships"
@@ -136,7 +136,7 @@ function Home() {
             <div class="col-lg-6 initiative-card-parent mb-md-2">
               <div class="bg-image4 initiative-card card shadow-1-strong">
                 <Link to="/nglabs">
-                  <div className="Initiatives-bg-color">
+                  <div className="Initiatives-bg-color rgba-black-strong">
                     <div class="card-body text-white" title="NG Labs">
                       <h4 class="card-title mb-1   card-main-text card-heading">
                         <span className="BackColor">Navgurukul Labs</span>
