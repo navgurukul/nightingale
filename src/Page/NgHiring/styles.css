@@ -24,12 +24,12 @@
   box-sizing: content-box;
 }
 .hiring-page-card-container {
-  margin-top: 30px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   transition: all ease-in 0.2s;
-  margin-bottom: 14.375rem;
+  
   transition: all ease-in 0.2s;
   pointer-events: none;
 }

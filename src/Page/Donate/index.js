@@ -8,7 +8,7 @@ function Donate() {
       <div className="page-content d-flex flex-column justify-content-center align-items-center">
         <section className="container donate-page-section mt-4 d-flex flex-column align-items-center">
           <h3 className="section-head mt-5 mb-3">Donate to NavGurukul</h3>
-          <hr className="heading-hr" />
+         
           <div className="d-flex account-details justify-content-center align-items-center">
             <div className="d-flex flex-column text-left fw-bold">
               <span>UPI ID</span>
@@ -42,7 +42,7 @@ function Donate() {
             Donate to Navgurukul
           </button>
           <div className="donate-content d-flex justify-content-center align-items-center w-100">
-            <p className="w-75 mt-3 mt-md-5 pt-3">
+            <p className="w-75 mt-3 mt-md-4 pt-3">
               You may also pledge a <b> monthly donation </b> to us. Any pledged
               amount is a huge support for us. Just having you by our side fills
               us with gratitude & an energy to do better.
@@ -164,9 +164,9 @@ function Donate() {
           
         </section> */}
         <section className="container donate-page-section csr-queries ">
-          <h3 className="section-head mb-3">
+          <h4 className="section-head mb-3">
             Are you a corporation and taken an interest in what we do?
-          </h3>
+          </h4>
           {/* <button type="button" class="btn btn-primary button-colour"> */}
           <button
             type="button"

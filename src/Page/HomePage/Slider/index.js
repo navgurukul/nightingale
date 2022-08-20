@@ -80,7 +80,7 @@ function Slider() {
   // const [partitionSlider, ]
   if (!Object.keys(media).length) return <></>;
   return (
-    <div className="media-slider slider mb-3">
+    <div className="media-slider slider ">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">

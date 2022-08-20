@@ -97,9 +97,9 @@ function PartnerSlider() {
   );
   if (!Object.keys(partners).length) return <></>;
   return (
-    <div className="slider partner-slider pb-5 container">
+    <div className="slider partner-slider container mar-3">
       <>
-        <div className="navigation-wrapper mb-5">
+        <div className="navigation-wrapper ">
           <div ref={sliderRef} className="keen-slider">
             <div className="partners-carousal-cards ">
               {Object.keys(partners).map((item) => {

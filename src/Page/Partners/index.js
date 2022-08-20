@@ -17,11 +17,11 @@ function Partners() {
   const [partners, setPartners] = useState([]);
   return (
     <div className="partners d-flex flex-column justify-content-center w-100">
-      <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100 mt-5">
+      <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100 mt-4">
         <h3 className="mt-2 section-head mb-3">Partner Highlights</h3>
-        <hr className="mb-3 heading-hr" />
+        
 
-        <div className="partner-content-data col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-4">
+        <div className="partner-content-data col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3">
           Our partners help us give access to aspirational careers to youth who
           want to grow but don’t have means to do so. Our partnerships are the
           backbone of our operations. Our partners share our values, our
@@ -37,15 +37,15 @@ function Partners() {
           Partner With Us
         </button>
       </div>
-      <div className="partners-data w-100 mb-0 mb-md-5 d-flex align-items-center flex-column">
+      <div className="partners-data w-100 mb-0  md-5 d-flex align-items-center flex-column">
         <h3 className="mb-3 section-head">Our Partners</h3>
-        <hr className="heading-hr" />
+        
         <div className="all-partners w-75 d-flex flex-column">
           <div className="all-partners-row d-flex justify-content-around w-100 my-1">
             {Object.keys(partners).length ? (
               Object.keys(partners).map((item) => {
                 return (
-                  <div className="card mb-4 mb-md-5 bg-white py-3 px-4 position-relative">
+                  <div className="card mb-3  md-5 bg-white py-3 px-4 position-relative">
                     <h4 className="fw-bold mb-2">{partners[item].Name}</h4>
                     <span className="status mb-2">{partners[item].Type}</span>
                     <p className="my-1 mb-5">{partners[item].Content}</p>
@@ -85,10 +85,10 @@ function Partners() {
         </div>
       </div>
 
-      <div className="container partners-support-section d-flex flex-column w-100 align-items-center mb-5 pb-5 justify-content-center">
-        <h3 className="mt-2 section-head w-50 text-center">
+      <div className="container partners-support-section d-flex flex-column w-100 align-items-center mb-3  justify-content-center">
+        <h4 className="mt-2   text-center">
           Have you taken an interest in what we do and want to support us?
-        </h3>
+        </h4>
         <button
           className="btn btn-primary section-para regular-btn mt-4 mb-3"
           onClick={(e) => {

@@ -43,29 +43,29 @@ function Programmer() {
        
 
       </div>
-      <section className="news-program">
-        <div >
-          <div className="row mt-5 ml-2">
-            <div className="col-md-1"> </div>
-            <div className="col-md-3 mt-7 col-12" >
+      <section className="news-program mb-3">
+        <div className="container">
+          <div className="row mar-3 ml-2">
+           
+            <div className="col-md-5 mt-7 col-12" >
               <h2 className="text-white heading-line">Listen to our students’ experiences at NavGurukul</h2>
 
             </div>
-            <div className="col-md-1"></div>
-            <div className="col-md-6 align-center col-12 Image_new_program" >
+           
+            <div className="col-md-7 align-center col-12 Image_new_program" >
               <img src={require("./assets/program.jpg").default} className="program-img-1"/>
               <div className="hover_video fw-bold">Video coming Shortly </div>
             </div>
 
           </div>
           <div className="row mt-5 mb-5">
-            <div className="col-md-1"></div>
-            <div className="col-md-6 col-12 Image_new_program">
+           
+            <div className="col-md-7 col-12 Image_new_program">
               <img src={require("./assets/program.jpg").default} className="program-img-1"/>
               <div className="hover_video fw-bold">Video coming Shortly </div>
             </div>
-            <div className="col-md-1"></div>
-            <div className="col-md-3 col-12">
+            
+            <div className="col-md-5 col-12">
                 <h2 className="text-white text-right mt-7 heading-line" >Watch more about NavGurukul and our programs</h2>
             </div>
 
@@ -74,49 +74,53 @@ function Programmer() {
         </div>
         
       </section>
-      <section className="new_programme align-items-center mt-5">
-        <h3 className="mb-5 text-center">Who this <span className="BackColor">Programme</span> is for?</h3>
+      <section className="new_programme align-items-center mt-3 mb-3">
+        <h3 className="text-center mar-bot">Who this <span className="BackColor">Programme</span> is for?</h3>
         {/* <hr className="heading-hr" /> */}
-        <div className="row text-start mb-0   align-items-left">
-          <div className="col-md-1"></div>
-          <div className="col-md-5 col-12">
-            <img src={require("./assets/img_1.jpg").default} className="program-img-1"/>
-          </div>
-          <div className="col-md-1"></div>
-          <div className=" col-md-3 mt-6 font  col-12 ">
-            <ul >
-              <li>
-                <span className="li-points ">
-                Youth from underprivileged or low income communities who can’t
-                afford expensive college education
-                </span>
-                
-              </li>
-              <li>
-                <span className="li-points">
-                Students with college degrees who haven’t been able to get a
-                good job because of lack of social or economic means.
-                </span>
-                
-              </li>
-              <li>
-                <span className="li-points">
-                Many of our current students are ones whose parents have humble
-                backgrounds and working as a huosehelp, auto-drivers etc.
-                </span>
-                
-              </li>
-            </ul>
-          </div>
-          
+        <div className="container">
+        <div className="row text-start   align-items-left mar-3">
+         
+         <div className="col-md-6 col-12 ">
+           <img src={require("./assets/img_1.jpg").default} className="program-img-1 mr-3"/>
+         </div>
+         
+         <div className=" col-md-6 mt-5 col-12 ">
+           <ul className="ml-3">
+             <li className="mb-3 ">
+               <span className="li-points ">
+               Youth from underprivileged or low income communities who can’t
+               afford expensive college education
+               </span>
+               
+             </li>
+             <li className="mb-3">
+               <span className="li-points">
+               Students with college degrees who haven’t been able to get a
+               good job because of lack of social or economic means.
+               </span>
+               
+             </li>
+             <li className="mb-3">
+               <span className="li-points">
+               Many of our current students are ones whose parents have humble
+               backgrounds and working as a huosehelp, auto-drivers etc.
+               </span>
+               
+             </li>
+           </ul>
+         </div>
+         
+       </div>
         </div>
+        
       </section>
 
       <section className="programme_phases align-items-center justify-content-center flex-column "> 
-        <h3 className="mb-5 text-center">Programme <span className="BackColor"> Phases</span></h3>
-        <div className=" phases_card_container align-items-center  justify-content-between">
+        <h3 className=" mar-bot text-center">Programme <span className="BackColor"> Phases</span></h3>
+        <div className="container mt-3"> 
+        <div className=" phases_card_container ">
         <div className="row ">
-        <div className="col-md-4 text-left program-phase_col py-4 px-5  mx-md-5 col-12 ">
+        <div className="col-md-4 text-left program-phase_col py-4 px-4  mx-3  col-12 ">
           <h4 className="mb-3 "><span className="BackColor">Foundational Bootcamp</span></h4>
               <p className="mb-3 font ">
                 Building blocks of learning habits for logical and English
@@ -124,69 +128,74 @@ function Programmer() {
               <span className="font-italic">Duration: 1 to 2 months</span>
 
           </div>
-          <div className="col-md-4 text-left program-phase_col py-4 px-5  mx-md-5 col-12">
+          <div className="col-md-4 text-left program-phase_col py-4 px-4  mx-3 col-12">
           <h4 className="mb-3 ">
             <span className="BackColor">Coding Bootcamp</span></h4>
-              <p className="mb-3 font ">
+              <p className="mb-3 ">
               Learn coding skills along with English and leadership skills.</p>
               <span className="font-italic">Duration : 5 to 6 months</span>
           </div>
-          <div className="col-md-4 text-left program-phase_col py-4 px-5  mx-md-5 col-12">
+          <div className="col-md-4 text-left program-phase_col py-4 px-4  mx-3 col-12">
           <h4 className="mb-3 "><span className="BackColor">Interview Bootcamp</span></h4>
               <p className="mb-3 font ">
               Work on interview skills and get an overview of office style work.</p>
               <span className="font-italic">Duration : 1 to 2 months</span>
           </div>
         </div>
-        </div>  
+        </div>
+        </div>
+         
       </section>
-      <section className="new_programe_skills align-items-center mb-5">
-        <h3 className="mb-5 text-center"> What <span className="BackColor">Skills</span> Do We Teach?</h3>
-        <div className="row">
-          <div className="col-md-1"></div>
-          <div className="col-md-5 col-11">
-          <img src={require("./assets/developer.JPG").default } className="program-img-1"/>
-          </div>
-          <div className="col-md-1"></div>
-          <div className="col-md-4 mt-5 col-12">
-          <ul className="mt-4">
-              <li className="mb-3 points font ">
-                <span className="li-points">
-                <span className="fw-bold ">Front end development :</span> Web and
-                mobile development in Javascript, React.js and Android
-                </span>
-               
-              </li>
-              <li className="mb-3 points font ">
-                <span className="li-points">
-                <span className="fw-bold ">Back end development :</span> Python,
-                Node.js, Javascript
-                </span>
-               
-              </li>
-              <li className="mb-3 points font">
-                <span className="li-points">
-                <span className="fw-bold ">Hands-on projects :</span> Clone
-                projects for products such as Whatsapp and Facebook
-                </span>
+      <section className="new_programe_skills align-items-center ">
+        <h3 className="  text-center mar-bot"> What <span className="BackColor">Skills</span> Do We Teach?</h3>
+        <div className="container ">
+          <div className="row ">
+            
+            <div className="col-md-6 col-11">
+            <img src={require("./assets/developer.JPG").default } className="program-img-1 mr-3"/>
+            </div>
+            
+            <div className="col-md-6 mar-3 col-12">
+            <ul className="mt-4 ml-3">
+                <li className="mb-3 points ">
+                  <span className="li-points">
+                  <span className="fw-bold ">Front end development :</span> Web and
+                  mobile development in Javascript, React.js and Android
+                  </span>
                 
-              </li>
-              <li className="mb-0 points font">
-                <span className="li-points">
-                <span className="fw-bold ">Soft Skills :</span> English speaking,
-                team work, emotional intelligence and leadership skills
-                </span>
+                </li>
+                <li className="mb-3 points ">
+                  <span className="li-points">
+                  <span className="fw-bold ">Back end development :</span> Python,
+                  Node.js, Javascript
+                  </span>
+                
+                </li>
+                <li className="mb-3 points ">
+                  <span className="li-points">
+                  <span className="fw-bold ">Hands-on projects :</span> Clone
+                  projects for products such as Whatsapp and Facebook
+                  </span>
+                  
+                </li>
+                <li className="mb-0 points">
+                  <span className="li-points">
+                  <span className="fw-bold ">Soft Skills :</span> English speaking,
+                  team work, emotional intelligence and leadership skills
+                  </span>
 
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+        
 
 
       </section>
-      <section className="mb-5 ">
-        <h3 className="text-center mb-4">Our <span className="BackColor">Campuses</span></h3>
-        <p className="mt-0 mb-4 pb-0 pb-md-3 text-center">
+      <section className="">
+        <h3 className="text-center mar-3 mb-3">Our <span className="BackColor">Campuses</span></h3>
+        <p className="mt-0 mb-3 pb-0 pb-md-3 text-center">
             Three campuses at Pune, Bengaluru and Dharamsala (for boys) each
           </p>
         {/* <div className="row mb-4">
@@ -230,31 +239,32 @@ function Programmer() {
           </div>
 
         </div> */}
+        <div className="container">
         <div className="row">
-        <div className="col-md-1"></div>
-        <div className="col-md-4 mt-5">
+        
+        <div className="col-md-6 mar-3">
         <p className="fw-bold ">Facilities</p>
         <ul>
-          <li className="mb-3 points font">
+          <li className="mb-3 points">
           <span className="li-points">
               Equipped with shared dorms, fully functional kitchen and other
                   amenities of daily use
               </span>
           </li>
-          <li className="mb-3 points font">
+          <li className="mb-3 points ">
                 <span className="li-points">
                 Classrooms and large residential spaces
 
                 </span>
                 </li>
-                <li className="mb-3 points font">
+                <li className="mb-3 points ">
                 <span className="li-points">
                 Provision of laptop, internet, mentors, english classes,
                   mental health counselling 
                 </span>
                   
                  </li>
-                <li className="mb-0 points font">
+                <li className="mb-0 points ">
                   <span className="fw-bold li-points">
                     All expenses are paid by Navgurukul and free for the student
                   </span>
@@ -263,43 +273,45 @@ function Programmer() {
         </ul>
 
         </div>
-        <div className="col-md-1"></div>
-        <div className="col-md-5">
+        
+        <div className="col-md-6">
         <img src={require("./assets/Img_program.jpg").default } 
             className="program-img-1"/>
 
         </div>
 
         </div>
-        <div className="row mb-4">
-          <div className="col-md-1"></div>
-          <div className="col-md-5 mb-4 col-12">
+        
+        
+        <div className="row ">
+          
+          <div className="col-md-6 mb-4 mt-3 col-12">
           <img src={require("./assets/Img_pro3.jpg").default } 
             
-            className="program-img-1"/>
-          </div><div className="col-md-1"></div>
-          <div className="col-md-4 col-10 mt-5 ">
-          <p className="fw-bold">Lifestyle and Culture</p>
-              <ul className="mb-0">
-                <li className="mb-3 points font">
+            className="program-img-1 mr-3"/>
+          </div>
+          <div className="col-md-6 col-10 mar-3 ">
+          <p className="fw-bold ml-3">Lifestyle and Culture</p>
+              <ul className="mb-0 ml-3">
+                <li className="mb-3 points ">
                   <span className="li-points">
                   Self responsibility to take care of activities with discipline
 
                   </span>
                 </li>
-                <li className="mb-3 points font">
+                <li className="mb-3 points">
                   <span className="li-points">
                   Day is divided into learning schedules for various courses
 
                   </span>
                 </li>
-                <li className="mb-3 points font">
+                <li className="mb-3 points ">
                   <span className="li-points">
                   Evening includes free and leisure time
 
                   </span>
                 </li>
-                <li className="mb-3 points font">
+                <li className="mb-3 points ">
                   <span className="li-points">
                   Our culture is driven by empathy and inclusivity. We believe
                   in compassionate approach to making a safe space for students
@@ -307,7 +319,7 @@ function Programmer() {
                   </span>
                  
                 </li>
-                <li className="mb-0 points font">
+                <li className="mb-0 points">
                   <span className="li-points">
                   We constantly work towards diversity without discrimination
                   based no caste, class, gender and life experiences 
@@ -317,6 +329,7 @@ function Programmer() {
               </ul>
 
           </div>
+        </div>
         </div>
 
       </section>
@@ -423,16 +436,16 @@ function Programmer() {
           </div>
         </div>
       </div> */}
-      <div className="students my-2 my-sm-5 align-items-center">
-        <h3 className="mb-5 text-center">Hear From Our <span className="BackColor">Students</span></h3>
-
-        <div className=" w-100  d-flex justify-content-center">
+       <div className="students my-2 my-sm-3  d-flex flex-column align-items-center">
+        <h3 className="mb-3 mt-3">Hear From Our Students</h3>
+        
+        <div className="container w-100  d-flex justify-content-center mt-3">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
-            <div className="col-12 video-container col-md-3 mt-3 d-flex align-items-center flex-column mx-0 mx-md-4 py-4 px-5">
+            <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
               <video
                 src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/WhatsApp+Video+2022-02-19+at+18.39.06.mp4"
                 alt="Priyanka's Journey at Navgurukul"
-                width="380"
+                width="340"
                 height="195"
                 controls
               ></video>
@@ -440,11 +453,11 @@ function Programmer() {
                 Priyanka's Journey at Navgurukul
               </p>
             </div>
-            <div className="col-12 video-container col-md-3 mt-3 d-flex align-items-center flex-column mx-0 mx-md-4 py-4 px-5">
+            <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
               <video
                 src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/Neha-+Sarjapur+Campus.mp4"
                 alt="Pooja's learning experience during COVID"
-                width="380"
+                width="340"
                 height="195"
                 controls
               ></video>
@@ -452,11 +465,11 @@ function Programmer() {
                 Pooja's learning experience during COVID
               </p>
             </div>
-            <div className="col-12 video-container col-md-3 mt-3 d-flex align-items-center flex-column mx-0 mx-md-4 py-4 px-5">
+            <div className="col-12 video-container col-md-4 mt-3 d-flex align-items-center flex-column">
               <video
                 src="https://nightingale1.s3.ap-south-1.amazonaws.com/Videos/NEW+student+experience.mp4"
                 alt="Soni's multiculural experience in Navgurukul"
-                width="380"
+                width="340"
                 height="195"
                 controls
               ></video>
@@ -467,9 +480,9 @@ function Programmer() {
           </div>
         </div>
       </div>
-      <div className="next-step mt-2 mt-sm-5 d-flex flex-column align-items-center">
+      <div className="next-step mt-2 mt-sm-3 d-flex flex-column align-items-center">
         <h4 className="mb-3">Ready for the Next Step?</h4>
-        <div className="input d-flex flex-column justify-content-center align-items-center mt-3 text-left w-100  ">
+        <div className="input d-flex flex-column justify-content-center align-items-center  text-left w-100  ">
           <button
             className="btn btn-primary text-white align-self-center w-100 my-1 regular-btn"
             onClick={(e) => {

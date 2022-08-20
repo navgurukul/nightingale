@@ -44,7 +44,7 @@ function Header() {
               href="#"
               id="navbarDropdown"
               role="button"
-              data-toggle="dropdown"
+              // data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
               

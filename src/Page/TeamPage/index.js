@@ -71,7 +71,7 @@ function TeamPage() {
       <div className="team-content">
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
           <h3 className="section-head mb-3">Our Team</h3>
-          <hr className="heading-hr " />
+    
           <div className="team-page-content w-50">
             <p className="section-para">
               We are a collective of full timers and volunteers that form the

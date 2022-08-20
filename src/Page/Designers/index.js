@@ -110,7 +110,6 @@ function Programmer() {
       </div>
       <div className="students my-2 my-sm-5  d-flex flex-column align-items-center">
         <h3 className="mb-3">Hear From Our Students</h3>
-        <hr className="heading-hr mb-3" />
         <div className="container w-100 mt-3  d-flex justify-content-center">
           <div className="row d-flex flex-md-row flex-column justify-content-center w-100 student-video-parent">
             <div className="col-12 col-md-4 my-3 d-flex justify-content-center ">
