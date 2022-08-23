@@ -51,15 +51,15 @@ function Home() {
       
       
       <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
-        <h3 className="align-self-center media-font mb-3 mt-3">In the <span className="BackColor">Media</span></h3>
+        <h3 className="align-self-center media-font mar-3">In the <span className="BackColor">Media</span></h3>
         <Slider />
       </section>
-      <section className="my-5 d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center mb-5 media-font" >Our <span className="BackColor">Initiatives</span></h3>
+      <section className="mar-3 d-flex flex-column align-items-center our-initiatives">
+        <h3 className="text-center media-font " >Our <span className="BackColor">Initiatives</span></h3>
         {/* <hr className="heading-hr" /> */}
-        <div class="container mt-0">
+        <div class="container mar-3">
           <div class="row">
-            <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2 ">
+            <div class="col-lg-6 initiative-card-parent col-md-12   ">
               <div class="bg-image1 initiative-card card  shadow-1-strong rgba-black-strong">
                 <Link to="/job-course">
                   <div className="Initiatives-bg-color rgba-black-strong">
@@ -153,7 +153,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="container consult text-left text-md-center w-50 mt-5">
+      <section className="container text-left text-md-center w-50 mar-3">
         <p className="section-para para-item  ">
           <span className="fw-bold  ">Techalms Consulting:</span> A talent group
           ready to fly in, solve your problems and leave by leaving happy faces
@@ -163,15 +163,15 @@ function Home() {
         <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
 
-      <section className="our-partners text-center  d-flex flex-column mb-2">
-        <h3 className="align-self-center mb-5 ">Our <span className="BackColor">Partners</span></h3>
+      <section className="our-partners text-center  d-flex flex-column mar-3">
+        <h3 className="align-self-center ">Our <span className="BackColor">Partners</span></h3>
         {/* <hr className="align-self-center heading-hr" /> */}
         <PartnerSlider />
 
         <div class="d-flex flex-column align-items-center justify-content-center align-items-center ">
-          <h4 className=" mb-4"> Bring a change! </h4>
+          <h4 className=" "> Bring a change! </h4>
           <button
-            class="btn regular-btn our-partner-btn section-para text-white partner "
+            class="btn regular-btn our-partner-btn section-para text-white  "
             type="button"
             onClick={(e) => {
               e.preventDefault();
@@ -183,8 +183,8 @@ function Home() {
         </div>
       </section>
 
-      <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center mb-5 mt-5 ">
-        <h3 className=" mb-3">Our <span className="BackColor">Supporters</span></h3>
+      <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
+        <h3 >Our <span className="BackColor">Supporters</span></h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />

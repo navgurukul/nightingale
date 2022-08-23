@@ -96,7 +96,7 @@ function SupporterSlider() {
   );
   if (!Object.keys(supports).length) return <></>;
   return (
-    <div className="slider pb-5 container">
+    <div className="slider mar-3 container">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
@@ -151,7 +151,7 @@ function SupporterSlider() {
           )}
         </div>
         {loaded && instanceRef.current && (
-          <div className="dots">
+          <div className="dots ">
             {[
               ...Array(instanceRef.current.track.details.slides.length).keys(),
             ].map((idx) => {

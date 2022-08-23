@@ -32,7 +32,7 @@ function CifPage() {
       </div>
       <div className="cif text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">What’s Code India Fellowship</h3>
-        <hr className="heading-hr mt-0" />
+      
         <div className="container w-50 ">
           <p className="text-start">
             We are proud to announce the Code India Fellowship, an incredible
@@ -60,7 +60,7 @@ function CifPage() {
       </div>
       <div className="offer text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">What We Offer</h3>
-        <hr className="heading-hr" />
+       
         <div className="container w-50 text-start">
           <div className="row m-1 d-flex ">
             <div className="col-sm-6 px-4 mb-3 position-relative">
@@ -94,7 +94,6 @@ function CifPage() {
       </div>
       <div className="looking text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Who We Are Looking For</h3>
-        <hr className="heading-hr" />
         <div className="container f-Nuni text-start mb-1 w-50">
           <div className="row m-1 d-flex">
             <div className="col-sm-6 px-4 mb-3 position-relative">
@@ -118,8 +117,7 @@ function CifPage() {
         </div>
       </div>
       <div className="description text-center d-flex flex-column align-items-center justify-content-center ">
-        <h3 className="mb-3">Role Description</h3>
-        <hr className="heading-hr" />
+        <h3 className="mb-3">Role Description </h3>
         <div className="container text-start mb-1 w-50">
           <div className="sub-section">
             <span className="mb-3 d-block fw-bold">Teaching</span>
@@ -182,8 +180,7 @@ function CifPage() {
       </div>
       <div className="application text-center d-flex flex-column align-items-center justify-content-center  mx-3 mx-md-0">
         <h3 className="mb-3">Application Process</h3>
-        <hr className="heading-hr" />
-        <div className="container text-center w-50">
+        <div className="container text-center w-50 mb-3">
           <div className="row my-2 d-flex flex-column flex-md-row align-items-center justify-content-around">
             <div className="d-flex fw-600 align-items-center mb-3  justify-content-center">
               <img src={form} alt="" className="mr-0.5" />
@@ -205,12 +202,12 @@ function CifPage() {
             </div>
           </div>
         </div>
-        <span className="w-40 mb-3 section-para">
+        <span className="w-40 mb-3 section-para mt-3">
           Are you ready to nurture programming skills in the next generation of
           India’s youth with your expertise
         </span>
         <button
-          className="btn btn-primary text-white mb-1 py-2 px-8 regular-btn fw-bold"
+          className="btn btn-primary text-white mb-1 py-2 px-8 regular-btn fw-bold mt-3"
           onClick={(e) => {
             e.preventDefault();
             window.open(
@@ -224,7 +221,6 @@ function CifPage() {
       </div>
       <div className="questions text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Have Questions?</h3>
-        <hr className="heading-hr" />
         <p>Connect with us anytime for more information</p>
         <div className="contact row flex-column flex-sm-row w-40 my-2 fw-600 text-primary">
           <div className="email col text-decoration-none">

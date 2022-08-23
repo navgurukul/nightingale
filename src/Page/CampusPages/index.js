@@ -42,9 +42,8 @@ function CampusPages() {
   return (
     <div className="campus-page d-flex flex-column justify-content-center">
       <div className="campus-description mb-3 d-flex flex-column justify-content-center align-items-center">
-        <h3 className="mb-3 mt-5">Our Campuses</h3>
-        <hr className="heading-hr mt-0" />
-        <div className="container d-flex justify-content-center align-items-center mt-2">
+        <h3 className="mb-3 mt-4">Our Campuses</h3>
+        <div className="container d-flex justify-content-center align-items-center mt-3">
           <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3">
             <span
               className="campus-btn"
@@ -163,11 +162,11 @@ function CampusPages() {
           </div>
         )}
       </div>
-      <div className="container">
+      {/* <div className="container">
         <hr className="campus-dividerLine" />
-      </div>
+      </div> */}
       {data && data[campus] && (
-        <div className="campus-gallary mt-3 pb-3 mb-5">
+        <div className="campus-gallary mt-3 pb-3 mb-3">
           <div className="container">
             <div className="row pb-3">
               {isLoading ? (

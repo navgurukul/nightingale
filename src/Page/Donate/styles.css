@@ -11,10 +11,10 @@
   border-top: 2px solid #cdcdcd;
 }
 .donate-page-section {
-  margin-bottom: 64px;
+  margin-bottom: 32px;
 }
 .donate-page-image-section {
-  margin: 40px 0;
+  margin: 32px 0;
   background-image: url("./assets/bg.png");
   height: 800px;
   width: 100%;
@@ -80,7 +80,7 @@
   font-weight: 400;
   color: #818181;
   line-height: 20px;
-  margin-top: 30px;
+  margin-top: 32px;
   width: 300px;
 }
 
