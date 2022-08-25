@@ -26,7 +26,7 @@
 .number {
   
   font-weight: 600;
-  color: red;
+  
 }
 @media screen and (max-width: 667px) {
   .underliner {
