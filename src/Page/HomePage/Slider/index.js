@@ -82,7 +82,7 @@ function Slider() {
   return (
     <div className="media-slider slider ">
       <>
-        <div className="navigation-wrapper">
+        <div className="navigation-wrapper ">
           <div ref={sliderRef} className="keen-slider">
             {Object.keys(media).map((item) => {
               return (

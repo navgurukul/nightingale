@@ -50,11 +50,11 @@ function Home() {
         </div>
       
       
-      <section className="media-scroll-section py-5 d-flex flex-column justify-content-center">
-        <h3 className="align-self-center media-font mar-3">In the <span className="BackColor">Media</span></h3>
+      <section className="media-scroll-section   d-flex flex-column justify-content-center">
+        <h3 className="align-self-center media-font ">In the <span className="BackColor">Media</span></h3>
         <Slider />
       </section>
-      <section className="mar-3 d-flex flex-column align-items-center our-initiatives">
+      <section className=" d-flex flex-column align-items-center our-initiatives">
         <h3 className="text-center media-font " >Our <span className="BackColor">Initiatives</span></h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container mar-3">
