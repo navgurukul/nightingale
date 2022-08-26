@@ -23,6 +23,11 @@
 .mou-pdf:hover {
   text-decoration: underline;
 }
+.number {
+  
+  font-weight: 600;
+  
+}
 @media screen and (max-width: 667px) {
   .underliner {
     margin-left: 150px;
