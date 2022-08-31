@@ -33,7 +33,7 @@ function CifPage() {
       <div className="cif text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">What’s Code India Fellowship</h3>
       
-        <div className="container w-50 ">
+        <div className="container w-50 mt-3">
           <p className="text-start">
             We are proud to announce the Code India Fellowship, an incredible
             opportunity for the most passionate individuals of our country to
@@ -61,7 +61,7 @@ function CifPage() {
       <div className="offer text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">What We Offer</h3>
        
-        <div className="container w-50 text-start">
+        <div className="container w-50 text-start mt-3">
           <div className="row m-1 d-flex ">
             <div className="col-sm-6 px-4 mb-3 position-relative">
               <span className="fw-bold">Stipend: </span>INR 25,000 per month
@@ -94,7 +94,7 @@ function CifPage() {
       </div>
       <div className="looking text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Who We Are Looking For</h3>
-        <div className="container f-Nuni text-start mb-1 w-50">
+        <div className="container f-Nuni text-start mb-1 w-50 mt-3">
           <div className="row m-1 d-flex">
             <div className="col-sm-6 px-4 mb-3 position-relative">
               People motivated to bring a positive change in the lives of
@@ -118,7 +118,7 @@ function CifPage() {
       </div>
       <div className="description text-center d-flex flex-column align-items-center justify-content-center ">
         <h3 className="mb-3">Role Description </h3>
-        <div className="container text-start mb-1 w-50">
+        <div className="container text-start mb-1 w-50 mt-3">
           <div className="sub-section">
             <span className="mb-3 d-block fw-bold">Teaching</span>
             <ul className="ml-3 pl-2 pl-md-3">
@@ -180,7 +180,7 @@ function CifPage() {
       </div>
       <div className="application text-center d-flex flex-column align-items-center justify-content-center  mx-3 mx-md-0">
         <h3 className="mb-3">Application Process</h3>
-        <div className="container text-center w-50 mb-3">
+        <div className="container text-center w-50 mb-3 mt-3">
           <div className="row my-2 d-flex flex-column flex-md-row align-items-center justify-content-around">
             <div className="d-flex fw-600 align-items-center mb-3  justify-content-center">
               <img src={form} alt="" className="mr-0.5" />

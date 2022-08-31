@@ -35,7 +35,7 @@ function Home() {
           <div className="col-md-1"></div>
           <div class="col-md-3 head-div ">
             <h2 className=" heading-line ">
-              The <span className="text-primary">Gurukul</span> for the <br/><span className="BackColor"> New Age India</span> and its New Generation{" "}
+              The <span className="text-primary">Gurukul</span> for the <br/><span className="BgColor"> New Age India</span> and its New Generation{" "}
               </h2>{" "}
               <p  className="font para-line">
               We are a non-profit dedicated to bring affordable tech
@@ -163,12 +163,12 @@ function Home() {
         <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
 
-      <section className="our-partners text-center  d-flex flex-column mar-3">
+      <section className="our-partners text-center  d-flex flex-column ">
         <h3 className="align-self-center ">Our <span className="BackColor">Partners</span></h3>
         {/* <hr className="align-self-center heading-hr" /> */}
         <PartnerSlider />
 
-        <div class="d-flex flex-column align-items-center justify-content-center align-items-center ">
+        <div class="d-flex flex-column align-items-center justify-content-center align-items-center mar-3">
           <h4 className=" "> Bring a change! </h4>
           <button
             class="btn regular-btn our-partner-btn section-para text-white  "

@@ -7,7 +7,7 @@ function Donate() {
     <main className="donate-page d-flex flex-column justify-content-center align-items-center">
       <div className="page-content d-flex flex-column justify-content-center align-items-center">
         <section className="container donate-page-section mt-4 d-flex flex-column align-items-center">
-          <h3 className="section-head mt-5 mb-3">Donate to NavGurukul</h3>
+          <h3 className="section-head mt-4 mb-3">Donate to NavGurukul</h3>
          
           <div className="d-flex account-details justify-content-center align-items-center">
             <div className="d-flex flex-column text-left fw-bold">

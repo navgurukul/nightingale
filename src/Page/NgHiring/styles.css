@@ -35,6 +35,7 @@
 }
 .hiring-page-card-container .card {
   padding-block: 30px;
+  
 }
 .hiring-page-card-container:hover .card-details {
   opacity: 0.5;
