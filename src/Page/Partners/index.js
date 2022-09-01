@@ -17,7 +17,7 @@ function Partners() {
   const [partners, setPartners] = useState([]);
   return (
     <div className="partners d-flex flex-column justify-content-center w-100">
-      <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100 mt-4">
+      <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100">
         <h3 className="mt-2 section-head mb-3">Partner Highlights</h3>
         
 
@@ -85,7 +85,7 @@ function Partners() {
         </div>
       </div>
 
-      <div className="container partners-support-section d-flex flex-column w-100 align-items-center mb-3  justify-content-center">
+      <div className="container  partners-support-section  d-flex flex-column w-100 align-items-center justify-content-center">
         <h4 className="mt-2   text-center">
           Have you taken an interest in what we do and want to support us?
         </h4>

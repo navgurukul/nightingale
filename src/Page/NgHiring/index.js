@@ -102,8 +102,8 @@ function NgHiring() {
             </p>
           </div>
         </section>
-        <section className="hiring-page-section mb-3 d-flex flex-column">
-          <h3 className="hiring-section-title section-head mt-3 mb-3">
+        <section className="hiring-page-section mb-4 d-flex flex-column mt-5">
+          <h3 className="hiring-section-title section-head  mb-3">
             Meet Our Recent Graduates
           </h3>
           <div className="container hiring-page-card-container px-0 d-flex mt-3">
