@@ -2,6 +2,7 @@
   /* padding: 0 200px; */
   display: flex;
 }
+
 .partition-carousal-content {
   display: flex;
   flex-direction: column;
@@ -10,14 +11,28 @@
   /* padding-inline: 60px;
   padding-right: 40px; */
   text-align: center;
+  
 }
-
+.partition-carousal-content-name{
+  text-align: left;
+  justify-items: left;
+  
+}
 .partition-carousal-content-img {
-  height: 64px;
-  width: 64px;
-}
+  height: 100px;
+  width: 90px;
+  margin-top: 30px;
+  object-fit: scale-down;
+
+} 
 .partners-carousal-arrow--left {
   left: -5%;
+}
+
+
+.Card-dotted{
+  background-color:rgb(253, 243, 240) ;
+  border-radius: 40px;
 }
 
 .partners-carousal-arrow--right {
@@ -25,7 +40,9 @@
   right: -5%;
 }
 .partition-carousal-content span {
-  color: #818181;
+
+  padding: 5px;
+  font-size: 20px;
 }
 @media screen and (max-width: 1000px) {
   .partner-slider .carousal-content {
@@ -44,7 +61,7 @@
 }
 @media screen and (max-width: 500px) {
   .media-slider p {
-    font-family: Luistana;
+    font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     line-height: 20px;
   }

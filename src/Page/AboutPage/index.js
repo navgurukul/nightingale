@@ -8,8 +8,8 @@ function AboutPage() {
       <div className="page-content">
         <section className="page-section d-flex flex-column mb-0">
           <h3 className="section-head mb-3">Our Story</h3>
-          <hr className="heading-hr mb-3 align-self-center" />
-          <div>
+          
+          <div className="mt-3">
             <img src="https://nightingale1.s3.ap-south-1.amazonaws.com/images/section-bg.png" className="backgroundImg" />
           </div>
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
@@ -60,9 +60,8 @@ function AboutPage() {
             </p>
           </div>
         </section>
-        <section className="page-section d-flex flex-column mt-0">
-          <h3 className="section-head mb-3">Vision</h3>
-          <hr className="heading-hr mb-3 align-self-center" />
+        <section className="page-section d-flex flex-column ">
+          <h3 className="section-head mb-3 ">Vision</h3>
           <div className="about-content d-flex flex-column justify-content-center mb-0 align-items-center">
             <p className="w-50 section-para mb-0">
               We envision a world where everyone has access to an affordable
@@ -71,9 +70,8 @@ function AboutPage() {
             </p>
           </div>
         </section>
-        <section className="page-section d-flex flex-column mt-0">
+        <section className="page-section d-flex flex-column ">
           <h3 className="section-head mb-3">Our Values</h3>
-          <hr className="heading-hr mb-3 align-self-center" />
           <div className="about-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 section-para mb-0">
               In order to follow through on our commitments, achieve our

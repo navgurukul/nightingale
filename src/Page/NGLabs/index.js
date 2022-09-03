@@ -47,7 +47,7 @@ function NgLabs() {
       </div>
       <div className="projects d-flex flex-column justify-content-center align-items-center">
         <h3 className="mb-3">Active Projects</h3>
-        <hr className="heading-hr" />
+       
         <div className="container px-0 w-100">
           <div className="row">
             {Object.keys(projects).length ? (
@@ -55,7 +55,7 @@ function NgLabs() {
                 if (projects[item].Status === "Active") {
                   // console.log(projects[item]);
                   return (
-                    <div className="col-md-3 px-0 d-flex justify-content-center">
+                    <div className="col-md-3 px-0 d-flex justify-content-center mt-3">
                       <div
                         className="card w-100"
                         onClick={(e) => {
@@ -72,7 +72,7 @@ function NgLabs() {
                             )}
                           />
                         </div>
-                        <hr className="card_partion_line" />
+                        
                         <div className="p-3">
                           <p className="fw-bold mb-2">
                             {projects[item].Workstream}

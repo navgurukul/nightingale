@@ -66,9 +66,9 @@ function NgHiring() {
   return (
     <main className="ng-hiring-page">
       <div className="page-content">
-        <section className="container hiring-page-section d-flex flex-column w-100 mb-6">
+        <section className="container hiring-page-section d-flex flex-column w-100 mb-3">
           <h3 className="section-head mt-3 mt-md-5 mb-3">Hire from Us</h3>
-          <hr className="heading-hr align-self-center mb-3" />
+         
           <div className="mt-3">
             <img src={backgroundImg} className="backgroundImg" />
           </div>
@@ -102,12 +102,11 @@ function NgHiring() {
             </p>
           </div>
         </section>
-        <section className="hiring-page-section mb-5 d-flex flex-column">
-          <h3 className="hiring-section-title section-head mt-3 mb-3">
+        <section className="hiring-page-section mb-4 d-flex flex-column mt-5">
+          <h3 className="hiring-section-title section-head  mb-3">
             Meet Our Recent Graduates
           </h3>
-          <hr className="heading-hr align-self-center mb-3" />
-          <div className="container hiring-page-card-container px-0 d-flex">
+          <div className="container hiring-page-card-container px-0 d-flex mt-3">
             {Object.keys(shuffleObject(team)).length ? (
               Object.keys(shuffleObject(team)).map((item) => {
                 {if (
@@ -123,14 +122,14 @@ function NgHiring() {
                       interactive="true"
                       duration={[500, 0]}
                       placement={
-                        window.screen.availWidth < 650 ? "bottom" : "right"
+                        window.screen.availWidth < 650 ? "bottom " : "right"
                       }
                       content={
                         <Popup
                           Name={team[item].Name || "Awaiting Member's Name"}
                           Content={
                             (team[item].Content.length && team[item].Content) ||
-                            "Awaiting content from team member"
+                            " Awaiting content from team member "
                           }
                           linkedin={team[item].LinkedIn}
                           twitter={team[item].Twitter}

@@ -1,16 +1,17 @@
 [class^="number-slide"],
 [class*=" number-slide"] {
   background: transparent;
-  display: flex;
+  /* display: flex; */
+ 
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   color: black;
   font-weight: 500;
   min-height: 200px;
   max-height: 100vh;
 }
 .media-slider p {
-  font-family: Luistana !important;
+  font-family: Roboto, sans-serif !important;
   font-size: 1.5rem;
 }
 .media-slider a:hover {
@@ -21,16 +22,21 @@
   background-color: transparent;
 }
 .carousal-content {
-  padding: 30px 5%;
+  padding-left: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 50px;
+  margin-top: 0px;
+  padding-top: 55px;
+  
 }
 .navigation-wrapper p {
   /* width: 100%; */
-  font-weight: 300;
-  padding: 0 30px;
-  font-family: Lusitana;
+  /* font-weight: 300; */
+  font-style: Light;
+  /* padding: 0 20px; */
+  font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 32px;
@@ -38,30 +44,42 @@
 }
 .carousal-image-container {
   height: 100%;
-  display: flex;
-  align-items: center;
-  width: 185px;
-  padding: 3px;
+  /* display: flex; */
+  /* margin-left: 100px;
+  margin-right: 50px; */
+  width: 280px;
+  object-fit: contain;
+  padding: 10px;
   border-radius: 50%;
 }
+
 .carousal-img {
   height: 100%;
   width: 182px;
+
 }
 
 .dots {
   display: flex;
-  padding: 10px 0;
+  padding: 32px 0 0 0;
   justify-content: center;
-}
+} 
 
+.backgrey {
+  background-color:#F5F5F5;
+}
+.descrip{
+  margin: auto;
+  padding-top: 20px;
+  text-align: left;
+}
 .dot {
   border: none;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #c5c5c5;
-  margin: 0 5px;
+  margin: 0 8px;
   padding: 2px;
   cursor: pointer;
 }
@@ -86,12 +104,13 @@
 }
 
 .arrow--left {
-  left: -5px;
+  /* left: 0px; */
+  right: 95%;
 }
 
 .arrow--right {
-  left: auto;
-  right: 0px;
+  left: 96%;
+  right: -8px;
 }
 
 .arrow--disabled {
@@ -107,6 +126,9 @@
   .arrow--right {
     left: auto;
     right: 0px;
+  }
+  .carousal-image-container {
+    margin: 0;
   }
 }
 @media screen and (max-width: 900px) {
@@ -128,7 +150,7 @@
     flex-direction: column;
   }
   .arrow--left {
-    left: 10px;
+    left: -19px;
   }
   .arrow--right {
     left: auto;

@@ -1,15 +1,90 @@
 .hero-P {
-  min-height: 350px;
+  margin-top: 9%;
+  
 }
 .programmers a:hover {
   text-decoration: none;
 }
+.points-p {
+  padding: 32px;
+}
+.news-program{
+  background-color: #ef7a5aff;
+  height: 100%;
+  width: 100%;
+
+}
+.new_programme,
+.new_programe_skills,
+.our_campus
+{
+  margin-top: 40px;
+}
+.program-img-1{
+  height: 350px;
+  width: 100%;
+  border-radius: 20px;
+}
+.font-italic{
+  font-style: Italic;
+  font-weight:normal;
+  font-size:23px;
+  
+}
+.program-phase_col p{
+  margin-inline-end:44px;
+  height:90px
+}
+.Image_new_program{
+  position: relative;
+}
+.hover_video{
+  box-sizing: border-box;
+  width: 95.40%;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0px;
+  top: 0px; 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+  padding-top: 200px;
+}
+.Image_new_program:hover .hover_video{
+  visibility: visible;
+  opacity: 1;
+}
+ 
+
+.program-img-1:hover .hover_video {
+  visibility: visible; opacity: 1;
+}
+
+/* .li-points{
+  position: relative;
+  left: 32px
+} */
+.program-phase_col{
+  border: 2px dashed var(--primary);
+  border-radius: 20px;
+  max-width: 338px;
+  cursor: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.programme_phases {
+  margin: 40px;
+}
+
 .phases_card_container .card {
   background: #ffffff;
   box-shadow: 0px 1px 2px rgba(46, 46, 46, 0.06),
     0px 2px 1px rgba(46, 46, 46, 0.04), 0px 1px 5px rgba(46, 46, 46, 0.08) !important;
   border-radius: 8px;
-  max-width: 335px;
+  max-width: 435px;
   cursor: auto;
 }
 .phases_card_container .card:hover {
@@ -43,7 +118,9 @@ video {
   border-radius: 20px;
 }
 .row {
-  margin-left: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  
 }
 .programmers-main-video {
   min-height: 255px !important;
@@ -52,15 +129,16 @@ video {
   height: 282px;
 }
 .programmers .next-step {
-  margin-bottom: 5rem;
+  margin-bottom: 2.8rem;
   /* in design 188px */
 }
+
 .next-step .btn {
   max-width: 352px;
 }
 .new_programme_skills ul,
 .our_campus ul {
-  list-style: none;
+ 
   padding-left: 1rem;
 }
 .new_programme_skills ul li,
@@ -93,13 +171,16 @@ video {
   left: -6%;
   top: 5%;
 }
+
+
 .new_programme,
 .new_programme_skills,
 .programme_phases,
 .our_campus,
 .programme_admissions {
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
+
 
 .students .container p {
   width: 80%;
@@ -107,7 +188,16 @@ video {
 .students .video-container {
   height: fit-content;
 }
+.heading-line-1 {
+  margin-top: 7rem;
+}
 @media screen and (max-width: 1200px) {
+  .hero-P {
+    margin-top: 100px;
+    margin-bottom: 10px;
+
+    
+  }
   .programmers .container {
     width: 100%;
   }
@@ -139,10 +229,10 @@ video {
   }
 }
 @media screen and (max-width: 1000px) {
-  .hero-P .row {
-    display: flex;
-    flex-direction: column-reverse !important;
+  .hero-P  {
+    margin-top: 4px;
   }
+
   .left-P {
     display: flex;
     flex-direction: column;
@@ -177,6 +267,12 @@ video {
   .left-P h2 {
     padding-inline: 0.5em !important;
   }
+  .li-points{
+    left: 0px;
+  }
+  .heading-line-1 {
+    margin-top: 40px;
+  }
 
   .programmers .section-head {
     font-size: 1.3rem !important;
@@ -192,8 +288,9 @@ video {
     margin-top: 2.5rem !important;
   } */
   .hero-P {
-    padding: 0 !important;
+    padding: 14px;
     width: 95% !important;
+    margin-top: 40px;
   }
   .hero-P h3 {
     margin-left: 1rem;
@@ -228,10 +325,16 @@ video {
   .phases_card_container {
     justify-content: center !important;
     align-items: center;
+    
+  }
+  .program-phase_col {
+    max-width: 350px;
+    margin: 16px;
   }
   .our_campus ul {
     padding-left: 2rem;
   }
+
 }
 @media screen and (max-width: 430px) {
   .hero-P video {

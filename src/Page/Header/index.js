@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 // import JobCourse from "../JobCourse";
 import { FiExternalLink } from "react-icons/fi";
+import {BiChevronDown} from 'react-icons/bi'
 import "./styles.css";
 import externalLink from "./assets/external-link.png";
-
+import {BiChevronsDown} from "react-icons/bi"
 function Header() {
   const [toggle, setToggle] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
 
+  console.log(showDropdown)
   return (
     <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
       <a class="navbar-brand" href="/">
@@ -17,7 +20,7 @@ function Header() {
       </a>
 
       <button
-        class="navbar-toggler"
+        class="navbar-toggler hover"
         type="button"
         data-toggle="collapse"
         data-target="#navbar-list-2"
@@ -30,24 +33,39 @@ function Header() {
 
       <div class="collapse navbar-collapse" id="navbar-list-2">
         <ul className="navbar-nav mr-auto nav-font-color">
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown "
+          onMouseOver={()=>setShowDropdown(true)}
+          onMouseOut={()=>
+            
+            setShowDropdown(false)}
+          
+          >
             <a
-              className="nav-link dropdown-toggle header-title"
+              className="nav-link header-title"
               href="#"
               id="navbarDropdown"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
+              
+              
             >
               Our Initiatives
+              <BiChevronDown />
+              
             </a>
+            
             <div
               className="dropdown-menu dropdown-items"
-              aria-labelledby="navbarDropdown"
+              aria-labelledby="navbarDropdown" 
+             show={showDropdown}
+              
             >
+              
               <a className="dropdown-item" href="/job-course">
                 Guaranteed Job Courses
+                
               </a>
               <a
                 className="dropdown-item"
@@ -66,9 +84,11 @@ function Header() {
           </li>
         </ul>
         <ul className="navbar-nav nav-font-color">
-          <li className="nav-item dropdown">
+          <li className="nav-item dropdown"
+            
+          >
             <a
-              className="nav-link dropdown-toggle header-title mr-3"
+              className="nav-link  header-title mr-3"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -77,7 +97,10 @@ function Header() {
               aria-expanded="false"
             >
               About
+              <BiChevronDown />
+
             </a>
+           
             <div
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
@@ -105,8 +128,19 @@ function Header() {
             </a>
           </li>
           <li className="nav-item dropdown">
+            {/* <a
+              className="nav-link
+               dropdown-toggle
+                header-title mr-3"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              // data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            > */}
             <a
-              className="nav-link dropdown-toggle header-title mr-3"
+              className="nav-link header-title mr-3"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -115,6 +149,8 @@ function Header() {
               aria-expanded="false"
             >
               Get Involved
+              <BiChevronDown />
+
             </a>
             <div
               className="dropdown-menu dropdown-items"
@@ -131,8 +167,8 @@ function Header() {
                 href="https://recruiterflow.com/navgurukul/jobs"
                 target="_blank"
               >
-                Careers
-                <FiExternalLink className="ml-2" />
+                Careers<FiExternalLink className="ml-2" />
+                
               </a>
               <a
                 className="dropdown-item"
@@ -146,7 +182,7 @@ function Header() {
 
           <li className="nav-item">
             <a className="nav-link header-title mr-3" href="/donate">
-              Donate
+              Donate 
             </a>
           </li>
           <li className="nav-item">

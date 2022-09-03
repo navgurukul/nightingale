@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #fcdfd9;
+  background-color: #facdba;
   width: 100%;
   height: 100%;
   font-size: 14px;
@@ -210,4 +210,9 @@ svg rect {
   .ng-logo {
     padding: 0;
   }
+}
+.nav-footer li a:hover, .policy a
+:hover{
+  color: var(--primary);
+  text-decoration: none;
 }

@@ -80,16 +80,17 @@ function Slider() {
   // const [partitionSlider, ]
   if (!Object.keys(media).length) return <></>;
   return (
-    <div className="media-slider slider">
+    <div className="media-slider slider ">
       <>
-        <div className="navigation-wrapper">
+        <div className="navigation-wrapper ">
           <div ref={sliderRef} className="keen-slider">
             {Object.keys(media).map((item) => {
               return (
                 <a href={media[item].Website} target="_blank">
-                  <div className="keen-slider__slide number-slide">
-                    <div className="carousal-content">
-                      <div className="carousal-image-container">
+                  <div className="keen-slider__slide number-slide ">
+                    <div className="carousal-content row mb-3">
+
+                      <div className="carousal-image-container col-sm-2">
                         <img
                           className="carousal-img"
                           src={media[item].Logo}
@@ -99,7 +100,11 @@ function Slider() {
                           )}
                         />
                       </div>
-                      <p>{media[item].Description}</p>
+                     <div className="col-sm-1"></div>
+                      <div className="col-sm-5">
+                      <p className="font">{media[item].Description}</p>
+                      </div>
+                      
                     </div>
                   </div>
                 </a>
@@ -148,24 +153,28 @@ function Slider() {
               </div>
             </div> */}
           </div>
+          
           {loaded && instanceRef.current && (
             <>
               <Arrow
-                left
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.prev()
-                }
-                disabled={currentSlide === 0}
+              left
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+              disabled={
+                currentSlide ===
+                instanceRef.current.track.details.slides.length - 1
+              }
+               
               />
 
               <Arrow
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.next()
-                }
-                disabled={
-                  currentSlide ===
-                  instanceRef.current.track.details.slides.length - 1
-                }
+              right
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
+              disabled={currentSlide === 0}
+               
               />
             </>
           )}
