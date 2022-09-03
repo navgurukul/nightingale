@@ -8,6 +8,7 @@ import {BiChevronsDown} from "react-icons/bi"
 function Header() {
   const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
+
   console.log(showDropdown)
   return (
     <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
@@ -33,8 +34,8 @@ function Header() {
       <div class="collapse navbar-collapse" id="navbar-list-2">
         <ul className="navbar-nav mr-auto nav-font-color">
           <li className="nav-item dropdown "
-          onMouseEnter={()=>setShowDropdown(true)}
-          onMouseLeave={()=>
+          onMouseOver={()=>setShowDropdown(true)}
+          onMouseOut={()=>
             
             setShowDropdown(false)}
           
