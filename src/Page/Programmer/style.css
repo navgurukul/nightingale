@@ -188,6 +188,9 @@ video {
 .students .video-container {
   height: fit-content;
 }
+.heading-line-1 {
+  margin-top: 7rem;
+}
 @media screen and (max-width: 1200px) {
   .hero-P {
     margin-top: 100px;
@@ -227,7 +230,7 @@ video {
 }
 @media screen and (max-width: 1000px) {
   .hero-P  {
-    margin-top: 0px;
+    margin-top: 4px;
   }
 
   .left-P {
@@ -267,6 +270,9 @@ video {
   .li-points{
     left: 0px;
   }
+  .heading-line-1 {
+    margin-top: 40px;
+  }
 
   .programmers .section-head {
     font-size: 1.3rem !important;
@@ -284,6 +290,7 @@ video {
   .hero-P {
     padding: 14px;
     width: 95% !important;
+    margin-top: 40px;
   }
   .hero-P h3 {
     margin-left: 1rem;
@@ -327,6 +334,7 @@ video {
   .our_campus ul {
     padding-left: 2rem;
   }
+
 }
 @media screen and (max-width: 430px) {
   .hero-P video {
