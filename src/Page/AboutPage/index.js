@@ -32,12 +32,27 @@ function AboutPage() {
               </span>{" "}
               is issued by DGT, Government of India .
             </p>
-            <p className="w-50 mt-3  mb-0">
-              In last five years, more than 250 students from marginalised areas
-              have got jobs as Software Programs and have donated back more than
-              28 Lacs in donation. We have diversified to add School of Design
-              We have also started initiatives to conduct experiments for
-              popular products in a non-profit space.
+            <p className="w-50 mt-3 section-para mb-0">
+            In last five years, more than 450 students from marginalized areas
+             have got jobs as Software Programs and have donated back more than 
+             32 Lacs in donation. Together, these alumni are earning more than 16 
+             crores a year are now instead tax-payers and job-creators. More than 
+             1000 students are currently learning in residential centers across 
+             Bangalore, Pune, Delhi, Tripura, Amravati and Dharamsala.
+
+
+            </p>
+            <p className="w-50 mt-3 section-para mb-0">
+            We have also started courses across different disciplines outside our 
+            flagship course on Software Programming. Few of the other courses launched 
+            are - School of Design, School of Media, School of Finance and School of Management.
+             All of these are residential year-long courses with guaranteed jobs.
+            </p>
+
+            <p className="w-50 mt-3 section-para mb-0">
+            25,000+ students have been taught basics of programming 
+            through our online application called Meraki - an app developed 
+            by NavGurukul alumni and volunteers.
             </p>
           </div>
         </section>
