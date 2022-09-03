@@ -47,7 +47,7 @@ function Programmer() {
         <div className="container">
           <div className="row mar-3 ml-2">
            
-            <div className="col-md-5 mt-7 col-12" >
+            <div className="col-md-5  col-12 heading-line-1" >
               <h2 className="text-white heading-line">Listen to our students’ experiences at NavGurukul</h2>
 
             </div>
@@ -65,8 +65,8 @@ function Programmer() {
               <div className="hover_video fw-bold">Video coming Shortly </div>
             </div>
             
-            <div className="col-md-5 col-12">
-                <h2 className="text-white text-right mt-7 heading-line" >Watch more about NavGurukul and our programs</h2>
+            <div className="col-md-5 col-12 heading-line-1">
+                <h2 className="text-white text-right heading-line" >Watch more about NavGurukul and our programs</h2>
             </div>
 
           </div>
