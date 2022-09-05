@@ -103,7 +103,7 @@ function Programmer() {
              <li className="mb-3">
                <span className="li-points">
                Many of our current students are ones whose parents have humble
-               backgrounds and working as a huosehelp, auto-drivers etc.
+               backgrounds and working as a househelp, auto-drivers etc.
                </span>
                
              </li>
@@ -153,7 +153,7 @@ function Programmer() {
           <div className="row ">
             
             <div className="col-md-6 col-11">
-            <img src={require("./assets/developer.JPG").default } className="program-img-1 mr-3"/>
+            <img src={require("./assets/developer.jpg").default } className="program-img-1 mr-3"/>
             </div>
             
             <div className="col-md-6 mar-3 col-12">
