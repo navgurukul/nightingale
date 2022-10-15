@@ -125,6 +125,38 @@ function CampusPages() {
             >
               Dharamshala
             </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Delhi Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Delhi Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Delhi
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Amravati Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Amravati Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Amravati
+            </span>          
           </div>
         </div>
 
