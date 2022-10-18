@@ -44,7 +44,7 @@ function CampusPages() {
       <div className="campus-description mb-3 d-flex flex-column justify-content-center align-items-center">
         <h3 className="mb-3 mt-4">Our Campuses</h3>
         <div className="container d-flex justify-content-center align-items-center mt-3">
-          <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3">
+          <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3 scrolling-wrapper">
             <span
               className="campus-btn"
               name="campuses"
