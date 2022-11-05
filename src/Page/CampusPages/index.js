@@ -44,7 +44,7 @@ function CampusPages() {
       <div className="campus-description mb-3 d-flex flex-column justify-content-center align-items-center">
         <h3 className="mb-3 mt-4">Our Campuses</h3>
         <div className="container d-flex justify-content-center align-items-center mt-3">
-          <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3">
+          <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3 scrolling-wrapper">
             <span
               className="campus-btn"
               name="campuses"
@@ -125,6 +125,38 @@ function CampusPages() {
             >
               Dharamshala
             </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Delhi Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Delhi Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Delhi
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Amravati Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Amravati Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Amravati
+            </span>          
           </div>
         </div>
 
