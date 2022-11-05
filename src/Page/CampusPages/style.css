@@ -121,6 +121,9 @@ input[type="radio"]:checked {
     overflow-y:hidden ;
     overflow-x: auto ;   
   }
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+  }
   .campus-page .container {
     padding: 0 !important;
   }
@@ -147,5 +150,8 @@ input[type="radio"]:checked {
     padding-left: 140px;
     overflow-y:hidden ;
     overflow-x: auto ; 
+  }
+  .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
   }
 }
