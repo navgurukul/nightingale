@@ -88,7 +88,8 @@ function TeamPage() {
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
-                      "https://www.notion.so/navgurukul/NG-Job-Board-cc0fc74362214e4a8d31a061ad9559ba",
+                      "https://recruiterflow.com/navgurukul/jobs",
+                      // "https://www.notion.so/navgurukul/NG-Job-Board-cc0fc74362214e4a8d31a061ad9559ba",
                       "_blank"
                     );
                   }}
