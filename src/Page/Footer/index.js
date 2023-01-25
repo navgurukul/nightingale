@@ -51,7 +51,13 @@ function Footer() {
                   </a>
                 </li>
                 <li>
-                  <Link to="/cif">Code India Fellowships</Link>
+                  <a
+                    href="https://www.codeindiafellowship.org/"
+                    target="_blank"
+                    className="d-flex align-items-center"
+                  >
+                    Code India Fellowships <FiExternalLink className="ml-2" />
+                  </a>
                 </li>
                 <li>
                   <Link to="/nglabs">NG Labs</Link>

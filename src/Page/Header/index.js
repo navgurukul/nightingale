@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 // import JobCourse from "../JobCourse";
 import { FiExternalLink } from "react-icons/fi";
-import {BiChevronDown} from 'react-icons/bi'
+import { BiChevronDown } from "react-icons/bi";
 import "./styles.css";
 import externalLink from "./assets/external-link.png";
-import {BiChevronsDown} from "react-icons/bi"
+import { BiChevronsDown } from "react-icons/bi";
 function Header() {
   const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
 
-  console.log(showDropdown)
+  console.log(showDropdown);
   return (
     <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
       <a class="navbar-brand" href="/">
@@ -33,12 +33,10 @@ function Header() {
 
       <div class="collapse navbar-collapse" id="navbar-list-2">
         <ul className="navbar-nav mr-auto nav-font-color">
-          <li className="nav-item dropdown "
-          onMouseOver={()=>setShowDropdown(true)}
-          onMouseOut={()=>
-            
-            setShowDropdown(false)}
-          
+          <li
+            className="nav-item dropdown "
+            onMouseOver={() => setShowDropdown(true)}
+            onMouseOut={() => setShowDropdown(false)}
           >
             <a
               className="nav-link header-title"
@@ -48,24 +46,18 @@ function Header() {
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              
-              
             >
               Our Initiatives
               <BiChevronDown />
-              
             </a>
-            
+
             <div
               className="dropdown-menu dropdown-items"
-              aria-labelledby="navbarDropdown" 
-             show={showDropdown}
-              
+              aria-labelledby="navbarDropdown"
+              show={showDropdown}
             >
-              
               <a className="dropdown-item" href="/job-course">
                 Guaranteed Job Courses
-                
               </a>
               <a
                 className="dropdown-item"
@@ -74,8 +66,12 @@ function Header() {
               >
                 Learn Online with Meraki <FiExternalLink className="ml-2" />
               </a>
-              <a className="dropdown-item" href="/cif">
-                Code India Fellowships
+              <a
+                className="dropdown-item"
+                href="https://www.codeindiafellowship.org/"
+                target="_blank"
+              >
+                Code India Fellowships <FiExternalLink className="ml-2" />
               </a>
               <a className="dropdown-item" href="/nglabs">
                 NG Labs
@@ -84,9 +80,7 @@ function Header() {
           </li>
         </ul>
         <ul className="navbar-nav nav-font-color">
-          <li className="nav-item dropdown"
-            
-          >
+          <li className="nav-item dropdown">
             <a
               className="nav-link  header-title mr-3"
               href="#"
@@ -98,9 +92,8 @@ function Header() {
             >
               About
               <BiChevronDown />
-
             </a>
-           
+
             <div
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
@@ -150,7 +143,6 @@ function Header() {
             >
               Get Involved
               <BiChevronDown />
-
             </a>
             <div
               className="dropdown-menu dropdown-items"
@@ -167,8 +159,8 @@ function Header() {
                 href="https://recruiterflow.com/navgurukul/jobs"
                 target="_blank"
               >
-                Careers<FiExternalLink className="ml-2" />
-                
+                Careers
+                <FiExternalLink className="ml-2" />
               </a>
               <a
                 className="dropdown-item"
@@ -182,7 +174,7 @@ function Header() {
 
           <li className="nav-item">
             <a className="nav-link header-title mr-3" href="/donate">
-              Donate 
+              Donate
             </a>
           </li>
           <li className="nav-item">

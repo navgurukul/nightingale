@@ -6,7 +6,7 @@ import PartnerSlider from "./PartnerSlider";
 import SupporterSlider from "./SupporterSlider";
 import { FiExternalLink } from "react-icons/fi";
 
-import { Col, Container,Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Home() {
   const history = useHistory();
@@ -30,32 +30,40 @@ function Home() {
             </div>
           </div>
         </div> */}
-       <div  className="">
+      <div className="">
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md-3 head-div ">
             <h2 className=" heading-line ">
-              The <span className="text-primary">Gurukul</span> for the <br/><span className="BgColor"> New Age India</span> and its New Generation{" "}
-              </h2>{" "}
-              <p  className="font para-line">
-              We are a non-profit dedicated to bring affordable tech
-                    education to underprivileged girls in India.{" "}
-              </p>
+              The <span className="text-primary">Gurukul</span> for the <br />
+              <span className="BgColor"> New Age India</span> and its New
+              Generation{" "}
+            </h2>{" "}
+            <p className="font para-line">
+              We are a non-profit dedicated to bring affordable tech education
+              to underprivileged girls in India.{" "}
+            </p>
           </div>
           <div className="col-md-1"></div>
           <div class="col-md ">
-          <img src={require("./assets/student.jpg").default} className="home-image"/>
+            <img
+              src={require("./assets/student.jpg").default}
+              className="home-image"
+            />
           </div>
         </div>
-        </div>
-      
-      
+      </div>
+
       <section className="media-scroll-section   d-flex flex-column justify-content-center">
-        <h3 className="align-self-center media-font ">In the <span className="BackColor">Media</span></h3>
+        <h3 className="align-self-center media-font ">
+          In the <span className="BackColor">Media</span>
+        </h3>
         <Slider />
       </section>
       <section className=" d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center media-font " >Our <span className="BackColor">Initiatives</span></h3>
+        <h3 className="text-center media-font ">
+          Our <span className="BackColor">Initiatives</span>
+        </h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container mar-3">
           <div class="row">
@@ -65,13 +73,13 @@ function Home() {
                   <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white  "
-                      title= "Guaranteed Job Courses">
-                      < h4 class="card-title mb-1   card-main-text  card-heading ">
+                      title="Guaranteed Job Courses"
+                    >
+                      <h4 class="card-title mb-1   card-main-text  card-heading ">
                         <span className="BackColor">
-                        {" "}
-                        Guaranteed Job Courses {" "}
+                          {" "}
+                          Guaranteed Job Courses{" "}
                         </span>
-                        
                       </h4>
                       <p class="card-text section-para   card-dic ">
                         Fully-funded courses in software engineering and design
@@ -92,8 +100,9 @@ function Home() {
                         title="Learn Online with Meraki"
                       >
                         <h4 class="card-title mb-1  card-main-text text-center card-heading ">
-                          
-                          <span className="BackColor">Learn Online with Meraki{" "} </span>
+                          <span className="BackColor">
+                            Learn Online with Meraki{" "}
+                          </span>
                         </h4>
                         {/* <FiExternalLink className="ml-3 external-link-icon" /> */}
                       </div>
@@ -112,16 +121,16 @@ function Home() {
           <div class="row">
             <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
               <div class="bg-image3 initiative-card card shadow-1-strong">
-                <Link to="/cif">
+                <a href="https://www.codeindiafellowship.org/" target="_blank">
                   <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white"
                       title="Code India Fellowships"
                     >
                       <h4 class="card-title mb-1   card-main-text card-heading">
-                        {" "}
-                        <span className="BackColor"> Code India Fellowships</span>
-                        
+                        <span className="BackColor">
+                          Code India Fellowships
+                        </span>
                       </h4>
                       <p class="card-text section-para  card-dic">
                         Nurture programming skills in the next generation of
@@ -129,7 +138,7 @@ function Home() {
                       </p>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -164,7 +173,9 @@ function Home() {
       </section>
 
       <section className="our-partners text-center  d-flex flex-column ">
-        <h3 className="align-self-center ">Our <span className="BackColor">Partners</span></h3>
+        <h3 className="align-self-center ">
+          Our <span className="BackColor">Partners</span>
+        </h3>
         {/* <hr className="align-self-center heading-hr" /> */}
         <PartnerSlider />
 
@@ -184,7 +195,9 @@ function Home() {
       </section>
 
       <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
-        <h3 >Our <span className="BackColor">Supporters</span></h3>
+        <h3>
+          Our <span className="BackColor">Supporters</span>
+        </h3>
         {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />
