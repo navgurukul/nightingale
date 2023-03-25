@@ -32,7 +32,6 @@ function Programmer() {
               Navgurukul One-Year Graphic Design Course
             </h3>
             <div className="input d-flex flex-column justify-content-center align-items-start text-left p-1 w-90">
-              
               <p className="my-2">
                 Study in an immersive environment at one of our campuses in
                 Pune, Bengaluru or Dharamshala (for boys) with peer learning and
@@ -50,7 +49,7 @@ function Programmer() {
                   window.open("https://admissions.navgurukul.org/", "_blank");
                 }}
               >
-                Take Test
+                Take the Test
               </button>
 
               {/* <div className="text my-1">
@@ -70,7 +69,7 @@ function Programmer() {
           </div>
         </div>
       </div>
-      
+
       <div className="test-p my-2 mb-sm-5 d-flex flex-column align-items-center">
         <h3 className="mb-3">Conduct a Test in Your Locality</h3>
         <hr className="heading-hr mb-3" />
@@ -134,7 +133,7 @@ function Programmer() {
               window.open("https://admissions.navgurukul.org/", "_blank");
             }}
           >
-            Take Test
+            Take the Test
           </button>
         </div>
       </div>
