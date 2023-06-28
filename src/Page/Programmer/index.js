@@ -22,8 +22,8 @@ function Programmer() {
           <p className="font para-line">
             Study in an immersive environment at one of our campuses in Pune,
             Bengaluru, Dharamshala, Sarjapur, Delhi, Tripura, Amravati, Jasphur,
-            Udaipur or Dantewada with peer learning and mentors
-            helping you at each turn. <br /> <br />
+            Udaipur and Dantewada with peer learning and mentors helping you at
+            each turn. <br /> <br />
             To be a part of the Gurukul, all it takes is some determination and
             potential.
           </p>
@@ -32,9 +32,7 @@ function Programmer() {
             onClick={(e) => {
               e.preventDefault();
               window.open("https://admissions.navgurukul.org/", "_blank");
-            }}
-            
-          >
+            }}>
             Take the Test
           </button>
         </div>
@@ -213,9 +211,12 @@ function Programmer() {
           Our <span className="BackColor">Campuses</span>
         </h3>
         <p className="mt-0 mb-3 pb-0 pb-md-3 text-center">
-          Three campuses at  Pune,
-            Bengaluru, Dharamshala, Sarjapur, Delhi, Tripura, Amravati, Jasphur,
-            Udaipur and Dantewada each
+          There are ten campuses located at Pune, Bengaluru,
+          Dharamshala,Sarjapur, Delhi, Tripura,
+          <p className="mt-0 mb-3 pb-0 pb-md-3 text-center">
+            Amravati, Jasphur, Udaipur, and Dantewada, each offering unique
+            educational programs.
+          </p>
         </p>
         {/* <div className="row mb-4">
           <div className="col-md-1"></div>
@@ -452,8 +453,7 @@ function Programmer() {
                 alt="Priyanka's Journey at Navgurukul"
                 width="340"
                 height="195"
-                controls
-              ></video>
+                controls></video>
               <p className="mt-3 text-center fw-bold">
                 Priyanka's Journey at Navgurukul
               </p>
@@ -464,8 +464,7 @@ function Programmer() {
                 alt="Pooja's learning experience during COVID"
                 width="340"
                 height="195"
-                controls
-              ></video>
+                controls></video>
               <p className="mt-3 text-center fw-bold">
                 Pooja's learning experience during COVID
               </p>
@@ -476,8 +475,7 @@ function Programmer() {
                 alt="Soni's multiculural experience in Navgurukul"
                 width="340"
                 height="195"
-                controls
-              ></video>
+                controls></video>
               <p className="mt-3 text-center fw-bold">
                 Soni's multiculural experience in Navgurukul
               </p>
@@ -493,8 +491,7 @@ function Programmer() {
             onClick={(e) => {
               e.preventDefault();
               window.open("https://admissions.navgurukul.org/", "_blank");
-            }}
-          >
+            }}>
             Take the Test
           </button>
         </div>
