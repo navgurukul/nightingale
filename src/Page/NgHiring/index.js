@@ -81,7 +81,7 @@ function NgHiring() {
             </p>
           </div>
           <a
-            href="https://nightingale1.s3.ap-south-1.amazonaws.com/pdf/placement.pdf"
+            href="https://drive.google.com/file/d/1sem3BGOxBscPY2KMOcc_KAZ1ZJSJ-IeE/view?usp=sharing"
             download="Placement Brief - Navgurukul"
             target="_blank"
           >
