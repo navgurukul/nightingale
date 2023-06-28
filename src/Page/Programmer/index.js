@@ -21,17 +21,19 @@ function Programmer() {
           </h2>
           <p className="font para-line">
             Study in an immersive environment at one of our campuses in Pune,
-            Bengaluru or Dharamshala (for boys) with peer learning and mentors
+            Bengaluru, Dharamshala, Sarjapur, Delhi, Tripura, Amravati, Jasphur,
+            Udaipur or Dantewada with peer learning and mentors
             helping you at each turn. <br /> <br />
             To be a part of the Gurukul, all it takes is some determination and
             potential.
           </p>
           <button
-            className="btn btn-primary text-white w-100 my-0 fs-sm-1.2  regular-btn"
+            className="btn btn-primary text-white w-100 mb-3 fs-sm-1.2 regular-btn"
             onClick={(e) => {
               e.preventDefault();
               window.open("https://admissions.navgurukul.org/", "_blank");
             }}
+            
           >
             Take the Test
           </button>
@@ -211,7 +213,9 @@ function Programmer() {
           Our <span className="BackColor">Campuses</span>
         </h3>
         <p className="mt-0 mb-3 pb-0 pb-md-3 text-center">
-          Three campuses at Pune, Bengaluru and Dharamsala (for boys) each
+          Three campuses at  Pune,
+            Bengaluru, Dharamshala, Sarjapur, Delhi, Tripura, Amravati, Jasphur,
+            Udaipur and Dantewada each
         </p>
         {/* <div className="row mb-4">
           <div className="col-md-1"></div>

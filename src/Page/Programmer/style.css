@@ -5,6 +5,7 @@
 .programmers a:hover {
   text-decoration: none;
 }
+
 .points-p {
   padding: 32px;
 }
@@ -406,4 +407,5 @@ video {
   .new_programme {
     margin-top: 5.5rem;
   }
+  
 }
