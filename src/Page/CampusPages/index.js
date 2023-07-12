@@ -156,7 +156,8 @@ function CampusPages() {
               }
             >
               Amravati
-            </span>          
+            </span>      
+                    
           </div>
         </div>
 
