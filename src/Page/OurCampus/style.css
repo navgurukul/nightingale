@@ -1,0 +1,50 @@
+
+
+ .card {
+  box-shadow: 0px 1px 2px rgba(46, 46, 46, 0.06),
+    0px 2px 1px rgba(46, 46, 46, 0.04), 0px 1px 5px rgba(46, 46, 46, 0.08);
+  border-radius: 8px;
+  width: 400px;
+  height: 225px;
+  min-width: 250px;
+  transition: all ease-in 0.3s;
+  margin: 1rem; 
+}
+
+.campuses-data .card {
+  cursor: auto;
+  border: 2px solid transparent;
+}
+
+@media screen and (max-width: 1700px) {
+  .card {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .all-campuses {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .card {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .card {
+    width: 300px;
+  }
+  .all-campuses {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .card {
+    width: 480px;
+  }
+}
