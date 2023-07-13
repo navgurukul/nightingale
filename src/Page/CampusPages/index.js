@@ -8,9 +8,18 @@ import Modal from "./components/Modal";
 import { BsArrowsAngleExpand } from "react-icons/bs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+const getcampusNameFromUrl = () => {
+  let campusName;
+  if (window.location.pathname.includes("campus")) {
+    campusName = window.location.pathname.split("/").pop();
+  }
+  return campusName;
+};
+console.log()
 function CampusPages() {
+  const campusName = getcampusNameFromUrl()
+  const campus= campusName==="Jashpur"? `${campusName} Campus updated`: `${campusName} Campus`
   const [clickedImg, setClickedImg] = useState(null);
-  const [campus, setCampus] = useState("Pune Campus");
   const [data, setData] = useState(Campus_data[campus]);
   const [imgCount, setImgCount] = useState(0);
   const [isLoading, SetIsLoading] = useState(true);
@@ -28,6 +37,10 @@ function CampusPages() {
       );
     });
   }, [campus]);
+  console.log()
+  
+
+
   useEffect(() => {
     if (
       data &&
@@ -40,130 +53,14 @@ function CampusPages() {
   }, [imgCount]);
 
   return (
-    <div className="campus-page d-flex flex-column justify-content-center">
-      <div className="campus-description mb-3 d-flex flex-column justify-content-center align-items-center">
-        <h3 className="mb-3 mt-4">Our Campuses</h3>
-        <div className="container d-flex justify-content-center align-items-center mt-3">
-          <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3 scrolling-wrapper">
-            <span
-              className="campus-btn"
-              name="campuses"
-              onClick={(e) => {
-                setCampus("Pune Campus");
-                setImgCount(0);
-                SetIsLoading(true);
-              }}
-              style={
-                campus === "Pune Campus"
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Pune
-            </span>
-            <span
-              className="campus-btn"
-              name="campuses"
-              onClick={(e) => {
-                setCampus("Bangalore Campus");
-                setImgCount(0);
-                SetIsLoading(true);
-              }}
-              style={
-                campus === "Bangalore Campus"
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Bengaluru
-            </span>
-            <span
-              className="campus-btn"
-              name="campuses"
-              onClick={(e) => {
-                setCampus("Sarjapur Campus");
-                setImgCount(0);
-                SetIsLoading(true);
-              }}
-              style={
-                campus === "Sarjapur Campus"
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Sarjapur
-            </span>
-            <span
-              className="campus-btn"
-              name="campuses"
-              onClick={(e) => {
-                setCampus("Tripura Campus");
-                setImgCount(0);
-                SetIsLoading(true);
-              }}
-              style={
-                campus === "Tripura Campus"
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Tripura
-            </span>
-            <span
-              className="campus-btn"
-              name="campuses"
-              onClick={(e) => {
-                setCampus("Dharmshala Campus");
-                setImgCount(0);
-                SetIsLoading(true);
-              }}
-              style={
-                campus === "Dharmshala Campus"
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Dharamshala
-            </span>
-            <span
-              className="campus-btn"
-              name="campuses"
-              onClick={(e) => {
-                setCampus("Delhi Campus");
-                setImgCount(0);
-                SetIsLoading(true);
-              }}
-              style={
-                campus === "Delhi Campus"
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Delhi
-            </span>
-            <span
-              className="campus-btn"
-              name="campuses"
-              onClick={(e) => {
-                setCampus("Amravati Campus");
-                setImgCount(0);
-                SetIsLoading(true);
-              }}
-              style={
-                campus === "Amravati Campus"
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Amravati
-            </span>      
-                    
-          </div>
-        </div>
-
+    <div className="campus-page d-flex flex-column justify-content-center ">
+      <div className="campus-description mt-6 mb-3 d-flex flex-column justify-content-center align-items-center">
+      
         {data && data[campus] && (
-          <div className="container d-flex-column d-md-flex">
-            <div className="col-12 col-md-5 d-flex flex-column">
+          <div className="container d-flex-column d-md-flex ">
+            <div className="col-12 col-md-5 mb-3 d-flex flex-column">
+            <span className="mb-3 our-campus">
+            <a href="/campus" className="campus-link">Our Campuses </a>/ {campus}</span>
               <h4 className="mb-3 campus-name">{data[campus].Name}</h4>
               <div className="mb-3 campus-manager">
                 <span className="fw-bold">Campus Manager : </span>

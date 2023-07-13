@@ -5,6 +5,13 @@
 .campus-page .campus-btn input {
   margin-right: 10px;
 }
+.our-campus {
+  align-items: left;
+}
+.campus-link {
+  text-decoration: none;
+  color: var(--primary);
+}
 input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;

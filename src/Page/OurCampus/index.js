@@ -1,11 +1,12 @@
-
-
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./style.css";
+import "../../Global.css";
+import { useHistory } from "react-router-dom";
 
 function OurCampus() {
   const [data, setData] = useState(null);
+  const history = useHistory();
 
   useEffect(() => {
     axios({
@@ -20,7 +21,7 @@ function OurCampus() {
     });
   }, []);
 
-  console.log(data);
+
 
   if (data === null) {
     return (
@@ -40,11 +41,19 @@ function OurCampus() {
               const campus = data[campusName];
               if (campus.Name && campus.Address) {
                 return (
+                 
                   <div
                     className="card mb-3 md-5 bg-white py-3 px-4 position-relative"
                     key={campusName}
+                    // onClick={history.push(``)}
+                    onClick={()=>{history.push(`/campus/${campus.Name.split(" ")[0]}`)}}
                   >
+                  
+                  <div className="campus-title-design">
                     <h5 className="card-title">{campus.Name}</h5>
+
+                    <span className="chip-status mb-2">Newly Opened</span>
+                    </div>
                     <span>{campus.Address}</span>
                   </div>
                 );

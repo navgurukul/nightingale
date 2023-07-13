@@ -44,10 +44,10 @@ function Routing() {
         <Route exact path="/nglabs" component={NgLabs} />
         <Route exact path="/programmer" component={Programmer} />
         {/* <Route exact path="/designer" component={Designers} /> */}
-        <Route exact path="/ourcampus" component={OurCampus}/>
+        <Route exact path="/campus" component={OurCampus}/>
         <Route exact path="/partners" component={Partners} />
         <Route exact path="/privacy" component={Privacy} />
-        <Route exact path="/campus" component={CampusPages} />
+        <Route exact path="/campus/:campusName" component={CampusPages} />
         <Route exact path="*/" component={PageNotFound} />
 
       </Switch>
