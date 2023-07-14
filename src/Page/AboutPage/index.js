@@ -41,7 +41,7 @@ function AboutPage() {
               now instead tax-payers and job-creators. More than 
 
              <span className="number"> 1000 students </span> are currently learning in residential centers across 
-             Pune, Bengaluru, Dharamshala, Sarjapur, Delhi, Tripura, Amravati, Jasphur, Udaipur and Dantewada .
+             Bangalore, Pune, Delhi, Tripura, Amravati and Dharamsala.
 
 
             </p>
