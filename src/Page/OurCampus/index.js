@@ -49,8 +49,8 @@ function OurCampus() {
                     onClick={()=>{history.push(`/campus/${campus.Name.split(" ")[0]}`)}}
                   >
                   <div >
-                  <div className="campus-title-design mb-2">
-                    <h5 className="card-title">{campus.Name}</h5>
+                  <div className="campus-title-design ">
+                    <h5 className="card-title cmapus-fontfamily">{campus.Name}</h5>
 
                     
                     {campus.Name==="Jashpur Campus updated" &&
@@ -60,8 +60,9 @@ function OurCampus() {
                     
                     
                     </div>
-                    <span>{campus.Address}</span>
+                    <span className="cmapus-fontfamily">{campus.Address}</span>
                     </div>
+                    <div className="mt-3"></div>
                     <div className="campus-design">
                       {campus["Courses offered"] && campus["Courses offered"].split("|")
                       .map((item)=>(<span className="scl-chip mb-2">{item}</span>))}

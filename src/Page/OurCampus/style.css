@@ -1,11 +1,17 @@
 
 .campus-title-design{
- display: flex;
-margin-right: 8px;
-    
+    display: flex;
+    margin-right: 8px;
+    margin-bottom: 8px;   
+}
+.campus-card{
+    cursor:  pointer !important;
 }
 .partners-data .section-head{
-   font-family: Lusitana; 
+   font-family: 'Lusitana', serif;
+}
+.cmapus-fontfamily{
+    font-family: 'Lato', sans-serif;;
 }
 .chip-status{
     border-radius: 10px;
@@ -13,16 +19,11 @@ margin-right: 8px;
     font-weight: 400;
     background-color:#FFC107;
     padding: 6px 12px;
-    width: 132px;
+    width: 150px;
     height: 30px;
     /* margin: 10px; */
 }
-.campus-card{
-    width: 384px !important;
-    /* height: 280px; */
-    border-radius: 8px;
-    
-}
+
 .scl-chip{
     border-radius: 100px;
     font-size: 14px;
