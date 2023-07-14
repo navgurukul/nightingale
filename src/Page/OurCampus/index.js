@@ -32,10 +32,10 @@ function OurCampus() {
   }
 
   return (
-    <div className="partners d-flex flex-column justify-content-center w-100">
+    <div className="partners d-flex flex-column justify-content-center w-100 mt-5">
       <div className="partners-data w-100 mb-0 md-5 d-flex align-items-center flex-column">
-        <h3 className="mb-3 section-head">Our Campuses</h3>
-        <div className="all-partners w-75 d-flex flex-column">
+        <h3 className="mb-4 section-head">Our Campuses</h3>
+        <div className="all-partners w-75 d-flex flex-column ">
           <div className="all-partners-row d-flex justify-content-around w-100 my-1">
             {Object.keys(data).map((campusName) => {
               const campus = data[campusName];
@@ -43,21 +43,34 @@ function OurCampus() {
                 return (
                  
                   <div
-                    className="card mb-3 md-5 bg-white py-3 px-4 position-relative"
+                    className="card campus-card mb-3 md-5 bg-white py-3 px-4 position-relative"
                     key={campusName}
                     // onClick={history.push(``)}
                     onClick={()=>{history.push(`/campus/${campus.Name.split(" ")[0]}`)}}
                   >
-                  
-                  <div className="campus-title-design">
+                  <div >
+                  <div className="campus-title-design mb-2">
                     <h5 className="card-title">{campus.Name}</h5>
 
-                    <span className="chip-status mb-2">Newly Opened</span>
+                    
+                    {campus.Name==="Jashpur Campus updated" &&
+                    <span className="chip-status mb-2">
+                    Newly Opened</span>
+                    }
+                    
+                    
                     </div>
                     <span>{campus.Address}</span>
+                    </div>
+                    <div className="campus-design">
+                      {campus["Courses offered"] && campus["Courses offered"].split("|")
+                      .map((item)=>(<span className="scl-chip mb-2">{item}</span>))}
+                    </div>
+                 
                   </div>
                 );
               }
+              
             })}
           </div>
         </div>
