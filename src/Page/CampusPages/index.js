@@ -39,10 +39,10 @@ function CampusPages() {
   }, [campus]);
   
  const logo=  data &&
-        data[campus] &&
-        data[campus].logo?.map((logo) => {
-            return logo
-          }) 
+    data[campus] &&
+    data[campus].logo?.map((logo) => {
+      return logo
+  }) 
 
 
   useEffect(() => {
