@@ -9,7 +9,6 @@ function Header() {
   const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
 
-  console.log(showDropdown);
   return (
     <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
       <a class="navbar-brand" href="/">
