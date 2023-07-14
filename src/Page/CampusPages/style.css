@@ -5,13 +5,6 @@
 .campus-page .campus-btn input {
   margin-right: 10px;
 }
-.our-campus {
-  align-items: left;
-}
-.campus-link {
-  text-decoration: none;
-  color: var(--primary);
-}
 input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -33,7 +26,7 @@ input[type="radio"]:checked {
 .campus_shortImg,
 .campus_longImg {
   width: 100%;
-  height: 303px;
+  height: 100%;
   border-radius: 8px;
   object-fit: center;
   transition: all ease-in-out 0.3s;
@@ -71,9 +64,6 @@ input[type="radio"]:checked {
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
 }
-.joinCampus{
-  margin-left: 20px;
-}
 .overlay .dismiss {
   position: absolute;
   top: 10%;
@@ -107,13 +97,6 @@ input[type="radio"]:checked {
   height: 350px;
   width: 100%;
   border-radius: 8px;
-}
-.course-font {
-  font-size: 18px;
-  font-weight: 400;
-}
-.left-mar{
-  margin-left: 16px;
 }
 
 @keyframes skeleton-loading {
