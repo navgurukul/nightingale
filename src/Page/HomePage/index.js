@@ -73,8 +73,7 @@ function Home() {
                   <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white  "
-                      title="Guaranteed Job Courses"
-                    >
+                      title="Guaranteed Job Courses">
                       <h4 class="card-title mb-1   card-main-text  card-heading ">
                         <span className="BackColor">
                           {" "}
@@ -97,8 +96,7 @@ function Home() {
                     <div className="card-body text-white ">
                       <div
                         className="d-flex align-items-end "
-                        title="Learn Online with Meraki"
-                      >
+                        title="Learn Online with Meraki">
                         <h4 class="card-title mb-1  card-main-text text-center card-heading ">
                           <span className="BackColor">
                             Learn Online with Meraki{" "}
@@ -125,8 +123,7 @@ function Home() {
                   <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white"
-                      title="Code India Fellowships"
-                    >
+                      title="Code India Fellowships">
                       <h4 class="card-title mb-1   card-main-text card-heading">
                         <span className="BackColor">
                           Code India Fellowships
@@ -187,8 +184,7 @@ function Home() {
             onClick={(e) => {
               e.preventDefault();
               window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
-            }}
-          >
+            }}>
             Partner with us
           </button>
         </div>
