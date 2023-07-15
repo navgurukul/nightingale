@@ -57,7 +57,7 @@ function CampusPages() {
   }, [imgCount]);
 
   return (
-    <div className="campus-page d-flex flex-column justify-content-center ">
+    <div className="campus-page d-flex flex-column justify-content-center mb-6">
       <div className="campus-description mt-6 mb-3 d-flex flex-column justify-content-center align-items-center">
       
         {data && data[campus] && (
@@ -98,12 +98,12 @@ function CampusPages() {
           {data[campus].Programming!==null && 
           data[campus]["Graphic Design"]!==null ?
           <div className="container w-80 mt-6 ">
-              <h5 >Available Courses</h5>
+              <h5 className="left-mar-1">Available Courses</h5>
               <div className="d-flex-column d-flex mt-4">
                   <div className="col-6 mb-3 d-flex flex-column">
                     <div className=" d-flex mb-3">
-                      <img src={logo[0]} className="mx-2" height="32px " width="32px"/>
-                      <h6>Programming</h6>
+                      <img src={logo[0]} className="mr-2 mb-3" height="32px " width="32px"/>
+                      <h6 >Programming</h6>
                     </div>
                     <p>       
                     {data[campus].Programming}
@@ -125,7 +125,7 @@ function CampusPages() {
             <div className="d-flex-column d-flex">
               <div className="col-6 mb-3 d-flex flex-column">
                 <div className=" d-flex mb-3">
-                  <img src={logo[2]} className="mx-2" height="32px " width="32px"/>
+                  <img src={logo[2]} className="mr-2" height="32px " width="32px"/>
                   <h6>Management</h6>
                 </div>
                 <p>       
@@ -135,7 +135,7 @@ function CampusPages() {
               
           <div className="col-6  mb-3 d-flex flex-column">
           <div className=" d-flex mb-3">
-            <img src={logo[3]} className="mx-2" height="32px " width="32px"/>
+            <img src={logo[3]} className="mr-2" height="32px " width="32px"/>
                 <h6>Finance</h6>
               </div>
               <p>       
@@ -148,7 +148,7 @@ function CampusPages() {
       <div className="d-flex-column d-flex">
               <div className="col-6 mb-3 d-flex flex-column">
                 <div className=" d-flex mb-3">
-                  <img src={logo[4]} className="mx-2" height="32px " width="32px" />
+                  <img src={logo[4]} className="mr-2" height="32px " width="32px" />
                   <h6>Education</h6>
                 </div>
                 <p>       
@@ -174,13 +174,13 @@ function CampusPages() {
         <div className="campus-gallary mt-3 pb-3 mb-3">
         
           <div className="container w-70">
-          <h5>Explore the Campus Life</h5>
+          <h5 className="left-mar mb-3">Explore the Campus Life</h5>
           
           {data[campus].Video &&
           <>
-          <h6 className="mt-5 left-mar">Video</h6>
+          <h6 className="mt-3 left-mar">Video</h6>
           <div className="row">
-            <div className="col-md-6 col-12 ">
+            <div className="col-md-6 col-12 left-mar-1">
             {Array.isArray(data[campus].Video) ? (
                   data[campus].Video.map((video)=>(
               <video controls height="303px" width="100%">
@@ -195,7 +195,7 @@ function CampusPages() {
             </div>
           </>
           }
-            <h6 className="mt-5 left-mar">Pictures</h6>
+            <h6 className="mt-4 left-mar">Pictures</h6>
             <div className="row pb-3">
             {/* {data[campus].Video && data[campus.Video]} */}
             
@@ -220,11 +220,11 @@ function CampusPages() {
                     <div
                       className={`${
                         !isLoading ? "" : "d-none"
-                      } col-12 my-3 my-md-3 col-md-6 image_wrapper`}
+                      } col-12 my-3 my-md-3 col-md-6 image_wrapper `}
                     >
                       <img
                         effect="blur"
-                        className="campus_shortImg ph-picture "
+                        className="campus_shortImg ph-picture left-mar-1"
                         src={photo}
                         onClick={() => {
                           handleClick(photo);
@@ -242,7 +242,7 @@ function CampusPages() {
                   );
                 })
               ) : (
-                <div className="col-12 my-3 my-md-3 col-md-6 image_wrapper">
+                <div className="col-12 my-3 my-md-3 col-md-6 image_wrapper left-mar">
                   <img
                     effect="blur"
                     className="campus_shortImg ph-picture"
@@ -264,25 +264,26 @@ function CampusPages() {
             )}
           </div>
           {data[campus]["Who can join? "]!==null &&
-          <div className="container w-70 mt-5 mb-3">
-            <h5 className="mb-4">Who can join? </h5>
-              <ul className="joinCampus">
+          <div className="container w-70 mt-5 mb-3 ">
+            <h5 className="mb-4 left-mar">Who can join? </h5>
+              <ul className="joinCampus left-mar" >
               {data[campus]["Who can join? "].split("|").map((item, index) => {
-                return <li key={index} >{item}</li>;
+                return <li key={index} className="left-mar-1">{item}</li>;
               })}
               </ul>
           </div>
           }
           {data[campus]["Joining Process"] &&
-          <div className="container w-70 mt-5">
-              <h5 className="mb-4">
+          <div className="container w-70 mt-5 ">
+          <div className="left-mar">
+              <h5 className="mb-4 ">
                 Joining Process
               </h5>
-              <h6>If Applying for Programming, Management, Finance or Education Courses</h6>
+              <h6 >If Applying for Programming, Management, Finance or Education Courses</h6>
               {data[campus]["Joining Process"].split("|").slice(1).map((item) => {
-                return  <p>{item}</p>
+                return  <p >{item}</p>
               })}
-              <h6 className="mt-3 mb-3">Are you ready to join us?</h6>
+              <h6 className="mt-3 mb-3 ">Are you ready to join us?</h6>
               <button
             className="btn btn-primary text-white w-20 my-0 fs-sm-1.2 mb-3  regular-btn"
             onClick={(e) => {
@@ -304,12 +305,11 @@ function CampusPages() {
           >
             Take Graphic Design Admission Test
           </button>
-          <p className="mt-3 course-font">After giving the test, you will be interviewed, after which you can come to the Navgurukul campus and start your course.</p>
-
+            </div>
           </div>
           }
-
-        </div>
+          </div>
+        
         
       )}
     </div>
