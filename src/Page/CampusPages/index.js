@@ -8,18 +8,9 @@ import Modal from "./components/Modal";
 import { BsArrowsAngleExpand } from "react-icons/bs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-const getcampusNameFromUrl = () => {
-  let campusName;
-  if (window.location.pathname.includes("campus")) {
-    campusName = window.location.pathname.split("/").pop();
-  }
-  return campusName;
-};
-console.log()
 function CampusPages() {
-  const campusName = getcampusNameFromUrl()
-  const campus= campusName==="Jashpur"? `${campusName} Campus `: `${campusName} Campus`
   const [clickedImg, setClickedImg] = useState(null);
+  const [campus, setCampus] = useState("Pune Campus");
   const [data, setData] = useState(Campus_data[campus]);
   const [imgCount, setImgCount] = useState(0);
   const [isLoading, SetIsLoading] = useState(true);
@@ -37,6 +28,7 @@ function CampusPages() {
       );
     });
   }, [campus]);
+
   
  const logo=  data &&
     data[campus] &&
@@ -57,15 +49,129 @@ function CampusPages() {
   }, [imgCount]);
 
   return (
-    <div className="campus-page d-flex flex-column justify-content-center ">
-      <div className="campus-description mt-6 mb-3 d-flex flex-column justify-content-center align-items-center">
-      
+    <div className="campus-page d-flex flex-column justify-content-center">
+      <div className="campus-description mb-3 d-flex flex-column justify-content-center align-items-center">
+        <h3 className="mb-3 mt-4">Our Campuses</h3>
+        <div className="container d-flex justify-content-center align-items-center mt-3">
+          <div className="d-flex col-12 col-md-6 justify-content-around mb-3 pb-0 pb-md-3 scrolling-wrapper">
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Pune Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Pune Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Pune
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Bangalore Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Bangalore Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Bengaluru
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Sarjapur Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Sarjapur Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Sarjapur
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Tripura Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Tripura Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Tripura
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Dharmshala Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Dharmshala Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Dharamshala
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Delhi Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Delhi Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Delhi
+            </span>
+            <span
+              className="campus-btn"
+              name="campuses"
+              onClick={(e) => {
+                setCampus("Amravati Campus");
+                setImgCount(0);
+                SetIsLoading(true);
+              }}
+              style={
+                campus === "Amravati Campus"
+                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
+                  : {}
+              }
+            >
+              Amravati
+            </span>          
+          </div>
+        </div>
+
         {data && data[campus] && (
-          <div>
-          <div className="container d-flex-column d-md-flex ">
-            <div className="col-12 col-md-5 mb-3 d-flex flex-column">
-            <span className="mb-3 our-campus">
-            <a href="/campus" className="campus-link">Our Campuses </a>/ {campus}</span>
+          <div className="container d-flex-column d-md-flex">
+            <div className="col-12 col-md-5 d-flex flex-column">
               <h4 className="mb-3 campus-name">{data[campus].Name}</h4>
               <div className="mb-3 campus-manager">
                 <span className="fw-bold">Campus Manager : </span>
@@ -95,110 +201,15 @@ function CampusPages() {
               />
             </div>
           </div>
-          {data[campus].Programming!==null && 
-          data[campus]["Graphic Design"]!==null ?
-          <div className="container w-80 mt-6 ">
-              <h5 >Available Courses</h5>
-              <div className="d-flex-column d-flex mt-4">
-                  <div className="col-6 mb-3 d-flex flex-column">
-                    <div className=" d-flex mb-3">
-                      <img src={logo[0]} className="mx-2" height="32px " width="32px"/>
-                      <h6>Programming</h6>
-                    </div>
-                    <p>       
-                    {data[campus].Programming}
-                  </p>
-                  </div>
-                  
-              <div className="col-6  mb-3 d-flex flex-column">
-              <div className=" d-flex mb-3">
-                <img src={logo[1]} className="mx-2" height="32px " width="32px"/>
-                    <h6 className="mr-0">Graphic Design</h6>
-                  </div>
-                  <p>       
-                  {data[campus]["Graphic Design"]}
-                </p>
-
-              </div>
-          
-              </div>
-            <div className="d-flex-column d-flex">
-              <div className="col-6 mb-3 d-flex flex-column">
-                <div className=" d-flex mb-3">
-                  <img src={logo[2]} className="mx-2" height="32px " width="32px"/>
-                  <h6>Management</h6>
-                </div>
-                <p>       
-                {data[campus].Management}
-              </p>
-              </div>
-              
-          <div className="col-6  mb-3 d-flex flex-column">
-          <div className=" d-flex mb-3">
-            <img src={logo[3]} className="mx-2" height="32px " width="32px"/>
-                <h6>Finance</h6>
-              </div>
-              <p>       
-              {data[campus].Finance}
-            </p>
-
-          </div>
-      
-      </div>
-      <div className="d-flex-column d-flex">
-              <div className="col-6 mb-3 d-flex flex-column">
-                <div className=" d-flex mb-3">
-                  <img src={logo[4]} className="mx-2" height="32px " width="32px" />
-                  <h6>Education</h6>
-                </div>
-                <p>       
-                {data[campus].Education}
-              </p>
-              </div>
-            </div>
-            </div>
-            :<>
-              ""
-            </>
-          }
-          </div>
-
         )}
-        
-        
       </div>
       {/* <div className="container">
         <hr className="campus-dividerLine" />
       </div> */}
       {data && data[campus] && (
         <div className="campus-gallary mt-3 pb-3 mb-3">
-        
-          <div className="container w-70">
-          <h5>Explore the Campus Life</h5>
-          
-          {data[campus].Video &&
-          <>
-          <h6 className="mt-5 left-mar">Video</h6>
-          <div className="row">
-            <div className="col-md-6 col-12 ">
-            {Array.isArray(data[campus].Video) ? (
-                  data[campus].Video.map((video)=>(
-              <video controls height="303px" width="100%">
-                <source src={video} type="video/mp4" />
-              </video>
-                  
-      ))):
-           <video controls height="303px" width="100%" >
-                <source src={data[campus].Video} type="video/mp4" />
-              </video>}
-              </div>
-            </div>
-          </>
-          }
-            <h6 className="mt-5 left-mar">Pictures</h6>
+          <div className="container">
             <div className="row pb-3">
-            {/* {data[campus].Video && data[campus.Video]} */}
-            
               {isLoading ? (
                 Array.isArray(data[campus].Photos) ? (
                   data[campus].Photos.map((photo) => {
@@ -229,8 +240,8 @@ function CampusPages() {
                         onClick={() => {
                           handleClick(photo);
                         }}
-                        // height="100%"
-                        style={{ height: "303px", width: "100%" }}
+                        height="100%"
+                        style={{ height: "100%", width: "100%" }}
                         onLoad={() => {
                           setImgCount((count) => {
                             return count + 1;
@@ -263,54 +274,7 @@ function CampusPages() {
               <Modal clickedImg={clickedImg} setClickedImg={setClickedImg} />
             )}
           </div>
-          {data[campus]["Who can join? "]!==null &&
-          <div className="container w-70 mt-5 mb-3">
-            <h5 className="mb-4">Who can join? </h5>
-              <ul className="joinCampus">
-              {data[campus]["Who can join? "].split("|").map((item, index) => {
-                return <li key={index} >{item}</li>;
-              })}
-              </ul>
-          </div>
-          }
-          {data[campus]["Joining Process"] &&
-          <div className="container w-70 mt-5">
-              <h5 className="mb-4">
-                Joining Process
-              </h5>
-              <h6>If Applying for Programming, Management, Finance or Education Courses</h6>
-              {data[campus]["Joining Process"].split("|").slice(1).map((item) => {
-                return  <p>{item}</p>
-              })}
-              <h6 className="mt-3 mb-3">Are you ready to join us?</h6>
-              <button
-            className="btn btn-primary text-white w-20 my-0 fs-sm-1.2 mb-3  regular-btn"
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("https://admissions.navgurukul.org/partnerLanding/breakthrough", "_blank");
-            }}
-          >
-            Take Navgurukul Admission Test
-          </button>
-          <h6 className="mt-3 mb-3">If Applying for Graphic Design Course</h6>
-          <p>{data[campus]["If Applying for Graphic Design Course"]}</p>
-              <h6 className="mt-3 mb-3">Are you ready to join us?</h6>
-              <button
-            className="btn btn-primary text-white w-20 my-0 fs-sm-1.2 mb-3  regular-btn"
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("https://forms.gle/8hHAv5pJCv5T4FTx6", "_blank");
-            }}
-          >
-            Take Graphic Design Admission Test
-          </button>
-          <p className="mt-3 course-font">After giving the test, you will be interviewed, after which you can come to the Navgurukul campus and start your course.</p>
-
-          </div>
-          }
-
         </div>
-        
       )}
     </div>
   );

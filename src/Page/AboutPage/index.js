@@ -33,7 +33,7 @@ function AboutPage() {
               is issued by DGT, Government of India .
             </p>
             <p className="w-50 mt-3 section-para mb-0">
-            In last five years, more than <span className="number"> 450 students </span>  from marginalized areas
+            In last five years, more than <span className="number"> 630+ students </span>  from marginalized areas
              have got jobs as Software Programs and have donated back more than 
              <span className="number"> 32  Lacs</span> in donation. 
              Together, these alumni are earning more than 
@@ -41,7 +41,7 @@ function AboutPage() {
               now instead tax-payers and job-creators. More than 
 
              <span className="number"> 1000 students </span> are currently learning in residential centers across 
-             Pune, Bengaluru, Dharamshala, Sarjapur, Delhi, Tripura, Amravati, Jasphur, Udaipur and Dantewada .
+             Bangalore, Pune, Delhi, Tripura, Amravati and Dharamsala.
 
 
             </p>

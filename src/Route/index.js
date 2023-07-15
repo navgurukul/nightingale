@@ -15,7 +15,7 @@ import Home from "../Page/HomePage";
 import Privacy from "../Page/Privacy";
 import CampusPages from "../Page/CampusPages";
 import PageNotFound from "../Page/PageNotFound";
-import OurCampus from "../Page/OurCampus";
+
 function ScrollToTop({ history }) {
   useEffect(() => {
     const unlisten = history.listen(() => {
@@ -44,12 +44,10 @@ function Routing() {
         <Route exact path="/nglabs" component={NgLabs} />
         <Route exact path="/programmer" component={Programmer} />
         {/* <Route exact path="/designer" component={Designers} /> */}
-        <Route exact path="/campus" component={OurCampus}/>
         <Route exact path="/partners" component={Partners} />
         <Route exact path="/privacy" component={Privacy} />
-        <Route exact path="/campus/:campusName" component={CampusPages} />
+        <Route exact path="/campus" component={CampusPages} />
         <Route exact path="*/" component={PageNotFound} />
-
       </Switch>
       <Footer />
     </>

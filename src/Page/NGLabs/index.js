@@ -53,7 +53,7 @@ function NgLabs() {
             {Object.keys(projects).length ? (
               Object.keys(projects).map((item) => {
                 if (projects[item].Status === "Active") {
-                  // console.log(projects[item]);
+                 
                   return (
                     <div className="col-md-3 px-0 d-flex justify-content-center mt-3">
                       <div
