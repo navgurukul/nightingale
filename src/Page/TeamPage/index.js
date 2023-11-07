@@ -173,7 +173,10 @@ function TeamPage() {
                     team[item].Name &&
                     team[item].Content.length &&
                     team[item].Content &&
-                    team[item].Designation
+                    team[item].Designation&& 
+                    team[item].Association !== "Not Active"&&
+                    team[item].Association !== "null"
+
                   )
                     return (
                       <Tippy
