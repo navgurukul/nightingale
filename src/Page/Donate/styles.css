@@ -1,4 +1,28 @@
+label{
+  font-size: 1.1rem;
+}
+p{
+  font-size: 1.1rem;
+}
 
+.text{
+  font-size:0.875rem ;
+}
+.info{
+  font-size: 1.1rem;
+  font-family: 'Nunito Sans';
+
+ }
+ .leftText{
+  margin-left: 3.25rem;
+ }
+ @media (max-width: 767px) {
+  .leftText{
+   padding: 0;
+   margin: 0; /* Set the margin to 0 for smaller screens */
+  }
+}
+/* 
 .donate-page {
   background-color: #fff;
   text-align: center;
@@ -289,4 +313,4 @@
   .donate-page-image-section {
     height: 620px;
   }
-}
+} */
