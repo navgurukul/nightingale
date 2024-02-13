@@ -4,7 +4,9 @@ label{
 p{
   font-size: 1.1rem;
 }
-
+.hand-pointer {
+  cursor: pointer;
+}
 .text{
   font-size:0.875rem ;
 }
@@ -19,7 +21,7 @@ p{
  @media (max-width: 767px) {
   .leftText{
    padding: 0;
-   margin: 0; /* Set the margin to 0 for smaller screens */
+   margin: 0; 
   }
 }
 /* 

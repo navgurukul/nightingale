@@ -214,59 +214,81 @@ const Donate = () => {
   };
 
   const [selectedOption, setSelectedOption] = useState('monthly');
+  const [selectedAmount, setSelectedAmount] = useState(100);
+  const [selectedLink, setSelectedLink] = useState('https://app.lotuspay.com/merchant/plan/AL0092PDFN2KYC' );
 
   const selectOption = (option) => {
     setSelectedOption(option === selectedOption ? null : option);
   };
 
-  const handleButtonClick = (link) => {
-    window.open(link, '_blank');
+  const handleButtonClick = (amount, link) => {
+    setSelectedAmount(amount);
+    setSelectedLink(link);
+   
   };
-  
+
+  const handleCustomAmountChange = (event) => {
+    setSelectedAmount(event.target.value);
+  };
+  const handleCustomLinkChange = (event) => {
+    setSelectedLink(event.target.value)
+    console.log("selectedLink ", selectedLink)
+    window.open(selectedLink, '_blank');
+  }
+  const donationOptions = [
+    { amount: 100, link: 'https://app.lotuspay.com/merchant/plan/AL0092PDFN2KYC' },
+    { amount: 500, link: 'https://app.lotuspay.com/merchant/plan/AL00681BQGXHMI' },
+    { amount: 1000, link: 'https://app.lotuspay.com/merchant/plan/AL0074EBKKW2EI' },
+    { amount: 2500, link: 'https://app.lotuspay.com/merchant/plan/AL0022DKW1KZGD' },
+    { amount: 5000, link: 'https://app.lotuspay.com/merchant/plan/AL0042NG8XJV3P' },
+    { amount: 10000, link: 'https://app.lotuspay.com/merchant/plan/AL0012PAC9ZPYV' },
+    { amount: 'Custom Amount', link: 'https://www.instamojo.com/@navgurukul/' },
+  ];
+
   return (
     <main className="container mt-4">
       <h3 className="section-head mt-4 mb-5">Help Us Support Education of Underprivileged Students</h3>
       <form>
-        <div className="form-check form-check-inline mr-4">
+        <div className="form-check form-check-inline mr-4 " onClick={() => handleCitizenshipChange('Indian')}>
           <input 
-            className="form-check-input mr-2"
+            className="form-check-input mr-2 hand-pointer"
             type="radio"
             name="citizenshipOptions"
             id="indianCitizen"
             value="Indian"
             checked={selectedCitizenship === 'Indian'}
             onChange={() => handleCitizenshipChange('Indian')}
-
-            />
-          <label className="form-check-label" htmlFor="inlineRadio1">Indian Citizen</label>
+          />
+          <label className="form-check-label hand-pointer" htmlFor="indianCitizen">Indian Citizen</label>
         </div>
-        <div className="form-check form-check-inline">
+        <div className="form-check form-check-inline " onClick={() => handleCitizenshipChange('Foreign')}>
           <input 
-            className="form-check-input mr-2"
+            className="form-check-input mr-2 hand-pointer"
             type="radio"
             name="citizenshipOptions"
             id="foreignCitizen"
             value="Foreign"
             checked={selectedCitizenship === 'Foreign'}
             onChange={() => handleCitizenshipChange('Foreign')}
-            />
-          <label className="form-check-label" htmlFor="inlineRadio2">Foreign Citizen</label>
+          />
+          <label className="form-check-label hand-pointer" htmlFor="foreignCitizen">Foreign Citizen</label>
         </div>
       </form>
       {selectedCitizenship === 'Indian' &&
-      <div className="row mt-4">
-        <div className="col-md-5 ">
+      <div className="row mt-4 " >
+        <div className="col-md-5 p-0">
           <h5 className="section-head mb-4">Donate via Payment Gateway</h5>
           <div className="d-flex">
-            <div className="col-md-4 col-sm-6">
+            <div className="col-md-4 col-sm-6 p-0">
               <div
                 onClick={() => selectOption('monthly')}
-                className={selectedOption === 'monthly' ? 'section-head mb-4 ' : 'section-para  mb-4 '}
+                className={selectedOption === 'monthly' ? 'section-head mb-4 hand-pointer' : 'section-para  mb-4  hand-pointer'}
                 style={
                   selectedOption === 'monthly'
                   ? {
                       borderBottom: "3px solid #f05f40",
                       fontWeight: "bold",
+                      textAlign:'center'
                     }
                   : {}
               }
@@ -277,12 +299,13 @@ const Donate = () => {
             <div className="col-md-4 col-sm-6">
               <div
                 onClick={() => selectOption('oneTime')}
-                className={selectedOption === 'oneTime' ? 'section-head  mb-4' : 'section-para  mb-4'}
+                className={selectedOption === 'oneTime' ? 'section-head  mb-4 hand-pointer' : 'section-para  mb-4  hand-pointer'}
                 style={
                   selectedOption === 'oneTime'
                   ? {
                       borderBottom: "3px solid #f05f40",
                       fontWeight: "bold",
+                      textAlign:'center'
                     }
                   : {}
               }
@@ -292,54 +315,45 @@ const Donate = () => {
             </div>
           </div>
           <div>
-          <div id="monthlyContent" style={{ display: selectedOption === 'monthly' ? 'block' : 'none' }}>
-            <div className="row mb-4">
-                <div className="col">
-                  <button type="button" className="btn dashed-btn mb-4 " onClick={() => handleButtonClick("https://app.lotuspay.com/merchant/plan/AL0092PDFN2KYC")}>
-                  ₹ 100
-                  </button>
-                </div>
-                <div className="col">
-                  <button type="button" className="btn dashed-btn mb-4" onClick={() => handleButtonClick("https://app.lotuspay.com/merchant/plan/AL00681BQGXHMI")}>
-                  ₹ 500
-                  </button>
-                </div>
-                <div className="col">
-                  <button type="button" className="btn dashed-btn mb-4" onClick={() => handleButtonClick("https://app.lotuspay.com/merchant/plan/AL0074EBKKW2EI")}>
-                  ₹ 1000
-                  </button>
-                </div>
-                <div className="col">
-                  <button type="button" className="btn dashed-btn  mb-4" onClick={() => handleButtonClick("https://app.lotuspay.com/merchant/plan/AL0022DKW1KZGD")}>
-                  ₹ 2500
-                  </button>
-                </div>
-                <div className="col d-flex  justify-content-start">
-                  <button type="button" className="btn dashed-btn  mr-4" onClick={() => handleButtonClick("https://app.lotuspay.com/merchant/plan/AL0042NG8XJV3P")}>
-                  ₹ 5000
-                  </button>
-                  <button type="button" className="btn dashed-btn " onClick={() => handleButtonClick("https://app.lotuspay.com/merchant/plan/AL0012PAC9ZPYV")}>
-                  ₹ 10000
-                  </button>
-                </div>
+          <div id="monthlyContent" style={{ display: selectedOption === 'monthly' ? 'block' : 'none' }} >
+            <div className="row mb-4  ">
+            {donationOptions.map(({ amount, link }) => (
+                    <div key={amount} className="col-sm-6 col-md-3 p-0">
+                      <button
+                        type="button"
+                        className={selectedAmount === amount ?" btn section-para regular-btn ": "btn dashed-btn mb-4 "}
+                        onClick={() => handleButtonClick(amount, link)}
+                      >
+                        ₹ {amount}
+                      </button>
+                    </div>
+                  ))}
                 </div>
                 <p  className='mb-4 mt-4'>
                   Or choose a custom amount of your understanding
                 </p>
-                <div className="mb-4">
-                  <input type="text" className="form-control" id="amount" placeholder=" ₹ Enter an amount for eg. 10000"  style={{ height: '55px',borderRadius:"8px" }} />
+               {/* { selectedAmount === "Custom Amount"&& */}
+                <div className="mb-4">    
+                <input
+                    type="text"
+                    className="form-control"
+                    id="amount"
+                    placeholder=" ₹ Enter an amount for eg. 100"
+                    style={{ height: '55px', borderRadius: '8px' }}
+                    value={`₹ ${selectedAmount}`}
+                    onChange={handleCustomAmountChange}
+                  />
+                  {/* <input type="text" className="form-control" id="amount" placeholder=" ₹ Enter an amount for eg. 10000"  style={{ height: '55px',borderRadius:"8px" }} /> */}
                 </div>
-            
-                  <button
-              
-                    type="button"
-                    className="btn section-para regular-btn w-100"
-                    style={{ height: '50px' }}  
-                    onClick={() => handleButtonClick("https://www.instamojo.com/@navgurukul/")}
-                    
-                  >
-                    Donate ₹ 100
-                  </button>
+                {/* } */}
+                <button
+                  type="button"
+                  className="btn section-para regular-btn w-100"
+                  style={{ height: '50px' }}
+                  onClick={handleCustomLinkChange}
+                >
+                  Donate ₹ {selectedAmount}
+                </button>
                   <p className="text mt-3">
                     Please note: A 2% charge will be levied for using our payment gateway
                   </p>   
@@ -404,15 +418,13 @@ const Donate = () => {
             <li><p>Transaction ID and amount</p></li>
             <li><p>Address if available</p></li>
           </ul>
-      </div>
-
-      <p className='mt3 mb-3'>Please connect with us at <a href='mailto:donate@navgurukul.org' style={{ color: '#EB5F42' }} className='fw-bold'>donate@navgurukul.org</a> if you have any questions before making the donation</p>
-
+        </div>
+        <p className='mt3 mb-3'>Please connect with us at <a href='mailto:donate@navgurukul.org' style={{ color: '#EB5F42' }} className='fw-bold'>donate@navgurukul.org</a> if you have any questions before making the donation</p>
         </>
       )}
       
       <hr className="w-100 partition-line mb-3" style={{ color: "#cdcdcd" }}></hr>
-      <section className="container donate-page-section csr-queries ">
+      <div className='mt-3'>
            <h3 className="section-head mb-3">
               Are you a corporation and taken an interest in what we do?
           </h3>
@@ -429,7 +441,7 @@ const Donate = () => {
           >
             Contact Us for CSR Enquiries
           </button>
-        </section>
+        </div>
 
     </main>
   );
