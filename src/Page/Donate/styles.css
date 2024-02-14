@@ -16,7 +16,7 @@ p{
 
  }
  .leftText{
-  margin-left: 3.25rem;
+  margin-left: 5rem;
  }
  @media (max-width: 767px) {
   .leftText{
