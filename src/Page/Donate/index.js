@@ -227,9 +227,6 @@ const Donate = () => {
    
   };
 
-  const handleCustomAmountChange = (event) => {
-    setSelectedAmount(event.target.value);
-  };
   const handleCustomLinkChange = (event) => {
     setSelectedLink(event.target.value)
     console.log("selectedLink ", selectedLink)
@@ -329,23 +326,16 @@ const Donate = () => {
                     </div>
                   ))}
                 </div>
-                <p  className='mb-4 mt-4'>
-                  Or choose a custom amount of your understanding
-                </p>
-               {/* { selectedAmount === "Custom Amount"&& */}
-                <div className="mb-4">    
-                <input
-                    type="text"
-                    className="form-control"
-                    id="amount"
-                    placeholder=" ₹ Enter an amount for eg. 100"
-                    style={{ height: '55px', borderRadius: '8px' }}
-                    value={`₹ ${selectedAmount}`}
-                    onChange={handleCustomAmountChange}
-                  />
-                  {/* <input type="text" className="form-control" id="amount" placeholder=" ₹ Enter an amount for eg. 10000"  style={{ height: '55px',borderRadius:"8px" }} /> */}
-                </div>
-                {/* } */}
+                { selectedAmount === "Custom Amount"&&
+                  <>
+                    <p  className='mb-4 mt-4'>
+                      Or choose a custom amount of your understanding
+                    </p>
+                    <div className="mb-4">    
+                      <input type="text" className="form-control" id="amount" placeholder=" ₹ Enter an amount for eg. 15000"  style={{ height: '55px',borderRadius:"8px" }} />
+                    </div>
+                  </>
+                }
                 <button
                   type="button"
                   className="btn section-para regular-btn w-100"
@@ -376,23 +366,22 @@ const Donate = () => {
           </div>
           </div>
         
-        <div className="col-md-4 leftText">
-          <h5 className="section-head mb-4 ml-3 ">Donate via Bank Transfer</h5>
-          {details.map((item, index) => (
-        <div key={index} className="row">
-          <div className="col-md-12 text-left ">
-            <p className=' info fw-bold '>{item.label}</p>
-            <div className="text-left section-para ">
-              <p className='info'>{item.info}</p>
+          <div className="col-md-4 leftText p-0" >
+            <h5 className="section-head mb-4  ">Donate via Bank Transfer</h5>
+            {details.map((item, index) => (
+          <div key={index} className="row ">
+            <div className="col-md-12 p-0 ">
+              <p className=' info fw-bold '>{item.label}</p>
+              <div className=" section-para ">
+                <p className='info'>{item.info}</p>
+              </div>
             </div>
           </div>
+        ))}
+        </div>   
+        <div className=" d-flex flex-column ">
+          <p className="mb-3 mt-3"> Any amount donated to NavGurukul will be eligible for tax exemption under 80G.</p>
         </div>
-      ))}
-        </div>
-      
-      <div className=" d-flex flex-column ">
-        <p className="mb-3 mt-3"> Any amount donated to NavGurukul will be eligible for tax exemption under 80G.</p>
-      </div>
       </div>
       }
       {selectedCitizenship === 'Foreign' && (
@@ -442,7 +431,6 @@ const Donate = () => {
             Contact Us for CSR Enquiries
           </button>
         </div>
-
     </main>
   );
 };

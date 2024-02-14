@@ -23,6 +23,11 @@ p{
    padding: 0;
    margin: 0; 
   }
+  .col-md-3 {
+    flex: 0 0 25.25%;
+    padding: 0;
+    margin-right: 8%;
+  }
 }
 /* 
 .donate-page {
