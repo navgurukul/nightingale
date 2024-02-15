@@ -226,6 +226,10 @@ const Donate = () => {
     setSelectedLink(link);
    
   };
+  const handleProceedBtnClick = ( link) => {
+    window.open(link, '_blank');
+  
+  };
 
   const handleCustomLinkChange = (event) => {
     setSelectedLink(event.target.value)
@@ -356,7 +360,7 @@ const Donate = () => {
                 type="button"
                 className="btn section-para regular-btn w-100"
                 style={{ height: '50px' }}  
-                onClick={() => handleButtonClick("https://www.instamojo.com/@navgurukul/")}
+                onClick={() => handleProceedBtnClick("https://www.instamojo.com/@navgurukul/")}
               >
                 Proceed to Donate
               </button>
