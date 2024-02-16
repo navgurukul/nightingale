@@ -203,7 +203,7 @@ const Donate = () => {
   const details1 =[
     { label: 'Name', info: 'Navgurukul Foundation for Social Welfare' },
     { label: 'FCRA Account Number', info: '39891190304' },
-    { label: 'IFSC Code', info: 'SBIN000691' },
+    { label: 'IFSC Code', info: 'SBIN0000691' },
     { label: 'Swift Code', info: 'SBININBB104' },
 
   ]
@@ -215,7 +215,6 @@ const Donate = () => {
 
   const [selectedOption, setSelectedOption] = useState('monthly');
   const [selectedAmount, setSelectedAmount] = useState(100);
-  const [selectedLink, setSelectedLink] = useState('https://app.lotuspay.com/merchant/plan/AL0092PDFN2KYC' );
 
   const selectOption = (option) => {
     setSelectedOption(option === selectedOption ? null : option);
@@ -223,19 +222,14 @@ const Donate = () => {
 
   const handleButtonClick = (amount, link) => {
     setSelectedAmount(amount);
-    setSelectedLink(link);
-   
+    window.open(link, '_blank');
   };
-  const handleProceedBtnClick = ( link) => {
+  const handleProceedBtnClick = (link) => {
     window.open(link, '_blank');
   
   };
 
-  const handleCustomLinkChange = (event) => {
-    setSelectedLink(event.target.value)
-    console.log("selectedLink ", selectedLink)
-    window.open(selectedLink, '_blank');
-  }
+ 
   const donationOptions = [
     { amount: 100, link: 'https://app.lotuspay.com/merchant/plan/AL0092PDFN2KYC' },
     { amount: 500, link: 'https://app.lotuspay.com/merchant/plan/AL00681BQGXHMI' },
@@ -243,7 +237,6 @@ const Donate = () => {
     { amount: 2500, link: 'https://app.lotuspay.com/merchant/plan/AL0022DKW1KZGD' },
     { amount: 5000, link: 'https://app.lotuspay.com/merchant/plan/AL0042NG8XJV3P' },
     { amount: 10000, link: 'https://app.lotuspay.com/merchant/plan/AL0012PAC9ZPYV' },
-    { amount: 'Custom Amount', link: 'https://www.instamojo.com/@navgurukul/' },
   ];
 
   return (
@@ -330,29 +323,11 @@ const Donate = () => {
                     </div>
                   ))}
                 </div>
-                { selectedAmount === "Custom Amount"&&
-                  <>
-                    <p  className='mb-4 mt-4'>
-                      Or choose a custom amount of your understanding
-                    </p>
-                    <div className="mb-4">    
-                      <input type="text" className="form-control" id="amount" placeholder=" ₹ Enter an amount for eg. 15000"  style={{ height: '55px',borderRadius:"8px" }} />
-                    </div>
-                  </>
-                }
-                <button
-                  type="button"
-                  className="btn section-para regular-btn w-100"
-                  style={{ height: '50px' }}
-                  onClick={handleCustomLinkChange}
-                >
-                  Donate ₹ {selectedAmount}
-                </button>
-                  <p className="text mt-3">
-                    Please note: A 2% charge will be levied for using our payment gateway
-                  </p>   
-              
-                </div>
+                <p className="text mt-3">
+                  Please note: A 2% charge will be levied for using our payment gateway
+                </p>   
+            
+              </div>
             </div>
             <div id="oneTimeContent" style={{ display: selectedOption === 'oneTime' ? 'block' : 'none' }}>
               <p className="mb-4">Quick and easy way to support us</p>
