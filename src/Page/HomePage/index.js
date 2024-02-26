@@ -33,7 +33,7 @@ function Home() {
       <div className="">
         <div class="row">
           <div className="col-md-1"></div>
-          <div class="col-md-3 head-div ">
+          <div class="col-md head-div ">
             <h2 className=" heading-line ">
               The <span className="text-primary">Gurukul</span> for the <br />
               <span className="BgColor"> New Age India</span> and its New
@@ -45,7 +45,7 @@ function Home() {
             </p>
           </div>
           <div className="col-md-1"></div>
-          <div class="col-md ">
+          <div class="col-md-7 ">
             <img
               src={require("./assets/student.jpg").default}
               className="home-image"
