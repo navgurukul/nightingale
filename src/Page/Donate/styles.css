@@ -18,6 +18,10 @@ p{
  .leftText{
   margin-left: 5rem;
  }
+ .bold-text {
+  font-weight: bold;
+}
+
  @media (max-width: 767px) {
   .leftText{
    padding: 0;
