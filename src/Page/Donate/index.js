@@ -214,7 +214,7 @@ const Donate = () => {
   };
 
   const [selectedOption, setSelectedOption] = useState('monthly');
-  const [selectedAmount, setSelectedAmount] = useState(100);
+  const [selectedAmount, setSelectedAmount] = useState(0);
 
   const selectOption = (option) => {
     setSelectedOption(option === selectedOption ? null : option);
@@ -253,7 +253,8 @@ const Donate = () => {
             checked={selectedCitizenship === 'Indian'}
             onChange={() => handleCitizenshipChange('Indian')}
           />
-          <label className="form-check-label hand-pointer" htmlFor="indianCitizen">Indian Citizen</label>
+          <label className={`form-check-label hand-pointer ${selectedCitizenship === 'Indian' ? 'bold-text' : ''}`}
+           htmlFor="indianCitizen">Indian Citizen</label>
         </div>
         <div className="form-check form-check-inline " onClick={() => handleCitizenshipChange('Foreign')}>
           <input 
@@ -265,7 +266,7 @@ const Donate = () => {
             checked={selectedCitizenship === 'Foreign'}
             onChange={() => handleCitizenshipChange('Foreign')}
           />
-          <label className="form-check-label hand-pointer" htmlFor="foreignCitizen">Foreign Citizen</label>
+          <label className={`form-check-label hand-pointer ${selectedCitizenship === 'Foreign' ? 'bold-text' : ''}`} htmlFor="foreignCitizen">Foreign Citizen</label>
         </div>
       </form>
       {selectedCitizenship === 'Indian' &&
@@ -276,13 +277,12 @@ const Donate = () => {
             <div className="col-md-4 col-sm-6 p-0">
               <div
                 onClick={() => selectOption('monthly')}
-                className={selectedOption === 'monthly' ? 'section-head mb-4 hand-pointer' : 'section-para  mb-4  hand-pointer'}
+                className={selectedOption === 'monthly' ? 'section-head mb-4 hand-pointer text-center' : 'section-para  mb-4  hand-pointer text-center'}
                 style={
                   selectedOption === 'monthly'
                   ? {
                       borderBottom: "3px solid #f05f40",
                       fontWeight: "bold",
-                      textAlign:'center'
                     }
                   : {}
               }
@@ -293,13 +293,12 @@ const Donate = () => {
             <div className="col-md-4 col-sm-6">
               <div
                 onClick={() => selectOption('oneTime')}
-                className={selectedOption === 'oneTime' ? 'section-head  mb-4 hand-pointer' : 'section-para  mb-4  hand-pointer'}
+                className={selectedOption === 'oneTime' ? 'section-head  mb-4 hand-pointer text-center' : 'section-para  mb-4  hand-pointer text-center'}
                 style={
                   selectedOption === 'oneTime'
                   ? {
                       borderBottom: "3px solid #f05f40",
                       fontWeight: "bold",
-                      textAlign:'center'
                     }
                   : {}
               }
@@ -316,6 +315,7 @@ const Donate = () => {
                       <button
                         type="button"
                         className={selectedAmount === amount ?" btn section-para regular-btn ": "btn dashed-btn mb-4 "}
+                        style={{ width: '80%', height: '60px', marginRight: '32px' }}
                         onClick={() => handleButtonClick(amount, link)}
                       >
                         ₹ {amount}
