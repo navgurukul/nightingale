@@ -13,7 +13,7 @@ function Programmer() {
     <div className="programmers d-flex flex-column justify-content-center">
       <div className="row ">
         <div className="col-md-1"></div>
-        <div className="col-md-3  hero-P ">
+        <div className="col-md  hero-P ">
           <h2 className="heading-line">
             <span className="text-primary">NavGurukul</span> one year
             <span className="BgColor"> software engineering</span> residential
@@ -37,7 +37,7 @@ function Programmer() {
           </button>
         </div>
         <div className="col-md-1"></div>
-        <div className="col-md ">
+        <div className="col-md-7 ">
           <img
             src={require("./assets/student-min.jpg").default}
             className="home-image"
