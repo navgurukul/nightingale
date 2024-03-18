@@ -46,21 +46,19 @@ const Donate = () => {
                 </div>
                 <div className='container'>
                     <div className='row'>
-                        <div className='col-md-6'>
+                        <div className='col-lg-7'>
                         <div className="card ">
                             <div className=' m-3'>
-                                <h6>
+                                <h3>
                                     Become a Supporter to Our Cause
-                                </h6>
-                                <p>
+                                </h3>
+                                <p  className='mt-3 mb-3'>
                                 We are grateful for your support. 
                                 Any amount donated to NavGurukul will be
                                  eligible for tax exemption under 80G. Please reach out to 
-                                donate@navgurukul.org if you have any questions before making the donation
+                                 <a href='mailto:donate@navgurukul.org' style={{ color: '#EB5F42' }} className='fw-bold'> donate@navgurukul.org </a> if you have any questions before making the donation
                                 </p>
-                                <h6>
-                                Your Citizenship
-                                </h6>
+                                <h5 className="section-head mb-3 "> Your Citizenship</h5>
                                 <form>
                             <div className="form-check form-check-inline mr-4 " onClick={() => handleCitizenshipChange('Indian')}>
                                 <input 
@@ -88,6 +86,7 @@ const Donate = () => {
                                 <label className={`form-check-label hand-pointer ${selectedCitizenship === 'Foreign' ? 'bold-text' : ''}`} htmlFor="foreignCitizen">Foreign Citizen</label>
                             </div>
                             </form>
+                            <hr className="border-top border-gray-400 my-4" />
                             {selectedCitizenship === 'Indian' ? 
                                 <IndianDonate/> : <ForeignDonate/>
                             }
@@ -95,23 +94,23 @@ const Donate = () => {
                             </div>
                             </div>
                             </div>
-                        <div className='col-md-6'>
+                        <div className='col-lg-5'>
                             <div className='card p-3'> 
-                            <h6>
+                            <h4>
                             How do these donations help us?
-                            </h6>
-                            <p>
+                            </h4>
+                            <p  className='mt-3 mb-3'>
                             We use the donations to fund the operations for our physical campuses across the country. Funds are used to organize admission drives, get equipment for studies, do promotions. This is how we have used the donations in the last year:
                             </p>
-                            <ul className='ml-3'>
+                            <ul className='ml-4 mt-2'>
                                 <li>
                                     Point 1
                                 </li>
                                 <li>
-                                    point 2
+                                    Point 2
                                 </li>
                                 <li>
-                                    point 3
+                                    Point 3
                                 </li>
                             </ul>
                             
