@@ -21,6 +21,27 @@ p{
  .bold-text {
   font-weight: bold;
 }
+.donate {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.donate-img {
+  height: 80%;
+  width: 60%;
+  margin-bottom: 32px;
+
+}
+.card {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  z-index: 2;
+}
 
  @media (max-width: 767px) {
   .leftText{
@@ -32,6 +53,7 @@ p{
     padding: 0;
     margin-right: 8%;
   }
+  
 }
 /* 
 .donate-page {
