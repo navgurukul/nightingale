@@ -56,7 +56,10 @@ function Header() {
               show={showDropdown}
             >
               <a className="dropdown-item" href="/job-course">
-                Guaranteed Job Courses
+                School of Programming
+              </a>
+              <a className="dropdown-item" href="/designer">
+                School of Design
               </a>
               <a
                 className="dropdown-item"
@@ -71,9 +74,6 @@ function Header() {
                 target="_blank"
               >
                 Code India Fellowships <FiExternalLink className="ml-2" />
-              </a>
-              <a className="dropdown-item" href="/nglabs">
-                NG Labs
               </a>
             </div>
           </li>

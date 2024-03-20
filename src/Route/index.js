@@ -12,6 +12,7 @@ import NgLabs from "../Page/NGLabs";
 import Programmer from "../Page/Programmer";
 import Partners from "../Page/Partners";
 import Home from "../Page/HomePage";
+import Designers from "../Page/Designers" 
 import Privacy from "../Page/Privacy";
 import CampusPages from "../Page/CampusPages";
 import PageNotFound from "../Page/PageNotFound";
@@ -43,7 +44,7 @@ function Routing() {
         <Route exact path="/team" component={TeamPage} />
         <Route exact path="/nglabs" component={NgLabs} />
         <Route exact path="/programmer" component={Programmer} />
-        {/* <Route exact path="/designer" component={Designers} /> */}
+        <Route exact path="/designer" component={Designers} />
         <Route exact path="/partners" component={Partners} />
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/campus" component={OurCampus} />
