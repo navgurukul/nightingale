@@ -179,14 +179,18 @@ const Designers = () => {
   return (
     <div className="container justify-content-center align-items-center text-md-center mt-4 mb-4">
       <h3 className="section-head mt-4" style={{ marginBottom:"32px" }}>NavGurukul One-Year Graphic Design Residential Programme</h3>
+     
       <div className="container small-container"  > 
           <p>Currently operational in Jashpur, Jharkhand, the programme is helping marginalized girl students with the help of a government initiative to build a career in Graphic Design</p>
           <h6 className='mt-2 '>Admissions will open up soon for the next batch in May - June 2024</h6>
       </div>
+
       <h3 className="section-head" style={{ marginBottom:"32px" , marginTop:"80px" }}>About the Programme </h3>
+      
       <div className="container small-container  ">
         <p>The Graphic Design programme is designed to impart technical skills in core design concepts such as color theory, typography, alignment and various deliverables that are created by Graphic Designers in a real life work setting</p>
       </div>
+
       <button
           type="button"
           className="btn section-para regular-btn w-30 mt-2  "
@@ -194,41 +198,53 @@ const Designers = () => {
           onClick={handleDownloadPDF}
         >
           Download Curriculum
-        </button>
+      </button>
+
       <h3 className="section-head  " style={{ marginBottom:"32px", marginTop:"80px"  }}>Admission Process</h3>
+      
       <div className="container "> 
+
         <div className="row g-6 justify-content-center"  style={{ marginBottom:"32px" }}> 
+
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4"> 
             <div className="item-container d-flex align-items-center justify-content-center">
               <img src={formNew} className="img-fluid me-3 mr-2" alt="Image" />
               <p className="mb-0" style={{ whiteSpace: 'nowrap' }}>Mobilization Effort for Students</p>
             </div>
           </div>
+          
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4"> 
             <div className="item-container d-flex align-items-center justify-content-center">
               <img src={isSmallScreen  ? downarrow : rightarrow} alt="Arrow" />
             </div>
           </div>
+
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4"> 
             <div className="item-container d-flex align-items-center justify-content-center">
               <img src={design} className="img-fluid me-3 mr-2" alt="Image" />
               <p className="mb-0" style={{ whiteSpace: 'nowrap' }}>Online Design Test</p>
             </div>
           </div>
+
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4"> 
             <div className="item-container d-flex align-items-center justify-content-center">
               <img src={isSmallScreen  ? downarrow : rightarrow} alt="Arrow" />
             </div>
           </div>
+
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4"> 
             <div className="item-container d-flex align-items-center justify-content-center">
               <img src={chat} className="img-fluid me-3 mr-2" alt="Image" />
               <p className="mb-0" style={{ whiteSpace: 'nowrap' }}>In-Person/Online Conversation</p>
             </div>
           </div>
+
         </div>
+
         <h6 className='small-container mb-5'>Admissions will open up soon for next batch in May - June 2024</h6>   
+      
       </div>
+      
      </div>
   );
 };
