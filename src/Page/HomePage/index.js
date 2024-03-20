@@ -76,14 +76,14 @@ function Home() {
                       title="Guaranteed Job Courses"
                     >
                       <h4 class="card-title mb-1   card-main-text  card-heading ">
-                        <span className="BackColor">
+                        <span className="BgColor">
                           {" "}
-                          Guaranteed Job Courses{" "}
+                          School of Programming{" "}
                         </span>
                       </h4>
-                      <p class="card-text section-para   card-dic ">
-                        Fully-funded courses in software engineering and design
-                        with guaranteed jobs
+                      <p class="card-text section-para card-dic ">
+                        Fully-funded one year courses in software engineering with 
+                        guaranteed jobs
                       </p>
                     </div>
                   </div>
@@ -92,7 +92,7 @@ function Home() {
             </div>
             <div className="col-lg-6 initiative-card-parent mb-md-2">
               <div className="bg-image2 initiative-card card  shadow-1-strong">
-                <a href="https://www.merakilearn.org/" target="_blank">
+                <a href="/designer" target="_blank">
                   <div className="Initiatives-bg-color rgba-black-strong">
                     <div className="card-body text-white ">
                       <div
@@ -100,15 +100,13 @@ function Home() {
                         title="Learn Online with Meraki"
                       >
                         <h4 class="card-title mb-1  card-main-text text-center card-heading ">
-                          <span className="BackColor">
-                            Learn Online with Meraki{" "}
+                          <span className="BgColor">
+                          School of Design{" "}
                           </span>
                         </h4>
-                        {/* <FiExternalLink className="ml-3 external-link-icon" /> */}
                       </div>
                       <p class="card-text  section-para  card-dic ">
-                        Get started with programming in Python, English and
-                        Typing
+                        Fully-funded one year course in graphic design with guaranteed jobs
                       </p>
                     </div>
                   </div>
@@ -121,55 +119,53 @@ function Home() {
           <div class="row">
             <div class="col-lg-6 initiative-card-parent col-md-12 mb-4 mb-md-2">
               <div class="bg-image3 initiative-card card shadow-1-strong">
-                <a href="https://www.codeindiafellowship.org/" target="_blank">
+                <a href="https://www.merakilearn.org/" target="_blank">
+                  <div className="Initiatives-bg-color rgba-black-strong">
+                    <div className="card-body text-white ">
+                      <div
+                        className="d-flex align-items-end "
+                        title="Learn Online with Meraki"
+                      >
+                        <h4 class="card-title mb-1  card-main-text text-center card-heading ">
+                          <span className="BgColor">
+                            Learn Online with Meraki{" "}
+                          </span>
+                        </h4>
+                        {/* <FiExternalLink className="ml-3 external-link-icon" /> */}
+                      </div>
+                      <p class="card-text  section-para  card-dic ">
+                      Get started with programming in Python, English and Typing at the comfort of your home
+                      </p>
+                    </div>
+                  </div>
+                </a>{" "}
+              </div>
+            </div>
+
+            <div class="col-lg-6 initiative-card-parent mb-md-2">
+              <div class="bg-image4 initiative-card card shadow-1-strong">
+              <a href="https://www.codeindiafellowship.org/" target="_blank">
                   <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white"
                       title="Code India Fellowships"
                     >
                       <h4 class="card-title mb-1   card-main-text card-heading">
-                        <span className="BackColor">
+                        <span className="BgColor">
                           Code India Fellowships
                         </span>
                       </h4>
                       <p class="card-text section-para  card-dic">
-                        Nurture programming skills in the next generation of
-                        India’s youth with your expertise
+                        Nurture programming skills in the next generation 
+                        of India’s youth with your expertise
                       </p>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
-
-            <div class="col-lg-6 initiative-card-parent mb-md-2">
-              <div class="bg-image4 initiative-card card shadow-1-strong">
-                <Link to="/nglabs">
-                  <div className="Initiatives-bg-color rgba-black-strong">
-                    <div class="card-body text-white" title="NG Labs">
-                      <h4 class="card-title mb-1   card-main-text card-heading">
-                        <span className="BackColor">Navgurukul Labs</span>
-                      </h4>
-                      <p class="card-text section-para  card-dic">
-                        Experiments in non-profit space for otherwise for-profit
-                        solutions such as non-profit Uber
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
-      </section>
-      <section className="container text-left text-md-center w-50 mar-3">
-        <p className="section-para para-item  ">
-          <span className="fw-bold  ">Techalms Consulting:</span> A talent group
-          ready to fly in, solve your problems and leave by leaving happy faces
-          at the clientplace{" "}
-        </p>
-
-        <p className="text-secondary text-center mb-0"> Coming soon.........</p>
       </section>
 
       <section className="our-partners text-center  d-flex flex-column ">

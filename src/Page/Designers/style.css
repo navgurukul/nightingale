@@ -1,1 +1,19 @@
-/* This page css is same as programmers page */
+   .small-container {
+    max-width: 720px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-programme {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  
+  @media (max-width: 576px) {
+    .small-container {
+      margin: -15px;
+      max-width: 100%;
+    }
+  }
+  
+  
