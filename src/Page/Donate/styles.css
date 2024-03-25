@@ -51,6 +51,11 @@ p{
   border-radius: 8px;
 
 }
+.form-control{
+  border-radius: 8px;
+  width: 32%;
+  padding: 8px;
+}
 
  @media (max-width: 767px) {
   .leftText{

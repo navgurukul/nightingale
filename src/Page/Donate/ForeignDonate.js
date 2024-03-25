@@ -1,17 +1,10 @@
 import React, { useEffect } from "react";
 import { useState  } from "react";
 import axios from "axios";
-import { Dropdown, Button } from 'react-bootstrap';
 
-const countriesData = [
-    { country: 'USA', currency: 'US Dollar', currencyIcon: '$', flag: ':us:' },
-    { country: 'EU', currency: 'Euro', currencyIcon: '€', flag: ':flag-eu:' },
-    { country: 'JP', currency: 'Japanese Yen', currencyIcon: '¥', flag: ':jp:' },
-    // Add more countries as needed
-  ];
 const ForeignDonate = () =>{
-    const [selectedOption, setSelectedOption] = useState('monthly');
-    const [data, setData] = useState({
+  const [selectedOption, setSelectedOption] = useState('monthly');
+  const [data, setData] = useState({
         name: '',
         address: '',
         email: '',
@@ -19,67 +12,113 @@ const ForeignDonate = () =>{
         donate: '',
         taxIdentification: '',
         card:'',
-        expiry_date:"",
+        expiry_date:'',
         cvv:''
       });
 
-      const [selectedTransaction, setSelectedTransaction] = useState('Payment_Gateway');
+  const [selectedTransaction, setSelectedTransaction] = useState('Payment_Gateway');
 
-    const handleTransactionMethod = (transaction) => {
+  const handleTransactionMethod = (transaction) => {
             setSelectedTransaction(transaction);
   };
 
   
-      const handleInputChange = (event) => {
+  const handleInputChange = (event) => {
         const { name, value } = event.target;
         setData((prevData) => ({ ...prevData, [name]: value }));
       };
 
-      const handleFormSubmit = (e) => {
-         axios.post('https://sheetdb.io/api/v1/kjndihc8y5at9',data)
-         .then((res)=>{
-           setData({
-            name: '',
-            address: '',
-            email: '',
-            phone: '',
-            donate: '',
-            taxIdentification: '',
-            card: '',
-            expiry_date: '',
-            cvv:''
-        });
-           
-         })
-         .catch((err)=>{
-           console.log(err)
-         })
-     };
+  const handleFormSubmit = (e) => {
+      axios.post('https://sheetdb.io/api/v1/y9728dhx54jz6',data)
+      .then((res)=>{
+        setData({
+        name: '',
+        address: '',
+        email: '',
+        phone: '',
+        donate: '',
+        taxIdentification: '',
+        card: '',
+        expiry_date: '',
+        cvv:''
+        
+    });
+        
+      })
+      .catch((err)=>{
+        console.log(err)
+      })
+  };
      
-      
-      
+
+    //  useEffect(()=>{
+    //     axios.get("https://sheetdb.io/api/v1/y9728dhx54jz6")
+    //     .then((res)=>{
+    //         console.log(res.data,"res")
+    //     }
+    //     )
+    //  })
+  const amount = [10, 20, 50, 100, 200, 1000];
+  const [countries, setCountries] = useState([]);
+  const [donationAmount,setDonationAmount] = useState(0);
+  const [selectedCountry, setSelectedCountry] = useState(countryData && countryData[0]?.currency);
+    
+  useEffect(() => {
+      const fetchCountries = async () => {
+          try {
+              const response = await axios.get('https://restcountries.com/v3.1/all');
+              const countryData = response.data;
+              setCountries(countryData);
+          } catch (error) {
+              console.error('Error fetching countries:', error);
+          }
+      };
+
+      fetchCountries();
+  }, []);
 
 
-     useEffect(()=>{
-        axios.get("https://sheetdb.io/api/v1/kjndihc8y5at9")
-        .then((res)=>{
-            console.log(res.data,"res")
+  const countryData = countries.map(country => {
+      // Function to get currency name
+    const getCurrencyName = () => {
+      const currencyData= country.currencies;
+        for (const currencyCode in currencyData) {
+            return(currencyData[currencyCode].symbol );
+            
         }
-        )
-     })
-     const nweA = [1, 2, 5, 10, 20, 100];
-     const [countries, setCountries] = useState([]);
-    const [selectedCountry, setSelectedCountry] = useState('');
+        return "Unknown"; // Default if currency name is not found
+    };
 
-    const handleCountrySelect = (countryData) => {
-        setSelectedCountry(countryData);
+    const getCurrencyCode = () => {
+      const currencyData= country.currencies;
+        for (const currencyCode in currencyData) {
+            return(Object.keys(currencyData));
+            
+        }
+        return "Unknown"; // Default if currency name is not found
+    }
+  
+      return {
+          name: country.name.common,
+          flag: country.flag,
+          currency: getCurrencyName(),
+          code: getCurrencyCode()
       };
+  });
 
 
-    const selectOption = (option) => {
-        setSelectedOption(option === selectedOption ? null : option);
-      };
-    return (
+
+  const handleChange = (event) => {
+      setSelectedCountry(event.target.value);
+
+  
+  };
+
+  const selectOption = (option) => {
+      setSelectedOption(option === selectedOption ? null : option);
+    };
+
+  return (
         <main>
             <h6>Donation Amount</h6>
            
@@ -139,31 +178,45 @@ const ForeignDonate = () =>{
             <p>Selected Currency</p>
             <div>
             <div>
-      <Dropdown>
-        <Dropdown.Toggle variant="primary" id="currency-dropdown">
-          {selectedCountry ? (
-            <>
-              <span role="img" aria-label={selectedCountry.country}>{selectedCountry.flag}</span>{' '}
-              {selectedCountry.currency}
-            </>
-          ) : (
-            'Select Currency'
-          )}
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          {countriesData.map((countryData, index) => (
-            <Dropdown.Item key={index} onClick={() => handleCountrySelect(countryData)}>
-              <span role="img" aria-label={countryData.country}>{countryData.flag}</span>{' '}
-              {countryData.currency}
-            </Dropdown.Item>
-          ))}
-        </Dropdown.Menu>
-      </Dropdown>
-      {selectedCountry && (
-        <Button variant="secondary">
-          {selectedCountry.currencyIcon} {selectedCountry.currency}
-        </Button>
-      )}
+            <select value={selectedCountry} onChange={handleChange} className="form-control">
+            
+            {countryData.map((country, index) => (
+                <option key={index} value={country.currency}>
+                  {country.flag}{"  "}
+                    {country.code} 
+                    
+                </option>
+            ))}
+        </select>
+        <div id="monthlyContent"
+         style={{ 
+          // display: selectedOption === 'monthly' ? 'block' : 'none'
+         
+           }} 
+           className="mt-3"
+           >
+            <div className="row mb-2 d-flex px-0 "> 
+                {amount.map((amount ) => (
+                    <div className="d-flex flex-wrap mr-4 ">
+                        <button
+                            type="button"
+                            className={"btn dashed-btn mb-4"}
+                            style={{ width: "auto", height: '50px',  
+                            background:donationAmount === amount && '#f05f40',
+                            color:donationAmount === amount && '#fff'  
+                          }}
+
+                          
+                            // onClick={() => handleButtonClick(amount, link)}
+                            onClick={() => setDonationAmount(amount)}
+                        >
+                            {selectedCountry} {amount}
+                        </button>
+                    </div>
+                ))}
+            </div>
+          </div>   
+     
     </div>
         </div>
           </div>
@@ -270,7 +323,7 @@ const ForeignDonate = () =>{
               className="input-data mr-3 p-2"
                />
             <input type="text" name="expiry_date" 
-              value={data.expiry_date} 
+              // value={data.expiry_date} 
               onChange={handleInputChange} 
               placeholder="Expiry Date"
               className="input-data ml-3 p-2"
@@ -279,7 +332,7 @@ const ForeignDonate = () =>{
               <br/>
               <br/>
             <input type="text" name="cvv" 
-              value={data.cvv} 
+              // value={data.cvv} 
               onChange={handleInputChange} 
               placeholder="CVV"
               className="input-data p-2"
