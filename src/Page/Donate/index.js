@@ -37,8 +37,8 @@ const Donate = () => {
     return(
         <main className='d-flex justify-content-center align-items-center mt-5'>
             <div className='container d-flex justify-content-center align-items-center flex-column'>
-                <div className='donate'>
-                    <h3 >Donate to Help Us Support Education of Underprivileged Students</h3>
+                <div className='donate align-items-center'>
+                    <h3 className='text-center'>Donate to Help Us Support Education of Underprivileged Students</h3>
                     <img
                     src={require("./assets/Rectangle.png").default}
                     className="donate-img mt-4"
@@ -47,15 +47,16 @@ const Donate = () => {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-lg-7'>
-                        <div className="card ">
+                        <div className="card " >
                             <div className=' m-3'>
-                                <h3>
+                                <h4>
                                     Become a Supporter to Our Cause
-                                </h3>
-                                <p  className='mt-3 mb-3'>
+                                </h4>
+                                <p  className='mt-3 mb-3 section-para'>
                                 We are grateful for your support. 
                                 Any amount donated to NavGurukul will be
-                                 eligible for tax exemption under 80G. Please reach out to 
+                                 eligible for tax exemption under 80G.
+                                  Please reach out to 
                                  <a href='mailto:donate@navgurukul.org' style={{ color: '#EB5F42' }} className='fw-bold'> donate@navgurukul.org </a> if you have any questions before making the donation
                                 </p>
                                 <h5 className="section-head mb-3 "> Your Citizenship</h5>
@@ -88,13 +89,18 @@ const Donate = () => {
                             </form>
                             <hr className="border-top border-gray-400 my-4" />
                             {selectedCitizenship === 'Indian' ? 
-                                <IndianDonate/> : <ForeignDonate/>
+                                <IndianDonate
+                                details={details}
+                                /> 
+                                : <ForeignDonate
+                                details={details1}
+                                />
                             }
 
                             </div>
                             </div>
                             </div>
-                        <div className='col-lg-5'>
+                        <div className='col-lg-5 section-para'>
                             <div className='card p-3'> 
                             <h4>
                             How do these donations help us?

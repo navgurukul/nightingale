@@ -2,13 +2,8 @@ import React, { useState } from 'react';
 import './styles.css'
 import "../../Global.css";
 
-const Donate = () => {
-  const details = [
-    { label: 'UPI ID', info: 'navgurukulf@kotak' },
-    { label: 'Name', info: 'Navgurukul Foundation for Social Welfare' },
-    { label: 'Account Number', info: '0512251778' },
-    { label: 'IFSC Code', info: 'KKBK0004260' },
-  ];
+const Donate = ({details}) => {
+
 
   const [selectedTransaction, setSelectedTransaction] = useState('Payment_Gateway');
 

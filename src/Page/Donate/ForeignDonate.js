@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { useState  } from "react";
 import axios from "axios";
 
-const ForeignDonate = () =>{
+
+const ForeignDonate = ({details}) =>{
   const [selectedOption, setSelectedOption] = useState('monthly');
   const [data, setData] = useState({
         name: '',
@@ -43,7 +44,12 @@ const ForeignDonate = () =>{
         cvv:''
         
     });
-        
+    const recipientEmail = data.email; // Assuming email is stored in data.email
+    const subject = 'Thank You for Your Donation';
+    const body = `Dear ${data.name},\n\nThank you for your generous donation! We appreciate your support.\n\nBest regards,\nYour Organization`;
+    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    window.location.href = mailtoLink;
       })
       .catch((err)=>{
         console.log(err)
@@ -61,7 +67,8 @@ const ForeignDonate = () =>{
   const amount = [10, 20, 50, 100, 200, 1000];
   const [countries, setCountries] = useState([]);
   const [donationAmount,setDonationAmount] = useState(0);
-  const [selectedCountry, setSelectedCountry] = useState(countryData && countryData[0]?.currency);
+  const [selectedCountry, setSelectedCountry] = useState();
+
     
   useEffect(() => {
       const fetchCountries = async () => {
@@ -107,16 +114,17 @@ const ForeignDonate = () =>{
   });
 
 
-
   const handleChange = (event) => {
       setSelectedCountry(event.target.value);
-
-  
+      
   };
 
   const selectOption = (option) => {
       setSelectedOption(option === selectedOption ? null : option);
     };
+
+  const currentDate = new Date().toISOString().split('T')[0];
+
 
   return (
         <main>
@@ -230,25 +238,24 @@ const ForeignDonate = () =>{
               value={data.name} 
               onChange={handleInputChange}
               placeholder="your name"
-              className="input-data mr-3 p-2"
+              className="input-data mr-3 p-2 mb-4"
                />
             <input type="text" name="phone" 
               value={data.phone} 
               onChange={handleInputChange} 
               placeholder="Contact Number"
-              className="input-data ml-3 p-2"
-              
+              className="input-data ml-3 p-2 mb-4"
+          
               />
             
-            <br />
-            <br />
+           
 
               <input type="text" 
               name="email" 
               value={data.email} 
               onChange={handleInputChange}  
               placeholder="Email"
-              className="input-data mr-3 p-2"/>
+              className="input-data mr-3 p-2 mb-4"/>
             
             
             
@@ -258,30 +265,27 @@ const ForeignDonate = () =>{
               value={data.donate} 
               onChange={handleInputChange}
               placeholder="Reason for donation (Optional)"
-              className="input-data ml-3 p-2"
+              className="input-data ml-3 p-2 mb-4"
                />
             
-            <br />
-            <br/>
+           
             <input type="text" 
               name="address" value={data.address} 
               onChange={handleInputChange} 
               placeholder="Address"
-              className="input-address pl-3 pt-2 pb-5"
+              className="input-address pl-3 pt-2 pb-5 mb-4"
               />
 
-            <br/>
-            <br/>
+           
             <input
             type="text"
             name="taxIdentification"
             value={data.taxIdentification}
             onChange={handleInputChange}
             placeholder="Tax Identification Number or Passport Number"
-            className="input-address p-2"
+            className="input-address p-2 mb-4"
             />
-            <br/>
-            <br/>
+           
             <hr className="border-top border-gray-400 my-4" />
             
           </form>
@@ -313,42 +317,64 @@ const ForeignDonate = () =>{
           <label className={`form-check-label hand-pointer ${selectedTransaction === 'Bank_Transfer' ? 'bold-text' : ''}`} htmlFor="BankTransfer">Bank Transfer</label>
         </div>
         </form>
-        <p>Chosen Monthly Donation Amount</p>
+        <p className="mt-3 section-para">Chosen Monthly Donation Amount</p>
+        <p className="font-weight-400 font-size-24">{selectedCountry} {donationAmount}</p>
+
+        {selectedTransaction==="Payment_Gateway" ?
         <form>
         <input 
               type="text" name="card" 
               value={data.card} 
               onChange={handleInputChange}
               placeholder="Card Number"
-              className="input-data mr-3 p-2"
+              className="input-data mr-3 p-2 mb-4"
                />
-            <input type="text" name="expiry_date" 
-              // value={data.expiry_date} 
+            <input 
+              type="text" 
+              name="expiry_date" 
+              value={data.expiry_date || currentDate} // If expiryDate is not set, use the current date
               onChange={handleInputChange} 
               placeholder="Expiry Date"
-              className="input-data ml-3 p-2"
-              
-              />
-              <br/>
-              <br/>
+              className="input-data ml-3 p-2 mb-4"
+            />
+             
             <input type="text" name="cvv" 
               // value={data.cvv} 
               onChange={handleInputChange} 
               placeholder="CVV"
-              className="input-data p-2"
+              className="input-data p-2 mb-4"
               
               />
-              <br/>
-              <br/>
-               <button
+              
+               
+        </form>
+        :
+         
+          <div>
+          <p className="section-para mb-4  mt-4 ">Please trasnfer the amount to the
+           below bank account and share the transaction ID to complete the donation</p>
+          {details.map((item, index) => (
+          <div key={index} className="row ">
+              <div className="col-md-12 p-0 ">
+              <p className=' info fw-bold '>{item.label}</p>
+              <div className=" section-para ">
+                  <p className='info'>{item.info}</p>
+              </div>
+              </div>
+          </div>
+            ))}
+            </div>
+
+          }
+          <button
                 type="button"
                 className="btn section-para regular-btn w-50"
                 style={{ height: '50px', marginBottom:"16px" }}  
                 onClick={handleFormSubmit}
               >
                 Proceed to Donate
-              </button>
-        </form>
+          </button>
+          <p className="text">You will receive a confirmation email upon completing the donation</p>
         </div>
             
 

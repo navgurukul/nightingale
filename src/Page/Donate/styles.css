@@ -9,6 +9,7 @@ p{
 }
 .text{
   font-size:0.875rem ;
+  font-weight: 400 !important;
 }
 .info{
   font-size: 1.1rem;
@@ -26,11 +27,12 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 60%;
  
 }
 .donate-img {
   height: 80%;
-  width: 60%;
+ 
   margin-bottom: 32px;
 
 }
@@ -41,6 +43,8 @@ p{
   overflow: hidden;
   margin-bottom: 20px;
   z-index: 2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 .input-data {
   border-radius: 8px;
@@ -56,6 +60,10 @@ p{
   width: 32%;
   padding: 8px;
 }
+.section-para{
+  font-weight: 400;
+  font-size: 18px;
+}
 
  @media (max-width: 767px) {
   .leftText{
@@ -67,7 +75,10 @@ p{
     padding: 0;
     margin-right: 8%;
   }
-  
+  .input-data{
+    width: 100%;
+    margin:  16px 0px !important;
+  }
 }
 /* 
 .donate-page {
