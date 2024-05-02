@@ -32,18 +32,21 @@ function CampusPages() {
     }).then((res) => {
       setData(
         Object.keys(res.data).reduce((prev, next) => {
+          // console.log(res.data,"ppppkhushbooo")
           return { ...prev, [res.data[next].Name]: res.data[next] };
         }, {})
       );
     });
   }, [campus]);
+  // console.log(prev,"lina")
+  // console.log(data,"ppppp")
   
  const logo=  data &&
     data[campus] &&
     data[campus].logo?.map((logo) => {
       return logo
   }) 
-
+  console.log(logo,"poja")
 
   useEffect(() => {
     if (
@@ -102,8 +105,8 @@ function CampusPages() {
               <div className="d-flex-column d-flex mt-4">
                   <div className="col-6 mb-3 d-flex flex-column">
                     <div className=" d-flex mb-3">
-                      <img src={logo[0]} className="mr-2 mb-3" height="32px " width="32px"/>
-                      <h6 >Programming</h6>
+                      <img src={logo[0]} className="mr-2 mb-3" height="32px " width="32px"/> 
+                       <h6 >Programming</h6>
                     </div>
                     <p>       
                     {data[campus].Programming}
@@ -167,9 +170,9 @@ function CampusPages() {
         
         
       </div>
-      {/* <div className="container">
+      <div className="container">
         <hr className="campus-dividerLine" />
-      </div> */}
+      </div> 
       {data && data[campus] && (
         <div className="campus-gallary mt-3 pb-3 mb-3">
         
@@ -197,7 +200,7 @@ function CampusPages() {
           }
             <h6 className="mt-4 left-mar">Pictures</h6>
             <div className="row pb-3">
-            {/* {data[campus].Video && data[campus.Video]} */}
+            {data[campus].Video && data[campus.Video]} 
             
               {isLoading ? (
                 Array.isArray(data[campus].Photos) ? (

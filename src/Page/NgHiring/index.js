@@ -7,7 +7,6 @@ import user from "./assets/user-icon.png";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
 import pdf from "./assets/placement.pdf";
-
 function shuffleObject(obj) {
   let newObj = {};
   var keys = Object.keys(obj);

@@ -36,8 +36,8 @@ function PartnerSlider() {
       setPartners(res.data);
     });
   }, []);
-  const [partners, setPartners] = useState([]);
 
+  const [partners, setPartners] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider(

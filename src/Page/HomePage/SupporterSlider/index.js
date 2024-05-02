@@ -95,6 +95,7 @@ function SupporterSlider() {
     ]
   );
   if (!Object.keys(supports).length) return <></>;
+  console.log(supports,"khushbooo")
   return (
     <div className="slider mar-3 container">
       <>
