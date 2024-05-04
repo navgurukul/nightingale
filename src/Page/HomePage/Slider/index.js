@@ -90,7 +90,7 @@ function Slider() {
                   <div className="keen-slider__slide number-slide ">
                     <div className="carousal-content row mb-3">
 
-                      <div className="carousal-image-container col-sm-2">
+                      <div className="carousal-image-container col-sm-5">
                         <img
                           className="carousal-img"
                           src={media[item].Logo}
@@ -101,8 +101,9 @@ function Slider() {
                         />
                       </div>
                      <div className="col-sm-1"></div>
-                      <div className="col-sm-5">
-                      <p className="font">{media[item].Description}</p>
+                      <div className="col-sm-6">
+                       <p className="font name">{media[item].Name}</p>
+                      <p className="font mt-3">{media[item].Description}</p>
                       </div>
                       
                     </div>

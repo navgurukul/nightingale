@@ -46,7 +46,46 @@ function Header() {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Our Initiatives
+              About Us
+              <BiChevronDown />
+            </a>
+
+            <div
+              className="dropdown-menu dropdown-items"
+              aria-labelledby="navbarDropdown"
+              show={showDropdown}
+            >
+              <a className="dropdown-item" href="/about">
+                Who We Are
+              </a>
+              <a className="dropdown-item" href="/team">
+                Team
+              </a>
+              <a
+                className="dropdown-item mr-2"
+                target="_blank"
+                href="https://medium.com/navgurukul"
+              >
+                Blog
+                <FiExternalLink className="ml-2" />
+              </a>
+            </div>
+          </li>
+            <li
+            className="nav-item dropdown "
+            onMouseOver={() => setShowDropdown(true)}
+            onMouseOut={() => setShowDropdown(false)}
+          >
+            <a
+              className="nav-link header-title"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Schools
               <BiChevronDown />
             </a>
 
@@ -61,27 +100,21 @@ function Header() {
               <a className="dropdown-item" href="/designer">
                 School of Design
               </a>
-              <a
-                className="dropdown-item"
-                href="https://www.merakilearn.org/"
-                target="_blank"
-              >
-                Learn Online with Meraki <FiExternalLink className="ml-2" />
+              <a className="dropdown-item" href="/designer">
+                School of Business
               </a>
-              <a
-                className="dropdown-item"
-                href="https://www.codeindiafellowship.org/"
-                target="_blank"
-              >
-                Code India Fellowships <FiExternalLink className="ml-2" />
+              <a className="dropdown-item" href="/designer">
+                School of Finance
               </a>
             </div>
           </li>
-        </ul>
-        <ul className="navbar-nav nav-font-color">
-          <li className="nav-item dropdown">
+            <li
+            className="nav-item dropdown "
+            onMouseOver={() => setShowDropdown(true)}
+            onMouseOut={() => setShowDropdown(false)}
+          >
             <a
-              className="nav-link  header-title mr-3"
+              className="nav-link header-title"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -89,28 +122,34 @@ function Header() {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              About
+              Digital Initiatives
               <BiChevronDown />
             </a>
 
             <div
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
+              show={showDropdown}
             >
-              <a className="dropdown-item" href="/about">
-                Our Story
+              <a className="dropdown-item" href="https://zuvy.org">
+                Zuvy <FiExternalLink className="ml-2" />
               </a>
-              <a className="dropdown-item" href="/team">
-                Team
+              <a className="dropdown-item" href="https://samyarth.org">
+                Samyarth <FiExternalLink className="ml-2" />
               </a>
-
               <a
-                className="dropdown-item mr-2"
+                className="dropdown-item"
+                href="https://www.merakilearn.org"
                 target="_blank"
-                href="https://medium.com/navgurukul"
               >
-                Blog
-                <FiExternalLink className="ml-2" />
+                Meraki <FiExternalLink className="ml-2" />
+              </a>
+              <a
+                className="dropdown-item"
+                href="https://www.codeindiafellowship.org"
+                target="_blank"
+              >
+                Code India Fellowships <FiExternalLink className="ml-2" />
               </a>
             </div>
           </li>
@@ -119,20 +158,13 @@ function Header() {
               Our Campuses
             </a>
           </li>
-          <li className="nav-item dropdown">
-            {/* <a
-              className="nav-link
-               dropdown-toggle
-                header-title mr-3"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              // data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            > */}
+            <li
+            className="nav-item dropdown "
+            onMouseOver={() => setShowDropdown(true)}
+            onMouseOut={() => setShowDropdown(false)}
+          >
             <a
-              className="nav-link header-title mr-3"
+              className="nav-link header-title"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -143,23 +175,17 @@ function Header() {
               Get Involved
               <BiChevronDown />
             </a>
+
             <div
               className="dropdown-menu dropdown-items"
               aria-labelledby="navbarDropdown"
+              show={showDropdown}
             >
               <a className="dropdown-item" href="partners">
                 Partner With Us
               </a>
-              {/* <a className="dropdown-item" href="/donate">
-                Donate
-              </a> */}
-              <a
-                className="dropdown-item mr-2"
-                href="https://recruiterflow.com/navgurukul/jobs"
-                target="_blank"
-              >
-                Careers
-                <FiExternalLink className="ml-2" />
+              <a className="dropdown-item" href="https://recruiterflow.com/navgurukul/jobs">
+                Careers <FiExternalLink className="ml-2" />
               </a>
               <a
                 className="dropdown-item"
@@ -168,30 +194,37 @@ function Header() {
               >
                 Volunteer <FiExternalLink className="ml-2" />
               </a>
+              
             </div>
           </li>
-
-          <li className="nav-item">
-            <a className="nav-link header-title mr-3" href="/donate">
-              Donate
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link header-title mr-3" href="/hiring">
-              Hire from NG
-            </a>
-          </li>
-          <li className="nav-item">
-            {/* <a className="nav-link disabled header-title" href="#"> */}
-            <a
-              className="nav-link header-title d-flex align-items-center mr-3"
-              href="https://www.merakilearn.org/"
-              target="_blank"
-            >
-              Meraki
-              <FiExternalLink className="ml-2" />
-            </a>
-          </li>
+        </ul>
+        <ul className="navbar-nav nav-font-color">
+          <button
+            type="button"
+            class="btn section-para btn-primary mx-3 my-2 dashed-btn fixed-dimensions "
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "/hiring",
+                "_blank"
+              );
+            }}
+          >
+            Hire from Us 
+          </button>
+          <button
+            type="button"
+            class="btn section-para regular-btn my-2 mx-3 career-button fixed-dimensions "
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "/donate",
+                "_blank"
+              );
+            }}
+          >
+            Donate
+          </button>
         </ul>
       </div>
     </nav>
