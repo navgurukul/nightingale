@@ -1,0 +1,68 @@
+.bg-img-container {
+    width: 100%;
+    height: 480px;
+    top: 80px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.container {
+    position: relative;
+    bottom: 30px;
+}
+
+.centered {
+    position: absolute;
+    width: Fixed (448px)px;
+    height: Hug (125px)px;
+    top: 355px;
+    left: 230px;
+    color: white;
+}
+
+.software-engineering-course {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.software-engineering-course-title{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 54.6px;
+    text-align: left;
+}
+
+.eligibility-list {
+    font-size: 20px;
+    border: "1px solid red";
+    margin: 15px;
+}
+
+.Programme-Locations {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 30px;
+
+}
+
+.instagram-icon {
+    margin-top: 15px;
+    margin: 10px;
+}
+
+.btn-dark {
+    width: Hug (92px)px;
+    height: Hug (43px)px;
+    padding: 8px 16px 8px 16px;
+    gap: 8px;
+    border-radius: 8px 8px 8px 8px;
+    opacity: 0px;
+
+}
+.title-text{
+    font-size: 30px;
+    position: relative;
+    bottom: 10px;    
+}
