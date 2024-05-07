@@ -324,8 +324,6 @@ function CampusPages() {
           </div>
           }
           </div>
-        
-        
       )}
     </div>
   );
