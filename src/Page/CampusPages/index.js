@@ -55,22 +55,10 @@ function CampusPages() {
     ) {
       SetIsLoading(false);
     }
-  }, [imgCount]);
-
-  //my code from here 
+  }, [imgCount]); 
 
   const handleInstagramClick = () => {
-    // const instagramId ={data[campus].Instagram_Id};
-    // window.open(instagramId, "_blank");
-
-
-    // window.open(campusData[campusName].instagramLink, "_blank");
   };
-
-  
-  //to here
-
-
 
   return (
     <div className="campus-page d-flex flex-column justify-content-center mb-6">
@@ -103,8 +91,6 @@ function CampusPages() {
                 <span className="fw-bold">Email : </span>
                 {data[campus].Contact}
               </div>
-
-              
               <div className="instgramid">
               <a href={(data[campus].Instagram_Id)} target="_blank">
                 <img
@@ -112,18 +98,9 @@ function CampusPages() {
                   alt="Instagram"
                   height="32"
                   width="32"
-                  // onClick={handleInstagramClick}
-
                   />
                   </a>
-                  {/* {data[campus].Instagram_Id} */}
-                  {/* {console.log("alpana", data[campus].Instagram_Id)} */}
-                  
                 </div>
-
-
-  
-
             </div>
             <div className="col-12 col-md-7 px-md-0">
               <iframe
@@ -198,7 +175,6 @@ function CampusPages() {
             </div>
             </div>
             :<>
-              {/* null */}
               {null}
             </>
           }
@@ -238,8 +214,6 @@ function CampusPages() {
           }
             <h6 className="mt-4 left-mar">Pictures</h6>
             <div className="row pb-3">
-            {/* {data[campus].Video && data[campus.Video]} */}
-            
               {isLoading ? (
                 Array.isArray(data[campus].Photos) ? (
                   data[campus].Photos.map((photo) => {
