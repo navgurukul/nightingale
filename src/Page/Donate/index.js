@@ -255,9 +255,6 @@ const Donate = () => {
         <div className=" d-flex flex-column ">
           <h5 className="mb-3 mt-3"> Any amount donated to NavGurukul will be eligible for tax exemption under 80G.</h5>
         </div>
-        
-        
-
 
       <form>
         <div className="form-check form-check-inline mr-4 " onClick={() => handleCitizenshipChange('Indian')}>
