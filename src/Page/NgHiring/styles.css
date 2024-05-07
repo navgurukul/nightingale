@@ -14,6 +14,14 @@
 .ng-hiring-page a:hover {
   color: var(--btnHover);
 }
+.link{
+  color: #EB5F42;
+}
+.link:hover{
+  color: #EB5F42;
+  text-decoration: none;
+
+}
 .hring-card-img {
   border-radius: 50%;
   width: 120px;
