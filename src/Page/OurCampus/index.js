@@ -43,7 +43,7 @@ function OurCampus() {
                 return (
                  
                   <div
-                    className="card campus-card mb-3 md-5 bg-white py-3 px-4 position-relative"
+                    className="card campus-card mb-5 md-5 bg-white py-3 px-4 position-relative"
                     key={campusName}
                     // onClick={history.push(``)}
                     onClick={()=>{history.push(`/campus/${campus.Name.split(" ")[0]}`)}}
