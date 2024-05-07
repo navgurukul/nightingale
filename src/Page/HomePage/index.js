@@ -195,7 +195,7 @@ function Home() {
                 class="btn section-para regular-btn mx-3 career-button fixed-dimensions"
                 onClick={(e) => {
                     e.preventDefault();
-                    window.open("/donate", "_blank");
+                    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform", "_blank");
                 }}
             >
                 CSR Enquiries
