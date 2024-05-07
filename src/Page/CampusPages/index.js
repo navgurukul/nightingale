@@ -8,6 +8,8 @@ import Modal from "./components/Modal";
 import { BsArrowsAngleExpand } from "react-icons/bs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
+
 const getcampusNameFromUrl = () => {
   let campusName;
   if (window.location.pathname.includes("campus")) {
@@ -44,7 +46,6 @@ function CampusPages() {
       return logo
   }) 
 
-
   useEffect(() => {
     if (
       data &&
@@ -55,6 +56,21 @@ function CampusPages() {
       SetIsLoading(false);
     }
   }, [imgCount]);
+
+  //my code from here 
+
+  const handleInstagramClick = () => {
+    // const instagramId ={data[campus].Instagram_Id};
+    // window.open(instagramId, "_blank");
+
+
+    // window.open(campusData[campusName].instagramLink, "_blank");
+  };
+
+  
+  //to here
+
+
 
   return (
     <div className="campus-page d-flex flex-column justify-content-center mb-6">
@@ -67,11 +83,13 @@ function CampusPages() {
             <span className="mb-3 our-campus">
             <a href="/campus" className="campus-link">Our Campuses </a>/ {campus}</span>
               <h4 className="mb-3 campus-name">{data[campus].Name}</h4>
-              <div className="mb-3 campus-manager">
+              {/* console.log{data[campus]} */}
+              {console.log(data[campus])}
+              {/* <div className="mb-3 campus-manager">
                 <span className="fw-bold">Campus Manager : </span>
                 <img src={data[campus].Avatar} className="mx-2" />
                 {data[campus]["Campus Manager"]}
-              </div>
+              </div> */}
               <div className="mb-3 campus-address">
                 <span className="fw-bold">Address : </span>
                 {data[campus].Address}
@@ -82,9 +100,30 @@ function CampusPages() {
               </div>
 
               <div className="mb-3 campus-contact">
-                <span className="fw-bold">Contact : </span>
+                <span className="fw-bold">Email : </span>
                 {data[campus].Contact}
               </div>
+
+              
+              <div className="instgramid">
+              <a href={(data[campus].Instagram_Id)} target="_blank">
+                <img
+                  src="/instagram.png" 
+                  alt="Instagram"
+                  height="32"
+                  width="32"
+                  // onClick={handleInstagramClick}
+
+                  />
+                  </a>
+                  {/* {data[campus].Instagram_Id} */}
+                  {/* {console.log("alpana", data[campus].Instagram_Id)} */}
+                  
+                </div>
+
+
+  
+
             </div>
             <div className="col-12 col-md-7 px-md-0">
               <iframe
@@ -94,6 +133,7 @@ function CampusPages() {
                 loading="none"
               />
             </div>
+            
           </div>
           {data[campus].Programming!==null && 
           data[campus]["Graphic Design"]!==null ?
@@ -158,7 +198,8 @@ function CampusPages() {
             </div>
             </div>
             :<>
-              ""
+              {/* null */}
+              {null}
             </>
           }
           </div>
@@ -316,4 +357,4 @@ function CampusPages() {
   );
 }
 
-export default CampusPages;
+export default CampusPages; 
