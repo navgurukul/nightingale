@@ -71,13 +71,7 @@ function CampusPages() {
             <span className="mb-3 our-campus">
             <a href="/campus" className="campus-link">Our Campuses </a>/ {campus}</span>
               <h4 className="mb-3 campus-name">{data[campus].Name}</h4>
-              {/* console.log{data[campus]} */}
               {console.log(data[campus])}
-              {/* <div className="mb-3 campus-manager">
-                <span className="fw-bold">Campus Manager : </span>
-                <img src={data[campus].Avatar} className="mx-2" />
-                {data[campus]["Campus Manager"]}
-              </div> */}
               <div className="mb-3 campus-address">
                 <span className="fw-bold">Address : </span>
                 {data[campus].Address}
@@ -184,9 +178,6 @@ function CampusPages() {
         
         
       </div>
-      {/* <div className="container">
-        <hr className="campus-dividerLine" />
-      </div> */}
       {data && data[campus] && (
         <div className="campus-gallary mt-3 pb-3 mb-3">
         
@@ -244,7 +235,6 @@ function CampusPages() {
                         onClick={() => {
                           handleClick(photo);
                         }}
-                        // height="100%"
                         style={{ height: "303px", width: "100%" }}
                         onLoad={() => {
                           setImgCount((count) => {

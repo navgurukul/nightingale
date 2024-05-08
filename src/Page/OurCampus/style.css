@@ -22,7 +22,7 @@
     background-color:#FFC107;
     padding: 6px 12px;
     margin-left: 16px;
-    /* margin: 10px; */
+
 }
 
 .scl-chip{
@@ -32,11 +32,8 @@
     background-color:#FBDFD9;
     padding: 6px 12px;
     width: fit-content;
-    /* margin: 10px; */
-    margin-right: 10px; /* Adjust the horizontal gap between chips */
-    /* margin-bottom: 10px; */
+    margin-right: 10px; 
     margin-bottom: 32px;
-    /* row-gap: 20px; */
     row-gap: 32px;
 }
 .campus-design{
