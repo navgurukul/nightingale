@@ -6,8 +6,8 @@ import Header from "../Page/Header";
 import Footer from "../Page/Footer";
 import AboutPage from "../Page/AboutPage";
 import SchoolProgramming from "../Page/SchoolsPage/SchoolProgram"
-import SchoolDesign from "../Page/SchoolsPage/SchoolDesign";
-import SchoolofFinance from "../Page/SchoolsPage/SchoolFinance";
+// import SchoolDesign from "../Page/SchoolsPage/SchoolDesign";
+// import SchoolofFinance from "../Page/SchoolsPage/SchoolFinance";
 import Donate from "../Page/Donate";
 import NgHiring from "../Page/NgHiring";
 import TeamPage from "../Page/TeamPage";
@@ -20,7 +20,7 @@ import Privacy from "../Page/Privacy";
 import CampusPages from "../Page/CampusPages";
 import PageNotFound from "../Page/PageNotFound";
 import OurCampus from "../Page/OurCampus";
-import SchoolofBusiness from "../Page/SchoolsPage/SchoolBusiness";
+// import SchoolofBusiness from "../Page/SchoolsPage/SchoolBusiness";
 
 function ScrollToTop({ history }) {
   useEffect(() => {
@@ -45,9 +45,9 @@ function Routing({data}) {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={AboutPage} />
-        <Route path="/busines" component={SchoolofBusiness} />
-        <Route exact path="/finance" component={SchoolofFinance} />
-        <Route exact path="/design" component={SchoolDesign} />
+        {/* <Route path="/busines" component={SchoolofBusiness} /> */}
+        {/* <Route exact path="/finance" component={SchoolofFinance} /> */}
+        {/* <Route exact path="/design" component={SchoolDesign} /> */}
         <Route exact path="/programing" component={SchoolProgramming} />
         <Route exact path="/donate" component={Donate} />
         <Route exact path="/hiring" component={NgHiring} />

@@ -1,4 +1,4 @@
-.bg-img-container {
+/* .bg-img-container {
     width: 100%;
     height: 480px;
     top: 80px;
@@ -65,4 +65,151 @@
     font-size: 30px;
     position: relative;
     bottom: 10px;    
+} */
+
+/* 
+.software-engineering-course-title{
+    
+} */
+/* 
+.section-containe {
+    width: Fixed (1, 120px)px;
+    top: 40px;
+    left: 160px;
+    gap: 80px;
+    opacity: 0px;
+    border: 1px solid red;
 }
+
+.eligibility-section-one {
+    border: 1px solid red;
+    width: Fixed (736px)px;
+    height: Hug (296px)px;
+    gap: 32px;
+    opacity: 0px;
+    margin: auto;
+}
+
+.programme-audience-heading {
+    gap: 32px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+
+.eligibility-section-second {
+    width: Fixed (736px)px;
+    height: Hug (377px)px;
+    gap: 32px;
+    opacity: 0px;
+    border: 1px solid red;
+    margin: auto;
+}
+ */
+
+
+
+/* 
+.eligibility-section-second {
+    width: Fixed (736px)px;
+    height: Hug (377px)px;
+    gap: 32px;
+    opacity: 0px;
+} */
+
+/* 
+.title-text {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+
+.programme-audience-heading{
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+
+}
+
+.eligibility-list {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    border: 1px solid red;
+}
+
+.eligibility-info-container {
+    width: Fixed (736px)px;
+    height: Hug (296px)px;
+    gap: 32px;
+    opacity: 0px;
+    margin: auto;
+}
+
+.campus-location-container {
+    width: Fixed (1, 116px)px;
+    height: Hug (1, 043px)px;
+    gap: 32px;
+    opacity: 0px;
+    border: 1px solid red;
+
+}
+
+.section-containe {
+    width: Fixed (736px)px;
+    height: Hug (377px)px;
+    gap: 32px;
+    opacity: 0px;
+    border: 1px solid red;
+
+} */
+
+
+/* 
+.row{
+  margin-top: 80px;
+}
+.section-content-one {
+    width: Fixed (736px)px;
+    height: Hug (296px)px;
+    gap: 32px;
+    opacity: 0px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.programme-audience-heading {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+
+.section-content-second {
+    width: Fixed (736px)px;
+    height: Hug (377px)px;
+    opacity: 0px;
+    border: 1px solid red;
+    margin: auto;
+} */
+
+/* 
+.bg-image1 {
+    background: url("./assets/bgimg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 18px;
+    height: 330px;
+    background-position: center;
+    background-size: 100% 100%;
+} */

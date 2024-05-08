@@ -26,7 +26,7 @@ function CampusLocation() {
     }
     return (
         <>
-            <div className="container" style={{ marginTop: "60px" }}>
+            <div className="container campus-location-container">
                 <h5 className="text-center Programme-Locations">Programme Locations</h5>
                 <div className="row">
                     {Object.keys(data).map((campusName) => {
