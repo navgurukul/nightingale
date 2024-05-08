@@ -1,0 +1,12 @@
+.card-title {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+
+}
+.job-assistance-container{
+    background-color: antiquewhite;
+    margin-top: 40px;
+}

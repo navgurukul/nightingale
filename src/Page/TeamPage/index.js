@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 import axios from "axios";
 import Tippy from "@tippyjs/react";
-import user from "./assets/user-icon.png";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
+
+
 
 function shuffleObject(obj) {
   let newObj = {};
@@ -86,7 +87,7 @@ function TeamPage() {
                   type="button"
                   class="btn section-para regular-btn my-2 mx-3 career-button"
                   onClick={(e) => {
-                    e.preventDefault();
+                      e.preventDefault();
                     window.open(
                       "https://recruiterflow.com/navgurukul/jobs",
                       // "https://www.notion.so/navgurukul/NG-Job-Board-cc0fc74362214e4a8d31a061ad9559ba",
@@ -241,5 +242,4 @@ function TeamPage() {
     </main>
   );
 }
-
 export default TeamPage;

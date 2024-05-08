@@ -34,7 +34,7 @@ function Home() {
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md head-div ">
-            <h2 className=" heading-line ">
+            <h2 className="heading-line ">
               The <span className="text-primary">Gurukul</span> for the <br />
               <span className="BgColor"> New Age India</span> and its New
               Generation{" "}
@@ -82,7 +82,7 @@ function Home() {
                         </span>
                       </h4>
                       <p class="card-text section-para card-dic ">
-                        Fully-funded one year courses in software engineering with 
+                        Fully-funded one year courses in software engineering with
                         guaranteed jobs
                       </p>
                     </div>
@@ -93,7 +93,7 @@ function Home() {
             <div className="col-lg-6 initiative-card-parent mb-md-2">
               <div className="bg-image2 initiative-card card  shadow-1-strong">
                 <a href="/designer" target="_blank">
-                  <div className="Initiatives-bg-color rgba-black-strong">
+                <div className="Initiatives-bg-color rgba-black-strong">
                     <div className="card-body text-white ">
                       <div
                         className="d-flex align-items-end "
@@ -101,7 +101,7 @@ function Home() {
                       >
                         <h4 class="card-title mb-1  card-main-text text-center card-heading ">
                           <span className="BgColor">
-                          School of Design{" "}
+                            School of Design{" "}
                           </span>
                         </h4>
                       </div>
@@ -129,12 +129,11 @@ function Home() {
                         <h4 class="card-title mb-1  card-main-text text-center card-heading ">
                           <span className="BgColor">
                             Learn Online with Meraki{" "}
-                          </span>
+                          </span> 
                         </h4>
-                        {/* <FiExternalLink className="ml-3 external-link-icon" /> */}
                       </div>
                       <p class="card-text  section-para  card-dic ">
-                      Get started with programming in Python, English and Typing at the comfort of your home
+                        Get started with programming in Python, English and Typing at the comfort of your home
                       </p>
                     </div>
                   </div>
@@ -144,7 +143,7 @@ function Home() {
 
             <div class="col-lg-6 initiative-card-parent mb-md-2">
               <div class="bg-image4 initiative-card card shadow-1-strong">
-              <a href="https://www.codeindiafellowship.org/" target="_blank">
+                <a href="https://www.codeindiafellowship.org/" target="_blank">
                   <div className="Initiatives-bg-color rgba-black-strong">
                     <div
                       class="card-body text-white"
@@ -156,7 +155,7 @@ function Home() {
                         </span>
                       </h4>
                       <p class="card-text section-para  card-dic">
-                        Nurture programming skills in the next generation 
+                        Nurture programming skills in the next generation
                         of India’s youth with your expertise
                       </p>
                     </div>
@@ -166,13 +165,12 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       <section className="our-partners text-center  d-flex flex-column ">
         <h3 className="align-self-center ">
           Our <span className="BackColor">Partners</span>
         </h3>
-        {/* <hr className="align-self-center heading-hr" /> */}
         <PartnerSlider />
 
         <div class="d-flex flex-column align-items-center justify-content-center align-items-center mar-3">
@@ -194,12 +192,11 @@ function Home() {
         <h3>
           Our <span className="BackColor">Supporters</span>
         </h3>
-        {/* <hr className="heading-hr" /> */}
         <div class="container ">
           <SupporterSlider />
         </div>
       </section>
-    </div>
+    </div >
   );
 }
 
