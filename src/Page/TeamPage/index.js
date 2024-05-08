@@ -70,13 +70,16 @@ function TeamPage() {
     <main className="team-page">
       <div className="team-content">
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
-          <h3 className="section-head mb-3">Our Team</h3>
+          <h3 className="section-head mb-2">Our Team</h3>
+          <div className="title-line"></div>
     
-          <div className="team-page-content w-50">
-            <p className="section-para">
-              We are a collective of full timers and volunteers that form the
-              backbone aiming to bring affordable education to underprivileged
-              girl students across India.
+          <div className="team-page-content">
+            <p className="section-para ptag">
+            We are a collective of full-timers and volunteers who form the backbone of a movement 
+            aiming to bring affordable education to underprivileged girl students across India. Our
+            workforce composition is consciously diverse and inclusive, with 65% of our team members 
+            being NavGurukul Alumni, over 67% of team members being women, and those who identify 
+            in the gender spectrum as non-binary.
             </p>
           </div>
           <div className="container ">
@@ -93,6 +96,7 @@ function TeamPage() {
                       "_blank"
                     );
                   }}
+                 
                 >
                   Careers at Navgurukul
                 </button>
@@ -116,7 +120,8 @@ function TeamPage() {
         <section className="team-section w-100 mt-4 d-flex flex-column justify center align-items-center">
           {/* <h3 className="section-head">Core Members</h3>
           <hr className="mt-2" /> */}
-          <div className="all-members-btns d-flex justify-content-center align-items-center w-100">
+
+          {/* <div className="all-members-btns d-flex justify-content-center align-items-center w-100">
             <span
               onClick={() => {
                 setMembers({ volunteers: false, teamMembers: true });
@@ -154,7 +159,8 @@ function TeamPage() {
             >
               Our Supporters
             </span>
-          </div>
+          </div> */}
+
           {/* <h4>We will be adding our volunteers soon...</h4> */}
           <div className="container px-0 team-info-cards-container justify-content-md-start">
             {Object.keys(shuffleObject(team)).length ? (
