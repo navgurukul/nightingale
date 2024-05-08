@@ -21,8 +21,6 @@ function OurCampus() {
     });
   }, []);
 
-
-
   if (data === null) {
     return (
       <div className="container">
