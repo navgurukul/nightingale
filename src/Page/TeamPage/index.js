@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 import axios from "axios";
 import Tippy from "@tippyjs/react";
-import user from "./assets/user-icon.png";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
 
@@ -118,50 +117,6 @@ function TeamPage() {
           </div>
         </section>
         <section className="team-section w-100 mt-4 d-flex flex-column justify center align-items-center">
-          {/* <h3 className="section-head">Core Members</h3>
-          <hr className="mt-2" /> */}
-
-          {/* <div className="all-members-btns d-flex justify-content-center align-items-center w-100">
-            <span
-              onClick={() => {
-                setMembers({ volunteers: false, teamMembers: true });
-              }}
-              className={
-                members.teamMembers
-                  ? "section-head core-team-members members-selector"
-                  : "section-para core-team-members members-selector"
-              }
-              style={
-                members.teamMembers
-                  ? {
-                      borderBottom: "3px solid #f05f40",
-                      fontWeight: "bold",
-                    }
-                  : {}
-              }
-            >
-              Core Team
-            </span>
-            <span
-              onClick={() => {
-                setMembers({ teamMembers: false, volunteers: true });
-              }}
-              className={
-                members.volunteers
-                  ? "section-head core-team-members members-selector"
-                  : "section-para core-team-members members-selector"
-              }
-              style={
-                members.volunteers
-                  ? { borderBottom: "3px solid #f05f40", fontWeight: "bold" }
-                  : {}
-              }
-            >
-              Our Supporters
-            </span>
-          </div> */}
-
-          {/* <h4>We will be adding our volunteers soon...</h4> */}
           <div className="container px-0 team-info-cards-container justify-content-md-start">
             {Object.keys(shuffleObject(team)).length ? (
               Object.keys(shuffleObject(team)).map((item) => {
