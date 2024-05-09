@@ -25,9 +25,6 @@ function AboutPage() {
         <section className="page-section d-flex flex-column mb-0">
           <h3 className="section-head mb-3">Who We Are</h3>
 
-          {/* <div className="mt-3">
-            <img src="https://nightingale1.s3.ap-south-1.amazonaws.com/images/section-bg.png" className="backgroundImg" />
-          </div> */}
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 section-para">
               Founded in <span className="number">2016</span> by graduates of Harvard and IIT-Delhi,
