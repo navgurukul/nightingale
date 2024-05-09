@@ -243,7 +243,6 @@ const Donate = () => {
     <main className="container mt-4">
       <h4 className="section-head mt-4 mb-5">
        Your Donation helps us transform underprivileged students into skilled coders
-        {/* Help Us Support Education of Underprivileged Students */}
         </h4>
         <p>
           <h5>Why is your donation important? </h5>
@@ -251,7 +250,6 @@ const Donate = () => {
           By supporting their education, you're helping them discover their social agency, develop volition, and become exemplary citizens who can lead independent lives.
           Help us bridge the divide and create a nurturing environment where these young minds can flourish professionally and personally.
         </p>
-        {/* from here */}
         <div className=" d-flex flex-column ">
           <h5 className="mb-3 mt-3"> Any amount donated to NavGurukul will be eligible for tax exemption under 80G.</h5>
         </div>
@@ -372,9 +370,6 @@ const Donate = () => {
           </div>
         ))}
         </div>   
-        {/* <div className=" d-flex flex-column ">
-          <p className="mb-3 mt-3"> Any amount donated to NavGurukul will be eligible for tax exemption under 80G.</p>
-        </div> */}
       </div>
       }
       {selectedCitizenship === 'Foreign' && (
