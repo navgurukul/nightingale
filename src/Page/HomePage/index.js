@@ -9,14 +9,26 @@ import img1 from "./assets/image1.svg"
 import img2 from "./assets/image2.svg"
 import img3 from "./assets/image3.jpg"
 import img4 from "./assets/image4.png"
+import playicon from "./assets/playicon.png";
 
 
 import { Col, Container, Row } from "react-bootstrap";
 import KeyFacilities from "./KeyFacilities";
 import Digitallnitiatives from "./DigitalInitiatives";
+import HearAlumnus from "./HearAlumnus";
 
 function Home() {
   const history = useHistory();
+   const [showVideo, setShowVideo] = useState(false); // State to control modal visibility
+
+  const handleButtonClick = () => {
+    setShowVideo(true); // Show the modal with the video
+  };
+
+  const handleClose = () => {
+    setShowVideo(false); // Hide the modal
+  };
+  const youtubeVideoId = 'NC2ymm6Sots';
   return (
     <div className="navgurukul-homepage ">
       {/* <div className="home-page-bg text-white home-page-ng ">
@@ -52,14 +64,31 @@ function Home() {
             </p>
           </div>
           <div className="col-md-1"></div>
-          <div class="col-md-7 ">
-            <img
-              src={require("./assets/student.jpg").default}
-              className="home-image"
-            />
+            {!showVideo &&
+              <div className="col-md-7 position-relative image-background">
+                <div className="centered-play-icon">
+                  <button className="image-button" onClick={handleButtonClick}> 
+                    <img src={playicon} className="play-icon-image" alt="Play" /> 
+                  </button>
+                </div>
+              </div>
+            }
+
+            {showVideo && (
+              <div className="video-container col-md-7 position-relative">
+                <iframe
+                    width="100%"
+                    height= "680px" 
+                    style={{ border: 'none', borderRadius: '32px 0 0 32px' }} 
+                    src={`https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1`} 
+                    allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen 
+                    title="YouTube Video"
+                  />
+              </div>
+            )}
           </div>
         </div>
-      </div>
       <section className="media-scroll-section d-flex flex-column justify-content-center">
         <div className="row"> 
           <div className="col-md-3"> 
@@ -213,6 +242,17 @@ function Home() {
           <SupporterSlider />
         </div>
       </section>
+      <section className="d-flex home-page-supporters flex-column align-items-center justify-content-center  ">
+        <h3>
+          Hear from the alumnus
+        </h3>
+        {/* <hr className="heading-hr" /> */}
+        <div class="container ">
+         <HearAlumnus />
+        </div>
+      </section>
+
+      
     </div>
   );
 }

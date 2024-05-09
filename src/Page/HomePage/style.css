@@ -9,9 +9,49 @@
   background-position: top center;
   width: 100%;
   height: 800px;
-  /* background-color: transparent; */
+ 
   
 }
+.image-background {
+  background-image: url('./assets/student.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 680px; 
+  position: relative; 
+  border-radius: 32px 0 0 32px;
+}
+
+.centered-play-icon {
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer; 
+}
+.image-button {
+  border: none; /* Remove border for a cleaner look */
+  background: transparent; /* Transparent background */
+  cursor: pointer; /* Cursor changes to indicate clickability */
+  outline: none; /* Remove outline for better styling, but ensure accessibility */
+}
+
+.image-button:focus {
+  outline: 2px solid #007bff; /* Optional focus outline for accessibility */
+}
+
+.play-icon-image {
+  width: 112.5px; /* Set the width of the play icon */
+  height:112.5px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add a transition for hover effect */
+}
+
+.image-button:hover .play-icon-image {
+  transform: scale(1.1); /* Slight scaling on hover for visual feedback */
+}
+
+
 .mar-3 {
   margin-top: 32px;
 }
