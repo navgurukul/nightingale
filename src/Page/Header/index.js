@@ -14,7 +14,7 @@ function Header() {
       <a class="navbar-brand" href="/">
         <img
           src={require("./assets/logo.png").default}
-          // className="nav-logo"
+        // className="nav-logo"
         />
       </a>
 
@@ -111,6 +111,38 @@ function Header() {
               >
                 Blog
                 <FiExternalLink className="ml-2" />
+              </a>
+            </div>
+          </li>
+          <li className="nav-item dropdown">
+            <a
+              className="nav-link  header-title mr-3"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              School
+              <BiChevronDown />
+            </a>
+
+            <div
+              className="dropdown-menu dropdown-items"
+              aria-labelledby="navbarDropdown"
+            >
+              <a className="dropdown-item" href="/schoolofprograming">
+                school Of programming
+              </a>
+              <a className="dropdown-item" href="/schoolofBusiness">
+                School Of Business
+              </a>
+              <a className="dropdown-item" href="/schoolOfDesign">
+                School Of Design
+              </a>
+              <a className="dropdown-item" href="/schoolOfFinance">
+                School Of Finance
               </a>
             </div>
           </li>
