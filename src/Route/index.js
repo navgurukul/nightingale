@@ -18,9 +18,9 @@ import CampusPages from "../Page/CampusPages";
 import PageNotFound from "../Page/PageNotFound";
 import OurCampus from "../Page/OurCampus";
 import SchoolProgramming from "../Page/SchoolsPages/Programing";
-import SchoolOfBusiness from "../Page/SchoolsPages/SchoolOfBusiness";
 import SchoolOfDesign from "../Page/SchoolsPages/SchoolsOfDesign";
-import SchoolOfFinance from "../Page/SchoolsPages/SchoolOfFinance"
+import SchoolOfBusiness from "../Page/SchoolsPages/SchoolOfBusiness";
+import SchoolOfFinance  from "../Page/SchoolsPages/SchoolOfFinance"
 function ScrollToTop({ history }) {
   useEffect(() => {
     const unlisten = history.listen(() => {
@@ -41,12 +41,12 @@ function Routing() {
       <Scroller />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/schoolofprograming" component={SchoolProgramming}/>
-        <Route exact path="/schoolofBusiness" component={SchoolOfBusiness}/>
-        <Route exact path="/schoolOfDesign" component={SchoolOfDesign}/>
-        <Route exact path="/schoolOfFinance" component={SchoolOfFinance}></Route>
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/donate" component={Donate} />
+        <Route exact path="/programing" component={SchoolProgramming}></Route>
+        <Route exact path="/shoolDesign" component={SchoolOfDesign}></Route>
+        <Route exact path="/SchoolOfBusiness" component={SchoolOfBusiness}></Route>
+        <Route exact path="/SchoolOfFinance" component={SchoolOfFinance}></Route>
         <Route exact path="/hiring" component={NgHiring} />
         <Route exact path="/job-course" component={Programmer} />
         <Route exact path="/team" component={TeamPage} />
@@ -56,7 +56,7 @@ function Routing() {
         <Route exact path="/partners" component={Partners} />
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/campus" component={OurCampus} />
-        <Route exact path="/campus/:campusName" component={CampusPages} />
+        <Route exact path="/campus/:campusName" component={CampusPages}/>
         <Route exact path="*/" component={PageNotFound} />
       </Switch>
       <Footer />

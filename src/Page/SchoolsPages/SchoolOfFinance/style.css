@@ -1,4 +1,4 @@
-.SchoolOfFinanceBgImg {
+.SchoolOfFinanceBgImg{
     background-image: url('./assets/financeImg.png');
     background-size: cover;
     background-position: center;
@@ -8,98 +8,29 @@
     align-items: center;
     width: 100%;
 }
-.ProgramingContent{
+
+.programmingSchooltitle {
+    color:black;
+    font-family: Lato;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 54.6px;
+    text-align: left;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.Programingcontent {
+    color: black;
     font-family: Lato;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     text-align: left;
-    color:#2E2E2E;
-;
-    
-
-}
-.programmingSchoolTitle{
-    color:#2E2E2E;
 
 }
 
-
-.programme-audience-list-title {
-    font-family: Lato;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 48px;
-    text-align: center;
-    color: #2E2E2E;
-    
-
-}
-
-.lict-card {
-    border: 1px solid red;
-    position: relative;
-    top: 32px;
-}
-
-.programme-description {
-    font-family: Lato;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 27px;
-}
-
-.list-subtitle {
-    font-family: Lato;
-    font-size: 19px;
-    font-weight: 700;
-    line-height: 27px;
-    text-align: left;
-}
-
-.list-detail {
-    font-family: Lato;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 27px;
-    position: relative;
-}
-
-.heading {
-    font-family: Lato;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 27px;
-    position: relative;
-    right: 30px;
-}
-
-.list-group-inform {
-    position: relative;
-    bottom: 20px;
-    left: 20px;
-}
-
-.Activities-detail {
+.CampusLocation{
     position: relative;
     bottom: 40px;
-    right: 10px;
-    font-family: Lato;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-
-}
-
-.list {
-    font-family: Lato;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-
-}
-.jobAssistance{
-    margin-top: 50px;
 }

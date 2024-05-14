@@ -9,23 +9,47 @@
     width: 100%;
 }
 
-.programmingSchoolTitle {
+.programmingSchool-subtitle{
+    color: white;
     font-family: Lato;
     font-size: 42px;
     font-weight: 700;
-    color: white;
+    line-height: 54.6px;
+    text-align: left;
+    gap: 16px;
+    margin-bottom: 16px;
 }
 
-.ProgramingContent {
+.Programing-subtitle{
+    color: white;
     font-family: Lato;
     font-size: 18px;
     font-weight: 400;
-    color: white;
+    line-height: 27px;
+    text-align: left;
+
 }
 
-.container-text-box {
-    margin-top: 80px;
-    width: 90%;
+.second-container-box {
+    margin-top: 40px;
+}
+
+.custom-col {
+    margin: auto;
+
+}
+
+.mian-heading {
+    margin-bottom: 32px;
+    gap: 32px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+
+
 }
 
 .ProgramTitle {
@@ -34,71 +58,71 @@
     font-weight: 700;
     line-height: 36px;
     text-align: left;
-}
-
-.ProgramAddressTitle {
-    font-family: Nunito Sans;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30.6px;
-    text-align: left;
+    margin-bottom: 16px;
+    gap: 16px;
+    opacity: 0px;
 
 }
 
 .programContent {
-    font-family: Noto Sans;
+    font-family: Lato;
     font-size: 18px;
     font-weight: 400;
-    line-height: 30.6px;
+    line-height: 27px;
     text-align: left;
-
+    margin-bottom: 16px;
 }
 
-.mian-heading {
+.instagram-img {
+    margin-bottom: 16px;
+}
+
+.ProgramAddressTitle {
     font-family: Lato;
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 48px;
-    text-align: center;
-    margin: 32px;
-    opacity: 0px;
+    line-height: 27px;
+    text-align: left;
 }
 
-.web-body-1 {
-    width: Fixed (736px)px;
-    height: Hug (296px)px;
-    gap: 32px;
-    opacity: 0px;
+.container-section {
+    padding: 40px;
+}
+
+.col-section {
     margin: auto;
+
 }
 
 .programme-audience-list {
     font-family: Lato;
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 32px;
     line-height: 48px;
     text-align: center;
 }
 
-.list {
+.list-item {
     font-family: Lato;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 30px;
     text-align: left;
-    color: hsla(0, 0%, 18%, 1);
+
 }
 
-.list-group {
-    width: Fixed (736px)px;
-    height: Hug (296px)px;
-    gap: 32px;
-    opacity: 0px;
+.first-row {
+    margin-bottom: 80px;
+}
+
+.col-section-2 {
+    margin: auto;
 }
 
 .programme-details-item {
     font-family: Lato;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     text-align: left;
@@ -106,36 +130,16 @@
 
 .programme-details-subitem {
     font-family: Lato;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 27px;
+    text-align: left;
+    margin-bottom: 80px;
 }
-
-.Activities {
-    margin-top: 30px;
+.second-row{
+    margin-bottom: 70px;
+}
+.jobAssistance{
     position: relative;
-    right: 25px;
-    font-family: Lato;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 27px;
-}
-
-.Activities-title {
-    margin-top: 30px;
-    position: relative;
-    right: 25px;
-    bottom: 16px;
-    font-family: Lato;
-    font-size: 1px;
-    font-weight: 400;
-    line-height: 27px;
-}
-
-.programme-details-list {
-    margin-left: 40px;
-}
-.programme-details-list{
-    position: relative;
-    bottom: 14px;
+    bottom: 40px;
 }

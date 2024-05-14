@@ -1,21 +1,26 @@
 .job-assistance-container {
-    background: hsla(11, 81%, 92%, 1);
+    background: #FBDFD9;
 }
+
 .job-Assistance-title {
     font-family: Lato;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
-    margin: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    gap: 16px
 }
+
+.card-cantainer {
+    margin: auto;
+    background: #FBDFD9;
+}
+
 .card-content {
     font-family: Lato;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     text-align: left;
-    margin: 16px;
-}
-.card-cotainer{
-    margin: 32px;
 }

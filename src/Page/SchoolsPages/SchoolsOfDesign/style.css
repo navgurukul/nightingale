@@ -8,6 +8,129 @@
     align-items: center;
     width: 100%;
 }
-.jobAssistance{
-    margin-top: 50px;
+
+.programmingSchooltitle {
+    color:black;
+    font-family: Lato;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 54.6px;
+    text-align: left;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.Programingcontent {
+    color: black;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+.second-container-box {
+    margin-top: 40px;
+}
+
+.custom-col {
+    margin: auto;
+
+}
+
+.mian-heading {
+    margin-bottom: 32px;
+    gap: 32px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+}
+
+.ProgramTitle {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 16px;
+    gap: 16px;
+    opacity: 0px;
+}
+.programContent {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.instagram-img {
+    margin-bottom: 16px;
+}
+
+.ProgramAddressTitle {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+}
+
+.container-section {
+    padding: 40px;
+}
+
+.col-section {
+    margin: auto;
+
+}
+.programme-audience-list {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.list-item {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+
+}
+
+.first-row {
+    margin-bottom: 80px;
+}
+
+.col-section-2 {
+    margin: auto;
+}
+
+.programme-details-item {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.programme-details-subitem {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+.second-row{
+    margin-bottom: 70px;
 }

@@ -1,4 +1,4 @@
-.bg {
+.SchoolOfBUsiness{
     background-image: url('./assets/businessbgimg.png');
     background-size: cover;
     background-position: center;
@@ -8,148 +8,28 @@
     align-items: center;
     width: 100%;
 }
-.programmingSchooltitle {
+
+.Schooltitle{
+    color:#ffffff;
     font-family: Lato;
     font-size: 42px;
     font-weight: 700;
+    line-height: 54.6px;
+    text-align: left;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.Programingtext {
     color: white;
-
-}
-.Programingcontent {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-}
-
-.container-text-box {
-    margin-top: 80px;
-    width: 90%;
-}
-
-.ProgramTitle {
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    text-align: left;
-}
-
-.ProgramAddressTitle {
-    font-family: Nunito Sans;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30.6px;
-    text-align: left;
-
-}
-
-.programContent {
-    font-family: Noto Sans;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30.6px;
-    text-align: left;
-
-}
-
-.mian-heading {
-    font-family: Lato;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 48px;
-    text-align: center;
-    margin: 32px;
-    opacity: 0px;
-}
-
-.web-body-1 {
-    width: Fixed (736px)px;
-    height: Hug (296px)px;
-    gap: 32px;
-    opacity: 0px;
-    margin: auto;
-}
-
-.programme-audience-list {
-    font-family: Lato;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 48px;
-    text-align: center;
-}
-
-.list {
     font-family: Lato;
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     text-align: left;
 
-    color: hsla(0, 0%, 18%, 1);
 }
-
-.list-group {
-    width: Fixed (736px)px;
-    height: Hug (296px)px;
-    gap: 32px;
-    opacity: 0px;
-}
-
-.programme-details-item {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-}
-
-.programme-details-subitem {
-    font-family: Lato;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 27px;
-    text-align: left;
-}
-
-.JobAssistance {
-    margin-top: 50px;
-}
-
-.Activities {
-    margin-top: 30px;
+.Course-lacation{
     position: relative;
-    right: 25px;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-}
-
-.Activities-title {
-    margin-top: 30px;
-    position: relative;
-    right: 25px;
-    bottom: 16px;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-}
-
-.programme-details-list {
-    margin-left: 40px;
-}
-
-.programme-details-list {
-    position: relative;
-    bottom: 14px;
-}
-.list-group1{
-    width: Fixed (736px)px;
-    height: Hug (296px)px;
-    gap: 32px;
-    opacity: 0px;
-    position: relative;
-    right: 40px;
+    bottom: 40px;
 }

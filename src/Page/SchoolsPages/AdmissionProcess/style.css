@@ -1,94 +1,85 @@
-.stage-1 {
+.container-card-1 {
+    padding: 16px;
+    gap: 16px;
+    margin-bottom: 16px;
+    background: #FBDFD9;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.subtitle {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    /* text-align: left; */
+    gap: 16px;
+
+}
+
+.subtitle-prag {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+
+}
+
+.eligibility {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    /* text-align: left; */
+
+}
+
+.container-card-2 {
+    padding: 16px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.title-class {
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+}
+
+.eligibility-condidates {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    /* text-align: left; */
+
+}
+
+.stage-area {
+    /* width: Hug (92px)px; */
+    /* height: Hug (43px)px; */
+    padding: 8px 16px 8px 16px;
+    border-radius: 8px;
+    opacity: 0px;
     font-family: Lato;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
     text-align: center;
-    width: Hug (92px)px;
-    height: Hug (43px)px;
-    padding: 8px 16px 8px 16px;
-    gap: 8px;
-    border-radius: 8px 8px 8px 8px;
-    opacity: 0px;
-
 }
 
-
-
-.container-card {
-    width: Fixed (256px)px;
-    height: Hug (210px)px;
-    padding: 16px 0px 0px 0px;
-    gap: 16px;
-    border-radius: 8px 8px 8px 8px;
-    opacity: 0px;
-    background: hsla(11, 81%, 92%, 1);
-    margin-top: 16px;
-
+.stage-container {
+    margin-bottom: 16px;
 }
 
-.title {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
-    text-align: left;
-    color: black;
-}
-
-.text {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-}
-
-.description-content {
-    width: Fixed (256px)px;
-    height: Hug (350px)px;
-    padding: 16px 0px 0px 0px;
-    gap: 16px;
-    border-radius: 8px 0px 0px 0px;
-    opacity: 0px;
-    margin: 16px;
-    position: relative;
-    bottom: 16px;
-
-}
-
-.container-description {
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-}
-
-.heading {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 27px;
-    margin-left: 32px;
-    /* text-align: left; */
-    /* margin: 16px; */
-}
-
-.stage-first-content {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-    border-radius: 20px;
-    margin: 16px;
-    position: relative;
-    bottom: 10px;
-}
-
-.section-heading-one {
+.admission-title {
     font-family: Lato;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
     text-align: center;
-    margin: 32px;
+    margin-bottom: 32px;
 
 }

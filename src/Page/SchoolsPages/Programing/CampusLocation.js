@@ -17,9 +17,6 @@ function OurCampusLocation() {
                 );
             });
     }, []);
-
-
-
     if (data === null) {
         return (
             <div className="container">
@@ -27,7 +24,6 @@ function OurCampusLocation() {
             </div>
         );
     }
-
     return (
         <div className="container campus-location-container">
             <h5 className="text-center mian-heading">Programme Locations</h5>
@@ -36,18 +32,16 @@ function OurCampusLocation() {
                     const campus = data[campusName];
                     if (campus.Name && campus.Address) {
                         return (
-                            <div key={campusName} className="col-lg-6 mb-4">
-                                <div className="container-box">
-                                    <div>
-                                        <h5 className="ProgramTitle">{campus.Name}</h5>
-                                        <p className="programContent"><span className="ProgramAddressTitle">Address:</span>{campus.Address}</p>
-                                        <p className="programContent"> <span className="ProgramAddressTitle">Email :</span>{campus.Contact}</p>
-                                        <img
-                                            src={require("../assets/instagram.png").default}
-                                            alt=""
-                                            className="instagram-img"
-                                        />
-                                    </div>
+                            <div key={campusName} className="col-lg-6 col-sm-12 col-md-12 mb-4 location-data-card">
+                                <div className="container-information">
+                                    <h5 className="ProgramTitle">{campus.Name}</h5>
+                                    <p className="programContent"><span className="ProgramAddressTitle">Address : </span>{campus.Address}</p>
+                                    <p className="programContent"> <span className="ProgramAddressTitle">Email : </span>{campus.Contact}</p>
+                                    <img
+                                        src={require("../assets/instagram.png").default}
+                                        alt=""
+                                        className="instagram-img"
+                                    />
                                 </div>
                             </div>
                         );
