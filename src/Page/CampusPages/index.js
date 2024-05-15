@@ -57,9 +57,6 @@ function CampusPages() {
     }
   }, [imgCount]); 
 
-  const handleInstagramClick = () => {
-  };
-
   return (
     <div className="campus-page d-flex flex-column justify-content-center mb-6">
       <div className="campus-description mt-6 mb-3 d-flex flex-column justify-content-center align-items-center">
