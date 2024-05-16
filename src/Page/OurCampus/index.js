@@ -48,14 +48,10 @@ function OurCampus() {
                   <div >
                   <div className="campus-title-design ">
                     <h5 className="card-title cmapus-fontfamily">{campus.Name}</h5>
-
-                    
                     {campus.Name==="Jashpur Campus " &&
                     <span className="chip-status mb-2">
                     Newly Opened</span>
                     }
-                    
-                    
                     </div>
                     <span className="cmapus-fontfamily">{campus.Address}</span>
                     </div>

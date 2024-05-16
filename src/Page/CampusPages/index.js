@@ -68,7 +68,6 @@ function CampusPages() {
             <span className="mb-3 our-campus">
             <a href="/campus" className="campus-link">Our Campuses </a>/ {campus}</span>
               <h4 className="mb-3 campus-name">{data[campus].Name}</h4>
-              {console.log(data[campus])}
               <div className="mb-3 campus-address">
                 <span className="fw-bold">Address : </span>
                 {data[campus].Address}
