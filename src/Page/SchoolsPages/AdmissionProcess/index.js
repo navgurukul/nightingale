@@ -1,3 +1,4 @@
+import "./style.css"
 function AdmissionProcess() {
     return (
         <>
@@ -5,17 +6,16 @@ function AdmissionProcess() {
                 <h3 className="text-center mb-1">
                     Admission <span className="BackColor">Process</span>
                 </h3>
-                {/* <h3 className="mb-3 section-head">Admission Process</h3> */}
                 <div className="all-partners w-75 d-flex flex-column">
                     <div className="all-partners-row d-flex justify-content-around w-100 my-1">
                         <div class="container-fluid overflow-hidden">
                             <div class="row">
-                                <div class="col-sm-12 col-lg-3 col-md-6" style={{ marginBottom: "14px" }}>
+                                <div class="col-sm-12 col-lg-3 col-md-6">
                                     <div class="p-3">
                                         <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px" }}>
                                             <button
                                                 style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark text-white align-self-right w-70 my-1 fs-18 p"
+                                                className="btn btn-dark stage-btn"
                                             >
                                                 stage 1
                                             </button>
@@ -60,7 +60,7 @@ function AdmissionProcess() {
                                         <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px" }}>
                                             <button
                                                 style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark text-white align-self-right w-70 my-1 fs-18 p"
+                                                className="btn btn-dark stage-btn"
                                             >
                                                 stage 2
                                             </button>
@@ -84,10 +84,10 @@ function AdmissionProcess() {
                                 </div>
                                 <div className="col-sm-12 col-lg-3 col-md-6">
                                     <div className="p-3">
-                                        <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px" }}>
+                                        <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px 8px" }}>
                                             <button
                                                 style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark text-white align-self-right w-70 my-1 fs-18 p"
+                                                className="btn btn-dark stage-btn"
                                             >
                                                 stage 3
                                             </button>
@@ -118,7 +118,7 @@ function AdmissionProcess() {
                                         <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px" }}>
                                             <button
                                                 style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark text-white align-self-right w-70 my-1 fs-18 p"
+                                                className="btn btn-dark stage-btn"
                                             >
                                                 stage 4
                                             </button>

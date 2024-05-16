@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 function CoursesLocation() {
     const [data, setData] = useState(null);
     const history = useHistory();
-
     useEffect(() => {
         axios.get("https://navgurukul.github.io/tarabai-shinde/data/campuses.json")
             .then((res) => {
@@ -27,28 +26,40 @@ function CoursesLocation() {
     return (
         <div className="container course-location-page">
             <div className="row">
-
                 {programmingCampuses.map((campus) => (
-                    <div className="col-sm-12 col-md-12 col-lg-8 container-card" key={campus.Name}>
-                        <h5 className="program-location-title">Programme Locations</h5>
-                        <div className="campus-card">
-                            <div className="card-body">
-                                <div className="campus-title-design">
-                                    <h5 className="campus-title">{campus.Name}</h5>
-                                </div>
-                                <p className="cmapus-address"><span className="subtitle-information"> Address : </span>{campus.Address}</p>
-                                <p className="cmapus-address"><span className="subtitle-information"> Email : </span>{campus.Contact}</p>
-                                <img
-                                    src={require("../assets/instagram.png").default}
-                                    alt=""
-                                    className="instagram"
-                                />
-                            </div>
+                    <div className="col-sm-12 col-md-12 col-lg-9" style={{margin: "auto" }}>
+                        <div className="campus-title-design ">
+                            <h5 className="card-title cmapus-fontfamily" style={{ fontSize: "24px" }}>{campus.Name}</h5>
+                            {campus.Name === "Jashpur Campus " &&
+                                <span className="chip-status mb-2">
+                                    Newly Opened</span>
+                            }
+                        </div>
+                        <span className="">
+                            <span className="fw-bold ">Address : </span>{" "}
+                            {campus.Address}
+                        </span>
+                        <div className="mt-3">
+
+                            <span className="li-points">
+                                <span className="fw-bold ">Email : </span>{" "}
+                                {campus.Contact}
+                            </span>
+                        </div>
+                        <div className="mt-3">
+                            <img
+                                src={require("../assets/instagram.png").default}
+                                alt=""
+                                className="instagram"
+                            />
                         </div>
                     </div>
                 ))}
+
             </div>
         </div>
     );
 }
 export default CoursesLocation;
+
+

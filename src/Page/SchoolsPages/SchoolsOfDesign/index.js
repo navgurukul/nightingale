@@ -2,6 +2,7 @@ import "./style.css"
 import JobAssistance from "../JobAssistance"
 import AdmissionProcess from "../AdmissionProcess";
 import ScreeningTestPage from "../ScreningTest";
+import CoursesLocation from "../CourseLocations";
 function SchoolOfDesignPage() {
     return (
         <>
@@ -25,21 +26,21 @@ function SchoolOfDesignPage() {
                         <h3 className="text-center" style={{ marginBottom: "16px" }}>
                             Who this <span className="BackColor">Programme</span> is for
                         </h3>
-                        <div className=" col-md-12 col-lg-8 col-12" style={{ margin: "auto" }}>
+                        <div className=" col-md-12 col-lg-9 col-12" style={{ margin: "auto" }}>
                             <ul className="ml-3">
                                 <li className="mb-2">
                                     <span className="li-points ">
-                                        Youth above 16 years of age from underprivileged or low income communities who can’t afford expensive college education
+                                        Youth above 16 years of age from underprivileged or low income communities who can’t<br></br> afford expensive college education
                                     </span>
                                 </li>
                                 <li className="mb-2">
                                     <span className="li-points">
-                                        No prior education needed : Our students have been school and college dropouts, 10th or 12th pass as well as degree holders such as BSc, BTech who could not get jobs
+                                        No prior education needed : Our students have been school and college dropouts, 10th or<br></br> 12th pass as well as degree holders such as BSc, BTech who could not get jobs
                                     </span>
                                 </li>
                                 <li className="mb-2">
                                     <span className="li-points">
-                                        Anyone from low income families of less than 15,000 INR in urban areas and 10,000 INR in rural areas
+                                        Anyone from low income families of less than 15,000 INR in urban areas and 10,000<br></br> INR in rural areas
                                     </span>
                                 </li>
                                 <li className="mb-2">
@@ -57,7 +58,7 @@ function SchoolOfDesignPage() {
                     </div>
                 </div>
                 <div className="row custom-row">
-                    <div className="col-md-12 col-lg-8 col-12" style={{ margin: "auto" }}>
+                    <div className="col-md-12 col-lg-9 col-12" style={{ margin: "auto" }}>
                         <h3 className="text-center" style={{ marginBottom: "16px" }}>
                             What <span className="BackColor">You Will</span>  Learn
                         </h3>
@@ -65,28 +66,28 @@ function SchoolOfDesignPage() {
                             Our teacher-led, 18-months design course Includes:
                         </span>
                         <ol className="mt-4 ml-4">
-                            <li className="mb-2 points ">
+                            <li className="mb-1 points ">
                                 <span className="li-points">
                                     <span className="fw-bold "> Introduction: </span>{" "}
                                     Graphic design and its domains
                                 </span>
                             </li>
-                            <li className="mb-2 points ">
+                            <li className="mb-1 points ">
                                 <span className="li-points">
                                     <span className="fw-bold "> Fundamental and Basics of Design : </span>{" "}
                                     Elements, drawing, color theory, typography
                                 </span>
                             </li>
-                            <li className="mb-2 points ">
+                            <li className="mb-1 points ">
                                 <span className="li-points">
                                     <span className="fw-bold ">Exploring Design Domains : </span> Clone
-                                     Publication design, social media design, UX design, video editing, motion graphics
+                                    Publication design, social media design, UX design, video editing, motion graphics
                                 </span>
                             </li>
                             <li className="mb-0 points">
                                 <span className="li-points">
                                     <span className="fw-bold ">  Creation of Portfolio : </span> English
-                                   Preparing portfolios for job applications
+                                    Preparing portfolios for job applications
                                 </span>
                             </li>
                         </ol>
@@ -96,6 +97,7 @@ function SchoolOfDesignPage() {
                         </span>
                     </div>
                 </div>
+                <CoursesLocation></CoursesLocation>
             </div>
             {/* <OurCampusLocation></OurCampusLocation> */}
             <JobAssistance></JobAssistance>

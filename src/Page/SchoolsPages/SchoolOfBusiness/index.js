@@ -2,6 +2,7 @@ import "./style.css"
 import JobAssistance from "../JobAssistance"
 import AdmissionProcess from "../AdmissionProcess";
 import ScreeningTestPage from "../ScreningTest";
+import CoursesLocation from "../CourseLocations";
 function SchoolOfBusinessPage() {
     return (
         <>
@@ -25,21 +26,21 @@ function SchoolOfBusinessPage() {
                         <h3 className="text-center" style={{ marginBottom: "16px" }}>
                             Who this <span className="BackColor">Programme</span> is for
                         </h3>
-                        <div className=" col-md-12 col-lg-8 col-12" style={{ margin: "auto" }}>
+                        <div className=" col-md-12 col-lg-9 col-12" style={{ margin: "auto" }}>
                             <ul className="ml-3">
-                                <li className="mb-2">
+                                <li className="mb-1">
                                     <span className="li-points ">
-                                        Youth above 16 years of age from underprivileged or low income communities who can’t afford expensive college education
+                                        Youth above 16 years of age from underprivileged or low income communities who can’t<br></br>  afford expensive college education
                                     </span>
                                 </li>
-                                <li className="mb-2">
+                                <li className="mb-1">
                                     <span className="li-points">
-                                        No prior education needed : Our students have been school and college dropouts, 10th or 12th pass as well as degree holders such as BSc, BTech who could not get jobs
+                                        No prior education needed : Our students have been school and college dropouts, 10th or<br></br> 12th pass as well as degree holders such as BSc, BTech who could not get jobs
                                     </span>
                                 </li>
-                                <li className="mb-2">
+                                <li className="mb-1">
                                     <span className="li-points">
-                                        Anyone from low income families of less than 15,000 INR in urban areas and 10,000 INR in rural areas
+                                        Anyone from low income families of less than 15,000 INR in urban areas and 10,000<br></br> INR in rural areas
                                     </span>
                                 </li>
                                 <li className="mb-2">
@@ -57,7 +58,7 @@ function SchoolOfBusinessPage() {
                     </div>
                 </div>
                 <div className="row custom-row">
-                    <div className="col-md-12 col-lg-8 col-12" style={{ margin: "auto" }}>
+                    <div className="col-md-12 col-lg-9 col-12" style={{ margin: "auto" }}>
                         <h3 className="text-center" style={{ marginBottom: "16px" }}>
                             What <span className="BackColor">You Will</span>  Learn
                         </h3>
@@ -95,6 +96,7 @@ function SchoolOfBusinessPage() {
                         </span>
                     </div>
                 </div>
+                <CoursesLocation></CoursesLocation>
             </div>
             <JobAssistance></JobAssistance>
             <AdmissionProcess></AdmissionProcess>

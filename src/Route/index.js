@@ -86,7 +86,6 @@ import SchoolProgramming from "../Page/SchoolsPages/Programing";
 import SchoolOfDesignPage from "../Page/SchoolsPages/SchoolsOfDesign";
 import SchoolOfBusinessPage from "../Page/SchoolsPages/SchoolOfBusiness";
 import SchoolOfFinancePage from "../Page/SchoolsPages/SchoolOfFinance"
-// import SchoolOfDesign from "../Page/SchoolsPages/SchoolsOfDesign";
 function ScrollToTop({ history }) {
   useEffect(() => {
     const unlisten = history.listen(() => {
