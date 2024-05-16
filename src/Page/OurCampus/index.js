@@ -12,17 +12,14 @@ function OurCampus() {
     axios({
       url: "https://navgurukul.github.io/tarabai-shinde/data/campuses.json",
     })
-    .then((res) => {
-      setData(
-        Object.keys(res.data).reduce((prev, next) => {
-          return { ...prev, [res.data[next].Name]: res.data[next] };
-        }, {})
-      );
-    });
+      .then((res) => {
+        setData(
+          Object.keys(res.data).reduce((prev, next) => {
+            return { ...prev, [res.data[next].Name]: res.data[next] };
+          }, {})
+        );
+      });
   }, []);
-
-
-
   if (data === null) {
     return (
       <div className="container">
@@ -41,37 +38,35 @@ function OurCampus() {
               const campus = data[campusName];
               if (campus.Name && campus.Address) {
                 return (
-                 
+
                   <div
                     className="card campus-card mb-3 md-5 bg-white py-3 px-4 position-relative"
                     key={campusName}
                     // onClick={history.push(``)}
-                    onClick={()=>{history.push(`/campus/${campus.Name.split(" ")[0]}`)}}
+                    onClick={() => { history.push(`/campus/${campus.Name.split(" ")[0]}`) }}
                   >
-                  <div >
-                  <div className="campus-title-design ">
-                    <h5 className="card-title cmapus-fontfamily">{campus.Name}</h5>
+                    <div >
+                      <div className="campus-title-design ">
+                        <h5 className="card-title cmapus-fontfamily">{campus.Name}</h5>
 
-                    
-                    {campus.Name==="Jashpur Campus " &&
-                    <span className="chip-status mb-2">
-                    Newly Opened</span>
-                    }
-                    
-                    
-                    </div>
-                    <span className="cmapus-fontfamily">{campus.Address}</span>
+
+                        {campus.Name === "Jashpur Campus " &&
+                          <span className="chip-status mb-2">
+                            Newly Opened</span>
+                        }
+                      </div>
+                      <span className="cmapus-fontfamily">{campus.Address}</span>
                     </div>
                     <div className="mt-3"></div>
                     <div className="campus-design">
                       {campus["Courses offered"] && campus["Courses offered"].split("|")
-                      .map((item)=>(<span className="scl-chip mb-2">{item}</span>))}
+                        .map((item) => (<span className="scl-chip mb-2">{item}</span>))}
                     </div>
-                 
+
                   </div>
                 );
               }
-              
+
             })}
           </div>
         </div>

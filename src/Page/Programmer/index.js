@@ -130,10 +130,6 @@ function Programmer() {
                 <h4 className="mb-3 ">
                   <span className="BackColor">Foundational Bootcamp</span>
                 </h4>
-                <p className="mb-3 ">
-                  Building blocks of learning habits for logical and English
-                  skills.
-                </p>
                 <span>Duration: 1 to 2 months</span>
               </div>
               <div className="col-md-4 text-left program-phase_col py-4 px-4  mx-3 col-12">

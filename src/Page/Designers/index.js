@@ -201,11 +201,8 @@ const Designers = () => {
       </button>
 
       <h3 className="section-head  " style={{ marginBottom:"32px", marginTop:"80px"  }}>Admission Process</h3>
-      
       <div className="container "> 
-
         <div className="row g-6 justify-content-center"  style={{ marginBottom:"32px" }}> 
-
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4"> 
             <div className="item-container d-flex align-items-center justify-content-center">
               <img src={formNew} className="img-fluid me-3 mr-2" alt="Image" />
@@ -240,11 +237,8 @@ const Designers = () => {
           </div>
 
         </div>
-
         <h6 className='small-container mb-5'>Admissions will open up soon for next batch in May - June 2024</h6>   
-      
       </div>
-      
      </div>
   );
 };

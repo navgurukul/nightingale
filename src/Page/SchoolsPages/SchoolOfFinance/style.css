@@ -1,4 +1,4 @@
-.SchoolOfFinanceBgImg{
+.Finance-bg-img{
     background-image: url('./assets/financeImg.png');
     background-size: cover;
     background-position: center;
@@ -7,30 +7,4 @@
     justify-content: top;
     align-items: center;
     width: 100%;
-}
-
-.programmingSchooltitle {
-    color:black;
-    font-family: Lato;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 54.6px;
-    text-align: left;
-    gap: 16px;
-    margin-bottom: 16px;
-}
-
-.Programingcontent {
-    color: black;
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
-
-}
-
-.CampusLocation{
-    position: relative;
-    bottom: 40px;
 }
