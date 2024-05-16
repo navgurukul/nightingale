@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./style.css";
 import { Link, useHistory } from "react-router-dom";
 import Slider from "./Slider";
 import PartnerSlider from "./PartnerSlider";
 import SupporterSlider from "./SupporterSlider";
-import { FiExternalLink } from "react-icons/fi";
 import img1 from "./assets/image1.svg"
 import img2 from "./assets/image2.svg"
 import img3 from "./assets/image3.jpg"
@@ -14,8 +13,9 @@ import Digitallnitiatives from "./DigitalInitiatives";
 
 function Home() {
   const history = useHistory();
+  const screenWidth = window.innerWidth;
   return (
-    <div className="navgurukul-homepage ">
+    <div className="navgurukul-homepage container-xl ">
       <div class="row">
         <div className="col-md-1"></div>
         <div class="col-md head-div ">
@@ -30,7 +30,7 @@ function Home() {
           </p>
         </div>
         <div className="col-md-1"></div>
-          <div class="col-md-7 ">
+          <div class="col-md-7 " style={{padding: screenWidth >932&& "0px" }}>
             <img
             src={require("./assets/student.jpg").default}
             className="home-image"
