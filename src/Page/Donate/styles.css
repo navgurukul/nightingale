@@ -1,4 +1,39 @@
+label{
+  font-size: 1.1rem;
+}
+p{
+  font-size: 1.1rem;
+}
+.hand-pointer {
+  cursor: pointer;
+}
+.text{
+  font-size:0.875rem ;
+}
+.info{
+  font-size: 1.1rem;
+  font-family: 'Nunito Sans';
 
+ }
+ .leftText{
+  margin-left: 5rem;
+ }
+ .bold-text {
+  font-weight: bold;
+}
+
+ @media (max-width: 767px) {
+  .leftText{
+   padding: 0;
+   margin: 0; 
+  }
+  .col-md-3 {
+    flex: 0 0 25.25%;
+    padding: 0;
+    margin-right: 8%;
+  }
+}
+/* 
 .donate-page {
   background-color: #fff;
   text-align: center;
@@ -289,4 +324,4 @@
   .donate-page-image-section {
     height: 620px;
   }
-}
+} */

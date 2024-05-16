@@ -1,3 +1,6 @@
+.card-text.section-para.card-dic {
+  text-align: left;
+}
 
 .home-page-bg {
   background: url("./assets/bg.png");
@@ -95,7 +98,7 @@
   background-size: 100% 100%;
 }
 .bg-image2 {
-  background: url("./assets/123.jpg");
+  background: url("./assets/GDschool.jpg");
   background-repeat: no-repeat;
   width: 100%;
   border-radius: 18px;
@@ -104,7 +107,7 @@
 }
 
 .bg-image3 {
-  background: url("./assets/1.png");
+  background: url("./assets/123.jpg");
   background-repeat: no-repeat;
   border-radius: 18px;
   width: 100%;
