@@ -14,7 +14,7 @@ function SchoolOfDesignPage() {
                                 School <span className="BackColor">Of Finance</span>
                             </h2>
                             <span className="li-points" style={{ color: "black" }}>
-                            Fully funded course in Finance with regular <br></br>mentor support
+                                Fully funded course in Finance with regular mentor<br></br> support
                             </span>
                         </div>
                     </div>

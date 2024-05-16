@@ -14,7 +14,7 @@ function SchoolOfDesignPage() {
                                 School <span className="BackColor">of Design</span>
                             </h2>
                             <span className="li-points" style={{ color: "white" }}>
-                                Fully-funded course in graphic design with dedicated teacher and<br></br> mentor support
+                                Fully-funded course in graphic design with dedicated<br></br> teacher and mentor support
                             </span>
                         </div>
                     </div>
