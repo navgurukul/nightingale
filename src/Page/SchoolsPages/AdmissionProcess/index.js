@@ -77,7 +77,7 @@ function AdmissionProcess() {
                                                     <span className="fw-bold ">Format : </span>{" "}
                                                     Online
                                                 </p>
-                                                <p class="card-text">Evaluates 8th standard-level Math and English, similar to the screening <br></br>test</p>
+                                                <p class="card-text">Candidates qualifying the screening test.<br></br>test</p>
                                             </div>
                                         </div>
                                     </div>
@@ -106,7 +106,7 @@ function AdmissionProcess() {
                                                 </p>
                                                 <p className="li-points">
                                                     <span className="fw-bold "> Eligibility : </span>{" "}
-                                                    Successful candidates from the academic interview
+                                                    Eligibility: Successful candidates from the academic interview
                                                 </p>
                                                 <span style={{ fontSize: "14px" }}>Candidates are either marked 'Failed' or 'In Preparation'. Depending on which re-interview  is allowed in 7 to 15 day</span>
                                             </div>
@@ -140,8 +140,8 @@ function AdmissionProcess() {
                                                     Candidates passing the culture-fit round.
                                                 </p>
                                                 <p className="li-points">
-                                                    <span className="fw-bold "> Eligibility : </span>{" "}
-                                                    Confirmation: Sent via email
+                                                    <span className="fw-bold "> Confirmation : </span>{" "}
+                                                    Sent via email
                                                 </p>
                                             </div>
                                         </div>
