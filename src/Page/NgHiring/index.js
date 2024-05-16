@@ -114,6 +114,7 @@ function NgHiring() {
             <button
               type="button"
               class="btn mb-4 f-Nuni fw-bold py-2 regular-btn align-self-center"
+              style={{width : "360px"}}
             >
               Download Placement Brief
             </button>
