@@ -1,158 +1,111 @@
-import "./style.css"
-function AdmissionProcess() {
-    return (
-        <>
-            <div className="partners-data w-100 mb-0  md-5 d-flex align-items-center flex-column">
-                <h3 className="text-center mb-1">
-                    Admission <span className="BackColor">Process</span>
-                </h3>
-                <div className="all-partners w-75 d-flex flex-column">
-                    <div className="all-partners-row d-flex justify-content-around w-100 my-1">
-                        <div class="container-fluid overflow-hidden">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-3 col-md-6">
-                                    <div class="p-3">
-                                        <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px" }}>
-                                            <button
-                                                style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark stage-btn"
-                                            >
-                                                stage 1
-                                            </button>
-                                        </div>
-                                        <div class="" style={{ background: "#FBDFD9", borderRadius: "8px", marginBottom: "16px" }}>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Screening Test</h5>
-                                                <p class="card-text">Assess fundamental skills up to 8th standard level in Mathematics, Logical Reasoning, and English Language.</p>
-                                            </div>
-                                        </div>
-                                        <div class="" style={{ borderRadius: "8px", boxShadow: "rgba(0, 0, 0, 0.18) 0px 2px 4px" }}>
-                                            <div class="card-body">
-                                                <p className="li-points">
-                                                    <span className="fw-bold ">Format : </span>{" "}
-                                                    Online/Offline
-                                                </p>
-                                                <p className="li-points">
-                                                    <span className="fw-bold ">Eligibility</span>{" "}
-                                                    Student from any stream
-                                                </p>
-                                                <p className="li-points">
-                                                    <span className="fw-bold ">Test Structure and Marks : </span>{" "}
-                                                    Maths: 20 marks<br></br>
-                                                    English: 10 marks<br></br>
-                                                    Total: 30 marks<br></br>
-                                                </p>
-                                                <p className="li-points">
-                                                    <span className="fw-bold ">
-                                                        Passing Criteria :
-                                                    </span>{" "}
-                                                    <br></br>
-                                                    Maths: 14 marks<br></br>
-                                                    English: 6 marks
-                                                </p>
-                                            </div>
-                                        </div>
+import React from 'react';
+import './style.css';
 
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-lg-3 col-md-6" style={{ marginBottom: "14px" }}>
-                                    <div className="p-3">
-                                        <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px" }}>
-                                            <button
-                                                style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark stage-btn"
-                                            >
-                                                stage 2
-                                            </button>
-                                        </div>
-                                        <div style={{ background: "#FBDFD9", borderRadius: "8px", marginBottom: "16px" }}>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Academic Interview</h5>
-                                                <p class="card-text">Evaluates 8th standard-level Math and English, similar to the screening test</p>
-                                            </div>
-                                        </div>
-                                        <div class="" style={{ borderRadius: "8px", boxShadow: "rgba(0, 0, 0, 0.18) 0px 2px 4px" }}>
-                                            <div class="card-body">
-                                                <p className="li-points">
-                                                    <span className="fw-bold ">Format : </span>{" "}
-                                                    Online
-                                                </p>
-                                                <p class="card-text">Candidates qualifying the screening test.<br></br>test</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm-12 col-lg-3 col-md-6">
-                                    <div className="p-3">
-                                        <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px 8px" }}>
-                                            <button
-                                                style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark stage-btn"
-                                            >
-                                                stage 3
-                                            </button>
-                                        </div>
-                                        <div class="" style={{ background: "#FBDFD9", borderRadius: "8px", marginBottom: "16px" }}>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Culture Fit Round</h5>
-                                                <p class="card-text">Assess cultural alignment, focusing on needs, emotional aspects, and commitment to community</p>
-                                            </div>
-                                        </div>
-                                        <div class="" style={{ borderRadius: "8px", boxShadow: "rgba(0, 0, 0, 0.18) 0px 2px 4px" }}>
-                                            <div class="card-body">
-                                                <p className="li-points">
-                                                    <span className="fw-bold ">Format : </span>{" "}
-                                                    Online/Offline
-                                                </p>
-                                                <p className="li-points">
-                                                    <span className="fw-bold "> Eligibility : </span>{" "}
-                                                    Eligibility: Successful candidates from the academic interview
-                                                </p>
-                                                <span style={{ fontSize: "14px" }}>Candidates are either marked 'Failed' or 'In Preparation'. Depending on which re-interview  is allowed in 7 to 15 day</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-sm-12 col-lg-3 col-md-6" style={{ marginBottom: "14px" }}>
-                                    <div className="p-3">
-                                        <div className="input d-flex flex-column justify-content-center align-items-right  text-left w-70" style={{ padding: "16px" }}>
-                                            <button
-                                                style={{ fontSize: "18px", fontWeight: "700px" }}
-                                                className="btn btn-dark stage-btn"
-                                            >
-                                                stage 4
-                                            </button>
-                                        </div>
-                                        <div class="" style={{ background: "#FBDFD9", borderRadius: "8px", marginBottom: "16px" }}>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Offer Letter</h5>
-                                                <p class="card-text">Confirms selection for residential course</p>
-                                            </div>
-                                        </div>
-                                        <div class="" style={{ borderRadius: "8px", boxShadow: "rgba(0, 0, 0, 0.18) 0px 2px 4px" }}>
-                                            <div class="card-body">
-                                                <p className="li-points">
-                                                    <span className="fw-bold ">Format : </span>{" "}
-                                                    Online/Offline
-                                                </p>
-                                                <p className="li-points">
-                                                    <span className="fw-bold "> Eligibility : </span>{" "}
-                                                    Candidates passing the culture-fit round.
-                                                </p>
-                                                <p className="li-points">
-                                                    <span className="fw-bold "> Confirmation : </span>{" "}
-                                                    Sent via email
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+const AdmissionProcess = ({ stages }) => {
+  const renderStructuredText = (data) => {
+    if (typeof data === 'object') {
+      return Object.entries(data).map(([key, value], index) => (
+        <React.Fragment key={index}>
+          {key}: {value}<br />
+        </React.Fragment>
+      ));
+    }
+    if (typeof data === 'string') {
+      return data.split(',').map((item, index) => (
+        <React.Fragment key={index}>
+          {item.trim()}<br />
+        </React.Fragment>
+      ));
+    }
+    return null;
+  };
+
+  return (
+    <div className="partners-data w-100 mb-0 md-5 d-flex align-items-center flex-column" style={{marginTop:"40px"}}>
+      <h3 className="text-center mb-1">
+        Admission <span className="BackColor">Process</span>
+      </h3>
+      <div className="all-partners w-75 d-flex flex-column">
+        <div className="all-partners-row d-flex justify-content-around w-100 my-1">
+          <div className="container-fluid overflow-hidden">
+            <div className="row">
+              {stages.map((stage, index) => (
+                <div className="col-sm-12 col-lg-3 col-md-6" key={index}>
+                  <div className="p-3">
+                    <div
+                      className="input d-flex flex-column justify-content-center align-items-right text-left w-70"
+                      style={{ padding: "16px" }}
+                    >
+                      <button
+                        style={{ fontSize: "18px" }}
+                        className="btn btn-dark stage-btn"
+                      >
+                        {stage.buttonText}
+                      </button>
                     </div>
+                    <div
+                      style={{
+                        background: "#FBDFD9",
+                        borderRadius: "8px",
+                      }}
+                    >
+                      <div className="card-body">
+                        <h5 className="card-title">{stage.cardTitle}</h5>
+                        <p className="card-text">{stage.cardText}</p>
+                      </div>
+                    </div>
+                    <div
+                      className=""
+                      style={{
+                        borderRadius: "8px",
+                        boxShadow: "rgba(0, 0, 0, 0.18) 0px 2px 4px"
+                      }}
+                    >
+                      <div className="card-body">
+                        <p className="">
+                          <span className="fw-bold">Format: </span>
+                          {stage.format}
+                        </p>
+                        {stage.eligibility && (
+                          <p className="">
+                            <span className="fw-bold">Eligibility: </span>
+                            {stage.eligibility}
+                          </p>
+                        )}
+                        {stage.testStructure && (
+                          <p className="">
+                            <span className="fw-bold">Test Structure and Marks: </span><br></br>
+                            {renderStructuredText(stage.testStructure)}
+                          </p>
+                        )}
+                        {stage.passingCriteria && (
+                          <p className="">
+                            <span className="fw-bold">Passing Criteria: </span><br></br>
+                            {renderStructuredText(stage.passingCriteria)}
+                          </p>
+                        )}
+                        {stage.additionalInfo && (
+                          <span style={{ fontSize: "14px" }}>
+                            {stage.additionalInfo}
+                          </span>
+                        )}
+                        {stage.confirmation && (
+                          <p className="">
+                            <span className="fw-bold">Confirmation: </span>
+                            {stage.confirmation}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              ))}
             </div>
-        </>
-    )
-}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export default AdmissionProcess;

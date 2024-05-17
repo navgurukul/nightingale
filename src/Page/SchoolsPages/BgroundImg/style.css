@@ -1,5 +1,5 @@
-.business-bg-img{
-    background-image: url('./assets/businessbgimg.png');
+.design-bg-img{
+    background-image: url('./assets/bgimg.png');
     background-size: cover;
     background-position: center;
     min-height: 50vh;
@@ -8,3 +8,4 @@
     align-items: center;
     width: 100%;
 }
+

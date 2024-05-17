@@ -1,4 +1,4 @@
-.custom-row{
+/* .custom-row{
     margin-bottom: 80px;
 }
 .programing-bg-img{
@@ -10,6 +10,10 @@
     justify-content: top;
     align-items: center;
     width: 100%;
+}
+.programing-page{
+  margin-top: 40px;
+  border: 1px solid;
 }
 
 
@@ -26,4 +30,10 @@
 .programing-page{
     margin-top: 40px;
 
+} */
+
+
+
+.programining-container{
+  margin-top:40px;
 }

@@ -1,27 +1,22 @@
 .job-assistance-container {
     background: #FBDFD9;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
-
-.job-Assistance-title {
-    font-family: Lato;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 48px;
-    text-align: center;
-    margin-bottom: 16px;
-    gap: 16px
-}
-
-.card-cantainer {
-    margin: auto;
-    background: #FBDFD9;
-}
-
 .card-content {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+.card-container {
+    background: #FBDFD9;
+    border-radius: 8px;
+}
+.li-points {
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .card-container {
+        padding: 20px;
+    }
 }
