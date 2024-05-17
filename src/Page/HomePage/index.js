@@ -178,15 +178,7 @@ function Home() {
                 CSR Enquiries
             </button>
           </div>
-          <button
-            class="btn regular-btn our-partner-btn section-para text-white  "
-            type="button"
-            onClick={(e) => {
-              e.preventDefault();
-              window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
-            }}>
-            Partner with us
-          </button>
+         
         </div>
       </section>
 
