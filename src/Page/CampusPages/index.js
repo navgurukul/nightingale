@@ -8,6 +8,8 @@ import Modal from "./components/Modal";
 import { BsArrowsAngleExpand } from "react-icons/bs";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
+
 const getcampusNameFromUrl = () => {
   let campusName;
   if (window.location.pathname.includes("campus")) {
@@ -44,7 +46,6 @@ function CampusPages() {
       return logo
   }) 
 
-
   useEffect(() => {
     if (
       data &&
@@ -54,7 +55,7 @@ function CampusPages() {
     ) {
       SetIsLoading(false);
     }
-  }, [imgCount]);
+  }, [imgCount]); 
 
   return (
     <div className="campus-page d-flex flex-column justify-content-center mb-6">
@@ -67,11 +68,6 @@ function CampusPages() {
             <span className="mb-3 our-campus">
             <a href="/campus" className="campus-link">Our Campuses </a>/ {campus}</span>
               <h4 className="mb-3 campus-name">{data[campus].Name}</h4>
-              <div className="mb-3 campus-manager">
-                <span className="fw-bold">Campus Manager : </span>
-                <img src={data[campus].Avatar} className="mx-2" />
-                {data[campus]["Campus Manager"]}
-              </div>
               <div className="mb-3 campus-address">
                 <span className="fw-bold">Address : </span>
                 {data[campus].Address}
@@ -82,9 +78,19 @@ function CampusPages() {
               </div>
 
               <div className="mb-3 campus-contact">
-                <span className="fw-bold">Contact : </span>
+                <span className="fw-bold">Email : </span>
                 {data[campus].Contact}
               </div>
+              <div className="instgramid">
+              <a href={(data[campus].Instagram_Id)} target="_blank">
+                <img
+                  src="/instagram.png" 
+                  alt="Instagram"
+                  height="32"
+                  width="32"
+                  />
+                  </a>
+                </div>
             </div>
             <div className="col-12 col-md-7 px-md-0">
               <iframe
@@ -94,6 +100,7 @@ function CampusPages() {
                 loading="none"
               />
             </div>
+            
           </div>
           {data[campus].Programming!==null && 
           data[campus]["Graphic Design"]!==null ?
@@ -158,7 +165,7 @@ function CampusPages() {
             </div>
             </div>
             :<>
-              ""
+              {null}
             </>
           }
           </div>
@@ -167,9 +174,6 @@ function CampusPages() {
         
         
       </div>
-      {/* <div className="container">
-        <hr className="campus-dividerLine" />
-      </div> */}
       {data && data[campus] && (
         <div className="campus-gallary mt-3 pb-3 mb-3">
         
@@ -197,8 +201,6 @@ function CampusPages() {
           }
             <h6 className="mt-4 left-mar">Pictures</h6>
             <div className="row pb-3">
-            {/* {data[campus].Video && data[campus.Video]} */}
-            
               {isLoading ? (
                 Array.isArray(data[campus].Photos) ? (
                   data[campus].Photos.map((photo) => {
@@ -229,7 +231,6 @@ function CampusPages() {
                         onClick={() => {
                           handleClick(photo);
                         }}
-                        // height="100%"
                         style={{ height: "303px", width: "100%" }}
                         onLoad={() => {
                           setImgCount((count) => {
@@ -309,11 +310,9 @@ function CampusPages() {
           </div>
           }
           </div>
-        
-        
       )}
     </div>
   );
 }
 
-export default CampusPages;
+export default CampusPages; 
