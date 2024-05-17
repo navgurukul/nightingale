@@ -21,8 +21,6 @@ function OurCampus() {
     });
   }, []);
 
-
-
   if (data === null) {
     return (
       <div className="container">
@@ -43,22 +41,17 @@ function OurCampus() {
                 return (
                  
                   <div
-                    className="card campus-card mb-3 md-5 bg-white py-3 px-4 position-relative"
+                    className="card campus-card mb-5 md-5 bg-white py-3 px-4 position-relative"
                     key={campusName}
-                    // onClick={history.push(``)}
                     onClick={()=>{history.push(`/campus/${campus.Name.split(" ")[0]}`)}}
                   >
                   <div >
                   <div className="campus-title-design ">
                     <h5 className="card-title cmapus-fontfamily">{campus.Name}</h5>
-
-                    
                     {campus.Name==="Jashpur Campus " &&
                     <span className="chip-status mb-2">
                     Newly Opened</span>
                     }
-                    
-                    
                     </div>
                     <span className="cmapus-fontfamily">{campus.Address}</span>
                     </div>
