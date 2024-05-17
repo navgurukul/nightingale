@@ -61,12 +61,12 @@ function Home() {
           <div className="col-md-3 col-sm-6">
             <h3>₹23+ Crore</h3>
             <p>
-              collectively earned annually by our Alumni 
+              collectively earned annually by our Alumni
             </p>
           </div>
         </div>
       </section>
-
+      
       <section className=" d-flex flex-column align-items-center our-initiatives">
         <h3 className="text-center media-font ">
         Our Schools
@@ -81,26 +81,6 @@ function Home() {
                     <div class="card-body text-black"> 
                         <h4 class="card-title mt-4">School of Programming</h4>
                         <p class="card-text mb-3">Fully-funded course in software engineering with guaranteed jobs</p>
-        {/* <hr className="heading-hr" /> */}
-        <div class="container mar-3">
-          <div class="row">
-            <div class="col-lg-6 initiative-card-parent col-md-12   ">
-              <div class="bg-image1 initiative-card card  shadow-1-strong rgba-black-strong">
-                <Link to="/job-course">
-                  <div className="Initiatives-bg-color rgba-black-strong">
-                    <div
-                      class="card-body text-white  "
-                      title="Guaranteed Job Courses">
-                      <h4 class="card-title mb-1   card-main-text  card-heading ">
-                        <span className="BgColor">
-                          {" "}
-                          School of Programming{" "}
-                        </span>
-                      </h4>
-                      <p class="card-text section-para card-dic ">
-                        Fully-funded one year courses in software engineering with 
-                        guaranteed jobs
-                      </p>
                     </div>
                     </Link>
                 </div>
@@ -113,19 +93,6 @@ function Home() {
                       <div class="card-body text-black ">
                           <h4 class="card-title mt-4">School of Design</h4>
                           <p class="card-text mb-3">Fully-funded course in graphic design with guaranteed jobs</p>
-            <div className="col-lg-6 initiative-card-parent mb-md-2">
-              <div className="bg-image2 initiative-card card  shadow-1-strong">
-                <a href="/designer" target="_blank">
-                  <div className="Initiatives-bg-color rgba-black-strong">
-                    <div className="card-body text-white ">
-                      <div
-                        className="d-flex align-items-end "
-                        title="Learn Online with Meraki">
-                        <h4 class="card-title mb-1  card-main-text text-center card-heading ">
-                          <span className="BgColor">
-                          School of Design{" "}
-                          </span>
-                        </h4>
                       </div>
                     </a>
                 </div>
@@ -154,25 +121,6 @@ function Home() {
                           <p class="card-text mb-3">Fully funded course in Finance with guaranteed jobs</p>
                       </div>
                     </a>
-            </div>
-
-            <div class="col-lg-6 initiative-card-parent mb-md-2">
-              <div class="bg-image4 initiative-card card shadow-1-strong">
-              <a href="https://www.codeindiafellowship.org/" target="_blank">
-                  <div className="Initiatives-bg-color rgba-black-strong">
-                    <div
-                      class="card-body text-white"
-                      title="Code India Fellowships">
-                      <h4 class="card-title mb-1   card-main-text card-heading">
-                        <span className="BgColor">
-                          Code India Fellowships
-                        </span>
-                      </h4>
-                      <p class="card-text section-para  card-dic">
-                        Nurture programming skills in the next generation 
-                        of India’s youth with your expertise
-                      </p>
-                    </div>
                   </div>
               </div>
           </div>
