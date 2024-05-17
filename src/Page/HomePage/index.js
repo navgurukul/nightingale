@@ -15,7 +15,7 @@ function Home() {
   const history = useHistory();
   const screenWidth = window.innerWidth;
   return (
-    <div className="navgurukul-homepage container-xl ">
+    <div className="navgurukul-homepage ">
       <div class="row">
         <div className="col-md-1"></div>
         <div class="col-md head-div ">
@@ -30,7 +30,7 @@ function Home() {
           </p>
         </div>
         <div className="col-md-1"></div>
-          <div class="col-md-7 " style={{padding: screenWidth >932&& "0px" }}>
+          <div class="col-md-6" style={{padding: screenWidth >932&& "0px" }}>
             <img
             src={require("./assets/student.jpg").default}
             className="home-image"
