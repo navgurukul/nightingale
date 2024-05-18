@@ -8,7 +8,7 @@ import CoursesLocation from "../CourseLocations";
 import { whoForPoints, topics, JobAssistanceData, program2Data, BgroundImg } from "../SchoolsOfDesign/data";
 import ScreeningTestPage from "../ScreningTest";
 const information = "Our teacher-led, 18-months design course Includes:"
-function SchoolOfDesignPage({ programmingCampuses }) {
+function SchoolOfDesignPage() {
     return (
         <>
             <BackgroundImg backgroundData={BgroundImg}></BackgroundImg>
