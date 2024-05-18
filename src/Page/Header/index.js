@@ -94,16 +94,16 @@ function Header() {
               aria-labelledby="navbarDropdown"
               show={showDropdown}
             >
-              <a className="dropdown-item" href="/job-course">
+              <a className="dropdown-item" href="/schoolofprograming">
                 School of Programming
               </a>
-              <a className="dropdown-item" href="/designer">
+              <a className="dropdown-item" href="/schoolDesign">
                 School of Design
               </a>
-              <a className="dropdown-item" href="/designer">
+              <a className="dropdown-item" href="/schoolOfBusines">
                 School of Business
               </a>
-              <a className="dropdown-item" href="/designer">
+              <a className="dropdown-item" href="/SchoolOfFinance">
                 School of Finance
               </a>
             </div>

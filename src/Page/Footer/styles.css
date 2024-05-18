@@ -39,6 +39,7 @@ ul.nav-footer {
 
 .footer-container a {
   color: #2e2e2e;
+  font-weight: 400px;
 }
 
 .footer-container .row-title {
@@ -49,6 +50,7 @@ ul.nav-footer {
 .footer-container .row-title:hover {
   text-decoration: none;
   color: #2e2e2e;
+
 }
 
 /* .sub-row-title {

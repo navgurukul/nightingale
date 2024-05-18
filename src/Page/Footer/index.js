@@ -175,20 +175,20 @@ function Footer() {
               <ul class="nav-footer ">
                 <li className="row-title">SCHOOLS</li>
                 <li>
-                  <Link to="#">School of Programming</Link>
+                  <Link to="/schoolofprograming">School of Programming</Link>
                 </li>
                 <li>
-                  <Link to="#">
+                  <Link to="/schoolDesign">
                     School of Design
                   </Link>
                 </li>
                 <li>
-                  <Link to="#">
+                  <Link to="/schoolOfBusines">
                     School of Business
                   </Link>
                 </li>
                 <li>
-                  <Link to="#">School of Finance</Link>
+                  <Link to="/SchoolOfFinance">School of Finance</Link>
                 </li>
               </ul>
             </div>
