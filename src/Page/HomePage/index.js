@@ -4,10 +4,10 @@ import { Link, useHistory } from "react-router-dom";
 import Slider from "./Slider";
 import PartnerSlider from "./PartnerSlider";
 import SupporterSlider from "./SupporterSlider";
-import img1 from "./assets/image1.svg"
-import img2 from "./assets/image2.svg"
-import img3 from "./assets/image3.jpg"
-import img4 from "./assets/image4.png"
+import img1 from "./assets/image1.svg";
+import img2 from "./assets/image2.svg";
+import img3 from "./assets/image3.jpg";
+import img4 from "./assets/image4.png";
 import KeyFacilities from "./KeyFacilities";
 import Digitallnitiatives from "./DigitalInitiatives";
 
@@ -25,115 +25,115 @@ function Home() {
             Generation{" "}
           </h2>{" "}
           <p className="font para-line">
-            We are a non-profit dedicated to bring affordable tech education
-            to underprivileged girls in India.{" "}
+            We are a non-profit dedicated to bring affordable tech education to
+            underprivileged girls in India.{" "}
           </p>
         </div>
         <div className="col-md-1"></div>
-          <div class="col-md-6" style={{padding: screenWidth >932&& "0px" }}>
-            <img
+        <div class="col-md-6" style={{ padding: screenWidth > 932 && "0px" }}>
+          <img
             src={require("./assets/student.jpg").default}
             className="home-image"
-            />
-          </div>
+          />
+        </div>
       </div>
 
       <section className="media-scroll-section d-flex flex-column justify-content-center">
-        <div className="row"> 
-          <div className="col-md-3 col-sm-6 "> 
+        <div className="row">
+          <div className="col-md-3 col-sm-6 ">
             <h3>890+</h3>
-            <p>
-              students placed across various industries in tech
-            </p>
+            <p>students placed across various industries in tech</p>
           </div>
           <div className=" col-md-3 col-sm-6">
             <h3>₹2.8 LPA</h3>
-            <p>
-              avg. salary secured by students, the highest being 8 LPA
-            </p>
+            <p>avg. salary secured by students, the highest being 8 LPA</p>
           </div>
           <div className="col-md-3 col-sm-6">
             <h3>95%</h3>
             <p>
-              of our student strength consists of girls from marginalized communities
+              of our student strength consists of girls from marginalized
+              communities
             </p>
           </div>
           <div className="col-md-3 col-sm-6">
             <h3>₹23+ Crore</h3>
-            <p>
-              collectively earned annually by our Alumni
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      <section className=" d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center media-font ">
-        Our Schools
-        </h3>
-      
-        <div class="container mt-4">
-          <div class="row gy-4"> 
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-1-strong"> 
-                  <Link to="/job-course">
-                    <img src={img1} class="card-image" alt="Placeholder Image"/>
-                    <div class="card-body text-black"> 
-                        <h4 class="card-title mt-4">School of Programming</h4>
-                        <p class="card-text mb-3">Fully-funded course in software engineering with guaranteed jobs</p>
-                    </div>
-                    </Link>
-                </div>
-            </div>
-            
-            <div class="col-lg-6 col-md-6 col-sm-12"> 
-                <div class="card shadow-1-strong">
-                  <a href="/designer" target="_blank">
-                      <img src={img2} class="card-image" alt="Placeholder Image" />
-                      <div class="card-body text-black ">
-                          <h4 class="card-title mt-4">School of Design</h4>
-                          <p class="card-text mb-3">Fully-funded course in graphic design with guaranteed jobs</p>
-                      </div>
-                    </a>
-                </div>
-            </div>
-          </div>
-        
-          <div class="row gy-4 mt-4"> 
-              <div class="col-lg-6 col-md-6 col-sm-12"> 
-                  <div class="card shadow-1-strong">
-                    <a href="https://www.merakilearn.org/" target="_blank">
-                      <img src={img3} class="card-image" alt="Placeholder Image" />
-                      <div class="card-body text-black">
-                          <h4 class="card-title mt-4">School of Business</h4>
-                          <p class="card-text mb-3">Fully funded course in Business CRM with guaranteed jobs</p>
-                      </div>
-                    </a>
-                  </div>
-              </div>
-              
-              <div class="col-lg-6 col-md-6 col-sm-12"> 
-                  <div class="card shadow-1-strong">
-                    <a href="https://www.codeindiafellowship.org/" target="_blank">
-                      <img src={img4} class="card-image" alt="Placeholder Image" />
-                      <div class="card-body text-black">
-                          <h4 class="card-title mt-4">School of Finance</h4>
-                          <p class="card-text mb-3">Fully funded course in Finance with guaranteed jobs</p>
-                      </div>
-                    </a>
-                  </div>
-              </div>
+            <p>collectively earned annually by our Alumni</p>
           </div>
         </div>
       </section>
 
       <section className=" d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center media-font ">
-          Digital Initiatives
-        </h3>
+        <h3 className="text-center media-font ">Our Schools</h3>
+
+        <div class="container mt-4">
+          <div class="row gy-4">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card shadow-1-strong">
+                <Link to="/job-course">
+                  <img src={img1} class="card-image" alt="Placeholder Image" />
+                  <div class="card-body text-black">
+                    <h4 class="card-title mt-4">School of Programming</h4>
+                    <p class="card-text mb-3">
+                      Fully-funded course in software engineering with
+                      guaranteed jobs
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card shadow-1-strong">
+                <a href="/designer" target="_blank">
+                  <img src={img2} class="card-image" alt="Placeholder Image" />
+                  <div class="card-body text-black ">
+                    <h4 class="card-title mt-4">School of Design</h4>
+                    <p class="card-text mb-3">
+                      Fully-funded course in graphic design with guaranteed jobs
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-4 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card shadow-1-strong">
+                <a href="https://www.merakilearn.org/" target="_blank">
+                  <img src={img3} class="card-image" alt="Placeholder Image" />
+                  <div class="card-body text-black">
+                    <h4 class="card-title mt-4">School of Business</h4>
+                    <p class="card-text mb-3">
+                      Fully funded course in Business CRM with guaranteed jobs
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card shadow-1-strong">
+                <a href="https://www.codeindiafellowship.org/" target="_blank">
+                  <img src={img4} class="card-image" alt="Placeholder Image" />
+                  <div class="card-body text-black">
+                    <h4 class="card-title mt-4">School of Finance</h4>
+                    <p class="card-text mb-3">
+                      Fully funded course in Finance with guaranteed jobs
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className=" d-flex flex-column align-items-center our-initiatives">
+        <h3 className="text-center media-font ">Digital Initiatives</h3>
         <Digitallnitiatives />
       </section>
-  
+
       <section className=" d-flex flex-column align-items-center our-initiatives">
         <h3 className="text-center media-font ">
           Key Facilities at NavGurukul
@@ -155,30 +155,32 @@ function Home() {
 
         <div class="d-flex flex-column align-items-center justify-content-center align-items-center mar-3">
           <h4 className=" "> Bring a change! </h4>
-          <div class="d-flex justify-content-start"> 
+          <div class="d-flex justify-content-start">
             <button
-                type="button"
-                class="btn section-para regular-btn mx-3 career-button fixed-dimensions"
-                onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
-                }}
+              type="button"
+              class="btn section-para regular-btn mx-3 career-button fixed-dimensions"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
+              }}
             >
-                Partner with us
+              Partner with us
             </button>
 
             <button
-                type="button"
-                class="btn section-para regular-btn mx-3 career-button fixed-dimensions"
-                onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform", "_blank");
-                }}
+              type="button"
+              class="btn section-para regular-btn mx-3 career-button fixed-dimensions"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
+                  "_blank"
+                );
+              }}
             >
-                CSR Enquiries
+              CSR Enquiries
             </button>
           </div>
-         
         </div>
       </section>
 
@@ -190,7 +192,6 @@ function Home() {
           <SupporterSlider />
         </div>
       </section>
-
     </div>
   );
 }
