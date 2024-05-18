@@ -1,13 +1,7 @@
 .test-btn {
     padding: 8px 16px 8px 16px;
-    gap: 10px;
     border-radius: 8px 8px 8px 8px;
-    opacity: 0px;
-    font-family: Lato;
-    font-size: 18px;
     font-weight: 700;
-    line-height: 27px;
-    text-align: center;
 }
 
 .test-title {

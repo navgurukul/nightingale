@@ -6,7 +6,7 @@ import { whoForPoints, topics, JobAssistanceData, program3Data, BackgroundImgDat
 import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
-const information = "Our teacher-led, 18-months design course Includes:";
+const information = "Our student led, self-paced business course includes:";
 
 function SchoolOfBusinessPage() {
 
@@ -21,6 +21,6 @@ function SchoolOfBusinessPage() {
             <ScreeningTestPage></ScreeningTestPage>
         </>
     )
-    
+
 }
 export default SchoolOfBusinessPage;

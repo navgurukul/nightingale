@@ -12,7 +12,6 @@ export const topics=[
     { subtitle: "Digital Marketing:", text:"Website building, Social media marketing & SEO" },
     { subtitle: "Data Analytics:",text:"Statistics, SQL queries, Tableau" }
 ]
-
   
 export const JobAssistanceData=[
     {
