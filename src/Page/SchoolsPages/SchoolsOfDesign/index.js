@@ -9,7 +9,6 @@ import { whoForPoints, topics, JobAssistanceData, program2Data, BgroundImg } fro
 import ScreeningTestPage from "../ScreningTest";
 const information = "Our teacher-led, 18-months design course Includes:"
 function SchoolOfDesignPage({ programmingCampuses }) {
-    console.log(programmingCampuses, "kkkk")
     return (
         <>
             <BackgroundImg backgroundData={BgroundImg}></BackgroundImg>

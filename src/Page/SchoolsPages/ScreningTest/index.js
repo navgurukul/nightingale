@@ -9,7 +9,7 @@ function ScreeningTestPage() {
                             <h5 className="text-cener" style={{marginBottom: "32px" }}>
                             Want to Enroll  <span className="BackColor" >Want to Enroll and </span> Start your Career?
                             </h5>
-                            <div className="input d-flex flex-column justify-content-center align-items-center  text-left   ">
+                            <div className="input d-flex flex-column justify-content-center align-items-center">
                                 <button
                                     className="btn btn-primary text-white align-self-center  my-1 regular-btn user-test-btn"
                                 >
