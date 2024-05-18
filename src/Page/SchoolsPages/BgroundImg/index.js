@@ -20,7 +20,6 @@ function BackgroundImg({ backgroundData }) {
                         width: '100%'
                     }}
                 >
-
                     <div className='container-fluid'>
                         <div className='row'>
                             <div className='col-sm-6 col-md-10 col-lg-9 col-xs-12' style={{ margin: "auto", marginTop: "80px", color: data.color }}>
@@ -29,16 +28,16 @@ function BackgroundImg({ backgroundData }) {
                                 </h2>
                                 <span className="li-points">
                                     {data.text.split(',').map((item, index) => (
-                                        <span style={{fontSize:"18px"}} key={index}>{item}<br /></span>
+                                        <span style={{ fontSize: "18px" }} key={index}>{item}<br /></span>
                                     ))}
                                 </span>
                             </div>
                         </div>
                     </div>
-                </div >
+                </div>
             ))
             }
-            
+
         </>
     );
 }
