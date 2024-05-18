@@ -17,6 +17,7 @@ import Digitallnitiatives from "./DigitalInitiatives";
 
 function Home() {
   const history = useHistory();
+  const screenWidth = window.innerWidth;
   return (
     <div className="navgurukul-homepage ">
       {/* <div className="home-page-bg text-white home-page-ng ">
@@ -52,7 +53,7 @@ function Home() {
             </p>
           </div>
           <div className="col-md-1"></div>
-          <div class="col-md-6 ">
+           <div class="col-md-6" style={{padding: screenWidth >932&& "0px" }}>
             <img
               src={require("./assets/student.jpg").default}
               className="home-image"
