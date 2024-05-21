@@ -1,0 +1,22 @@
+.job-assistance-container {
+    background: #FBDFD9;
+    margin-top: 4px;
+}
+.card-content {
+    display: flex;
+    justify-content: center;
+}
+.card-container {
+    background: #FBDFD9;
+    border-radius: 8px;
+}
+.li-points {
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+}
+@media (max-width: 768px) {
+    .card-container {
+        padding: 20px;
+    }
+}

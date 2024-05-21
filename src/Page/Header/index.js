@@ -14,7 +14,7 @@ function Header() {
       <a class="navbar-brand" href="/">
         <img
           src={require("./assets/logo.png").default}
-          // className="nav-logo"
+        // className="nav-logo"
         />
       </a>
 
@@ -71,13 +71,9 @@ function Header() {
               </a>
             </div>
           </li>
-            <li
-            className="nav-item dropdown "
-            onMouseOver={() => setShowDropdown(true)}
-            onMouseOut={() => setShowDropdown(false)}
-          >
+          <li className="nav-item dropdown">
             <a
-              className="nav-link header-title"
+              className="nav-link  header-title mr-3"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -85,13 +81,12 @@ function Header() {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Schools
+              School
               <BiChevronDown />
             </a>
 
             <div
               className="dropdown-menu dropdown-items"
-              aria-labelledby="navbarDropdown"
               show={showDropdown}
             >
               <a className="dropdown-item" href="/schoolofprograming">
