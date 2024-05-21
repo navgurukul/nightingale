@@ -4,3 +4,13 @@
     padding: 8px 16px 8px 16px;
     border-radius: 8px 8px 8px 8px;
 }
+
+.admission-main-page{
+    margin-top: 40px;
+
+}
+.stage-card{
+    padding:16px;
+    background-color:#FBDFD9 ;
+    border-radius: 16px;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-
 const AdmissionProcess = ({ stages }) => {
   const renderStructuredText = (data) => {
     if (typeof data === 'object') {
@@ -26,15 +25,15 @@ const AdmissionProcess = ({ stages }) => {
                 <span className="BackColor">Admission</span>  Process
             </h3>
       <div className="all-partners w-75 d-flex flex-column">
-        <div className="all-partners-row d-flex justify-content-around w-100 my-1">
+        <div className="all-partners-row d-flex justify-content-around w-100 my-1" >
           <div className="container-fluid overflow-hidden">
             <div className="row">
               {stages.map((stage, index) => (
-                <div className="col-sm-12 col-lg-3 col-md-6" key={index}>
+                <div className="col-sm-12 col-lg-3 col-md-6" key={index} >
                   <div className="">
                     <div
                       className="input d-flex flex-column justify-content-center align-items-right text-left w-70"
-                      style={{ padding: "16px" }}
+                      style={{ padding: "16px"}}
                     >
                       <button
                         style={{ fontSize: "18px" }}
@@ -49,7 +48,7 @@ const AdmissionProcess = ({ stages }) => {
                         borderRadius: "8px",
                       }}
                     >
-                      <div className="card-body">
+                      <div className="card-body stage-card">
                         <h5 className="card-title">{stage.cardTitle}</h5>
                         <p className="card-text">{stage.cardText}</p>
                       </div>
@@ -58,7 +57,9 @@ const AdmissionProcess = ({ stages }) => {
                       className=""
                       style={{
                         borderRadius: "8px",
-                        boxShadow: "rgba(0, 0, 0, 0.18) 0px 2px 4px"
+                        boxShadow: "rgba(0, 0, 0, 0.18) 0px 2px 4px",
+                        padding:"16px",
+                        marginTop:"16px",
                       }}
                     >
                       <div className="card-body">
@@ -109,3 +110,5 @@ const AdmissionProcess = ({ stages }) => {
 };
 
 export default AdmissionProcess;
+
+
