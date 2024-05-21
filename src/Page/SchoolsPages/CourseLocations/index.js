@@ -50,7 +50,7 @@ function CoursesLocation({ courses }) {
                                 </span>
                             </div>
                             <div className="mt-3">
-                                <a href={programmingCampuses[0].Instagram} target="_blank" rel="noopener noreferrer">
+                                <a href={programmingCampuses[0].Instagram_Id} target="_blank" rel="noopener noreferrer">
                                     <img
                                         src={require("../assets/instagram.png").default}
                                         alt="Instagram"
