@@ -55,6 +55,10 @@
   width: 60%;
   padding: 0 40px 0 10px;
 }
+.fixed-dimensions {
+  width: 135px;
+  height: 48px;
+}
 
 @media screen and (max-width: 667px) {
   .navbar-color {

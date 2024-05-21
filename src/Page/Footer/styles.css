@@ -39,6 +39,7 @@ ul.nav-footer {
 
 .footer-container a {
   color: #2e2e2e;
+  font-weight: 400px;
 }
 
 .footer-container .row-title {
@@ -49,6 +50,7 @@ ul.nav-footer {
 .footer-container .row-title:hover {
   text-decoration: none;
   color: #2e2e2e;
+
 }
 
 /* .sub-row-title {
@@ -82,14 +84,14 @@ ul.nav-footer {
   border: 1px solid #2e2e2e;
   background-color: #2e2e2e;
 }
-.footer-container .copyright {
-  margin-bottom: 10px;
+
+.details {
+  display: flex; 
+  justify-content: space-between;
+  padding: 4px 0; 
 }
-.footer-details {
-  color: #2e2e2e;
-  letter-spacing: 0.3px;
-  text-align: center;
-  padding-top: 10px;
+.copyright {
+  text-align: right; 
 }
 /* .footer-details p {
   margin: 0;

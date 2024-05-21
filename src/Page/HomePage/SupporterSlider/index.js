@@ -36,7 +36,6 @@ function SupporterSlider() {
     });
   }, []);
   const [supports, setSupports] = useState([]);
-  // console.log(partners);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider(

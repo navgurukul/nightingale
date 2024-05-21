@@ -109,7 +109,7 @@ function PartnerSlider() {
                     <div className="keen-slider__slide number-slide d-flex align-items-start col-md-3 card Card-dotted">
                     <div className="partition-carousal-content my-3 " >
                       <img
-                        className="partition-carousal-content-img mb-5"
+                        className="partition-carousal-content-img mb-2 "
                         src={partners[item].Logo}
                         alt={partners[item].Name.substring(
                           0,
@@ -121,7 +121,7 @@ function PartnerSlider() {
                         {partners[item].Name}
                         
                       </div>
-                      <p className="mb-3 px-0 " color="white"> {partners[item].Content}</p>
+                      <p  color="white"> {partners[item].Content}</p>
                       </div>
                     </div>
                   </div>
