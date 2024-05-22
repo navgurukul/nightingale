@@ -140,12 +140,12 @@ function Home() {
         </h3>
         <KeyFacilities />
       </section>
-      <section className="media-scroll-section   d-flex flex-column justify-content-center">
+      {/* <section className="media-scroll-section   d-flex flex-column justify-content-center">
         <h3 className="align-self-center media-font ">
           In the <span className="BackColor">Media</span>
         </h3>
         <Slider />
-      </section>
+      </section> */}
 
       <section className="our-partners text-center  d-flex flex-column ">
         <h3 className="align-self-center ">

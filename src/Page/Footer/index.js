@@ -12,7 +12,7 @@ function Footer() {
         <div className="title-container d-flex " >
           <div className="row w-100 ">
               <div className=" ng-logo col-md-3 p-0  ">
-                <img src={require("./assets/logo.png").default} className="mb-3" />
+                <img src={require("./assets/logo.png").default} className="mb-3 mt-1" />
                 
                 <div className="social-media">
                   <div className="facebook">
@@ -137,8 +137,8 @@ function Footer() {
                   <p className="title">
                     Registered as Navgurukul Foundation for Social Welfare
                   </p>
-                  <p className="sub-title">CIN Number: U85300HR2016NPL066468</p>
-                  <p className="sub-title m-0">
+                  <p className="sub-title">CIN : U85300HR2016NPL066468</p>
+                  <p className="sub-title m-0 mb-4">
                     Let’s talk at{" "}
                     <a href="mailto:hi@navgurukul.org" className="email">
                       hi@navgurukul.org
@@ -149,7 +149,7 @@ function Footer() {
 
               
 
-            <div class="col-md-1 p-0 ">
+            <div class="col-md-1 p-0  mt-3 ">
               <ul class="nav-footer ">
                 <li className="row-title">ABOUT US</li>
                 <li>
@@ -171,7 +171,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div class="col-md-2 p-0">
+            <div class="col-md-2 p-0 mt-3">
               <ul class="nav-footer ">
                 <li className="row-title">SCHOOLS</li>
                 <li>
@@ -193,7 +193,7 @@ function Footer() {
               </ul>
             </div>
             
-            <div class="col-md-2 p-0">
+            <div class="col-md-2 p-0 mt-3">
               <ul class="nav-footer ">
                 <li className="row-title">DIGITAL INITIATIVES</li>
                 <li>
@@ -235,7 +235,7 @@ function Footer() {
               </ul>
             </div>
             
-            <div class="col-md-2 p-0">
+            <div class="col-md-2 p-0 mt-3">
               <ul class="nav-footer ">
                 <li className="row-title">GET INVOLVED</li>
                 <li className="titlesss">
@@ -261,7 +261,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-             <div class="col-md-2 p-0">
+             <div class="col-md-2 p-0 mt-3 ">
               <ul class="nav-footer ">
                 <li className="row-title"> 
                   <Link  to="/campus">
