@@ -1,10 +1,12 @@
 import React from 'react'
+import BackgroundImg from "./assets/hero section.png"
 import "./style.css";
 
 function BCAProgram() {
 
   return (
     <>
+        <img src={BackgroundImg} style={{width:"100%", height:"100%"}} alt=''/>
         <div className="d-flex flex-column justify-content-center w-100 ">
             <div className="container align-items-center d-flex flex-column  justify-content-center w-100">
                 <h3 className="mt-2 section-head mb-3">About the Program</h3>
