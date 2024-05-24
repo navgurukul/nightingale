@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -205,6 +208,19 @@ h5{
   margin-bottom: 2rem;
 }
 
+.body1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.body2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 @media screen and (max-width: 667px) {
   h2 {
     font-size: 24px;
@@ -222,5 +238,12 @@ h5{
   .dashed-btn {
     font-size: 0.875rem !important;
     width: 100% !important;
+  }
+  .body1 {
+    font-size: 16px;
+  }
+    .body2 {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
