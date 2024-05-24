@@ -193,10 +193,10 @@ function Header() {
             </div>
           </li>
         </ul>
-        <ul className="navbar-nav nav-font-color">
+        <ul className="navbar-nav nav-font-color gap-responsive">
           <button
             type="button"
-            class="btn section-para btn-primary mx-3 my-2 dashed-btn fixed-dimensions "
+            class="btn section-para btn-primary  dashed-btn fixed-dimensions "
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -209,7 +209,7 @@ function Header() {
           </button>
           <button
             type="button"
-            class="btn section-para regular-btn my-2 mx-3 career-button fixed-dimensions "
+            class="btn section-para regular-btn career-button fixed-dimensions "
             onClick={(e) => {
               e.preventDefault();
               window.open(
