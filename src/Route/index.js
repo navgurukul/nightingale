@@ -56,7 +56,7 @@ function Routing() {
         <Route exact path="/programmer" component={Programmer} />
         <Route exact path="/designer" component={Designers} />
         <Route exact path="/partners" component={Partners} />
-        <Route exact path="/BCAprogramme" component={BCA} />
+        <Route exact path="/bca-programme" component={BCA} />
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/campus" component={OurCampus} />
         <Route exact path="/campus/:campusName" component={CampusPages} />

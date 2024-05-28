@@ -10,11 +10,74 @@ import img3 from "./assets/image3.jpg";
 import img4 from "./assets/image4.png";
 import KeyFacilities from "./KeyFacilities";
 import Digitallnitiatives from "./DigitalInitiatives";
+import bannerimg1 from "./assets/Eternal_university-removebg-preview 1.svg";
+import bannerimg2 from "./assets/Sri badrika asharam.svg";
 
 function Home() {
   const history = useHistory();
   const screenWidth = window.innerWidth;
   return (
+    <> 
+      {/* <div className="row align-items-center centered-container">
+  <div className="d-none d-md-flex justify-content-end">
+    <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
+  </div>
+  <div className="d-none d-md-flex justify-content-start">
+    <img src={bannerimg2} alt="banner img2" className="bannerimg2" />
+  </div>
+  <div className="col  ">
+    <h4 className="mb-0">Eternal University’s Fully-Funded BCA Program for Aspiring Young Women 2024-27</h4>
+  </div>
+  <div className="col d-flex justify-content-end">
+    <button
+      type="button"
+      className="btn regular-btn "
+      style={{ height: "48px", width: "232px" }}
+      onClick={(e) => {
+        e.preventDefault();
+        window.open("/bca-programme", "_blank");
+      }}
+    >
+      Apply by 30th June 2024
+    </button>
+  </div>
+</div> */}
+
+<div className="row align-items-center centered-container">
+  <div className="d-none d-md-flex justify-content-end">
+    <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
+  </div>
+  <div className="d-none d-md-flex justify-content-start">
+    <img src={bannerimg2} alt="banner img2" className="bannerimg2" />
+  </div>
+  <div className="col-md">
+    <h4 className="mb-0">Eternal University’s Fully-Funded BCA Program for Aspiring Young Women 2024-27</h4>
+  </div>
+  <div className="col-md d-flex justify-content-end">
+    <button
+      type="button"
+      className="btn regular-btn"
+      style={{ height: "48px", width: "232px" }}
+      onClick={(e) => {
+        e.preventDefault();
+        window.open("/bca-programme", "_blank");
+      }}
+    >
+      Apply by 30th June 2024
+    </button>
+  </div>
+ </div>
+
+
+
+      
+    
+      
+
+      
+
+
+
     <div className="navgurukul-homepage ">
       <div class="row">
         <div className="col-md-1"></div>
@@ -193,6 +256,7 @@ function Home() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

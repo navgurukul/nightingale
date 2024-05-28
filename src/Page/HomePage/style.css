@@ -1,6 +1,28 @@
 .card-text.section-para.card-dic {
   text-align: left;
 }
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px; /* Adjust as needed */
+  background-color: #FBDFD9;
+}
+
+.bannerimg1{
+  height: 96px;
+  width: 100%;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.bannerimg2 {
+  height: 64px;
+  width: 100%;
+  margin-right: 32px;
+}
+.btn{
+  margin-right: 32px;
+}
 
 .home-page-bg {
   background: url("./assets/bg.png");
@@ -259,6 +281,10 @@
   .media-scroll-section{
     margin-top: 0px;
   }
+  .btn{
+    margin-right: 0px;
+  }
+
 }
 @media (max-width: 576px) {
   .card-main-text {
@@ -324,6 +350,9 @@
   .media-scroll-section {
     padding-inline: 10%;
   }
+  .btn{
+    margin-right: 0px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -338,6 +367,9 @@
   }
   .para-item{
     margin:0px;
+  }
+  .btn{
+    margin-right: 0px;
   }
  
 }
