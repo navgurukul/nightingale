@@ -43,7 +43,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="navgurukul-homepage ">
+      <div className="navgurukul-homepage mt-5 ">
         <div class="row">
           <div className="col-md-1"></div>
           <div class="col-md head-div ">
@@ -162,18 +162,18 @@ function Home() {
           <Digitallnitiatives />
         </section>
 
-        <section className=" d-flex flex-column align-items-center our-initiatives">
-          <h3 className="text-center media-font ">
-            Key Facilities at NavGurukul
-          </h3>
-          <KeyFacilities />
-        </section>
-        <section className="media-scroll-section   d-flex flex-column justify-content-center">
-          <h3 className="align-self-center media-font ">
-            In the <span className="BackColor">Media</span>
-          </h3>
-          <Slider />
-        </section>
+      <section className=" d-flex flex-column align-items-center our-initiatives">
+        <h3 className="text-center media-font ">
+          Key Facilities at NavGurukul
+        </h3>
+        <KeyFacilities />
+      </section>
+      {/* <section className="media-scroll-section   d-flex flex-column justify-content-center">
+        <h3 className="align-self-center media-font ">
+          In the <span className="BackColor">Media</span>
+        </h3>
+        <Slider />
+      </section> */}
 
         <section className="our-partners text-center  d-flex flex-column ">
           <h3 className="align-self-center ">

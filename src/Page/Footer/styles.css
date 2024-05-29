@@ -12,10 +12,10 @@
 .ng-logo {
   padding-top: 40px;
 }
-
+/* 
 .title-container {
   padding: 30px 0 35px 0;
-}
+} */
 
 .merakilogo {
   position: absolute;
@@ -53,10 +53,12 @@ ul.nav-footer {
 
 }
 
-/* .sub-row-title {
+.sub-title {
     font-weight: 400;
+    font-size:14px;
+    line-height: 21px;
     color: #2E2E2E;
-} */
+}
 
 .footer-container .sub-row-title:hover {
   text-decoration: none;
@@ -97,14 +99,16 @@ ul.nav-footer {
   margin: 0;
 } */
 .footer-container .title {
-  font-weight: 600;
-  line-height: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.footer-container .sub-title {
+/* .footer-container .sub-title {
   font-weight: 400;
-  line-height: 20px;
-}
+  font-size: 14px;
+  line-height: 21px;
+} */
 
 .footer-container .details {
   display: flex;
