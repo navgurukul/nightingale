@@ -59,6 +59,12 @@
   width: 135px;
   height: 48px;
 }
+.gap-responsive .btn {
+    margin-bottom: 0; 
+    margin-right: 1rem; 
+  }
+
+
 
 @media screen and (max-width: 667px) {
   .navbar-color {
@@ -80,4 +86,8 @@
     text-decoration: none;
     background-color: transparent;
   }
+  .gap-responsive .btn {
+  margin-right: 0; 
+  margin-bottom: 1rem;
+}
 }
