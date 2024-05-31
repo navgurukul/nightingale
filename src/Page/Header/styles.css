@@ -56,6 +56,13 @@
   padding: 0 40px 0 10px;
 }
 
+.gap-responsive .btn {
+    margin-bottom: 0; 
+    margin-right: 1rem; 
+  }
+
+
+
 @media screen and (max-width: 667px) {
   .navbar-color {
     background-color: #fcdfd9 !important;
@@ -76,4 +83,8 @@
     text-decoration: none;
     background-color: transparent;
   }
+  .gap-responsive .btn {
+  margin-right: 0; 
+  margin-bottom: 1rem;
+}
 }

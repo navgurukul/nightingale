@@ -1,6 +1,28 @@
 .card-text.section-para.card-dic {
   text-align: left;
 }
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px; 
+  background-color: #FBDFD9;
+}
+
+.bannerimg1{
+  height: 96px;
+  width: 100%;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.bannerimg2 {
+  height: 64px;
+  width: 100%;
+  margin-right: 32px;
+}
+.btn{
+  margin-right: 32px;
+}
 
 .home-page-bg {
   background: url("./assets/bg.png");
@@ -9,9 +31,49 @@
   background-position: top center;
   width: 100%;
   height: 800px;
-  /* background-color: transparent; */
+ 
   
 }
+.image-background {
+  background-image: url('./assets/student.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  height: 680px; 
+  position: relative; 
+  border-radius: 32px 0 0 32px;
+}
+
+.centered-play-icon {
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer; 
+}
+.image-button {
+  border: none;
+  background: transparent; /* Transparent background */
+  cursor: pointer; /* Cursor changes to indicate clickability */
+  outline: none; /* Remove outline for better styling, but ensure accessibility */
+}
+
+.image-button:focus {
+  outline: 2px solid #007bff; /* Optional focus outline for accessibility */
+}
+
+.play-icon-image {
+  width: 112.5px; /* Set the width of the play icon */
+  height:112.5px; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Add a transition for hover effect */
+}
+
+.image-button:hover .play-icon-image {
+  transform: scale(1.1); /* Slight scaling on hover for visual feedback */
+}
+
+
 .mar-3 {
   margin-top: 32px;
 }
@@ -48,6 +110,7 @@
   width: 100%;
   height: 100%;
   padding: 0px ,0px;
+  border-radius: 32px 0 0 32px;
 }
 .home-page-hero-section-data {
   line-height: 1.3;
@@ -75,54 +138,49 @@
   height: 330px;
   border-radius: 15px;
 }
-.our-initiatives .card {
-  transition: all ease-in 0.2s;
-  /* margin-top: 30px; */
+.our-initiatives {
+  transition: none; 
 }
-.our-initiatives .card:hover {
-  filter: drop-shadow(0px 16px 24px rgba(0, 0, 0, 0.06))
-    drop-shadow(0px 6px 30px rgba(0, 0, 0, 0.04))
-    drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.08));
-  border: 2px solid transparent;
+.our-initiatives  {
+   filter: none;
+  border: none; 
+ 
 }
-.our-initiatives .card:hover a:hover {
+.our-initiatives .textlink:hover a:hover {
   text-decoration: none;
 }
-.bg-image1 {
-  background: url("./assets/job-co-modified.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  border-radius: 18px;
-  height: 330px;
-  background-position: center;
-  background-size: 100% 100%;
-}
-.bg-image2 {
-  background: url("./assets/GDschool.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  border-radius: 18px;
-  height: 330px;
-  background-size: 100% 100%;
+.card-image {
+  width: 100%; 
+  height: 320px; 
+  border-radius: 8px; 
+  object-fit: cover;
 }
 
-.bg-image3 {
-  background: url("./assets/123.jpg");
-  background-repeat: no-repeat;
-  border-radius: 18px;
-  width: 100%;
-  height: 330px;
-  background-size: 100% 100%;
+.textlink {
+  border-radius: 8px; 
+  overflow: hidden; 
+  transition: none; 
 }
 
-.bg-image4 {
-  background: url("./assets/navgurukul-modified.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  border-radius: 18px;
-  height: 330px;
-  background-position: center;
-  background-size: 100% 100%;
+.our-initiatives .card-image {
+  transition: box-shadow 0.3s ease; 
+}
+.card-image:hover {
+  filter: drop-shadow(0px 16px 24px rgba(4, 4, 4, 0.06))
+      drop-shadow(0px 6px 30px rgba(7, 7, 7, 0.04))
+      drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.08));
+    border: 2px solid transparent;
+}
+
+.card-body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white; 
+  color: #000; 
+}
+.fixed-dimensions {
+  width: 154px;
+  height: 48px;
 }
 
 .software-development-img {
@@ -189,7 +247,7 @@
 }
 
 .media-scroll-section {
-  background-color: #f9f9f9;
+  background-color: #F7F7F7;
   padding-inline: 15%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -232,6 +290,10 @@
   .media-scroll-section{
     margin-top: 0px;
   }
+  .btn{
+    margin-right: 0px;
+  }
+
 }
 @media (max-width: 576px) {
   .card-main-text {
@@ -297,6 +359,9 @@
   .media-scroll-section {
     padding-inline: 10%;
   }
+  .btn{
+    margin-right: 0px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -311,6 +376,9 @@
   }
   .para-item{
     margin:0px;
+  }
+  .btn{
+    margin-right: 0px;
   }
  
 }

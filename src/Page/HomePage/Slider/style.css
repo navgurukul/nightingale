@@ -55,7 +55,7 @@
 
 .carousal-img {
   height: 100%;
-  width: 182px;
+  width: 544px;
 
 }
 
@@ -111,6 +111,10 @@
 .arrow--right {
   left: 96%;
   right: -8px;
+}
+
+.name{
+  color: #EB5F42;
 }
 
 .arrow--disabled {

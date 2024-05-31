@@ -1,0 +1,13 @@
+.box {
+    margin: auto;
+    position: relative;
+    top: 30px;
+}
+
+.user-test-btn {
+    width: 189px;
+    height: 48px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    border-radius: 8px 0px 0px 0px;
+}

@@ -36,7 +36,6 @@ function SupporterSlider() {
     });
   }, []);
   const [supports, setSupports] = useState([]);
-  // console.log(partners);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider(
@@ -96,7 +95,7 @@ function SupporterSlider() {
   );
   if (!Object.keys(supports).length) return <></>;
   return (
-    <div className="slider mar-3 container">
+    <div className="slider mar-2 container">
       <>
         <div className="navigation-wrapper">
           <div ref={sliderRef} className="keen-slider">
