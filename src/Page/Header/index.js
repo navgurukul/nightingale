@@ -196,8 +196,8 @@ function Header() {
         <ul className="navbar-nav nav-font-color gap-responsive">
           <button
             type="button"
-            className="btn  dashed-btn  "
-            style={{ height: "48px", width: "135px" }}
+            className="btn dashed-btn  "
+            style={{ display: 'block', backgroundColor: 'while',height: "48px", width: "135px"  }}
             onClick={(e) => {
               e.preventDefault();
               window.open(
