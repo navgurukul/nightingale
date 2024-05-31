@@ -7,8 +7,8 @@ import { FiExternalLink } from "react-icons/fi";
 
 function Footer() {
   return (
-    <div className="footer-container pb-5">
-      <div className="container">
+    <div  className="footer-container ">
+      <div  style={{ paddingTop:"20px"}}className="container">
         <div className="title-container d-flex " >
           <div className="row w-100 ">
               <div className=" ng-logo col-md-3 p-0  ">
