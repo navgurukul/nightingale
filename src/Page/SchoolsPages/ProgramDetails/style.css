@@ -3,5 +3,8 @@
 }
 .programDetails{
     margin-top: 40px;
-    /* border: 1px solid red; */
+}
+.text-normal {
+    font-weight: normal !important;
+    font-size: 18px;
 }

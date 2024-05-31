@@ -14,8 +14,8 @@
 
 .custom-underline {
   text-decoration: none;
-  color: inherit; 
-  position: relative; 
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .custom-underline::after {
@@ -29,12 +29,12 @@
 }
 .custom-underline:hover,
 .custom-underline:focus {
-  color: inherit; 
+  color: var(--primary);
+  text-decoration: none;
 }
 .custom-button {
   width: 140px;
   height: 48px;
-  text-decoration: underline;
 }
 ol li {
   font-weight: bold; 

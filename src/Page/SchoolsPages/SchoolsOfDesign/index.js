@@ -6,7 +6,6 @@ import AdmissionProcess from "../AdmissionProcess";
 import BackgroundImg from "../BgroundImg";
 import CoursesLocation from "../CourseLocations";
 import { whoForPoints, topics, JobAssistanceData, program2Data, BgroundImg } from "../SchoolsOfDesign/data";
-import ScreeningTestPage from "../ScreningTest";
 const information = "Our teacher-led, 18-months design course Includes:"
 function SchoolOfDesignPage() {
     return (
@@ -17,7 +16,7 @@ function SchoolOfDesignPage() {
             <CoursesLocation courses={"School of Design"}></CoursesLocation>
             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
             <AdmissionProcess stages={program2Data}></AdmissionProcess>
-            <ScreeningTestPage></ScreeningTestPage>
+            
         </>
     )
 }

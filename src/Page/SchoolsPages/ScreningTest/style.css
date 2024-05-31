@@ -5,8 +5,8 @@
 }
 
 .user-test-btn {
-    width: Fill (189px)px;
-    height: Fixed (48px)px;
+    width: 189px;
+    height: 48px;
     padding: 8px 16px 8px 16px;
     gap: 10px;
     border-radius: 8px 0px 0px 0px;
