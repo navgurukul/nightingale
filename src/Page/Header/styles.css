@@ -61,25 +61,34 @@
     margin-right: 1rem; 
   }
 
-.custom-button {
+.custom-outline-button {
+  border: 1px solid #EB5F42 !important;
+  color: #EB5F42 !important;
+  background-color: white !important;
   height: 48px !important;
   width: 135px !important;
   border-radius: 8px !important;
-  border: 1px solid #EB5F42 !important;
   padding: 8px 16px !important;
-  color: #EB5F42 !important;
-  background-color: transparent !important; /* to keep it outlined */
-  display: inline-block !important; /* ensure button is displayed */
-  text-align: center !important; /* ensure text is centered */
-  line-height: 32px !important; /* align text vertically */
+  display: inline-block !important;
+  text-align: center !important;
+  font-family: 'Lato', sans-serif !important; /* Font family */
+  font-weight: 700 !important; /* Font weight */
+  font-size: 18px !important; /* Font size */
+  line-height: 30.6px !important; /* Line height */
+  transition: background-color 0.3s, color 0.3s !important;
 }
 
-.custom-button:hover {
+.custom-outline-button:hover {
   background-color: #EB5F42 !important;
   color: white !important;
+  border-color: #EB5F42 !important;
 }
 
 @media screen and (max-width: 667px) {
+  .custom-outline-button {
+    width: 100% !important;
+  }
+
   .navbar-color {
     background-color: #fcdfd9 !important;
   }
