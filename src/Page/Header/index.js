@@ -196,7 +196,8 @@ function Header() {
         <ul className="navbar-nav nav-font-color gap-responsive">
           <button
             type="button"
-            class="btn section-para btn-primary  dashed-btn fixed-dimensions "
+            className="btn  dashed-btn  "
+            style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -209,7 +210,8 @@ function Header() {
           </button>
           <button
             type="button"
-            class="btn section-para regular-btn career-button fixed-dimensions "
+            className="btn regular-btn  "
+            style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();
               window.open(

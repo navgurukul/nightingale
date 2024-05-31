@@ -55,10 +55,7 @@
   width: 60%;
   padding: 0 40px 0 10px;
 }
-.fixed-dimensions {
-  width: 135px;
-  height: 48px;
-}
+
 .gap-responsive .btn {
     margin-bottom: 0; 
     margin-right: 1rem; 
