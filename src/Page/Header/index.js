@@ -5,6 +5,8 @@ import { BiChevronDown } from "react-icons/bi";
 import "./styles.css";
 import externalLink from "./assets/external-link.png";
 import { BiChevronsDown } from "react-icons/bi";
+import "../../Global.css";
+
 function Header() {
   const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -197,7 +199,8 @@ function Header() {
           <button
             type="button"
             className="btn dashed-btn  "
-            style={{ display: 'block', backgroundColor: 'while',height: "48px", width: "135px"  }}
+            style={{ height: "48px", width: "135px" }}
+           
             onClick={(e) => {
               e.preventDefault();
               window.open(
