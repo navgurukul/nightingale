@@ -199,7 +199,8 @@ function Header() {
         <ul className="navbar-nav nav-font-color gap-responsive">
           <button
             type="button"
-            className="btn dashed-btn"
+            // className="btn dashed-btn"
+            className="btn regular-btn "
             style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();
