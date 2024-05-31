@@ -89,16 +89,16 @@ function Header() {
               className="dropdown-menu dropdown-items"
               show={showDropdown}
             >
-              <a className="dropdown-item" href="/schoolofprograming">
+              <a className="dropdown-item" href="/school-programing">
                 School of Programming
               </a>
-              <a className="dropdown-item" href="/schoolDesign">
+              <a className="dropdown-item" href="/school-design">
                 School of Design
               </a>
-              <a className="dropdown-item" href="/schoolOfBusines">
+              <a className="dropdown-item" href="/school-busines">
                 School of Business
               </a>
-              <a className="dropdown-item" href="/SchoolOfFinance">
+              <a className="dropdown-item" href="/school-finance">
                 School of Finance
               </a>
             </div>
