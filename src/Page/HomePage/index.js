@@ -43,10 +43,10 @@ function Home() {
         </div>
       </div>
 
-      <div className="navgurukul-homepage mt-5 ">
-        <div class="row">
+      <div className="navgurukul-homepage  ">
+        <div className="row">
           <div className="col-md-1"></div>
-          <div class="col-md head-div ">
+          <div className="col-md head-div ">
             <h2 className=" heading-line ">
               The <span className="text-primary">Gurukul</span> for the <br />
               <span className="BgColor"> New Age India</span> and its New
@@ -58,7 +58,7 @@ function Home() {
             </p>
           </div>
           <div className="col-md-1"></div>
-          <div class="col-md-6" style={{ padding: screenWidth > 932 && "0px" }}>
+          <div className="col-md-6" style={{ padding: screenWidth > 932 && "0px" }}>
             <img
               src={require("./assets/student.jpg").default}
               className="home-image"
@@ -67,25 +67,27 @@ function Home() {
         </div>
 
         <section className="media-scroll-section d-flex flex-column justify-content-center">
-          <div className="row">
-            <div className="col-md-3 col-sm-6 ">
-              <h3>890+</h3>
-              <p>students placed across various industries in tech</p>
-            </div>
-            <div className=" col-md-3 col-sm-6">
-              <h3>₹2.8 LPA</h3>
-              <p>avg. salary secured by students, the highest being 8 LPA</p>
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <h3>95%</h3>
-              <p>
-                of our student strength consists of girls from marginalized
-                communities
-              </p>
-            </div>
-            <div className="col-md-3 col-sm-6">
-              <h3>₹23+ Crore</h3>
-              <p>collectively earned annually by our Alumni</p>
+          <div className="container">
+            <div className="row w-100">
+              <div className="col-lg-3 col-md-2 col-sm-6 ">
+                <h3>890+</h3>
+                <p>students placed across various industries in tech</p>
+              </div>
+              <div className="col-lg-3 col-md-2 col-sm-6">
+                <h3>₹2.8 LPA</h3>
+                <p>avg. salary secured by students, the highest being 8 LPA</p>
+              </div>
+              <div className="col-lg-3 col-md-2 col-sm-6">
+                <h3>95%</h3>
+                <p>
+                  of our student strength consists of girls from marginalized
+                  communities
+                </p>
+              </div>
+              <div className="col-lg-3 col-md-2 col-sm-6">
+                <h3>₹23+ Crore</h3>
+                <p>collectively earned annually by our Alumni</p>
+              </div>
             </div>
           </div>
         </section>
@@ -93,15 +95,15 @@ function Home() {
         <section className=" d-flex flex-column align-items-center our-initiatives">
           <h3 className="text-center media-font ">Our Schools</h3>
 
-          <div class="container mt-4">
-            <div class="row gy-4">
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-1-strong">
+          <div className="container mt-4">
+            <div className="row gy-4">
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <div className="textlink">
                   <Link to="/job-course">
-                    <img src={img1} class="card-image" alt="Placeholder Image" />
-                    <div class="card-body text-black">
-                      <h4 class="card-title mt-4">School of Programming</h4>
-                      <p class="card-text mb-3">
+                    <img src={img1} className="card-image" alt="Placeholder Image" />
+                    <div className="card-body text-black">
+                      <h4 className="card-title mt-4">School of Programming</h4>
+                      <p className="card-text mb-3">
                         Fully-funded course in software engineering with
                         guaranteed jobs
                       </p>
@@ -110,13 +112,13 @@ function Home() {
                 </div>
               </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-1-strong">
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <div className="textlink" >
                   <a href="/designer" target="_blank">
-                    <img src={img2} class="card-image" alt="Placeholder Image" />
-                    <div class="card-body text-black ">
-                      <h4 class="card-title mt-4">School of Design</h4>
-                      <p class="card-text mb-3">
+                    <img src={img2} className="card-image " alt="Placeholder Image" />
+                    <div className="card-body text-black ">
+                      <h4 className="card-title mt-4">School of Design</h4>
+                      <p className="card-text mb-3">
                         Fully-funded course in graphic design with guaranteed jobs
                       </p>
                     </div>
@@ -125,14 +127,14 @@ function Home() {
               </div>
             </div>
 
-            <div class="row gy-4 mt-4">
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-1-strong">
+            <div className="row gy-4 mt-4">
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <div className="textlink">
                   <a href="https://www.merakilearn.org/" target="_blank">
-                    <img src={img3} class="card-image" alt="Placeholder Image" />
-                    <div class="card-body text-black">
-                      <h4 class="card-title mt-4">School of Business</h4>
-                      <p class="card-text mb-3">
+                    <img src={img3} className="card-image" alt="Placeholder Image" />
+                    <div className="card-body text-black">
+                      <h4 className="card-title mt-4">School of Business</h4>
+                      <p className="card-text mb-3">
                         Fully funded course in Business CRM with guaranteed jobs
                       </p>
                     </div>
@@ -140,13 +142,13 @@ function Home() {
                 </div>
               </div>
 
-              <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="card shadow-1-strong">
+              <div className="col-lg-6 col-md-6 col-sm-12">
+                <div className="textlink">
                   <a href="https://www.codeindiafellowship.org/" target="_blank">
-                    <img src={img4} class="card-image" alt="Placeholder Image" />
-                    <div class="card-body text-black">
-                      <h4 class="card-title mt-4">School of Finance</h4>
-                      <p class="card-text mb-3">
+                    <img src={img4} className="card-image" alt="Placeholder Image" />
+                    <div className="card-body text-black">
+                      <h4 className="card-title mt-4">School of Finance</h4>
+                      <p className="card-text mb-3">
                         Fully funded course in Finance with guaranteed jobs
                       </p>
                     </div>
@@ -181,12 +183,12 @@ function Home() {
           </h3>
           <PartnerSlider />
 
-          <div class="d-flex flex-column align-items-center justify-content-center align-items-center mar-3">
+          <div className="d-flex flex-column align-items-center justify-content-center align-items-center mar-3">
             <h4 className=" "> Bring a change! </h4>
-            <div class="d-flex justify-content-start">
+            <div className="d-flex justify-content-start">
               <button
                 type="button"
-                class="btn section-para regular-btn mx-3 career-button fixed-dimensions"
+                className= "btn regular-btn mx-3  fixed-dimensions"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
@@ -197,7 +199,7 @@ function Home() {
 
               <button
                 type="button"
-                class="btn section-para regular-btn mx-3 career-button fixed-dimensions"
+                className ="btn regular-btn fixed-dimensions "
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(
@@ -216,7 +218,7 @@ function Home() {
           <h3>
             Our <span className="BackColor">Supporters</span>
           </h3>
-          <div class="container ">
+          <div className="container ">
             <SupporterSlider />
           </div>
         </section>
