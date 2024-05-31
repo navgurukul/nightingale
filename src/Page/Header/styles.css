@@ -62,21 +62,22 @@
   }
 
 .custom-button {
-  height: 48px;
-  width: 135px;
-  border-radius: 8px;
-  border: 1px solid #EB5F42;
-  padding: 8px 16px;
-  gap: 10px;
-  color: #EB5F42;
-  background-color: transparent; 
+  height: 48px !important;
+  width: 135px !important;
+  border-radius: 8px !important;
+  border: 1px solid #EB5F42 !important;
+  padding: 8px 16px !important;
+  color: #EB5F42 !important;
+  background-color: transparent !important; /* to keep it outlined */
+  display: inline-block !important; /* ensure button is displayed */
+  text-align: center !important; /* ensure text is centered */
+  line-height: 32px !important; /* align text vertically */
 }
 
 .custom-button:hover {
-  background-color: #EB5F42;
-  color: white;
+  background-color: #EB5F42 !important;
+  color: white !important;
 }
-
 
 @media screen and (max-width: 667px) {
   .navbar-color {
