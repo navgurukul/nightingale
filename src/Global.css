@@ -178,8 +178,8 @@ h5{
 
 .dashed-btn {
   background-color: #fff;
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 1px solid var(--primary)!important;
+  color: var(--primary)!important;
   transition: all ease-in 0.2s;
   font-size: 1.125rem;
   font-weight: 700;
@@ -190,7 +190,7 @@ h5{
 
 .dashed-btn:hover,
 .dashed-btn:active {
-  color: #fff;
+  color: #fff!important;
   background-color: var(--btnHover) !important;
   border: 1px solid var(--btnHover) !important;
 }
