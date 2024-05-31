@@ -190,7 +190,7 @@ h5{
 
 .dashed-btn:hover,
 .dashed-btn:active {
-  color: #fff!important;
+  color: #fff;
   background-color: var(--btnHover) !important;
   border: 1px solid var(--btnHover) !important;
 }

@@ -50,6 +50,21 @@
   display: block;
 }
 
+.dashed-btn:hover {
+  color: white;
+}
+
+.btn-outline-primary {
+  color: #f05f40;
+  border-color: #f05f40;
+}
+
+.btn-outline-primary:hover {
+  background-color: #fc8f76;
+  color: white;
+  font-size: 10px;
+}
+
 
 .nav-logo {
   width: 60%;
