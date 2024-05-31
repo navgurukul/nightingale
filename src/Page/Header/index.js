@@ -202,7 +202,7 @@ function Header() {
             className="btn dashed-btn"
             style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
-              e.preventDefault();
+              // e.preventDefault();
               window.open(
                 "/hiring",
                 "_blank"
@@ -216,7 +216,7 @@ function Header() {
             className="btn regular-btn "
             style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
-              e.preventDefault();
+              // e.preventDefault();
               window.open(
                 "/donate",
                 "_blank"
