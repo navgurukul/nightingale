@@ -198,7 +198,7 @@ function Header() {
         <ul className="navbar-nav nav-font-color gap-responsive">
           <button
             type="button"
-            className="btn dashed-btn custom-button  "
+            className="btn custom-outline-button" 
             onClick={(e) => {
               e.preventDefault();
               window.open(
