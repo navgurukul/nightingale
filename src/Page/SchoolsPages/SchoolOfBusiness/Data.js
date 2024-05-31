@@ -1,3 +1,5 @@
+import SchoolOfBusinessPage from "../SchoolOfBusiness/assets/businessbgimg.png"
+
 export const whoForPoints = [
     { point: "Youth above 16 years of age from underprivileged or low-income communities who can't afford expensive college education" },
     { point: "No prior education needed: Our students have been school and college dropouts, 10th or 12th pass as well as degree holders such as BSc, BTech who could not get jobs" },
@@ -56,7 +58,7 @@ export const program3Data = [
 
 export const BackgroundImgData=[
     {
-        urlImg:"https://s3-alpha-sig.figma.com/img/30d7/2c0b/43dc1dfa743b5a8100fdfcc1bb9f5980?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mHBQQG5jANgqi-Phgy86zwuUVybPfhej4nSCXGiAjPbw5l0M0SVmWgyxGLIWNx6JfjWA0ZYHdrUnQ4qRv-Aj24T9dltDNzPMOAQHx5dDoUFuwgpkjsbAcu9e8oFYEF7-c0W-NXClTdsHoY5G5Yeva482NubznMV2m789Drq5oaHK2ybP5NSKyL~K4xzvs8hqQ7vIDAXmSBi5Ugo37GuopgfDcr~AF-KBZ07Yod2r5-wGbOo-oYK-5rPoHOH0wkzT7NGULIZpglr4MXSFK5d7Tsoa9nyqtEs22CF-ffeYyqWvdKjPbDNya068mWoYA9ZYuWa7F589l3U1xOXM60XN1g__",
+        urlImg:SchoolOfBusinessPage,
         title:"School Of Business",
         text:"Fully funded course in Business CRM with ,regular mentor support",
         color:"white"

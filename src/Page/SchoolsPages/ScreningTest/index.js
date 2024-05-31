@@ -11,9 +11,9 @@ function ScreeningTestPage() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-12 col-sm-12 col-md-12" style={{ margin: "auto", marginBottom: "40px", marginTop: "40px" }}>
-                        <div className="next-step mt-2 mt-sm-3 d-flex flex-column align-items-center">
+                        <div className="next-step mt-2 mt-sm-3 d-flex flex-column align-items-center section-para">
                             <h5 className="text-center" style={{ marginBottom: "32px" }}>
-                                Want to Enroll <span className="BackColor">Want to Enroll and </span> Start your Career?
+                                Next Batch Admissions Will Open Up Soon
                             </h5>
                             <div className="input d-flex flex-column justify-content-center align-items-center">
                                 <button

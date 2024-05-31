@@ -85,7 +85,8 @@ function BCAProgram() {
                 <div className="body1 col-12 p-0 col-md-8 section-para  mb-2 mt-3">
                     In case of any queries, please reach out to:<br /><br />
                     <span className='fw-bold'>Phone:</span> (+91) 7081255272 (Monday to Friday - 10:00 AM to 06:00 PM (IST)<br />
-                    <span className='fw-bold'>Email:</span> nikesh@navgurukul.org <br />
+                    <span className='fw-bold'>Email:</span> <a href='mailto:nikesh@navgurukul.org' style={{ color: '#EB5F42' }} className='fw-bold'>nikesh@navgurukul.org</a> <br />
+
                 </div>
             </div>
 
@@ -113,7 +114,7 @@ function BCAProgram() {
                           What is the syllabus for screening test?
                         </li>
                         Interested applicants can click the links below to download the syllabus for the online entrance exam for this course in their preferred language.
-                        <a href="https://buddy4study.s3.ap-southeast-1.amazonaws.com/article/wp-content/uploads/2024/05/22085918/Hindi-Syallbus-Sample-Paper-Resources-NG-1-2.pdf" className="custom-underline">In Hindi</a> | <a href="https://buddy4study.s3.ap-southeast-1.amazonaws.com/article/wp-content/uploads/2024/05/22085942/English-Syllabus-Sample-Paper-Resources-NG1-1.pdf" className="custom-underline"> In English</a>.
+                        <a href="https://buddy4study.s3.ap-southeast-1.amazonaws.com/article/wp-content/uploads/2024/05/22085918/Hindi-Syallbus-Sample-Paper-Resources-NG-1-2.pdf" className="custom-underline"> In Hindi</a> | <a href="https://buddy4study.s3.ap-southeast-1.amazonaws.com/article/wp-content/uploads/2024/05/22085942/English-Syllabus-Sample-Paper-Resources-NG1-1.pdf" className="custom-underline"> In English</a>.
                         <li className='mt-4'>What will be asked in interview rounds? </li>
                         The interview process consists of two rounds. In the first round, we assess academic alignment for the course by asking questions similar to those on the screening test. The second round is a conversation to gauge the candidate's passion, motivation, and suitability for a fully funded residential course.
 
