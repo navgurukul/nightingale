@@ -211,14 +211,25 @@ function Header() {
           >
             Hire from Us 
           </button> */}
-          <Link to="/hiring" target="_blank">
+          {/* <Link to="/hiring" target="_blank">
             <button
               className="btn dashed-btn"
               style={{ height: "48px", width: "135px" }}
             >
               Hire from Us
             </button>
-          </Link>
+          </Link> */}
+             <button
+            type="button"
+            className="btn regular-btn "
+            style={{ height: "48px", width: "135px" }}
+            onClick={(e) => {
+              // e.preventDefault();
+              window.open("/donate", "_blank");
+            }}
+          >
+             Hire from Us
+          </button>
           <button
             type="button"
             className="btn regular-btn "
