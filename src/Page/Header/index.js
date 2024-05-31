@@ -3,8 +3,11 @@ import React, { useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { BiChevronDown } from "react-icons/bi";
 import "./styles.css";
+import "../../Global.css";
 import externalLink from "./assets/external-link.png";
 import { BiChevronsDown } from "react-icons/bi";
+
+
 function Header() {
   const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
@@ -196,8 +199,8 @@ function Header() {
         <ul className="navbar-nav nav-font-color gap-responsive">
           <button
             type="button"
-            className="btn  dashed-btn  "
-            style={{ height: "48px", width: "135px" }}
+            className="btn dashed-btn"
+            // style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();
               window.open(
@@ -210,7 +213,7 @@ function Header() {
           </button>
           <button
             type="button"
-            className="btn regular-btn  "
+            className="btn regular-btn "
             style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();
