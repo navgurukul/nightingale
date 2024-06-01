@@ -1,27 +1,34 @@
-label{
+label {
   font-size: 1.1rem;
 }
-p{
+
+p {
   font-size: 1.1rem;
 }
+
 .hand-pointer {
   cursor: pointer;
 }
-.text{
-  font-size:0.875rem ;
+
+.text {
+  font-size: 0.875rem;
 }
-.info{
+
+.info {
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
 
- }
- .leftText{
+}
+
+.leftText {
   margin-left: 5rem;
- }
- .bold-text {
+}
+
+.bold-text {
   font-weight: bold;
 }
-.custom-btn{
+
+.custom-btn {
   border: 1px solid #EB5F42 !important;
   color: #EB5F42 !important;
   background-color: white !important;
@@ -29,17 +36,25 @@ p{
   font-weight: 800 !important;
 }
 
- @media (max-width: 767px) {
-  .leftText{
-   padding: 0;
-   margin: 0; 
+.custom-btn:hover {
+  background-color: #EB5F42 !important;
+  color: white !important;
+  border-color: #EB5F42 !important;
+}
+
+@media (max-width: 767px) {
+  .leftText {
+    padding: 0;
+    margin: 0;
   }
+
   .col-md-3 {
     flex: 0 0 25.25%;
     padding: 0;
     margin-right: 8%;
   }
 }
+
 /* 
 .donate-page {
   background-color: #fff;

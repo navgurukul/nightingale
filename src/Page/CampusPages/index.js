@@ -20,7 +20,7 @@ const getcampusNameFromUrl = () => {
 
 function CampusPages() {
   const campusName = getcampusNameFromUrl()
-  const campus= campusName==="Jashpur"? `${campusName} Campus `: `${campusName} Campus`
+  const campus= `${campusName} Campus`
   const [clickedImg, setClickedImg] = useState(null);
   const [data, setData] = useState(Campus_data[campus]);
   const [imgCount, setImgCount] = useState(0);

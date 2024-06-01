@@ -29,27 +29,26 @@
   width:211px;
   height: 48px;
   padding: 8px 16px 8px 16px;
-  gap: 10px;
-  border-radius: 8px;
-  opacity: 0px;
+  border: 1px solid #EB5F42 !important;
+  color: white !important;
+  background-color: #EB5F42 !important;
+  border-radius: 8px !important;
+  font-weight: 800 !important;
 }
 
-.dashed-btn {
-  width:173px;
-  height: 48px;
-  padding: 8px 16px 8px 16px;
-  gap: 10px;
-  border-radius: 8px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-
+.career-button:hover {
+  background-color: #EB5F42 !important;
+  color: white !important;
+  border-color: #EB5F42 !important;
 }
+
+
 
 .ptag {
   font-size: 18px;
 }
 
-.title-line{
+.title-line {
   width: 80px;
   height: 2px;
   background-color: #F05F40;
@@ -176,6 +175,9 @@
     justify-content: space-between;
   }
 
+  .career-button {
+    width: 100%;
+  }
   /* .team-page .card-details,
   .Card-content {
     width: 155px;

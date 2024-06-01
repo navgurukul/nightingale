@@ -33,7 +33,7 @@ function OurCampus() {
       <div className="partners-data w-100 mb-0 md-5 d-flex align-items-center flex-column">
         <h3 className="mb-4 section-head">Our Campuses</h3>
         <div className="all-partners w-75 d-flex flex-column ">
-          <div className="all-partners-row d-flex justify-content-around w-100 my-1">
+          <div className="all-partners-row d-flex justify-content-around w-100 my-3">
             {Object.keys(data).map((campusName) => {
               const campus = data[campusName];
               if (campus.Name && campus.Address) {
@@ -50,7 +50,7 @@ function OurCampus() {
                         <h5 className="card-title cmapus-fontfamily">{campus.Name}</h5>
 
 
-                        {campus.Name === "Jashpur Campus " &&
+                        {campus.Name === "Jashpur Campus" &&
                           <span className="chip-status mb-2">
                             Newly Opened</span>
                         }
