@@ -14,15 +14,15 @@ function ScreeningTestPage({ programNeme }) {
                         {
                             programNeme === "SchoolOfDesign" ? (
                                 <>
-                                    <h5 className="text-center">
+                                    <h6 className="text-center">
                                         Next Batch Admissions Will Open Up Soon
-                                    </h5>
+                                    </h6>
                                 </>
                             ) : (
                                 <>
-                                    <h5 className="text-center" style={{ marginBottom: "32px" }}>
+                                    <h6 className="text-center" style={{ marginBottom: "32px" }}>
                                         Want to Enroll and Start your Career?
-                                    </h5>
+                                    </h6>
                                     <div className="input d-flex flex-column justify-content-center align-items-center">
                                         <button
                                             className="btn btn-primary text-white align-self-center my-1 regular-btn user-test-btn"
