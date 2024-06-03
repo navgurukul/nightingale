@@ -3,12 +3,10 @@ import React, { useState } from "react";
 import { FiExternalLink } from "react-icons/fi";
 import { BiChevronDown } from "react-icons/bi";
 import "./styles.css";
-import externalLink from "./assets/external-link.png";
-import { BiChevronsDown } from "react-icons/bi";
 import "../../Global.css";
 
 function Header() {
-  const [toggle, setToggle] = useState(true);
+  // const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
