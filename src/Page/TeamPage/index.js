@@ -71,14 +71,14 @@ function TeamPage() {
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
           <h3 className="section-head mb-2">Our Team</h3>
           <div className="title-line"></div>
-    
+
           <div className="team-page-content">
             <p className="section-para ptag">
-            We are a collective of full-timers and volunteers who form the backbone of a movement 
-            aiming to bring affordable education to underprivileged girl students across India. Our
-            workforce composition is consciously diverse and inclusive, with 65% of our team members 
-            being NavGurukul Alumni, over 67% of team members being women, and those who identify 
-            in the gender spectrum as non-binary.
+              We are a collective of full-timers and volunteers who form the backbone of a movement
+              aiming to bring affordable education to underprivileged girl students across India. Our
+              workforce composition is consciously diverse and inclusive, with 65% of our team members
+              being NavGurukul Alumni, over 67% of team members being women, and those who identify
+              in the gender spectrum as non-binary.
             </p>
           </div>
           <div className="container ">
@@ -86,7 +86,8 @@ function TeamPage() {
               <div class="col-md team-button-container d-flex justify-content-center align-items-center col-sm-12">
                 <button
                   type="button"
-                  class="btn section-para regular-btn my-2 mx-3 career-button"
+                  className="btn regular-btn"
+                  style={{ height: "48px", width: "211px" }}
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -95,7 +96,7 @@ function TeamPage() {
                       "_blank"
                     );
                   }}
-                 
+
                 >
                   Careers at Navgurukul
                 </button>
@@ -134,8 +135,8 @@ function TeamPage() {
                     team[item].Name &&
                     team[item].Content.length &&
                     team[item].Content &&
-                    team[item].Designation&& 
-                    team[item].Association !== "Not Active"&&
+                    team[item].Designation &&
+                    team[item].Association !== "Not Active" &&
                     team[item].Association !== "null"
 
                   )

@@ -105,7 +105,7 @@ function BCAProgram() {
 
             <div className="container align-items-center d-flex flex-column  justify-content-center w-100">
                 <h3 className="mt-2 section-head mb-3">FAQs</h3>
-                <div className="body1 col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3">
+                <div className="body1 col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3 ml-4">
                     <ol>
                        
                         <li>What is the selection criteria for this fully-funded BCA program?</li>
