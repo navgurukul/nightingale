@@ -48,7 +48,8 @@ function AboutPage() {
             </p>
             <p className="w-50 mt-3 section-para mb-0">
               Besides the residential program, we have digital initiatives such
-              as Meraki, Zuvy, and Samyarth.
+              as Meraki and Zuvy.
+               {/* and Samyarth. */}
             </p>
             <p className="w-50 mt-3 section-para mb-0">
               Through <span className="number">Meraki,</span> we work with students from government schools and ITIs
@@ -60,11 +61,11 @@ function AboutPage() {
               jobs in the software industry, with a strong focus on problem-solving, system design,
               and programming languages.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            {/* <p className="w-50 mt-3 section-para mb-0">
               <span className="number">Samyarth</span> is a for-profit software cooperative run by Women from marginalized
               communities. Its mission is to provide underserved talent as a service to socially
               impactful initiatives and governments and share profits for its work.
-            </p>
+            </p> */}
           </div>
         </section>
 

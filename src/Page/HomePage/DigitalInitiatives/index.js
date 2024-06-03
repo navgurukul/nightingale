@@ -10,14 +10,14 @@ function Digitallnitiatives() {
   return (
     <div className="container mt-3">
       <div className="row">
-        <div className="col-md-4 ">
+        {/* <div className="col-md-4 ">
           <img src={logo1} alt="Logo 1" className="img-fluid"  />
           <h5>Samyarth</h5>
           <p  className='para'>Get essential services for your business directly through Women-led tech-driven cooperative.</p>
           <a href="https://samyarth.org" target="_blank" className='linkcolor' >
             Visit Website <FiExternalLink className="ml-2" />
           </a>
-        </div>
+        </div> */}
 
         <div className="col-md-4 ">
           <img src={logo2} alt="Logo 2" className="img-fluid"  />
@@ -37,7 +37,7 @@ function Digitallnitiatives() {
           </a>
         </div>
 
-         <div className="col-md-4  mt-4">
+         <div className="col-md-4  ">
           <img src={logo4} alt="Logo 4" className="img-fluid" />
           <h5>Code India Fellowship</h5>
           <p  className='para'>Nurture programming skills in the next generation of India’s youth with your expertise.</p>

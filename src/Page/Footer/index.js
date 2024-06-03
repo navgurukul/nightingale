@@ -205,7 +205,7 @@ function Footer() {
                     Zuvy
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="https://samyarth.org"
                     target="_blank"
@@ -213,7 +213,7 @@ function Footer() {
                   >
                    Samyarth
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="https://www.merakilearn.org"
