@@ -4,12 +4,9 @@ import { FiExternalLink } from "react-icons/fi";
 import { BiChevronDown } from "react-icons/bi";
 import "./styles.css";
 import "../../Global.css";
-import externalLink from "./assets/external-link.png";
-import { BiChevronsDown } from "react-icons/bi";
-
 
 function Header() {
-  const [toggle, setToggle] = useState(true);
+  // const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
@@ -17,7 +14,7 @@ function Header() {
       <a class="navbar-brand" href="/">
         <img
           src={require("./assets/logo.png").default}
-        // className="nav-logo"
+          // className="nav-logo"
         />
       </a>
 
@@ -88,11 +85,8 @@ function Header() {
               <BiChevronDown />
             </a>
 
-            <div
-              className="dropdown-menu dropdown-items"
-              show={showDropdown}
-            >
-              <a className="dropdown-item" href="/school-programing">
+            <div className="dropdown-menu dropdown-items" show={showDropdown}>
+              <a className="dropdown-item" href="/schoolofprograming">
                 School of Programming
               </a>
               <a className="dropdown-item" href="/school-design">
@@ -106,7 +100,7 @@ function Header() {
               </a>
             </div>
           </li>
-            <li
+          <li
             className="nav-item dropdown "
             onMouseOver={() => setShowDropdown(true)}
             onMouseOut={() => setShowDropdown(false)}
@@ -156,7 +150,7 @@ function Header() {
               Our Campuses
             </a>
           </li>
-            <li
+          <li
             className="nav-item dropdown "
             onMouseOver={() => setShowDropdown(true)}
             onMouseOut={() => setShowDropdown(false)}
@@ -182,7 +176,10 @@ function Header() {
               <a className="dropdown-item" href="partners">
                 Partner With Us
               </a>
-              <a className="dropdown-item" href="https://recruiterflow.com/navgurukul/jobs">
+              <a
+                className="dropdown-item"
+                href="https://recruiterflow.com/navgurukul/jobs"
+              >
                 Careers <FiExternalLink className="ml-2" />
               </a>
               <a
@@ -192,25 +189,19 @@ function Header() {
               >
                 Volunteer <FiExternalLink className="ml-2" />
               </a>
-              
             </div>
           </li>
         </ul>
         <ul className="navbar-nav nav-font-color gap-responsive">
           <button
             type="button"
-            // className="btn dashed-btn"
-            className="btn regular-btn "
-            style={{ height: "48px", width: "135px" }}
+            className="btn custom-outline-button"
             onClick={(e) => {
               e.preventDefault();
-              window.open(
-                "/hiring",
-                "_blank"
-              );
+              window.location.href = "/hiring";
             }}
           >
-            Hire from Us 
+            Hire from Us
           </button>
           <button
             type="button"
@@ -218,10 +209,7 @@ function Header() {
             style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();
-              window.open(
-                "/donate",
-                "_blank"
-              );
+              window.location.href = "/donate";
             }}
           >
             Donate

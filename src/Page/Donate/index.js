@@ -326,7 +326,7 @@ const Donate = () => {
                     <div key={amount} className="col-sm-6 col-md-3 p-0">
                       <button
                         type="button"
-                        className={selectedAmount === amount ?" btn section-para regular-btn ": "btn btn regular-btn  mb-4 "}
+                        className={selectedAmount === amount ?" btn section-para regular-btn ": "btn custom-btn mb-4 "}
                         style={{ width: '80%', height: '60px', marginRight: '32px' }}
                         onClick={() => handleButtonClick(amount, link)}
                       >
