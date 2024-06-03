@@ -89,13 +89,13 @@ function Header() {
               <a className="dropdown-item" href="/schoolofprograming">
                 School of Programming
               </a>
-              <a className="dropdown-item" href="/schoolDesign">
+              <a className="dropdown-item" href="/school-design">
                 School of Design
               </a>
-              <a className="dropdown-item" href="/schoolOfBusines">
+              <a className="dropdown-item" href="/school-busines">
                 School of Business
               </a>
-              <a className="dropdown-item" href="/SchoolOfFinance">
+              <a className="dropdown-item" href="/school-finance">
                 School of Finance
               </a>
             </div>
@@ -205,7 +205,7 @@ function Header() {
           </button>
           <button
             type="button"
-            className="btn regular-btn  "
+            className="btn regular-btn "
             style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();
