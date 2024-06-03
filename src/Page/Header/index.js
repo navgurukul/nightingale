@@ -126,9 +126,9 @@ function Header() {
               <a className="dropdown-item" href="https://zuvy.org">
                 Zuvy <FiExternalLink className="ml-2" />
               </a>
-              <a className="dropdown-item" href="https://samyarth.org">
+              {/* <a className="dropdown-item" href="https://samyarth.org">
                 Samyarth <FiExternalLink className="ml-2" />
-              </a>
+              </a> */}
               <a
                 className="dropdown-item"
                 href="https://www.merakilearn.org"
