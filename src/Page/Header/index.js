@@ -86,7 +86,7 @@ function Header() {
             </a>
 
             <div className="dropdown-menu dropdown-items" show={showDropdown}>
-              <a className="dropdown-item" href="/schoolofprograming">
+              <a className="dropdown-item" href="/school-programing">
                 School of Programming
               </a>
               <a className="dropdown-item" href="/school-design">
