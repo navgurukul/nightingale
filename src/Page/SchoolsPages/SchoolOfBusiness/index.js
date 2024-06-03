@@ -18,7 +18,7 @@ function SchoolOfBusinessPage() {
             <CoursesLocation courses={"School Of Business"}></CoursesLocation>
             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
             <AdmissionProcess stages={program3Data}></AdmissionProcess>
-            <ScreeningTestPage></ScreeningTestPage>
+            <ScreeningTestPage programNeme = {"SchoolOfBusiness"}></ScreeningTestPage>
         </>
     )
 
