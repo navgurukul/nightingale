@@ -1,0 +1,20 @@
+.card-text {
+    font-size: 18px;
+    line-height: 30.6px;
+}
+
+.card-image-media {
+    border-radius: 8px 8px 8px 8px;
+    width: 352px;
+    height: 220px;
+}
+
+.card-media {
+    width: 352px;
+}
+
+.media-content-card{
+    background: var(--Grey-Faded, #F7F7F7);
+    color: var(--On-Colors-On-Background, #4A4A4A);
+
+}

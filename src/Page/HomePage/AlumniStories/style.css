@@ -1,0 +1,47 @@
+.bg-image {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    border-radius: 32px 0px 32px 0px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/e64d/8d34/9d3f4ec23585eac88ee9d393f4c34d95?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dHF4ZNfXgbfw-j6zLekxkj5gcqadrLTA~oE9ie2nRWJHDXKRj8qDxUrJWHaUXrGdcoUHePBpsIGbg73GNsO5hMnRsazgvX~pxitc1E5-JfXXKEaKAQIxbw06AtznnRpbJf32GI3Kg1qM4OsARSXAI7J8wvgG5jjHKWIUkavh-xyUCuVqHCz8Ratxx32jEmEg9iejoKKLd9gRr9TPEPVBnuOGq4UNVrUj4~p9Rj8OKxSi4UsgIk2eGn1D9nTEIvHJgLOicRDti1suxD2tW17Rent9DCrwPQvVSSEQ8MBhMEw2Oc8xpywTuFixo1BmPrmXDkBPcBxNJz8dAFzMo4t6EQ__');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 32px 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 8px 12px 0px rgba(0, 0, 0, 0.04), 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
+
+.video-container {
+    position: relative;
+    height: 220px;
+    width: 100%;
+    border-radius: 32px 32px 32px 32px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/e64d/8d34/9d3f4ec23585eac88ee9d393f4c34d95?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dHF4ZNfXgbfw-j6zLekxkj5gcqadrLTA~oE9ie2nRWJHDXKRj8qDxUrJWHaUXrGdcoUHePBpsIGbg73GNsO5hMnRsazgvX~pxitc1E5-JfXXKEaKAQIxbw06AtznnRpbJf32GI3Kg1qM4OsARSXAI7J8wvgG5jjHKWIUkavh-xyUCuVqHCz8Ratxx32jEmEg9iejoKKLd9gRr9TPEPVBnuOGq4UNVrUj4~p9Rj8OKxSi4UsgIk2eGn1D9nTEIvHJgLOicRDti1suxD2tW17Rent9DCrwPQvVSSEQ8MBhMEw2Oc8xpywTuFixo1BmPrmXDkBPcBxNJz8dAFzMo4t6EQ__');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-text {
+    color: var(--On-Colors-On-Background, #4A4A4A);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}

@@ -12,12 +12,21 @@ import KeyFacilities from "./KeyFacilities";
 import Digitallnitiatives from "./DigitalInitiatives";
 import bannerimg1 from "./assets/Eternal_university-removebg-preview 1.svg";
 import bannerimg2 from "./assets/Sri badrika asharam.svg";
-
+import { useState } from "react";
+import OurCampuses from "./OurCampuses";
+import SocialMedia from "./SocialMedia";
+import AlumniStories from "./AlumniStories";
 function Home() {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handlePlayButtonClick = () => {
+    setShowVideo(true);
+  };
+
   const history = useHistory();
   const screenWidth = window.innerWidth;
   return (
-    <> 
+    <>
       <div className="row align-items-center centered-container">
         <div className="d-none d-md-flex justify-content-end">
           <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
@@ -42,30 +51,45 @@ function Home() {
           </button>
         </div>
       </div>
-
-      <div className="navgurukul-homepage  ">
+      <div className="navgurukul-homepage">
+        <div className="container" style={{marginTop:"80px"}}> 
         <div className="row">
-          <div className="col-md-1"></div>
-          <div className="col-md head-div ">
-            <h2 className=" heading-line ">
-              The <span className="text-primary">Gurukul</span> for the <br />
-              <span className="BgColor"> New Age India</span> and its New
-              Generation{" "}
-            </h2>{" "}
-            <p className="font para-line">
-              We are a non-profit dedicated to bring affordable tech education to
-              underprivileged girls in India.{" "}
-            </p>
-          </div>
-          <div className="col-md-1"></div>
-          <div className="col-md-6" style={{ padding: screenWidth > 932 && "0px" }}>
-            <img
-              src={require("./assets/student.jpg").default}
-              className="home-image"
-            />
-          </div>
+           <div className="col-md-12" style={{ textAlign: "center"}}>
+              <h2 className=" heading-line ">
+                The <span className="text-primary">Gurukul</span> for the <span className="BgColor"> New Age India  {" "} </span><span style={{marginLeft:"10px"}}>and </span> 
+                <br></br>
+                 its New
+                Generation{" "}
+              </h2>{" "}
+              <p className="font para-line">
+                We are a non-profit dedicated to bring affordable tech education to<br></br>
+                underprivileged girls in India.{" "}
+              </p>
+              </div>
+               <div className="col-md-12" style={{ padding: screenWidth > 932 && "0px" }}>
+                  <div className="custom-bg-image" >
+                    {!showVideo ? (
+                        <div onClick={handlePlayButtonClick}>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                              <path d="M48 7.99805C25.92 7.99805 8.00002 25.918 8.00002 47.9981C8.00002 70.0781 25.92 87.9981 48 87.9981C70.08 87.9981 88 70.0781 88 47.9981C88 25.918 70.08 7.99805 48 7.99805ZM40 65.9981V29.998L64 47.9981L40 65.9981Z" fill="white"/>
+                           </svg>
+                        </div>
+                    ) : (
+                    <div className="custom-video-container">
+                       <iframe
+                          className="bg-video"
+                          src="https://www.youtube.com/embed/NC2ymm6Sots"
+                          frameBorder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                         title="Embedded Video"
+                        ></iframe>
+                     </div>
+                   )}
+                </div>
+             </div>
+           </div>
         </div>
-
         <section className="media-scroll-section d-flex flex-column justify-content-center">
           <div className="container">
             <div className="row w-100">
@@ -164,18 +188,22 @@ function Home() {
           <Digitallnitiatives />
         </section>
 
-      <section className=" d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center media-font ">
-          Key Facilities at NavGurukul
-        </h3>
-        <KeyFacilities />
-      </section>
-      {/* <section className="media-scroll-section   d-flex flex-column justify-content-center">
-        <h3 className="align-self-center media-font ">
-          In the <span className="BackColor">Media</span>
-        </h3>
-        <Slider />
-      </section> */}
+        <section className=" d-flex flex-column align-items-center our-initiatives">
+        
+          <OurCampuses/>
+        </section>
+
+        <section className=" d-flex flex-column align-items-center our-initiatives">
+          <h3 className="text-center media-font ">
+            Key Facilities at NavGurukul
+          </h3>
+          <KeyFacilities />
+        </section>
+        <section className=" d-flex flex-column align-items-center our-initiatives">
+          
+          <SocialMedia />
+        </section>
+        
 
         <section className="our-partners text-center  d-flex flex-column ">
           <h3 className="align-self-center ">
@@ -188,7 +216,7 @@ function Home() {
             <div className="d-flex justify-content-start">
               <button
                 type="button"
-                className= "btn regular-btn mx-3  fixed-dimensions"
+                className="btn regular-btn mx-3  fixed-dimensions"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
@@ -199,7 +227,7 @@ function Home() {
 
               <button
                 type="button"
-                className ="btn regular-btn fixed-dimensions "
+                className="btn regular-btn fixed-dimensions "
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(
@@ -222,9 +250,20 @@ function Home() {
             <SupporterSlider />
           </div>
         </section>
+        <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
+          <h3>
+          Alumni <span className="BackColor"> Stories</span>
+          </h3>
+          <div className="container ">
+            <AlumniStories />
+          </div>
+        </section>
       </div>
     </>
   );
 }
 
 export default Home;
+
+
+
