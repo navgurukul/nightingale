@@ -13,13 +13,13 @@ function Arrow(props) {
     return (
         <>
             <svg
-                style={{ border: "1px solid red" }}
+                
                 onClick={onClick}
                 className={`arrow ${left ? "supporter-carousal-arrow--left" : "supporter-carousal-arrow--right"} ${disabled}`}
                 xmlns="http://www.w3.org/3000/svg"
                 viewBox="0 0 24 24"
             >
-                <path style={{ border: "1px solid red" }} d={left ? leftIconPath : rightIconPath} />
+                <path  d={left ? leftIconPath : rightIconPath} />
             </svg>
         </>
     );
