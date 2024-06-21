@@ -1,3 +1,4 @@
+
 .team-page {
   background-color: #fff;
   text-align: center;
@@ -13,7 +14,6 @@
 }
 
 .team-page-content {
-  /* font-weight: 400; */
   line-height: 28px;
   width: 736px;
   text-align: left;
@@ -22,57 +22,72 @@
 .team-page button {
   padding-inline: 10px;
   width: 200px;
-
 }
 
 .career-button {
-  width:211px;
+  width: 211px;
   height: 48px;
   padding: 8px 16px 8px 16px;
-  border: 1px solid #EB5F42 !important;
+  border: 1px solid #eb5f42 !important;
   color: white !important;
-  background-color: #EB5F42 !important;
+  background-color: #eb5f42 !important;
   border-radius: 8px !important;
   font-weight: 800 !important;
 }
 
 .career-button:hover {
-  background-color: #EB5F42 !important;
+  background-color: #eb5f42 !important;
   color: white !important;
-  border-color: #EB5F42 !important;
+  border-color: #eb5f42 !important;
 }
-
-
 
 .ptag {
   font-size: 18px;
-}
-
-.title-line {
-  width: 80px;
-  height: 2px;
-  background-color: #F05F40;
-  margin-bottom: 20px;
 }
 
 .team-img {
   width: 20%;
 }
 
+.nav-item {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-link:hover {
+  border: none;
+  outline: none;
+}
+
+.nav-item.active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
 .team-info-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   transition: all ease-in 0.2s;
-  pointer-events: none;
   margin-bottom: 32px;
 }
 
+.team-container-list {
+  display: flex;
+}
+
+.contaner-wrapper-team {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  gap: 5%;
+}
+
+.team-container {
+  justify-content: space-around;
+}
+
 .card-details {
-  position: relative;
-  border: none;
-  padding: 32px 0px;
-  /* width: 285px; */
+  position: relative; 
+  /* border: none; */
+   padding: 32px 0px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -86,7 +101,7 @@
 }
 
 .team-info-cards-container:hover .card-details {
-  opacity: 0.5;
+  opacity: 1; 
 }
 
 .description-popup {
@@ -102,6 +117,7 @@
   border: 2px solid var(--primary);
   box-sizing: border-box;
   opacity: 1;
+  filter: none; 
 }
 
 .card-details:hover .img-card-hover {
@@ -109,10 +125,10 @@
 }
 
 .team-info-cards-container .card:hover {
-  transform: scale(1.1);
+  transform: none;
   border: 2px solid transparent;
   box-shadow: none;
-  opacity: 1;
+  opacity: 1; 
   z-index: 2;
   box-shadow: none !important;
 }
@@ -158,6 +174,22 @@
   margin-left: 15px;
 }
 
+.team-heading {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  text-align: left;
+}
+
+.team-list-item {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  text-align: left;
+}
+
 @media screen and (max-width: 850px) {
   .team-page .container {
     width: 90%;
@@ -178,10 +210,7 @@
   .career-button {
     width: 100%;
   }
-  /* .team-page .card-details,
-  .Card-content {
-    width: 155px;
-  } */
+
   .Card-content,
   .Card-content .card {
     cursor: auto !important;
@@ -201,3 +230,5 @@
     min-width: 335px;
   }
 }
+ 
+
