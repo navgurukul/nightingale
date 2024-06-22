@@ -14,7 +14,6 @@ import bannerimg1 from "./assets/Eternal_university-removebg-preview 1.svg";
 import bannerimg2 from "./assets/Sri badrika asharam.svg";
 import { useState } from "react";
 import OurCampuses from "./OurCampuses";
-import SocialMedia from "./SocialMedia";
 import AlumniStories from "./AlumniStories";
 function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -61,7 +60,7 @@ function Home() {
                  its New
                 Generation{" "}
               </h2>{" "}
-              <p className="font para-line">
+              <p className="font body1">
                 We are a non-profit dedicated to bring affordable tech education to<br></br>
                 underprivileged girls in India.{" "}
               </p>
@@ -70,7 +69,7 @@ function Home() {
                   <div className="custom-bg-image" >
                     {!showVideo ? (
                         <div onClick={handlePlayButtonClick}>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" className="svg-play-button" >
                               <path d="M48 7.99805C25.92 7.99805 8.00002 25.918 8.00002 47.9981C8.00002 70.0781 25.92 87.9981 48 87.9981C70.08 87.9981 88 70.0781 88 47.9981C88 25.918 70.08 7.99805 48 7.99805ZM40 65.9981V29.998L64 47.9981L40 65.9981Z" fill="white"/>
                            </svg>
                         </div>
@@ -78,7 +77,7 @@ function Home() {
                     <div className="custom-video-container">
                        <iframe
                           className="bg-video"
-                          src="https://www.youtube.com/embed/NC2ymm6Sots"
+                          src="https://www.youtube.com/embed/NC2ymm6Sots?autoplay=1"
                           frameBorder="0"
                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
@@ -95,22 +94,22 @@ function Home() {
             <div className="row w-100">
               <div className="col-lg-3 col-md-2 col-sm-6 ">
                 <h3>890+</h3>
-                <p>students placed across various industries in tech</p>
+                <p  className="font body1">students placed across various industries in tech</p>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-6">
                 <h3>₹2.8 LPA</h3>
-                <p>avg. salary secured by students, the highest being 8 LPA</p>
+                <p className="font body1">avg. salary secured by students, the highest being 8 LPA</p>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-6">
                 <h3>95%</h3>
-                <p>
+                <p className="font body1">
                   of our student strength consists of girls from marginalized
                   communities
                 </p>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-6">
                 <h3>₹23+ Crore</h3>
-                <p>collectively earned annually by our Alumni</p>
+                <p className="font body1">collectively earned annually by our Alumni</p>
               </div>
             </div>
           </div>
@@ -127,9 +126,8 @@ function Home() {
                     <img src={img1} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Programming</h4>
-                      <p className="card-text mb-3">
-                        Fully-funded course in software engineering with
-                        guaranteed jobs
+                      <p className="card-text font body1  mb-3">
+                        Fully-funded course in software engineering with guaranteed jobs
                       </p>
                     </div>
                   </Link>
@@ -142,7 +140,7 @@ function Home() {
                     <img src={img2} className="card-image " alt="Placeholder Image" />
                     <div className="card-body text-black ">
                       <h4 className="card-title mt-4">School of Design</h4>
-                      <p className="card-text mb-3">
+                      <p className="card-text font body1 mb-3">
                         Fully-funded course in graphic design with guaranteed jobs
                       </p>
                     </div>
@@ -158,7 +156,7 @@ function Home() {
                     <img src={img3} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Business</h4>
-                      <p className="card-text mb-3">
+                      <p className="card-text font body1 mb-3">
                         Fully funded course in Business CRM with guaranteed jobs
                       </p>
                     </div>
@@ -172,7 +170,7 @@ function Home() {
                     <img src={img4} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Finance</h4>
-                      <p className="card-text mb-3">
+                      <p className="card-text font body1 mb-3">
                         Fully funded course in Finance with guaranteed jobs
                       </p>
                     </div>
@@ -189,7 +187,6 @@ function Home() {
         </section>
 
         <section className=" d-flex flex-column align-items-center our-initiatives">
-        
           <OurCampuses/>
         </section>
 
@@ -199,49 +196,14 @@ function Home() {
           </h3>
           <KeyFacilities />
         </section>
-        <section className=" d-flex flex-column align-items-center our-initiatives">
-          
-          <SocialMedia />
-        </section>
-        
-
-        <section className="our-partners text-center  d-flex flex-column ">
-          <h3 className="align-self-center ">
-            Our <span className="BackColor">Partners</span>
+       
+        <section className="media-scroll-section  d-flex flex-column justify-content-center bg-color">
+          <h3 className="align-self-center media-font mb-5">
+            In the <span className="BackColor">Media</span>
           </h3>
-          <PartnerSlider />
-
-          <div className="d-flex flex-column align-items-center justify-content-center align-items-center mar-3">
-            <h4 className=" "> Bring a change! </h4>
-            <div className="d-flex justify-content-start">
-              <button
-                type="button"
-                className="btn regular-btn mx-3  fixed-dimensions"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
-                }}
-              >
-                Partner with us
-              </button>
-
-              <button
-                type="button"
-                className="btn regular-btn fixed-dimensions "
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
-                    "_blank"
-                  );
-                }}
-              >
-                CSR Enquiries
-              </button>
-            </div>
-          </div>
-        </section>
-
+          <Slider />
+        </section> 
+        
         <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
           <h3>
             Our <span className="BackColor">Supporters</span>

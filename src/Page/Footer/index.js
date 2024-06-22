@@ -1,8 +1,14 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState } from 'react';
 import "./styles.css";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [selectedIcon, setSelectedIcon] = useState('facebook');
+
+  const handleIconClick = (icon) => {
+    setSelectedIcon(icon);
+  };
   return (
     <div className="footer-container">
       <div className="footer-content">
@@ -13,7 +19,8 @@ const Footer = () => {
 
             <div className="social-icons">
               <div className="d-flex align-items-center">
-                <div className="facebook">
+                {/* <div className="facebook"> */}
+                 <div className={`facebook ${selectedIcon === 'facebook' ? 'selected' : ''}`} onClick={() => handleIconClick('facebook')}>
                   <a href="https://www.facebook.com/navgurukul/" target="_blank">
                     <svg
                       width="32"
@@ -51,7 +58,7 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
-                <div className="linkedin mx-1">
+                <div className={`linkedin ${selectedIcon === 'linkedin' ? 'selected' : ''}`} onClick={() => handleIconClick('linkedin')}>
                   <a
                     href="https://www.linkedin.com/company/navgurukul/"
                     target="_blank"
@@ -92,7 +99,8 @@ const Footer = () => {
                     </svg>
                   </a>
                 </div>
-                <div className="twitter">
+                {/* <div className="twitter"> */}
+                 <div className={`twitter ${selectedIcon === 'twitter' ? 'selected' : ''}`} onClick={() => handleIconClick('twitter')}>
                   <a href="https://twitter.com/navgurukul" target="_blank">
                     <svg
                       width="32"
@@ -223,31 +231,32 @@ const Footer = () => {
                   Careers
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform"
                   target="_blank"
                 >
                   Volunteer
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="footer-section our-campuses">
 
             <h6>
-              <Link to="/campus"
+              <a href='https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform' target="_blank"
+             
                 style={{ textDecoration: 'none' }}
                 onMouseOver={(e) => e.currentTarget.style.textDecoration = 'none'}
                 onMouseOut={(e) => e.currentTarget.style.textDecoration = 'none'}
               >
                 <span className='row-title'>
-                  OUR CAMPUSES
+                  CSR ENQUIRIES
                 </span>
-              </Link>
+              </a>
             </h6>
             <ul>
-              <li><a href="/hiring" className='fw-bold'>HIRE FROM US</a></li>
+              <li><a href="/hiring" className='fw-bold mb-1'>HIRE FROM US</a></li>
               <li><a href="/donate" className='fw-bold'>DONATE</a></li>
             </ul>
           </div>

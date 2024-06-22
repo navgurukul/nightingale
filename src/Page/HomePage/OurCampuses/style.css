@@ -5,13 +5,7 @@
     border-radius: 8px 0px 0px 0px;
     opacity: 0px;
 }
-.card-title {
-    color: var(--On-Colors-On-Background, #4A4A4A);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 170%;
-}
+
 .contant-box{
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 8px;

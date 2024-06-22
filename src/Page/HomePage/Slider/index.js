@@ -5,13 +5,11 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 function Arrow(props) {
-  const disabeld = props.disabled ? " arrow--disabled" : "";
+  const disabled = props.disabled ? " arrow--disabled" : "";
   return (
     <svg
       onClick={props.onClick}
-      className={`arrow ${
-        props.left ? "arrow--left" : "arrow--right"
-      } ${disabeld}`}
+      className={`arrow ${props.left ? "arrow--left" : "arrow--right"} ${disabled}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -24,7 +22,12 @@ function Arrow(props) {
     </svg>
   );
 }
+
 function Slider() {
+  const [media, setMedia] = useState([]);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
     axios({
       url: `https://navgurukul.github.io/tarabai-shinde/data/media.json`,
@@ -32,13 +35,15 @@ function Slider() {
       setMedia(res.data);
     });
   }, []);
-  const [media, setMedia] = useState([]);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [loaded, setLoaded] = useState(false);
+
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       initial: 0,
       loop: true,
+      slides: {
+        perView: 3, // Show 3 slides per view
+        spacing: 15, // Space between slides
+      },
       slideChanged(slider) {
         setCurrentSlide(slider.track.details.rel);
       },
@@ -77,124 +82,56 @@ function Slider() {
       },
     ]
   );
-  // const [partitionSlider, ]
-  if (!Object.keys(media).length) return <></>;
-  return (
-    <div className="media-slider slider ">
-      <>
-        <div className="navigation-wrapper ">
-          <div ref={sliderRef} className="keen-slider">
-            {Object.keys(media).map((item) => {
-              return (
-                <a href={media[item].Website} target="_blank">
-                  <div className="keen-slider__slide number-slide ">
-                    <div className="carousal-content row mb-3">
 
-                      <div className="carousal-image-container col-sm-5">
-                        <img
-                          className="carousal-img"
-                          src={media[item].Logo}
-                          alt={media[item].Name.substring(
-                            0,
-                            media[item].Name.indexOf(" ")
-                          )}
-                        />
-                      </div>
-                     <div className="col-sm-1"></div>
-                      <div className="col-sm-6">
-                       <p className="font name">{media[item].Name}</p>
-                      <p className="font mt-3">{media[item].Description}</p>
-                      </div>
-                      
-                    </div>
+  if (!Object.keys(media).length) return <></>;
+
+  return (
+    <div className="media-slider slider">
+      <>
+        <div className="navigation-wrapper">
+          <div ref={sliderRef} className="keen-slider">
+            {Object.keys(media).map((item, idx) => (
+              <div key={idx} className="keen-slider__slide number-slide">
+                <div className="card">
+                  <img
+                    src={media[item].Logo}
+                    alt={media[item].Name}
+                    className="card-img-top"
+                  />
+                  <div className="card-body1">
+                    <p className="card-text body1 font">{media[item].Description}</p>
                   </div>
-                </a>
-              );
-            })}
-            {/* <div className="keen-slider__slide number-slide">
-              <div className="carousal-content">
-                <div className="carousal-image-container">
-                  <img className="carousal-img" src={image} />
                 </div>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  There are many variations of passages of Lorem Ipsum
-                  available. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry
-                </p>
               </div>
-            </div>
-            <div className="keen-slider__slide number-slide">
-              <div className="carousal-content">
-                <div className="carousal-image-container">
-                  <img className="carousal-img" src={image} />
-                </div>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form. There are many variations of passages of Lorem Ipsum
-                  available. Lorem Ipsum is simply dummy text of the printing
-                  and typesetting industry
-                </p>
-              </div>
-            </div>
-            <div className="keen-slider__slide number-slide">
-              <div className="carousal-content">
-                <div className="carousal-image-container">
-                  <img className="carousal-img" src={image} />
-                </div>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text. There are many variations of passages of
-                  Lorem Ipsum available, but the majority have suffered
-                  alteration in some form
-                </p>
-              </div>
-            </div> */}
+            ))}
           </div>
-          
+
           {loaded && instanceRef.current && (
             <>
               <Arrow
-              left
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
-              disabled={
-                currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
-              }
-               
+                left
+                onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
+                disabled={currentSlide === 0}
               />
-
               <Arrow
-              right
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
-              disabled={currentSlide === 0}
-               
+                right
+                onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
+                disabled={currentSlide === instanceRef.current.track.details.slides.length - 1}
               />
             </>
           )}
         </div>
         {loaded && instanceRef.current && (
-          <div className="dots">
-            {[
-              ...Array(instanceRef.current.track.details.slides.length).keys(),
-            ].map((idx) => {
-              return (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    instanceRef.current?.moveToIdx(idx);
-                  }}
-                  className={"dot" + (currentSlide === idx ? " active" : "")}
-                ></button>
-              );
-            })}
+          <div className="dots mb-5">
+            {[...Array(Math.ceil(Object.keys(media).length / 3)).keys()].map((idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(idx * 3);
+                }}
+                className={"dot" + (currentSlide === idx ? " active" : "")}
+              ></button>
+            ))}
           </div>
         )}
       </>

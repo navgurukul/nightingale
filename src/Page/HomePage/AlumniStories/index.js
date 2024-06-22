@@ -16,7 +16,7 @@ function AlumniStories() {
                         <div className="bg-image">
                             {currentVideoId !== item.id ? (
                                 <div onClick={() => handlePlayButtonClick(item.id)}>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none" className='play-btn'>
                                         <path d="M24 4C12.96 4 3.99997 12.96 3.99997 24C3.99997 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM20 33V15L32 24L20 33Z" fill="white" />
                                     </svg>
                                 </div>
@@ -24,7 +24,7 @@ function AlumniStories() {
                                 <div className="video-container">
                                     <iframe
                                         className="bg-video"
-                                        src={item.video}
+                                        src={item.video + "?autoplay=1"}
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                         allowFullScreen
@@ -33,7 +33,7 @@ function AlumniStories() {
                                 </div>
                             )}
                         </div>
-                        <p className="card-text mb-3 content-text" style={{ marginTop: "16px" }}>
+                        <p className="card-text mb-3 font body1 content-text" style={{ marginTop: "16px" }}>
                             {item.name}
                         </p>
 
