@@ -22,6 +22,7 @@ import SchoolOfDesignPage from "../Page/SchoolsPages/SchoolsOfDesign";
 import SchoolOfBusinessPage from "../Page/SchoolsPages/SchoolOfBusiness";
 import SchoolOfFinancePage from "../Page/SchoolsPages/SchoolOfFinance"
 import BCA from "../Page/SchoolsPages/BCAProgram";
+import Careers from "../Page/Careers";
 
 function ScrollToTop({ history }) {
   useEffect(() => {
@@ -57,6 +58,7 @@ function Routing() {
         <Route exact path="/designer" component={Designers} />
         <Route exact path="/partners" component={Partners} />
         <Route exact path="/bca-programme" component={BCA} />
+        <Route exact path="/careers" component={Careers} />
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/campus" component={OurCampus} />
         <Route exact path="/campus/:campusName" component={CampusPages} />
