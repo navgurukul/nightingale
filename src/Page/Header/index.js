@@ -171,7 +171,7 @@ function Header() {
               </a>
               <a
                 className="dropdown-item"
-                href="https://recruiterflow.com/navgurukul/jobs"
+                href="/careers"
               >
                 Careers <FiExternalLink className="ml-2" />
               </a>
