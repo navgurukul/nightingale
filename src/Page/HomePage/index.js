@@ -196,14 +196,9 @@ function Home() {
           </h3>
           <KeyFacilities />
         </section>
-       
-        <section className="media-scroll-section  d-flex flex-column justify-content-center bg-color">
-          <h3 className="align-self-center media-font mb-5">
-            In the <span className="BackColor">Media</span>
-          </h3>
-          <Slider />
-        </section> 
-        
+
+        <Slider />
+          
         <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
           <h3>
             Our <span className="BackColor">Supporters</span>
