@@ -41,8 +41,21 @@
     border-color: #eb5f42 !important;
 }
 
-.ptag {
+.section-para.ptag {
+    font-family: Lato;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 30.6px;
+    text-align: left;
+}
+
+.section-head {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 41.6px;
+    text-align: center;
+    margin-bottom: 2px;
 }
 
 .team-img {
@@ -72,18 +85,19 @@
 
 .team-container-list {
     display: flex;
-}
-
-.contaner-wrapper-team {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 5%;
+    flex-direction: column;
 }
 
 .team-container {
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap;
+}
+
+.contaner-wrapper-team {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5%;
 }
 
 .card-details {
@@ -96,6 +110,7 @@
     transition: all ease-in-out 0.2s;
     pointer-events: auto;
     width: 100%;
+    margin-right: 16px;
 }
 
 .card-img {
@@ -146,7 +161,7 @@
 
 .core-team-members,
 .our-supporters {
-    margin-inline: 20px;
+    margin-inline: 0px;
     padding: 10px 20px;
 }
 
@@ -189,6 +204,13 @@
     font-weight: 700;
     line-height: 31.2px;
     text-align: left;
+}
+
+.team-button-container {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 850px) {

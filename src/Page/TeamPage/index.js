@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./styles.css";
 import axios from "axios";
 import Tippy from "@tippyjs/react";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
+
+import "./styles.css";
 
 function shuffleObject(obj) {
   let newObj = {};
@@ -23,6 +24,11 @@ function Popup(props) {
         {props.twitter && (
           <a href={props.twitter} target="_blank" rel="noopener noreferrer">
             <Twitter />
+          </a>
+        )}
+        {props.linkedin && (
+          <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
+            <LinkedIn />
           </a>
         )}
       </div>
@@ -60,19 +66,20 @@ function TeamPage() {
   }, []);
 
   const filterTeam = (team) => {
-    return Object.keys(team).filter((item) => {
-      return (
-        team[item].Association !== "Volunteer" &&
-        team[item].Team === selectedTeam
-      );
-    });
+    return Object.keys(team)
+      .filter(
+        (item) =>
+          team[item].Association !== "Volunteer" &&
+          team[item].Team === selectedTeam
+      )
+      .map((key) => team[key]);
   };
 
   return (
     <main className="team-page">
       <div className="team-content">
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
-          <h3 className="section-head mb-2">Our team</h3>
+          <h5 className="section-head mb-2">Our team</h5>
           <div className="title-line"></div>
           <div className="team-page-content">
             <p className="section-para ptag">
@@ -152,66 +159,66 @@ function TeamPage() {
               </div>
               <div className="team-container-list">
                 <h5 className="team-heading">{selectedTeam}</h5>
-                <div className="row team-container mt-4">
+                <div className="row team-container mt-4 justify-content-start">
                   {loading ? (
                     <p>Loading...</p>
                   ) : (
-                    filterTeam(team).map((item, index) => (
-                      <div key={index} className="col-12 col-md-4 mb-4">
-                        <Tippy
-                          animation="fade"
-                          interactive={true}
-                          duration={[500, 0]}
-                          placement={
-                            window.screen.availWidth < 650 ? "bottom" : "right"
-                          }
-                          content={
-                            <Popup
-                              Name={team[item].Name || "Awaiting Member's Name"}
-                              Content={
-                                team[item].Content ||
-                                "Awaiting content from team member"
-                              }
-                              linkedin={team[item].Linkedin}
-                              twitter={team[item].Twitter}
-                            />
-                          }
-                        >
-                          <div className="card card-details">
-                            <img
-                              className="card-img-top team-info-card-img img-card-hover"
-                              src={team[item].Photo}
-                              alt={team[item].Name}
-                            />
-                            <p
-                              style={team[item].Name ? {} : { color: "grey" }}
-                              className="team-info-card-title"
-                            >
-                              {team[item].Name
-                                ? team[item].Name
-                                : "Awaiting Member's Name"}
-                            </p>
-                            <p
-                              style={
-                                team[item].Designation ? {} : { color: "grey" }
-                              }
-                              className="section-para"
-                            >
-                              {team[item].Designation ||
-                                "Awaiting description from team member"}
-                            </p>
-                            {team[item].Linkedin && (
-                              <a
-                                href={team[item].Linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                    filterTeam(team).map((member, index) => (
+                      member.Name && member.Photo && member.Designation  ? (
+                        <div key={index} className="col-12 col-md-4 mb-4">
+                          <Tippy
+                            animation="fade"
+                            interactive={true}
+                            duration={[500, 0]}
+                            placement={
+                              window.screen.availWidth < 650 ? "bottom" : "right"
+                            }
+                            content={
+                              <Popup
+                                Name={member.Name || "Awaiting Member's Name"}
+                                Content={
+                                  member.Content ||
+                                  "Awaiting content from team member"
+                                }
+                                twitter={member.Twitter}
+                                linkedin={member.Linkedin}
+                              />
+                            }
+                          >
+                            <div className="card card-details">
+                              <img
+                                className="card-img-top team-info-card-img img-card-hover"
+                                src={member.Photo}
+                                alt={member.Name}
+                              />
+                              <p
+                                style={member.Name ? {} : { color: "grey" }}
+                                className="team-info-card-title"
                               >
-                                <LinkedIn />
-                              </a>
-                            )}
-                          </div>
-                        </Tippy>
-                      </div>
+                                {member.Name || "Awaiting Member's Name"}
+                              </p>
+                              <p
+                                style={
+                                  member.Designation ? {} : { color: "grey" }
+                                }
+                                className="section-para"
+                              >
+                                {member.Designation ||
+                                  "Awaiting description from team member"}
+                              </p>
+                              {member.Linkedin && (
+                                <a
+                                  href={member.Linkedin}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <LinkedIn />
+                                </a>
+                              )}
+                            </div>
+                          </Tippy>
+                        </div>
+                      ) : null
                     ))
                   )}
                 </div>
