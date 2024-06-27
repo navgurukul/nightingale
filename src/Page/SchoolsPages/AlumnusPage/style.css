@@ -6,9 +6,12 @@
     align-items: center;
     border-radius: 100px;
     border: 1px solid var(--Light-Primary-Flame, #EB5F42);
- }
- 
- .alumnus-container{
-    position: relative;
-    bottom: 15px;
- }
+}
+
+.alumnus-container {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+.mt {
+    margin-top: 32px;
+}

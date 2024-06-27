@@ -1,13 +1,29 @@
-.Admision-container {
-    height: Hug (126px)px;
-    left: 354px;
-    padding: 32px 32px 32px 32px;
-    border-radius: 8px 8px 8px 8px;
+.custom-bg {
+    background: var(--Grey-Faded, #F7F7F7);
+    display: flex;
+    width: 100%;
+    max-width: 732px;
+    padding: 32px;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
-.custom-bg {
-    background-color: #F7F7F7;
+.pra-subtitle {
+    line-height: 30.6px;
 }
-.pra-subtitle{
-  font-weight: bold;
+.pra-subtitle {
+    font-weight: bold;
+}
+.subtitle-container{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.test-title{
+    margin-bottom:"32px";
+}
+.user-btn{
+    margin-top: 32px;
 }

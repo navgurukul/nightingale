@@ -16,8 +16,8 @@ function SchoolOfFinancePage() {
             <BackgroundImg backgroundData={BgroundImg}></BackgroundImg>
             <EligibilityDetail points={whoForPoints}></EligibilityDetail>
             <CourseDetail data={topics} information={information}></CourseDetail>
-            <CoursesLocation courses={"School of Finance"}></CoursesLocation>
             <DownloadCurriculum></DownloadCurriculum>
+            <CoursesLocation courses={"School of Finance"}></CoursesLocation>
             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
             <AdmissionProcess stages={program4Data}></AdmissionProcess>
             <ScreeningTestPage programNeme={"SchoolOfFinance"}></ScreeningTestPage>

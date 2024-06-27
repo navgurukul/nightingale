@@ -1,3 +1,4 @@
+import "./style.css"
 function shuffleObject(obj) {
     let newObj = {};
     var keys = Object.keys(obj);
@@ -10,8 +11,7 @@ function shuffleObject(obj) {
     return newObj;
  }
  function DownloadCurriculum(){
- 
- 
+
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = "https://drive.google.com/uc?export=download&id=1ODCSwz5Zfp5yuzksvjfI4xVj-VEZnrpT";
@@ -20,11 +20,9 @@ function shuffleObject(obj) {
         link.click();
         document.body.removeChild(link);
     };
- 
- 
     return (
         <>
-            <div className="container d-flex justify-content-sm-center p-5">
+            <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
                 <button
                     type="button"
                     className="btn regular-btn"
@@ -36,8 +34,6 @@ function shuffleObject(obj) {
             </div>
         </>
     );
- 
- 
  }
  export default DownloadCurriculum;
  
