@@ -7,6 +7,7 @@ import BackgroundImg from "../BgroundImg";
 import CoursesLocation from "../CourseLocations";
 import AdmissionProcess from "../AdmissionProcess";
 import ScreeningTestPage from "../ScreningTest";
+import DownloadCurriculum from "../DownloadCurriculum"
 const information = "Our student-led, self-paced finance course includes:";
 
 function SchoolOfFinancePage() {
@@ -16,10 +17,10 @@ function SchoolOfFinancePage() {
             <EligibilityDetail points={whoForPoints}></EligibilityDetail>
             <CourseDetail data={topics} information={information}></CourseDetail>
             <CoursesLocation courses={"School of Finance"}></CoursesLocation>
+            <DownloadCurriculum></DownloadCurriculum>
             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
             <AdmissionProcess stages={program4Data}></AdmissionProcess>
-            <ScreeningTestPage programNeme = {"SchoolOfFinance"}></ScreeningTestPage>
-
+            <ScreeningTestPage programNeme={"SchoolOfFinance"}></ScreeningTestPage>
         </>
     )
 }

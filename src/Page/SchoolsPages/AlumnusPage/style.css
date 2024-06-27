@@ -1,0 +1,14 @@
+.social-icon-in {
+    width: 32px;
+    height: 32px;
+    padding: 8px 8.8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--Light-Primary-Flame, #EB5F42);
+ }
+ 
+ .alumnus-container{
+    position: relative;
+    bottom: 15px;
+ }

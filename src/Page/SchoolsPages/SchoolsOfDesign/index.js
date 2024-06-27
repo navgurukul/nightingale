@@ -6,6 +6,7 @@ import AdmissionProcess from "../AdmissionProcess";
 import BackgroundImg from "../BgroundImg";
 import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest";
+import DownloadCurriculum from "../DownloadCurriculum";
 import { whoForPoints, topics, JobAssistanceData, program2Data, BgroundImg } from "../SchoolsOfDesign/data";
 const information = "Our teacher-led, 18-months design course Includes:"
 function SchoolOfDesignPage() {
@@ -14,10 +15,11 @@ function SchoolOfDesignPage() {
             <BackgroundImg backgroundData={BgroundImg}></BackgroundImg>
             <EligibilityDetail points={whoForPoints} />
             <CourseDetail data={topics} information={information}></CourseDetail>
+            <DownloadCurriculum></DownloadCurriculum>
             <CoursesLocation courses={"School of Design"}></CoursesLocation>
             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
             <AdmissionProcess stages={program2Data}></AdmissionProcess>
-            <ScreeningTestPage programNeme = {"SchoolOfDesign"}></ScreeningTestPage>
+            <ScreeningTestPage programNeme={"SchoolOfDesign"}></ScreeningTestPage>
         </>
     )
 }
