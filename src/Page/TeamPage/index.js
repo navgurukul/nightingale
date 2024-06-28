@@ -4,7 +4,7 @@ import Tippy from "@tippyjs/react";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
 import "./styles.css";
-
+import { BiBorderAll } from "react-icons/bi";
 function shuffleObject(obj) {
   let newObj = {};
   let keys = Object.keys(obj);
@@ -14,7 +14,6 @@ function shuffleObject(obj) {
   });
   return newObj;
 }
-
 function Popup(props) {
   return (
     <div className="description-popup">
@@ -79,7 +78,7 @@ function TeamPage() {
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
           <h5 className="section-head mb-2">Our team</h5>
           <div className="title-line"></div>
-          <div className="team-page-content">
+          <div className="team-page-content mt-3">
             <p className="section-para ptag">
               We are a collective of full-timers and volunteers who form the
               backbone of a movement aiming to bring affordable education to
@@ -90,13 +89,16 @@ function TeamPage() {
               non-binary.
             </p>
           </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-md team-button-container d-flex justify-content-center align-items-center col-sm-12">
+          <div className="container mt-3 w-lg-20 w-100">
+            <div className="row justify-content-center">
+              <div className="col-lg-3 mb-3 mb-lg-0">
                 <button
                   type="button"
-                  className="btn regular-btn"
-                  style={{ height: "48px", width: "211px" }}
+                  className="btn regular-btn w-100"
+                  style={{
+                    maxWidth: "211px",
+                    minWidth: "150px",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -107,9 +109,15 @@ function TeamPage() {
                 >
                   Careers at Navgurukul
                 </button>
+              </div>
+              <div className="col-lg-3 mt-3 mt-lg-0">
                 <button
                   type="button"
-                  className="btn section-para btn-primary my-2 dashed-btn"
+                  className="btn section-para dashed-btn w-100"
+                  style={{
+                    maxWidth: "211px",
+                    minWidth: "150px",
+                  }}
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -143,44 +151,39 @@ function TeamPage() {
                       "LXD & ETC",
                     ].map((teamName) => (
                       <li
+
                         key={teamName}
                         className={`nav-item team-list-item ${selectedTeam === teamName ? "active" : ""
                           }`}
                         onClick={() => setSelectedTeam(teamName)}
                       >
-                        <span className="nav-link text-left">{teamName}</span>
+                        <span className="nav-link text-left mt-2">{teamName}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
-              <div className="team-container-list">
-                <h5 className="team-heading">{selectedTeam}</h5>
-                <div className="row team-container mt-4 justify-content-start">
+              <div className="container-fluid w-100 mt-4">
+                <h5 className="team-heading mb-2" style={{ position: "relative", bottom: "30px" }}>{selectedTeam}</h5>
+                <div className="row g-5">
                   {loading ? (
                     <p>Loading...</p>
                   ) : (
-                    filterTeam(team).map((member, index) => (
+                    filterTeam(team).map((member, index) =>
                       member.Name && member.Photo && member.Designation ? (
-                        <div key={index} className="col-12 col-md-4 mb-4 card-spacing">
-                          <Tippy
-                            animation="fade"
-                            interactive={true}
-                            duration={[500, 0]}
-                            placement={
-                              window.screen.availWidth < 650 ? "bottom" : "right"
-                            }
-                          >
-                            <div className="card card-details">
-                              <img
-                                className="card-img-top team-info-card-img img-card-hover"
-                                src={member.Photo}
-                                alt={member.Name}
-                              />
-                              <p
-                                style={member.Name ? {} : { color: "grey" }}
-                                className="team-info-card-title"
-                              >
+                        <>
+                          <div key={index} className="col-lg-4 col-md-6">
+                            <div className="card" style={{ height: "238px" }}>
+                              <div className="d-flex justify-content-center">
+                                <img
+                                  className="card-img-top team-info-card-img img-card-hover"
+                                  src={member.Photo}
+                                  alt={member.Name}
+                                />
+                              </div>
+
+                              <p className="team-info-card-title body"
+                                style={member.Name ? {} : { color: "grey" }}>
                                 {member.Name || "Awaiting Member's Name"}
                               </p>
                               <p
@@ -202,10 +205,10 @@ function TeamPage() {
                                 </a>
                               )}
                             </div>
-                          </Tippy>
-                        </div>
+                          </div>
+                        </>
                       ) : null
-                    ))
+                    )
                   )}
                 </div>
               </div>
@@ -213,7 +216,7 @@ function TeamPage() {
           </div>
         </section>
       </div>
-    </main>
+    </main >
   );
 }
 export default TeamPage;
