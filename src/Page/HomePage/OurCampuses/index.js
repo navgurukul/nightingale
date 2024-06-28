@@ -44,10 +44,10 @@ function OurCampuses() {
                                     key={campusName} 
                                     onClick={() => { history.push(`/campus/${displayName}`) }}
                                 >
-                                    <div className="campus-title-design contant-box">
-                                        <img className="campus-img" src={campus.Img} alt={`${displayName} image`} />
-                                        <div className="d-flex justify-content-center align-items-center">
-                                            <span className="mb-5 text-center font body1 campus-name">
+                                    <div className="campus-title-design contant-box ">
+                                        <img className="campus-img mr-4" src={campus.Img} alt={`${displayName} image`} />
+                                        <div className="d-flex justify-content-center align-items-center mt-5">
+                                            <span className="mb-5 text-center font body1 ">
                                                 {displayName}
                                             </span>
                                         </div>
