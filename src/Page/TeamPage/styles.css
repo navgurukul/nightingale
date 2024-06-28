@@ -41,12 +41,8 @@
     border-color: #eb5f42 !important;
 }
 
-.section-para.ptag {
-    font-family: Lato;
-    font-size: 18px;
-    font-weight: 400;
+.section-para {
     line-height: 30.6px;
-    text-align: left;
 }
 
 .section-head {
@@ -147,7 +143,13 @@
     opacity: 1;
     z-index: 2;
     box-shadow: none !important;
+    
 }
+.fixed-card-size {
+    height: 230px;
+    width: 256px;
+    margin-bottom: 32px;
+  }
 
 .all-members-btns {
     margin: 0 0 17px 0;
@@ -206,12 +208,10 @@
     text-align: left;
 }
 
-.team-button-container {
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
+/* .team-button-container {
+    gap:0px;
+    
+} */
 
 @media screen and (max-width: 850px) {
     .team-page .container {
@@ -224,10 +224,12 @@
 
     .team-button-container {
         flex-direction: column;
+        
     }
 
     .team-info-cards-container {
         justify-content: space-between;
+        
     }
 
     .career-button {
@@ -247,7 +249,6 @@
         transition: all ease-in 0.2s;
         padding: 0;
         box-sizing: content-box;
-        
     }
 
     .description-popup {
@@ -298,6 +299,7 @@
 }
 .card-spacing {
     margin-bottom: 30px;
+    
 }
 
 .team-page {
@@ -321,3 +323,38 @@
         max-width: 33.3333%;
     }
 }
+
+@media (max-width: 768px) {
+    .card-details {
+      width: 100%;
+      height: auto; 
+      margin-bottom: 32px;
+    }
+  }
+  
+  .custom-btn {
+    border: 1px solid #EB5F42 !important;
+    color: #EB5F42 !important;
+    background-color: white !important;
+    height: 48px !important;
+    width: 135px !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    font-family: 'Lato', sans-serif !important; 
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 30.6px !important;
+    transition: background-color 0.3s, color 0.3s !important;
+  }
+  .custom-btn:hover {
+    background-color: #EB5F42 !important;
+    color: white !important;
+    border-color: #EB5F42 !important;
+  }
+  
+  @media screen and (max-width: 667px) {
+    .custom-btn {
+      width: 100% !important;
+    }}
