@@ -31,7 +31,7 @@ function Digitallnitiatives() {
         <div className="col-md-4 ">
           <img src={logo3} alt="Logo 3" className="img-fluid" />
           <h5>Meraki</h5>
-          <p className='para body1 font'>Get started with programming in Python, English and Typing at the comfort of your home and for free</p>
+          <p className='para  para1 body1 font'>Get started with programming in Python, English and Typing at the comfort of your home and for free</p>
           <a href="https://www.merakilearn.org" target="_blank" className='linkcolor'>
             Visit Website <FiExternalLink className="ml-2" />
           </a>

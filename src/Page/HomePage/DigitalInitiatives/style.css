@@ -24,5 +24,20 @@
 }
 
 
+@media (max-width: 768px) {
+  .para{
+    
+  height: 50px;
+
+}
+.para1{
+  height: 80px;
+
+}
+.col-md-4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+}
 
 
