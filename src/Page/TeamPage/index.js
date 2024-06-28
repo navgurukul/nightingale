@@ -3,7 +3,6 @@ import axios from "axios";
 import Tippy from "@tippyjs/react";
 import LinkedIn from "../Components/LinkedIn";
 import Twitter from "../Components/Twitter";
-
 import "./styles.css";
 
 function shuffleObject(obj) {
@@ -45,7 +44,6 @@ function Popup(props) {
     </div>
   );
 }
-
 function TeamPage() {
   const [team, setTeam] = useState({});
   const [selectedTeam, setSelectedTeam] = useState("Core Team");
@@ -111,7 +109,7 @@ function TeamPage() {
                 </button>
                 <button
                   type="button"
-                  className="btn section-para btn-primary mx-3 my-2 dashed-btn"
+                  className="btn section-para btn-primary my-2 dashed-btn"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -146,9 +144,8 @@ function TeamPage() {
                     ].map((teamName) => (
                       <li
                         key={teamName}
-                        className={`nav-item team-list-item ${
-                          selectedTeam === teamName ? "active" : ""
-                        }`}
+                        className={`nav-item team-list-item ${selectedTeam === teamName ? "active" : ""
+                          }`}
                         onClick={() => setSelectedTeam(teamName)}
                       >
                         <span className="nav-link text-left">{teamName}</span>
@@ -164,25 +161,14 @@ function TeamPage() {
                     <p>Loading...</p>
                   ) : (
                     filterTeam(team).map((member, index) => (
-                      member.Name && member.Photo && member.Designation  ? (
-                        <div key={index} className="col-12 col-md-4 mb-4">
+                      member.Name && member.Photo && member.Designation ? (
+                        <div key={index} className="col-12 col-md-4 mb-4 card-spacing">
                           <Tippy
                             animation="fade"
                             interactive={true}
                             duration={[500, 0]}
                             placement={
                               window.screen.availWidth < 650 ? "bottom" : "right"
-                            }
-                            content={
-                              <Popup
-                                Name={member.Name || "Awaiting Member's Name"}
-                                Content={
-                                  member.Content ||
-                                  "Awaiting content from team member"
-                                }
-                                twitter={member.Twitter}
-                                linkedin={member.Linkedin}
-                              />
                             }
                           >
                             <div className="card card-details">
@@ -230,5 +216,4 @@ function TeamPage() {
     </main>
   );
 }
-
 export default TeamPage;
