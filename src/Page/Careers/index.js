@@ -52,7 +52,10 @@ function Careers() {
                 type="button"
                 className="btn regular-btn w-100"
                 style={{ height: "48px", width: "153px"}}
-                onClick="window.open('https://recruiterflow.com/navgurukul/jobs', '_blank')"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://recruiterflow.com/navgurukul/jobs", "_blank");
+                }} 
             >
                 Full Time Roles
             </button>
@@ -62,7 +65,10 @@ function Careers() {
                 type="button"
                 className="btn regular-btn w-100"
                 style={{ height: "48px", width: "181px"}}
-                onClick="window.open('https://recruiterflow.com/navgurukul/jobs/112', '_blank')"
+                  onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://recruiterflow.com/navgurukul/jobs/112", "_blank");
+                }} 
             >
                 Volunteer With Us
             </button>
