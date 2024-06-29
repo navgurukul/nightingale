@@ -40,7 +40,7 @@ function Digitallnitiatives() {
          <div className="col-md-4  ">
           <img src={logo4} alt="Logo 4" className="img-fluid" />
           <h5>Code India Fellowship</h5>
-          <p  className='para body1 font '>Nurture programming skills in the next generation of India’s youth with your expertise.</p>
+          <p  className='para1 body1 font '>Nurture programming skills in the next generation of India’s youth with your expertise.</p>
           <a href="https://www.codeindiafellowship.org" target="_blank" className='linkcolor'>
             Visit Website <FiExternalLink className="ml-2" />
           </a>
