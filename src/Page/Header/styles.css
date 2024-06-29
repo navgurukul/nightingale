@@ -78,6 +78,9 @@
   transition: background-color 0.3s, color 0.3s !important;
 }
 
+.btn-width{
+   width: 144px !important;
+}
 .custom-outline-button:hover {
   background-color: #EB5F42 !important;
   color: white !important;
