@@ -34,46 +34,45 @@ function OurCampuses() {
     }
 
     return (
-        <>
-            <div className="container campus-main-page">
-                <h3 className="text-center media-font">Our Campuses</h3>
-                <div className="row g-0" style={{ marginTop: "40px" }}>
-                    {Object.keys(data).map((campusName) => {
-                        const campus = data[campusName];
-                        const displayName = campusName.split(" ")[0];
+        <div className="container campus-main-page">
+            <h3 className="text-center media-font">Our Campuses</h3>
+            <div className="row g-0" style={{ marginTop: "40px" }}>
+                {Object.keys(data).map((campusName) => {
+                    const campus = data[campusName];
+                    const displayName = campusName.split(" ")[0];
 
-                        if (campus.Name && campus.Img) {
-                            console.log(`Rendering ${displayName} with image ${campus.Img}`);
-                            
-                            return (
-                                <div 
-                                    className="col-sm-3 mb-3 mb-sm-0" 
-                                    style={{ marginTop: "32px" }} 
-                                    key={campusName} 
-                                    onClick={() => { history.push(`/campus/${displayName}`) }}
-                                >
-                                    <div className="campus-title-design contant-box">
-                                        <img 
-                                            className="campus-img mr-4" 
-                                            src={campus.Img} 
-                                            alt={`${displayName} image`} 
-                                            onError={(e) => { e.target.src = 'https://via.placeholder.com/150?text=Image+Not+Available'; }} // Fallback image URL
-                                        />
-                                        <div className="d-flex justify-content-center align-items-center mt-5">
-                                            <span className="mb-5 text-center font body1">
-                                                {displayName}
-                                            </span>
-                                        </div>
+                    if (campus.Name && campus.Img) {
+                        console.log(`Rendering ${displayName} with image ${campus.Img}`);
+                        
+                        return (
+                            <div 
+                                className="col-sm-3 mb-3 mb-sm-0" 
+                                style={{ marginTop: "32px" }} 
+                                key={campusName} 
+                                onClick={() => { history.push(`/campus/${displayName}`) }}
+                            >
+                                <div className="campus-title-design contant-box">
+                                    <img 
+                                        className="campus-img mr-4" 
+                                        src={process.env.PUBLIC_URL + campus.Img} 
+                                        alt={`${displayName} image`} 
+                                        onError={(e) => { e.target.src = 'https://via.placeholder.com/150?text=Image+Not+Available'; }} // Fallback image URL
+                                    />
+                                    <div className="d-flex justify-content-center align-items-center mt-5">
+                                        <span className="mb-5 text-center font body1">
+                                            {displayName}
+                                        </span>
                                     </div>
                                 </div>
-                            );
-                        } else {
-                            console.error(`Missing data for ${displayName}:`, campus);
-                        }
-                    })}
-                </div>
+                            </div>
+                        );
+                    } else {
+                        console.error(`Missing data for ${displayName}:`, campus);
+                        return null; // Return null or handle missing data scenario
+                    }
+                })}
             </div>
-        </>
+        </div>
     );
 }
 
