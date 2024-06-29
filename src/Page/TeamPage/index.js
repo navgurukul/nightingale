@@ -94,7 +94,7 @@ function TeamPage() {
               <div className="col-lg-3 mb-3 mb-lg-0">
                 <button
                   type="button"
-                  className="btn regular-btn w-100"
+                  className="btn regular-btn   w-100"
                   style={{
                     maxWidth: "211px",
                     minWidth: "150px",
@@ -113,7 +113,7 @@ function TeamPage() {
               <div className="col-lg-3 mt-3 mt-lg-0">
                 <button
                   type="button"
-                  className="btn section-para dashed-btn w-100"
+                  className="btn section-para dashed-btn   w-100"
                   style={{
                     maxWidth: "211px",
                     minWidth: "150px",
