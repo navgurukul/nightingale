@@ -208,12 +208,11 @@
     line-height: 31.2px;
     text-align: left;
   }
-  
-  /* .team-button-container {
-      gap:0px;
-      
-  } */
-  
+  .spacing{
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+ 
   @media screen and (max-width: 850px) {
     .team-page .container {
       width: 90%;

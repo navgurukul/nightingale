@@ -173,7 +173,7 @@ function TeamPage() {
                       member.Name && member.Photo && member.Designation ? (
                         <>
                           <div key={index} className="col-lg-4 col-md-6">
-                            <div className="card" style={{ height: "238px" }}>
+                            <div className="card spacing" style={{ height: "238px" }}>
                               <div className="d-flex justify-content-center">
                                 <img
                                   className="card-img-top team-info-card-img img-card-hover"
