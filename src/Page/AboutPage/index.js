@@ -48,7 +48,8 @@ function AboutPage() {
             </p>
             <p className="w-50 mt-3 section-para mb-0">
               Besides the residential program, we have digital initiatives such
-              as Meraki, Zuvy, and Samyarth.
+              as Meraki and Zuvy.
+               {/* and Samyarth. */}
             </p>
             <p className="w-50 mt-3 section-para mb-0">
               Through <span className="number">Meraki,</span> we work with students from government schools and ITIs
@@ -60,16 +61,16 @@ function AboutPage() {
               jobs in the software industry, with a strong focus on problem-solving, system design,
               and programming languages.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            {/* <p className="w-50 mt-3 section-para mb-0">
               <span className="number">Samyarth</span> is a for-profit software cooperative run by Women from marginalized
               communities. Its mission is to provide underserved talent as a service to socially
               impactful initiatives and governments and share profits for its work.
-            </p>
+            </p> */}
           </div>
         </section>
 
-        <section className="page-section d-flex flex-column mb-0">
-          <h3 className="section-head mb-3">Why do We do the Work?</h3>
+        <section className="page-section d-flex flex-column mb-0 mt-5">
+          <h3 className="section-head mb-3 mt-5">Why do We do the Work?</h3>
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 section-para">
               Despite women comprising nearly half of India's population, only 19.2% of € N
@@ -106,8 +107,8 @@ function AboutPage() {
             </p>
           </div>
         </section>
-        <section className="page-section d-flex flex-column ">
-          <h3 className="section-head mb-3 ">Our Vision</h3>
+        <section className="page-section d-flex flex-column">
+          <h3 className="section-head mb-3 mt-5">Our Vision</h3>
           <div className="about-content d-flex flex-column justify-content-center mb-0 align-items-center">
             <p className="w-50 section-para mb-0">
               NavGurukul envisions an equitable future where every student has access to quality
@@ -119,8 +120,8 @@ function AboutPage() {
           </div>
         </section>
 
-        <section className="page-section d-flex flex-column ">
-          <h3 className="section-head mb-3">Our Values</h3>
+        <section className="page-section d-flex flex-column mt-5">
+          <h3 className="section-head mb-3 mt-5">Our Values</h3>
           <div className="about-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 section-para mb-0">
               To guide our journey of empowering students from marginalized communities, we have

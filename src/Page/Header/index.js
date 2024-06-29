@@ -1,27 +1,23 @@
 import React, { useState } from "react";
-// import JobCourse from "../JobCourse";
 import { FiExternalLink } from "react-icons/fi";
 import { BiChevronDown } from "react-icons/bi";
 import "./styles.css";
-import externalLink from "./assets/external-link.png";
-import { BiChevronsDown } from "react-icons/bi";
 import "../../Global.css";
 
 function Header() {
-  const [toggle, setToggle] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
     <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
-      <a class="navbar-brand" href="/">
+      <a className="navbar-brand mr-4 ml-4" href="/">
         <img
           src={require("./assets/logo.png").default}
-          // className="nav-logo"
+
         />
       </a>
 
       <button
-        class="navbar-toggler hover"
+        className="navbar-toggler hover"
         type="button"
         data-toggle="collapse"
         data-target="#navbar-list-2"
@@ -29,7 +25,7 @@ function Header() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbar-list-2">
@@ -40,7 +36,7 @@ function Header() {
             onMouseOut={() => setShowDropdown(false)}
           >
             <a
-              className="nav-link header-title"
+              className="nav-link header-title ml-4"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -75,7 +71,7 @@ function Header() {
           </li>
           <li className="nav-item dropdown">
             <a
-              className="nav-link  header-title mr-3"
+              className="nav-link  header-title mr-4 ml-4"
               href="#"
               id="navbarDropdown"
               role="button"
@@ -88,16 +84,16 @@ function Header() {
             </a>
 
             <div className="dropdown-menu dropdown-items" show={showDropdown}>
-              <a className="dropdown-item" href="/schoolofprograming">
+              <a className="dropdown-item" href="/school-programing">
                 School of Programming
               </a>
-              <a className="dropdown-item" href="/schoolDesign">
+              <a className="dropdown-item" href="/school-design">
                 School of Design
               </a>
-              <a className="dropdown-item" href="/schoolOfBusines">
+              <a className="dropdown-item" href="/school-busines">
                 School of Business
               </a>
-              <a className="dropdown-item" href="/SchoolOfFinance">
+              <a className="dropdown-item" href="/school-finance">
                 School of Finance
               </a>
             </div>
@@ -108,7 +104,7 @@ function Header() {
             onMouseOut={() => setShowDropdown(false)}
           >
             <a
-              className="nav-link header-title"
+              className="nav-link header-title "
               href="#"
               id="navbarDropdown"
               role="button"
@@ -128,9 +124,9 @@ function Header() {
               <a className="dropdown-item" href="https://zuvy.org">
                 Zuvy <FiExternalLink className="ml-2" />
               </a>
-              <a className="dropdown-item" href="https://samyarth.org">
+              {/* <a className="dropdown-item" href="https://samyarth.org">
                 Samyarth <FiExternalLink className="ml-2" />
-              </a>
+              </a> */}
               <a
                 className="dropdown-item"
                 href="https://www.merakilearn.org"
@@ -139,7 +135,7 @@ function Header() {
                 Meraki <FiExternalLink className="ml-2" />
               </a>
               <a
-                className="dropdown-item"
+                className="dropdown-item "
                 href="https://www.codeindiafellowship.org"
                 target="_blank"
               >
@@ -147,13 +143,8 @@ function Header() {
               </a>
             </div>
           </li>
-          <li className="nav-item">
-            <a className="nav-link header-title mr-3" href="/campus">
-              Our Campuses
-            </a>
-          </li>
           <li
-            className="nav-item dropdown "
+            className="nav-item dropdown ml-4 "
             onMouseOver={() => setShowDropdown(true)}
             onMouseOut={() => setShowDropdown(false)}
           >
@@ -180,7 +171,7 @@ function Header() {
               </a>
               <a
                 className="dropdown-item"
-                href="https://recruiterflow.com/navgurukul/jobs"
+                href="/careers"
               >
                 Careers <FiExternalLink className="ml-2" />
               </a>
@@ -205,9 +196,22 @@ function Header() {
           >
             Hire from Us
           </button>
+            <button
+            type="button"
+            className="btn custom-outline-button btn-width"
+            onClick={(e) => {
+              e.preventDefault();
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
+                "_blank"
+              );
+            }}
+          >
+            CSR Enquiries
+          </button>
           <button
             type="button"
-            className="btn regular-btn  "
+            className="btn regular-btn "
             style={{ height: "48px", width: "135px" }}
             onClick={(e) => {
               e.preventDefault();

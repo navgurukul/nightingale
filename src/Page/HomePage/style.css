@@ -8,7 +8,10 @@
   height: 160px; 
   background-color: #FBDFD9;
 }
-
+ .bg-color{
+  height: 529px;
+  background-color: #F7F7F7;
+ }
 .bannerimg1{
   height: 96px;
   width: 100%;
@@ -54,23 +57,23 @@
 }
 .image-button {
   border: none;
-  background: transparent; /* Transparent background */
-  cursor: pointer; /* Cursor changes to indicate clickability */
-  outline: none; /* Remove outline for better styling, but ensure accessibility */
+  background: transparent; 
+  cursor: pointer; 
+  outline: none; 
 }
 
 .image-button:focus {
-  outline: 2px solid #007bff; /* Optional focus outline for accessibility */
+  outline: 2px solid #007bff; 
 }
 
 .play-icon-image {
-  width: 112.5px; /* Set the width of the play icon */
-  height:112.5px; /* Maintain aspect ratio */
-  transition: transform 0.3s ease; /* Add a transition for hover effect */
+  width: 112.5px;
+  height:112.5px; 
+  transition: transform 0.3s ease; 
 }
 
 .image-button:hover .play-icon-image {
-  transform: scale(1.1); /* Slight scaling on hover for visual feedback */
+  transform: scale(1.1); 
 }
 
 
@@ -86,16 +89,7 @@
 .our-initiatives{
   margin-top: 40px;
 }
-/* .rgba-black-strong {
-  background: linear-gradient(
-    179.02deg,
-    rgba(0, 0, 0, 0.228) 12.49%,
-    rgba(0, 0, 0, 0.21) 54.02%,
-    rgba(0, 0, 0, 0.307) 99.16%
-  );
-  border-radius: 20px;
 
-} */
 .BgColor{
   background-color:var(--primary) ;
   color:white
@@ -123,9 +117,7 @@
   line-height: 28px;
 }
 .font{
-  font-size: 21px;
-  font-style: Light;
-  font-weight: 300;
+  line-height: 30.6px;
 }
 
 .Initiatives-bg-color {
@@ -247,14 +239,13 @@
 }
 
 .media-scroll-section {
-  background-color: #F7F7F7;
+  
   padding-inline: 15%;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
   
 }
 .supporters {
-  /* background: #f9f9f9; */
   padding: 70px;
 }
 .supporters-link {
@@ -267,10 +258,6 @@
   height: 100%;
 }
 
-/* .our-partners,
-.navgurukul-homepage .consult {
-  margin-bottom: 80px;
-} */
 .para-item{
   text-align: left;
   margin:15px 150px;
@@ -386,4 +373,62 @@
   width: auto;
 }
 
+.custom-bg-image {
+  position: relative;
+  width: 100%;
+  height: 580px; 
+  background-image: url("https://s3-alpha-sig.figma.com/img/e64d/8d34/9d3f4ec23585eac88ee9d393f4c34d95?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dHF4ZNfXgbfw-j6zLekxkj5gcqadrLTA~oE9ie2nRWJHDXKRj8qDxUrJWHaUXrGdcoUHePBpsIGbg73GNsO5hMnRsazgvX~pxitc1E5-JfXXKEaKAQIxbw06AtznnRpbJf32GI3Kg1qM4OsARSXAI7J8wvgG5jjHKWIUkavh-xyUCuVqHCz8Ratxx32jEmEg9iejoKKLd9gRr9TPEPVBnuOGq4UNVrUj4~p9Rj8OKxSi4UsgIk2eGn1D9nTEIvHJgLOicRDti1suxD2tW17Rent9DCrwPQvVSSEQ8MBhMEw2Oc8xpywTuFixo1BmPrmXDkBPcBxNJz8dAFzMo4t6EQ__");
+  border-radius: 32px 0px 32px 0px;
+  background-color: #f0f0f0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 32px;
+  opacity: 1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 8px 12px 0px rgba(0, 0, 0, 0.04), 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+}
 
+.custom-video-container {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 32px 0px 32px 0px;
+}
+.svg-play-button {
+  cursor: pointer; 
+  transition: opacity 0.3s ease; 
+}
+
+.svg-play-button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 1200px) {
+  .custom-bg-image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-bg-image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-bg-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-bg-image {
+    height: 250px;
+  }
+}

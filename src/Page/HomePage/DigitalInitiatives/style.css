@@ -1,15 +1,9 @@
-/* Ensures consistent spacing around the container */
-/* .container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-} */
 
-/* Centers the content within each column */
 .text-center {
   text-align: center;
 }
 
-/* Ensures images are responsive and don't exceed a certain width */
+
 .img-fluid {
   width: auto; 
   height:48px;
@@ -17,7 +11,7 @@
 }
 
 .para{
-  height: 75px;
+  height: 95px;
 }
 .linkcolor {
   color: #EB5F42; 
@@ -30,5 +24,20 @@
 }
 
 
+@media (max-width: 768px) {
+  .para{
+    
+  height: 50px;
+
+}
+.para1{
+  height: 80px;
+
+}
+.col-md-4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+}
 
 

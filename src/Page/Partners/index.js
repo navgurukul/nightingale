@@ -37,8 +37,9 @@ function Partners() {
           Partner With Us
         </button>
       </div>
-      <div className="partners-data w-100 mb-0  md-5 d-flex align-items-center flex-column">
-        <h3 className="mb-3 section-head">Our Partners</h3>
+      <div className="w-100 mb-0  md-5 d-flex align-items-center flex-column">
+        <h3 className="mt-2 section-head mb-3">Our Partners</h3>
+
         
         <div className="all-partners w-75 d-flex flex-column">
           <div className="all-partners-row d-flex justify-content-around w-100 my-1">
@@ -46,7 +47,7 @@ function Partners() {
               Object.keys(partners).map((item) => {
                 return (
                   <div className="card mb-3  md-5 bg-white py-3 px-4 position-relative">
-                    <h4 className="fw-bold mb-2">{partners[item].Name}</h4>
+                    <h5 className="fw-bold mb-2">{partners[item].Name}</h5>
                     <span className="status mb-2">{partners[item].Type}</span>
                     <p className="my-1 mb-5">{partners[item].Content}</p>
                     <div className="social-media-icons d-flex  w-40 mb-3 position-absolute">
