@@ -8,21 +8,19 @@ function OurCampuses() {
     const history = useHistory();
 
     useEffect(() => {
-        axios({
-            url: "https://navgurukul.github.io/tarabai-shinde/data/campuses.json",
-        })
-        .then((res) => {
-            console.log("Fetched data:", res.data);
-            setData(
-                Object.keys(res.data).reduce((prev, next) => {
-                    console.log("Processing campus:", res.data[next].Name, "Image URL:", res.data[next].Img);
-                    return { ...prev, [res.data[next].Name]: res.data[next] };
-                }, {})
-            );
-        })
-        .catch((error) => {
-            console.error("Error fetching data:", error);
-        });
+        axios.get("https://navgurukul.github.io/tarabai-shinde/data/campuses.json")
+            .then((res) => {
+                console.log("Fetched data:", res.data);
+                setData(
+                    Object.keys(res.data).reduce((prev, next) => {
+                        console.log("Processing campus:", res.data[next].Name, "Image URL:", res.data[next].Img);
+                        return { ...prev, [res.data[next].Name]: res.data[next] };
+                    }, {})
+                );
+            })
+            .catch((error) => {
+                console.error("Error fetching data:", error);
+            });
     }, []);
 
     if (data === null) {
@@ -42,7 +40,8 @@ function OurCampuses() {
                     const displayName = campusName.split(" ")[0];
 
                     if (campus.Name && campus.Img) {
-                        console.log(`Rendering ${displayName} with image ${campus.Img}`);
+                        const imageUrl = campus.Img.startsWith('http') ? campus.Img : `${process.env.PUBLIC_URL}${campus.Img}`;
+                        console.log(`Rendering ${displayName} with image ${imageUrl}`);
                         
                         return (
                             <div 
@@ -54,9 +53,12 @@ function OurCampuses() {
                                 <div className="campus-title-design contant-box">
                                     <img 
                                         className="campus-img mr-4" 
-                                        src={process.env.PUBLIC_URL + campus.Img} 
+                                        src={imageUrl} 
                                         alt={`${displayName} image`} 
-                                        onError={(e) => { e.target.src = 'https://via.placeholder.com/150?text=Image+Not+Available'; }} // Fallback image URL
+                                        onError={(e) => { 
+                                            e.target.src = 'https://via.placeholder.com/150?text=Image+Not+Available'; 
+                                            console.error(`Error loading image for ${displayName}:`, imageUrl);
+                                        }} // Fallback image URL
                                     />
                                     <div className="d-flex justify-content-center align-items-center mt-5">
                                         <span className="mb-5 text-center font body1">
