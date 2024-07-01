@@ -254,8 +254,10 @@
 }
 
 @media screen and (max-width: 667px) {
-  .custom-btn {
+  .regular-btn,
+  .dashed-btn {
     width: 100% !important;
+    max-width: none !important;
   }
 }
 
