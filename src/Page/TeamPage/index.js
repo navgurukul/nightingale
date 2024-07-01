@@ -51,7 +51,7 @@ function TeamPage() {
           </div>
           <div className="container mt-3 w-lg-20 w-100">
             <div className="row justify-content-center">
-              <div className="col-lg-3 mb-3 mb-lg-0">
+              <div className="col-lg-3 mb-3 mb-lg-0" >
                 <button
                   type="button"
                   className="btn regular-btn w-100"

@@ -34,7 +34,7 @@
   color: white !important;
   background-color: #eb5f42 !important;
   border-radius: 8px !important;
-  font-weight: 800 !important;
+  font-weight: 800 !important;;
 }
 
 .career-button:hover {
@@ -118,7 +118,8 @@
 .team-info-card {
   margin-right: 16px !important;
   margin-bottom: 32px;
-  height: auto ; 
+  height: "256px" ; 
+  /* height: auto; */
 }
 .team-info-card-img {
   border-radius: 50%;
