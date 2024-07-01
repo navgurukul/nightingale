@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import "./styles.css";
 import { Link } from "react-router-dom";
 
+
+
 const Footer = () => {
   const [selectedIcon, setSelectedIcon] = useState('facebook'); 
 
