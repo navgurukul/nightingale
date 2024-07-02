@@ -1,13 +1,6 @@
 import React from 'react';
 import "./style.css";
 function BackgroundImg({ backgroundData }) {
-
-    const handleButtonClick = () => {
-        window.open("https://admissions.navgurukul.org/", "_blank");
-    };
-   
-
-
     return (
         <>
             {backgroundData.map((data, index) => (
@@ -36,20 +29,19 @@ function BackgroundImg({ backgroundData }) {
                                     <p className="Subtitle1" style={{ whiteSpace: "pre-wrap" }}>{data.text2}</p>
                                 </div>
                                 {data.buttonText && (
-                                    <button
-                                        type="button"
-                                        className="btn regular-btn mt-1"
-                                        style={{ height: "48px", width: "189px" }}
-                                        onClick={handleButtonClick}
-                                    >
-                                        {data.buttonText}
-                                    </button>
+                                    <a href="https://admissions.navgurukul.org/" target="_blank" rel="noopener noreferrer">
+                                        <button type="button"
+                                            className="btn regular-btn mt-1"
+                                            style={{ height: "48px", width: "189px" }}
+                                            >{data.buttonText}</button>
+                                    </a>
                                 )}
                             </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                </div >
+            ))
+            }
         </>
     );
 }
