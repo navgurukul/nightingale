@@ -3,9 +3,10 @@ import "./style.css";
 function BackgroundImg({ backgroundData }) {
 
     const handleButtonClick = () => {
-        window.open("https://admissions.navgurukul.org/", "_blank");
+        <a href="https://admissions.navgurukul.org" onClick={handleButtonClick}>
+            Open in New Tab
+        </a>
     };
-
     return (
         <>
             {backgroundData.map((data, index) => (
@@ -37,7 +38,7 @@ function BackgroundImg({ backgroundData }) {
                                     <button
                                         type="button"
                                         className="btn regular-btn mt-1"
-                                        style={{ height: "48px", width: "189px"}}
+                                        style={{ height: "48px", width: "189px" }}
                                         onClick={handleButtonClick}
                                     >
                                         {data.buttonText}

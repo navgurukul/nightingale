@@ -3,7 +3,7 @@ import JobAssistance from "../JobAssistance";
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import BackgroundImg from "../BgroundImg";
-import { program1Data, whoForPoints, JobAssistanceData, whatLearnPoints, backgroundData,AnumnusPageData} from "./data";
+import { program1Data, whoForPoints, JobAssistanceData, whatLearnPoints, backgroundData,AnumnusPageData,DownloadData} from "./data";
 import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest"
 import AdmissionProcess from "../AdmissionProcess";
@@ -23,7 +23,7 @@ function SchoolProgramming() {
                     <CourseDetail data={whatLearnPoints} information={information} />
                 </div>
             </div>
-            <DownloadCurriculum></DownloadCurriculum>
+            <DownloadCurriculum DownloadData={DownloadData}></DownloadCurriculum>
             <CoursesLocation courses={"School of Programming"}></CoursesLocation>
             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
             <AdmissionProcess stages={program1Data}></AdmissionProcess>

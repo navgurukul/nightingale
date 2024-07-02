@@ -2,7 +2,7 @@ import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import JobAssistance from "../JobAssistance";
 import BackgroundImg from "../BgroundImg"
-import { whoForPoints, topics, JobAssistanceData, program3Data, BackgroundImgData,AnumnusPageData} from "./Data"
+import { whoForPoints, topics, JobAssistanceData, program3Data, BackgroundImgData,AnumnusPageData,DownloadData} from "./Data"
 import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
@@ -16,7 +16,7 @@ function SchoolOfBusinessPage() {
             <BackgroundImg backgroundData={BackgroundImgData}></BackgroundImg>
             <EligibilityDetail points={whoForPoints} />
             <CourseDetail data={topics} information={information}></CourseDetail>
-            <DownloadCurriculum></DownloadCurriculum>
+            <DownloadCurriculum DownloadData={DownloadData}></DownloadCurriculum>
             <CoursesLocation courses={"School Of Business"}></CoursesLocation>
             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
             <AdmissionProcess stages={program3Data}></AdmissionProcess>

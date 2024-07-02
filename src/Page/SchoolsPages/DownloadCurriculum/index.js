@@ -1,25 +1,28 @@
+import React from 'react';
 import "./style.css";
-import CurriculumpdfFile from './assets/Curriculum.pdf';
-function DownloadCurriculum() {
-    const onButtonClick = () => {
+function DownloadCurriculum({ DownloadData }) {
+    const onButtonClick = (pdfFile) => {
         let alink = document.createElement("a");
-        alink.href = CurriculumpdfFile;
+        alink.href = pdfFile;
         alink.download = "Curriculum.pdf";
         alink.click();
     };
+
     return (
-        <>
-            <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
+        <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
+            {DownloadData && DownloadData.map((data) => (
                 <button
+                    key={data.id}
                     type="button"
                     className="btn regular-btn"
-                    style={{ height: "48px", width: "208px" }}
-                    onClick={onButtonClick}
+                    style={{ height: "48px", width: "208px", margin: "10px" }}
+                    onClick={() => onButtonClick(data.pdfFile)}
                 >
-                    Download Curriculum
+                    Download Curriculum 
                 </button>
-            </div>
-        </>
+            ))}
+        </div>
     );
 }
+
 export default DownloadCurriculum;

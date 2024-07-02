@@ -1,6 +1,7 @@
 import SchoolOfBusinessPage from "../SchoolOfBusiness/assets/businessbgimg.png"
 import KiranJatav from "./assets/ KiranJatav.png";
 import MeenuGwala from "./assets/MeenuGwala.png";
+import SchoolOfBusiPdf from "./assets/SoBCurriculum.pdf"
 export const whoForPoints = [
    { point: "Youth above 16 years of age from underprivileged or low-income communities who can't afford expensive college education" },
    { point: "No prior education needed: Our students have been school and college dropouts, 10th or 12th pass as well as degree holders such as BSc, BTech who could not get jobs" },
@@ -77,6 +78,12 @@ export const AnumnusPageData = [
        img: KiranJatav,
        linkdin: "https://www.linkedin.com/in/kiran-jatav-564a712a9/"
    }
+]
+export const DownloadData=[
+    {
+        id:1,
+        pdfFile:SchoolOfBusiPdf
+    }
 ]
 
 

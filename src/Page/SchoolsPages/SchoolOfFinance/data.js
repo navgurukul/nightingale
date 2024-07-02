@@ -1,5 +1,6 @@
 
-import SchoolOfFInanceImg from "../SchoolOfFinance/assets/financeImg.png"
+import SchoolOfFInanceImg from "../SchoolOfFinance/assets/financeImg.png";
+import PDFOfFinance from "./assets/SoFCurriculum.pdf"
 export const whoForPoints = [
    { point: "Youth above 16 years of age from underprivileged or low-income communities who can't afford expensive college education" },
    { point: "No prior education needed: Our students have been school and college dropouts, 10th or 12th pass as well as degree holders such as BSc, BTech who could not get jobs" },
@@ -61,5 +62,10 @@ export const BgroundImg = [
        buttonText: "Take Screening Test"
    }
 ]
-
+export const DownloadData=[
+    {
+        id:1,
+        pdfFile:PDFOfFinance
+    }
+]
 
