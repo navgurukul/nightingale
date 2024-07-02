@@ -40,8 +40,8 @@ function OurCampuses() {
                     const displayName = campusName.split(" ")[0];
 
                     if (campus.Name && campus.Img) {
-                        // Check if the image URL is absolute or relative
-                        const imageUrl = campus.Img.startsWith('http') ? campus.Img : `${process.env.PUBLIC_URL}${campus.Img}`;
+                        // Simplified image URL handling
+                        const imageUrl = campus.Img.startsWith('http') ? campus.Img : `/images/${campus.Img}`;
                         
                         console.log(`Rendering ${displayName} with image ${imageUrl}`);
                         console.log(`Image URL Validity Check: `, imageUrl);
