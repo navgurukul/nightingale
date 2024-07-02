@@ -1,16 +1,5 @@
 import "./style.css"
-function shuffleObject(obj) {
-    let newObj = {};
-    var keys = Object.keys(obj);
-    keys.sort(function (a, b) {
-        return Math.random() - 0.5;
-    });
-    keys.forEach(function (k) {
-        newObj[k] = obj[k];
-    });
-    return newObj;
- }
- function DownloadCurriculum(){
+function DownloadCurriculum() {
 
     const handleDownload = () => {
         const link = document.createElement('a');
@@ -34,6 +23,5 @@ function shuffleObject(obj) {
             </div>
         </>
     );
- }
- export default DownloadCurriculum;
- 
+}
+export default DownloadCurriculum;
