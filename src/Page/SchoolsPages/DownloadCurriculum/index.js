@@ -1,13 +1,11 @@
-import "./style.css"
+import "./style.css";
+import CurriculumpdfFile from './assets/Curriculum.pdf';
 function DownloadCurriculum() {
-
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = "https://drive.google.com/uc?export=download&id=1ODCSwz5Zfp5yuzksvjfI4xVj-VEZnrpT";
-        link.download = "Placement_Brief_Navgurukul.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+    const onButtonClick = () => {
+        let alink = document.createElement("a");
+        alink.href = CurriculumpdfFile;
+        alink.download = "Curriculum.pdf";
+        alink.click();
     };
     return (
         <>
@@ -16,7 +14,7 @@ function DownloadCurriculum() {
                     type="button"
                     className="btn regular-btn"
                     style={{ height: "48px", width: "208px" }}
-                    onClick={handleDownload}
+                    onClick={onButtonClick}
                 >
                     Download Curriculum
                 </button>
