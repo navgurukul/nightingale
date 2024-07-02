@@ -1,13 +1,29 @@
-.box {
-    margin: auto;
-    position: relative;
-    top: 30px;
+.custom-bg {
+    background: var(--Grey-Faded, #F7F7F7);
+    display: flex;
+    width: 100%;
+    max-width: 732px;
+    padding: 32px;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
-.user-test-btn {
-    width: 189px;
-    height: 48px;
-    padding: 8px 16px 8px 16px;
-    gap: 10px;
-    border-radius: 8px 0px 0px 0px;
+.pra-subtitle {
+    line-height: 30.6px;
+}
+.pra-subtitle {
+    font-weight: bold;
+}
+.subtitle-container{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.test-title{
+    margin-bottom:"32px";
+}
+.user-btn{
+    margin-top: 32px;
 }
