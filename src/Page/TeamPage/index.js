@@ -1,48 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Tippy from "@tippyjs/react";
 import LinkedIn from "../Components/LinkedIn";
-import Twitter from "../Components/Twitter";
 import "./styles.css";
-import { BiBorderAll } from "react-icons/bi";
-function shuffleObject(obj) {
-  let newObj = {};
-  let keys = Object.keys(obj);
-  keys.sort(() => Math.random() - 0.5);
-  keys.forEach((k) => {
-    newObj[k] = obj[k];
-  });
-  return newObj;
-}
-function Popup(props) {
-  return (
-    <div className="description-popup">
-      <div className="d-flex align-items-center">
-        <p className="fw-bold mt-3 mr-3">{props.Name}</p>
-        {props.twitter && (
-          <a href={props.twitter} target="_blank" rel="noopener noreferrer">
-            <Twitter />
-          </a>
-        )}
-        {props.linkedin && (
-          <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
-            <LinkedIn />
-          </a>
-        )}
-      </div>
-      <p
-        className="mt-0"
-        style={
-          props.Content === "Awaiting content from team member"
-            ? { color: "grey" }
-            : {}
-        }
-      >
-        {props.Content}
-      </p>
-    </div>
-  );
-}
+
 function TeamPage() {
   const [team, setTeam] = useState({});
   const [selectedTeam, setSelectedTeam] = useState("Core Team");
@@ -91,10 +51,10 @@ function TeamPage() {
           </div>
           <div className="container mt-3 w-lg-20 w-100">
             <div className="row justify-content-center">
-              <div className="col-lg-3 mb-3 mb-lg-0">
+              <div className="col-lg-3 mb-3 mb-lg-0" >
                 <button
                   type="button"
-                  className="btn regular-btn   w-100"
+                  className="btn regular-btn w-100"
                   style={{
                     maxWidth: "211px",
                     minWidth: "150px",
@@ -113,7 +73,7 @@ function TeamPage() {
               <div className="col-lg-3 mt-3 mt-lg-0">
                 <button
                   type="button"
-                  className="btn section-para dashed-btn   w-100"
+                  className="btn section-para dashed-btn w-100"
                   style={{
                     maxWidth: "211px",
                     minWidth: "150px",
@@ -151,7 +111,6 @@ function TeamPage() {
                       "LXD & ETC",
                     ].map((teamName) => (
                       <li
-
                         key={teamName}
                         className={`nav-item team-list-item ${selectedTeam === teamName ? "active" : ""
                           }`}
@@ -170,44 +129,34 @@ function TeamPage() {
                     <p>Loading...</p>
                   ) : (
                     filterTeam(team).map((member, index) =>
-                      member.Name && member.Photo && member.Designation ? (
-                        <>
-                          <div key={index} className="col-lg-4 col-md-6">
-                            <div className="card spacing" style={{ height: "238px" }}>
-                              <div className="d-flex justify-content-center">
-                                <img
-                                  className="card-img-top team-info-card-img img-card-hover"
-                                  src={member.Photo}
-                                  alt={member.Name}
-                                />
-                              </div>
-
-                              <p className="team-info-card-title body"
-                                style={member.Name ? {} : { color: "grey" }}>
-                                {member.Name || "Awaiting Member's Name"}
-                              </p>
-                              <p
-                                style={
-                                  member.Designation ? {} : { color: "grey" }
-                                }
-                                className="section-para"
-                              >
-                                {member.Designation ||
-                                  "Awaiting description from team member"}
-                              </p>
-                              {member.Linkedin && (
-                                <a
-                                  href={member.Linkedin}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                >
-                                  <LinkedIn />
-                                </a>
-                              )}
-                            </div>
+                      <div key={index} className="col-lg-4 col-md-6">
+                        <div className="team-info-card ">
+                          <div className="d-flex justify-content-center">
+                            {member.Photo && (
+                              <img
+                                className="team-info-card-img"
+                                src={member.Photo}
+                                alt={member.Name}
+                              />
+                            )}
                           </div>
-                        </>
-                      ) : null
+                          <p className="team-info-card-title body" style={{ color: member.Name ? "inherit" : "grey" }}>
+                            {member.Name || "Awaiting Member's Name"}
+                          </p>
+                          <p className="team-info-card-designation " style={{ color: member.Designation ? "inherit" : "grey" }}>
+                            {member.Designation || "Awaiting description from team member"}
+                          </p>
+                          {member.Linkedin && (
+                            <a
+                              href={member.Linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <LinkedIn />
+                            </a>
+                          )}
+                        </div>
+                      </div>
                     )
                   )}
                 </div>
@@ -216,7 +165,10 @@ function TeamPage() {
           </div>
         </section>
       </div>
-    </main >
+    </main>
   );
 }
+
 export default TeamPage;
+
+
