@@ -3,10 +3,11 @@ import "./style.css";
 function BackgroundImg({ backgroundData }) {
 
     const handleButtonClick = () => {
-        <a href="https://admissions.navgurukul.org" onClick={handleButtonClick}>
-            Open in New Tab
-        </a>
+        window.open("https://admissions.navgurukul.org/", "_blank");
     };
+   
+
+
     return (
         <>
             {backgroundData.map((data, index) => (
