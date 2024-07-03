@@ -6,6 +6,9 @@ import "../../Global.css";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
+   const openLinkInNewTab = (url) => {
+    window.open(url, "_blank", "noopener noreferrer");
+  };
 
   return (
     <nav className="NG-Header navbar navbar-expand-lg navbar-light bg-light navbar-color">
@@ -200,11 +203,9 @@ function Header() {
             type="button"
             className="btn custom-outline-button btn-width"
             onClick={(e) => {
-              e.preventDefault();
-              window.open(
-                "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
-                "_blank"
-              );
+                openLinkInNewTab(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform"
+                )
             }}
           >
             CSR Enquiries

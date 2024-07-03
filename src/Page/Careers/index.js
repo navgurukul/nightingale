@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 function Careers() {
+    const openLinkInNewTab = (url) => {
+    window.open(url, "_blank", "noopener noreferrer");
+  };
   
   return (
     <main >
@@ -54,8 +57,9 @@ function Careers() {
                 className="btn regular-btn w-100"
                 style={{ height: "48px", width: "153px"}}
                 onClick={(e) => {
-                  e.preventDefault();
-                  window.open("https://recruiterflow.com/navgurukul/jobs", "_blank");
+                  openLinkInNewTab(
+                    "https://recruiterflow.com/navgurukul/jobs"
+                    )
                 }} 
             >
                 Full Time Roles
@@ -67,8 +71,9 @@ function Careers() {
                 className="btn regular-btn w-100"
                 style={{ height: "48px", width: "181px"}}
                   onClick={(e) => {
-                  e.preventDefault();
-                  window.open("https://recruiterflow.com/navgurukul/jobs/112", "_blank");
+                    openLinkInNewTab(
+                      "https://recruiterflow.com/navgurukul/jobs/112"
+                    )
                 }} 
             >
                 Volunteer With Us
