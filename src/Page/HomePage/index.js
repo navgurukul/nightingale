@@ -15,6 +15,8 @@ import bannerimg2 from "./assets/Sri badrika asharam.svg";
 import { useState } from "react";
 import OurCampuses from "./OurCampuses";
 import AlumniStories from "./AlumniStories";
+import PlayBtn from  "./assets/playicon.png";
+
 function Home() {
   const [showVideo, setShowVideo] = useState(false);
 
@@ -24,6 +26,7 @@ function Home() {
 
   const history = useHistory();
   const screenWidth = window.innerWidth;
+
   return (
     <>
       <div className="row align-items-center centered-container">
@@ -66,13 +69,13 @@ function Home() {
               </p>
               </div>
                <div className="col-md-12" style={{ padding: screenWidth > 932 && "0px" }}>
-                  <div className="custom-bg-image" >
+                 
                     {!showVideo ? (
+                      <div className="custom-bg-image" onClick={handlePlayButtonClick} >
                         <div onClick={handlePlayButtonClick}>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" className="svg-play-button" >
-                              <path d="M48 7.99805C25.92 7.99805 8.00002 25.918 8.00002 47.9981C8.00002 70.0781 25.92 87.9981 48 87.9981C70.08 87.9981 88 70.0781 88 47.9981C88 25.918 70.08 7.99805 48 7.99805ZM40 65.9981V29.998L64 47.9981L40 65.9981Z" fill="white"/>
-                           </svg>
+                          <img src={PlayBtn} alt="Play Icon" className="play-button" />
                         </div>
+                      </div>
                     ) : (
                     <div className="custom-video-container">
                        <iframe
@@ -85,7 +88,7 @@ function Home() {
                         ></iframe>
                      </div>
                    )}
-                </div>
+               
              </div>
            </div>
         </div>
