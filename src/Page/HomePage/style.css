@@ -141,12 +141,7 @@
 .our-initiatives .textlink:hover a:hover {
   text-decoration: none;
 }
-.card-image {
-  width: 100%; 
-  height: 320px; 
-  border-radius: 8px; 
-  object-fit: cover;
-}
+
 
 .textlink {
   border-radius: 8px; 
@@ -157,19 +152,7 @@
 .our-initiatives .card-image {
   transition: box-shadow 0.3s ease; 
 }
-.card-image:hover {
-  filter: drop-shadow(0px 16px 24px rgba(4, 4, 4, 0.06))
-      drop-shadow(0px 6px 30px rgba(7, 7, 7, 0.04))
-      drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.08));
-    border: 2px solid transparent;
-}
 
-.card-body {
-  margin: 0px;
-  padding: 0px;
-  background-color: white; 
-  color: #000; 
-}
 .fixed-dimensions {
   width: 154px;
   height: 48px;
@@ -185,32 +168,15 @@
   font-size: 1.5rem;
 }
 
-.card-main-text {
-  margin-top: 180px;
-  font-family: 'Roboto', sans-serif;
-  
-}
-.card-heading {
-  font-style: normal;
-  font-weight: bold;
 
-  /* line-height: 1.5; */
-
- 
-}
 .heading-line{
   line-height: 1.3!important;
-  /* margin-top: 30px; */
+ 
 }
 .para-line{
   line-height: 1.5!important;
 }
-.card-dic {
-  max-width: 390px;
-  line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
- 
-}
+
 
 .impact .count {
   font-size: 72px !important;
@@ -288,18 +254,15 @@
   .home-image{
     height: 100%;
   }
-  .media-scroll-section{
-    margin-top: 0px;
-  }
+  
   .btn{
     margin-right: 0px;
   }
 
 }
+
 @media (max-width: 576px) {
-  .card-main-text {
-    margin-top: 85px;
-  }
+
   .para-item{
     margin:0px;
   }
@@ -348,7 +311,6 @@
   }
   .home-page-bg,
   .rgba-black-strong {
-    /* width: 360px; */
     height: 360px !important;
   }
   .home-page-bg h2 {
@@ -357,9 +319,13 @@
   .navgurukul-homepage .container {
     width: 90% !important;
   }
-  .media-scroll-section {
-    padding-inline: 10%;
+  .media-scroll-section .row {
+    flex-wrap: wrap; 
   }
+  .media-scroll-section .col-sm-6 {
+    width: 100%; 
+  }
+
   .btn{
     margin-right: 0px;
   }
@@ -390,10 +356,9 @@
 .custom-bg-image {
   position: relative;
   width: 100%;
-  height: 580px; 
-  background-image: url("https://s3-alpha-sig.figma.com/img/e64d/8d34/9d3f4ec23585eac88ee9d393f4c34d95?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dHF4ZNfXgbfw-j6zLekxkj5gcqadrLTA~oE9ie2nRWJHDXKRj8qDxUrJWHaUXrGdcoUHePBpsIGbg73GNsO5hMnRsazgvX~pxitc1E5-JfXXKEaKAQIxbw06AtznnRpbJf32GI3Kg1qM4OsARSXAI7J8wvgG5jjHKWIUkavh-xyUCuVqHCz8Ratxx32jEmEg9iejoKKLd9gRr9TPEPVBnuOGq4UNVrUj4~p9Rj8OKxSi4UsgIk2eGn1D9nTEIvHJgLOicRDti1suxD2tW17Rent9DCrwPQvVSSEQ8MBhMEw2Oc8xpywTuFixo1BmPrmXDkBPcBxNJz8dAFzMo4t6EQ__");
-  border-radius: 32px 0px 32px 0px;
-  background-color: #f0f0f0;
+  height: 620px; 
+  background-image: url("./assets/background-img1.png");
+  background-color: transparent; 
   background-size: cover;
   background-position: center;
   display: flex;
@@ -402,47 +367,55 @@
   cursor: pointer;
   margin-top: 32px;
   opacity: 1;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 8px 12px 0px rgba(0, 0, 0, 0.04), 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 32px 0px 32px 0px;
 }
 
 .custom-video-container {
   width: 100%;
-  height: 100%;
+  height: 580px;
 }
 
 .bg-video {
   width: 100%;
-  height: 100%;
+  height: 580px;
   border-radius: 32px 0px 32px 0px;
 }
-.svg-play-button {
+.play-button {
+  width: 80px; 
+  height: 80px; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   cursor: pointer; 
-  transition: opacity 0.3s ease; 
 }
 
-.svg-play-button:hover {
-  opacity: 0.8;
-}
-@media (max-width: 1200px) {
-  .custom-bg-image {
-    height: 500px;
-  }
+.play-button:hover {
+  filter: blur(0.5px); 
+  transform: translate(-50%, -50%) scale(1.02); 
 }
 
-@media (max-width: 992px) {
-  .custom-bg-image {
-    height: 400px;
-  }
-}
-
-@media (max-width: 768px) {
-  .custom-bg-image {
-    height: 300px;
-  }
-}
 
 @media (max-width: 576px) {
-  .custom-bg-image {
+  .play-button {
+    width: 50px; 
+    height: 50px; 
+  
+  }
+  .bg-video {
+    margin-top: 10px;
     height: 250px;
   }
+   .custom-video-container {
+    max-height: 250px; 
+  }
+  
+  .custom-bg-image {
+  
+    height: 250px;
+  }
+  
+  
+  
+  
 }
