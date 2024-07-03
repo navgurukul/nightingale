@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
 }
+
 *:focus-visible,
 *:focus {
   outline: none;
@@ -43,18 +44,23 @@ h6 {
   font-weight: 600;
   line-height: 1.5 !important;
 }
+
 h2 {
   font-size: 42px;
 }
+
 h3 {
   font-size: 2rem;
 }
+
 h4 {
   font-size: 1.5rem;
 }
-h5{
+
+h5 {
   font-size: 1.1rem;
 }
+
 /* cards */
 .card {
   transition: all ease-in 0.2s;
@@ -62,6 +68,7 @@ h5{
   cursor: pointer;
   border-radius: 8px;
 }
+
 .card:hover {
   border: 2px solid var(--primary);
   box-shadow: 0px 16px 24px rgba(46, 46, 46, 0.06),
@@ -83,25 +90,32 @@ h5{
   --gray: #6c757d;
   --active: #e9f5e9;
 }
+
 /* margins */
 .mt-7 {
   margin-top: 7rem !important;
 }
+
 .mt-0\.5 {
   margin-top: 0.5rem !important;
 }
+
 .mb-6 {
   margin-bottom: 5rem;
 }
+
 .mt-6 {
   margin-top: 5rem;
 }
+
 .mx-6 {
   margin-inline: 6.5rem;
 }
+
 .mr-0\.5 {
   margin-right: 0.5rem !important;
 }
+
 .mh-10 {
   min-height: 10em !important;
 }
@@ -111,21 +125,27 @@ h5{
 .fw-bold {
   font-weight: 900;
 }
+
 .fs-1\.5 {
   font-size: 1.5rem !important;
 }
+
 .f-luis {
   font-family: Luistana !important;
 }
+
 .f-Nuni {
   font-family: Nunito Sans !important;
 }
+
 .text-black {
   color: black;
 }
+
 .text-primary {
   color: var(--primary) !important;
 }
+
 /* paddings */
 
 .px-8 {
@@ -141,18 +161,23 @@ h5{
 .w-70 {
   width: 70% !important;
 }
+
 .w-60 {
   width: 60% !important;
 }
+
 .w-80 {
   width: 80% !important;
 }
+
 .w-90 {
   width: 90% !important;
 }
+
 .w-40 {
   width: 40% !important;
 }
+
 .w-30 {
   width: 30% !important;
 }
@@ -170,6 +195,7 @@ h5{
   height: 48px;
   font-size: 1.125rem;
 }
+
 .regular-btn:hover,
 .regular-btn:active {
   background-color: var(--btnHover) !important;
@@ -178,8 +204,8 @@ h5{
 
 .dashed-btn {
   background-color: #fff;
-  border: 1px solid var(--primary)!important;
-  color: var(--primary)!important;
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
   transition: all ease-in 0.2s;
   font-size: 1.125rem;
   font-weight: 700;
@@ -190,7 +216,7 @@ h5{
 
 .dashed-btn:hover,
 .dashed-btn:active {
-  color: #fff!important;
+  color: #fff !important;
   background-color: var(--btnHover) !important;
   border: 1px solid var(--btnHover) !important;
 }
@@ -200,6 +226,7 @@ h5{
   outline: none !important;
   box-shadow: none !important;
 }
+
 .heading-hr {
   width: 6rem !important;
   border: transparent !important;
@@ -214,6 +241,7 @@ h5{
   font-size: 18px;
   line-height: 27px;
 }
+
 .body2 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -221,29 +249,48 @@ h5{
   line-height: 21px;
 }
 
+.Subtitle1 {
+  color: var(--Static-Black, #4A4A4A);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 170%;
+}
+
 @media screen and (max-width: 667px) {
   h2 {
     font-size: 24px;
   }
+
   h3 {
     font-size: 20px;
   }
+
   h4 {
     font-size: 16px;
   }
+
   body {
     font-size: 0.875rem !important;
   }
+
   .regular-btn,
   .dashed-btn {
     font-size: 0.875rem !important;
     width: 100% !important;
   }
+
   .body1 {
     font-size: 16px;
   }
-    .body2 {
+
+  .body2 {
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .Subtitle1 {
+    font-size: 14px;
+    line-height: 168%;
   }
 }
