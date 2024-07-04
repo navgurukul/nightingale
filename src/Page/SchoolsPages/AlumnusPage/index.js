@@ -13,7 +13,7 @@ function AlumnusPage({ AnumnusPageData }) {
                                 <div key={index} className="col-12 col-md-6 col-lg-5 d-flex justify-content-center">
                                     <div className="h-100" style={{ width: "82%" }}>
                                         <p className="my-2 body1" style={{ lineHeight: "30.0px" }}>{item.bioData}</p>
-                                        <div class="d-flex justify-content-start mt">
+                                        <div class="d-flex justify-content-start ml-3 mt-4">
                                             <div>
                                                 <img src={item.img} className="alumnus-img" />
                                             </div>
