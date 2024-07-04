@@ -1,7 +1,7 @@
 import programBgImg from "../Programing/assets/bgimg.png";
 import Rani from "./assets/Rani.png";
 import BhagyashreeKarale from "./assets/BhagyashreeKarale.png";
-import PDFSoPCurriculum from "./assets/SoPCurriculum.pdf";
+
 export const whoForPoints = [
     { point: "Youth above 16 years of age from underprivileged or low-income communities who can't afford expensive college education" },
     { point: "No prior education needed: Our students have been school and college dropouts, 10th or 12th pass as well as degree holders such as BSc, BTech who could not get jobs" },
@@ -62,7 +62,7 @@ export const program1Data = [
 export const DownloadData = [
     {
         id: 1,
-        pdfFile:PDFSoPCurriculum
+        pdfFile:"/Pdfs/SoPCurriculum.pdf"
     }
 ];
 
