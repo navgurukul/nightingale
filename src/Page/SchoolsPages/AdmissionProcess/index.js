@@ -29,7 +29,7 @@ const AdmissionProcess = ({ stages }) => {
           <div className="container-fluid overflow-hidden">
             <div className="row">
               {stages.map((stage, index) => (
-                <div className="col-sm-12 col-lg-3 col-md-6" key={index} >
+                <div className="col" key={index} >
                   <div className="">
                     <div
                       className="input d-flex flex-column justify-content-center align-items-right text-left w-70"

@@ -95,6 +95,7 @@ export const AnumnusPageData = [
         img: Rani,
         linkdin: "https://www.linkedin.com/in/rani-pandit-108102158/"
     },
+    
 ]
 
 
