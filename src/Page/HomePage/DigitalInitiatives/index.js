@@ -8,7 +8,7 @@ import { FiExternalLink } from 'react-icons/fi';
 
 function Digitallnitiatives() {
   return (
-    <div className="container mt-3">
+    <div className="container mt-4">
       <div className="row">
         {/* <div className="col-md-4 ">
           <img src={logo1} alt="Logo 1" className="img-fluid"  />

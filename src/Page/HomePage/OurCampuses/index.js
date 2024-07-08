@@ -34,7 +34,7 @@ function OurCampuses() {
     return (
         <div className="container campus-main-page">
             <h3 className="text-center media-font">Our Campuses</h3>
-            <div className="row g-0" style={{ marginTop: "40px" }}>
+            <div className="row g-0 mt-4">
                 {Object.keys(data).map((campusName) => {
                     const campus = data[campusName];
                     const displayName = campusName.split(" ")[0];
@@ -48,8 +48,7 @@ function OurCampuses() {
 
                         return (
                             <div 
-                                className="col-sm-3 mb-3 mb-sm-0" 
-                                style={{ marginTop: "32px" }} 
+                                className="col-sm-3 mb-4 mt-4 mb-sm-0" 
                                 key={campusName} 
                                 onClick={() => { history.push(`/campus/${displayName}`) }}
                             >

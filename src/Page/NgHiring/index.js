@@ -5,8 +5,8 @@ function NgHiring() {
   return (
     <main >
       <section className="container align-items-center d-flex flex-column  justify-content-center w-100">
-        <h3 className="section-head mt-3 mt-md-5 mb-3">Hire from Us</h3>
-        <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3">
+        <h3 className="section-head mt-3 mt-md-5 mb-4">Hire from Us</h3>
+        <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center ">
           <p className="section-para body1  w-100" >
             Through harnessing the power of education, We bridge the learning 
             gap of students from marginalized communities to emerge as skilled,
@@ -16,7 +16,7 @@ function NgHiring() {
             your Diversity, Equity, and Inclusion (DEI) goals.
           </p>
         </div>
-        <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center  mt-3">
+        <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center  mt-2">
           <p className="section-para body1  w-100" >
             By hiring from us, You are achieving : 
             <ul className="ml-4">
@@ -43,7 +43,7 @@ function NgHiring() {
             </ul>
           </p>
         </div>
-         <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center  mt-2 ">
+         <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center  mt-2 mb-4 ">
           <p className="section-para body1  w-100" >
               Contact us directly at{" "}
               <a href="mailto:tnp@navgurukul.org" className="link">
@@ -60,7 +60,7 @@ function NgHiring() {
           >
             <button
               type="button"
-              class="btn mb-5 mt-32 f-Nuni fw-bold py-2 regular-btn align-self-center"
+              class="btn mb-5  f-Nuni fw-bold py-2 regular-btn align-self-center px-4 py-2"
               style={{width : "360px"}}
             >
               Download Placement Brief

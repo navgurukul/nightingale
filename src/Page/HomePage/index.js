@@ -118,7 +118,7 @@ function Home() {
           </div>
         </section>
 
-        <section className=" d-flex flex-column align-items-center our-initiatives">
+         <section className=" d-flex flex-column align-items-center our-initiatives">
           <h3 className="text-center media-font ">Our Schools</h3>
 
           <div className="container mt-4">
@@ -129,8 +129,9 @@ function Home() {
                     <img src={img1} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Programming</h4>
-                      <p className="card-text font body1  mb-3">
-                        Fully-funded course in software engineering with guaranteed jobs
+                      <p className="card-text mb-3">
+                        Fully-funded course in software engineering with
+                        guaranteed jobs
                       </p>
                     </div>
                   </Link>
@@ -143,7 +144,7 @@ function Home() {
                     <img src={img2} className="card-image " alt="Placeholder Image" />
                     <div className="card-body text-black ">
                       <h4 className="card-title mt-4">School of Design</h4>
-                      <p className="card-text font body1 mb-3">
+                      <p className="card-text mb-3">
                         Fully-funded course in graphic design with guaranteed jobs
                       </p>
                     </div>
@@ -159,7 +160,7 @@ function Home() {
                     <img src={img3} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Business</h4>
-                      <p className="card-text font body1 mb-3">
+                      <p className="card-text mb-3">
                         Fully funded course in Business CRM with guaranteed jobs
                       </p>
                     </div>
@@ -173,7 +174,7 @@ function Home() {
                     <img src={img4} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Finance</h4>
-                      <p className="card-text font body1 mb-3">
+                      <p className="card-text mb-3">
                         Fully funded course in Finance with guaranteed jobs
                       </p>
                     </div>
@@ -183,6 +184,7 @@ function Home() {
             </div>
           </div>
         </section>
+
 
         <section className=" d-flex flex-column align-items-center our-initiatives">
           <h3 className="text-center media-font ">Digital Initiatives</h3>
@@ -194,7 +196,7 @@ function Home() {
         </section>
 
         <section className=" d-flex flex-column align-items-center our-initiatives">
-          <h3 className="text-center media-font ">
+          <h3 className="text-center media-font mt-4">
             Key Facilities at NavGurukul
           </h3>
           <KeyFacilities />
@@ -214,7 +216,7 @@ function Home() {
           <h3>
           Alumni <span className="BackColor"> Stories</span>
           </h3>
-          <div className="container ">
+          <div className="container mt-4">
             <AlumniStories />
           </div>
         </section>
