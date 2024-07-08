@@ -31,6 +31,9 @@ function TeamPage() {
       )
       .map((key) => team[key]);
   };
+   const openLinkInNewTab = (url) => {
+    window.open(url, "_blank", "noopener noreferrer");
+  };
 
   return (
     <main className="team-page">
@@ -54,10 +57,15 @@ function TeamPage() {
               <button
                 type="button"
                 className="btn regular-btn w-100"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open("https://recruiterflow.com/navgurukul/jobs", "_blank");
-                }}
+                // onClick={(e) => {
+                //   e.preventDefault();
+                //   window.open("https://recruiterflow.com/navgurukul/jobs", "_blank");
+                // }}
+                 onClick={(e) => {
+                  openLinkInNewTab(
+                    "https://recruiterflow.com/navgurukul/jobs"
+                    )
+                }} 
               >
                 Careers at Navgurukul
               </button>
@@ -67,12 +75,11 @@ function TeamPage() {
                 type="button"
                 className="btn section-para dashed-btn w-100"
                 onClick={(e) => {
-                  e.preventDefault();
-                  window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform",
-                    "_blank"
-                  );
-                }}
+                  openLinkInNewTab(
+                    "https://recruiterflow.com/navgurukul/jobs/112"
+                    )
+                }} 
+                
               >
                 Volunteer with us
               </button>
