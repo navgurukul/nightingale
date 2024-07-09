@@ -2,6 +2,10 @@
 .container-of-text {
     width: 100%;
  }
+.description{
+    position: relative;
+    right: 15px;
+}
  @media (min-width:320px) {
     .container-of-text {
         width: 100%;
