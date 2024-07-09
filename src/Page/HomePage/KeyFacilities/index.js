@@ -6,7 +6,7 @@ import verifiedimg from '../assets/verified.png'
 function KeyFacilities() {
   return (
      
-    <div className="container mt-3 mb-4">
+    <div className="container mt-4 mb-4">
       <div className="row">
         <div className="col-md-6">
           <img

@@ -31,6 +31,9 @@ function TeamPage() {
       )
       .map((key) => team[key]);
   };
+   const openLinkInNewTab = (url) => {
+    window.open(url, "_blank", "noopener noreferrer");
+  };
 
   return (
     <main className="team-page">
@@ -38,7 +41,7 @@ function TeamPage() {
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
           <h5 className="section-head mb-2">Our team</h5>
           <div className="title-line"></div>
-          <div className="team-page-content mt-3">
+          <div className="team-page-content mt-4">
             <p className="section-para ptag">
               We are a collective of full-timers and volunteers who form the
               backbone of a movement aiming to bring affordable education to
@@ -49,46 +52,37 @@ function TeamPage() {
               non-binary.
             </p>
           </div>
-          <div className="container mt-3 w-lg-20 w-100">
-            <div className="row justify-content-center">
-              <div className="col-lg-3 mb-3 mb-lg-0" >
-                <button
-                  type="button"
-                  className="btn regular-btn w-100"
-                  style={{
-                    maxWidth: "211px",
-                    minWidth: "150px",
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://recruiterflow.com/navgurukul/jobs",
-                      "_blank"
-                    );
-                  }}
-                >
-                  Careers at Navgurukul
-                </button>
-              </div>
-              <div className="col-lg-3 mt-3 mt-lg-0">
-                <button
-                  type="button"
-                  className="btn section-para dashed-btn w-100"
-                  style={{
-                    maxWidth: "211px",
-                    minWidth: "150px",
-                  }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform",
-                      "_blank"
-                    );
-                  }}
-                >
-                  Volunteer with us
-                </button>
-              </div>
+          <div className="row justify-content-center gx-0 gx-lg-3 mt-4">
+            <div className="col-12 col-lg-auto mb-3 mb-lg-0 button-container">
+              <button
+                type="button"
+                className="btn regular-btn w-100"
+                // onClick={(e) => {
+                //   e.preventDefault();
+                //   window.open("https://recruiterflow.com/navgurukul/jobs", "_blank");
+                // }}
+                 onClick={(e) => {
+                  openLinkInNewTab(
+                    "https://recruiterflow.com/navgurukul/jobs"
+                    )
+                }} 
+              >
+                Careers at Navgurukul
+              </button>
+            </div>
+            <div className="col-12 col-lg-auto mt-3 mt-lg-0 button-container">
+              <button
+                type="button"
+                className="btn section-para dashed-btn w-100"
+                onClick={(e) => {
+                  openLinkInNewTab(
+                    "https://recruiterflow.com/navgurukul/jobs/112"
+                    )
+                }} 
+                
+              >
+                Volunteer with us
+              </button>
             </div>
           </div>
         </section>
@@ -98,7 +92,7 @@ function TeamPage() {
               <div>
                 <div className="tabs mb-4 text-left">
                   <h5 className="team-heading">Team</h5>
-                  <ul className="nav nav-tabs flex-column">
+                  <ul className="nav nav-tabs  flex-column">
                     {[
                       "Core Team",
                       "Ghar",

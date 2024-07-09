@@ -250,7 +250,7 @@ h5 {
 }
 
 .Subtitle1 {
-  color: var(--Static-Black, #4A4A4A);
+  /* color: var(--Static-Black, #4A4A4A); */
   font-size: 18px;
   font-style: normal;
   font-weight: 700;

@@ -69,10 +69,14 @@
 }
 
 .nav-item.active {
-  color: red;
-  border-bottom: 2px solid red;
+  color: #EB5F42;
+  border-bottom: 2px solid #EB5F42;
 }
 
+.nav-item.active .nav-link {
+  color: #EB5F42 ;
+  font-weight: bold;
+}
 .team-info-cards-container {
   transition: all ease-in 0.2s;
   margin-top: 20px;
@@ -131,9 +135,7 @@
   box-sizing: content-box;
   object-fit: cover;
 }
-.team-info-card-img:hover {
-  border: 3px solid red;
-}
+
 
 .team-info-card-title {
   line-height: 28px;

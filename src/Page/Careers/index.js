@@ -8,8 +8,8 @@ function Careers() {
   return (
     <main >
       <section className="container align-items-center d-flex flex-column  justify-content-center w-100 mb-6">
-        <h3 className="section-head mt-3 mt-md-5 mb-3">Careers</h3>
-        <div className=" col-12 p-0 col-md-8 d-flex align-items-center justify-content-center mb-2 mt-3">
+        <h3 className="section-head mt-4 mt-md-5 mb-4">Careers</h3>
+        <div className=" col-12 p-0 col-md-8 d-flex align-items-center justify-content-center ">
           <p className=" body1  w-100" >
             At NavGurukul,  we are committed to reshaping the educational landscape for 
             marginalized communities in India. At the heart of our work culture lies a belief
@@ -18,7 +18,7 @@ function Careers() {
             encourage transparency, and drive meaningful change.
           </p>
         </div>
-        <div className=" col-12 p-0 col-md-8  d-flex align-items-center justify-content-center  mt-3">
+        <div className=" col-12 p-0 col-md-8  d-flex align-items-center justify-content-center  mt-2">
           <p className="body1  w-100" >
             Our team enjoys a range of perks that include:
             <ul className="ml-4">
@@ -50,11 +50,11 @@ function Careers() {
         </div>
         
         
-        <ul className="d-flex flex-wrap gap-responsive list-unstyled mt-4 mb-6 ">
+        <ul className="d-flex flex-wrap gap-responsive list-unstyled mt-3 mb-6 ">
             <li className="col-12 col-md-auto mb-2">
             <button
                 type="button"
-                className="btn regular-btn w-100"
+                className="btn regular-btn w-100 px-4 py-2"
                 style={{ height: "48px", width: "153px"}}
                 onClick={(e) => {
                   openLinkInNewTab(
@@ -68,7 +68,7 @@ function Careers() {
             <li className="col-12 col-md-auto mb-2">
             <button
                 type="button"
-                className="btn regular-btn w-100"
+                className="btn regular-btn w-100 px-4 py-2"
                 style={{ height: "48px", width: "181px"}}
                   onClick={(e) => {
                     openLinkInNewTab(

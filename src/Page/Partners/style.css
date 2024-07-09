@@ -16,6 +16,22 @@
   justify-content: center; 
 }
 
+.card:hover, .card:focus, .card:active {
+  transform: none !important; 
+  box-shadow: none !important; 
+  cursor: default !important;
+}
+
+.card *:hover, 
+.card *:focus, 
+.card *:active {
+  transform: none !important; 
+  box-shadow: none !important; 
+  background-color: inherit !important;
+  cursor: default !important;
+}
+
+
 .card.h-367 {
   height: 367px;
 }
