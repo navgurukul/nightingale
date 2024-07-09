@@ -1,6 +1,6 @@
 
 import designImg from '../SchoolsOfDesign/assets/designImg.png';
-import SoDesignPDF from "./assets/SoDCurriculum.pdf"
+
 export const JobAssistanceData = [
    {
        JobAssistanceContent: "Students will get 100% assistance for securing jobs in general Graphic designer roles and depending on individual may also specialize for specific roles of Illustrator, Video Editor, Motion Graphics etc."
@@ -68,6 +68,6 @@ export const BgroundImg=[
 export const DownloadData=[
     {
         id:1,
-        pdfFile:SoDesignPDF
+        pdfFile:"/Pdfs/SoDCurriculum.pdf"
     }
 ]
