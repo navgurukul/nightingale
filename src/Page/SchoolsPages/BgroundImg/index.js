@@ -1,45 +1,48 @@
 import React from 'react';
-
+import "./style.css";
 function BackgroundImg({ backgroundData }) {
-
     return (
-
         <>
             {backgroundData.map((data, index) => (
                 <div
                     key={index}
-                    className="col-sm-12 col-lg-12 col-md-12"
+                    className="col-12"
                     style={{
                         backgroundImage: `url(${data.urlImg})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         minHeight: '50vh',
                         display: 'flex',
-                        justifyContent: 'top',
+                        justifyContent: 'center',
                         alignItems: 'center',
                         width: '100%'
                     }}
                 >
                     <div className='container-fluid'>
                         <div className='row'>
-                            <div className='col-sm-6 col-md-10 col-lg-9 col-xs-12' style={{ margin: "auto", marginTop: "80px", color: data.color }}>
-                                <h2 style={{ marginBottom: "16px", color: data.color }}>
-                                    <span className="BackColor" style={{ color: data.color }}>{data.title}</span>
+                            <div className='col-12 col-sm-10 col-md-9 col-lg-8 mx-auto mt-5 ' style={{ color: data.color}}>
+                                <h2 style={{ color: data.color }}>
+                                    <span>{data.title}</span>
                                 </h2>
-                                <span className="li-points">
-                                    {data.text.split(',').map((item, index) => (
-                                        <span style={{ fontSize: "18px" }} key={index}>{item}<br /></span>
-                                    ))}
-                                </span>
+                                <div className='container-of-text'>
+                                    <p className='body1' style={{ color: data.color, lineHeight: "30px" }}>{data.text}</p>
+                                    <p className="Subtitle1 " style={{ whiteSpace: "pre-wrap" }}>{data.text2}</p>
+                                </div>
+                                {data.buttonText && (
+                                    <a href="https://admissions.navgurukul.org/" target="_blank" rel="noopener noreferrer">
+                                        <button type="button"
+                                            className="btn regular-btn mt-1"
+                                            style={{ height: "48px", width: "189px" }}
+                                        >{data.buttonText}</button>
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>
                 </div>
             ))
             }
-
         </>
     );
 }
 export default BackgroundImg;
-

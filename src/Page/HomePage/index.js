@@ -12,12 +12,23 @@ import KeyFacilities from "./KeyFacilities";
 import Digitallnitiatives from "./DigitalInitiatives";
 import bannerimg1 from "./assets/Eternal_university-removebg-preview 1.svg";
 import bannerimg2 from "./assets/Sri badrika asharam.svg";
+import { useState } from "react";
+import OurCampuses from "./OurCampuses";
+import AlumniStories from "./AlumniStories";
+import PlayBtn from  "./assets/playicon.png";
 
 function Home() {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handlePlayButtonClick = () => {
+    setShowVideo(true);
+  };
+
   const history = useHistory();
   const screenWidth = window.innerWidth;
+
   return (
-    <> 
+    <>
       <div className="row align-items-center centered-container">
         <div className="d-none d-md-flex justify-content-end">
           <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
@@ -42,57 +53,72 @@ function Home() {
           </button>
         </div>
       </div>
-
-      <div className="navgurukul-homepage  ">
+      <div className="navgurukul-homepage">
+        <div className="container" style={{marginTop:"80px"}}> 
         <div className="row">
-          <div className="col-md-1"></div>
-          <div className="col-md head-div ">
-            <h2 className=" heading-line ">
-              The <span className="text-primary">Gurukul</span> for the <br />
-              <span className="BgColor"> New Age India</span> and its New
-              Generation{" "}
-            </h2>{" "}
-            <p className="font para-line">
-              We are a non-profit dedicated to bring affordable tech education to
-              underprivileged girls in India.{" "}
-            </p>
-          </div>
-          <div className="col-md-1"></div>
-          <div className="col-md-6" style={{ padding: screenWidth > 932 && "0px" }}>
-            <img
-              src={require("./assets/student.jpg").default}
-              className="home-image"
-            />
-          </div>
+           <div className="col-md-12" style={{ textAlign: "center"}}>
+              <h2 className=" heading-line ">
+                The <span className="text-primary">Gurukul</span> for the <span className="BgColor"> New Age India  {" "} </span><span style={{marginLeft:"10px"}}>and </span> 
+                <br></br>
+                 its New
+                Generation{" "}
+              </h2>{" "}
+              <p className="font body1">
+                We are a non-profit dedicated to bring affordable tech education to<br></br>
+                underprivileged girls in India.{" "}
+              </p>
+              </div>
+               <div className="col-md-12" style={{ padding: screenWidth > 932 && "0px" }}>
+                 
+                    {!showVideo ? (
+                      <div className="custom-bg-image" onClick={handlePlayButtonClick} >
+                        <div onClick={handlePlayButtonClick}>
+                          <img src={PlayBtn} alt="Play Icon" className="play-button" />
+                        </div>
+                      </div>
+                    ) : (
+                    <div className="custom-video-container">
+                       <iframe
+                          className="bg-video"
+                          src="https://www.youtube.com/embed/NC2ymm6Sots?autoplay=1"
+                          frameBorder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                         title="Embedded Video"
+                        ></iframe>
+                     </div>
+                   )}
+               
+             </div>
+           </div>
         </div>
-
         <section className="media-scroll-section d-flex flex-column justify-content-center">
           <div className="container">
             <div className="row w-100">
               <div className="col-lg-3 col-md-2 col-sm-6 ">
                 <h3>890+</h3>
-                <p>students placed across various industries in tech</p>
+                <p  className="font body1">students placed across various industries in tech</p>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-6">
                 <h3>₹2.8 LPA</h3>
-                <p>avg. salary secured by students, the highest being 8 LPA</p>
+                <p className="font body1">avg. salary secured by students, the highest being 8 LPA</p>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-6">
                 <h3>95%</h3>
-                <p>
+                <p className="font body1">
                   of our student strength consists of girls from marginalized
                   communities
                 </p>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-6">
                 <h3>₹23+ Crore</h3>
-                <p>collectively earned annually by our Alumni</p>
+                <p className="font body1">collectively earned annually by our Alumni</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className=" d-flex flex-column align-items-center our-initiatives">
+         <section className=" d-flex flex-column align-items-center our-initiatives">
           <h3 className="text-center media-font ">Our Schools</h3>
 
           <div className="container mt-4">
@@ -159,61 +185,25 @@ function Home() {
           </div>
         </section>
 
+
         <section className=" d-flex flex-column align-items-center our-initiatives">
           <h3 className="text-center media-font ">Digital Initiatives</h3>
           <Digitallnitiatives />
         </section>
 
-      <section className=" d-flex flex-column align-items-center our-initiatives">
-        <h3 className="text-center media-font ">
-          Key Facilities at NavGurukul
-        </h3>
-        <KeyFacilities />
-      </section>
-      {/* <section className="media-scroll-section   d-flex flex-column justify-content-center">
-        <h3 className="align-self-center media-font ">
-          In the <span className="BackColor">Media</span>
-        </h3>
-        <Slider />
-      </section> */}
-
-        <section className="our-partners text-center  d-flex flex-column ">
-          <h3 className="align-self-center ">
-            Our <span className="BackColor">Partners</span>
-          </h3>
-          <PartnerSlider />
-
-          <div className="d-flex flex-column align-items-center justify-content-center align-items-center mar-3">
-            <h4 className=" "> Bring a change! </h4>
-            <div className="d-flex justify-content-start">
-              <button
-                type="button"
-                className= "btn regular-btn mx-3  fixed-dimensions"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
-                }}
-              >
-                Partner with us
-              </button>
-
-              <button
-                type="button"
-                className ="btn regular-btn fixed-dimensions "
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
-                    "_blank"
-                  );
-                }}
-              >
-                CSR Enquiries
-              </button>
-            </div>
-          </div>
+        <section className=" d-flex flex-column align-items-center our-initiatives">
+          <OurCampuses/>
         </section>
 
+        <section className=" d-flex flex-column align-items-center our-initiatives">
+          <h3 className="text-center media-font mt-4">
+            Key Facilities at NavGurukul
+          </h3>
+          <KeyFacilities />
+        </section>
+
+        <Slider />
+          
         <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
           <h3>
             Our <span className="BackColor">Supporters</span>
@@ -222,9 +212,20 @@ function Home() {
             <SupporterSlider />
           </div>
         </section>
+        <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
+          <h3>
+          Alumni <span className="BackColor"> Stories</span>
+          </h3>
+          <div className="container mt-4">
+            <AlumniStories />
+          </div>
+        </section>
       </div>
     </>
   );
 }
 
 export default Home;
+
+
+

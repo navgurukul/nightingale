@@ -14,6 +14,9 @@
 .ng-hiring-page a:hover {
   color: var(--btnHover);
 }
+.body1{
+  line-height:30.6px;
+}
 .link{
   color: #EB5F42;
 }
@@ -22,6 +25,9 @@
   text-decoration: none;
 
 }
+  .mt-32 {
+    margin-top: 32px !important; /* You can use px, rem, or any other unit */
+  }
 .hring-card-img {
   border-radius: 50%;
   width: 120px;

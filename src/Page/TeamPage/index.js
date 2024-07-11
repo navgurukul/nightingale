@@ -1,55 +1,18 @@
-
 import React, { useState, useEffect } from "react";
-import "./styles.css";
 import axios from "axios";
-import Tippy from "@tippyjs/react";
 import LinkedIn from "../Components/LinkedIn";
-import Twitter from "../Components/Twitter";
-
-function shuffleObject(obj) {
-  let newObj = {};
-  var keys = Object.keys(obj);
-  keys.sort(() => Math.random() - 0.5);
-  keys.forEach((k) => {
-    newObj[k] = obj[k];
-  });
-  return newObj;
-}
-
-function Popup(props) {
-  return (
-    <div className="description-popup">
-      <div className="d-flex align-items-center">
-        <p className="fw-bold mt-3 mr-3">{props.Name}</p>
-        {props.twitter ? (
-          <a href={props.twitter} target="_blank" rel="noopener noreferrer">
-            <Twitter />
-          </a>
-        ) : null}
-      </div>
-      <p
-        className="mt-0"
-        style={
-          props.Content === "Awaiting content from team member"
-            ? { color: "grey" }
-            : {}
-        }
-      >
-        {props.Content}
-      </p>
-    </div>
-  );
-}
+import "./styles.css";
 
 function TeamPage() {
-  const [team, setTeam] = useState([]);
+  const [team, setTeam] = useState({});
   const [selectedTeam, setSelectedTeam] = useState("Core Team");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios
-      .get(`https://navgurukul.github.io/tarabai-shinde/data/ng_team.json`)
+      .get("https://navgurukul.github.io/tarabai-shinde/data/ng_team.json")
       .then((res) => {
+        console.log("Fetched team data:", res.data);
         setTeam(res.data);
         setLoading(false);
       })
@@ -57,27 +20,28 @@ function TeamPage() {
         console.error("Error fetching team data:", error);
         setLoading(false);
       });
-  }, [selectedTeam]);
+  }, []);
 
-  console.log(loading);
   const filterTeam = (team) => {
-    return Object.keys(team).filter((item) => {
-      console.log(selectedTeam, "team");
-      return (
-        team[item].Association !== "Volunteer" &&
-        team[item].Team === selectedTeam
-      );
-    });
+    return Object.keys(team)
+      .filter(
+        (item) =>
+          team[item].Association !== "Volunteer" &&
+          team[item].Team === selectedTeam
+      )
+      .map((key) => team[key]);
+  };
+   const openLinkInNewTab = (url) => {
+    window.open(url, "_blank", "noopener noreferrer");
   };
 
   return (
     <main className="team-page">
       <div className="team-content">
         <section className="team-section d-flex flex-column justify-content-center align-items-center">
-          <h3 className="section-head mb-2">Our team</h3>
+          <h5 className="section-head mb-2">Our team</h5>
           <div className="title-line"></div>
-
-          <div className="team-page-content">
+          <div className="team-page-content mt-4">
             <p className="section-para ptag">
               We are a collective of full-timers and volunteers who form the
               backbone of a movement aiming to bring affordable education to
@@ -88,37 +52,33 @@ function TeamPage() {
               non-binary.
             </p>
           </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-md team-button-container d-flex justify-content-center align-items-center col-sm-12">
-                <button
-                  type="button"
-                  className="btn regular-btn"
-                  style={{ height: "48px", width: "211px" }}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://recruiterflow.com/navgurukul/jobs",
-                      "_blank"
-                    );
-                  }}
-                >
-                  Careers at Navgurukul
-                </button>
-                <button
-                  type="button"
-                  className="btn section-para btn-primary mx-3 my-2 dashed-btn"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://docs.google.com/forms/d/e/1FAIpQLScHvysncnhJkSMtpdpGl_uPhJWlE81hp6l5m2mvuE1hoxX-dQ/viewform",
-                      "_blank"
-                    );
-                  }}
-                >
-                  Volunteer with us
-                </button>
-              </div>
+          <div className="row justify-content-center gx-0 gx-lg-3 mt-4">
+            <div className="col-12 col-lg-auto mb-3 mb-lg-0 button-container">
+              <button
+                type="button"
+                className="btn regular-btn w-100"
+                onClick={(e) => {
+                openLinkInNewTab(
+                  "https://recruiterflow.com/navgurukul/jobs"
+                  )
+                }} 
+              >
+                Careers at Navgurukul
+              </button>
+            </div>
+            <div className="col-12 col-lg-auto mt-3 mt-lg-0 button-container">
+              <button
+                type="button"
+                className="btn section-para dashed-btn w-100"
+                onClick={(e) => {
+                  openLinkInNewTab(
+                    "https://recruiterflow.com/navgurukul/jobs/112"
+                    )
+                }} 
+                
+              >
+                Volunteer with us
+              </button>
             </div>
           </div>
         </section>
@@ -128,7 +88,7 @@ function TeamPage() {
               <div>
                 <div className="tabs mb-4 text-left">
                   <h5 className="team-heading">Team</h5>
-                  <ul className="nav nav-tabs flex-column">
+                  <ul className="nav nav-tabs  flex-column">
                     {[
                       "Core Team",
                       "Ghar",
@@ -142,104 +102,52 @@ function TeamPage() {
                     ].map((teamName) => (
                       <li
                         key={teamName}
-                        className={`nav-item team-list-item ${
-                          selectedTeam === teamName ? "active" : ""
-                        }`}
-                        onClick={() => {
-                          console.log(`Clicked on ${teamName}`);
-                          setSelectedTeam(teamName);
-                        }}
+                        className={`nav-item team-list-item ${selectedTeam === teamName ? "active" : ""
+                          }`}
+                        onClick={() => setSelectedTeam(teamName)}
                       >
-                        <span className="nav-link text-left">{teamName}</span>
+                        <span className="nav-link text-left mt-2">{teamName}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
-              <div className="team-container-list">
-                <h5 className="team-heading">{selectedTeam}</h5>
-                <div className="row team-container mt-4">
+              <div className="container-fluid w-100 mt-4">
+                <h5 className="team-heading mb-2" style={{ position: "relative", bottom: "30px" }}>{selectedTeam}</h5>
+                <div className="row g-5">
                   {loading ? (
                     <p>Loading...</p>
-                  ) : Object.keys(shuffleObject(team)).length ? (
-                    filterTeam(team).map((item, index) => {
-                      if (
-                        team[item].Photo &&
-                        team[item].Name &&
-                        team[item].Content &&
-                        team[item].Designation &&
-                        team[item].Association !== "Not Active" &&
-                        team[item].Association !== "null"
-                      ) {
-                        return (
-                          <Tippy
-                            key={index}
-                            animation="fade"
-                            interactive={true}
-                            duration={[500, 0]}
-                            placement={
-                              window.screen.availWidth < 650 ? "bottom" : "right"
-                            }
-                            content={
-                              <Popup
-                                Name={
-                                  team[item].Name || "Awaiting Member's Name"
-                                }
-                                Content={
-                                  team[item].Content ||
-                                  "Awaiting content from team member"
-                                }
-                                linkedin={team[item].Linkedin}
-                                twitter={team[item].Twitter}
-                              />
-                            }
-                          >
-                            <div className="Card-content flex flex-column col-12 col-md-4 mb-4">
-                              <div className="card card-details">
-                                <img
-                                  className="card-img-top team-info-card-img img-card-hover"
-                                  src={team[item].Photo}
-                                  alt={team[item].Name.substring(
-                                    0,
-                                    team[item].Name.indexOf(" ")
-                                  )}
-                                />
-                                <p
-                                  style={team[item].Name ? {} : { color: "grey" }}
-                                  className="team-info-card-title"
-                                >
-                                  {team[item].Name
-                                    ? team[item].Name
-                                    : "Awaiting Member's Name"}
-                                </p>
-                                <p
-                                  style={
-                                    team[item].Designation ? {} : { color: "grey" }
-                                  }
-                                  className="section-para"
-                                >
-                                  {team[item].Designation ||
-                                    "Awaiting description from team member"}
-                                </p>
-                                {team[item].Linkedin && (
-                                  <a
-                                    href={team[item].Linkedin}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    <LinkedIn />
-                                  </a>
-                                )}
-                              </div>
-                            </div>
-                          </Tippy>
-                        );
-                      } else {
-                        return null;
-                      }
-                    })
                   ) : (
-                    <p>No team members found.</p>
+                    filterTeam(team).map((member, index) =>
+                      <div key={index} className="col-lg-4 col-md-6">
+                        <div className="team-info-card ">
+                          <div className="d-flex justify-content-center">
+                            {member.Photo && (
+                              <img
+                                className="team-info-card-img"
+                                src={member.Photo}
+                                alt={member.Name}
+                              />
+                            )}
+                          </div>
+                          <p className="team-info-card-title body" style={{ color: member.Name ? "inherit" : "grey" }}>
+                            {member.Name || "Awaiting Member's Name"}
+                          </p>
+                          <p className="team-info-card-designation " style={{ color: member.Designation ? "inherit" : "grey" }}>
+                            {member.Designation || "Awaiting description from team member"}
+                          </p>
+                          {member.Linkedin && (
+                            <a
+                              href={member.Linkedin}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <LinkedIn />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    )
                   )}
                 </div>
               </div>
@@ -252,4 +160,5 @@ function TeamPage() {
 }
 
 export default TeamPage;
+
 

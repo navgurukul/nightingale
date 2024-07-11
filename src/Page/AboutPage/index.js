@@ -22,40 +22,40 @@ function AboutPage() {
   return (
     <main className="about-page">
       <div className="page-content">
-        <section className="page-section d-flex flex-column mb-0">
-          <h3 className="section-head mb-3">Who We Are</h3>
+        <section className="page-section d-flex flex-column ">
+          <h3 className="section-head mb-4">Who We Are</h3>
 
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
-            <p className="w-50 section-para">
+            <p className="w-50 body1">
               Founded in <span className="number">2016</span> by graduates of Harvard and IIT-Delhi,
               NavGurukul is a not-for-profit organization with a mission to create access to aspirational
               careers for students from marginalized communities.Our flagship residential program runs on
               fully funded <span className="number">18-month courses</span> in programming, finance,
               business & design.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            <p className="w-50 mt-3 body1 mb-0">
               Currently, we are empowering <span className="number">1145+ students</span> in our fully
               funded seven residential centers across various states in India. So far, we have placed
               around <span className="number">830+ students</span> with tech and
               non-tech jobs in various IT companies, Small-medium enterprises, and product startups.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            <p className="w-50 mt-3 body1mb-0">
               NavGurukul is named after the blend of 'new' (Nav) and (Gurukul) meaning, the
               education system in ancient India where shishya ('students' or 'disciples') lived
               near or with the guru in the same house for a period of time. Our approach blends
               modern and traditional learning in a way that is self-directed and uses student-centered
               learning strategies reminiscent of India's historical educational systems.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            <p className="w-50 mt-3 body1 mb-0">
               Besides the residential program, we have digital initiatives such
               as Meraki and Zuvy.
                {/* and Samyarth. */}
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            <p className="w-50 mt-3 body1 mb-0">
               Through <span className="number">Meraki,</span> we work with students from government schools and ITIs
               through an online offering to help students learn basic English, touch typing, and programming.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            <p className="w-50 mt-3 body1 mb-0">
               <span className="number">Zuvy</span> is our digital initiative that aims to provide degrees through three modes:
               residential, online, and day boarding. It supports students in getting the best
               jobs in the software industry, with a strong focus on problem-solving, system design,
@@ -69,10 +69,10 @@ function AboutPage() {
           </div>
         </section>
 
-        <section className="page-section d-flex flex-column mb-0 mt-5">
-          <h3 className="section-head mb-3 mt-5">Why do We do the Work?</h3>
+        <section className="page-section d-flex flex-column ">
+          <h3 className="section-head mb-4 mt-80">Why do We do the Work?</h3>
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
-            <p className="w-50 section-para">
+            <p className="w-50 body1 ">
               Despite women comprising nearly half of India's population, only 19.2% of € N
               ing students are female, as reported by the All India Survey on Higher
               Education. -21 [1]. This stark disparity is even more critical as we navigate
@@ -84,7 +84,7 @@ function AboutPage() {
               social agency, which we believe will generate significant, measurable
               benefits for their families, society, and the nation at large.
             </p>
-            <p className="w-50 mt-3 section-para mb-0">
+            <p className="w-50 mt-3 body1 mb-0">
               Our work derives its strength from pillars of equity and empowerment with a
               major focus on Gender, Inclusivity, and Innovation.
               <ul className="list-element">
@@ -108,9 +108,9 @@ function AboutPage() {
           </div>
         </section>
         <section className="page-section d-flex flex-column">
-          <h3 className="section-head mb-3 mt-5">Our Vision</h3>
+          <h3 className="section-head mb-4 mt-80">Our Vision</h3>
           <div className="about-content d-flex flex-column justify-content-center mb-0 align-items-center">
-            <p className="w-50 section-para mb-0">
+            <p className="w-50 body1 ">
               NavGurukul envisions an equitable future where every student has access to quality
               education, especially those from the bottom of the economic pyramid. We believe in
               fostering agency among our students, enabling them to chart their own professional paths
@@ -120,10 +120,10 @@ function AboutPage() {
           </div>
         </section>
 
-        <section className="page-section d-flex flex-column mt-5">
-          <h3 className="section-head mb-3 mt-5">Our Values</h3>
+        <section className="page-section d-flex flex-column ">
+          <h3 className="section-head mb-4 mt-80">Our Values</h3>
           <div className="about-content d-flex flex-column justify-content-center align-items-center">
-            <p className="w-50 section-para mb-0">
+            <p className="w-50 body1 mb-0">
               To guide our journey of empowering students from marginalized communities, we have
               realized an Acronym: “VOLITION,” which translates to the power of choosing and
               determining. By following our value system we want every student to have the power to
@@ -137,7 +137,7 @@ function AboutPage() {
                       <img src={ele.img} alt="" width={64} height={64} />
                       <div className="d-flex flex-column">
                         <span className="vlu-title">{ele.name}</span>
-                        <span className="vlu-description">{ele.description}</span>
+                        <span className=" body1">{ele.description}</span>
                       </div>
                     </div>
                   )

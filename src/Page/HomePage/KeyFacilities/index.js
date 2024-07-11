@@ -6,7 +6,7 @@ import verifiedimg from '../assets/verified.png'
 function KeyFacilities() {
   return (
      
-    <div className="container mt-3 mb-4">
+    <div className="container mt-4 mb-4">
       <div className="row">
         <div className="col-md-6">
           <img
@@ -19,22 +19,22 @@ function KeyFacilities() {
         <div className="col-md-6">
           <div className="d-flex align-items-center mb-3">
             <img src={verifiedimg} alt="verified" className="icon" />
-            <p className="mb-0">All expenses are paid by Navgurukul and free for the student</p>
+            <p className="mb-0 font body1 ">All expenses are paid by Navgurukul and free for the student</p>
           </div>
 
           <div className="d-flex align-items-center mb-3">
             <img src={verifiedimg} alt="verified" className="icon" />
-            <p className="mb-0">Equipped with shared dorms, fully functional kitchen and other amenities of daily use</p>
+            <p className="mb-0 font body1 ">Equipped with shared dorms, fully functional kitchen and other amenities of daily use</p>
           </div>
 
           <div className="d-flex align-items-center mb-3">
             <img src={verifiedimg} alt="verified" className="icon" />
-            <p className="mb-0">Classrooms and large residential spaces</p>
+            <p className="mb-0 font body1 ">Classrooms and large residential spaces</p>
           </div>
 
           <div className="d-flex align-items-center mb-3">
             <img src={verifiedimg} alt="verified" className="icon" />
-            <p className="mb-0">Provision of laptop, internet, mentors, english classes, mental health counselling</p>
+            <p className="mb-0 font body1 ">Provision of laptop, internet, mentors, english classes, mental health counselling</p>
           </div>
         </div>
       </div>

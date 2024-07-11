@@ -323,7 +323,7 @@ const Donate = () => {
           <div id="monthlyContent" style={{ display: selectedOption === 'monthly' ? 'block' : 'none' }} >
             <div className="row mb-4  ">
             {donationOptions.map(({ amount, link }) => (
-                    <div key={amount} className="col-sm-6 col-md-3 p-0">
+                    <div key={amount} className="col-sm-6 col-md-4 p-0">
                       <button
                         type="button"
                         className={selectedAmount === amount ?" btn section-para regular-btn ": "btn custom-btn mb-4 "}

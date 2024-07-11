@@ -2,108 +2,80 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import "../../Global.css";
-import linkedin from "./assets/linkedin_png.png";
-import twitter from "./assets/twitter_png.png";
-import www from "./assets/www_png.png";
+import Donor from "./assets/Donor.png"
+import MbPartners from "./assets/MbPartners.png";
+import placementPartner from "./assets/placement partner.png";
+import CampusPartners from "./assets/Campuspartners.png"
 
 function Partners() {
-  useEffect(() => {
-    axios({
-      url: `https://navgurukul.github.io/tarabai-shinde/data/partners.json`,
-    }).then((res) => {
-      setPartners(res.data);
-    });
-  }, []);
-  const [partners, setPartners] = useState([]);
   return (
     <div className="partners d-flex flex-column justify-content-center w-100">
       <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100">
-        <h3 className="mt-2 section-head mb-3">Partner Highlights</h3>
+        <h3 className="mt-5 section-head mb-3">Partner Highlights</h3>
         
-
-        <div className="partner-content-data col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3">
-          Our partners help us give access to aspirational careers to youth who
-          want to grow but don’t have means to do so. Our partnerships are the
-          backbone of our operations. Our partners share our values, our
-          partners share our impact.
+        <div className="partner-content-data body1 col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3">
+          Our partners help us give access to aspirational careers to youth who want to grow but don’t have means to do so. Our partnerships 
+          are the backbone of our operations. Our partners share our values, 
+          our partners share our impact.
         </div>
         <button
-          className="btn btn-primary section-para regular-btn mt-4"
+          className="btn btn-primary section-para regular-btn mt-4 mb-4 px-4 py-2"
           onClick={(e) => {
             e.preventDefault();
             window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
           }}
+
+
         >
           Partner With Us
         </button>
+        <h3 className="mt-3 section-head mb-4 mr-4">Our Partners</h3>
       </div>
       <div className="w-100 mb-0  md-5 d-flex align-items-center flex-column">
-        <h3 className="mt-2 section-head mb-3">Our Partners</h3>
-
         
-        <div className="all-partners w-75 d-flex flex-column">
-          <div className="all-partners-row d-flex justify-content-around w-100 my-1">
-            {Object.keys(partners).length ? (
-              Object.keys(partners).map((item) => {
-                return (
-                  <div className="card mb-3  md-5 bg-white py-3 px-4 position-relative">
-                    <h5 className="fw-bold mb-2">{partners[item].Name}</h5>
-                    <span className="status mb-2">{partners[item].Type}</span>
-                    <p className="my-1 mb-5">{partners[item].Content}</p>
-                    <div className="social-media-icons d-flex  w-40 mb-3 position-absolute">
-                      {partners[item].Website ? (
-                        <a href={partners[item].Website} target="_blank">
-                          <img className="social-icon mr-3" src={www}></img>
-                        </a>
-                      ) : (
-                        <></>
-                      )}
-                      {partners[item].LinkedIn ? (
-                        <a href={partners[item].LinkedIn} target="_blank">
-                          <img
-                            className="social-icon mr-3"
-                            src={linkedin}
-                          ></img>
-                        </a>
-                      ) : (
-                        <></>
-                      )}
-                      {partners[item].Twitter ? (
-                        <a href={partners[item].Twitter} target="_blank">
-                          <img className="social-icon mr-3" src={twitter}></img>
-                        </a>
-                      ) : (
-                        <></>
-                      )}
-                    </div>
-                  </div>
-                );
-              })
-            ) : (
-              <></>
-            )}
+
+        <div className="row  mb-4">
+          <div className="col-md-6 col-sm-12">
+            <div className="card h-367 border ">
+              <div className="card-header">
+                <h4 className="card-title">Donors</h4>
+              </div>
+              <div className="card-img-wrapper ">
+                <img src={Donor} className="custom-img-1" alt="Image 1" />
+              </div>
+            </div>
+
+            <div className="card h-271 border top-mar ">
+              <div className="card-header">
+                <h4 className="card-title">Mobilization Partners</h4>
+              </div>
+              <div className="card-img-wrapper">
+                <img src={placementPartner} className="custom-img-2" alt="Image 3" />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 col-sm-12">
+            <div className="card h-271 border ">
+              <div className="card-header">
+                <h4 className="card-title">Placement Partners</h4>
+              </div>
+              <div className="card-img-wrapper">
+                <img src={MbPartners} className="custom-img-3" alt="Image 2" />
+              </div>
+            </div>
+            <div className="card h-175 border top-mar">
+              <div className="card-header">
+                <h4 className="card-title">Campus Partners</h4>
+              </div>
+              <div className="card-img-wrapper">
+                <img src={CampusPartners} className="custom-img-4" alt="Image 4" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div className="container  partners-support-section  d-flex flex-column w-100 align-items-center justify-content-center">
-        <h4 className="mt-2   text-center">
-          Have you taken an interest in what we do and want to support us?
-        </h4>
-        <button
-          className="btn btn-primary section-para regular-btn mt-4 mb-3"
-          onClick={(e) => {
-            e.preventDefault();
-            window.open(
-              "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform",
-              "_blank"
-            );
-          }}
-        >
-          Contact Us for CSR Enquiries
-        </button>
-      </div>
+      </div>  
     </div>
+  
   );
 }
 
