@@ -57,14 +57,10 @@ function TeamPage() {
               <button
                 type="button"
                 className="btn regular-btn w-100"
-                // onClick={(e) => {
-                //   e.preventDefault();
-                //   window.open("https://recruiterflow.com/navgurukul/jobs", "_blank");
-                // }}
-                 onClick={(e) => {
-                  openLinkInNewTab(
-                    "https://recruiterflow.com/navgurukul/jobs"
-                    )
+                onClick={(e) => {
+                openLinkInNewTab(
+                  "https://recruiterflow.com/navgurukul/jobs"
+                  )
                 }} 
               >
                 Careers at Navgurukul
