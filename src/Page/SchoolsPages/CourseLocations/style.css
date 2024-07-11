@@ -1,3 +1,30 @@
+.shared-container {
+    width: 100%;
+    max-width: 1600px; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.partners-data {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.single-partner, .all-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campus-title-design {
+    margin-bottom: 14px;
+}
+
+.instagram {
+    width: 32px;
+    height: px;
+}
+
 .course-location-page{
     margin-bottom: 40px;
 }

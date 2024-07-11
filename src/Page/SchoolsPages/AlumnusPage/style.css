@@ -9,9 +9,10 @@
 }
 
 .alumnus-container {
-    margin-top: 32px;
+    /* margin-top: 32px; */
     margin-bottom: 20px;
 }
-.mt {
-    margin-top: 32px;
+
+.alumnus-grid-item {
+    padding: 16px;
 }

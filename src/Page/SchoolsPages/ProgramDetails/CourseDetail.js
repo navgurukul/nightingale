@@ -3,7 +3,7 @@ function CourseDetail({ data, information }) {
     return (
         <>
             <div className="container courseDetail">
-                <h3 className="text-center" style={{ marginBottom: "32px" }}>
+                <h3 className="text-center mb-4">
                     What You  <span className="BackColor">Will Learn</span>
                 </h3>
                 <div className="row" >

@@ -1,3 +1,50 @@
+.shared-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.admission-container {
+    margin-top: 40px;
+}
+
+.admission-all-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.admission-all-partners-row .col {
+    margin-bottom: 32px;
+    padding: 0 16px;
+}
+
+.admission-stage-container {
+    padding: 16px;
+}
+
+.admission-stage-btn {
+    width: 92px;
+    height: 43px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.admission-stage-card {
+    padding: 16px;
+    background-color: #FBDFD9;
+    border-radius: 16px;
+}
+
+.admission-stage-details {
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
 .stage-btn {
     width: 92px;
     height:43px;

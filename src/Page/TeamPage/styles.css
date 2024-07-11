@@ -34,7 +34,7 @@
   color: white !important;
   background-color: #eb5f42 !important;
   border-radius: 8px !important;
-  font-weight: 800 !important;;
+  font-weight: 800 !important;
 }
 
 .career-button:hover {
@@ -48,7 +48,8 @@
 }
 
 .section-head {
-  font-family: Lato;
+  /* font-family: "Lato"; */
+  font-family: 'Lato',  sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 41.6px;

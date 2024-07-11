@@ -28,12 +28,12 @@ function CoursesLocation({ courses }) {
     const programmingCampuses = Object.values(data).filter(campus => campus["Courses offered"] && campus["Courses offered"].includes(courses));
 
     return (
-        <div className="partners-data w-100 mb-0 md-3 d-flex align-items-center flex-column" style={{ marginTop: "80px" }}>
-            <h3 className="text-center" style={{ marginBottom: "32px" }}>
+        <div className="shared-container partners-data w-100 mb-0 mb-4 d-flex align-items-center flex-column" style={{ marginTop: "80px" }}>
+            <h3 className="text-center mb-4" >
                 <span className="BackColor">Programme</span> Locations
             </h3>
             {programmingCampuses.length === 1 ? (
-                <div className="single-partner w-75 d-flex flex-column align-items-center">
+                <div className="single-partner w-50 d-flex flex-column align-items-center">
                     <div className="col-sm-12 col-lg-7 col-md-12 align-items-center" style={{ marginBottom: "14px", marginRight: "20px" }}>
                         <div className="p-2">
                             <div className="campus-title-design">
@@ -42,11 +42,11 @@ function CoursesLocation({ courses }) {
                                 </h5>
                             </div>
                             <span className="">
-                                <span className="fw-bold">Address: </span>{programmingCampuses[0].Address}
+                                <span className="fw-bold  body1">Address: </span>{programmingCampuses[0].Address}
                             </span>
                             <div className="mt-3">
                                 <span className="li-points">
-                                    <span className="fw-bold">Email: </span>{programmingCampuses[0].Contact}
+                                    <span className="fw-bold  body1 ">Email: </span>{programmingCampuses[0].Contact}
                                 </span>
                             </div>
                             <div className="mt-3">
@@ -70,14 +70,14 @@ function CoursesLocation({ courses }) {
                                     <div key={campus.Name} className="col-sm-12 col-lg-6 col-md-12 align-items-center" style={{ marginBottom: "32px" }}>
                                         <div className="p-2">
                                             <div className="campus-title-design">
-                                                <h5 className="card-title campus-fontfamily" style={{ fontSize: "24px" }}>{campus.Name}</h5>
+                                                <h5 className="card-title campus-fontfamily " style={{ fontSize: "24px" }}>{campus.Name}</h5>
                                             </div>
                                             <span className="">
-                                                <span className="fw-bold">Address: </span>{campus.Address}
+                                                <span className="fw-bold  body1">Address: </span>{campus.Address}
                                             </span>
                                             <div className="mt-3">
                                                 <span className="li-points">
-                                                    <span className="fw-bold">Email: </span>{campus.Contact}
+                                                    <span className="fw-bold body1">Email: </span>{campus.Contact}
                                                 </span>
                                             </div>
                                             <div className="mt-3">

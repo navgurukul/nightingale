@@ -8,7 +8,7 @@ function ScreeningTestPage({ programNeme }) {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-lg-12 col-sm-12 col-md-12 mx-auto mt-5">
+                <div className="col-lg-12 col-sm-12 col-md-12 mt-4">
                     <div className="next-step mt-2 mt-sm-3 d-flex flex-column align-items-center">
                         {
                             programNeme === "SchoolOfDesign" ? (
@@ -24,10 +24,10 @@ function ScreeningTestPage({ programNeme }) {
 
                             ) : (
                                 <>
-                                    <h6 className="text-center test-title">
+                                    <h4 className="text-center test-title">
                                         Want to Enroll and Start your Career?
-                                    </h6>
-                                    <div className="input d-flex flex-column justify-content-center align-items-center" style={{marginTop:"32px",marginBottom:"40px" }}>   
+                                    </h4>
+                                    <div className=" d-flex flex-column justify-content-center align-items-center mt-4" >   
                                         <button
                                             type="button"
                                             className="btn regular-btn mt-1"
