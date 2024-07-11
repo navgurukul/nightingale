@@ -1,19 +1,24 @@
 import "./style.css";
+
 function AlumnusPage({ AnumnusPageData }) {
     const openLinkedInProfile = (linkedinUrl) => {
         window.open(linkedinUrl, '_blank');
     };
+
     return (
-        <div className="d-flex justify-content-center alumnus-container">
+        <div className="d-flex justify-content-center   alumnus-container">
             <section className="partners-data w-100">
                 <div className="container-fluid">
-                    <div className="all-partners w-100 d-flex flex-column">
+                    <div className="all-partners w-100 d-flex flex-column mt-2">
+                        <h3 className="text-center ">
+                            Hear from the alumnus
+                        </h3>
                         <div className="row w-100 justify-content-center">
                             {AnumnusPageData.map((item, index) => (
-                                <div key={index} className="col-12 col-md-6 col-lg-5 d-flex justify-content-center">
-                                    <div className="h-100" style={{ width: "82%" }}>
-                                        <p className="my-2 body1" style={{ lineHeight: "30.0px" }}>{item.bioData}</p>
-                                        <div class="d-flex justify-content-start ml-3 mt-4">
+                                <div key={index} className="col-12 col-md-4 col-lg-4 d-flex justify-content-center">
+                                    <div className="alumnus-grid-item">
+                                        <p className="my-2 body1" style={{ lineHeight: "30px" }}>{item.bioData}</p>
+                                        <div className="d-flex justify-content-start ml-3 mt-4">
                                             <div>
                                                 <img src={item.img} className="alumnus-img" />
                                             </div>
@@ -64,4 +69,7 @@ function AlumnusPage({ AnumnusPageData }) {
         </div>
     );
 }
+
 export default AlumnusPage;
+
+

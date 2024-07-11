@@ -20,12 +20,12 @@ function BackgroundImg({ backgroundData }) {
                 >
                     <div className='container-fluid'>
                         <div className='row'>
-                            <div className='col-12 col-sm-10 col-md-9 col-lg-10 mx-auto mt-5 ' style={{ color: data.color}}>
+                            <div className='col-12 col-sm-10 col-md-9 col-lg-8 mx-auto mt-5 ' style={{ color: data.color}}>
                                 <h2 style={{ color: data.color }}>
                                     <span>{data.title}</span>
                                 </h2>
                                 <div className='container-of-text'>
-                                    <p className='body1 description' style={{ color: data.color, lineHeight: "30px" }}>{data.text}</p>
+                                    <p className='body1' style={{ color: data.color, lineHeight: "30px" }}>{data.text}</p>
                                     <p className="Subtitle1 " style={{ whiteSpace: "pre-wrap" }}>{data.text2}</p>
                                 </div>
                                 {data.buttonText && (
@@ -39,7 +39,7 @@ function BackgroundImg({ backgroundData }) {
                             </div>
                         </div>
                     </div>
-                </div >
+                </div>
             ))
             }
         </>
