@@ -1,75 +1,135 @@
-import React, { useState, useEffect } from "react";
+import React from 'react';
 import "./styles.css";
+import myImage from './assets/image.png';
+import data from './Data';
 
-function NgHiring() {
+const NgHiring = () => {
   return (
-    <main >
-      <section className="container align-items-center d-flex flex-column  justify-content-center w-100">
-        <h3 className="section-head mt-3 mt-md-5 mb-4">Hire from Us</h3>
-        <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center ">
-          <p className="section-para body1  w-100" >
-            Through harnessing the power of education, We bridge the learning 
-            gap of students from marginalized communities to emerge as skilled,
-            resilient, and job-ready professionals, proficient in the latest technologies
-            and soft skills. By partnering with us, your organization can enrich its 
-            workforce diversity and drive meaningful social impact, effortlessly meeting
-            your Diversity, Equity, and Inclusion (DEI) goals.
-          </p>
+    <>
+      <section className=" d-flex flex-column align-items-center our-initiatives">
+        <div className="container mt-4">
+          <div className="row gy-4 mt-4">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="textlink">
+                <h3 className="section-head mb-4">You are our last piece in this puzzle of Diversity, Equality, and Inclusion.</h3>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="textlink">
+                <p className='section-para body1  w-100'>For more than 8 years, NavGurukul Foundation
+                  for Social Welfare has been committed to providing pathways to aspiration careers to
+                  students from marginalized communities.
+                  Now, we want your help to bridge the gap where skills meet opportunity</p>
+              </div>
+              <div className='row p-2 justify-content-center' >
+                <button
+                  type="button"
+                  class="btn fw-bold  regular-btn align-self-center px-4 p-2"
+                  style={{ width: "360px" }}
+                >
+                  Hire from Us
+                </button>
+              </div>
+              <div className='row p-2 justify-content-center'>
+                <button
+                  type="button"
+                  class="btn fw-bold  regular-btn align-self-center px-4 "
+                  style={{ width: "360px" }}
+                >
+                  Become knowledge partner
+                </button>
+              </div>
+              <div className='row p-2 justify-content-center'>
+                <button
+                  type="button"
+                  class="btn fw-bold  regular-btn align-self-center px-4 "
+                  style={{ width: "360px" }}
+                >
+                  Volunteer
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center  mt-2">
-          <p className="section-para body1  w-100" >
-            By hiring from us, You are achieving : 
-            <ul className="ml-4">
-              <li>
-                Handpicked Tech Talent: Pre-screened candidates to save your time.
-              </li>
-              <li>
-                Zero Hiring Fees: Fully funded by our generous donors.
-              </li>
-              <li>
-                High Retention candidates: Quality talent within budget</li>
-              <li>
-                Diverse Talent Pool: Our students are from different regions 
-                of India. Ready to enhance your workforce diversity and business capabilities.
-              </li>
-              <li>
-                Job-Ready Talent: Our students undergo rigorous training in both 
-                technical and soft skills, preparing them for the complexities of modern
-                work environments.
-              </li>
-              <li>
-                Positive Social Impact: Fulfill your corporate social responsibility goals by hiring candidates who are part of a movement to bridge the education and employment gap in India.
-              </li>
-            </ul>
-          </p>
+      </section >
+
+      <section className=" d-flex flex-column align-items-center our-initiatives">
+        <div className="container mt-4">
+          <div className="row gy-4 mt-4">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="textlink">
+                <img src={myImage} className="women-image" alt="Placeholder Image" />
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="textlink">
+                <p className='section-para body1 w-100'>Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
+                  <span className='link'> skills, talent, and adaptability;</span>
+                  they bring unique perspectives that
+                  <span className='link'> enrich your workforce and foster innovation.</span>
+                  With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
+                  <span className='link'> future where everyone has a seat at the table regardless of their background</span>
+                </p>
+                <button
+                  type="button"
+                  class="btn mb-5  fw-bold py-2 regular-btn align-self-center px-4 py-2"
+                  style={{ width: "360px" }}
+                >
+                  Download Placement Brief
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-         <div className=" hiring-page-content col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center  mt-2 mb-4 ">
-          <p className="section-para body1  w-100" >
-              Contact us directly at{" "}
-              <a href="mailto:tnp@navgurukul.org" className="link">
-                tnp@navgurukul.org
-              </a>{" "}
-               for hiring or freelancing projects.
-          </p>
-        </div>
-      
-         <a
-            href="https://drive.google.com/file/d/1sem3BGOxBscPY2KMOcc_KAZ1ZJSJ-IeE/view?usp=sharing"
-            download="Placement Brief - Navgurukul"
-            target="_blank"
-          >
-            <button
-              type="button"
-              class="btn mb-5  f-Nuni fw-bold py-2 regular-btn align-self-center px-4 py-2"
-              style={{width : "360px"}}
-            >
-              Download Placement Brief
-            </button>
-          </a>
-         
-        </section>    
-    </main>
+      </section >
+
+      <div>
+        {data.map((item, index) => (
+          <div key={index} className="position-relative">
+            <img className='banner-img' src={item.img} alt="Hire From Us" />
+            <h2 className="hire-heading">{item.text}</h2>
+            <section className="d-flex flex-column align-items-center our-initiatives">
+              <div className="container">
+                <div className="textlink">
+                  <p className="section-para body1 w-100 p-3 mb-1">{item.para}</p>
+                  <ul>
+                    <div className="section-para body1 w-100 p-3">
+                      <p className="section-para body1 w-100 mb-1">{item.hadding}</p>
+                      <div className="container section-para body1 w-100 p-3">
+                        {Object.keys(item.list)
+                          .filter(key => key.startsWith('highlighttext'))
+                          .map((highlightKey, idx) => {
+                            const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
+                            return (
+                              <li key={idx} className='section-para body1 w-100 ml-3'>
+                                <span className='link'>{item.list[highlightKey]}</span>
+                                <span>{item.list[detailKey]}</span>
+                              </li>
+                            );
+                          })}
+                        <div className="d-flex justify-content-center w-100 mt-4">
+                          <button
+                            type="button"
+                            className="btn fw-bold regular-btn align-self-center px-4 p-2"
+                            style={{ width: "360px" }}
+                          >
+                            {item.button}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+        ))}
+      </div>
+    </>
   );
-}
+};
 
 export default NgHiring;
+
+
+
