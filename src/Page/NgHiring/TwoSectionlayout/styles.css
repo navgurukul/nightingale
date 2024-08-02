@@ -1,0 +1,21 @@
+.content-block {
+  padding: 20px;
+}
+
+.vertical-line {
+  background-color: #dee2e6;
+  width: 2px; /* Thickness of the vertical line */
+  height: 100%; /* Full height of the container */
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Full height of the viewport */
+}
