@@ -1,5 +1,7 @@
 
 import hirefromus from './assets/hirefromus.png'; 
+import partner from "./assets/partner.jpg";
+import volunteer from "./assets/volunters.jpg"
 
 const data = [
     {
@@ -28,7 +30,7 @@ const data = [
 
     {
 
-        img: hirefromus,
+        img: partner,
         para: "By forming a knowledge partnership with us, your organization can amplify its commitment to corporate social responsibility and strengthen its community engagement efforts. We'd appreciate your engaging with us to cultivate a more inclusive and skilled future workforce, seamlessly aligning with your organization's Diversity, Equity, and Inclusion (DEI) initiatives.",
         hadding: "By partnering with us for knowledge sharing, you are contributing t: ",        
         list:
@@ -52,7 +54,7 @@ const data = [
     },
     {
 
-        img: hirefromus,
+        img: volunteer,
         para: "Volunteer at NavGurukul and play a pivotal role in transforming lives through education. Volunteering with NavGurukul offers a chance to contribute to societal change, gain immense personal fulfillment, and directly impact the futures of young aspiring tech professionals. Join us to make a difference, one student at a time. Opportunities for Volunteers:",
         list:
         {

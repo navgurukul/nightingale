@@ -1,12 +1,167 @@
-import React from 'react';
+// import React from 'react';
+// import "./styles.css";
+// import myImage from './assets/image.png';
+// import data from './Data';
+// import Timeline from './Timeline';
+// import OurAlumni from './Ouralumni';
+// import Slider from './Slider';
+// import Ourrecruiters from './Ourrecruiters ';
+
+// const NgHiring = () => {
+//   return (
+//     <>
+//       <section className=" d-flex flex-column align-items-center our-initiatives">
+//         <div className="container mt-4">
+//           <div className="row gy-4 mt-4">
+//             <div className="col-lg-6 col-md-6 col-sm-12">
+//               <div className="textlink">
+//                 <h3 className="section-head mb-4">You are our last piece in this puzzle of Diversity, Equality, and Inclusion.</h3>
+//               </div>
+//             </div>
+//             <div className="col-lg-6 col-md-6 col-sm-12">
+//               <div className="textlink">
+//                 <p className='section-para body1  w-100'>For more than 8 years, NavGurukul Foundation
+//                   for Social Welfare has been committed to providing pathways to aspiration careers to
+//                   students from marginalized communities.
+//                   Now, we want your help to bridge the gap where skills meet opportunity</p>
+//               </div>
+//               <div className='row p-2 justify-content-center' >
+//                 <button
+//                   type="button"
+//                   class="btn fw-bold  regular-btn align-self-center px-4 p-2"
+//                   style={{ width: "360px" }}
+//                 >
+//                   Hire from Us
+//                 </button>
+//               </div>
+//               <div className='row p-2 justify-content-center'>
+//                 <button
+//                   type="button"
+//                   class="btn fw-bold  regular-btn align-self-center px-4 "
+//                   style={{ width: "360px" }}
+//                 >
+//                   Become knowledge partner
+//                 </button>
+//               </div>
+//               <div className='row p-2 justify-content-center'>
+//                 <button
+//                   type="button"
+//                   class="btn fw-bold  regular-btn align-self-center px-4 "
+//                   style={{ width: "360px" }}
+//                 >
+//                   Volunteer
+//                 </button>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//       <section className=" d-flex flex-column align-items-center our-initiatives">
+//         <div className="container mt-4">
+//           <div className="row gy-4 mt-4">
+//             <div className="col-lg-6 col-md-6 col-sm-12">
+//               <div className="textlink">
+//                 <img src={myImage} className="women-image" alt="Placeholder Image" />
+//               </div>
+//             </div>
+//             <div className="col-lg-6 col-md-6 col-sm-12">
+//               <div className="textlink">
+//                 <p className='section-para body1 w-100'>Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
+//                   <span className='link'> skills, talent, and adaptability;</span>
+//                   they bring unique perspectives that
+//                   <span className='link'> enrich your workforce and foster innovation.</span>
+//                   With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
+//                   <span className='link'> future where everyone has a seat at the table regardless of their background</span>
+//                 </p>
+//                 <button
+//                   type="button"
+//                   class="btn mb-5  fw-bold py-2 regular-btn align-self-center px-4 py-2"
+//                   style={{ width: "360px" }}
+//                 >
+//                   Download Placement Brief
+//                 </button>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//       <Timeline />
+//       <OurAlumni />
+//       <Slider />
+//       <Ourrecruiters />
+//       <div>
+//         {data.map((item, index) => (
+//           <div key={index} className="position-relative">
+//             <img className='banner-img' src={item.img} alt="Hire From Us" />
+//             <h2 className="hire-heading">{item.text}</h2>
+//             <section className="d-flex flex-column align-items-center our-initiatives">
+//               <div className="container">
+//                 <div className="textlink">
+//                   <p className="section-para body1 w-100 p-3 mb-1">{item.para}</p>
+//                   <ul>
+//                     <div className="section-para body1 w-100 p-3">
+//                       <p className="section-para body1 w-100 mb-1">{item.hadding}</p>
+//                       <div className="container section-para body1 w-100 p-3">
+//                         {Object.keys(item.list)
+//                           .filter(key => key.startsWith('highlighttext'))
+//                           .map((highlightKey, idx) => {
+//                             const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
+//                             return (
+//                               <li key={idx} className='section-para body1 w-100 ml-3'>
+//                                 <span className='link'>{item.list[highlightKey]}</span>
+//                                 <span>{item.list[detailKey]}</span>
+//                               </li>
+//                             );
+//                           })}
+//                         <div className="d-flex justify-content-center w-100 mt-4">
+//                           <button
+//                             type="button"
+//                             className="btn fw-bold regular-btn align-self-center px-4 p-2"
+//                             style={{ width: "360px" }}
+//                           >
+//                             {item.button}
+//                           </button>
+//                         </div>
+//                       </div>
+//                     </div>
+//                   </ul>
+//                 </div>
+//               </div>
+//             </section>
+//           </div>
+//         ))}
+//       </div>
+      
+     
+//     </>
+//   );
+// };
+
+// export default NgHiring;
+
+import React, { useState } from 'react';
 import "./styles.css";
 import myImage from './assets/image.png';
 import data from './Data';
+import Timeline from './Timeline';
+import OurAlumni from './Ouralumni';
+import Slider from './Slider';
+ import Ourrecruiters from './Ourrecruiters ';
 
 const NgHiring = () => {
+  const [formType, setFormType] = useState('');
+
+  const handleOpenForm = (type) => {
+    setFormType(type);
+  };
+
+  const handleCloseForm = () => {
+    setFormType('');
+  };
+
   return (
     <>
-      <section className=" d-flex flex-column align-items-center our-initiatives">
+      <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container mt-4">
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12">
@@ -16,16 +171,17 @@ const NgHiring = () => {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="textlink">
-                <p className='section-para body1  w-100'>For more than 8 years, NavGurukul Foundation
+                <p className="section-para body1 w-100">For more than 8 years, NavGurukul Foundation
                   for Social Welfare has been committed to providing pathways to aspiration careers to
                   students from marginalized communities.
                   Now, we want your help to bridge the gap where skills meet opportunity</p>
               </div>
-              <div className='row p-2 justify-content-center' >
+              <div className='row p-2 justify-content-center'>
                 <button
                   type="button"
-                  class="btn fw-bold  regular-btn align-self-center px-4 p-2"
+                  className="btn fw-bold regular-btn align-self-center px-4 p-2"
                   style={{ width: "360px" }}
+                  onClick={() => handleOpenForm('Hire from Us')}
                 >
                   Hire from Us
                 </button>
@@ -33,8 +189,9 @@ const NgHiring = () => {
               <div className='row p-2 justify-content-center'>
                 <button
                   type="button"
-                  class="btn fw-bold  regular-btn align-self-center px-4 "
+                  className="btn fw-bold regular-btn align-self-center px-4"
                   style={{ width: "360px" }}
+                  onClick={() => handleOpenForm('Become knowledge partner')}
                 >
                   Become knowledge partner
                 </button>
@@ -42,8 +199,9 @@ const NgHiring = () => {
               <div className='row p-2 justify-content-center'>
                 <button
                   type="button"
-                  class="btn fw-bold  regular-btn align-self-center px-4 "
+                  className="btn fw-bold regular-btn align-self-center px-4"
                   style={{ width: "360px" }}
+                  onClick={() => handleOpenForm('Volunteer')}
                 >
                   Volunteer
                 </button>
@@ -52,7 +210,7 @@ const NgHiring = () => {
           </div>
         </div>
       </section>
-      <section className=" d-flex flex-column align-items-center our-initiatives">
+      <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container mt-4">
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12">
@@ -62,17 +220,18 @@ const NgHiring = () => {
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="textlink">
-                <p className='section-para body1 w-100'>Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
-                  <span className='link'> skills, talent, and adaptability;</span>
+                <p className="section-para body1 w-100">Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
+                  <span className="link"> skills, talent, and adaptability;</span>
                   they bring unique perspectives that
-                  <span className='link'> enrich your workforce and foster innovation.</span>
+                  <span className="link"> enrich your workforce and foster innovation.</span>
                   With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
-                  <span className='link'> future where everyone has a seat at the table regardless of their background</span>
+                  <span className="link"> future where everyone has a seat at the table regardless of their background</span>
                 </p>
                 <button
                   type="button"
-                  class="btn mb-5  fw-bold py-2 regular-btn align-self-center px-4 py-2"
+                  className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4 py-2"
                   style={{ width: "360px" }}
+                  onClick={() => handleOpenForm('Download Placement Brief')}
                 >
                   Download Placement Brief
                 </button>
@@ -81,6 +240,10 @@ const NgHiring = () => {
           </div>
         </div>
       </section>
+      <Timeline />
+      <OurAlumni />
+      <Slider />
+      <Ourrecruiters />
       <div>
         {data.map((item, index) => (
           <div key={index} className="position-relative">
@@ -123,50 +286,58 @@ const NgHiring = () => {
           </div>
         ))}
       </div>
-     
+      
+      {formType && (
+        <div className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
+          <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">{formType}</h5>
+                <button type="button" className="close" onClick={handleCloseForm}>
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                <form>
+                  <div className="form-group">
+                    <label>Full Name</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                  <div className="form-group">
+                    <label>Work email</label>
+                    <input type="email" className="form-control" />
+                  </div>
+                  <div className="form-group">
+                    <label>Number</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                  {formType === 'Download Placement Brief' ? (
+                    <div className="form-group">
+                      <label>Download on email</label>
+                      <input type="email" className="form-control" />
+                    </div>
+                  ) : (
+                    <div className="form-group">
+                      <label>Purpose</label>
+                      <select className="form-control">
+                        <option>Hire from Us</option>
+                        <option>Become knowledge partner</option>
+                        <option>Volunteer</option>
+                      </select>
+                    </div>
+                  )}
+                </form>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
+                <button type="button" className="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
 
 export default NgHiring;
-
-
-
-
-
-
-// import { userInfo } from './Data';
-// import "./styles.css";
-// const NgHiring = () => {
-//   return (
-//     <>
-
-
-
-      // <div className='main_container'>
-      //   <section className=" d-flex flex-column align-items-center our-initiatives">
-      //     <div className="container mt-4">
-
-      //       <div className="container">
-      //         <div className="row">
-      //           {userInfo.map((item, index) => (
-      //             <div key={index} className="col col-12 col-md-6 col-lg-4 mb-4" >
-
-      //               <div className="three_card_column"  >
-      //                 <img className='img' src={item.img} alt="no img" />
-      //                 <h2 className="section-para body1 w-100 p-2 w-50 d-flex justify-content-center fw-bold" style={{ fontWeight: 'bold' }}>{item.heading}</h2>
-      //                 <p className="section-para body1 w-100 p-2 w-50 d-flex justify-content-center ">{item.paragraph}</p>
-                    
-      //               </div>
-      //             </div>
-      //           ))}
-      //         </div>
-      //       </div>
-      //     </div>
-      //   </section >
-
-      // </div>
-//     </>
-//   )
-// }
-// export default NgHiring;
