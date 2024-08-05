@@ -3,7 +3,7 @@ import "./styles.css";
 import OurAlumni from "./Ouralumni";
 import Timeline from "./Timeline";
 import Slider from "./Slider";
-import TwoSectionLayout from "./TwoSectionlayout";
+
 
 function NgHiring() {
   return (
@@ -11,7 +11,6 @@ function NgHiring() {
       <Timeline /> 
       <OurAlumni />  
       <Slider />
-      <TwoSectionLayout />
     </main>
   );
 }
