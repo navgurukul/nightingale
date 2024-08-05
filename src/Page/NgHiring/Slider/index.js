@@ -23,7 +23,7 @@ function Slider() {
     {
       Logo: card2img,
       Name: "NavGurukul Student",
-      Content: "Excerpt, Blogs, Portfolio, Learning experiences",
+      Content: "Excerpt, Blogs, Portfolio, Learning experiences ",
     },
     {
       Logo: card3img,
