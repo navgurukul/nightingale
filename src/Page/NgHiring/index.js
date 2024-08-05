@@ -3,6 +3,7 @@ import "./styles.css";
 import OurAlumni from "./Ouralumni";
 import Timeline from "./Timeline";
 import Slider from "./Slider";
+import Devider from "./Card/Devider";
 
 
 function NgHiring() {
@@ -11,6 +12,7 @@ function NgHiring() {
       <Timeline /> 
       <OurAlumni />  
       <Slider />
+      <Devider/>
     </main>
   );
 }
