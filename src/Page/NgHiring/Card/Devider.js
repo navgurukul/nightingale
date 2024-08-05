@@ -1,7 +1,5 @@
 
 import "./style.css";
-
-
 const Devider = () => {
     return (
         <>
@@ -72,5 +70,4 @@ const Devider = () => {
         </>
     )
 }
-
 export default Devider;
