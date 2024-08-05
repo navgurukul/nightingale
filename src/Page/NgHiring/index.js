@@ -51,8 +51,7 @@ const NgHiring = () => {
             </div>
           </div>
         </div>
-      </section >
-
+      </section>
       <section className=" d-flex flex-column align-items-center our-initiatives">
         <div className="container mt-4">
           <div className="row gy-4 mt-4">
@@ -81,8 +80,7 @@ const NgHiring = () => {
             </div>
           </div>
         </div>
-      </section >
-
+      </section>
       <div>
         {data.map((item, index) => (
           <div key={index} className="position-relative">
@@ -125,10 +123,7 @@ const NgHiring = () => {
           </div>
         ))}
       </div>
-
-
-
-      
+     
     </>
   );
 };
