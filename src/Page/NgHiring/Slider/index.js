@@ -1,10 +1,10 @@
-
+import "./styles.css";
 import card1img from "../assets/card1.png"
 import card2img from "../assets/card2.png"
 import card3img from "../assets/card3.png"
 
 
-import "./styles.css";
+
 const NgHiring = () => {
 
   const userInfo = [

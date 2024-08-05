@@ -1,5 +1,5 @@
 
-import "./style.css";
+import "./styles.css";
 const Devider = () => {
     return (
         <>
@@ -9,7 +9,7 @@ const Devider = () => {
                         <div className="col-lg-6 col-md-6 col-sm-12">
                             <div className="row" >
                                 <h3 className="section-head body1 w-100  d-flex justify-content-center text-center">Our recruiters</h3>
-                                {/* <img className='logo-img' src={logo} alt='no images' /> */}
+                                
                             </div>
                             <div className="row section-para body1 w-100 p-3  mt-5 d-flex justify-content-center text-center" >
                                 Logos of all the companies from NG deck
