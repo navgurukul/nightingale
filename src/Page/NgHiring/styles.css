@@ -114,3 +114,14 @@
   height: 330px;
   background-color: #fff;
 }
+
+.modal-title{
+  color: red;
+}
+
+.form-control{
+  height: 60px;
+  border: 2px solid gray;
+  border-radius: 5px ;
+}
+

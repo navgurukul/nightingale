@@ -5,7 +5,7 @@ import data from './Data';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
- import Ourrecruiters from './Ourrecruiters ';
+import Ourrecruiters from './Ourrecruiters ';
 
 const NgHiring = () => {
   const [formType, setFormType] = useState('');
@@ -145,7 +145,7 @@ const NgHiring = () => {
           </div>
         ))}
       </div>
-      
+
       {formType && (
         <div className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
           <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
@@ -156,9 +156,9 @@ const NgHiring = () => {
                   <span>&times;</span>
                 </button>
               </div>
-              <div className="modal-body">
-                <form>
-                  <div className="form-group">
+              <div className="modal-body ">
+                <form className='p-3'>
+                  <div className="form-group ">
                     <label>Full Name</label>
                     <input type="text" className="form-control" />
                   </div>
@@ -178,18 +178,19 @@ const NgHiring = () => {
                   ) : (
                     <div className="form-group">
                       <label>Purpose</label>
-                      <select className="form-control">
+                      <select className="form-control " style={{ height: '60px' }}>
                         <option>Hire from Us</option>
                         <option>Become knowledge partner</option>
                         <option>Volunteer</option>
                       </select>
                     </div>
+
                   )}
                 </form>
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
-                <button type="button" className="btn btn-primary">Submit</button>
+                <button type="button" className="btn btn-success ">Submit</button>
               </div>
             </div>
           </div>
