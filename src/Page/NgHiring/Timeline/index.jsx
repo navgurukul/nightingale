@@ -12,7 +12,6 @@ const timelineEvents = [
 const Timeline = () => {
   return (
     <div className="container">
-        {/* <h2 className=" heading-line ml-4"></h2> */}
         <h3 className="heading-line mb-3 p-3">
             Timeline of growth
         </h3>

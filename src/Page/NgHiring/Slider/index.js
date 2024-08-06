@@ -2,7 +2,9 @@ import "./styles.css";
 import card1img from "../assets/card1.png"
 import card2img from "../assets/card2.png"
 import card3img from "../assets/card3.png"
+
 const Slider = () => {
+
   const userInfo = [
     {
       img: card1img,
@@ -20,7 +22,9 @@ const Slider = () => {
       paragraph: "Small excerpt/ Feedback",
     },
   ];
+
   return (
+
   <div className='main_container'>
     <section className=" d-flex flex-column align-items-center our-initiatives">
       <div className="container mt-4">
@@ -43,6 +47,7 @@ const Slider = () => {
       </div>
     </section>
   </div>
+  
   )
 }
 export default Slider;
