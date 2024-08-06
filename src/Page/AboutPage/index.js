@@ -22,7 +22,7 @@ function AboutPage() {
   return (
     <main className="about-page">
       <div className="page-content">
-        <section className="page-section d-flex flex-column ">
+        <section className="page-section d-flex flex-column">
           <h3 className="section-head mb-4">Who We Are</h3>
 
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">

@@ -31,9 +31,3 @@
   transform: translateX(-50%);
   z-index: 0; 
 }
-
-.col.position-relative {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
