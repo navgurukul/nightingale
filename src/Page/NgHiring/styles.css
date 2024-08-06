@@ -122,6 +122,9 @@
 .form-control{
   height: 60px;
   border: 2px solid gray;
-  border-radius: 5px ;
+  border-radius: 5px;
 }
+.modal-dialog{
+  border: 2px solid gray;
 
+}
