@@ -22,7 +22,6 @@ const Slider = () => {
       paragraph: "Small excerpt/ Feedback",
     },
   ]
-  
   return (
 
   <div className='main_container'>

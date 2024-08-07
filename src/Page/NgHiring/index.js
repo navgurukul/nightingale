@@ -9,9 +9,7 @@ import Ourrecruiters from './Ourrecruiters ';
 
 const NgHiring = () => {
   const [formType, setFormType] = useState('');
-
   const [showToast, setShowToast] = useState(false);
-
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -37,12 +35,6 @@ const NgHiring = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-
-
-
-
-
     const dataToSend = {
       fullName: formData.fullName,
       workEmail: formData.email,
@@ -50,7 +42,6 @@ const NgHiring = () => {
       purpose: formType,
       downloadEmail: formType === 'Download Placement Brief' ? formData.downloadEmail : ''
     };
-
     try {
       const response = await fetch('https://script.google.com/macros/s/AKfycbyOQjPx5YSjn6PEA2Z3YgyYvMls8qNlRgsFai3MoBIeW-TyVK_ZFlKnwjpe9vjtz1hI/exec', {
         method: "POST",
@@ -60,11 +51,6 @@ const NgHiring = () => {
         body: JSON.stringify(dataToSend),
         mode: "no-cors",
       });
-
-      // Because we are using "no-cors", we cannot access the response body
-      // Assuming the submission is successful if no error is thrown
-      // alert('Form submitted successfully!');
-      // e.preventDefault();
       setShowToast(true);
       setTimeout(() => setShowToast(false), 8000);
       handleCloseForm();
@@ -247,19 +233,6 @@ const NgHiring = () => {
                       required
                     />
                   </div>
-                  {/* {formType === 'Download Placement Brief' && (
-                    <div className="form-group">
-                      <label>Email to Receive Placement Brief</label>
-                      <input
-                        type="email"
-                        name="downloadEmail"
-                        className="form-control"
-                        value={formData.downloadEmail}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  )} */}
                   {formType === 'Download Placement Brief' ? (
                     <div className="form-group">
                       <label>Download on email</label>
@@ -293,12 +266,11 @@ const NgHiring = () => {
         </div>
       )}
 
-
       {showToast && (
         <div aria-live="polite" aria-atomic="true" className="d-flex justify-content-center align-items-center mt-5" style={{ minHeight: '200px', position: 'fixed', top: '40px', right: '50px', zIndex: '1050' }}>
           <div className="toast show border mb-4" role="alert" aria-live="assertive" aria-atomic="true">
             <div className="toast-header">
-              <button type="button" className="ml-2  p-3 close" onClick={() => setShowToast(false)} aria-label="Close">
+              <button type="button" className="ml-2  p- 3 close" onClick={() => setShowToast(false)} aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
@@ -308,7 +280,6 @@ const NgHiring = () => {
           </div>
         </div>
       )}
-
     </>
   );
 };
