@@ -21,8 +21,7 @@ const Slider = () => {
       heading: "HR & recruiters",
       paragraph: "Small excerpt/ Feedback",
     },
-  ];
-
+  ]
   return (
 
   <div className='main_container'>

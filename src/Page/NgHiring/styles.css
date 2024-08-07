@@ -125,4 +125,12 @@
 
 
 
+.toast-body{
+  border: 2px solid gray;
+  padding: 10px;
+  font-weight: bold;
+  color: green;
+  height: 80px;
+
+}
 

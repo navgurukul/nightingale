@@ -28,6 +28,7 @@
   transform: translateX(-50%);
   z-index: 0;
 }
+
 @media (max-width: 768px) {
   .timeline-dot {
     display: none;

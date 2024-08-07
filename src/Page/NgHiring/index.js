@@ -42,33 +42,32 @@ const NgHiring = () => {
     });
   };
   const handleSubmit = async (e) => {
-  e.preventDefault();
-
-  const dataToSend = {
-    fullName: formData.fullName,
-    workEmail: formData.email,
-    number: formData.number,
-    purpose: formType,
-    downloadEmail: formType === 'Download Placement Brief' ? formData.downloadEmail : ''
+    e.preventDefault();
+    const dataToSend = {
+      fullName: formData.fullName,
+      workEmail: formData.email,
+      number: formData.number,
+      purpose: formType,
+      downloadEmail: formType === 'Download Placement Brief' ? formData.downloadEmail : ''
+    };
+    
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyOQjPx5YSjn6PEA2Z3YgyYvMls8qNlRgsFai3MoBIeW-TyVK_ZFlKnwjpe9vjtz1hI/exec', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+        mode: "no-cors",
+      });
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 8000);
+      handleCloseForm();
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to submit form: ' + error.message);
+    }
   };
-
-  try {
-      await fetch('https://script.google.com/macros/s/AKfycbz3lL0Jmk0KPoujPJJSBnb00aMYjqSU6O0QJ_laR51rMIxeTA08WfRMUlEaPosfiS14/exec', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataToSend),
-      mode: "no-cors",
-    });
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 1000);
-    handleCloseForm();
-  } catch (error) {
-    console.error('Error:', error);
-    alert('Failed to submit form: ' + error.message);
-  }
-};
 
   return (
     <>
@@ -198,7 +197,7 @@ const NgHiring = () => {
           </div>
         ))}
       </div>
-      
+
       {formType && (
          <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
          className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
@@ -247,6 +246,11 @@ const NgHiring = () => {
                     />
                   </div>
                   {formType === 'Download Placement Brief' ? (
+
+                    <div className="form-group">
+                      <label>Download on email</label>
+                      <input
+
                      <div className="form-group">
                        <label htmlFor="downloadEmail" >Download on email</label>
                        <input
@@ -257,6 +261,15 @@ const NgHiring = () => {
                         onChange={handleChange}
                         required
                       />
+                    </div>
+                  ) : (
+                    <div className="form-group">
+                      <label>Purpose</label>
+                      <select className="form-control " style={{ height: '60px' }}>
+                        <option>Hire from Us</option>
+                        <option>Become knowledge partner</option>
+                        <option>Volunteer</option>
+                      </select>
                      </div>
                    ) : (
                       <div className="form-group">
@@ -273,7 +286,7 @@ const NgHiring = () => {
                           <option value="Volunteer">Volunteer</option>
                         </select>
                     </div>
-                   )}
+                  )}
                   <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
                     <button type="submit" className="btn btn-success">Submit</button>
@@ -284,6 +297,7 @@ const NgHiring = () => {
           </div>
         </div>
       )}
+      
       {showToast && (
         <div aria-live="polite" aria-atomic="true" className="d-flex justify-content-center align-items-center mt-5" style={{ minHeight:'200px',position: 'fixed', top: '40px', right: '50px', zIndex: '1050' }}>
           <div className="toast show border mb-4" role="alert" aria-live="assertive" aria-atomic="true">
