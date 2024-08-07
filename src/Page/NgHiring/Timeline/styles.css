@@ -2,12 +2,10 @@
   position: relative;
   margin-top: 50px;
 }
-
 .timeline-item {
   padding-bottom: 60px;
   position: relative;
 }
-
 .timeline-dot {
   width: 25px;
   height: 25px;
@@ -19,7 +17,6 @@
   transform: translateX(-50%);
   z-index: 1;
 }
-
 .timeline-row::after {
   content: '';
   position: absolute;
@@ -36,7 +33,6 @@
   .timeline-dot {
     display: none;
   }
-
   .timeline-row::after {
     display: none;
   }

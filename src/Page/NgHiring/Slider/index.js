@@ -33,7 +33,7 @@ const Slider = () => {
         <div className="container">
           <div className="row">
             {userInfo.map((item, index) => (
-              <div key={index} className="col-12 col-md-6 col-lg-4 mb-4" >
+              <div key={item.id} className="col-12 col-md-6 col-lg-4 mb-4" >
                 <div className="three_card_column"  >
                   <img className='img' src={item.img} alt="no img" />
                   <h2 className="section-para body1 w-100 w-50 d-flex justify-content-center fw-bold m-3" style={{ fontWeight: 'bold' }}>{item.heading}</h2>

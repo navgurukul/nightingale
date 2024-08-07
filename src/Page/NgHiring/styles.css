@@ -83,6 +83,15 @@
   -webkit-text-stroke: 3px black;
 }
 
+.toast-body{
+  border: 2px solid gray;
+  padding: 10px;
+  font-weight: bold;
+  color: green;
+  height: 60px;
+  width: 320px;
+}
+
 @media (max-width: 1200px) {
   .hire-heading {
     font-size: 6rem;

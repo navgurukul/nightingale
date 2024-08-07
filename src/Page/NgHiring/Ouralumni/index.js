@@ -5,7 +5,7 @@ import user from "../assets/user-icon.png";
 
 function shuffleObject(obj) {
   let newObj = {};
-  var keys = Object.keys(obj);
+  const keys = Object.keys(obj);
   keys.sort(() => Math.random() - 0.5);
   keys.forEach((k) => {
     newObj[k] = obj[k];
@@ -41,7 +41,7 @@ function OurAlumni() {
                   team[item].Designation
                 ) {
                   return (
-                      <div className="flex flex-column col-6 col-md-3">
+                      <div key={item} className="flex flex-column col-6 col-md-3">
                         <div>
                           <img
                             className="team-info-card-img img-card-hover"
