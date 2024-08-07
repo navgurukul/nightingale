@@ -1,7 +1,7 @@
 import "./styles.css";
 import logos from "../assets/logos.png";
 
-const Ourrecruiters = () => {
+const Ourrecruiters = ({ handleOpenForm }) => {
     return (
         <section className="d-flex flex-column align-items-center our-initiatives">
             <div className="container">
@@ -34,6 +34,7 @@ const Ourrecruiters = () => {
                                 type="button"
                                 className="btn fw-bold regular-btn align-self-center  "
                                 style={{ width: "360px" }}
+                                onClick={() => handleOpenForm('Hire from Us')}
                             >
                                 Hire from Us
                             </button>
@@ -43,6 +44,7 @@ const Ourrecruiters = () => {
                                 type="button"
                                 className="btn fw-bold regular-btn align-self-center"
                                 style={{ width: "360px" }}
+                                onClick={() => handleOpenForm('Become knowledge partner')}
                             >
                                 Become knowledge partner
                             </button>
@@ -52,6 +54,7 @@ const Ourrecruiters = () => {
                                 type="button"
                                 className="btn fw-bold regular-btn align-self-center"
                                 style={{ width: "360px" }}
+                                onClick={() => handleOpenForm('Volunteer')}
                             >
                                 Volunteer
                             </button>

@@ -53,7 +53,7 @@ const NgHiring = () => {
   };
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbz3lL0Jmk0KPoujPJJSBnb00aMYjqSU6O0QJ_laR51rMIxeTA08WfRMUlEaPosfiS14/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbz3lL0Jmk0KPoujPJJSBnb00aMYjqSU6O0QJ_laR51rMIxeTA08WfRMUlEaPosfiS14/exec', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -126,17 +126,17 @@ const NgHiring = () => {
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="textlink">
-                <img src={myImage} className="women-image" alt="Placeholder Image" />
+                <img src={myImage} className="women-image" alt="Image" />
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="textlink">
                 <p className="section-para body1 w-100">Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
-                  <span className="link"> skills, talent, and adaptability;</span>
+                  <span className="link">skills, talent, and adaptability;</span>
                   they bring unique perspectives that
-                  <span className="link"> enrich your workforce and foster innovation.</span>
+                  <span className="link">enrich your workforce and foster innovation.</span>
                   With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
-                  <span className="link"> future where everyone has a seat at the table regardless of their background</span>
+                  <span className="link">future where everyone has a seat at the table regardless of their background</span>
                 </p>
                 <button
                   type="button"
@@ -154,10 +154,10 @@ const NgHiring = () => {
       <Timeline />
       <OurAlumni />
       <Slider />
-      <Ourrecruiters />
+      <Ourrecruiters handleOpenForm={handleOpenForm} />
       <div>
         {data.map((item, index) => (
-          <div key={index} className="position-relative">
+          <div key={item.id} className="position-relative">
             <img className='banner-img' src={item.img} alt="Hire From Us" />
             <h2 className="hire-heading">{item.text}</h2>
             <section className="d-flex flex-column align-items-center our-initiatives">
@@ -173,7 +173,7 @@ const NgHiring = () => {
                           .map((highlightKey, idx) => {
                             const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
                             return (
-                              <li key={idx} className='section-para body1 w-100 ml-3'>
+                              <li key={highlightKey} className='section-para body1 w-100 ml-3'>
                                 <span className='link'>{item.list[highlightKey]}</span>
                                 <span>{item.list[detailKey]}</span>
                               </li>
@@ -184,6 +184,7 @@ const NgHiring = () => {
                             type="button"
                             className="btn fw-bold regular-btn align-self-center px-4 p-2"
                             style={{ width: "360px" }}
+                            onClick={() => handleOpenForm(item.text)}
                           >
                             {item.button}
                           </button>
@@ -199,8 +200,10 @@ const NgHiring = () => {
       </div>
       
       {formType && (
-        <div className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
-          <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
+         <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
+         className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
+          <div className="modal-dialog" role="document" onClick={(e) => e.stopPropagation()} tabIndex="0" >
+        
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">{formType}</h5>
@@ -211,7 +214,7 @@ const NgHiring = () => {
               <div className="modal-body">
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <label>Full Name</label>
+                    <label htmlFor="fullName" >Full Name</label>
                     <input
                       type="text"
                       name="fullName"
@@ -222,7 +225,7 @@ const NgHiring = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <label>Work Email</label>
+                    <label htmlFor="email" >Work Email</label>
                     <input
                       type="email"
                       name="email"
@@ -233,7 +236,7 @@ const NgHiring = () => {
                     />
                   </div>
                   <div className="form-group">
-                    <label>Number</label>
+                    <label htmlFor="number" >Number</label>
                     <input
                       type="text"
                       name="number"
@@ -245,7 +248,7 @@ const NgHiring = () => {
                   </div>
                   {formType === 'Download Placement Brief' ? (
                      <div className="form-group">
-                       <label>Download on email</label>
+                       <label htmlFor="downloadEmail" >Download on email</label>
                        <input
                         type="email"
                         name="downloadEmail"
