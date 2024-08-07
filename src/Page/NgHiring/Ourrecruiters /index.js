@@ -1,5 +1,6 @@
 import "./styles.css";
 import logos from "../assets/logos.png";
+
 const Ourrecruiters = () => {
     return (
         <section className="d-flex flex-column align-items-center our-initiatives">

@@ -9,11 +9,13 @@ import Ourrecruiters from './Ourrecruiters ';
 
 const NgHiring = () => {
   const [formType, setFormType] = useState('');
+  const [showToast, setShowToast] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
     number: '',
-    downloadEmail: ''
+    downloadEmail: '',
+    purpose: ''
   });
 
   const handleOpenForm = (type) => {
@@ -23,6 +25,13 @@ const NgHiring = () => {
 
   const handleCloseForm = () => {
     setFormType('');
+    setFormData({
+      fullName: '',
+      email: '',
+      number: '',
+      downloadEmail: '',
+      purpose: ''
+    });
   };
 
   const handleChange = (e) => {
@@ -44,7 +53,7 @@ const NgHiring = () => {
   };
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbyOQjPx5YSjn6PEA2Z3YgyYvMls8qNlRgsFai3MoBIeW-TyVK_ZFlKnwjpe9vjtz1hI/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbz3lL0Jmk0KPoujPJJSBnb00aMYjqSU6O0QJ_laR51rMIxeTA08WfRMUlEaPosfiS14/exec', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,10 +61,8 @@ const NgHiring = () => {
       body: JSON.stringify(dataToSend),
       mode: "no-cors",
     });
-
-    // Because we are using "no-cors", we cannot access the response body
-    // Assuming the submission is successful if no error is thrown
-    alert('Form submitted successfully!');
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 1000);
     handleCloseForm();
   } catch (error) {
     console.error('Error:', error);
@@ -236,19 +243,6 @@ const NgHiring = () => {
                       required
                     />
                   </div>
-                  {/* {formType === 'Download Placement Brief' && (
-                    <div className="form-group">
-                      <label>Email to Receive Placement Brief</label>
-                      <input
-                        type="email"
-                        name="downloadEmail"
-                        className="form-control"
-                        value={formData.downloadEmail}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-                  )} */}
                   {formType === 'Download Placement Brief' ? (
                      <div className="form-group">
                        <label>Download on email</label>
@@ -262,13 +256,19 @@ const NgHiring = () => {
                       />
                      </div>
                    ) : (
-                     <div className="form-group">
-                      <label>Purpose</label>
-                      <select className="form-control " style={{ height: '60px' }}>
-                        <option>Hire from Us</option>
-                        <option>Become knowledge partner</option>
-                        <option>Volunteer</option>
-                      </select>
+                      <div className="form-group">
+                        <label>Purpose</label>
+                        <select
+                          name="purpose"
+                          className="form-control"
+                          style={{ height: '60px' }}
+                          value={formData.purpose}
+                          onChange={handleChange}
+                        >
+                          <option value="Hire from Us">Hire from Us</option>
+                          <option value="Become knowledge partner">Become knowledge partner</option>
+                          <option value="Volunteer">Volunteer</option>
+                        </select>
                     </div>
                    )}
                   <div className="modal-footer">
@@ -277,6 +277,20 @@ const NgHiring = () => {
                   </div>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+      {showToast && (
+        <div aria-live="polite" aria-atomic="true" className="d-flex justify-content-center align-items-center mt-5" style={{ minHeight:'200px',position: 'fixed', top: '40px', right: '50px', zIndex: '1050' }}>
+          <div className="toast show border mb-4" role="alert" aria-live="assertive" aria-atomic="true">
+            <div className="toast-header">
+              <button type="button" className="ml-2  p-2 close" onClick={() => setShowToast(false)} aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="toast-body">
+              Form submitted successfully!
             </div>
           </div>
         </div>
