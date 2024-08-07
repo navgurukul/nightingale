@@ -1,6 +1,17 @@
 .body1 {
   line-height: 30.6px;
 }
+.modal-title{
+  color: red;
+}
+.form-control{
+  height: 60px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+.modal-dialog{
+  border: 2px solid gray;
+}
 
 .link {
   color: #EB5F42;

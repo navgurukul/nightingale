@@ -5,18 +5,63 @@ import data from './Data';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
- import Ourrecruiters from './Ourrecruiters ';
+import Ourrecruiters from './Ourrecruiters ';
 
 const NgHiring = () => {
   const [formType, setFormType] = useState('');
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    number: '',
+    downloadEmail: ''
+  });
 
   const handleOpenForm = (type) => {
+    console.log("Opening form for type:", type);
     setFormType(type);
   };
 
   const handleCloseForm = () => {
     setFormType('');
   };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const dataToSend = {
+    fullName: formData.fullName,
+    workEmail: formData.email,
+    number: formData.number,
+    purpose: formType,
+    downloadEmail: formType === 'Download Placement Brief' ? formData.downloadEmail : ''
+  };
+
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbyOQjPx5YSjn6PEA2Z3YgyYvMls8qNlRgsFai3MoBIeW-TyVK_ZFlKnwjpe9vjtz1hI/exec', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataToSend),
+      mode: "no-cors",
+    });
+
+    // Because we are using "no-cors", we cannot access the response body
+    // Assuming the submission is successful if no error is thrown
+    alert('Form submitted successfully!');
+    handleCloseForm();
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Failed to submit form: ' + error.message);
+  }
+};
 
   return (
     <>
@@ -157,39 +202,80 @@ const NgHiring = () => {
                 </button>
               </div>
               <div className="modal-body">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="form-group">
                     <label>Full Name</label>
-                    <input type="text" className="form-control" />
+                    <input
+                      type="text"
+                      name="fullName"
+                      className="form-control"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      required
+                    />
                   </div>
                   <div className="form-group">
-                    <label>Work email</label>
-                    <input type="email" className="form-control" />
+                    <label>Work Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                    />
                   </div>
                   <div className="form-group">
                     <label>Number</label>
-                    <input type="text" className="form-control" />
+                    <input
+                      type="text"
+                      name="number"
+                      className="form-control"
+                      value={formData.number}
+                      onChange={handleChange}
+                      required
+                    />
                   </div>
-                  {formType === 'Download Placement Brief' ? (
+                  {/* {formType === 'Download Placement Brief' && (
                     <div className="form-group">
-                      <label>Download on email</label>
-                      <input type="email" className="form-control" />
+                      <label>Email to Receive Placement Brief</label>
+                      <input
+                        type="email"
+                        name="downloadEmail"
+                        className="form-control"
+                        value={formData.downloadEmail}
+                        onChange={handleChange}
+                        required
+                      />
                     </div>
-                  ) : (
-                    <div className="form-group">
+                  )} */}
+                  {formType === 'Download Placement Brief' ? (
+                     <div className="form-group">
+                       <label>Download on email</label>
+                       <input
+                        type="email"
+                        name="downloadEmail"
+                        className="form-control"
+                        value={formData.downloadEmail}
+                        onChange={handleChange}
+                        required
+                      />
+                     </div>
+                   ) : (
+                     <div className="form-group">
                       <label>Purpose</label>
-                      <select className="form-control">
+                      <select className="form-control " style={{ height: '60px' }}>
                         <option>Hire from Us</option>
                         <option>Become knowledge partner</option>
                         <option>Volunteer</option>
                       </select>
                     </div>
-                  )}
+                   )}
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
+                    <button type="submit" className="btn btn-success">Submit</button>
+                  </div>
                 </form>
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
-                <button type="button" className="btn btn-primary">Submit</button>
               </div>
             </div>
           </div>
@@ -200,3 +286,4 @@ const NgHiring = () => {
 };
 
 export default NgHiring;
+
