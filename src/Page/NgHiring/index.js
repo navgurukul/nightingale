@@ -77,12 +77,12 @@ const NgHiring = () => {
         <div className="container mt-4">
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="textlink">
-                <h3 className="section-head mb-4">You are our last piece in this puzzle of Diversity, Equality, and Inclusion.</h3>
+              <div className="p-3">
+                <h3 className="fontsize mb-4">You are our last piece in this puzzle of Diversity, Equality, and Inclusion.</h3>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="textlink">
+              <div className="p-3">
                 <p className="section-para body1 w-100">For more than 8 years, NavGurukul Foundation
                   for Social Welfare has been committed to providing pathways to aspiration careers to
                   students from marginalized communities.

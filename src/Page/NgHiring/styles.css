@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.fontsize {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 48px;
+}
+
 .body1 {
   line-height: 30.6px;
 }
