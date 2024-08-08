@@ -128,7 +128,7 @@ const NgHiring = () => {
       <section className="d-flex flex-column align-items-center our-initiatives">
 
         <div className="container">
-          <div className="row gy-4 mt-4">
+          <div className="row gy-4 ">
             <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-lg-0">
               <div className="p-3">
                 <img src={myImage} className="women-image p-1" alt="Image" />
