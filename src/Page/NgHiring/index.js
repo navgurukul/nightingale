@@ -73,6 +73,7 @@ const NgHiring = () => {
   };
 
   return (
+    
     <>
       <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container mt-4">
