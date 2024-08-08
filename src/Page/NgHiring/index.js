@@ -64,7 +64,7 @@ const NgHiring = () => {
         mode: "no-cors",
       });
       setShowToast(true);
-      setTimeout(() => setShowToast(false), 2000);
+      setTimeout(() => setShowToast(false), 1000);
       handleCloseForm();
     } catch (error) {
       console.error('Error:', error);

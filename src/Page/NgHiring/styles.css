@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;500;600;700&display=swap');
 
 .fontsize {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 48px;
+  font-family: 'Spectral', sans-serif;
+  font-size: 49px;
+  font-weight: 700;
 }
 
 .body1 {
