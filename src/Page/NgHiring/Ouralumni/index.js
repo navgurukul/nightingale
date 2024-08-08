@@ -5,7 +5,7 @@ import user from "../assets/user-icon.png";
 
 function shuffleObject(obj) {
   let newObj = {};
-  var keys = Object.keys(obj);
+  const keys = Object.keys(obj);
   keys.sort(() => Math.random() - 0.5);
   keys.forEach((k) => {
     newObj[k] = obj[k];
@@ -28,7 +28,7 @@ function OurAlumni() {
     <main className="ng-hiring-page">
       <div className="page-content">
         <section className="hiring-page-section mb-4 d-flex flex-column mt-5">
-          <h3 className="hiring-section-title section-head mb-3">
+          <h3 className="hiring-section-title mb-3">
             Meet Our Alumni
           </h3>
           <div className="container hiring-page-card-container px-0 d-flex mt-3">
@@ -41,8 +41,8 @@ function OurAlumni() {
                   team[item].Designation
                 ) {
                   return (
-                      <div className="Card-content flex flex-column col-6 col-md-3">
-                        <div className="card-details">
+                      <div key={item} className="flex flex-column col-6 col-md-3">
+                        <div>
                           <img
                             className="team-info-card-img img-card-hover"
                             src={team[item].Photo || user}
