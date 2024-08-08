@@ -7,6 +7,7 @@ import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters ';
 
+
 const NgHiring = () => {
   const [formType, setFormType] = useState('');
   const [showToast, setShowToast] = useState(false);
@@ -42,33 +43,33 @@ const NgHiring = () => {
     });
   };
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const dataToSend = {
-    fullName: formData.fullName,
-    workEmail: formData.email,
-    number: formData.number,
-    purpose: formType,
-    downloadEmail: formType === 'Download Placement Brief' ? formData.downloadEmail : ''
-  };
+    const dataToSend = {
+      fullName: formData.fullName,
+      workEmail: formData.email,
+      number: formData.number,
+      purpose: formType,
+      downloadEmail: formType === 'Download Placement Brief' ? formData.downloadEmail : ''
+    };
 
-  try {
+    try {
       await fetch('https://script.google.com/macros/s/AKfycbz3lL0Jmk0KPoujPJJSBnb00aMYjqSU6O0QJ_laR51rMIxeTA08WfRMUlEaPosfiS14/exec', {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(dataToSend),
-      mode: "no-cors",
-    });
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 1000);
-    handleCloseForm();
-  } catch (error) {
-    console.error('Error:', error);
-    alert('Failed to submit form: ' + error.message);
-  }
-};
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+        mode: "no-cors",
+      });
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+      handleCloseForm();
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Failed to submit form: ' + error.message);
+    }
+  };
 
   return (
     <>
@@ -90,7 +91,7 @@ const NgHiring = () => {
               <div className='row p-2 justify-content-center'>
                 <button
                   type="button"
-                  className="btn fw-bold regular-btn align-self-center px-4 p-2"
+                  className="btn fw-bold regular-btn align-self-center px-4"
                   style={{ width: "360px" }}
                   onClick={() => handleOpenForm('Hire from Us')}
                 >
@@ -120,27 +121,29 @@ const NgHiring = () => {
             </div>
           </div>
         </div>
+
       </section>
       <section className="d-flex flex-column align-items-center our-initiatives">
+
         <div className="container mt-4">
           <div className="row gy-4 mt-4">
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="textlink">
-                <img src={myImage} className="women-image" alt="Image" />
+            <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-lg-0">
+              <div className="p-3">
+                <img src={myImage} className="women-image p-1" alt="Image" />
               </div>
             </div>
+
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="textlink">
-                <p className="section-para body1 w-100">Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
-                  <span className="link">skills, talent, and adaptability;</span>
-                  they bring unique perspectives that
-                  <span className="link">enrich your workforce and foster innovation.</span>
-                  With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
+              <div className="p-3">
+                <p className="section-para body1 w-100 p-1">
+                  Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
+                  <span className="link">skills, talent, and adaptability;</span> they bring unique perspectives that
+                  <span className="link">enrich your workforce and foster innovation.</span> With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
                   <span className="link">future where everyone has a seat at the table regardless of their background</span>
                 </p>
                 <button
                   type="button"
-                  className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4 py-2"
+                  className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4 py-2 m-3"
                   style={{ width: "360px" }}
                   onClick={() => handleOpenForm('Download Placement Brief')}
                 >
@@ -198,12 +201,12 @@ const NgHiring = () => {
           </div>
         ))}
       </div>
-      
+
       {formType && (
-         <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
-         className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
+        <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
+          className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
           <div className="modal-dialog" role="document" onClick={(e) => e.stopPropagation()} tabIndex="0" >
-        
+
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">{formType}</h5>
@@ -247,9 +250,9 @@ const NgHiring = () => {
                     />
                   </div>
                   {formType === 'Download Placement Brief' ? (
-                     <div className="form-group">
-                       <label htmlFor="downloadEmail" >Download on email</label>
-                       <input
+                    <div className="form-group">
+                      <label htmlFor="downloadEmail" >Download on email</label>
+                      <input
                         type="email"
                         name="downloadEmail"
                         className="form-control"
@@ -257,23 +260,23 @@ const NgHiring = () => {
                         onChange={handleChange}
                         required
                       />
-                     </div>
-                   ) : (
-                      <div className="form-group">
-                        <label>Purpose</label>
-                        <select
-                          name="purpose"
-                          className="form-control"
-                          style={{ height: '60px' }}
-                          value={formData.purpose}
-                          onChange={handleChange}
-                        >
-                          <option value="Hire from Us">Hire from Us</option>
-                          <option value="Become knowledge partner">Become knowledge partner</option>
-                          <option value="Volunteer">Volunteer</option>
-                        </select>
                     </div>
-                   )}
+                  ) : (
+                    <div className="form-group">
+                      <label>Purpose</label>
+                      <select
+                        name="purpose"
+                        className="form-control"
+                        style={{ height: '60px' }}
+                        value={formData.purpose}
+                        onChange={handleChange}
+                      >
+                        <option value="Hire from Us">Hire from Us</option>
+                        <option value="Become knowledge partner">Become knowledge partner</option>
+                        <option value="Volunteer">Volunteer</option>
+                      </select>
+                    </div>
+                  )}
                   <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
                     <button type="submit" className="btn btn-success">Submit</button>
@@ -285,15 +288,18 @@ const NgHiring = () => {
         </div>
       )}
       {showToast && (
-        <div aria-live="polite" aria-atomic="true" className="d-flex justify-content-center align-items-center mt-5" style={{ minHeight:'200px',position: 'fixed', top: '40px', right: '50px', zIndex: '1050' }}>
-          <div className="toast show border mb-4" role="alert" aria-live="assertive" aria-atomic="true">
-            <div className="toast-header">
-              <button type="button" className="ml-2  p-2 close" onClick={() => setShowToast(false)} aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="toast-body">
-              Form submitted successfully!
+        <div class="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-content">
+            <div class="content-body d-flex align-items-center">
+              <div class="icon me-4">
+                <i class="fi fi-rr-badge-check d-flex"></i>
+              </div>
+              <div className="d-flex align-items-center">
+                <span className="fw-bold">Your data has been submitted successfully.</span>
+                <button type="button" className="close d-flex align-items-center ms-2 ml-3" onClick={() => setShowToast(false)} aria-label="Close">
+                  <i className="fa fa-times"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
