@@ -126,7 +126,7 @@ const NgHiring = () => {
       </section>
       <section className="d-flex flex-column align-items-center our-initiatives">
 
-        <div className="container mt-4">
+        <div className="container">
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-lg-0">
               <div className="p-3">
