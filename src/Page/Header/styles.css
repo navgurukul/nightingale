@@ -91,7 +91,9 @@
   .custom-outline-button {
     width: 100% !important;
   }
-
+  .digital-initiatives{
+    margin-left: 25px;
+  }
   .navbar-color {
     background-color: #fcdfd9 !important;
   }

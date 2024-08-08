@@ -107,7 +107,7 @@ function Header() {
             onMouseOut={() => setShowDropdown(false)}
           >
             <a
-              className="nav-link header-title "
+              className="nav-link header-title digital-initiatives"
               href="#"
               id="navbarDropdown"
               role="button"
