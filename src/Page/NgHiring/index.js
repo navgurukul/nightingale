@@ -5,9 +5,10 @@ import data from './Data';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
-import Ourrecruiters from './Ourrecruiters ';
+import Ourrecruiters from './Ourrecruiters';
 
 const NgHiring = () => {
+  
   const [formType, setFormType] = useState('');
   const [showToast, setShowToast] = useState(false);
   const [formData, setFormData] = useState({
