@@ -57,11 +57,13 @@ const NgHiring = () => {
     } else if (/\d/.test(formData.fullName)) {
       formErrors.fullName = 'Full Name should not contain numbers';
     }
+
     if (!formData.email) {
       formErrors.email = 'Work Email is required';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(formData.email)) {
+    } else if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(formData.email)) {
       formErrors.email = 'Please enter a valid email address';
     }
+
     if (!formData.number) { formErrors.number = 'Number is required'; }
     else if (!/^\d+$/.test(formData.number)) { formErrors.number = 'Number must contain only digits'; }
     else if (formData.number.length !== 10) { formErrors.number = 'Number must be exactly 10 digits'; }
@@ -278,7 +280,7 @@ const NgHiring = () => {
                   <div className="form-group">
                     <label htmlFor="email" className="textspacing">Work Email</label>
                     <input
-                      type="email"
+                      type="text"
                       name="email"
                       id="email"
                       className="form-control"
@@ -291,6 +293,7 @@ const NgHiring = () => {
                       </div>
                     )}
                   </div>
+
 
                   <div className="form-group">
                     <label htmlFor="number" className="textspacing">Number</label>
