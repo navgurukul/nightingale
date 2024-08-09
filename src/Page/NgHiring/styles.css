@@ -20,7 +20,7 @@
   border-radius: 35px;
 }
 
-.modal-content{
+.modal-content {
   border: 2px solid gray;
   border-radius: 25px;
   padding: 15px;
@@ -28,14 +28,12 @@
 }
 
 
-.textspacing, .error_massage{
+.textspacing,
+.error_massage {
   margin-left: 10px;
   padding: 1px;
- 
+
 }
-
-
-
 
 .link {
   color: #EB5F42;
@@ -177,4 +175,32 @@
   .icon {
     font-size: 20px;
   }
+}
+
+.loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner i {
+  font-size: 2rem;
+  color: green;
+}
+
+.loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 503px;
+  left: 180px;
 }

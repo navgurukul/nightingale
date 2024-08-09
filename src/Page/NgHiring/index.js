@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import "./styles.css";
 import myImage from './assets/image.png';
@@ -8,12 +9,13 @@ import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 
-
 const NgHiring = () => {
 
   const [errors, setErrors] = useState({});
   const [formType, setFormType] = useState('');
   const [showToast, setShowToast] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -67,6 +69,7 @@ const NgHiring = () => {
     if (!formData.number) { formErrors.number = 'Number is required'; }
     else if (!/^\d+$/.test(formData.number)) { formErrors.number = 'Number must contain only digits'; }
     else if (formData.number.length !== 10) { formErrors.number = 'Number must be exactly 10 digits'; }
+
     if (formType === 'Download Placement Brief' && !formData.downloadEmail) formErrors.downloadEmail = 'Download Email is required';
     if (formType !== 'Download Placement Brief' && !formData.purpose) formErrors.purpose = 'Purpose is required';
     setErrors(formErrors);
@@ -75,7 +78,12 @@ const NgHiring = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!validateForm()) return;
+    setLoading(true);
+
+    if (!validateForm()) {
+      setLoading(false);
+      return;
+    }
 
     const dataToSend = {
       fullName: formData.fullName,
@@ -100,11 +108,12 @@ const NgHiring = () => {
     } catch (error) {
       console.error('Error:', error);
       alert('Failed to submit form: ' + error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-
     <>
       <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container mt-4">
@@ -237,19 +246,16 @@ const NgHiring = () => {
 
       {formType && (
         <div
-          role="dialog"
           aria-labelledby="modalTitle"
           aria-describedby="modalDescription"
           className="modal"
           style={{ display: 'block' }}
-          onClick={handleCloseForm}
-        >
+          onClick={handleCloseForm}>
           <div
             className="modal-dialog"
             role="document"
             onClick={(e) => e.stopPropagation()}
           >
-
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title" id="modalTitle">{formType}</h5>
@@ -266,7 +272,7 @@ const NgHiring = () => {
               <div className="modal-body">
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <label htmlFor="fullName" className='textspacing'>Full Name</label>
+                    <label htmlFor="fullName" className='textspacing'>Name</label>
                     <input
                       type="text"
                       name="fullName"
@@ -295,7 +301,6 @@ const NgHiring = () => {
                     )}
                   </div>
 
-
                   <div className="form-group">
                     <label htmlFor="number" className="textspacing">Number</label>
                     <input
@@ -304,7 +309,13 @@ const NgHiring = () => {
                       id="number"
                       className="form-control"
                       value={formData.number}
-                      onChange={handleChange}
+                      onChange={(e) => {
+                        const filteredValue = e.target.value.replace(/[^0-9]/g, '');
+                        setFormData({
+                          ...formData,
+                          number: filteredValue
+                        });
+                      }}
                       maxLength="10"
                     />
                     {errors.number && (
@@ -313,7 +324,6 @@ const NgHiring = () => {
                       </div>
                     )}
                   </div>
-
                   {formType === 'Download Placement Brief' ? (
                     <div className="form-group">
                       <label htmlFor="downloadEmail" className='textspacing'>Download on email</label>
@@ -329,10 +339,7 @@ const NgHiring = () => {
                     </div>
                   ) : (
                     <div className="form-group">
-                      <label htmlFor='purpose' className='textspacing'>Purpose</label>
-                      <input type='text' id='purpose' name='purpose' />
-
-
+                      <label htmlFor="purpose" className='textspacing'>Purpose</label>
                       <select
                         name="purpose"
                         id="purpose"
@@ -341,32 +348,39 @@ const NgHiring = () => {
                         value={formData.purpose}
                         onChange={handleChange}
                       >
-                        <option value="Select bellow option">Select here</option>
-                        <option value="Hire from Us">Hire from Us</option>
+                        <option className='backgroundcolor' value="Hire from Us">Hire from Us</option>
                         <option value="Become knowledge partner">Become knowledge partner</option>
                         <option value="Volunteer">Volunteer</option>
                       </select>
                       {errors.purpose && <div style={{ color: 'red' }} className='error_massage'>{errors.purpose}</div>}
                     </div>
                   )}
-
                   <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
-                    <button type="submit"
-                      className="btn btn-success">Submit</button>
+                    <div className="button-container">
+                      <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
+                      <button type="submit" className="btn btn-success">Submit</button>
+                    </div>
                   </div>
 
+                  {loading && (
+                    <div className="loading-spinner" aria-live="assertive">
+                      <div className="spinner-border" role="status">
+                        <i className="fas fa-spinner fa-spin"></i>
+                      </div>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
           </div>
         </div>
       )}
+
       {showToast && (
-        <div class="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-content">
-            <div class="content-body d-flex align-items-center">
-              <div class="icon me-4">
+        <div className="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
+          <div className="toast-content">
+            <div className="content-body d-flex align-items-center">
+              <div className="icon me-4">
               </div>
               <div className="d-flex align-items-center">
                 <span className="fw-bold">Your data has been submitted successfully.</span>
@@ -382,24 +396,6 @@ const NgHiring = () => {
   );
 };
 export default NgHiring;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
