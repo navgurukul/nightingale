@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import "./styles.css";
 import myImage from './assets/image.png';
@@ -7,11 +9,13 @@ import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 
-
 const NgHiring = () => {
-  
+
+  const [errors, setErrors] = useState({});
   const [formType, setFormType] = useState('');
   const [showToast, setShowToast] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -34,6 +38,7 @@ const NgHiring = () => {
       downloadEmail: '',
       purpose: ''
     });
+    setErrors({});
   };
 
   const handleChange = (e) => {
@@ -43,8 +48,42 @@ const NgHiring = () => {
       [name]: value
     });
   };
+
+  const validateForm = () => {
+    let formErrors = {};
+
+    if (!formData.fullName) {
+      formErrors.fullName = 'Full Name is required';
+    } else if (formData.fullName.length < 3) {
+      formErrors.fullName = 'Full Name must be at least 3 characters long';
+    } else if (/\d/.test(formData.fullName)) {
+      formErrors.fullName = 'Full Name should not contain numbers';
+    }
+
+    if (!formData.email) {
+      formErrors.email = 'Work Email is required';
+    } else if (!/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(formData.email)) {
+      formErrors.email = 'Please enter a valid email address';
+    }
+
+    if (!formData.number) { formErrors.number = 'Number is required'; }
+    else if (!/^\d+$/.test(formData.number)) { formErrors.number = 'Number must contain only digits'; }
+    else if (formData.number.length !== 10) { formErrors.number = 'Number must be exactly 10 digits'; }
+
+    if (formType === 'Download Placement Brief' && !formData.downloadEmail) formErrors.downloadEmail = 'Download Email is required';
+    if (formType !== 'Download Placement Brief' && !formData.purpose) formErrors.purpose = 'Purpose is required';
+    setErrors(formErrors);
+    return Object.keys(formErrors).length === 0;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
+    if (!validateForm()) {
+      setLoading(false);
+      return;
+    }
 
     const dataToSend = {
       fullName: formData.fullName,
@@ -69,11 +108,12 @@ const NgHiring = () => {
     } catch (error) {
       console.error('Error:', error);
       alert('Failed to submit form: ' + error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    
     <>
       <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container mt-4">
@@ -123,10 +163,9 @@ const NgHiring = () => {
             </div>
           </div>
         </div>
-
       </section>
-      <section className="d-flex flex-column align-items-center our-initiatives">
 
+      <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container">
           <div className="row gy-4 ">
             <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-lg-0">
@@ -134,7 +173,6 @@ const NgHiring = () => {
                 <img src={myImage} className="women-image p-1" alt="Image" />
               </div>
             </div>
-
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
                 <p className="section-para body1 w-100 p-1">
@@ -156,10 +194,12 @@ const NgHiring = () => {
           </div>
         </div>
       </section>
+
       <Timeline />
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
+
       <div>
         {data.map((item, index) => (
           <div key={item.id} className="position-relative">
@@ -205,96 +245,142 @@ const NgHiring = () => {
       </div>
 
       {formType && (
-        <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
-          className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
-          <div className="modal-dialog" role="document" onClick={(e) => e.stopPropagation()} tabIndex="0" >
-
+        <div
+          aria-labelledby="modalTitle"
+          aria-describedby="modalDescription"
+          className="modal"
+          style={{ display: 'block' }}
+          onClick={handleCloseForm}>
+          <div
+            className="modal-dialog"
+            role="document"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="modal-content">
               <div className="modal-header">
-                <h5 className="modal-title">{formType}</h5>
-                <button type="button" className="close" onClick={handleCloseForm}>
-                  <span>&times;</span>
+                <h5 className="modal-title" id="modalTitle">{formType}</h5>
+                <button
+                  type="button"
+                  className="close"
+                  onClick={handleCloseForm}
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
                 </button>
               </div>
+
               <div className="modal-body">
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
-                    <label htmlFor="fullName" >Full Name</label>
+                    <label htmlFor="fullName" className='textspacing'>Name</label>
                     <input
                       type="text"
                       name="fullName"
+                      id="fullName"
                       className="form-control"
                       value={formData.fullName}
                       onChange={handleChange}
-                      required
                     />
+                    {errors.fullName && <div style={{ color: 'red' }} className='error_massage'>{errors.fullName}</div>}
                   </div>
+
                   <div className="form-group">
-                    <label htmlFor="email" >Work Email</label>
+                    <label htmlFor="email" className="textspacing">Work Email</label>
                     <input
-                      type="email"
+                      type="text"
                       name="email"
+                      id="email"
                       className="form-control"
                       value={formData.email}
                       onChange={handleChange}
-                      required
                     />
+                    {errors.email && (
+                      <div style={{ color: 'red' }} className="error_message">
+                        {errors.email}
+                      </div>
+                    )}
                   </div>
+
                   <div className="form-group">
-                    <label htmlFor="number" >Number</label>
+                    <label htmlFor="number" className="textspacing">Number</label>
                     <input
                       type="text"
                       name="number"
+                      id="number"
                       className="form-control"
                       value={formData.number}
-                      onChange={handleChange}
-                      required
+                      onChange={(e) => {
+                        const filteredValue = e.target.value.replace(/[^0-9]/g, '');
+                        setFormData({
+                          ...formData,
+                          number: filteredValue
+                        });
+                      }}
+                      maxLength="10"
                     />
+                    {errors.number && (
+                      <div style={{ color: 'red' }} className="error_message">
+                        {errors.number}
+                      </div>
+                    )}
                   </div>
                   {formType === 'Download Placement Brief' ? (
                     <div className="form-group">
-                      <label htmlFor="downloadEmail" >Download on email</label>
+                      <label htmlFor="downloadEmail" className='textspacing'>Download on email</label>
                       <input
                         type="email"
                         name="downloadEmail"
+                        id="downloadEmail"
                         className="form-control"
                         value={formData.downloadEmail}
                         onChange={handleChange}
-                        required
                       />
+                      {errors.downloadEmail && <div style={{ color: 'red' }} className='error_massage'>{errors.downloadEmail}</div>}
                     </div>
                   ) : (
                     <div className="form-group">
-                      <label>Purpose</label>
+                      <label htmlFor="purpose" className='textspacing'>Purpose</label>
                       <select
                         name="purpose"
+                        id="purpose"
                         className="form-control"
                         style={{ height: '60px' }}
                         value={formData.purpose}
                         onChange={handleChange}
                       >
-                        <option value="Hire from Us">Hire from Us</option>
+                        <option className='backgroundcolor' value="Hire from Us">Hire from Us</option>
                         <option value="Become knowledge partner">Become knowledge partner</option>
                         <option value="Volunteer">Volunteer</option>
                       </select>
+                      {errors.purpose && <div style={{ color: 'red' }} className='error_massage'>{errors.purpose}</div>}
                     </div>
                   )}
                   <div className="modal-footer">
-                    <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
-                    <button type="submit" className="btn btn-success">Submit</button>
+                    <div className="button-container">
+                      <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
+                      <button type="submit" className="btn btn-success">Submit</button>
+                    </div>
                   </div>
+
+                  {loading && (
+                    <div className="loading-spinner" aria-live="assertive">
+                      <div className="spinner-border" role="status">
+                        <i className="fas fa-spinner fa-spin"></i>
+                      </div>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>
           </div>
         </div>
       )}
+
       {showToast && (
-        <div class="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-content">
-            <div class="content-body d-flex align-items-center">
-              <div class="icon me-4">
-                <i class="fi fi-rr-badge-check d-flex"></i>
+        <div className="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
+          <div className="toast-content">
+            <div className="content-body d-flex align-items-center">
+              <div className="icon me-4">
               </div>
               <div className="d-flex align-items-center">
                 <span className="fw-bold">Your data has been submitted successfully.</span>
@@ -309,6 +395,11 @@ const NgHiring = () => {
     </>
   );
 };
-
 export default NgHiring;
+
+
+
+
+
+
 
