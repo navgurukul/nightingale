@@ -236,18 +236,19 @@ const NgHiring = () => {
       </div>
 
       {formType && (
-        <div role="dialog"
+        <div
+          role="dialog"
           aria-labelledby="modalTitle"
           aria-describedby="modalDescription"
           className="modal"
           style={{ display: 'block' }}
-          onClick={handleCloseForm}>
-
+          onClick={handleCloseForm}
+        >
           <div
             className="modal-dialog"
             role="document"
             onClick={(e) => e.stopPropagation()}
-            tabIndex="0" >
+          >
 
             <div className="modal-content">
               <div className="modal-header">
@@ -328,8 +329,9 @@ const NgHiring = () => {
                     </div>
                   ) : (
                     <div className="form-group">
-                      <label className='textspacing'>Purpose</label>
-                      <label htmlFor="purpose">Purpose</label>
+                      <label htmlFor='purpose' className='textspacing'>Purpose</label>
+                      <input type='text' id='purpose' name='purpose' />
+
 
                       <select
                         name="purpose"
