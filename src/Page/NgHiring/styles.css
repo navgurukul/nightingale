@@ -177,30 +177,35 @@
   }
 }
 
-.loading-spinner {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1050;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loading-spinner i {
-  font-size: 2rem;
+.custom-spinner i {
   color: green;
+  font-size: 33px;
+  margin-right: 30px;
 }
 
-.loading-spinner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 0.9rem;
-  position: absolute;
-  top: 503px;
-  left: 180px;
+.modal-body {
+  overflow-y: scroll;
+  max-height: 70vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
+.modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
