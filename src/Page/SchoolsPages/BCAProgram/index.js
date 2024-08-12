@@ -8,7 +8,7 @@ function BCAProgram() {
     <>
         <img src={BackgroundImg} style={{width:"100%", height:"100%"}} alt=''/>
         <div className="d-flex flex-column justify-content-center w-100 mb-4">
-            <div className="container align-items-center d-flex flex-column  justify-content-center w-100">
+            <div className="container align-items-center d-flex flex-column  justify-content-center w-100 mt-4">
                 <h3 className="mt-2 section-head mb-3">About the Program</h3>
                 <div className='row'>
                 <div className="body1 col-12 p-0 col-md-6 section-para d-flex align-items-center justify-content-center mt-4">
@@ -89,18 +89,18 @@ function BCAProgram() {
             </div>
 
 
-            <div className="container align-items-center d-flex flex-column  justify-content-center w-100">
-                <h3 className="mt-2 section-head mb-3">Contact Us</h3>
+            <div className="container align-items-center d-flex flex-column  justify-content-center w-100 mt-4">
+                <h3 className="mt-2 section-head mb-3 ">Contact Us</h3>
                 <div className="body1 col-12 p-0 col-md-12 section-para  mb-2 mt-3">
                     In case of any queries, please reach out to:<br /><br />
-                    <span className='fw-bold'>Phone:</span> (+91) 7081255272 (Monday to Friday - 10:00 AM to 06:00 PM (IST)<br />
+                    <span className='fw-bold'>Phone:</span> (+91) 7081255272 (Monday to Friday - 10:00 AM to 06:00 PM (IST))<br />
                     <span className='fw-bold'>Email:</span> <a href='mailto:nikesh@navgurukul.org' style={{ color: '#EB5F42' }} className='fw-bold'>nikesh@navgurukul.org</a> <br />
 
                 </div>
             </div>
 
-             <div className="container align-items-center d-flex flex-column  justify-content-center w-100">
-                <h3 className="mt-2 section-head mb-3">Collaboration Partners</h3>
+             <div className="container align-items-center d-flex flex-column  justify-content-center w-100 mt-4">
+                <h3 className="mt-2 section-head mb-3 ">Collaboration Partners</h3>
                 <div className="body1 col-12 p-0 col-md-12 section-para align-items-center justify-content-center mb-2 mt-3">
                     <span className='fw-bold'> Eternal University<br /></span>
                     Established in 2008, Eternal University is the first female-only university in North India. It offers value-based education (combining science and spirituality) with programs in fields like engineering, management, and public health
@@ -112,7 +112,7 @@ function BCAProgram() {
                 </div>
             </div>
 
-            <div className="container align-items-center d-flex flex-column  justify-content-center w-100">
+            <div className="container align-items-center d-flex flex-column  justify-content-center w-100 mt-4">
                 <h3 className="mt-2 section-head mb-3">Introduction to our course </h3>
                 <div className="body1 col-12 p-0 col-md-12 section-para align-items-center justify-content-center mb-2 mt-3">
                 The Bachelor of Computer Applications (BCA) program is designed to develop skilled software professionals with a strong 
@@ -121,7 +121,7 @@ function BCAProgram() {
                 </div>
             </div>
 
-            <div className="container align-items-center d-flex flex-column  justify-content-center w-100">
+            <div className="container align-items-center d-flex flex-column  justify-content-center w-100 mt-4">
                 <h3 className="mt-2 section-head mb-3">Learning to Learn </h3>
                 <div className='row '>
                     <div className='body1 col-12 p-2 col-md-6 section-para d-flex align-items-center justify-content-center mt-4'>
