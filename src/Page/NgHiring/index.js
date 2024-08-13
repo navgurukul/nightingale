@@ -55,7 +55,7 @@ const NgHiring = () => {
     };
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbz3lL0Jmk0KPoujPJJSBnb00aMYjqSU6O0QJ_laR51rMIxeTA08WfRMUlEaPosfiS14/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbwPweRt0oNELdbdYHcYrPMuw5b88VthoC4MAZhReVB2-IRHsZjmNTfjhYy6nBD5bZ5q/exec', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
