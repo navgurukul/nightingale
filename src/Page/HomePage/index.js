@@ -49,7 +49,7 @@ function Home() {
               window.open("/bca-programme", "_blank");
             }}
           >
-            Apply by 30th June 2024
+            Apply by 18th August 2024
           </button>
         </div>
       </div>
