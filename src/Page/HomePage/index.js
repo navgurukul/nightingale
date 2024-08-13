@@ -43,7 +43,7 @@ function Home() {
           <button
             type="button"
             className="btn regular-btn"
-            style={{ height: "48px", width: "232px" }}
+            style={{ height: "48px", width: "250px" }}
             onClick={(e) => {
               e.preventDefault();
               window.open("/bca-programme", "_blank");
