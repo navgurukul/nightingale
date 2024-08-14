@@ -6,7 +6,7 @@ import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
-
+import Button from './Button';
 
 const NgHiring = () => {
 
@@ -80,57 +80,44 @@ const NgHiring = () => {
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
-                <h3 className="heading-line">You are our last piece in this puzzle of Diversity, Equality, and Inclusion.</h3>
+                <h3 className="heading-line">
+                  You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
+                </h3>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
-                <p className="section-para body1 w-100">For more than 8 years, NavGurukul Foundation
-                  for Social Welfare has been committed to providing pathways to aspiration careers to
-                  students from marginalized communities.
-                  Now, we want your help to bridge the gap where skills meet opportunity</p>
+                <p className="section-para body1 w-100">
+                  For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
+                  to providing pathways to aspiration careers to students from marginalized communities.
+                  Now, we want your help to bridge the gap where skills meet opportunity.
+                </p>
               </div>
             </div>
           </div>
-
-
-          <div className='container mt-3'>
-            <div className='row'>
-              <div className='col-lg-4 col-md-4 col-sm-12 mb-3'>
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn align-self-center px-4"
-                  style={{ width: "100%" }}
+          <div className="container mt-3">
+            <div className="row">
+              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <Button
+                  label="Hire from Us"
                   onClick={() => handleOpenForm('Hire from Us')}
-                >
-                  Hire from Us
-                </button>
+                />
               </div>
-              <div className='col-lg-4 col-md-4 col-sm-12 mb-3'>
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn align-self-center px-4"
-                  style={{ width: "100%" }}
+              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <Button
+                  label="Become knowledge partner"
                   onClick={() => handleOpenForm('Become knowledge partner')}
-                >
-                  Become knowledge partner
-                </button>
+                />
               </div>
-              <div className='col-lg-4 col-md-4 col-sm-12 mb-3'>
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn align-self-center px-4"
-                  style={{ width: "100%" }}
+              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <Button
+                  label="Volunteer"
                   onClick={() => handleOpenForm('Volunteer')}
-                >
-                  Volunteer
-                </button>
+                />
               </div>
             </div>
           </div>
-
         </div>
-
       </section>
 
       <section className="d-flex flex-column align-items-center our-initiatives">
@@ -272,11 +259,26 @@ const NgHiring = () => {
                     </div>
                   ) : (
 
+                    // <div className="form-group">
+                    //   <label>Purpose</label>
+                    //   <select
+                    //     name="purpose"
+                    //     className="form-control"
+                    //     style={{ height: '60px' }}
+                    //     value={formData.purpose}
+                    //     onChange={handleChange}
+                    //   >
+                    //     <option value="Hire from Us">Hire from Us</option>
+                    //     <option value="Become knowledge partner">Become knowledge partner</option>
+                    //     <option value="Volunteer">Volunteer</option>
+                    //   </select>
+                    // </div>
+
                     <div className="form-group">
                       <label>Purpose</label>
                       <select
                         name="purpose"
-                        className="form-control"
+                        className="form-control custom-select"
                         style={{ height: '60px' }}
                         value={formData.purpose}
                         onChange={handleChange}
@@ -286,7 +288,8 @@ const NgHiring = () => {
                         <option value="Volunteer">Volunteer</option>
                       </select>
                     </div>
-                    
+
+
                   )}
                   <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
@@ -316,6 +319,9 @@ const NgHiring = () => {
           </div>
         </div>
       )}
+
+
+
     </>
   );
 };
