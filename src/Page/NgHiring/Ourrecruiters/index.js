@@ -11,49 +11,50 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                             <h3 className="section-head body1 w-100 d-flex justify-content-center text-center p-3">Our recruiters</h3>
                             <img src={logos} alt="logos" className="logos-img" />
                         </div>
-                        <div className="row section-para body1 w-100 p-3 mt-5 d-flex justify-content-center text-center">
-                            Logos of all the companies from NG deck
-                        </div>
                     </div>
                     <div className="col-lg-2 col-md-2 d-none d-md-flex align-items-center justify-content-center">
                         <div className="vertical-line"></div>
                     </div>
                     <div className="col-lg-5 col-md-5 col-sm-12">
                         <div className="row">
-                            <h3 className="section-head body1 w-100 d-flex  text-left p-3">Contact us</h3>
+                            <h3 className="section-head body1 w-100 d-flex  text-left p-3 justify-content-center">Contact us</h3>
                         </div>
-                        <div className="row section-para body1 w-100 p-3 d-flex text-left ">
+                        <div className="row section-para body1 w-100 p-3 d-flex text-left  justify-content-center ">
                             <div>
-                                <p className="mb-1">Gurgaon Address</p>
-                                <p className="mb-1">Phone no.: XCXXXXXXX99</p>
-                                <p className="mb-1">Let’s talk at <a href="mailto:tnp@navgurukul.org">tnp@navgurukul.org</a></p>
+                                <p>Phone no.: 9987609708</p>
                             </div>
                         </div>
-                        <div className='row p-1 justify-content-center'>
+
+                    </div>
+                </div>
+
+                <div className='container mb-4 mt-4'>
+                    <div className='row'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 mb-3'>
                             <button
                                 type="button"
-                                className="btn fw-bold regular-btn align-self-center  "
-                                style={{ width: "360px" }}
+                                className="btn fw-bold regular-btn align-self-center px-4"
+                                style={{ width: "100%" }}
                                 onClick={() => handleOpenForm('Hire from Us')}
                             >
                                 Hire from Us
                             </button>
                         </div>
-                        <div className='row p-1 justify-content-center'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 mb-3'>
                             <button
                                 type="button"
-                                className="btn fw-bold regular-btn align-self-center"
-                                style={{ width: "360px" }}
+                                className="btn fw-bold regular-btn align-self-center px-4"
+                                style={{ width: "100%" }}
                                 onClick={() => handleOpenForm('Become knowledge partner')}
                             >
                                 Become knowledge partner
                             </button>
                         </div>
-                        <div className='row p-1 justify-content-center mb-6'>
+                        <div className='col-lg-4 col-md-4 col-sm-12 mb-3'>
                             <button
                                 type="button"
-                                className="btn fw-bold regular-btn align-self-center"
-                                style={{ width: "360px" }}
+                                className="btn fw-bold regular-btn align-self-center px-4"
+                                style={{ width: "100%" }}
                                 onClick={() => handleOpenForm('Volunteer')}
                             >
                                 Volunteer

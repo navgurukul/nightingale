@@ -6,10 +6,10 @@ import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
-
+import Button from './Button';
 
 const NgHiring = () => {
-  
+
   const [formType, setFormType] = useState('');
   const [showToast, setShowToast] = useState(false);
   const [formData, setFormData] = useState({
@@ -73,60 +73,54 @@ const NgHiring = () => {
   };
 
   return (
-    
+
     <>
       <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container mt-4">
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
-                <h3 className="fontsize mb-4">You are our last piece in this puzzle of Diversity, Equality, and Inclusion.</h3>
+                <h3 className="media-font">
+                  You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
+                </h3>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
-                <p className="section-para body1 w-100">For more than 8 years, NavGurukul Foundation
-                  for Social Welfare has been committed to providing pathways to aspiration careers to
-                  students from marginalized communities.
-                  Now, we want your help to bridge the gap where skills meet opportunity</p>
+                <p className="section-para body1 w-100">
+                  For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
+                  to providing pathways to aspiration careers to students from marginalized communities.
+                  Now, we want your help to bridge the gap where skills meet opportunity.
+                </p>
               </div>
-              <div className='row p-2 justify-content-center'>
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn align-self-center px-4"
-                  style={{ width: "360px" }}
+            </div>
+          </div>
+          <div className="container mt-3">
+            <div className="row">
+              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <Button
+                  label="Hire from Us"
                   onClick={() => handleOpenForm('Hire from Us')}
-                >
-                  Hire from Us
-                </button>
+                />
               </div>
-              <div className='row p-2 justify-content-center'>
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn align-self-center px-4"
-                  style={{ width: "360px" }}
+              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <Button
+                  label="Become knowledge partner"
                   onClick={() => handleOpenForm('Become knowledge partner')}
-                >
-                  Become knowledge partner
-                </button>
+                />
               </div>
-              <div className='row p-2 justify-content-center'>
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn align-self-center px-4"
-                  style={{ width: "360px" }}
+              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
+                <Button
+                  label="Volunteer"
                   onClick={() => handleOpenForm('Volunteer')}
-                >
-                  Volunteer
-                </button>
+                />
               </div>
             </div>
           </div>
         </div>
-
       </section>
-      <section className="d-flex flex-column align-items-center our-initiatives">
 
+      <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container">
           <div className="row gy-4 ">
             <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-lg-0">
@@ -134,7 +128,6 @@ const NgHiring = () => {
                 <img src={myImage} className="women-image p-1" alt="Image" />
               </div>
             </div>
-
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
                 <p className="section-para body1 w-100 p-1">
@@ -145,7 +138,7 @@ const NgHiring = () => {
                 </p>
                 <button
                   type="button"
-                  className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4 py-2 m-3"
+                  className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4 py-2"
                   style={{ width: "360px" }}
                   onClick={() => handleOpenForm('Download Placement Brief')}
                 >
@@ -156,15 +149,17 @@ const NgHiring = () => {
           </div>
         </div>
       </section>
+      
       <Timeline />
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
+
       <div>
         {data.map((item, index) => (
           <div key={item.id} className="position-relative">
+            <h3 className="text-center media-font mb-4">{item.text}</h3>
             <img className='banner-img' src={item.img} alt="Hire From Us" />
-            <h2 className="hire-heading">{item.text}</h2>
             <section className="d-flex flex-column align-items-center our-initiatives">
               <div className="container">
                 <div className="textlink">
@@ -208,7 +203,6 @@ const NgHiring = () => {
         <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
           className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
           <div className="modal-dialog" role="document" onClick={(e) => e.stopPropagation()} tabIndex="0" >
-
             <div className="modal-content">
               <div className="modal-header">
                 <h5 className="modal-title">{formType}</h5>
@@ -264,6 +258,7 @@ const NgHiring = () => {
                       />
                     </div>
                   ) : (
+
                     <div className="form-group">
                       <label>Purpose</label>
                       <select
@@ -278,6 +273,7 @@ const NgHiring = () => {
                         <option value="Volunteer">Volunteer</option>
                       </select>
                     </div>
+
                   )}
                   <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" onClick={handleCloseForm}>Close</button>
@@ -289,6 +285,7 @@ const NgHiring = () => {
           </div>
         </div>
       )}
+
       {showToast && (
         <div class="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="toast-content">
@@ -306,6 +303,9 @@ const NgHiring = () => {
           </div>
         </div>
       )}
+
+
+
     </>
   );
 };
