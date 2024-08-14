@@ -80,7 +80,7 @@ const NgHiring = () => {
           <div className="row gy-4 mt-4">
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
-                <h3 className="heading-line">
+                <h3 className="media-font">
                   You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
                 </h3>
               </div>
@@ -128,7 +128,6 @@ const NgHiring = () => {
                 <img src={myImage} className="women-image p-1" alt="Image" />
               </div>
             </div>
-
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div className="p-3">
                 <p className="section-para body1 w-100 p-1">
@@ -150,6 +149,7 @@ const NgHiring = () => {
           </div>
         </div>
       </section>
+      
       <Timeline />
       <OurAlumni />
       <Slider />
@@ -158,7 +158,7 @@ const NgHiring = () => {
       <div>
         {data.map((item, index) => (
           <div key={item.id} className="position-relative">
-            <h2 className="hire-heading">{item.text}</h2>
+            <h3 className="text-center media-font mb-4">{item.text}</h3>
             <img className='banner-img' src={item.img} alt="Hire From Us" />
             <section className="d-flex flex-column align-items-center our-initiatives">
               <div className="container">
