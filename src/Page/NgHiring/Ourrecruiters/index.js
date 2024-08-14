@@ -25,7 +25,7 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                         <div className="row section-para body1 w-100 p-3 d-flex text-left ">
                             <div>
                                 <p className="mb-1">Gurgaon Address</p>
-                                <p className="mb-1">Phone no.: XCXXXXXXX99</p>
+                                <p className="mb-1">Phone no.: 9987609708</p>
                                 <p className="mb-1">Let’s talk at <a href="mailto:tnp@navgurukul.org">tnp@navgurukul.org</a></p>
                             </div>
                         </div>
