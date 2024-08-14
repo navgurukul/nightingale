@@ -253,7 +253,7 @@ const NgHiring = () => {
     onClick={handleCloseForm}
     onKeyDown={(e) => {
       if (e.key === 'Escape') {
-        handleCloseForm(e);
+        handleCloseForm();
       }
     }}
   >
