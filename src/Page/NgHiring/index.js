@@ -259,26 +259,11 @@ const NgHiring = () => {
                     </div>
                   ) : (
 
-                    // <div className="form-group">
-                    //   <label>Purpose</label>
-                    //   <select
-                    //     name="purpose"
-                    //     className="form-control"
-                    //     style={{ height: '60px' }}
-                    //     value={formData.purpose}
-                    //     onChange={handleChange}
-                    //   >
-                    //     <option value="Hire from Us">Hire from Us</option>
-                    //     <option value="Become knowledge partner">Become knowledge partner</option>
-                    //     <option value="Volunteer">Volunteer</option>
-                    //   </select>
-                    // </div>
-
                     <div className="form-group">
                       <label>Purpose</label>
                       <select
                         name="purpose"
-                        className="form-control custom-select"
+                        className="form-control"
                         style={{ height: '60px' }}
                         value={formData.purpose}
                         onChange={handleChange}
@@ -288,7 +273,6 @@ const NgHiring = () => {
                         <option value="Volunteer">Volunteer</option>
                       </select>
                     </div>
-
 
                   )}
                   <div className="modal-footer">
