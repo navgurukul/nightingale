@@ -194,18 +194,15 @@
   display: none;
 }
 
+.custom-select-wrapper {
+  position: relative;
+}
+.custom-select {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'><path fill='currentColor' d='M 70 90 L 100 50 L 40 50 Z'/></svg>") no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 22px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.error_message{
+  color: red;
+}

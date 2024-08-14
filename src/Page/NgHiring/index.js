@@ -240,152 +240,153 @@ const NgHiring = () => {
         ))}
       </div>
 
-
-
       {formType && (
-  <div
-    aria-labelledby="modalTitle"
-    aria-describedby="modalDescription"
-    className="modal d-block"
-    role="dialog"  // Added role for accessibility
-    tabIndex={-1}  // Make the modal focusable
-    style={{ display: 'block' }}
-    onClick={handleCloseForm}
-    onKeyDown={(e) => {
-      if (e.key === 'Escape') {
-        handleCloseForm();
-      }
-    }}
-  >
-    <div
-      className="modal-dialog"
-      role="document"
-      onClick={(e) => e.stopPropagation()}
-      tabIndex={0}  // Make the dialog focusable
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.stopPropagation();
-          handleCloseForm(e);
-        }
-      }}
-      style={{
-        maxHeight: '90vh',
-        overflowY: 'auto',
-        paddingRight: '0',
-        scrollbarWidth: 'none',
-        msOverflowStyle: 'none',
-      }}
-    >
-      <div className="modal-content">
-        <div className="modal-header">
-          <h5 className="modal-title" id="modalTitle">{formType}</h5>
-          <button
-            type="button"
-            className="close"
-            onClick={handleCloseForm}
-            aria-label="Close"
+        <div
+          aria-labelledby="modalTitle"
+          aria-describedby="modalDescription"
+          className="modal d-block"
+          role="dialog"
+          tabIndex={-1}
+          style={{ display: 'block' }}
+          onClick={handleCloseForm}
+          onKeyDown={(e) => {
+            if (e.key === 'Escape') {
+              handleCloseForm();
+            }
+          }}
+        >
+          <div
+            className="modal-dialog"
+            role="document"
+            onClick={(e) => e.stopPropagation()}
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.stopPropagation();
+                handleCloseForm(e);
+              }
+            }}
+            style={{
+              maxHeight: '90vh',
+              overflowY: 'auto',
+              paddingRight: '0',
+              scrollbarWidth: 'none',
+              msOverflowStyle: 'none',
+            }}
           >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-
-        <div className="modal-body">
-          <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="fullName" className='textspacing'>Name</label>
-              <input
-                type="text"
-                name="fullName"
-                id="fullName"
-                className="form-control"
-                value={formData.fullName}
-                onChange={handleChange}
-              />
-              {errors.fullName && <div style={{ color: 'red' }} className='error_message'>{errors.fullName}</div>}
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="email" className="textspacing">Work Email</label>
-              <input
-                type="text"
-                name="email"
-                id="email"
-                className="form-control"
-                value={formData.email}
-                onChange={handleChange}
-              />
-              {errors.email && <div style={{ color: 'red' }} className="error_message">{errors.email}</div>}
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="number" className="textspacing">Number</label>
-              <input
-                type="text"
-                name="number"
-                id="number"
-                className="form-control"
-                value={formData.number}
-                onChange={(e) => {
-                  const filteredValue = e.target.value.replace(/[^0-9]/g, '');
-                  setFormData({
-                    ...formData,
-                    number: filteredValue
-                  });
-                }}
-                maxLength="10"
-              />
-              {errors.number && <div style={{ color: 'red' }} className="error_message">{errors.number}</div>}
-            </div>
-
-            {formType !== 'Download Placement Brief' && (
-              <div className="form-group">
-                <label htmlFor="purpose" className='textspacing'>Purpose</label>
-                <select
-                  name="purpose"
-                  id="purpose"
-                  className="form-control"
-                  style={{ height: '60px' }}
-                  value={formData.purpose}
-                  onChange={handleChange}
-                >
-                  <option value="Hire from Us">Hire from Us</option>
-                  <option value="Become knowledge partner">Become knowledge partner</option>
-                  <option value="Volunteer">Volunteer</option>
-                </select>
-                {errors.purpose && <div style={{ color: 'red' }} className='error_message'>{errors.purpose}</div>}
-              </div>
-            )}
-
-            <div className="modal-footer d-flex justify-content-end align-items-center">
-              {loading && (
-                <div className="d-flex align-items-center">
-                  <div className="spinner-border me-2 custom-spinner" role="status">
-                    <i className="fas fa-spinner fa-spin"></i>
-                  </div>
-                </div>
-              )}
-              <div className="button-container d-flex">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="modalTitle">{formType}</h5>
                 <button
                   type="button"
-                  className="btn btn-secondary"
+                  className="close"
                   onClick={handleCloseForm}
-                  style={{ marginRight: '10px' }}
+                  aria-label="Close"
                 >
-                  Close
-                </button>
-                <button type="submit" className="btn btn-success ms-2">
-                  Submit
+                  <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
 
-  {showToast && (
+              <div className="modal-body">
+                <form onSubmit={handleSubmit}>
+                  <div className="form-group">
+                    <label htmlFor="fullName" className='textspacing'>Name</label>
+                    <input
+                      type="text"
+                      name="fullName"
+                      id="fullName"
+                      className="form-control"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                    />
+                    {errors.fullName && <div className='error_message'>{errors.fullName}</div>}
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="email" className="textspacing">Work Email</label>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      className="form-control"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                    {errors.email && <div className="error_message">{errors.email}</div>}
+                  </div>
+
+                  <div className="form-group">
+                    <label htmlFor="number" className="textspacing">Number</label>
+                    <input
+                      type="text"
+                      name="number"
+                      id="number"
+                      className="form-control"
+                      value={formData.number}
+                      onChange={(e) => {
+                        const filteredValue = e.target.value.replace(/[^0-9]/g, '');
+                        setFormData({
+                          ...formData,
+                          number: filteredValue
+                        });
+                      }}
+                      maxLength="10"
+                    />
+                    {errors.number && <div className="error_message">{errors.number}</div>}
+                  </div>
+
+                  {formType !== 'Download Placement Brief' && (
+                    <div className="form-group">
+                      <label htmlFor="purpose" className='textspacing'>Purpose</label>
+                      <div className="custom-select-wrapper">
+                        <select
+                          name="purpose"
+                          id="purpose"
+                          className="form-control custom-select"
+                          style={{ height: '60px', paddingRight: '40px' }}  
+                          value={formData.purpose}
+                          onChange={handleChange}
+                        >
+                          <option value="select from dropdown">Select from Dropdown</option>
+                          <option value="Hire from Us">Hire from Us</option>
+                          <option value="Become knowledge partner">Become knowledge partner</option>
+                          <option value="Volunteer">Volunteer</option>
+                        </select>
+                        {errors.purpose && <div className='error_message'>{errors.purpose}</div>}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="modal-footer d-flex justify-content-end align-items-center">
+                    {loading && (
+                      <div className="d-flex align-items-center">
+                        <div className="spinner-border me-2 custom-spinner" role="status">
+                          <i className="fas fa-spinner fa-spin"></i>
+                        </div>
+                      </div>
+                    )}
+                    <div className="button-container d-flex">
+                      <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={handleCloseForm}
+                        style={{ marginRight: '10px' }}
+                      >
+                        Close
+                      </button>
+                      <button type="submit" className="btn btn-success ms-2">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {showToast && (
         <div className="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
           <div className="toast-content">
             <div className="content-body d-flex align-items-center">
@@ -401,7 +402,6 @@ const NgHiring = () => {
           </div>
         </div>
       )}
-
     </>
   );
 };
