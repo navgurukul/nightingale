@@ -27,11 +27,13 @@ function TeamPage() {
       .filter(
         (item) =>
           team[item].Association !== "Volunteer" &&
-          team[item].Team === selectedTeam
+          team[item].Team === selectedTeam &&
+          team[item].Photo 
       )
       .map((key) => team[key]);
   };
-   const openLinkInNewTab = (url) => {
+
+  const openLinkInNewTab = (url) => {
     window.open(url, "_blank", "noopener noreferrer");
   };
 
@@ -57,11 +59,7 @@ function TeamPage() {
               <button
                 type="button"
                 className="btn regular-btn w-100"
-                onClick={(e) => {
-                openLinkInNewTab(
-                  "https://recruiterflow.com/navgurukul/jobs"
-                  )
-                }} 
+                onClick={() => openLinkInNewTab("https://recruiterflow.com/navgurukul/jobs")}
               >
                 Careers at Navgurukul
               </button>
@@ -70,12 +68,7 @@ function TeamPage() {
               <button
                 type="button"
                 className="btn section-para dashed-btn w-100"
-                onClick={(e) => {
-                  openLinkInNewTab(
-                    "https://recruiterflow.com/navgurukul/jobs/112"
-                    )
-                }} 
-                
+                onClick={() => openLinkInNewTab("https://recruiterflow.com/navgurukul/jobs/112")}
               >
                 Volunteer with us
               </button>
@@ -102,8 +95,7 @@ function TeamPage() {
                     ].map((teamName) => (
                       <li
                         key={teamName}
-                        className={`nav-item team-list-item ${selectedTeam === teamName ? "active" : ""
-                          }`}
+                        className={`nav-item team-list-item ${selectedTeam === teamName ? "active" : ""}`}
                         onClick={() => setSelectedTeam(teamName)}
                       >
                         <span className="nav-link text-left mt-2">{teamName}</span>
@@ -120,21 +112,19 @@ function TeamPage() {
                   ) : (
                     filterTeam(team).map((member, index) =>
                       <div key={index} className="col-lg-4 col-md-6">
-                        <div className="team-info-card ">
+                        <div className="team-info-card">
                           <div className="d-flex justify-content-center">
-                            {member.Photo && (
-                              <img
-                                className="team-info-card-img"
-                                src={member.Photo}
-                                alt={member.Name}
-                              />
-                            )}
+                            <img
+                              className="team-info-card-img"
+                              src={member.Photo}
+                              alt={member.Name}
+                            />
                           </div>
-                          <p className="team-info-card-title body" style={{ color: member.Name ? "inherit" : "grey" }}>
-                            {member.Name || "Awaiting Member's Name"}
+                          <p className="team-info-card-title body">
+                            {member.Name}
                           </p>
-                          <p className="team-info-card-designation " style={{ color: member.Designation ? "inherit" : "grey" }}>
-                            {member.Designation || "Awaiting description from team member"}
+                          <p className="team-info-card-designation">
+                            {member.Designation}
                           </p>
                           {member.Linkedin && (
                             <a
