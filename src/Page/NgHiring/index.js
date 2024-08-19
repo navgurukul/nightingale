@@ -1,4 +1,6 @@
+
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import "./styles.css";
 import myImage from './assets/image.png';
 import data from './Data';
@@ -8,12 +10,16 @@ import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 import Button from './Button';
 
+
 const NgHiring = () => {
+
+  const history = useHistory();
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [formType, setFormType] = useState('');
   const [showToast, setShowToast] = useState(false);
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -105,6 +111,19 @@ const NgHiring = () => {
       setShowToast(true);
       setTimeout(() => setShowToast(false), 1000);
       handleCloseForm();
+
+
+      setTimeout(() => {
+        setLoading(false);
+        history.push("/thankyou");
+
+        setTimeout(() => {
+          history.push("/hiring");
+        }, 2000);
+
+      }, 1500);
+
+
     } catch (error) {
       console.error('Error:', error);
       alert('Failed to submit form: ' + error.message);
@@ -390,6 +409,7 @@ const NgHiring = () => {
           </div>
         )
       }
+
       
     </>
   );
