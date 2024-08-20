@@ -44,7 +44,7 @@ const NgHiring = () => {
                   <div key={index} className="col-12 col-md-6 col-lg-4 mb-4" >
                     <div className="three_card_column"  >
                       <img className='img' src={item.img} alt="no img" />
-                      <h2 className="section-para body1 w-100 w-50 d-flex justify-content-center fw-bold" style={{ fontWeight: 'bold' }}>{item.heading}</h2>
+                      <h2 className="section-para body1 w-100 w-50 d-flex justify-content-center fw-bold mt-2" style={{ fontWeight: 'bold' }}>{item.heading}</h2>
                       <p className="section-para body1 w-100  w-50 d-flex justify-content-center  text-center">{item.paragraph}</p>
                     </div>
                   </div>

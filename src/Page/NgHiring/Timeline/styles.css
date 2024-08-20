@@ -28,11 +28,20 @@
   transform: translateX(-50%);
   z-index: 0;
 }
+
+.timelinetext{
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   .timeline-dot {
     display: none;
   }
   .timeline-row::after {
     display: none;
+  }
+
+  .timelinetext{
+    margin-top: 2px;
   }
 }
