@@ -156,7 +156,7 @@ const NgHiring = () => {
             </div>
           </div>
           <div className="container">
-            <div className="row">
+            <div className="row mt-3">
               <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
                 <Button
                   label="Hire from Us"
