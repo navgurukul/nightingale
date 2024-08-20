@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import { useEffect } from "react";
 import { withRouter } from "react-router-dom";
+
 import Header from "../Page/Header";
 import Footer from "../Page/Footer";
 import AboutPage from "../Page/AboutPage";
@@ -23,6 +24,7 @@ import SchoolOfBusinessPage from "../Page/SchoolsPages/SchoolOfBusiness";
 import SchoolOfFinancePage from "../Page/SchoolsPages/SchoolOfFinance"
 import BCA from "../Page/SchoolsPages/BCAProgram";
 import Careers from "../Page/Careers";
+import Thankyou from "../Page/NgHiring/Thankyou";
 
 function ScrollToTop({ history }) {
   useEffect(() => {
@@ -62,7 +64,11 @@ function Routing() {
         <Route exact path="/privacy" component={Privacy} />
         <Route exact path="/campus" component={OurCampus} />
         <Route exact path="/campus/:campusName" component={CampusPages} />
+        <Route exact path="/thankyou" component={Thankyou} />
+
         <Route exact path="*/" component={PageNotFound} />
+
+
       </Switch>
       <Footer />
     </>

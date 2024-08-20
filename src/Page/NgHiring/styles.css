@@ -17,11 +17,22 @@
 .form-control {
   height: 60px;
   border: 2px solid gray;
-  border-radius: 5px;
+  border-radius: 35px;
 }
 
-.modal-dialog {
+.modal-content {
   border: 2px solid gray;
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+
+.textspacing,
+.error_massage {
+  margin-left: 10px;
+  padding: 1px;
+
 }
 
 .link {
@@ -69,12 +80,6 @@
   object-fit: cover;
 }
 
-.hire-heading {
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
 .banner-img {
   width: 100%;
   height: 650px;
@@ -85,15 +90,34 @@
   position: fixed;
 }
 
+.hire-heading {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-size: 6.3rem;
+  font-weight: bold;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  z-index: 1;
+  -webkit-text-stroke: 3px black;
+}
+
+
 @media (max-width: 1200px) {
   .hire-heading {
     font-size: 6rem;
+    -webkit-text-stroke: 2px black;
+
   }
 }
 
 @media (max-width: 992px) {
   .hire-heading {
     font-size: 5rem;
+    -webkit-text-stroke: 1px black;
+
   }
 }
 
@@ -153,5 +177,92 @@
   }
 }
 
+.custom-spinner i {
+  color: green;
+  font-size: 33px;
+  margin-right: 30px;
+}
 
+.modal-body {
+  overflow-y: scroll;
+  max-height: 70vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.modal-body::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-select-wrapper {
+  position: relative;
+}
+
+.custom-select {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 140'><path fill='currentColor' d='M 70 90 L 100 50 L 40 50 Z'/></svg>") no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 22px;
+}
+
+.error_message {
+  color: red;
+}
+
+.container-thankyoupage {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 800px;
+  margin: auto;
+  max-width: 100%;
+  padding: 15px;
+}
+
+.large-font {
+  font-size: 50px;
+}
+
+
+.parent-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.parent-container {
+  display: grid;
+  place-items: center;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.bounce-in-text {
+  animation: bounceIn 2s ease;
+}
+
+.correctimg {
+  width: 50%;
+  max-width: 400px; 
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .large-font {
+      font-size: 1.5rem;
+  }
+
+  .body1 {
+      font-size: 1rem;
+  }
+
+  .correctimg {
+      max-width: 300px;
+  }
+
+  .mb-5 {
+      margin-bottom: 2rem !important;
+  }
+}
 
