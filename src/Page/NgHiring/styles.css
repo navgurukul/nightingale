@@ -212,6 +212,8 @@
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 800px;
   margin: auto;
+  max-width: 100%;
+  padding: 15px;
 }
 
 .large-font {
@@ -236,11 +238,31 @@
   text-align: center;
 }
 
+.bounce-in-text {
+  animation: bounceIn 2s ease;
+}
 
 .correctimg {
-  display: block;
-  max-width: 70%; 
-  height: auto; 
-  margin-left: auto; 
-  margin-right: auto;
+  width: 50%;
+  max-width: 400px; 
+  height: auto;
 }
+
+@media (max-width: 576px) {
+  .large-font {
+      font-size: 1.5rem;
+  }
+
+  .body1 {
+      font-size: 1rem;
+  }
+
+  .correctimg {
+      max-width: 300px;
+  }
+
+  .mb-5 {
+      margin-bottom: 2rem !important;
+  }
+}
+
