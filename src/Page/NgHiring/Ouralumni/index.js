@@ -29,7 +29,7 @@ function OurAlumni() {
       <div className="page-content">
         <section className="hiring-page-section mb-4 d-flex flex-column meetclass">
           
-          <h3 className="hiring-section-title mb-3">
+          <h3 className="hiring-section-title mb-5">
             Meet Our Alumni
           </h3>
 

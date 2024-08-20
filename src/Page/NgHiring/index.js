@@ -9,7 +9,6 @@ import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 import Button from './Button';
-// import Thankyou from './Thankyou';
 
 const NgHiring = () => {
 
@@ -409,7 +408,6 @@ const NgHiring = () => {
           </div>
         )
       }
-
     </>
   );
 };
