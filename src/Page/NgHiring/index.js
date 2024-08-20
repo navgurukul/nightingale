@@ -9,7 +9,6 @@ import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 import Button from './Button';
-import Thankyou from './Thankyou';
 
 const NgHiring = () => {
 
@@ -137,17 +136,18 @@ const NgHiring = () => {
 
     <>
       <section className="d-flex flex-column align-items-center our-initiatives">
-        <div className="container mt-4">
-          <div className="row gy-4 mt-4">
+        <div className="container">
+          <div className="row ">
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="p-3">
+
+              <div>
                 <h3 className="media-font">
                   You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
                 </h3>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="p-3">
+              <div>
                 <p className="section-para body1 w-100">
                   For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
                   to providing pathways to aspiration careers to students from marginalized communities.
@@ -185,12 +185,12 @@ const NgHiring = () => {
         <div className="container">
           <div className="row gy-4 ">
             <div className="col-lg-6 col-md-6 col-sm-12 mb-4 mb-lg-0">
-              <div className="p-3">
+              <div className="p-2">
                 <img src={myImage} className="women-image p-1" alt="Image" />
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="p-3">
+              <div className="p-2">
                 <p className="section-para body1 w-100 p-1">
                   Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
                   <span className="link">skills, talent, and adaptability;</span> they bring unique perspectives that
@@ -410,7 +410,6 @@ const NgHiring = () => {
         )
       }
 
-      <Thankyou/>
     </>
   );
 };
