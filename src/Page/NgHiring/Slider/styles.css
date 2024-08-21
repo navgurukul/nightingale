@@ -7,6 +7,47 @@
   background-color:#e3e8e2;
 }
 .three_card_column{
-  height: 330px;
+  height: 310px;
   background-color: #fff;
+}
+
+
+
+@media (max-width: 1200px) {
+  .three_card_column{
+    height: 310px;
+    background-color: #fff;
+  }
+  
+}
+
+@media (max-width: 992px) {
+  .three_card_column{
+    height: 300px;
+    background-color: #fff;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .three_card_column{
+    height: 300px;
+    background-color: #fff;
+  }
+  
+}
+
+@media (max-width: 576px) {
+  .three_card_column{
+    height: 280px;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 400px) {
+  .three_card_column{
+    height: 270px;
+    background-color: #fff;
+  }
+  
 }

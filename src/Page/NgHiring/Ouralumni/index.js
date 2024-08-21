@@ -27,10 +27,13 @@ function OurAlumni() {
   return (
     <main className="ng-hiring-page">
       <div className="page-content">
-        <section className="hiring-page-section mb-4 d-flex flex-column mt-5">
-          <h3 className="hiring-section-title mb-3">
+        <section className="hiring-page-section mb-4 d-flex flex-column meetclass">
+          
+          <h3 className="hiring-section-title mb-5">
             Meet Our Alumni
           </h3>
+
+
           <div className="container hiring-page-card-container px-0 d-flex mt-3">
             {Object.keys(shuffleObject(team)).length ? (
               Object.keys(shuffleObject(team)).map((item) => {

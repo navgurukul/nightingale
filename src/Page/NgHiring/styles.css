@@ -248,6 +248,7 @@
   height: auto;
 }
 
+
 @media (max-width: 576px) {
   .large-font {
       font-size: 1.5rem;
