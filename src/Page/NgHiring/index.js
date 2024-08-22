@@ -23,7 +23,6 @@ const NgHiring = () => {
     fullName: '',
     email: '',
     number: '',
-    downloadEmail: '',
     purpose: ''
   });
 
@@ -38,7 +37,6 @@ const NgHiring = () => {
       fullName: '',
       email: '',
       number: '',
-      downloadEmail: '',
       purpose: ''
     });
     setErrors({});
@@ -95,11 +93,10 @@ const NgHiring = () => {
       workEmail: formData.email,
       number: formData.number,
       purpose: formType,
-      downloadEmail: formType === 'Download Placement Brief' ? formData.downloadEmail : ''
     };
 
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbwPweRt0oNELdbdYHcYrPMuw5b88VthoC4MAZhReVB2-IRHsZjmNTfjhYy6nBD5bZ5q/exec', {
+      await fetch('https://script.google.com/macros/s/AKfycbw8bNmhSHg1adJmc9mqcqjvbnWg6NSyGP4uUn-JorWcWWy6cHt8h4gn-VSjiI1-WVF-sQ/exec', {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -110,7 +107,6 @@ const NgHiring = () => {
       setShowToast(true);
       setTimeout(() => setShowToast(false), 1000);
       handleCloseForm();
-
 
       setTimeout(() => {
         setLoading(false);
@@ -133,7 +129,6 @@ const NgHiring = () => {
   };
 
   return (
-
     <>
       <section className="d-flex flex-column align-items-center our-initiatives">
         <div className="container">
@@ -196,14 +191,17 @@ const NgHiring = () => {
                   <span className="link">enrich your workforce and foster innovation.</span> With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
                   <span className="link">future where everyone has a seat at the table regardless of their background</span>
                 </p>
-                <button
-                  type="button"
-                  className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4 py-2"
-                  style={{ width: "360px" }}
-                  onClick={() => handleOpenForm('Download Placement Brief')}
-                >
-                  Download Placement Brief
-                </button>
+                <div className="d-flex justify-content-center">
+                  <button
+                    type="button"
+                    className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4"
+                    style={{ width: "360px" }}
+                    onClick={() => handleOpenForm('Download Placement Brief')}
+                  >
+                    Download Placement Brief
+                  </button>
+                </div>
+
               </div>
             </div>
           </div>
@@ -320,22 +318,8 @@ const NgHiring = () => {
                     {errors.number && <div className="error_message">{errors.number}</div>}
 
                   </div>
-                  {formType === 'Download Placement Brief' ? (
-                    <div className="form-group">
-                      <label htmlFor="downloadEmail" >Download on email</label>
-                      <input
-                        type="email"
-                        name="downloadEmail"
-                        id="email"
-                        className="form-control"
-                        value={formData.downloadEmail}
-                        onChange={handleChange}
-                      />
-                      {errors.email && <div className="error_message">{errors.email}</div>}
 
-                    </div>
-                  ) : (
-
+                  {formType !== 'Download Placement Brief' && (
                     <div className="form-group">
                       <label>Purpose</label>
                       <select
@@ -352,10 +336,9 @@ const NgHiring = () => {
                         <option value="Volunteer">Volunteer</option>
                       </select>
                       {errors.purpose && <div className='error_message'>{errors.purpose}</div>}
-
                     </div>
-
                   )}
+
                   <div className="modal-footer d-flex justify-content-end align-items-center">
 
                     {loading && (
@@ -378,7 +361,6 @@ const NgHiring = () => {
                       <button type="submit" className="btn btn-success ms-2">
                         Submit
                       </button>
-
 
                     </div>
                   </div>

@@ -25,19 +25,24 @@
   border-radius: 25px;
   padding: 15px;
   margin-top: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.modal-content:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
 
 .textspacing,
 .error_massage {
   margin-left: 10px;
   padding: 1px;
-
 }
 
 .link {
   color: #EB5F42;
 }
+
+
 
 .link:hover {
   color: #EB5F42;
@@ -223,8 +228,8 @@
 
 .parent-container {
   display: flex;
-  justify-content: center; 
-  align-items: center;     
+  justify-content: center;
+  align-items: center;
 }
 
 .parent-container {
@@ -244,26 +249,25 @@
 
 .correctimg {
   width: 50%;
-  max-width: 400px; 
+  max-width: 400px;
   height: auto;
 }
 
 
 @media (max-width: 576px) {
   .large-font {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .body1 {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .correctimg {
-      max-width: 300px;
+    max-width: 300px;
   }
 
   .mb-5 {
-      margin-bottom: 2rem !important;
+    margin-bottom: 2rem !important;
   }
 }
-

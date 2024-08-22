@@ -7,10 +7,13 @@ const Ourrecruiters = ({ handleOpenForm }) => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 col-md-5 col-sm-12">
-                        <div className="row">
-                            <h3 className="section-head body1 w-100 d-flex justify-content-center text-center p-3">Our recruiters</h3>
-                            <img src={logos} alt="logos" className="logos-img" />
+                        <div className="row text-center">
+                            <h3 className="section-head body1 w-100 p-3">Our recruiters</h3>
+                            <div className="w-100 d-flex justify-content-center">
+                                <img src={logos} alt="logos" className="logos-img" />
+                            </div>
                         </div>
+                        
                     </div>
                     <div className="col-lg-2 col-md-2 d-none d-md-flex align-items-center justify-content-center">
                         <div className="vertical-line"></div>

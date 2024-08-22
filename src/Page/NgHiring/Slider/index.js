@@ -34,9 +34,12 @@ const NgHiring = () => {
         <section className=" d-flex flex-column align-items-center our-initiatives">
           <div className="container mt-4">
 
-            <h3 className=" media-font ">
-              Testimonials
-            </h3>
+            <div className="d-flex justify-content-center">
+              <h3 className="media-font">
+                Testimonials
+              </h3>
+            </div>
+
 
             <div className="container">
               <div className="row">
