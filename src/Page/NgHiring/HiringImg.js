@@ -1,14 +1,8 @@
 
-import React,{useState} from 'react';
+import React from 'react';
 import data from './Data';
 
-const HiringImg = () => {
-
-    const [formType, setFormType] = useState('');
-    const handleOpenForm = (type) => {
-        console.log("Opening form for type:", type);
-        setFormType(type);
-    };
+const HiringImg = ({ handleOpenForm }) => {
 
     return (
         <div>

@@ -2,14 +2,13 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./styles.css";
-import myImage from './assets/image.png';
-// import data from './Data';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
-import Button from './Button';
+import Puzzlesecssion from './Puzzlesecssion';
 import HiringImg from './HiringImg';
+import Downlodeplacment from './Downlodeplacment';
 
 const NgHiring = () => {
 
@@ -131,133 +130,13 @@ const NgHiring = () => {
 
   return (
     <>
-      <section className="d-flex flex-column align-items-center our-initiatives">
-        <div className="container">
-          <div className="row gy-4">
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div>
-                <h3 className="media-font">
-                  You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
-                </h3>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div>
-                <p className="section-para body1 w-100">
-                  For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
-                  to providing pathways to aspiration careers to students from marginalized communities.
-                  Now, we want your help to bridge the gap where skills meet opportunity.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="container">
-            <div className="row mt-3">
-              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
-                <Button
-                  label="Hire from Us"
-                  onClick={() => handleOpenForm('Hire from Us')}
-                />
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
-                <Button
-                  label="Become knowledge partner"
-                  onClick={() => handleOpenForm('Become knowledge partner')}
-                />
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12">
-                <Button
-                  label="Volunteer"
-                  onClick={() => handleOpenForm('Volunteer')}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="d-flex flex-column align-items-center our-initiatives">
-        <div className="container">
-          <div className="row gy-4 ">
-            <div className="col-lg-6 col-md-6 col-sm-12 mb-1 mb-lg-0">
-              <div className="p-2 ">
-                <img src={myImage} className="women-image p-1" alt="Image" />
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="p-2 ">
-                <p className="section-para body1 w-100 p-1">
-                  Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
-                  <span className="link">skills, talent, and adaptability;</span> they bring unique perspectives that
-                  <span className="link">enrich your workforce and foster innovation.</span> With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
-                  <span className="link">future where everyone has a seat at the table regardless of their background</span>
-                </p>
-                <div className="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4"
-                    style={{ width: "360px" }}
-                    onClick={() => handleOpenForm('Download Placement Brief')}
-                  >
-                    Download Placement Brief
-                  </button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <Puzzlesecssion handleOpenForm={handleOpenForm} />
+      <Downlodeplacment handleOpenForm={handleOpenForm} />
       <Timeline />
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
-      <HiringImg />
-
-      {/* <div>
-        {data.map((item, index) => (
-          <div key={item.id} className="position-relative">
-            <h3 className="text-center media-font mb-4">{item.text}</h3>
-            <img className='banner-img' src={item.img} alt="Hire From Us" />
-            <section className="d-flex flex-column align-items-center our-initiatives">
-              <div className="container">
-                <div className="textlink">
-                  <p className="section-para body1 w-100 p-3 mb-1">{item.para}</p>
-                  <ul>
-                    <div className="section-para body1 w-100 p-3">
-                      <p className="section-para body1 w-100 mb-1">{item.hadding}</p>
-                      <div className="container section-para body1 w-100 p-3">
-                        {Object.keys(item.list)
-                          .filter(key => key.startsWith('highlighttext'))
-                          .map((highlightKey, idx) => {
-                            const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
-                            return (
-                              <li key={highlightKey} className='section-para body1 w-100 ml-3'>
-                                <span className='link'>{item.list[highlightKey]}</span>
-                                <span>{item.list[detailKey]}</span>
-                              </li>
-                            );
-                          })}
-                        <div className="d-flex justify-content-center w-100 mt-4">
-                          <button
-                            type="button"
-                            className="btn fw-bold regular-btn align-self-center px-4 p-2"
-                            style={{ width: "360px" }}
-                            onClick={() => handleOpenForm(item.text)}
-                          >
-                            {item.button}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-            </section>
-          </div>
-        ))}
-      </div> */}
+      <HiringImg andleOpenForm={handleOpenForm} />
 
       {formType && (
         <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
@@ -395,14 +274,4 @@ const NgHiring = () => {
     </>
   );
 };
-
 export default NgHiring;
-
-
-
-
-
-
-
-
-
