@@ -13,7 +13,7 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                                 <img src={logos} alt="logos" className="logos-img" />
                             </div>
                         </div>
-                        
+
                     </div>
                     <div className="col-lg-2 col-md-2 d-none d-md-flex align-items-center justify-content-center">
                         <div className="vertical-line"></div>
@@ -22,9 +22,10 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                         <div className="row">
                             <h3 className="section-head body1 w-100 d-flex  text-left p-3 justify-content-center">Contact us</h3>
                         </div>
-                        <div className="row section-para body1 w-100 p-3 d-flex text-left  justify-content-center ">
+                        <div className="row section-para body1 w-100 p-2 d-flex text-left  justify-content-center ">
                             <div>
                                 <p>Phone no.: 9987609708</p>
+                                <p>Email : tnp@navgurukul.org</p>
                             </div>
                         </div>
 

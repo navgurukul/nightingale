@@ -3,12 +3,13 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./styles.css";
 import myImage from './assets/image.png';
-import data from './Data';
+// import data from './Data';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 import Button from './Button';
+import HiringImg from './HiringImg';
 
 const NgHiring = () => {
 
@@ -212,8 +213,9 @@ const NgHiring = () => {
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
+      <HiringImg />
 
-      <div>
+      {/* <div>
         {data.map((item, index) => (
           <div key={item.id} className="position-relative">
             <h3 className="text-center media-font mb-4">{item.text}</h3>
@@ -255,7 +257,7 @@ const NgHiring = () => {
             </section>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {formType && (
         <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
