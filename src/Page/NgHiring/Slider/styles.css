@@ -2,13 +2,16 @@
   width: 100%;
   max-height: 180px;
   object-fit: cover;
+  border-radius: 5px;
 }
 .main_container{
   background-color:#e3e8e2;
+  border-radius: 5px;
+
 }
 .three_card_column{
   height: 310px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 

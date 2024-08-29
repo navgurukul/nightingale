@@ -10,19 +10,16 @@ const NgHiring = () => {
   const userInfo = [
     {
       img: card1img,
-      heading: "NavGurukul Student",
-      paragraph: "Excerpt, Blogs, Portfolio, Learning experiences",
+      paragraph: "Creating more equitable employment pathways | Macquarie Group Foundation 2023 Annual Review",
 
     },
     {
       img: card2img,
-      heading: "NavGurukul Student",
-      paragraph: "Excerpt, Blogs, Portfolio, Learning experiences",
+      paragraph: "Breaking Stereotypes, One Girl At A Time, NavGurukul Is Ensuring We Have More Girls In Tech!",
     },
     {
       img: card3img,
-      heading: "HR & recruiters",
-      paragraph: "Small excerpt/ Feedback",
+      paragraph: "How a gurukul for coders is changing lives",
 
     },
 
@@ -35,9 +32,7 @@ const NgHiring = () => {
           <div className="container mt-4">
 
             <div className="d-flex justify-content-center">
-              <h3 className="media-font">
-                Testimonials
-              </h3>
+              <h3 className="media-font">Testimonials</h3>
             </div>
 
 
@@ -48,7 +43,8 @@ const NgHiring = () => {
                     <div className="three_card_column"  >
                       <img className='img' src={item.img} alt="no img" />
                       <h2 className="section-para body1 w-100 w-50 d-flex justify-content-center fw-bold mt-2" style={{ fontWeight: 'bold' }}>{item.heading}</h2>
-                      <p className="section-para body1 w-100  w-50 d-flex justify-content-center  text-center">{item.paragraph}</p>
+                      {/* <p className="section-para d-flex Body 1 ">{item.paragraph}</p> */}
+                      <p className="section-para body1 w-100 p-1"> {item.paragraph}</p>
                     </div>
                   </div>
                 ))}
