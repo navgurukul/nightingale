@@ -11,7 +11,6 @@ const Ourrecruiters = ({ handleOpenForm }) => {
         <section className="d-flex flex-column align-items-center our-initiatives">
             <div className="container">
                 <div className="row" >
-
                     <h3 className="section-head body1 w-100 p-3 mb-3">Our recruiters</h3>
                     <div className="logo-scroller">
                         <div className="logo-track">
