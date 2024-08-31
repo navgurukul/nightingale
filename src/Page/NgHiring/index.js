@@ -772,7 +772,7 @@ const NgHiring = () => {
                                 style={{ width: "360px" }}
                                 onClick={() => handleOpenForm(item.text)}
                               >
-                                {item.button}hhhhhhhhhh
+                                {item.button}
                               </button>
                             </div>
 
