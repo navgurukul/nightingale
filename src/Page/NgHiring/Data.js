@@ -25,7 +25,7 @@ const data = [
             six: "Facilitate practical internships and live projects that prepare students for immediate and effective contributions in tech roles."
         },
         button: "Become knowledge partner",
-        text:"Be a Knowledge Partner",
+        text:"Become knowledge partner",
 
     },
     
@@ -46,8 +46,9 @@ const data = [
             highlighttext5:"Community Engagement:",
             five: "Help organize community outreach programs that expand our impact and build local partnerships.",
         },
-        button: "Volunteer with Us",
-        text:"Share Expertise as a Volunteer"
+        button: "Volunteer",
+        text:"Volunteer"
+        
     }
 
 ];
