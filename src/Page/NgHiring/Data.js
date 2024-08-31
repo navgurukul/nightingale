@@ -1,36 +1,12 @@
 
-import hirefromus from './assets/hirefromus.png'; 
-import partner from "./assets/partner.jpg";
-import volunteer from "./assets/volunters.jpg"
+import become from './assets/become.png'
+import volenteer from './assets/volenteer.png'
 
 const data = [
-    {
-        img: hirefromus,
-        para: "Through harnessing the power of education, We bridge the learning gap of students from marginalized communities to emerge as skilled, resilient, and job-ready professionals, proficient in the latest technologies and soft skills. By partnering with us, your organization can enrich its workforce diversity and drive meaningful social impact, effortlessly meeting your Diversity, Equity, and Inclusion (DEI) goals",
-        hadding: "By hiring from us, You are achieving :",
-        list:
-        {
-            highlighttext1:"Handpicked Tech Talent:",
-            one: "Pre-screened candidates to save you time.",
-            highlighttext2:"Zero Hiring Fees:",
-            two: "Fully funded by our generous donors.",
-            highlighttext3:"High Retention candidates:",
-            third: "Quality talent within the budget",
-            highlighttext4:"Diverse Talent Pool:",
-            four: "Our students are from different regions of India. Ready to enhance your workforce diversity and business capabilities.",
-            highlighttext5:"Job-Ready Talent:",
-            five: "Our students undergo rigorous training in both technical and soft skills, preparing them for the complexities of modern work environments.",
-            highlighttext6:"Positive Social Impact:",
-            six: "Fulfill your corporate social responsibility goals by hiring candidates who are part of a movement to bridge India's education and employment gap."
-        },
-        button: "Hire from us",
-        text: "Hire from Us"
-    }
-    ,
-
+ 
     {
 
-        img: partner,
+        img: become,
         para: "By forming a knowledge partnership with us, your organization can amplify its commitment to corporate social responsibility and strengthen its community engagement efforts. We'd appreciate your engaging with us to cultivate a more inclusive and skilled future workforce, seamlessly aligning with your organization's Diversity, Equity, and Inclusion (DEI) initiatives.",
         hadding: "By partnering with us for knowledge sharing, you are contributing t: ",        
         list:
@@ -49,12 +25,13 @@ const data = [
             six: "Facilitate practical internships and live projects that prepare students for immediate and effective contributions in tech roles."
         },
         button: "Become knowledge partner",
-        text:"Become knowledge partner"
+        text:"Be a Knowledge Partner",
 
     },
+    
     {
 
-        img: volunteer,
+        img: volenteer,
         para: "Volunteer at NavGurukul and play a pivotal role in transforming lives through education. Volunteering with NavGurukul offers a chance to contribute to societal change, gain immense personal fulfillment, and directly impact the futures of young aspiring tech professionals. Join us to make a difference, one student at a time. Opportunities for Volunteers:",
         list:
         {
@@ -69,8 +46,8 @@ const data = [
             highlighttext5:"Community Engagement:",
             five: "Help organize community outreach programs that expand our impact and build local partnerships.",
         },
-        button: "Volunteer",
-        text:"Volunteer"
+        button: "Volunteer with Us",
+        text:"Share Expertise as a Volunteer"
     }
 
 ];
