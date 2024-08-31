@@ -2,10 +2,12 @@
   position: relative;
   margin-top: 50px;
 }
+
 .timeline-item {
   padding-bottom: 60px;
   position: relative;
 }
+
 .timeline-dot {
   width: 25px;
   height: 25px;
@@ -17,6 +19,7 @@
   transform: translateX(-50%);
   z-index: 1;
 }
+
 .timeline-row::after {
   content: '';
   position: absolute;
@@ -29,7 +32,7 @@
   z-index: 0;
 }
 
-.timelinetext{
+.timelinetext {
   margin-top: 48px;
 }
 
@@ -37,11 +40,142 @@
   .timeline-dot {
     display: none;
   }
+
   .timeline-row::after {
     display: none;
   }
 
-  .timelinetext{
+  .timelinetext {
     margin-top: 2px;
+  }
+}
+
+
+
+.mt-3 {
+  margin-top: 16px;
+}
+
+.p-5 {
+  padding: 15px;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .mt-3 {
+    margin-top: 12px !important;
+  }
+
+  .p-5 {
+    padding: 10px !important;
+  }
+
+  .our-initiatives .container {
+    padding: 0 5px !important;
+  }
+
+  .d-none {
+    display: none !important;
+  }
+
+  .heading-line {
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mt-3 {
+    margin-top: 8px !important;
+  }
+
+  .p-5 {
+    padding: 8px !important;
+  }
+
+  .our-initiatives .container {
+    padding: 0 3px !important;
+  }
+}
+
+.timeline-container {
+  position: relative;
+  width: 4px;
+  height: 600px;
+  background-color: gray;
+  margin: 0 20px;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 4px;
+  height: 600px;
+  background-color: gray;
+  left: 50%;
+  top: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  left: calc(50% - 10px);
+  top: -30px;
+}
+
+
+.timeline-content {
+  position: absolute;
+  top: 100%;
+  left: calc(50% + 10px);
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+
+@media (max-width: 992px) {
+  .mt-3 {
+    margin-top: 8px !important;
+  }
+
+  .p-5 {
+    padding: 8px !important;
+  }
+
+  .our-initiatives .container {
+    padding: 0 5px !important;
+  }
+
+  .timeline-container {
+    display: none;
+  }
+
+  .heading-line {
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+}
+
+/* Additional styles for very small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .mt-3 {
+    margin-top: 6px !important;
+  }
+
+  .p-5 {
+    padding: 6px !important;
+  }
+
+  .our-initiatives .container {
+    padding: 0 3px !important;
+  }
+
+  .heading-line {
+    margin-bottom: 8px;
+    margin-top: 4px;
   }
 }

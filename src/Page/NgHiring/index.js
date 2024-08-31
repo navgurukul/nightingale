@@ -2,13 +2,12 @@
 // import React, { useState } from 'react';
 // import { useHistory } from 'react-router-dom';
 // import "./styles.css";
-// import myImage from './assets/image.png';
 // import data from './Data';
 // import Timeline from './Timeline';
 // import OurAlumni from './Ouralumni';
 // import Slider from './Slider';
 // import Ourrecruiters from './Ourrecruiters';
-// import Button from './Button';
+// import hire from './assets/hire.png'
 
 // const NgHiring = () => {
 
@@ -130,132 +129,151 @@
 
 //   return (
 //     <>
-//       <section className="d-flex flex-column align-items-center our-initiatives">
-//         <div className="container">
-//           <div className="row gy-4">
-//             <div className="col-lg-6 col-md-6 col-sm-12">
-//               <div>
-//                 <h3 className="media-font">
-//                   You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
-//                 </h3>
-//               </div>
-//             </div>
-//             <div className="col-lg-6 col-md-6 col-sm-12">
-//               <div>
-//                 <p className="section-para body1 w-100">
-//                   For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
-//                   to providing pathways to aspiration careers to students from marginalized communities.
-//                   Now, we want your help to bridge the gap where skills meet opportunity.
-//                 </p>
-//               </div>
-//             </div>
+//       <div className='main_container_box'>
+//         <section className=" d-flex flex-column align-items-center our-initiatives">
+//           <div className="container container-box">
+//             <h5 className="media-font mt-4 p-2">You are our last piece in this puzzle of Diversity, Equality, and Inclusion. </h5>
+//             <p className="section-para body1 w-100 p-2 ">
+//               For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
+//               to providing pathways to aspiration careers to students from marginalized communities.
+//               Now, we want your help to bridge the gap where skills meet opportunity.
+//             </p>
 //           </div>
-//           <div className="container">
-//             <div className="row mt-3">
-//               <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
-//                 <Button
-//                   label="Hire from Us"
-//                   onClick={() => handleOpenForm('Hire from Us')}
-//                 />
-//               </div>
-//               <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
-//                 <Button
-//                   label="Become knowledge partner"
-//                   onClick={() => handleOpenForm('Become knowledge partner')}
-//                 />
-//               </div>
-//               <div className="col-lg-4 col-md-4 col-sm-12">
-//                 <Button
-//                   label="Volunteer"
-//                   onClick={() => handleOpenForm('Volunteer')}
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
+//         </section >
+//       </div>
 
-//       <section className="d-flex flex-column align-items-center our-initiatives">
+//       <section className="d-flex flex-column align-items-center our-initiatives" >
 //         <div className="container">
-//           <div className="row gy-4 ">
-//             <div className="col-lg-6 col-md-6 col-sm-12 mb-1 mb-lg-0">
-//               <div className="p-2 ">
-//                 <img src={myImage} className="women-image p-1" alt="Image" />
+//           <div className="row ">
+//             <div className="col-lg-5 col-md-12 col-sm-12">
+//               <div>
+//                 <img className='banner-img mt-4' src={hire} alt="Hire From Us" />
 //               </div>
 //             </div>
-//             <div className="col-lg-6 col-md-6 col-sm-12">
-//               <div className="p-2 ">
-//                 <p className="section-para body1 w-100 p-1">
-//                   Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
-//                   <span className="link">skills, talent, and adaptability;</span> they bring unique perspectives that
-//                   <span className="link">enrich your workforce and foster innovation.</span> With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
-//                   <span className="link">future where everyone has a seat at the table regardless of their background</span>
-//                 </p>
-//                 <div className="d-flex justify-content-center">
-//                   <button
-//                     type="button"
-//                     className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4"
-//                     style={{ width: "360px" }}
-//                     onClick={() => handleOpenForm('Download Placement Brief')}
-//                   >
-//                     Download Placement Brief
-//                   </button>
+//             <div className="col-lg-7 col-md-12 col-sm-12 ">
+//               <div>
+//                 <h3 className="media-font px-3 mt-3">Hire from Us</h3>
+//                 <p className="section-para body1 w-100 ">Through harnessing the power of education, We bridge the learning gap of students from marginalized communities to emerge as skilled, resilient, and job-ready professionals, proficient in the latest technologies and soft skills. By partnering with us, your organization can enrich its workforce diversity and drive meaningful social impact, effortlessly meeting your Diversity, Equity, and Inclusion (DEI) goals</p>
+//                 <p className="section-para body1 w-100">By hiring from us, You are achieving</p>
+
+//                 <div className='section-para body1 w-100'>
+//                   <ul className='px-4'>
+//                     <li>
+//                       <span className='link'>Handpicked Tech Talent:</span> Pre-screened candidates to save you time.
+//                     </li>
+//                     <li>
+
+//                       <span className='link'>Zero Hiring Fees:</span> Fully funded by our generous donors.
+//                     </li>
+//                     <li>
+
+//                       <span className='link'>High Retention Candidates:</span> Quality talent within the budget.
+//                     </li>
+//                     <li>
+//                       <span className='link'>Diverse Talent Pool:</span> Our students are from different regions of India. Ready to enhance your workforce diversity and business capabilities.
+//                     </li>
+//                     <li>
+//                       <span className='link'>Job-Ready Talent:</span>Our students undergo rigorous training in both technical and soft skills, preparing them for the complexities of modern work environments.
+//                     </li>
+//                     <li>
+//                       <span className='link'>Positive Social Impact:</span> Fulfill your corporate social responsibility goals by hiring candidates who are part of a movement to bridge India's education and employment gap.
+//                     </li>
+//                   </ul>
 //                 </div>
+//                 <div className='row'>
+//                   <div className='col-lg-5 col-md-12 col-sm-12 col-xs-12 mb-1 mb-lg-0'>
+//                     <div className="d-flex w-100 p-2">
+//                       <button
+//                         type="button"
+//                         className="btn fw-bold regular-btn align-self-center col-md-12 col-sm-12"
+//                         style={{ width: "360px" }}
+//                         onClick={() => handleOpenForm("Hire from Us")}
+//                       >
+//                         Hire from Us
+//                       </button>
+//                     </div>
+//                   </div>
 
+//                   <div className='col-lg-7 col-md-12 col-sm-12 col-xs-12 mb-1 mb-lg-0'>
+//                     <div className="d-flex align-items-center p-2">
+//                       <button
+//                         type="button"
+//                         className="btn fw-bold  regular-btn align-self-center col-md-12 col-sm-12"
+//                         style={{ width: "360px" }}
+//                         onClick={() => handleOpenForm('Download Placement Brief')}
+//                       >
+//                         Download Placement Brief
+//                       </button>
+//                     </div>
+//                   </div>
+//                 </div>
 //               </div>
 //             </div>
 //           </div>
 //         </div>
 //       </section>
-
-//       <Timeline />
-//       <OurAlumni />
-//       <Slider />
-//       <Ourrecruiters handleOpenForm={handleOpenForm} />
 
 //       <div>
 //         {data.map((item, index) => (
 //           <div key={item.id} className="position-relative">
-//             <h3 className="text-center media-font mb-4">{item.text}</h3>
-//             <img className='banner-img' src={item.img} alt="Hire From Us" />
-//             <section className="d-flex flex-column align-items-center our-initiatives">
+//             <section className="d-flex flex-column align-items-center our-initiatives" >
 //               <div className="container">
-//                 <div className="textlink">
-//                   <p className="section-para body1 w-100 p-3 mb-1">{item.para}</p>
-//                   <ul>
-//                     <div className="section-para body1 w-100 p-3">
-//                       <p className="section-para body1 w-100 mb-1">{item.hadding}</p>
-//                       <div className="container section-para body1 w-100 p-3">
-//                         {Object.keys(item.list)
-//                           .filter(key => key.startsWith('highlighttext'))
-//                           .map((highlightKey, idx) => {
-//                             const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
-//                             return (
-//                               <li key={highlightKey} className='section-para body1 w-100 ml-3'>
-//                                 <span className='link'>{item.list[highlightKey]}</span>
-//                                 <span>{item.list[detailKey]}</span>
-//                               </li>
-//                             );
-//                           })}
-//                         <div className="d-flex justify-content-center w-100 mt-4">
-//                           <button
-//                             type="button"
-//                             className="btn fw-bold regular-btn align-self-center px-4 p-2"
-//                             style={{ width: "360px" }}
-//                             onClick={() => handleOpenForm(item.text)}
-//                           >
-//                             {item.button}
-//                           </button>
-//                         </div>
-//                       </div>
+//                 <div className="row ">
+//                   <div className="col-lg-5 col-md-12 col-sm-12">
+//                     <div className='mt-2'>
+//                       <img className='banner-img ' src={item.img} alt="Hire From Us" />
 //                     </div>
-//                   </ul>
+//                   </div>
+
+//                   <div className="col-lg-7 col-md-12 col-sm-12 ">
+//                     <div>
+//                       <h3 className="media-font px-3">{item.text}</h3>
+//                       <p className="section-para body1 w-100 ">{item.para}</p>
+//                       <p className="section-para body1 w-100 ">{item.hadding}</p>
+//                       <ul>
+//                         <div className="section-para body1 w-100 ">
+//                           <div className="container section-para body1 w-100 ">
+//                             {Object.keys(item.list)
+//                               .filter(key => key.startsWith('highlighttext'))
+//                               .map((highlightKey, idx) => {
+//                                 const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
+//                                 return (
+//                                   <li key={highlightKey} className='section-para body1 w-100 px-3'>
+//                                     <span className='link'>{item.list[highlightKey]}</span>
+//                                     <span>{item.list[detailKey]}</span>
+//                                   </li>
+//                                 );
+//                               })}
+
+//                             <div className="d-flex justify-content-center mt-4">
+//                               <button
+//                                 type="button"
+//                                 className="btn fw-bold regular-btn px-4 p-2"
+//                                 style={{ width: "360px" }}
+//                                 onClick={() => handleOpenForm(item.text)}
+//                               >
+//                                 {item.button}
+//                               </button>
+//                             </div>
+
+//                           </div>
+//                         </div>
+//                       </ul>
+//                     </div>
+//                   </div>
 //                 </div>
 //               </div>
 //             </section>
 //           </div>
 //         ))}
 //       </div>
+
+
+
+//       <Timeline />
+//       <OurAlumni />
+//       <Slider />
+//       <Ourrecruiters handleOpenForm={handleOpenForm} />
 
 //       {formType && (
 //         <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
@@ -390,6 +408,74 @@
 //           </div>
 //         )
 //       }
+
+
+
+
+
+
+//       {/*       
+//       <div>
+//         {data.map((item, index) => (
+//           <div key={item.id} className="position-relative">
+//             <section className="d-flex flex-column align-items-center our-initiatives" >
+//               <div className="container" >
+//                 <div className="row gy-4 ">
+//                   <div className="col-lg-6 col-md-6 col-sm-12 mb-1 mb-lg-0">
+//                     <div className="p-3 ">
+//                       <h3 className="media-font">{item.text}</h3>
+//                       <p className="section-para body1 w-100 mb-1">{item.para}</p>
+//                       <ul>
+//                         <div className="section-para body1 w-100 ">
+//                           <p className="section-para body1 w-100 mb-1">{item.hadding}</p>
+//                           <div className="container section-para body1 w-100 ">
+//                             {Object.keys(item.list)
+//                               .filter(key => key.startsWith('highlighttext'))
+//                               .map((highlightKey, idx) => {
+//                                 const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
+//                                 return (
+//                                   <li key={highlightKey} className='section-para body1 w-100'>
+//                                     <span className='link'>{item.list[highlightKey]}</span>
+//                                     <span>{item.list[detailKey]}</span>
+//                                   </li>
+//                                 );
+//                               })}
+//                             <div className="d-flex w-100 mt-4">
+//                               <button
+//                                 type="button"
+//                                 className="btn fw-bold regular-btn align-self-center px-4 p-2"
+//                                 style={{ width: "360px" }}
+//                                 onClick={() => handleOpenForm(item.text)}
+//                               >
+//                                 {item.button}
+//                               </button>
+//                             </div>
+//                           </div>
+//                         </div>
+//                       </ul>
+
+
+//                     </div>
+//                   </div>
+//                   <div className="col-lg-6 col-md-6 col-sm-12" >
+//                     <div className="p-2  mt-2">
+
+//                       <img className='banner-img mt-3 pt-5' src={item.img} alt="Hire From Us" />
+
+//                     </div>
+//                   </div>
+//                 </div>
+
+//               </div>
+//             </section>
+//           </div>
+//         ))}
+//       </div>  */}
+
+
+
+
+
 //     </>
 //   );
 // };
@@ -418,16 +504,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./styles.css";
-import myImage from './assets/image.png';
 import data from './Data';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
-import Button from './Button';
+import hire from './assets/hire.png'
 
 const NgHiring = () => {
 
@@ -549,90 +649,153 @@ const NgHiring = () => {
 
   return (
     <>
-      <section className="d-flex flex-column align-items-center our-initiatives">
-        <div className="container">
-          <div className="row gy-4">
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div>
-                <h3 className="media-font">
-                  You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
-                </h3>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div>
-                <p className="section-para body1 w-100">
-                  For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
-                  to providing pathways to aspiration careers to students from marginalized communities.
-                  Now, we want your help to bridge the gap where skills meet opportunity.
-                </p>
-              </div>
-            </div>
+      <div className='main_container_box'>
+        <section className=" d-flex flex-column align-items-center our-initiatives">
+          <div className="container container-box">
+            <h5 className="media-font mt-4 p-2">You are our last piece in this puzzle of Diversity, Equality, and Inclusion. </h5>
+            <p className="section-para body1 w-100 p-2 ">
+              For more than 8 years, NavGurukul Foundation for Social Welfare has been committed
+              to providing pathways to aspiration careers to students from marginalized communities.
+              Now, we want your help to bridge the gap where skills meet opportunity.
+            </p>
           </div>
-          <div className="container">
-            <div className="row mt-3">
-              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
-                <Button
-                  label="Hire from Us"
-                  onClick={() => handleOpenForm('Hire from Us')}
-                />
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 mb-3">
-                <Button
-                  label="Become knowledge partner"
-                  onClick={() => handleOpenForm('Become knowledge partner')}
-                />
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12">
-                <Button
-                  label="Volunteer"
-                  onClick={() => handleOpenForm('Volunteer')}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section >
+      </div>
 
-      <section className="d-flex flex-column align-items-center our-initiatives">
+      <section className="d-flex flex-column align-items-center our-initiatives" >
         <div className="container">
-          <div className="row gy-4 ">
-            <div className="col-lg-6 col-md-6 col-sm-12 mb-1 mb-lg-0">
-              <div className="p-2 ">
-                <img src={myImage} className="women-image p-1" alt="Image" />
+          <div className="row ">
+            <div className="col-lg-5 col-md-12 col-sm-12">
+              <div>
+                <img className='banner-img mt-4' src={hire} alt="Hire From Us" />
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="p-2 ">
-                <p className="section-para body1 w-100 p-1">
-                  Join forces with NavGurukul to unlock a reservoir of untapped potential. Our rigorously trained tech graduates possess
-                  <span className="link">skills, talent, and adaptability;</span> they bring unique perspectives that
-                  <span className="link">enrich your workforce and foster innovation.</span> With our partnership, you're not just filling a role but embracing diversity and driving meaningful change for a
-                  <span className="link">future where everyone has a seat at the table regardless of their background</span>
-                </p>
-                <div className="d-flex justify-content-center">
-                  <button
-                    type="button"
-                    className="btn mb-5 fw-bold py-2 regular-btn align-self-center px-4"
-                    style={{ width: "360px" }}
-                    onClick={() => handleOpenForm('Download Placement Brief')}
-                  >
-                    Download Placement Brief
-                  </button>
+            <div className="col-lg-7 col-md-12 col-sm-12 ">
+              <div>
+                <h3 className="media-font px-3 mt-3">Hire from Us</h3>
+                <p className="section-para body1 w-100 ">Through harnessing the power of education, We bridge the learning gap of students from marginalized communities to emerge as skilled, resilient, and job-ready professionals, proficient in the latest technologies and soft skills. By partnering with us, your organization can enrich its workforce diversity and drive meaningful social impact, effortlessly meeting your Diversity, Equity, and Inclusion (DEI) goals</p>
+                <p className="section-para body1 w-100">By hiring from us, You are achieving</p>
+
+                <div className='section-para body1 w-100'>
+                  <ul className='px-4'>
+                    <li>
+                      <span className='link'>Handpicked Tech Talent:</span> Pre-screened candidates to save you time.
+                    </li>
+                    <li>
+
+                      <span className='link'>Zero Hiring Fees:</span> Fully funded by our generous donors.
+                    </li>
+                    <li>
+
+                      <span className='link'>High Retention Candidates:</span> Quality talent within the budget.
+                    </li>
+                    <li>
+                      <span className='link'>Diverse Talent Pool:</span> Our students are from different regions of India. Ready to enhance your workforce diversity and business capabilities.
+                    </li>
+                    <li>
+                      <span className='link'>Job-Ready Talent:</span>Our students undergo rigorous training in both technical and soft skills, preparing them for the complexities of modern work environments.
+                    </li>
+                    <li>
+                      <span className='link'>Positive Social Impact:</span> Fulfill your corporate social responsibility goals by hiring candidates who are part of a movement to bridge India's education and employment gap.
+                    </li>
+                  </ul>
                 </div>
+                <div className='row'>
+                  <div className='col-lg-5 col-md-12 col-sm-12 col-xs-12 mb-1 mb-lg-0'>
+                    <div className="d-flex w-100 p-2">
+                      <button
+                        type="button"
+                        className="btn fw-bold regular-btn align-self-center col-md-12 col-sm-12"
+                        style={{ width: "360px" }}
+                        onClick={() => handleOpenForm("Hire from Us")}
+                      >
+                        Hire from Us
+                      </button>
+                    </div>
+                  </div>
 
+                  <div className='col-lg-7 col-md-12 col-sm-12 col-xs-12 mb-1 mb-lg-0'>
+                    <div className="d-flex align-items-center p-2">
+                      <button
+                        type="button"
+                        className="btn fw-bold  regular-btn align-self-center col-md-12 col-sm-12"
+                        style={{ width: "360px" }}
+                        onClick={() => handleOpenForm('Download Placement Brief')}
+                      >
+                        Download Placement Brief
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <div>
+        {data.map((item, index) => (
+          <div key={item.id} className="position-relative">
+            <section className="d-flex flex-column align-items-center our-initiatives" >
+              <div className="container">
+                <div className="row ">
+                  <div className="col-lg-5 col-md-12 col-sm-12">
+                    <div className='mt-2'>
+                      <img className='banner-img ' src={item.img} alt="Hire From Us" />
+                    </div>
+                  </div>
+
+                  <div className="col-lg-7 col-md-12 col-sm-12 ">
+                    <div>
+                      <h3 className="media-font px-3">{item.text}</h3>
+                      <p className="section-para body1 w-100 ">{item.para}</p>
+                      <p className="section-para body1 w-100 ">{item.hadding}</p>
+                      <ul>
+                        <div className="section-para body1 w-100 ">
+                          <div className="container section-para body1 w-100 ">
+                            {Object.keys(item.list)
+                              .filter(key => key.startsWith('highlighttext'))
+                              .map((highlightKey, idx) => {
+                                const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
+                                return (
+                                  <li key={highlightKey} className='section-para body1 w-100 px-3'>
+                                    <span className='link'>{item.list[highlightKey]}</span>
+                                    <span>{item.list[detailKey]}</span>
+                                  </li>
+                                );
+                              })}
+
+                            <div className="d-flex justify-content-center mt-4">
+                              <button
+                                type="button"
+                                className="btn fw-bold regular-btn px-4 p-2"
+                                style={{ width: "360px" }}
+                                onClick={() => handleOpenForm(item.text)}
+                              >
+                                {item.button}
+                              </button>
+                            </div>
+
+                          </div>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        ))}
+      </div>
+
+
 
       <Timeline />
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
- 
-       {formType && (
+
+      {formType && (
         <div role="dialog" aria-labelledby="modalTitle" aria-describedby="modalDescription"
           className="modal" style={{ display: 'block' }} onClick={handleCloseForm}>
           <div className="modal-dialog" role="document" onClick={(e) => e.stopPropagation()} tabIndex="0" >
@@ -765,73 +928,6 @@ const NgHiring = () => {
           </div>
         )
       }
-
-
-
-
-
-      
-{/* 
-      <div>
-        {data.map((item, index) => (
-          <div key={item.id} className="position-relative">
-            <section className="d-flex flex-column align-items-center our-initiatives" >
-              <div className="container" >
-                <div className="row gy-4 ">
-                  <div className="col-lg-6 col-md-6 col-sm-12 mb-1 mb-lg-0">
-                    <div className="p-3 ">
-                      <h3 className="media-font">{item.text}</h3>
-                      <p className="section-para body1 w-100 mb-1">{item.para}</p>
-                      <ul>
-                        <div className="section-para body1 w-100 ">
-                          <p className="section-para body1 w-100 mb-1">{item.hadding}</p>
-                          <div className="container section-para body1 w-100 ">
-                            {Object.keys(item.list)
-                              .filter(key => key.startsWith('highlighttext'))
-                              .map((highlightKey, idx) => {
-                                const detailKey = Object.keys(item.list).filter(key => !key.startsWith('highlighttext'))[idx];
-                                return (
-                                  <li key={highlightKey} className='section-para body1 w-100'>
-                                    <span className='link'>{item.list[highlightKey]}</span>
-                                    <span>{item.list[detailKey]}</span>
-                                  </li>
-                                );
-                              })}
-                            <div className="d-flex w-100 mt-4">
-                              <button
-                                type="button"
-                                className="btn fw-bold regular-btn align-self-center px-4 p-2"
-                                style={{ width: "360px" }}
-                                onClick={() => handleOpenForm(item.text)}
-                              >
-                                {item.button}
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </ul>
-
-
-                    </div>
-                  </div>
-                  <div className="col-lg-6 col-md-6 col-sm-12" >
-                    <div className="p-2  mt-2">
-
-                      <img className='banner-img mt-3 pt-5' src={item.img} alt="Hire From Us" />
-
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-          </div>
-        ))}
-      </div>  */}
-
-
-      
-      
 
     </>
   );

@@ -11,21 +11,77 @@ const timelineEvents = [
 
 const Timeline = () => {
   return (
-    <div className="container">
-        <h3 className="heading-line mb-3  ml-1 text-center timelinetext">
-            Timeline of growth
+
+    // <div className="container">
+    //   <h3 className="heading-line mb-4  ml-1 text-center timelinetext">
+    //     Timeline of Student Growth
+    //   </h3>
+
+    //   <div className="row text-center timeline-row">
+    //     {timelineEvents.map((event, index) => (
+    //       <div className="col" key={event.id}>
+    //         <div className="timeline-item">
+    //           {event}
+    //         </div>
+    //         <div className="timeline-dot"></div>
+    //       </div>
+    //     ))}
+    //   </div>
+    // </div>
+
+
+
+
+    <section className="d-flex flex-column align-items-center our-initiatives">
+      <div className="container">
+        <h3 className="heading-line mb-5 mt-2 text-center timelinetext">
+          Timeline of Student Growth
         </h3>
-        <div className="row text-center timeline-row">
+        <div className="row d-flex align-items-center">
+          <div className="col-lg-5 col-md-12 col-sm-12">
             {timelineEvents.map((event, index) => (
-            <div className="col" key={event.id}>
-                <div className="timeline-item">
-                {event}
+              index % 2 === 0 && (
+                <div key={index} className="mt-3">
+                  <p className="section-para body1 w-100 p-5">{event}</p>
                 </div>
-                <div className="timeline-dot"></div>
-            </div>
+              )
             ))}
+          </div>
+
+
+          <div className="d-none d-lg-block timeline-container">
+            <div className="timeline-line"></div>
+            {Array.from({ length: 7 }).map((_, index) => {
+              const baseSpace = 100; 
+              const topPosition = index * baseSpace;
+
+              return (
+                <div
+                  key={index}
+                  className="timeline-marker"
+                  style={{ top: `${topPosition}px` }}
+                ></div>
+              );
+            })}
+          </div>
+          <div className="col-lg-5 col-md-12 col-sm-12">
+            {timelineEvents.map((event, index) => (
+              index % 2 !== 0 && (
+                <div key={index} className="mt-3">
+                  <p className="section-para body1 w-100 p-5">{event}</p>
+                </div>
+              )
+            ))}
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
+
+
+
+
+
+
   );
 };
 

@@ -107,6 +107,7 @@ function AboutPage() {
             </p>
           </div>
         </section>
+        
         <section className="page-section d-flex flex-column">
           <h3 className="section-head mb-4 mt-80">Our Vision</h3>
           <div className="about-content d-flex flex-column justify-content-center mb-0 align-items-center">

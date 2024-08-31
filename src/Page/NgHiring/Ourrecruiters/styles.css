@@ -6,31 +6,131 @@
 .btnwidth {
     width: "360px"
 }
-.logos-img {
-    max-width: 100%;
+
+.microsoft-img,
+.amazon-img {
+    max-width: 90%;
     height: auto;
     object-fit: contain;
 }
-@media (max-width: 1200px) {
-    .logos-img {
-        max-width: 90%;
+
+.infosys-img {
+    max-width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+.north-img {
+    max-width: 35%;
+    height: auto;
+    object-fit: contain;
+}
+
+.wipro-img {
+    max-width: 45%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+
+
+.logo-scroller {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    gap: 0;
+    animation: scroll-left 20s linear infinite;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-70%);
     }
 }
 
-@media (max-width: 992px) {
-    .logos-img {
+
+@media (max-width: 1200px) {
+
+    .microsoft-img,
+    .amazon-img {
         max-width: 80%;
+    }
+
+    .infosys-img {
+        max-width: 50%;
+    }
+
+    .north-img {
+        max-width: 35%;
+    }
+
+}
+
+
+@media (max-width: 992px) {
+
+    .microsoft-img,
+    .amazon-img {
+        max-width: 70%;
+    }
+
+    .infosys-img {
+        max-width: 45%;
+    }
+
+    .north-img {
+        max-width: 30%;
     }
 }
 
 @media (max-width: 768px) {
-    .logos-img {
-        max-width: 80%;
+
+    .microsoft-img,
+    .amazon-img {
+        max-width: 60%;
+    }
+
+    .infosys-img {
+        max-width: 40%;
+    }
+
+    .north-img {
+        max-width: 25%;
     }
 }
 
 @media (max-width: 576px) {
-    .logos-img {
-        max-width: 70%;
+
+    .microsoft-img,
+    .amazon-img {
+        max-width: 50%;
+    }
+
+    .infosys-img {
+        max-width: 35%;
+    }
+
+    .north-img {
+        max-width: 20%;
     }
 }
+
+
+
+
