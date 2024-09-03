@@ -349,12 +349,6 @@
   }
 }
 
-/* For extra small screens (max-width: 576px) */
-@media (max-width: 576px) {
-  /* .main_container_box {
-    background-image: none; 
-  } */
-}
 
 /* For small screens (min-width: 577px and max-width: 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
@@ -367,7 +361,6 @@
 @media (max-width: 768px) {
   .btn {
     width: 100%;
-    /* Adjust the width if necessary */
   }
 }
 
