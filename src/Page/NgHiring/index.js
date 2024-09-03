@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import "./styles.css";
 import data from './Data';
-// import Timeline from './Timeline';
+import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
@@ -125,6 +125,7 @@ const NgHiring = () => {
       setLoading(false);
     }
   };
+
 
   return (
     <>
@@ -274,7 +275,7 @@ const NgHiring = () => {
       </div>
 
 
-      {/* <Timeline /> */}
+      <Timeline />
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
