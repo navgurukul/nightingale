@@ -115,6 +115,18 @@
 }
 
 
+.regular-btn1 {
+  border-color: var(--primary);
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  height: 48px;
+  font-size: 1.125rem;
+}
+
+
 @media (max-width: 1200px) {
   .hire-heading {
     font-size: 6rem;
@@ -358,10 +370,20 @@
     /* Adjust the width if necessary */
   }
 }
+
 /* Center button on medium screens and adjust spacing */
 
 @media (min-width: 769px) and (max-width: 992px) {
   .main_container_box {
     background-image: none;
+  }
+}
+
+@media(max-width:667px) {
+
+  .regular-btn1
+   {
+    font-size: 0.875rem !important;
+    width: 100% !important;
   }
 }

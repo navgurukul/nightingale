@@ -134,3 +134,52 @@
 
 
 
+
+@media (max-width: 768px) {  
+    .regular-btn {
+        margin-right: 0 !important; 
+        margin-bottom: 0.5rem; 
+    }
+}
+
+
+/* Custom styles for medium (md) screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .d-flex.flex-column.flex-lg-row > button {
+        margin-right: 0.25rem;  /* Adjust button spacing for md screens */
+        margin-left: 0.25rem;   /* Add a bit of margin for equal spacing */
+        gap: 2rem;
+    }
+    .d-flex.flex-column.flex-lg-row {
+        justify-content: space-around;  /* Space buttons around evenly */
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1229px) {
+    .btn-spacing {
+        margin-right: 10rem; /* Adjust as needed */
+    }
+}
+
+/* Custom styles for medium (md) screens */
+@media (min-width: 768px) and (max-width: 999px) {
+    .d-flex.flex-column.flex-lg-row {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .d-flex.flex-column.flex-lg-row > button {
+        width: 100%; /* Make buttons full width */
+        max-width: 300px; /* Set max width for buttons */
+        margin-bottom: 1rem; /* Increase spacing between buttons */
+        padding: 0.75rem 1.5rem; /* Add padding for better button appearance */
+    }
+
+    .d-flex.flex-column.flex-lg-row > button:last-child {
+        margin-bottom: 0; /* Remove margin from the last button */
+    }
+}
+
+
+
+

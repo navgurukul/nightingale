@@ -677,7 +677,7 @@ const NgHiring = () => {
                 <p className="section-para body1 w-100">By hiring from us, You are achieving</p>
 
                 <div className='section-para body1 w-100'>
-                  <ul className='px-4'>
+                  <ul className='px-3'>
                     <li>
                       <span className='link'>Handpicked Tech Talent:</span> Pre-screened candidates to save you time.
                     </li>
@@ -715,7 +715,7 @@ const NgHiring = () => {
                   </div>
 
                   <div className='col-lg-7 col-md-12 col-sm-12 col-xs-12 mb-1 mb-lg-0'>
-                    <div className="d-flex align-items-center p-2">
+                    {/* <div className="d-flex align-items-center p-2">
                       <button
                         type="button"
                         className="btn fw-bold  regular-btn align-self-center col-md-12 col-sm-12"
@@ -724,7 +724,24 @@ const NgHiring = () => {
                       >
                         Download Placement Brief
                       </button>
+                    </div> */}
+
+                    <div className="d-flex align-items-center p-2">
+                      <button
+                        type="button"
+                        className="btn fw-bold regular-btn1 align-self-center col-md-12 col-sm-12"
+                        style={{
+                          width: "360px",
+                          backgroundColor: "transparent", // Remove background color
+                          border: "2px solid red",        // Add red border
+                          color: "red",                   // Optional: Set text color to red
+                        }}
+                        onClick={() => handleOpenForm('Download Placement Brief')}
+                      >
+                        Download Placement Brief
+                      </button>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -765,7 +782,7 @@ const NgHiring = () => {
                                 );
                               })}
 
-                            <div className="d-flex justify-content-center mt-4">
+                            <div className="d-flex mt-4 ml-3">
                               <button
                                 type="button"
                                 className="btn fw-bold regular-btn px-4 p-2"
@@ -775,10 +792,10 @@ const NgHiring = () => {
                                 {item.button}
                               </button>
                             </div>
-
                           </div>
                         </div>
                       </ul>
+
                     </div>
                   </div>
                 </div>
@@ -787,11 +804,6 @@ const NgHiring = () => {
           </div>
         ))}
       </div>
-
-
-
-      
-
 
 
       <Timeline />

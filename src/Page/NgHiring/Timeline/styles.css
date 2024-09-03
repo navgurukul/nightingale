@@ -97,21 +97,23 @@
   }
 }
 
+
+
 .timeline-container {
   position: relative;
   width: 4px;
-  height: 600px;
+  height: 655px;
   background-color: gray;
-  margin: 0 20px;
+  margin: 0px;
 }
 
 .timeline-line {
   position: absolute;
   width: 4px;
-  height: 600px;
+  height: 655px;
   background-color: gray;
   left: 50%;
-  top: 0;
+  top: 18px;
 }
 
 .timeline-marker {
@@ -121,20 +123,19 @@
   border-radius: 50%;
   background-color: red;
   left: calc(50% - 10px);
-  top: -30px;
+  top: -100px;
 }
-
 
 .timeline-content {
   position: absolute;
   top: 100%;
   left: calc(50% + 10px);
   background-color: #fff;
-  padding: 5px;
   border: 1px solid #ddd;
   border-radius: 3px;
   white-space: nowrap;
-}
+} 
+
 
 
 @media (max-width: 992px) {
@@ -177,5 +178,40 @@
   .heading-line {
     margin-bottom: 8px;
     margin-top: 4px;
+  }
+}
+
+
+.custom-padding-left {
+  padding-left: 90px;
+  padding-right: 0;
+}
+
+.custom-padding-right {
+  padding-right: 90px;
+  padding-left: 0;
+}
+
+/* Padding styles for large screens and above */
+@media (min-width: 992px) {
+
+  /* lg and above */
+  .custom-padding-left {
+    padding-left: 90px;
+    padding-right: 0;
+  }
+
+  .custom-padding-right {
+    padding-right: 90px;
+  }
+}
+
+/* Reset padding for smaller screens */
+@media (max-width: 991px) {
+
+  .custom-padding-left,
+  .custom-padding-right {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
