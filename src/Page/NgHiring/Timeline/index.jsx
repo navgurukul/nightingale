@@ -59,8 +59,6 @@ const Timeline = () => {
             ))}
           </div>
         </div>
-
-
       </div>
     </section>
 

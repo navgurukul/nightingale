@@ -36,22 +36,6 @@
   margin-top: 48px;
 }
 
-@media (max-width: 768px) {
-  .timeline-dot {
-    display: none;
-  }
-
-  .timeline-row::after {
-    display: none;
-  }
-
-  .timelinetext {
-    margin-top: 2px;
-  }
-}
-
-
-
 .mt-3 {
   margin-top: 16px;
 }
@@ -73,15 +57,13 @@
     padding: 0 5px !important;
   }
 
-  .d-none {
-    display: none !important;
-  }
-
-  .heading-line {
-    margin-bottom: 20px;
-    margin-top: 15px;
-  }
 }
+
+.heading-line {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
 
 @media (max-width: 576px) {
   .mt-3 {
@@ -132,7 +114,7 @@
   border: 1px solid #ddd;
   border-radius: 3px;
   white-space: nowrap;
-} 
+}
 
 
 
