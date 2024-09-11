@@ -141,17 +141,17 @@ const NgHiring = () => {
           <div className="row py-5">
             <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height">
               <div className="paragrapg-box">
-                <h5 className="media-font mt-4 p-2 text-lg-start">
+                <h5 className="media-font mt-4 text-lg-start p-3">
                   You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
                 </h5>
-                <p className="section-para body1 w-100 text-lg-start pr-0 pr-lg-5" style={{ marginTop: '10px' }}>
+                <p className="section-para body1 w-100 text-lg-start pr-0 pr-lg-5 ">
                   For more than 8 years, NavGurukul Foundation for Social Welfare has been committed to providing pathways to aspiration careers to students from marginalized communities. Now, we want your help to bridge the gap where skills meet opportunity.
                 </p>
               </div>
             </div>
 
             <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height d-flex d-lg-flex justify-content-center justify-content-lg-start">
-              <div className='formcontainer w-100' >
+              <div className='formcontainer w-100'>
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
                     <h4 className="mb-3">Connect With Our Team</h4>
