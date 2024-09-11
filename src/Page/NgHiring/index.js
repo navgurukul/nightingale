@@ -150,8 +150,8 @@ const NgHiring = () => {
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height">
-              <div className='formcontainer'>
+            <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height d-flex d-lg-flex justify-content-center justify-content-lg-start">
+              <div className='formcontainer w-100' >
                 <form onSubmit={handleSubmit}>
                   <div className="form-group">
                     <h4 className="mb-3">Connect With Our Team</h4>
@@ -194,6 +194,7 @@ const NgHiring = () => {
 
                     {errors.purpose && <div className="error_message">{errors.purpose}</div>}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
@@ -206,6 +207,7 @@ const NgHiring = () => {
                     />
                     {errors.fullName && <div className='error_message'>{errors.fullName}</div>}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="email"
@@ -218,6 +220,7 @@ const NgHiring = () => {
                     />
                     {errors.email && <div className="error_message">{errors.email}</div>}
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
@@ -250,6 +253,8 @@ const NgHiring = () => {
                 </form>
               </div>
             </div>
+
+
           </div >
         </div >
       </div >
@@ -369,7 +374,7 @@ const NgHiring = () => {
             onClick={handleCloseForm}>
             <div
               className="modal-dialog"
-              style={{ maxWidth: '90%', margin: 'auto', width: '448px' ,gap:"16px",borderRadius:"8px"}}
+              style={{ maxWidth: '90%', margin: 'auto', width: '448px', gap: "16px", borderRadius: "8px" }}
               onClick={(e) => e.stopPropagation()}>
               <div className="modal-content p-3">
                 <div className="d-flex justify-content-between align-items-center mb-3">
