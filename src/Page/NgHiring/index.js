@@ -139,7 +139,7 @@ const NgHiring = () => {
       <div className='container-fluid'>
         <div className="container">
           <div className="row py-5">
-            <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height">
+            {/* <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height" style={{border:"2px solid black"}}>
               <div className="paragrapg-box">
                 <h5 className="media-font mt-4 p-2 text-lg-start">
                   You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
@@ -148,7 +148,19 @@ const NgHiring = () => {
                   For more than 8 years, NavGurukul Foundation for Social Welfare has been committed to providing pathways to aspiration careers to students from marginalized communities. Now, we want your help to bridge the gap where skills meet opportunity.
                 </p>
               </div>
+            </div> */}
+
+            <div className="col-lg-6 col-md-12 py-3 pr-5 pr-lg-5 column-height">
+              <div className="paragrapg-box">
+                <h5 className="media-font mt-4 p-2 text-lg-start">
+                  You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
+                </h5>
+                <p className="section-para body1 w-100 text-lg-start  pr-5" style={{ marginTop: '10px' }}>
+                  For more than 8 years, NavGurukul Foundation for Social Welfare has been committed to providing pathways to aspiration careers to students from marginalized communities. Now, we want your help to bridge the gap where skills meet opportunity.
+                </p>
+              </div>
             </div>
+
             <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height">
               <div className='formcontainer'>
                 <form onSubmit={handleSubmit}>
@@ -380,7 +392,7 @@ const NgHiring = () => {
                     style={{ border: 'none', background: 'none', fontSize: '1.5rem' }}>
                   </button>
                 </div>
-                <div className="modal-body"> 
+                <div className="modal-body">
                   <form onSubmit={handleSubmit} className="w-100">
                     <div className="form-group">
                       <input
@@ -426,7 +438,7 @@ const NgHiring = () => {
                           });
                         }}
                         maxLength="10"
-                        style={{ width: '100%' }}/>                      
+                        style={{ width: '100%' }} />
                       {errors.number && <div className="error_message">{errors.number}</div>}
                     </div>
                     <div className="form-group">
