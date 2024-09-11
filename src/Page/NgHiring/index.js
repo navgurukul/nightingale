@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import data from './Data';
 import "./styles.css";
-import hire from './assets/hire.png';
+import Secssionfst from './Secssionfst';
+import HireFromUs from './Hireformus';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
@@ -136,191 +137,16 @@ const NgHiring = () => {
 
   return (
     <>
-      <div className='container-fluid'>
-        <div className="container">
-          <div className="row py-5">
-            <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height">
-              <div className="paragrapg-box">
-                <h5 className="media-font mt-4 text-lg-start p-3">
-                  You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
-                </h5>
-                <p className="section-para body1 w-100 text-lg-start pr-0 pr-lg-5 ">
-                  For more than 8 years, NavGurukul Foundation for Social Welfare has been committed to providing pathways to aspiration careers to students from marginalized communities. Now, we want your help to bridge the gap where skills meet opportunity.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height d-flex d-lg-flex justify-content-center justify-content-lg-start">
-              <div className='formcontainer w-100'>
-                <form onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <h4 className="mb-3">Connect With Our Team</h4>
-                    <label htmlFor="purpose" className="textspacing fw-bold">I would like</label>
-                    <div className="form-check">
-                      <input
-                        type="radio"
-                        name="purpose"
-                        id="purposeHireFromUs"
-                        value="Hire from Us"
-                        checked={formData.purpose === 'Hire from Us'}
-                        onChange={handleChange}
-                      />
-                      <label className="section-para body1" htmlFor="purposeHireFromUs">Hire from Us</label>
-                    </div>
-
-                    <div className="form-check d-inline-flex align-items-center me-3">
-                      <input
-                        type="radio"
-                        name="purpose"
-                        id="purposeBecomeKnowledgePartner"
-                        value="Become knowledge partner"
-                        checked={formData.purpose === 'Become knowledge partner'}
-                        onChange={handleChange}
-                      />
-                      <label className="section-para body1 ms-2" htmlFor="purposeBecomeKnowledgePartner">Become knowledge partner</label>
-                    </div>
-
-                    <div className="form-check d-inline-flex align-items-center">
-                      <input
-                        type="radio"
-                        name="purpose"
-                        id="purposeVolunteer"
-                        value="Volunteer"
-                        checked={formData.purpose === 'Volunteer'}
-                        onChange={handleChange}
-                      />
-                      <label className="section-para body1 ms-2" htmlFor="purposeVolunteer">Volunteer</label>
-                    </div>
-
-                    {errors.purpose && <div className="error_message">{errors.purpose}</div>}
-                  </div>
-
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="fullName"
-                      id="fullName"
-                      placeholder='Name'
-                      className="form-control1"
-                      value={formData.fullName}
-                      onChange={handleChange}
-                    />
-                    {errors.fullName && <div className='error_message'>{errors.fullName}</div>}
-                  </div>
-
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder='Email'
-                      className="form-control1"
-                      value={formData.email}
-                      onChange={handleChange}
-                    />
-                    {errors.email && <div className="error_message">{errors.email}</div>}
-                  </div>
-
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      name="number"
-                      placeholder='Number'
-                      id="number"
-                      className="form-control1"
-                      value={formData.number}
-                      onChange={(e) => {
-                        const filteredValue = e.target.value.replace(/[^0-9]/g, '');
-                        setFormData({
-                          ...formData,
-                          number: filteredValue
-                        });
-                      }}
-                      maxLength="10"
-                    />
-                    {errors.number && <div className="error_message">{errors.number}</div>}
-                  </div>
-
-                  <div className="form-group" style={{ width: "100%" }}>
-                    <button
-                      type="submit"
-                      className="btn regular-btn"
-                      style={{ width: "100%", height: "48px", border: "none", color: "#fff" }}
-                    >
-                      Submit
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-
-          </div >
-        </div >
-      </div >
-
-      <section className="d-flex flex-column align-items-center our-initiatives" >
-        <div className="container">
-          <h3 className="media-font px-3 mt-3 text-center">Hire from Us</h3>
-          <img className="banner-img mt-4 mb-4" src={hire} alt="Hire From Us" />
-          <div>
-            <p className="section-para body1 w-100">
-              Through harnessing the power of education, we bridge the learning gap of students from marginalized communities to emerge as skilled, resilient, and job-ready professionals, proficient in the latest technologies and soft skills. By partnering with us, your organization can enrich its workforce diversity and drive meaningful social impact, effortlessly meeting your Diversity, Equity, and Inclusion (DEI) goals.
-            </p>
-            <p className="section-para body1 w-100">
-              By hiring from us, you are achieving:
-            </p>
-            <div className="section-para body1 w-100">
-              <ul className="px-3">
-                <li>
-                  <span className="link">Handpicked Tech Talent:</span> Pre-screened candidates to save you time.
-                </li>
-                <li>
-                  <span className="link">Zero Hiring Fees:</span> Fully funded by our generous donors.
-                </li>
-                <li>
-                  <span className="link">High Retention Candidates:</span> Quality talent within the budget.
-                </li>
-                <li>
-                  <span className="link">Diverse Talent Pool:</span> Our students are from different regions of India, ready to enhance your workforce diversity and business capabilities.
-                </li>
-                <li>
-                  <span className="link">Job-Ready Talent:</span> Our students undergo rigorous training in both technical and soft skills, preparing them for the complexities of modern work environments.
-                </li>
-                <li>
-                  <span className="link">Positive Social Impact:</span> Fulfill your corporate social responsibility goals by hiring candidates who are part of a movement to bridge India's education and employment gap.
-                </li>
-              </ul>
-            </div>
-            <div className='row mb-2'>
-              <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center align-items-center my-md-2 my-sm-2 my-xs-2">
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn"
-                  style={{ width: "360px" }}
-                  onClick={() => handleOpenForm("Hire from Us")}>
-                  Hire from Us
-                </button>
-              </div>
-              <div className='col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center align-items-center my-md-2 my-sm-2 my-xs-2'>
-                <button
-                  type="button"
-                  className="btn fw-bold regular-btn1"
-                  style={{
-                    width: "360px",
-                    backgroundColor: "transparent",
-                    border: "2px solid red",
-                    color: "red",
-                  }}
-                  onClick={() => handleOpenForm('Download Placement Brief')}>
-                  Download Placement Brief
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+        <Secssionfst
+          handleOpenForm={handleOpenForm}
+          handleSubmit={handleSubmit}
+          formData={formData}
+          handleChange={handleChange}
+          errors={errors}
+          setFormData={setFormData}
+        />
+        <HireFromUs handleOpenForm={handleOpenForm}/>
+      
       <div>
         {data.map((item, index) => (
           <div key={item.id}>
@@ -362,10 +188,12 @@ const NgHiring = () => {
           </div>
         ))}
       </div>
+
       <Timeline />
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
+
       {
         formType && (
           <div
