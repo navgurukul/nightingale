@@ -7,6 +7,7 @@
     width: "360px"
 }
 
+/* 
 .microsoft-img,
 .amazon-img {
     max-width: 90%;
@@ -30,9 +31,7 @@
     max-width: 45%;
     height: auto;
     object-fit: contain;
-
 }
-
 
 
 .logo-scroller {
@@ -129,57 +128,161 @@
     .north-img {
         max-width: 20%;
     }
+} */
+
+
+
+.logo-scroller {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    gap: 20px;
+    /* Add some space between logos */
+    animation: scroll-left 20s linear infinite;
+    width: max-content;
+    /* Prevent shrinking to fit screen */
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    /* Prevent the item from shrinking */
+    display: flex;
+    /* Flex to center content */
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* Padding for better touch on small devices */
+}
+
+.microsoft-img,
+.amazon-img,
+.infosys-img,
+.north-img {
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 
 
 
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    /* Ensures no overflow */
 
-@media (max-width: 768px) {  
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+        /* Adjusted to scroll halfway for continuous loop */
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo-item {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo-img {
+        max-width: 70%;
+    }
+
+    .microsoft-img,
+    .amazon-img,
+    .infosys-img,
+    .north-img {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 80%;
+    }
+
+    .microsoft-img,
+    .amazon-img,
+    .infosys-img,
+    .north-img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-img {
+        max-width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
     .regular-btn {
-        margin-right: 0 !important; 
-        margin-bottom: 0.5rem; 
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
     }
 }
 
 
 /* Custom styles for medium (md) screens */
 @media (min-width: 768px) and (max-width: 991px) {
-    .d-flex.flex-column.flex-lg-row > button {
-        margin-right: 0.25rem;  /* Adjust button spacing for md screens */
-        margin-left: 0.25rem;   /* Add a bit of margin for equal spacing */
+    .d-flex.flex-column.flex-lg-row>button {
+        margin-right: 0.25rem;
+        /* Adjust button spacing for md screens */
+        margin-left: 0.25rem;
+        /* Add a bit of margin for equal spacing */
         gap: 2rem;
     }
+
     .d-flex.flex-column.flex-lg-row {
-        justify-content: space-around;  /* Space buttons around evenly */
+        justify-content: space-around;
+        /* Space buttons around evenly */
     }
 }
 
 @media (min-width: 1000px) and (max-width: 1229px) {
     .btn-spacing {
-        margin-right: 10rem; /* Adjust as needed */
+        margin-right: 10rem;
+        /* Adjust as needed */
     }
 }
 
 /* Custom styles for medium (md) screens */
 @media (min-width: 768px) and (max-width: 999px) {
     .d-flex.flex-column.flex-lg-row {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons horizontally */
+        flex-direction: column;
+        /* Stack buttons vertically */
+        align-items: center;
+        /* Center buttons horizontally */
     }
 
-    .d-flex.flex-column.flex-lg-row > button {
-        width: 100%; /* Make buttons full width */
-        max-width: 300px; /* Set max width for buttons */
-        margin-bottom: 1rem; /* Increase spacing between buttons */
-        padding: 0.75rem 1.5rem; /* Add padding for better button appearance */
+    .d-flex.flex-column.flex-lg-row>button {
+        width: 100%;
+        /* Make buttons full width */
+        max-width: 300px;
+        /* Set max width for buttons */
+        margin-bottom: 1rem;
+        /* Increase spacing between buttons */
+        padding: 0.75rem 1.5rem;
+        /* Add padding for better button appearance */
     }
 
-    .d-flex.flex-column.flex-lg-row > button:last-child {
-        margin-bottom: 0; /* Remove margin from the last button */
+    .d-flex.flex-column.flex-lg-row>button:last-child {
+        margin-bottom: 0;
+        /* Remove margin from the last button */
     }
 }
-
-
-
-

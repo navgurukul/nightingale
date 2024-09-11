@@ -13,35 +13,42 @@ const Ourrecruiters = ({ handleOpenForm }) => {
             <div className="container">
                 <div className="row" >
                     <h3 className="section-head body1 w-100 p-3 mb-4">Our recruiters</h3>
+
                     <div className="logo-scroller">
                         <div className="logo-track">
-                            <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3'>
-                                <img src={wipro} alt="logos" className="wipro-img" />
+                            <div className="logo-item">
+                                <img src={wipro} alt="Wipro Logo" className="wipro-img logo-img" />
                             </div>
-                            <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3'>
-                                <img src={tata} alt="logos" className="tata-img" />
+                            <div className="logo-item">
+                                <img src={tata} alt="Tata Logo" className="tata-img logo-img" />
                             </div>
-                            <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3'>
-                                <img src={microsoft} alt="logos" className="microsoft-img" />
+                            <div className="logo-item">
+                                <img src={microsoft} alt="Microsoft Logo" className="microsoft-img" />
                             </div>
-                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3">
-                                <img src={amazon} alt="logos" className="amazon-img" />
+                            <div className="logo-item">
+                                <img src={amazon} alt="Amazon Logo" className="amazon-img" />
                             </div>
-                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3">
-                                <img src={infosys} alt="logos" className="infosys-img" />
+                            <div className="logo-item">
+                                <img src={infosys} alt="Infosys Logo" className="infosys-img" />
                             </div>
-                            <div className="col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3">
-                                <img src={north} alt="logos" className="north-img" />
+                            <div className="logo-item">
+                                <img src={north} alt="North Logo" className="north-img" />
                             </div>
-                            <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3'>
-                                <img src={wipro} alt="logos" className="wipro-img" />
+                            {/* Repeat some logos again for continuous effect */}
+                            <div className="logo-item">
+                                <img src={wipro} alt="Wipro Logo" className="wipro-img logo-img" />
                             </div>
-                            <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3'>
-                                <img src={tata} alt="logos" className="tata-img" />
+                            <div className="logo-item">
+                                <img src={tata} alt="Tata Logo" className="tata-img logo-img" />
                             </div>
-
-                            <div className='col-lg-2 col-md-2 col-sm-2 col-xs-2 mb-3'>
-                                <img src={microsoft} alt="logos" className="microsoft-img" />
+                            <div className="logo-item">
+                                <img src={microsoft} alt="Microsoft Logo" className="microsoft-img" />
+                            </div>
+                            <div className="logo-item">
+                                <img src={amazon} alt="Amazon Logo" className="amazon-img" />
+                            </div>
+                            <div className="logo-item">
+                                <img src={infosys} alt="Infosys Logo" className="infosys-img" />
                             </div>
                         </div>
                     </div>
