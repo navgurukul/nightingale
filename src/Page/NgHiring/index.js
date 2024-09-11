@@ -369,7 +369,7 @@ const NgHiring = () => {
             onClick={handleCloseForm}>
             <div
               className="modal-dialog"
-              style={{ maxWidth: '90%', margin: 'auto', width: '400px' }}
+              style={{ maxWidth: '90%', margin: 'auto', width: '448px' ,gap:"16px",borderRadius:"8px"}}
               onClick={(e) => e.stopPropagation()}>
               <div className="modal-content p-3">
                 <div className="d-flex justify-content-between align-items-center mb-3">

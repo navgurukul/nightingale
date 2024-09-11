@@ -28,11 +28,12 @@
 .formcontainer {
   background-color: white;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
+  max-width: 448px;
 }
 
 .modal-dialog {
-  max-width: 500px;
+  max-width: 448px;
   margin: 20px auto;
 }
 
