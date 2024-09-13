@@ -203,9 +203,9 @@ const NgHiring = () => {
         <div
           className="modal"
           style={{ display: 'block' }}
-          onClick={handleCloseForm}
-          tabIndex="0"
-          onKeyDown={(e) => e.key === 'Enter' && handleCloseForm()} // Removed 'e' argument
+          onClick={handleCloseForm}  // Handles close on click
+          tabIndex="0"  // Makes the div focusable
+          onKeyDown={(e) => { if (e.key === 'Enter') handleCloseForm(); }}  // Removed 'e' argument
           role="button"
           aria-label="Close Modal"
         >
