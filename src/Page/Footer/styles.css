@@ -12,8 +12,8 @@
 }
 
 .selected rect {
-  fill: var(--primary); 
-  stroke: var(--primary); 
+  fill: var(--primary);
+  stroke: var(--primary);
 }
 
 .social-icons div {
@@ -87,9 +87,10 @@
   color: var(--primary);
 }
 
-.row-title{
+.row-title {
   color: #2E2E2E;
 }
+
 .footer-container .row-title:hover {
   color: var(--primary);
 }
@@ -112,7 +113,7 @@
 
 .sub-title {
   font-weight: 400;
-  font-size:14px;
+  font-size: 14px;
   line-height: 21px;
   color: #2E2E2E;
 }
@@ -127,6 +128,7 @@
 .svg-background:hover .socialmedia-icon {
   fill: white;
 }
+
 .svg-background:hover rect {
   fill: var(--primary);
 }
@@ -205,6 +207,30 @@
   }
 }
 
+/* Default state for .facebook icon */
+.facebook .svg-background rect {
+  fill: transparent;
+  stroke: #F05F40;
+}
 
+.facebook .socialmedia-icon {
+  fill: #E16749;
+}
 
+.facebook:hover .svg-background rect {
+  fill: #F05F40;
+}
 
+.facebook:hover .socialmedia-icon {
+  fill: white;
+}
+
+.linkedin:hover .svg-background rect,
+.twitter:hover .svg-background rect {
+  fill: #F05F40;
+}
+
+.linkedin:hover .socialmedia-icon,
+.twitter:hover .socialmedia-icon {
+  fill: white;
+}

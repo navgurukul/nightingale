@@ -1,0 +1,143 @@
+.timeline1 {
+    position: relative;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.timeline1::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    width: 8px;
+    background: #ddd;
+    left: 30px;
+    margin: 0 auto;
+}
+
+.timeline-item1 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+.heading-line1 {
+    margin-bottom: 70px;
+}
+
+.timeline-dot1 {
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    margin-top: 20px;
+}
+
+.timeline-dot2 {
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    margin-top: 30px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+    .timeline1 {
+        padding: 10px 0;
+    }
+
+    .timeline1::before {
+        left: 20px;
+    }
+
+    .timeline-item1 {
+        padding-left: 50px;
+    }
+
+    .timeline-dot1 {
+        left: 13px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .timeline-dot2 {
+        left: 10px;
+        width: 25px;
+        height: 25px;
+        bottom: 40px;
+    }
+
+    .timeline-content1 {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    .heading-line1 {
+        margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 567px) and (max-width: 990px) {
+    .timeline1 {
+        padding: 20px 0;
+    }
+    .timeline1::before {
+        left: 25px;
+    }
+    .timeline-item1 {
+        padding-left: 60px;
+    }
+    .timeline-dot1 {
+        left: 20px;
+        width: 20px;
+        height: 20px;
+    }
+    .timeline-dot2 {
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        bottom: 40px;
+    }
+    .timeline-content1 {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .heading-line1 {
+        margin-bottom: 100px;
+    }
+}
+
+/* For screens up to 576px */
+@media (max-width: 576px) {
+    .timeline1 {
+        padding: 10px 0;
+    }
+
+    .timeline1::before {
+        left: 20px;
+    }
+
+    .timeline-item1 {
+        padding-left: 50px;
+    }
+
+    .timeline-dot1 {
+        left: 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .timeline-content1 {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .heading-line1 {
+        margin-bottom: 100px;
+    }
+}

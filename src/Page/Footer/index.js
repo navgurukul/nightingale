@@ -19,6 +19,7 @@ const Footer = () => {
           <img src={require("./assets/logo.png").default} className="mb-1 mt-0" alt="Navgurukul Logo" />
             <div className="social-icons">
               <div className="d-flex align-items-center">
+                
                 {/* Facebook Icon */}
                 <div
                   className={`facebook ${selectedIcon === 'facebook' ? 'selected' : ''}`}

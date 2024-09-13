@@ -34,7 +34,6 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                             <div className="logo-item">
                                 <img src={north} alt="North Logo" className="north-img" />
                             </div>
-                            {/* Repeat some logos again for continuous effect */}
                             <div className="logo-item">
                                 <img src={wipro} alt="Wipro Logo" className="wipro-img logo-img" />
                             </div>
@@ -54,7 +53,6 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                     </div>
                 </div>
             </div>
-
             <div className='container mb-4 mt-3'>
                 <div className='row justify-content-center align-items-center'>
                     <h3 className="section-head body1 w-100 p-3 mb-4 text-center">Join Our Movement</h3>
@@ -86,7 +84,6 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                     </div>
                 </div>
             </div>
-
             <p className="section-para body1 w-100 p-1 text-center mb-5"> For any queries, please contact us at
                 <span className='link'>+91 9987609708</span>
             </p>

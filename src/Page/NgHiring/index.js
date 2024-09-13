@@ -8,6 +8,7 @@ import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
 import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
+import Newtime from './Newtimeline'
 
 const NgHiring = () => {
   const history = useHistory();
@@ -151,12 +152,12 @@ const NgHiring = () => {
         {data.map((item, index) => (
           <div key={item.id}>
             <section className="d-flex flex-column align-items-center our-initiatives">
-              <div className="container">
-                <h3 className="media-font text-center">{item.text}</h3>
-                <img className='banner-img mt-3' src={item.img} alt="Hire From Us" />
+              <div className="container p-sm-2 px-xs-5">
+                <h3 className="media-font text-center mb-4">{item.text}</h3>
+                <img className='banner-img ' src={item.img} alt="No img" />
                 <p className="section-para body1 w-100 mt-3">{item.para}</p>
                 <p className="section-para body1 w-100">{item.hadding}</p>
-                <ul>
+                <ul className='px-3'>
                   <div className="section-para body1 w-100">
                     <div className="container section-para body1 w-100">
                       {Object.keys(item.list)
@@ -173,12 +174,13 @@ const NgHiring = () => {
                       <div className="d-flex w-100 justify-content-center">
                         <button
                           type="button"
-                          className="btn fw-bold regular-btn align-self-center mt-3"
+                          className="btn fw-bold regular-btn align-self-center mt-4 mb-lg-2"
                           style={{ width: "360px" }}
                           onClick={() => handleOpenForm(item.button)}
                         >
                           {item.button}
                         </button>
+
                       </div>
                     </div>
                   </div>
@@ -190,6 +192,7 @@ const NgHiring = () => {
       </div>
 
       <Timeline />
+      <Newtime/>
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
@@ -279,7 +282,7 @@ const NgHiring = () => {
           </div>
         )
       }
-
+      
       {
         showToast && (
           <div class="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
