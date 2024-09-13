@@ -7,34 +7,6 @@
     width: "360px"
 }
 
-.microsoft-img,
-.amazon-img {
-    max-width: 90%;
-    height: auto;
-    object-fit: contain;
-}
-
-.infosys-img {
-    max-width: 60%;
-    height: auto;
-    object-fit: contain;
-}
-
-.north-img {
-    max-width: 35%;
-    height: auto;
-    object-fit: contain;
-}
-
-.wipro-img {
-    max-width: 45%;
-    height: auto;
-    object-fit: contain;
-
-}
-
-
-
 .logo-scroller {
     overflow: hidden;
     width: 100%;
@@ -43,15 +15,34 @@
 
 .logo-track {
     display: flex;
-    gap: 0;
+    gap: 20px;
     animation: scroll-left 20s linear infinite;
+    width: max-content;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.microsoft-img,
+.amazon-img,
+.infosys-img,
+.north-img {
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .logo-img {
-    width: 100%;
-    max-width: 120px;
+    max-width: 100%;
     height: auto;
     object-fit: contain;
+    display: block;
 }
 
 @keyframes scroll-left {
@@ -60,126 +51,78 @@
     }
 
     100% {
-        transform: translateX(-70%);
+        transform: translateX(-50%);
     }
 }
-
 
 @media (max-width: 1200px) {
-
-    .microsoft-img,
-    .amazon-img {
-        max-width: 80%;
+    .logo-item {
+        flex: 0 0 auto;
     }
-
-    .infosys-img {
-        max-width: 50%;
-    }
-
-    .north-img {
-        max-width: 35%;
-    }
-
 }
 
-
 @media (max-width: 992px) {
-
-    .microsoft-img,
-    .amazon-img {
+    .logo-img {
         max-width: 70%;
     }
 
-    .infosys-img {
-        max-width: 45%;
-    }
-
+    .microsoft-img,
+    .amazon-img,
+    .infosys-img,
     .north-img {
-        max-width: 30%;
+        max-width: 70%;
     }
 }
 
 @media (max-width: 768px) {
+    .logo-img {
+        max-width: 80%;
+    }
 
     .microsoft-img,
-    .amazon-img {
-        max-width: 60%;
-    }
-
-    .infosys-img {
-        max-width: 40%;
-    }
-
+    .amazon-img,
+    .infosys-img,
     .north-img {
-        max-width: 25%;
+        max-width: 80%;
     }
 }
 
 @media (max-width: 576px) {
-
-    .microsoft-img,
-    .amazon-img {
-        max-width: 50%;
-    }
-
-    .infosys-img {
-        max-width: 35%;
-    }
-
-    .north-img {
-        max-width: 20%;
+    .logo-img {
+        max-width: 90%;
     }
 }
 
 
-
-
-
-@media (max-width: 768px) {  
+@media (max-width: 768px) {
     .regular-btn {
-        margin-right: 0 !important; 
-        margin-bottom: 0.5rem; 
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem;
     }
 }
 
-
-/* Custom styles for medium (md) screens */
-@media (min-width: 768px) and (max-width: 991px) {
-    .d-flex.flex-column.flex-lg-row > button {
-        margin-right: 0.25rem;  /* Adjust button spacing for md screens */
-        margin-left: 0.25rem;   /* Add a bit of margin for equal spacing */
-        gap: 2rem;
-    }
-    .d-flex.flex-column.flex-lg-row {
-        justify-content: space-around;  /* Space buttons around evenly */
-    }
-}
 
 @media (min-width: 1000px) and (max-width: 1229px) {
     .btn-spacing {
-        margin-right: 10rem; /* Adjust as needed */
+        margin-right: 10rem;
     }
 }
 
 /* Custom styles for medium (md) screens */
 @media (min-width: 768px) and (max-width: 999px) {
     .d-flex.flex-column.flex-lg-row {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons horizontally */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .d-flex.flex-column.flex-lg-row > button {
-        width: 100%; /* Make buttons full width */
-        max-width: 300px; /* Set max width for buttons */
-        margin-bottom: 1rem; /* Increase spacing between buttons */
-        padding: 0.75rem 1.5rem; /* Add padding for better button appearance */
+    .d-flex.flex-column.flex-lg-row>button {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+        padding: 0.75rem 1.5rem;
     }
 
-    .d-flex.flex-column.flex-lg-row > button:last-child {
-        margin-bottom: 0; /* Remove margin from the last button */
+    .d-flex.flex-column.flex-lg-row>button:last-child {
+        margin-bottom: 0;
     }
 }
-
-
-
-

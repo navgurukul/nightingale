@@ -13,16 +13,18 @@ const Timeline = () => {
   return (
     <section className="d-flex flex-column align-items-center our-initiatives">
       <div className="container">
-        <h3 className="heading-line text-center">
+        <h3 className="heading-line text-center mb-5 my-0">
           Timeline of Student Growth
         </h3>
-
         <div className="row d-flex align-items-center justify-content-center">
           <div className="col-lg-5 col-md-12 col-sm-12 custom-padding-left">
             {timelineEvents.map((event, index) => (
               index % 2 === 0 && (
-                <div key={index} className="mt-5 text-center">
-                  <p className="section-para body1 w-100 py-4 p-5">{event}</p>
+
+                <div key={index} className="mt-lg-5 mt-3 text-lg-center text-left"> 
+                  <p className="section-para body1 w-100 py-lg-4 py-2 px-lg-5 px-sm-4 px-2"> 
+                    {event}
+                  </p>
                 </div>
               )
             ))}
@@ -47,8 +49,10 @@ const Timeline = () => {
           <div className="col-lg-5 col-md-12 col-sm-12 custom-padding-right">
             {timelineEvents.map((event, index) => (
               index % 2 !== 0 && (
-                <div key={index} className="mt-5 text-center">
-                  <p className="section-para body1 w-100 py-4 p-5">{event}</p>
+                <div key={index} className="mt-lg-5 mt-3 text-lg-center text-left"> 
+                  <p className="section-para body1 w-100 py-lg-4 py-2 px-lg-5 px-sm-4 px-2"> 
+                    {event}
+                  </p>
                 </div>
               )
             ))}
@@ -59,5 +63,37 @@ const Timeline = () => {
 
   );
 };
-
 export default Timeline;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

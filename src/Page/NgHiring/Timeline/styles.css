@@ -37,19 +37,10 @@
 }
 
 @media (max-width: 768px) {
-  .timeline-dot {
-    display: none;
-  }
-
-  .timeline-row::after {
-    display: none;
-  }
-
   .timelinetext {
     margin-top: 2px;
   }
 }
-
 
 
 .mt-3 {
@@ -71,10 +62,6 @@
 
   .our-initiatives .container {
     padding: 0 5px !important;
-  }
-
-  .d-none {
-    display: none !important;
   }
 
   .heading-line {
@@ -132,7 +119,8 @@
   border: 1px solid #ddd;
   border-radius: 3px;
   white-space: nowrap;
-} 
+}
+
 
 
 
@@ -149,9 +137,6 @@
     padding: 0 5px !important;
   }
 
-  .timeline-container {
-    display: none;
-  }
 
   .heading-line {
     margin-bottom: 10px;
@@ -159,7 +144,6 @@
   }
 }
 
-/* Additional styles for very small screens (max-width: 768px) */
 @media (max-width: 768px) {
   .mt-3 {
     margin-top: 6px !important;
@@ -190,10 +174,8 @@
   padding-left: 0;
 }
 
-/* Padding styles for large screens and above */
 @media (min-width: 992px) {
 
-  /* lg and above */
   .custom-padding-left {
     padding-left: 90px;
     padding-right: 0;
@@ -204,12 +186,38 @@
   }
 }
 
-/* Reset padding for smaller screens */
 @media (max-width: 991px) {
 
   .custom-padding-left,
   .custom-padding-right {
     padding-left: 0;
     padding-right: 0;
+  }
+}   
+
+
+.timeline-item {
+  position: absolute;
+  width: 100%;
+}
+
+
+.timeline-content {
+  position: absolute;
+  width: calc(100% - 60px);
+  left: 30px;
+}
+
+
+@media (max-width: 991px) {
+  /* Hide timeline on screens smaller than 992px */
+  .timeline-container {
+    display: none;
+  }
+  .col-lg-5,
+  .custom-padding-left,
+  .custom-padding-right,
+  .heading-line {
+    display: none;
   }
 }

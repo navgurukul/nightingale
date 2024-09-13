@@ -15,7 +15,7 @@ import bannerimg2 from "./assets/Sri badrika asharam.svg";
 import { useState } from "react";
 import OurCampuses from "./OurCampuses";
 import AlumniStories from "./AlumniStories";
-import PlayBtn from  "./assets/playicon.png";
+import PlayBtn from "./assets/playicon.png";
 
 function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <>
-     <div className="row align-items-center centered-container">
+      <div className="row align-items-center centered-container">
         <div className="d-none d-md-flex justify-content-end">
           <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
         </div>
@@ -40,64 +40,74 @@ function Home() {
           <h4 className="mb-0">Eternal University’s Fully-Funded BCA Program for Aspiring Young Women 2024-27</h4>
         </div>
         <div className="col-md d-flex justify-content-end">
+       
           <button
             type="button"
             className="btn regular-btn"
-            style={{ height: "48px", width: "250px" }}
+            style={{
+              height: "48px",
+              minWidth: "250px", 
+              padding: "0 20px", 
+              maxWidth: "100%", 
+              whiteSpace: "nowrap", 
+              overflow: "hidden", 
+              textOverflow: "ellipsis" 
+            }}
             onClick={(e) => {
               e.preventDefault();
               window.open("/bca-programme", "_blank");
             }}
           >
-            Apply by 18th August 2024
+            Apply by 11th September 2024
           </button>
+
         </div>
       </div>
       <div className="navgurukul-homepage">
-        <div className="container" style={{marginTop:"80px"}}> 
-        <div className="row">
-           <div className="col-md-12" style={{ textAlign: "center"}}>
+        <div className="container" style={{ marginTop: "80px" }}>
+          <div className="row">
+            <div className="col-md-12" style={{ textAlign: "center" }}>
               <h2 className=" heading-line ">
-                The <span className="text-primary">Gurukul</span> for the <span className="BgColor"> New Age India  {" "} </span><span style={{marginLeft:"10px"}}>and </span> 
+                The <span className="text-primary">Gurukul</span> for the <span className="BgColor"> New Age India  {" "} </span><span style={{ marginLeft: "10px" }}>and </span>
                 <br></br>
-                 its New
+                its New
                 Generation{" "}
               </h2>{" "}
               <p className="font body1">
                 We are a non-profit dedicated to bring affordable tech education to<br></br>
                 underprivileged girls in India.{" "}
               </p>
-              </div>
-               <div className="col-md-12" style={{ padding: screenWidth > 932 && "0px" }}>
-                 
-                    {!showVideo ? (
-                      <div className="custom-bg-image" onClick={handlePlayButtonClick} >
-                        <div onClick={handlePlayButtonClick}>
-                          <img src={PlayBtn} alt="Play Icon" className="play-button" />
-                        </div>
-                      </div>
-                    ) : (
-                    <div className="custom-video-container">
-                       <iframe
-                          className="bg-video"
-                          src="https://www.youtube.com/embed/NC2ymm6Sots?autoplay=1"
-                          frameBorder="0"
-                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                          allowFullScreen
-                         title="Embedded Video"
-                        ></iframe>
-                     </div>
-                   )}
-               
-             </div>
-           </div>
+            </div>
+            <div className="col-md-12" style={{ padding: screenWidth > 932 && "0px" }}>
+
+              {!showVideo ? (
+                <div className="custom-bg-image" onClick={handlePlayButtonClick} >
+                  <div onClick={handlePlayButtonClick}>
+                    <img src={PlayBtn} alt="Play Icon" className="play-button" />
+                  </div>
+                </div>
+              ) : (
+                <div className="custom-video-container">
+                  <iframe
+                    className="bg-video"
+                    src="https://www.youtube.com/embed/NC2ymm6Sots?autoplay=1"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title="Embedded Video"
+                  ></iframe>
+                </div>
+              )}
+
+            </div>
+          </div>
         </div>
         <section className="media-scroll-section d-flex flex-column justify-content-center">
           <div className="container">
             <div className="row w-100">
               <div className="col-lg-3 col-md-2 col-sm-6 ">
                 <h3>890+</h3>
-                <p  className="font body1">students placed across various industries in tech</p>
+                <p className="font body1">students placed across various industries in tech</p>
               </div>
               <div className="col-lg-3 col-md-2 col-sm-6">
                 <h3>₹2.8 LPA</h3>
@@ -118,7 +128,7 @@ function Home() {
           </div>
         </section>
 
-         <section className=" d-flex flex-column align-items-center our-initiatives">
+        <section className=" d-flex flex-column align-items-center our-initiatives">
           <h3 className="text-center media-font ">Our Schools</h3>
 
           <div className="container mt-4">
@@ -184,7 +194,7 @@ function Home() {
             </div>
           </div>
 
-          
+
         </section>
 
 
@@ -194,7 +204,7 @@ function Home() {
         </section>
 
         <section className=" d-flex flex-column align-items-center our-initiatives">
-          <OurCampuses/>
+          <OurCampuses />
         </section>
 
         <section className=" d-flex flex-column align-items-center our-initiatives">
@@ -205,7 +215,7 @@ function Home() {
         </section>
 
         <Slider />
-          
+
         <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
           <h3>
             Our <span className="BackColor">Supporters</span>
@@ -216,7 +226,7 @@ function Home() {
         </section>
         <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
           <h3>
-          Alumni <span className="BackColor"> Stories</span>
+            Alumni <span className="BackColor"> Stories</span>
           </h3>
           <div className="container mt-4">
             <AlumniStories />

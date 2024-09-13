@@ -11,25 +11,47 @@
 }
 
 .modal-title {
-  color: red;
-}
-
-.form-control {
-  height: 60px;
-  border: 2px solid gray;
-  border-radius: 35px;
+  color: black;
 }
 
 .modal-content {
-  border: 2px solid gray;
-  border-radius: 25px;
-  padding: 15px;
+  border-radius: 7px;
+  padding: 10px;
   margin-top: 20px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .modal-content:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.formcontainer {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 448px;
+}
+
+.modal-dialog {
+  max-width: 448px;
+  margin: 20px auto;
+}
+
+.fixed-width-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.error_message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
 .textspacing,
@@ -42,12 +64,9 @@
   color: #EB5F42;
 }
 
-
-
 .link:hover {
   color: #EB5F42;
   text-decoration: none;
-
 }
 
 .mt-32 {
@@ -65,7 +84,6 @@
   margin-bottom: 20px;
 }
 
-
 .appoitmentbtn {
   background-color: var(--primary);
   border-color: var(--primary);
@@ -76,7 +94,6 @@
   height: 48px;
   font-size: 1.125rem;
   outline: none !important;
-
 }
 
 .women-image {
@@ -85,16 +102,12 @@
   object-fit: cover;
 }
 
-
-
-
 .banner-img {
   width: 100%;
-  height: 300px;
+  height: 470px;
   object-fit: cover;
   border-radius: 5px;
 }
-
 
 .position-relative {
   position: fixed;
@@ -114,7 +127,6 @@
   -webkit-text-stroke: 3px black;
 }
 
-
 .regular-btn1 {
   border-color: var(--primary);
   cursor: pointer;
@@ -126,12 +138,85 @@
   font-size: 1.125rem;
 }
 
+.form-control1 {
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b6b5b5;
+  outline: none;
+  width: 100%;
+}
+
+.paragraph-box {
+  margin-top: 70px;
+  padding-right: 75px;
+}
+
+.red-bordered-column {
+  height: auto;
+  min-height: 458px;
+}
+
+@media (min-width: 992px) {
+  .red-bordered-column {
+    height: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .fixed-height-lg {
+    height: 458px;
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .pr-lg-custom {
+    padding-right: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-control1 {
+    height: 35px;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-control1 {
+    height: 38px;
+    padding: 9px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form-control1 {
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f1f1f1 0%, #fbe3e3 100%);
+}
+
+@media (max-width: 991.98px) {
+  .column-height {
+    height: auto;
+    min-height: 200px;
+  }
+}
 
 @media (max-width: 1200px) {
   .hire-heading {
     font-size: 6rem;
     -webkit-text-stroke: 2px black;
-
   }
 }
 
@@ -139,7 +224,6 @@
   .hire-heading {
     font-size: 5rem;
     -webkit-text-stroke: 1px black;
-
   }
 }
 
@@ -205,17 +289,6 @@
   margin-right: 30px;
 }
 
-.modal-body {
-  overflow-y: scroll;
-  max-height: 70vh;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.modal-body::-webkit-scrollbar {
-  display: none;
-}
-
 .custom-select-wrapper {
   position: relative;
 }
@@ -241,7 +314,6 @@
 .large-font {
   font-size: 50px;
 }
-
 
 .parent-container {
   display: flex;
@@ -349,22 +421,17 @@
   }
 }
 
-
-/* For small screens (min-width: 577px and max-width: 768px) */
 @media (min-width: 577px) and (max-width: 768px) {
   .main_container_box {
     background-image: none;
   }
 }
 
-/* Center button on small screens and adjust spacing */
 @media (max-width: 768px) {
   .btn {
     width: 100%;
   }
 }
-
-/* Center button on medium screens and adjust spacing */
 
 @media (min-width: 769px) and (max-width: 992px) {
   .main_container_box {
@@ -374,9 +441,35 @@
 
 @media(max-width:667px) {
 
-  .regular-btn1
-   {
+  .regular-btn1,
+  .dashed-btn {
     font-size: 0.875rem !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .paragrapg-box {
+    margin-top: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .py-5 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+
+
+@media (min-width: 400px) and (max-width: 670px) {
+  .col-lg-6 .full-width {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 658px) and (max-width: 980px) {
+  .full-width-button {
     width: 100% !important;
   }
 }
