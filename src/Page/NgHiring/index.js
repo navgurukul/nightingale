@@ -205,7 +205,7 @@ const NgHiring = () => {
           style={{ display: 'block' }}
           onClick={handleCloseForm}
           tabIndex="0"
-          onKeyDown={(e) => e.key === 'Enter' && handleCloseForm(e)}
+          onKeyDown={(e) => e.key === 'Enter' && handleCloseForm()} // Removed 'e' argument
           role="button"
           aria-label="Close Modal"
         >
