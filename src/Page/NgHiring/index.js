@@ -138,16 +138,16 @@ const NgHiring = () => {
 
   return (
     <>
-        <Secssionfst
-          handleOpenForm={handleOpenForm}
-          handleSubmit={handleSubmit}
-          formData={formData}
-          handleChange={handleChange}
-          errors={errors}
-          setFormData={setFormData}
-        />
-        <HireFromUs handleOpenForm={handleOpenForm}/>
-      
+      <Secssionfst
+        handleOpenForm={handleOpenForm}
+        handleSubmit={handleSubmit}
+        formData={formData}
+        handleChange={handleChange}
+        errors={errors}
+        setFormData={setFormData}
+      />
+      <HireFromUs handleOpenForm={handleOpenForm} />
+
       <div>
         {data.map((item, index) => (
           <div key={item.id}>
@@ -192,116 +192,129 @@ const NgHiring = () => {
       </div>
 
       <Timeline />
-      <Newtime/>
+      <Newtime />
       <OurAlumni />
       <Slider />
       <Ourrecruiters handleOpenForm={handleOpenForm} />
 
-      {
-        formType && (
-          <div
+
+
+      {formType && (
+        <div
+          className="modal"
+          style={{ display: 'block' }}
+          onClick={handleCloseForm}
+          tabIndex="0"
+          onKeyDown={(e) => e.key === 'Enter' && handleCloseForm(e)}
+          role="button"
+          aria-label="Close Modal"
+        >
+          <button
             className="modal"
-            style={{ display: 'block' }}
-            onClick={handleCloseForm}>
+            style={{ display: 'block', all: 'unset' }} // Reset default button styles if needed
+            onClick={handleCloseForm}
+            tabIndex="0"
+            onKeyDown={(e) => e.key === 'Enter' && handleCloseForm(e)}
+            aria-label="Close Modal"
+          >
             <div
               className="modal-dialog"
-              style={{ maxWidth: '90%', margin: 'auto', width: '448px', gap: "16px", borderRadius: "8px" }}
-              onClick={(e) => e.stopPropagation()}>
-              <div className="modal-content p-3">
-                <div className="d-flex justify-content-between align-items-center mb-3">
-                  <h5 className="modal-title mb-0 mt-3 px-3">{formType}</h5>
-                  <button
-                    type="button"
-                    className="close mt-3"
-                    onClick={handleCloseForm}
-                    style={{ border: 'none', background: 'none', fontSize: '1.5rem' }}>
-                  </button>
-                </div>
-                <div className="modal-body">
-                  <form onSubmit={handleSubmit} className="w-100">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        name="fullName"
-                        id="fullName"
-                        placeholder="Name"
-                        className="form-control1 mb-2"
-                        value={formData.fullName}
-                        onChange={handleChange}
-                        style={{ width: '100%' }}
-                      />
-                      {errors.fullName && <div className="error_message">{errors.fullName}</div>}
-                    </div>
+              style={{
+                maxWidth: '90%',
+                margin: 'auto',
+                width: '448px',
+                gap: '16px',
+                borderRadius: '8px',
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              Modal content
+            </div>
+          </button>
 
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Email"
-                        className="form-control1 mb-2"
-                        value={formData.email}
-                        onChange={handleChange}
-                        style={{ width: '100%' }}
-                      />
-                      {errors.email && <div className="error_message">{errors.email}</div>}
-                    </div>
+          <div
+            className="modal-dialog"
+            style={{ maxWidth: '90%', margin: 'auto', width: '448px', gap: '16px', borderRadius: '8px' }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="modal-content p-3">
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <h5 className="modal-title mb-0 mt-3 px-3">{formType}</h5>
+                <button
+                  type="button"
+                  className="close mt-3"
+                  onClick={handleCloseForm}
+                  style={{ border: 'none', background: 'none', fontSize: '1.5rem' }}
+                  aria-label="Close"
+                >
+                  {/* &times; */}
+                </button>
+              </div>
+              <div className="modal-body">
+                <form onSubmit={handleSubmit} className="w-100">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="fullName"
+                      id="fullName"
+                      placeholder="Name"
+                      className="form-control1 mb-2"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      style={{ width: '100%' }}
+                    />
+                    {errors.fullName && <div className="error_message">{errors.fullName}</div>}
+                  </div>
 
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        name="number"
-                        id="number"
-                        placeholder="Number"
-                        className="form-control1 mb-2"
-                        value={formData.number}
-                        onChange={(e) => {
-                          const filteredValue = e.target.value.replace(/[^0-9]/g, '');
-                          setFormData({
-                            ...formData,
-                            number: filteredValue
-                          });
-                        }}
-                        maxLength="10"
-                        style={{ width: '100%' }} />
-                      {errors.number && <div className="error_message">{errors.number}</div>}
-                    </div>
-                    <div className="form-group">
-                      <button
-                        type="submit"
-                        className="btn regular-btn w-100"
-                        style={{ height: "48px" }}
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      className="form-control1 mb-2"
+                      value={formData.email}
+                      onChange={handleChange}
+                      style={{ width: '100%' }}
+                    />
+                    {errors.email && <div className="error_message">{errors.email}</div>}
+                  </div>
+
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      name="number"
+                      id="number"
+                      placeholder="Number"
+                      className="form-control1 mb-2"
+                      value={formData.number}
+                      onChange={(e) => {
+                        const filteredValue = e.target.value.replace(/[^0-9]/g, '');
+                        setFormData({
+                          ...formData,
+                          number: filteredValue
+                        });
+                      }}
+                      maxLength="10"
+                      style={{ width: '100%' }} />
+                    {errors.number && <div className="error_message">{errors.number}</div>}
+                  </div>
+                  <div className="form-group">
+                    <button
+                      type="submit"
+                      className="btn regular-btn w-100"
+                      style={{ height: "48px" }}
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-        )
-      }
-      
-      {
-        showToast && (
-          <div class="toast align-items-center fade show success" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-content">
-              <div class="content-body d-flex align-items-center">
-                <div class="icon me-4">
-                  <i class="fi fi-rr-badge-check d-flex"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <span className="fw-bold">Your data has been submitted successfully.</span>
-                  <button type="button" className="close d-flex align-items-center ms-2 ml-3" onClick={() => setShowToast(false)} aria-label="Close">
-                    <i className="fa fa-times"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        )
-      }
+        </div>
+      )}
+
     </>
   );
 };
