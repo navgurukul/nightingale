@@ -7,7 +7,7 @@ const HireFromUs = ({ handleOpenForm }) => {
         <section className="d-flex flex-column align-items-center our-initiatives">
             <div className="container" >
                 <h3 className="media-font px-3 mt-3 text-center">Hire from Us</h3>
-                <img className="banner-img mt-4 mb-4 sm-px-3" src={hire} alt="Hire From Us" />
+                <img className="banner-img mt-4 mb-4" src={hire} alt="Hire From Us" />
                 <div>
                     <p className="section-para body1 w-100">
                         Through harnessing the power of education, we bridge the learning gap of students from marginalized communities to emerge as skilled, resilient, and job-ready professionals, proficient in the latest technologies and soft skills. By partnering with us, your organization can enrich its workforce diversity and drive meaningful social impact, effortlessly meeting your Diversity, Equity, and Inclusion (DEI) goals.
