@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import data from './Data';
 import "./styles.css";
-import Secssionfst from './Secssionfst';
+// import Secssionfst from './Secssionfst';
 import HireFromUs from './Hireformus';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
-import Slider from './Slider';
+// import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 import Newtime from './Newtimeline'
+import Secssionfst from './Fstsecssion/Secssionfst'
 
 const NgHiring = () => {
   const history = useHistory();
@@ -194,7 +195,7 @@ const NgHiring = () => {
       <Timeline />
       <Newtime />
       <OurAlumni />
-      <Slider />
+      {/* <Slider /> */}
       <Ourrecruiters handleOpenForm={handleOpenForm} />
 
 

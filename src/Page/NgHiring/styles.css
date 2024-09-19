@@ -30,7 +30,9 @@
   padding: 20px;
   border-radius: 8px;
   max-width: 448px;
+  margin-left: "30px";
 }
+
 
 .modal-dialog {
   max-width: 448px;
@@ -56,7 +58,6 @@
 
 .textspacing,
 .error_massage {
-  margin-left: 10px;
   padding: 1px;
 }
 
@@ -104,7 +105,7 @@
 
 .banner-img {
   width: 100%;
-  height: 470px;
+  height: 420px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -139,12 +140,14 @@
 }
 
 .form-control1 {
-  height: 40px;
-  padding: 10px;
-  border-radius: 10px;
+  height: 48px;
+  padding: 8px 16px;
+  border-radius: 8px;
   border: 1px solid #b6b5b5;
   outline: none;
   width: 100%;
+  gap: 8px;
+
 }
 
 .paragraph-box {
@@ -203,7 +206,8 @@
 .container-fluid {
   width: 100%;
   padding: 20px;
-  background: linear-gradient(to bottom, #f1f1f1 0%, #fbe3e3 100%);
+  background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 30%, #FFF8DB 100%);
+
 }
 
 @media (max-width: 991.98px) {
@@ -342,6 +346,19 @@
   height: auto;
 }
 
+.media-font {
+  font-family: 'Lato', sans-serif;
+  /* Ensure that Lato is loaded */
+  font-size: 32px;
+  /* Set font size */
+  font-weight: 700;
+  /* Set font weight */
+  line-height: 41.6px;
+  /* Set line height */
+  text-align: center;
+  /* Center text alignment */
+}
+
 .main_container_box {
   background-image: url('../NgHiring/assets/Rectangle.png');
   background-size: cover;
@@ -355,6 +372,8 @@
   width: 100%;
   margin: 0 auto;
 }
+
+
 
 @media (max-width: 768px) {
   .container-box {
