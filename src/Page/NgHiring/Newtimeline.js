@@ -9,7 +9,7 @@ const Timeline = () => {
             </h5>
             <div className="timeline1">
                 <div className="timeline-item1" >
-                    <div className="timeline-dot2 red-dot" style={{border:"2px solid black"}}></div>
+                    <div className="timeline-dot2 red-dot"></div>
                     <div className="timeline-content1"></div>
                 </div>
                 <div className="timeline-item1">
@@ -55,7 +55,7 @@ const Timeline = () => {
                     </div>
                 </div>
                 <div className="timeline-item1">
-                    <div className="timeline-dot1 red-dot" style={{border:"2px solid black"}}></div>
+                    <div className="timeline-dot1 red-dot"></div>
                 </div>
             </div>
         </div>
