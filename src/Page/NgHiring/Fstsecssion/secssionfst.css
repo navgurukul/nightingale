@@ -21,6 +21,12 @@
     text-align: left;
 }
 
+
+.bgcolorboxone {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 30%, #FFF8DB 100%);  }
+
 /* Styles for large screens */
 @media (min-width: 992px) {
     .mainbox {

@@ -1,7 +1,7 @@
 import './secssionfst.css';
 const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData }) => {
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid bgcolorboxone'>
             <div className="container">
                 <div className="row">
 
