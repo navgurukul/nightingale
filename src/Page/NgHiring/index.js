@@ -151,7 +151,7 @@ const NgHiring = () => {
       <div>
         {data.map((item, index) => (
           <div key={item.id}>
-            <section className="d-flex flex-column align-items-center our-initiatives">
+            <section className="d-flex flex-column align-items-center our-initiatives px-4 px-md-0">
               <div className="container p-sm-2 px-xs-5">
                 <h3 className="media-font text-center mb-4">{item.text}</h3>
                 <img className='banner-img ' src={item.img} alt="No img" />
