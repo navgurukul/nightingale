@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import data from './Data';
 import "./styles.css";
-// import Secssionfst from './Secssionfst';
 import HireFromUs from './Hireformus';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
