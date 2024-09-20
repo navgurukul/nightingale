@@ -6,7 +6,9 @@ const HireFromUs = ({ handleOpenForm }) => {
     return (
         <section className="d-flex flex-column align-items-center our-initiatives px-3 px-md-0">
             <div className="container" >
-                <h3 className="media-font px-3 mt-3 text-center">Hire from Us</h3>
+                {/* <h2 className="media-font px-3 mt-3 text-center">Hire from Us</h2> */}
+                <h5 className="section-head media-font body1 w-100 text-center">Hire from Us</h5>
+
                 <img className="banner-img mt-4 mb-4" src={hire} alt="Hire From Us" />
                 <div>
                     <p className="section-para body1 w-100">

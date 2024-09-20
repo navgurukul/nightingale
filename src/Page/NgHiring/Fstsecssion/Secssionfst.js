@@ -20,8 +20,6 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                     <div className="col-lg-6 col-md-12 py-3 column-height d-flex justify-content-lg-end justify-content-center align-items-center"
                         style={{ height: "100%", padding: "0" }}
                     >
-
-
                         <div className='formcontainer w-100'>
                             <form onSubmit={handleSubmit}>
                                 <div className="form-group">
@@ -43,13 +41,14 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                                         <input
                                             type="radio"
                                             name="purpose"
-                                            id="BecomeKnowledgePartner"
-                                            value="BecomeKnowledgePartner"
-                                            checked={formData.purpose === 'BecomeKnowledgePartner'}
+                                            id="Become knowledge partner"
+                                            value="Become knowledge partner"
+                                            checked={formData.purpose === 'Become knowledge partner'}
                                             onChange={handleChange}
                                         />
-                                        <label className="section-para body1" htmlFor="BecomeKnowledgePartner">Become Knowledge Partner</label>
+                                        <label className="section-para body1" htmlFor="Become knowledge partner">Become Knowledge Partner</label>
                                     </div>
+
 
                                     <div className='radio-input' style={{ display: 'flex', alignItems: 'center' }}>
                                         <input

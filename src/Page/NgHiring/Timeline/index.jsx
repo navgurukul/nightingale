@@ -14,9 +14,7 @@ const Timeline = () => {
   return (
     <section className="d-flex flex-column align-items-center our-initiatives">
       <div className="container">
-        <h3 className="heading-line media-font text-center mb-5 my-0">
-          Timeline of Student Growth
-        </h3>
+        <h5 className="section-head media-font body1 w-100 text-center mb-5">Timeline of Student Growth</h5>
         <div className="row d-flex align-items-center justify-content-center">
           <div className="col-lg-5 col-md-12 col-sm-12 custom-padding-left">
             {timelineEvents.map((event, index) => (

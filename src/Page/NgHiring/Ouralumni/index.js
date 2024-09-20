@@ -29,7 +29,10 @@ function OurAlumni() {
       <div className="page-content">
         <section className="hiring-page-section mb-4 d-flex flex-column meetclass">
 
-          <h5 className="media-font web mb-5 mt-3">Meet Our Alumni</h5>
+          {/* <h5 className="media-font web mb-5 mt-3">Meet Our Alumni</h5> */}
+          <h5 className="section-head media-font body1 w-100 text-center mb-5 mt-4">Meet Our Alumni</h5>
+
+          
           <div className="container hiring-page-card-container px-0 d-flex mt-3">
             {Object.keys(shuffleObject(team)).length ? (
               Object.keys(shuffleObject(team)).map((item) => {

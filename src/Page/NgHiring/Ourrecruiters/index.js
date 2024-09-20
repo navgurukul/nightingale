@@ -53,7 +53,7 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                             <button
                                 type="button"
                                 className="btn fw-bold regular-btn px-4 mb-2 mb-lg-0 mx-2 mx-md-3"
-                                onClick={() => handleOpenForm('Become Knowledge Partner')}
+                                onClick={() => handleOpenForm('Become knowledge partner')}
                             >
                                 Become Knowledge Partner
                             </button>
