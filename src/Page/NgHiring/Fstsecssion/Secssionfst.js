@@ -2,7 +2,7 @@ import './secssionfst.css';
 const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData }) => {
     return (
         <div className='container-fluid bgcolorboxone'>
-            <div className="container">
+            <div className="container py-4">
                 <div className="row">
 
                     <div className="col-lg-6 col-md-12 column-height">
@@ -20,6 +20,8 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                     <div className="col-lg-6 col-md-12 py-3 column-height d-flex justify-content-lg-end justify-content-center align-items-center"
                         style={{ height: "100%", padding: "0" }}
                     >
+
+
                         <div className='formcontainer w-100'>
                             <form onSubmit={handleSubmit}>
                                 <div className="form-group">
@@ -41,12 +43,12 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                                         <input
                                             type="radio"
                                             name="purpose"
-                                            id="Become knowledge partner"
+                                            id="BecomeKnowledgePartner"
                                             value="Become knowledge partner"
-                                            checked={formData.purpose === 'Become knowledge partner'}
+                                            checked={formData.purpose === 'Become Knowledge Partner'}
                                             onChange={handleChange}
                                         />
-                                        <label className="section-para body1" htmlFor="Become knowledge partner">Become Knowledge Partner</label>
+                                        <label className="section-para body1" htmlFor="BecomeKnowledgePartner">Become Knowledge Partner</label>
                                     </div>
 
 
