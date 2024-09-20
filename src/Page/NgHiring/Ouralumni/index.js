@@ -62,9 +62,9 @@ function OurAlumni() {
                         </p>
                         <p
                           style={
-                            team[item].Designation ? {} : { color: "grey" }
+                            team[item].Designation ? {} : { color: "gray" }
                           }
-                          className="section-para"
+                          className="section-para1"
                         >
                           {team[item].Designation ||
                             "Awaiting description from team member"}

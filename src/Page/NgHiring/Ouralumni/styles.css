@@ -26,6 +26,14 @@
   box-sizing: content-box;
 }
 
+.section-para1 {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
 .hiring-page-card-container {
   display: flex;
   flex-wrap: wrap;
