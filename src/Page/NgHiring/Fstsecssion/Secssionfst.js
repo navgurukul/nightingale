@@ -1,26 +1,33 @@
-const Secssionfst = ({ handleOpenForm, handleSubmit, formData, handleChange, errors, setFormData }) => {
+import './secssionfst.css';
+const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData }) => {
     return (
-        <div className='container-fluid'>
-            <div className="container">
-                <div className="row py-5">
-                    <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height">
-                        <div className="paragrapg-box">
-                            <h5 className="media-font mt-4 text-lg-start p-3">
+        <div className='container-fluid bgcolorboxone'>
+            <div className="container py-4">
+                <div className="row">
+
+                    <div className="col-lg-6 col-md-12 column-height">
+                        <div className="mainbox mt-lg-5 mt-0">
+                            <h5 className="media-font1">
                                 You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
                             </h5>
-                            <p className="section-para body1 w-100 text-lg-start pr-0 pr-lg-5 ">
+
+                            <p className="section-para body1">
                                 For more than 8 years, NavGurukul Foundation for Social Welfare has been committed to providing pathways to aspiration careers to students from marginalized communities. Now, we want your help to bridge the gap where skills meet opportunity.
                             </p>
                         </div>
                     </div>
 
-                    <div className="col-lg-6 col-md-12 py-3 pr-0 pr-lg-5 column-height d-flex d-lg-flex justify-content-center justify-content-lg-start">
+                    <div className="col-lg-6 col-md-12 py-3 column-height d-flex justify-content-lg-end justify-content-center align-items-center"
+                        style={{ height: "100%", padding: "0" }}
+                    >
+
+
                         <div className='formcontainer w-100'>
                             <form onSubmit={handleSubmit}>
                                 <div className="form-group">
                                     <h4 className="mb-3">Connect With Our Team</h4>
-                                    <label htmlFor="purpose" className="textspacing fw-bold">I would like</label>
-                                    <div className="form-check">
+                                    <label htmlFor="purpose" className="textspacing fw-bold">I would like to</label>
+                                    <div className='radio-input' style={{ display: 'flex', alignItems: 'center' }}>
                                         <input
                                             type="radio"
                                             name="purpose"
@@ -29,31 +36,32 @@ const Secssionfst = ({ handleOpenForm, handleSubmit, formData, handleChange, err
                                             checked={formData.purpose === 'Hire from Us'}
                                             onChange={handleChange}
                                         />
-                                        <label className="section-para body1" htmlFor="purposeHireFromUs">Hire from Us</label>
+                                        <label className="section-para body1" htmlFor="purposeHireFromUs">Hire from NavGurukul</label>
                                     </div>
 
-                                    <div className="form-check d-inline-flex align-items-center me-3">
+                                    <div className='radio-input' style={{ display: 'flex', alignItems: 'center' }}>
                                         <input
                                             type="radio"
                                             name="purpose"
-                                            id="purposeBecomeKnowledgePartner"
+                                            id="BecomeKnowledgePartner"
                                             value="Become knowledge partner"
-                                            checked={formData.purpose === 'Become knowledge partner'}
+                                            checked={formData.purpose === 'Become Knowledge Partner'}
                                             onChange={handleChange}
                                         />
-                                        <label className="section-para body1 ms-2" htmlFor="purposeBecomeKnowledgePartner">Become knowledge partner</label>
+                                        <label className="section-para body1" htmlFor="BecomeKnowledgePartner">Become Knowledge Partner</label>
                                     </div>
 
-                                    <div className="form-check d-inline-flex align-items-center">
+
+                                    <div className='radio-input' style={{ display: 'flex', alignItems: 'center' }}>
                                         <input
                                             type="radio"
                                             name="purpose"
-                                            id="purposeVolunteer"
+                                            id="Volunteer"
                                             value="Volunteer"
                                             checked={formData.purpose === 'Volunteer'}
                                             onChange={handleChange}
                                         />
-                                        <label className="section-para body1 ms-2" htmlFor="purposeVolunteer">Volunteer</label>
+                                        <label className="section-para body1" htmlFor="Volunteer">Volunteer</label>
                                     </div>
 
                                     {errors.purpose && <div className="error_message">{errors.purpose}</div>}
@@ -117,10 +125,12 @@ const Secssionfst = ({ handleOpenForm, handleSubmit, formData, handleChange, err
                             </form>
                         </div>
                     </div>
-                </div >
-            </div >
+                </div>
+            </div>
         </div >
     );
 };
 
 export default Secssionfst;
+
+

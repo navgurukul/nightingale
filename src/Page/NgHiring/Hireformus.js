@@ -1,11 +1,13 @@
+
 import React from 'react';
 import hire from './assets/hire.png';
 
 const HireFromUs = ({ handleOpenForm }) => {
     return (
-        <section className="d-flex flex-column align-items-center our-initiatives">
-            <div className="container">
-                <h3 className="media-font px-3 mt-3 text-center">Hire from Us</h3>
+        <section className="d-flex flex-column align-items-center our-initiatives px-3 px-md-0">
+            <div className="container" >
+                <h5 className="section-head media-font body1 w-100 text-center">Hire from Us</h5>
+
                 <img className="banner-img mt-4 mb-4" src={hire} alt="Hire From Us" />
                 <div>
                     <p className="section-para body1 w-100">
@@ -34,17 +36,24 @@ const HireFromUs = ({ handleOpenForm }) => {
                             </li>
                         </ul>
                     </div>
+
+
                     <div className='row mb-2'>
-                        <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-lg-end justify-content-md-center justify-content-sm-center align-items-center my-md-2 my-sm-2 my-xs-2">
+                        <div className="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-center align-items-center my-md-2 my-sm-2 my-xs-2"
+                            // style={{ border: "2px solid black" }}
+                        >
                             <button
                                 type="button"
-                                className="btn fw-bold regular-btn"
+                                className="btn fw-bold regular-btn mr-0"
                                 style={{ width: "360px" }}
                                 onClick={() => handleOpenForm("Hire from Us")}>
                                 Hire from Us
                             </button>
                         </div>
-                        <div className='col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-lg-start justify-content-md-center justify-content-sm-center align-items-center my-md-2 my-sm-2 my-xs-2'>
+
+                        <div className='col-lg-6 col-md-12 d-flex justify-content-lg-start justify-content-center align-items-center my-md-2 my-sm-2 my-xs-2'
+                            // style={{ border: "2px solid black" }}
+                        >
                             <button
                                 type="button"
                                 className="btn fw-bold regular-btn1"
@@ -66,3 +75,4 @@ const HireFromUs = ({ handleOpenForm }) => {
 };
 
 export default HireFromUs;
+

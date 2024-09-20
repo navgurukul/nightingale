@@ -28,12 +28,11 @@ function OurAlumni() {
     <main className="ng-hiring-page">
       <div className="page-content">
         <section className="hiring-page-section mb-4 d-flex flex-column meetclass">
+
+          {/* <h5 className="media-font web mb-5 mt-3">Meet Our Alumni</h5> */}
+          <h5 className="section-head media-font body1 w-100 text-center mb-5 mt-4">Meet Our Alumni</h5>
+
           
-          <h3 className="hiring-section-title mb-5">
-            Meet Our Alumni
-          </h3>
-
-
           <div className="container hiring-page-card-container px-0 d-flex mt-3">
             {Object.keys(shuffleObject(team)).length ? (
               Object.keys(shuffleObject(team)).map((item) => {
@@ -44,34 +43,34 @@ function OurAlumni() {
                   team[item].Designation
                 ) {
                   return (
-                      <div key={item} className="flex flex-column col-6 col-md-3">
-                        <div>
-                          <img
-                            className="team-info-card-img img-card-hover"
-                            src={team[item].Photo || user}
-                            alt={team[item].Name.substring(
-                              0,
-                              team[item].Name.indexOf(" ")
-                            )}
-                          />
-                          <p
-                            style={team[item].Name ? {} : { color: "grey" }}
-                            className="team-info-card-title"
-                          >
-                            {team[item].Name ||
-                              "Awaiting Member's Name"}
-                          </p>
-                          <p
-                            style={
-                              team[item].Designation ? {} : { color: "grey" }
-                            }
-                            className="section-para"
-                          >
-                            {team[item].Designation ||
-                              "Awaiting description from team member"}
-                          </p>
-                        </div>
+                    <div key={item} className="flex flex-column col-6 col-md-3">
+                      <div>
+                        <img
+                          className="team-info-card-img img-card-hover"
+                          src={team[item].Photo || user}
+                          alt={team[item].Name.substring(
+                            0,
+                            team[item].Name.indexOf(" ")
+                          )}
+                        />
+                        <p
+                          style={team[item].Name ? {} : { color: "grey" }}
+                          className="team-info-card-title"
+                        >
+                          {team[item].Name ||
+                            "Awaiting Member's Name"}
+                        </p>
+                        <p
+                          style={
+                            team[item].Designation ? {} : { color: "gray" }
+                          }
+                          className="section-para1"
+                        >
+                          {team[item].Designation ||
+                            "Awaiting description from team member"}
+                        </p>
                       </div>
+                    </div>
                   );
                 }
               })

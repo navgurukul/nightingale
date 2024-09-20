@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import data from './Data';
 import "./styles.css";
-import Secssionfst from './Secssionfst';
 import HireFromUs from './Hireformus';
 import Timeline from './Timeline';
 import OurAlumni from './Ouralumni';
-import Slider from './Slider';
+// import Slider from './Slider';
 import Ourrecruiters from './Ourrecruiters';
 import Newtime from './Newtimeline'
+import Secssionfst from './Fstsecssion/Secssionfst'
 
 const NgHiring = () => {
   const history = useHistory();
@@ -151,9 +151,11 @@ const NgHiring = () => {
       <div>
         {data.map((item, index) => (
           <div key={item.id}>
-            <section className="d-flex flex-column align-items-center our-initiatives">
+            <section className="d-flex flex-column align-items-center our-initiatives px-4 px-md-0">
               <div className="container p-sm-2 px-xs-5">
-                <h3 className="media-font text-center mb-4">{item.text}</h3>
+                {/* <h3 className="media-font text-center mb-4">{item.text}</h3> */}
+                <h5 className="section-head media-font body1 w-100 text-center mb-4">{item.text}</h5>
+
                 <img className='banner-img ' src={item.img} alt="No img" />
                 <p className="section-para body1 w-100 mt-3">{item.para}</p>
                 <p className="section-para body1 w-100">{item.hadding}</p>
@@ -194,7 +196,7 @@ const NgHiring = () => {
       <Timeline />
       <Newtime />
       <OurAlumni />
-      <Slider />
+      {/* <Slider /> */}
       <Ourrecruiters handleOpenForm={handleOpenForm} />
 
 

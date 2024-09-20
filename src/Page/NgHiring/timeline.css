@@ -26,8 +26,8 @@
 }
 
 .timeline-dot1 {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
     background-color: red;
     border-radius: 50%;
     position: absolute;
@@ -35,6 +35,15 @@
     margin-top: 20px;
 }
 
+.timeline-dot3 {
+    width: 14px;
+    height: 14px;
+    background-color: gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    margin-top: 20px;
+}
 .timeline-dot2 {
     width: 14px;
     height: 14px;
@@ -61,6 +70,12 @@
     }
 
     .timeline-dot1 {
+        left: 13px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .timeline-dot3 {
         left: 13px;
         width: 20px;
         height: 20px;
@@ -97,6 +112,11 @@
         width: 20px;
         height: 20px;
     }
+    .timeline-dot3{
+        left: 20px;
+        width: 20px;
+        height: 20px;
+    }
     .timeline-dot2 {
         left: 20px;
         width: 20px;
@@ -127,6 +147,11 @@
     }
 
     .timeline-dot1 {
+        left: 10px;
+        width: 25px;
+        height: 25px;
+    }
+    .timeline-dot3 {
         left: 10px;
         width: 25px;
         height: 25px;
