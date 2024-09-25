@@ -3,13 +3,12 @@ import "./style.css";
 
 function DownloadCurriculum({ DownloadData }) {
     const onButtonClick = (pdfFile) => {
-        
         console.log("Attempting to download:", pdfFile);
-
+    
         fetch(pdfFile)
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Network response was not ok');
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
                 }
                 return response.blob();
             })
@@ -25,6 +24,7 @@ function DownloadCurriculum({ DownloadData }) {
                 console.error('There was an error with the fetch operation:', error);
             });
     };
+    
 
     return (
         <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer ">
