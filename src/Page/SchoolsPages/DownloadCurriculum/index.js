@@ -4,22 +4,14 @@ import { saveAs } from 'file-saver';
 
 function DownloadCurriculum({ DownloadData }) {
     const onButtonClick = (pdfFile) => {
-        console.log("Attempting to download:", pdfFile);
-    
-        fetch(pdfFile)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Network response was not ok: ${response.statusText}`);
-            }
-            return response.blob();
-        })
-        .then(blob => {
-            saveAs(blob, "Curriculum.pdf");  // Automatically triggers the download using file-saver
-            console.log("Download complete", blob);
-        })
-        .catch(error => {
-            console.error('There was an error with the fetch operation:', error);
-        });
+        
+        const pdfUrl = pdfFile;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Curriculam.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
     
     
