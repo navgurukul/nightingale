@@ -1,17 +1,12 @@
 import React from 'react';
 import "./style.css";
+import { saveAs } from 'file-saver';
 
 function DownloadCurriculum({ DownloadData }) {
     const onButtonClick = (pdfFile) => {
         console.log("Attempting to download:", pdfFile);
     
-        fetch(pdfFile, {
-            headers: {
-                'Content-Type': 'application/pdf',  // Set the expected content type
-                'Content-Disposition': 'attachment',  // Set the expected content disposition
-                'mode': 'no-cors',  // Set the mode to no-cors to avoid CORS issues
-            },
-        })
+        fetch(pdfFile)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -19,15 +14,8 @@ function DownloadCurriculum({ DownloadData }) {
             return response.blob();
         })
         .then(blob => {
-            const url = window.URL.createObjectURL(blob);
-            const alink = document.createElement("a");
-            alink.href = url;
-            alink.download = "Curriculum.pdf";
-            document.body.appendChild(alink);
-            alink.click();
-            document.body.removeChild(alink);
-            // window.URL.revokeObjectURL(url);
-            
+            saveAs(blob, "Curriculum.pdf");  // Automatically triggers the download using file-saver
+            console.log("Download complete", blob);
         })
         .catch(error => {
             console.error('There was an error with the fetch operation:', error);
