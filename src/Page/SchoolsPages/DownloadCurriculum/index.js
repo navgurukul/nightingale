@@ -8,6 +8,8 @@ function DownloadCurriculum({ DownloadData }) {
         fetch(pdfFile, {
             headers: {
                 'Content-Type': 'application/pdf',  // Set the expected content type
+                'Content-Disposition': 'attachment',  // Set the expected content disposition
+                'mode': 'no-cors',  // Set the mode to no-cors to avoid CORS issues
             },
         })
         .then(response => {
@@ -21,8 +23,11 @@ function DownloadCurriculum({ DownloadData }) {
             const alink = document.createElement("a");
             alink.href = url;
             alink.download = "Curriculum.pdf";
+            document.body.appendChild(alink);
             alink.click();
-            window.URL.revokeObjectURL(url);
+            document.body.removeChild(alink);
+            // window.URL.revokeObjectURL(url);
+            
         })
         .catch(error => {
             console.error('There was an error with the fetch operation:', error);
