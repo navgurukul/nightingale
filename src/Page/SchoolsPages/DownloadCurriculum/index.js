@@ -21,17 +21,18 @@ function DownloadCurriculum({ DownloadData }) {
     return (
         <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
             {DownloadData && DownloadData.map((data) => (
-                <a href={data.pdfFile} target="_blank" rel="noopener noreferrer">
+                
                     <button
                         key={data.id}
                         type="button"
                         className="btn regular-btn"
                         style={{ height: "48px", width: "208px", margin: "10px" }}
+                        onClick={() => onButtonClick(data.pdfFile)}
                         
                     >
                         Download Curriculum 
                     </button>
-                </a>
+                
             ))}
         </div>
     );
