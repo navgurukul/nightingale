@@ -11,7 +11,7 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                                 You are our last piece in this puzzle of Diversity, Equality, and Inclusion.
                             </h5>
 
-                            <p className="section-para body1">
+                            <p className="section-para body1 newsecsion">
                                 For more than 8 years, NavGurukul Foundation for Social Welfare has been committed to providing pathways to aspiration careers to students from marginalized communities. Now, we want your help to bridge the gap where skills meet opportunity.
                             </p>
                         </div>

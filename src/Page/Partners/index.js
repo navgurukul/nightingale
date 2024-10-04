@@ -12,14 +12,14 @@ function Partners() {
     <div className="partners d-flex flex-column justify-content-center w-100">
       <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100">
         <h3 className="mt-5 section-head mb-3">Partner Highlights</h3>
-        
+
         <div className="partner-content-data body1 col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3">
-          Our partners help us give access to aspirational careers to youth who want to grow but don’t have means to do so. Our partnerships 
-          are the backbone of our operations. Our partners share our values, 
+          Our partners help us give access to aspirational careers to youth who want to grow but don’t have means to do so. Our partnerships
+          are the backbone of our operations. Our partners share our values,
           our partners share our impact.
         </div>
         <button
-          className="btn btn-primary section-para regular-btn mt-4 mb-4 px-4 py-2"
+          className="btn btn-primary section-para regular-btn mt-4 mb-4 px-4 py-2 w-100"
           onClick={(e) => {
             e.preventDefault();
             window.open("https://forms.gle/NfXdR1dg4zpSyYvZ9", "_blank");
@@ -29,10 +29,14 @@ function Partners() {
         >
           Partner With Us
         </button>
+
+     
+
+
         <h3 className="mt-3 section-head mb-4 mr-4">Our Partners</h3>
       </div>
       <div className="w-100 mb-0  md-5 d-flex align-items-center flex-column">
-        
+
 
         <div className="row  mb-4">
           <div className="col-md-6 col-sm-12">
@@ -73,9 +77,9 @@ function Partners() {
             </div>
           </div>
         </div>
-      </div>  
+      </div>
     </div>
-  
+
   );
 }
 

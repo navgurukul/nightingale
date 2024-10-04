@@ -153,7 +153,6 @@ const NgHiring = () => {
           <div key={item.id}>
             <section className="d-flex flex-column align-items-center our-initiatives px-4 px-md-0">
               <div className="container p-sm-2 px-xs-5">
-                {/* <h3 className="media-font text-center mb-4">{item.text}</h3> */}
                 <h5 className="section-head media-font body1 w-100 text-center mb-4">{item.text}</h5>
 
                 <img className='banner-img ' src={item.img} alt="No img" />

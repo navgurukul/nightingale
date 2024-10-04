@@ -3,6 +3,36 @@ import "./style.css";
 import { Link } from 'react-router-dom';
 
 function DownloadCurriculum({ DownloadData }) {
+
+
+    // const onButtonClick = (pdfFile) => {
+
+    //     console.log("Attempting to download:", pdfFile);
+
+    //     fetch(pdfFile)
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 throw new Error('Network response was not ok');
+    //             }
+    //             return response.blob();
+    //         })
+    //         .then(blob => {
+    //             const url = window.URL.createObjectURL(blob);
+    //             console.log("url",url);
+
+    //             const alink = document.createElement("a");
+    //             alink.href = url;
+    //             alink.download = "Curriculum.pdf";
+    //             alink.click();
+    //             window.URL.revokeObjectURL(url);
+    //         })
+    //         .catch(error => {
+    //             console.error('There was an error with the fetch operation:', error);
+    //         });
+    // };
+
+
+
     const onButtonClick = (pdfFile) => {
         console.log(pdfFile);
         // Create an anchor element
@@ -17,6 +47,7 @@ function DownloadCurriculum({ DownloadData }) {
         document.body.removeChild(link); // Clean up the DOM
         
     };
+
 
     return (
         <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
