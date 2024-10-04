@@ -9,6 +9,7 @@ import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 import DownloadCurriculum from "../DownloadCurriculum";
 const information = "Our student led, self-paced business course includes:";
+
 function SchoolOfBusinessPage() {
 
     return (

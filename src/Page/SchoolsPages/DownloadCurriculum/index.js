@@ -2,29 +2,44 @@ import React from 'react';
 import "./style.css";
 
 function DownloadCurriculum({ DownloadData }) {
-    const onButtonClick = (pdfFile) => {
-        
-        console.log("Attempting to download:", pdfFile);
 
-        fetch(pdfFile)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.blob();
-            })
-            .then(blob => {
-                const url = window.URL.createObjectURL(blob);
-                const alink = document.createElement("a");
-                alink.href = url;
-                alink.download = "Curriculum.pdf";
-                alink.click();
-                window.URL.revokeObjectURL(url);
-            })
-            .catch(error => {
-                console.error('There was an error with the fetch operation:', error);
-            });
+
+    // const onButtonClick = (pdfFile) => {
+
+    //     console.log("Attempting to download:", pdfFile);
+
+    //     fetch(pdfFile)
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 throw new Error('Network response was not ok');
+    //             }
+    //             return response.blob();
+    //         })
+    //         .then(blob => {
+    //             const url = window.URL.createObjectURL(blob);
+    //             console.log("url",url);
+
+    //             const alink = document.createElement("a");
+    //             alink.href = url;
+    //             alink.download = "Curriculum.pdf";
+    //             alink.click();
+    //             window.URL.revokeObjectURL(url);
+    //         })
+    //         .catch(error => {
+    //             console.error('There was an error with the fetch operation:', error);
+    //         });
+    // };
+
+
+
+    const onButtonClick = (pdfFile) => {
+        const url = pdfFile;  // Use the full URL already generated in DownloadData
+        const alink = document.createElement("a");
+        alink.href = url;
+        alink.download = "Curriculum.pdf";
+        alink.click();
     };
+
 
     return (
         <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer ">
@@ -36,7 +51,7 @@ function DownloadCurriculum({ DownloadData }) {
                     style={{ height: "48px", width: "208px", margin: "10px" }}
                     onClick={() => onButtonClick(data.pdfFile)}
                 >
-                    Download Curriculum 
+                    Download Curriculum
                 </button>
             ))}
         </div>
@@ -44,4 +59,7 @@ function DownloadCurriculum({ DownloadData }) {
 }
 
 export default DownloadCurriculum;
+
+
+
 
