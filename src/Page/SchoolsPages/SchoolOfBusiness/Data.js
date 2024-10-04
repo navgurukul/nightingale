@@ -79,21 +79,15 @@ export const AnumnusPageData = [
         linkdin: "https://www.linkedin.com/in/kiran-jatav-564a712a9/"
     }
 ]
-// export const DownloadData=[
-//     {
-//         id:1,
-//         pdfFile:"/Pdfs/SoBCurriculum.pdf"
-//     }
-// ]
 
-
-
-export const DownloadData = [
+export const DownloadData=[
     {
-        id: 1,
-        pdfFile: `${window.location.origin}/Pdfs/SoBCurriculum.pdf`
+        id:1,
+        pdfFile:"/Pdfs/SoBCurriculum.pdf"
     }
-];
+]
+
+
 
 
 

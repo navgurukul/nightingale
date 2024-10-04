@@ -31,8 +31,6 @@ function DownloadCurriculum({ DownloadData }) {
     //         });
     // };
 
-
-
     const onButtonClick = (pdfFile) => {
         console.log(pdfFile);
         // Create an anchor element
@@ -64,6 +62,8 @@ function DownloadCurriculum({ DownloadData }) {
                         Download Curriculum 
                     </button>
                 
+
+
             ))}
         </div>
     );
