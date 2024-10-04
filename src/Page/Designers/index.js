@@ -157,11 +157,18 @@ const Designers = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
 
   const handleDownloadPDF = () => {
-    const pdfURL = NavGurukulPdf;
+    const pdfURL = require('./assets/NavGurukul Graphic Design Course Curriculum.pdf').default;
+
+    if (!pdfURL) {
+        console.error('PDF URL is not defined');
+        return;
+    }
     const anchor = document.createElement("a");
     anchor.href = pdfURL;
     anchor.download = "NavGurukul Graphic Design Course Curriculum.pdf"; 
+    document.body.appendChild(anchor); // Append to body to make it work in Firefox
     anchor.click();
+    document.body.removeChild(anchor); // Clean up
   };
 
   useEffect(() => {
