@@ -31,8 +31,6 @@ function DownloadCurriculum({ DownloadData }) {
     //         });
     // };
 
-
-
     const onButtonClick = (pdfFile) => {
         console.log(pdfFile);
         // Create an anchor element
@@ -45,25 +43,26 @@ function DownloadCurriculum({ DownloadData }) {
         document.body.appendChild(link);
         link.click(); // Programmatically click the link to trigger the download
         document.body.removeChild(link); // Clean up the DOM
-        
+
     };
 
 
     return (
         <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
             {DownloadData && DownloadData.map((data) => (
-                
-                    <button
-                        key={data.id}
-                        type="button"
-                        className="btn regular-btn"
-                        style={{ height: "48px", width: "208px", margin: "10px" }}
-                        onClick={() => onButtonClick(data.pdfFile)}
-                        
-                    >
-                        Download Curriculum 
-                    </button>
-                
+                <button
+                    key={data.id}
+                    type="button"
+                    className="btn regular-btn"
+                    style={{ height: "48px", width: "208px", margin: "10px" }}
+                    onClick={() => onButtonClick(data.pdfFile)}
+
+                >
+                    Download Curriculum
+                </button>
+
+
+
             ))}
         </div>
     );
