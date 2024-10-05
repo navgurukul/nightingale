@@ -32,19 +32,17 @@ function DownloadCurriculum({ DownloadData }) {
     // };
 
     const onButtonClick = (pdfFile) => {
-        console.log(pdfFile);
-        // Create an anchor element
+        console.log("PDF file path:", pdfFile); // Log the path
         const link = document.createElement("a");
-        link.href = pdfFile; // Directly set the PDF file URL
-        link.target = "_blank"; // Optional: open in a new tab
-        link.download = "Curriculum.pdf"; // Specify the default filename for download
-        console.log(link);
-        // Append the link to the body
+        link.href = pdfFile;
+        link.target = "_blank";
+        link.download = "Curriculum.pdf";
         document.body.appendChild(link);
-        link.click(); // Programmatically click the link to trigger the download
-        document.body.removeChild(link); // Clean up the DOM
-
+        link.click();
+        document.body.removeChild(link);
     };
+
+
 
 
     return (
