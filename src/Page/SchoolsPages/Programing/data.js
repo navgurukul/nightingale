@@ -59,10 +59,18 @@ export const program1Data = [
 ];
 
 
+// export const DownloadData = [
+//     {
+//         id: 1,
+//         pdfFile:"/Pdfs/SoPCurriculum.pdf"
+//     }
+// ];
+
 export const DownloadData = [
     {
         id: 1,
-        pdfFile:"/Pdfs/SoPCurriculum.pdf"
+        pdfFile: `${process.env.PUBLIC_URL}/Pdfs/SoPCurriculum.pdf`
+
     }
 ];
 

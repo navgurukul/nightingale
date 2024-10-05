@@ -62,10 +62,20 @@ export const BgroundImg = [
        buttonText: "Take Screening Test"
    }
 ]
+// export const DownloadData=[
+//     {
+//         id:1,
+//         pdfFile:"/Pdfs/SoFCurriculum.pdf",
+        
+//     }
+// ]
+
+
+
 export const DownloadData=[
     {
         id:1,
-        pdfFile:"/Pdfs/SoFCurriculum.pdf"
+        pdfFile: `${process.env.PUBLIC_URL}/Pdfs/SoFCurriculum.pdf`
+
     }
 ]
-
