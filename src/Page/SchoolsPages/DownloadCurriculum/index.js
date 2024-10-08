@@ -12,15 +12,14 @@ function DownloadCurriculum({ DownloadData }) {
     //     document.body.removeChild(link);
     // };
     const onButtonClick = (pdfFile) => {
+        // Create an anchor element
         const link = document.createElement("a");
-        const isProduction = process.env.NODE_ENV === 'production';
-        const baseURL = isProduction ? "https://vercel.com/dashboard" : ""; // Replace with your actual production domain
-        link.href = `${baseURL}${pdfFile}`;
-        link.target = "_blank";
-        link.download = "Curriculum.pdf";
+        link.href = pdfFile; // Directly set the PDF file URL
+        link.download = "Curriculum.pdf"; // Specify the default filename for download
+        // Append the link to the body
         document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        link.click(); // Programmatically click the link to trigger the download
+        document.body.removeChild(link); // Clean up the DOM
     };
     
     return (
