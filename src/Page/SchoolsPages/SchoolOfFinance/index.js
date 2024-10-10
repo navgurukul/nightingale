@@ -1,28 +1,58 @@
 
+// import CourseDetail from "../ProgramDetails/CourseDetail";
+// import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
+// import JobAssistance from "../JobAssistance";
+// import { whoForPoints, JobAssistanceData, topics, program4Data, BgroundImg ,DownloadData} from "../SchoolOfFinance/data";
+// import BackgroundImg from "../BgroundImg";
+// import CoursesLocation from "../CourseLocations";
+// import AdmissionProcess from "../AdmissionProcess";
+// import ScreeningTestPage from "../ScreningTest";
+// import DownloadCurriculum from "../DownloadCurriculum"
+// const information = "Our student-led, self-paced finance course includes:";
+
+// function SchoolOfFinancePage() {
+//     return (
+//         <>
+//             <BackgroundImg backgroundData={BgroundImg}></BackgroundImg>
+//             <EligibilityDetail points={whoForPoints}></EligibilityDetail>
+//             <CourseDetail data={topics} information={information}></CourseDetail>
+//             <DownloadCurriculum DownloadData={DownloadData}></DownloadCurriculum>
+//             <CoursesLocation courses={"School of Finance"}></CoursesLocation>
+//             <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
+//             <AdmissionProcess stages={program4Data}></AdmissionProcess>
+//             <ScreeningTestPage programNeme={"SchoolOfFinance"}></ScreeningTestPage>
+//         </>
+//     )
+// }
+// export default SchoolOfFinancePage;
+
+
+
+
 import React from 'react';
-import { DownloadData, whoForPoints, topics, JobAssistanceData, program4Data, BgroundImg, AnumnusPageData } from './data'; // Correct data import
-import DownloadCurriculum from "../DownloadCurriculum";
 import BackgroundImg from "../BgroundImg";
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import JobAssistance from "../JobAssistance";
+import { whoForPoints, JobAssistanceData, topics, program4Data, BgroundImg, DownloadData } from "../SchoolOfFinance/data";
 import CoursesLocation from "../CourseLocations";
-import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
+import ScreeningTestPage from "../ScreningTest";
+import DownloadCurriculum from "../DownloadCurriculum"; // Import the DownloadCurriculum component
 
 const information = "Our student-led, self-paced finance course includes:";
 
 function SchoolOfFinancePage() {
     return (
         <>
-            <BackgroundImg backgroundData={BgroundImg} />
-            <EligibilityDetail points={whoForPoints} />
-            <CourseDetail data={topics} information={information} />
-            <DownloadCurriculum DownloadData={DownloadData} /> {/* The button will download the correct PDF */}
-            <CoursesLocation courses={"School of Finance"} />
-            <JobAssistance JobAssistance={JobAssistanceData} />
-            <AdmissionProcess stages={program4Data} />
-            <ScreeningTestPage programNeme={"SchoolOfFinance"} />
+            <BackgroundImg backgroundData={BgroundImg}></BackgroundImg>
+            <EligibilityDetail points={whoForPoints}></EligibilityDetail>
+            <CourseDetail data={topics} information={information}></CourseDetail>
+            <DownloadCurriculum DownloadData={DownloadData}></DownloadCurriculum>
+            <CoursesLocation courses={"School of Finance"}></CoursesLocation>
+            <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
+            <AdmissionProcess stages={program4Data}></AdmissionProcess>
+            <ScreeningTestPage programNeme={"SchoolOfFinance"}></ScreeningTestPage>
         </>
     );
 }

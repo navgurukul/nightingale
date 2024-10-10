@@ -80,12 +80,12 @@ export const AnumnusPageData = [
     }
 ]
 
-export const DownloadData=[
-    {
-        id:1,
-        pdfFile:"/Pdfs/SoBCurriculum.pdf"
-    }
-]
+// export const DownloadData=[
+//     {
+//         id:1,
+//         pdfFile:"/Pdfs/SoBCurriculum.pdf"
+//     }
+// ]
 
 
 // export const DownloadData = [
