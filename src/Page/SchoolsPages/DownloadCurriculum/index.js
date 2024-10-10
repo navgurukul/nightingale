@@ -13,7 +13,9 @@ function DownloadCurriculum({ DownloadData }) {
     // };
     const onButtonClick = (pdfFile) => {
         // Create an anchor element
+        console.log(pdfFile);
         const link = document.createElement("a");
+        console.log(link);
         link.href = pdfFile; // Directly set the PDF file URL
         link.download = "Curriculum.pdf"; // Specify the default filename for download
         // Append the link to the body
