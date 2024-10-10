@@ -87,7 +87,6 @@ function SchoolOfBusinessPage() {
                 </button>
             </div>
 
-
             <CoursesLocation courses={"School Of Business"} />
             <JobAssistance JobAssistance={JobAssistanceData} />
             <AdmissionProcess stages={program3Data} />
