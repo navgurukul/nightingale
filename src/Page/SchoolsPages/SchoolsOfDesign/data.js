@@ -65,9 +65,19 @@ export const BgroundImg=[
        color:"black"
    }
 ]
+
 export const DownloadData=[
     {
         id:1,
         pdfFile:"/Pdfs/SoDCurriculum.pdf"
     }
 ]
+
+
+// export const DownloadData=[
+//     {
+//         id:1,
+//         pdfFile: `${process.env.PUBLIC_URL}/Pdfs/SoDCurriculum.pdf`
+
+//     }
+// ]

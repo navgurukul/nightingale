@@ -88,12 +88,12 @@ export const AnumnusPageData = [
 // ]
 
 
-export const DownloadData = [
-    {
-      id: 1,
-      pdfFile: `${process.env.PUBLIC_URL}/Pdfs/SoBCurriculum.pdf`, // Use PUBLIC_URL for dynamic base URL
-    },
-  ];
+// export const DownloadData = [
+//     {
+//       id: 1,
+//       pdfFile: `${process.env.PUBLIC_URL}/Pdfs/SoBCurriculum.pdf`
+//     },
+//   ];
   
 
 
