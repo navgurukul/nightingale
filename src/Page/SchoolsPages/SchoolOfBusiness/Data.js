@@ -1,6 +1,7 @@
 import SchoolOfBusinessPage from "../SchoolOfBusiness/assets/businessbgimg.png"
 import KiranJatav from "./assets/ KiranJatav.png";
 import MeenuGwala from "./assets/MeenuGwala.png";
+import PdfFile from "./assets/SoBCurriculum.pdf"
 
 export const whoForPoints = [
     { point: "Youth above 16 years of age from underprivileged or low-income communities who can't afford expensive college education" },
@@ -80,20 +81,20 @@ export const AnumnusPageData = [
     }
 ]
 
-// export const DownloadData=[
-//     {
-//         id:1,
-//         pdfFile:"/Pdfs/SoBCurriculum.pdf"
-//     }
-// ]
-
-
-export const DownloadData = [
+export const DownloadData=[
     {
-      id: 1,
-      pdfFile: `${process.env.PUBLIC_URL}/Pdfs/SoBCurriculum.pdf`, // Use PUBLIC_URL for dynamic base URL
-    },
-  ];
+        id:1,
+        pdfFile:PdfFile
+    }
+]
+
+
+// export const DownloadData = [
+//     {
+//       id: 1,
+//       pdfFile: `${process.env.PUBLIC_URL}/Pdfs/SoBCurriculum.pdf`
+//     },
+//   ];
   
 
 
