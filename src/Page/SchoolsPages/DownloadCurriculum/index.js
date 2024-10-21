@@ -1,50 +1,29 @@
+
 import React from 'react';
-import "./style.css";
-import { Link } from 'react-router-dom';
 
 function DownloadCurriculum({ DownloadData }) {
-
-
     // const onButtonClick = (pdfFile) => {
-
-    //     console.log("Attempting to download:", pdfFile);
-
-    //     fetch(pdfFile)
-    //         .then(response => {
-    //             if (!response.ok) {
-    //                 throw new Error('Network response was not ok');
-    //             }
-    //             return response.blob();
-    //         })
-    //         .then(blob => {
-    //             const url = window.URL.createObjectURL(blob);
-    //             console.log("url",url);
-
-    //             const alink = document.createElement("a");
-    //             alink.href = url;
-    //             alink.download = "Curriculum.pdf";
-    //             alink.click();
-    //             window.URL.revokeObjectURL(url);
-    //         })
-    //         .catch(error => {
-    //             console.error('There was an error with the fetch operation:', error);
-    //         });
+    //     const link = document.createElement("a");
+    //     link.href = pdfFile; // Set the href to the PDF file path
+    //     link.target = "_blank"; // Open in a new tab
+    //     link.download = "Curriculum.pdf"; // The download name for the file
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
     // };
-
     const onButtonClick = (pdfFile) => {
-        console.log("PDF file path:", pdfFile); // Log the path
+        // Create an anchor element
+        console.log(pdfFile);
         const link = document.createElement("a");
-        link.href = pdfFile;
-        link.target = "_blank";
-        link.download = "Curriculum.pdf";
+        console.log(link);
+        link.href = pdfFile; // Directly set the PDF file URL
+        link.download = "Curriculum.pdf"; // Specify the default filename for download
+        // Append the link to the body
         document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        link.click(); // Programmatically click the link to trigger the download
+        document.body.removeChild(link); // Clean up the DOM
     };
-
-
-
-
+    
     return (
         <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
             {DownloadData && DownloadData.map((data) => (
@@ -53,14 +32,10 @@ function DownloadCurriculum({ DownloadData }) {
                     type="button"
                     className="btn regular-btn"
                     style={{ height: "48px", width: "208px", margin: "10px" }}
-                    onClick={() => onButtonClick(data.pdfFile)}
-
+                    onClick={() => onButtonClick(data.pdfFile)} // Trigger the download
                 >
                     Download Curriculum
                 </button>
-
-
-
             ))}
         </div>
     );
