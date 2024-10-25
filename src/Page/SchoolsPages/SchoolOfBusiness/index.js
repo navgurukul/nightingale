@@ -68,6 +68,8 @@ function SchoolOfBusinessPage() {
 
     // Programmatically click the link to trigger the download
     link.click();
+
+    document.body.removeChild(link); // Clean up
   }
 
   // Call the function when needed, e.g., on button click
@@ -79,7 +81,7 @@ function SchoolOfBusinessPage() {
       <CourseDetail data={topics} information={information}></CourseDetail>
       <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
         <button onClick={downloadPDF} className="btn btn-primary">
-          Download Shivansh
+          Download Cirriculum
         </button>
       </div>
       <CoursesLocation courses={"School Of Business"}></CoursesLocation>
