@@ -49,7 +49,7 @@ import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 
 // Ensure the PDF file is correctly referenced from the public directory
-const SoBCurriculum = "/SoBCurriculumtest.pdf";
+const SoBCurriculum = "/Komal-Bapu-Ahire.pdf";
 
 const information = "Our student led, self-paced business course includes:";
 
