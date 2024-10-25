@@ -87,7 +87,6 @@
 // }
 // export default SchoolOfBusinessPage;
 
-
 import React, { useState } from 'react';
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
@@ -118,35 +117,43 @@ function SchoolOfBusinessPage() {
     setDownloadStatus({ loading: true, error: null });
 
     try {
-      // Get base URL (works in both development and production)
       const baseUrl = window.location.origin;
       const pdfUrl = `${baseUrl}/SoBCurriculum.pdf`;
       
-      console.log('Attempting to fetch PDF from:', pdfUrl);
-
-      const response = await fetch(pdfUrl);
+      // Fetch the PDF with specific headers
+      const response = await fetch(pdfUrl, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/pdf',
+        },
+      });
       
       if (!response.ok) {
         throw new Error(`Failed to download PDF (Status: ${response.status})`);
       }
 
+      // Get the PDF as a blob with explicit type
       const blob = await response.blob();
+      const pdfBlob = new Blob([blob], { type: 'application/pdf' });
       
-      if (blob.size === 0) {
-        throw new Error('Downloaded file is empty');
-      }
-
-      // Create and trigger download
-      const url = window.URL.createObjectURL(blob);
+      // Create object URL with the correctly typed blob
+      const url = window.URL.createObjectURL(pdfBlob);
+      
+      // Create and configure download link
       const link = document.createElement('a');
       link.href = url;
       link.download = 'SoBCurriculum.pdf';
+      link.type = 'application/pdf';
+      
+      // Trigger download
       document.body.appendChild(link);
       link.click();
       
-      // Cleanup
+      // Clean up
       document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
+      setTimeout(() => {
+        window.URL.revokeObjectURL(url);
+      }, 100);
       
       setDownloadStatus({ loading: false, error: null });
 
@@ -159,12 +166,20 @@ function SchoolOfBusinessPage() {
     }
   };
 
+  // Preview function to open PDF in new tab
+  const handlePreviewPdf = () => {
+    const baseUrl = window.location.origin;
+    const pdfUrl = `${baseUrl}/SoBCurriculum.pdf`;
+    window.open(pdfUrl, '_blank');
+  };
+
   return (
     <>
       <BackgroundImg backgroundData={BackgroundImgData} />
       <EligibilityDetail points={whoForPoints} />
       <CourseDetail data={topics} information={information} />
       <div className="container d-flex flex-column align-items-center justify-content-center DownloadCurriculumContainer">
+        {/* Download Button */}
         <button
           type="button"
           className="btn regular-btn"
@@ -172,7 +187,17 @@ function SchoolOfBusinessPage() {
           onClick={handlePdfDownload}
           disabled={downloadStatus.loading}
         >
-          {downloadStatus.loading ? 'Downloading...' : 'Download Curriculum t'}
+          {downloadStatus.loading ? 'Downloading...' : 'Download Curriculum'}
+        </button>
+
+        {/* Preview Button */}
+        <button
+          type="button"
+          className="btn regular-btn"
+          style={{ height: "48px", width: "208px", margin: "10px" }}
+          onClick={handlePreviewPdf}
+        >
+          Preview Curriculum
         </button>
         
         {downloadStatus.error && (
@@ -180,11 +205,6 @@ function SchoolOfBusinessPage() {
             {downloadStatus.error}
           </div>
         )}
-
-        {/* Debug Info */}
-        <div className="mt-3 text-muted" style={{fontSize: '0.8em'}}>
-          PDF Path: {`${window.location.origin}/SoBCurriculum.pdf`}
-        </div>
       </div>
       <CoursesLocation courses={"School Of Business"} />
       <JobAssistance JobAssistance={JobAssistanceData} />
