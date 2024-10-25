@@ -30,7 +30,6 @@
 // export default SchoolOfBusinessPage;
 
 
-
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import JobAssistance from "../JobAssistance";
@@ -51,33 +50,22 @@ import AlumnusPage from "../AlumnusPage";
 // Ensure the PDF file is correctly referenced from the public directory
 const SoBCurriculum = "/Komal-Bapu-Ahire.pdf";
 
-const information = "Our student led, self-paced business course includes:";
+const information = "Our student-led, self-paced business course includes:";
 
 function SchoolOfBusinessPage() {
-  const onButtonClick = (pdfFile, fileName) => {
-    console.log("PDF file path:", pdfFile);
-    const link = document.createElement("a");
-    link.href = pdfFile;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <>
       <BackgroundImg backgroundData={BackgroundImgData}></BackgroundImg>
       <EligibilityDetail points={whoForPoints} />
       <CourseDetail data={topics} information={information}></CourseDetail>
       <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
-        <button
-          type="button"
-          className="btn regular-btn"
-          style={{ height: "48px", width: "208px", margin: "10px" }}
-          onClick={() => onButtonClick(SoBCurriculum, "SoBCurriculum.pdf")}
+        <a
+          href={SoBCurriculum}
+          download
+          className="btn btn-primary"
         >
           Download Curriculum PDF
-        </button>
+        </a>
       </div>
       <CoursesLocation courses={"School Of Business"}></CoursesLocation>
       <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
