@@ -76,6 +76,7 @@ function SchoolOfBusinessPage() {
         >
           Download Curriculum test
         </button>
+        <a href="/SoBCurriculum.pdf" download>Download PDF</a>
       </div>
       <CoursesLocation courses={"School Of Business"}></CoursesLocation>
       <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
