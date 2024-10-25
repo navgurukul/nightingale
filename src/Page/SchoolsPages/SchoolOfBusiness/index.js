@@ -29,7 +29,6 @@
 // }
 // export default SchoolOfBusinessPage;
 
-
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import JobAssistance from "../JobAssistance";
@@ -61,7 +60,9 @@ function SchoolOfBusinessPage() {
       <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
         <a
           href={SoBCurriculum}
-          download
+          target="_blank"
+          rel="noopener noreferrer"
+          type="application/pdf"
           className="btn btn-primary"
         >
           Download Curriculum PDF
