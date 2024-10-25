@@ -52,21 +52,35 @@ const SoBCurriculum = "/Komal-Bapu-Ahire.pdf";
 const information = "Our student-led, self-paced business course includes:";
 
 function SchoolOfBusinessPage() {
+  // Create a function to download a PDF file
+  function downloadPDF() {
+    // Define the URL of the PDF file
+    const pdfUrl = SoBCurriculum; // Replace with your PDF file path
+
+    // Create an anchor element
+    const link = document.createElement("a");
+
+    // Set the href attribute to the PDF URL
+    link.setAttribute("href", pdfUrl);
+
+    // Set the download attribute with a desired filename
+    link.setAttribute("download", "downloadedFile.pdf"); // Replace with your desired filename
+
+    // Programmatically click the link to trigger the download
+    link.click();
+  }
+
+  // Call the function when needed, e.g., on button click
+  // <button onclick="downloadPDF()">Download PDF</button>
   return (
     <>
       <BackgroundImg backgroundData={BackgroundImgData}></BackgroundImg>
       <EligibilityDetail points={whoForPoints} />
       <CourseDetail data={topics} information={information}></CourseDetail>
       <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
-        <a
-          href={SoBCurriculum}
-          target="_blank"
-          rel="noopener noreferrer"
-          type="application/pdf"
-          className="btn btn-primary"
-        >
-          Download Curriculum 
-        </a>
+        <button onClick={downloadPDF} className="btn btn-primary">
+          Download Curriculum
+        </button>
       </div>
       <CoursesLocation courses={"School Of Business"}></CoursesLocation>
       <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
