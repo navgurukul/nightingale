@@ -29,6 +29,8 @@
 // }
 // export default SchoolOfBusinessPage;
 
+
+
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import JobAssistance from "../JobAssistance";
@@ -46,7 +48,7 @@ import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 
-// import SoBCurriculum from '../../../Pdf/SoBCurriculum.pdf';
+// Ensure the PDF file is correctly referenced from the public directory
 const SoBCurriculum = "/SoBCurriculumtest.pdf";
 
 const information = "Our student led, self-paced business course includes:";
@@ -74,12 +76,8 @@ function SchoolOfBusinessPage() {
           style={{ height: "48px", width: "208px", margin: "10px" }}
           onClick={() => onButtonClick(SoBCurriculum, "SoBCurriculum.pdf")}
         >
-          Download Curriculum test
+          Download Curriculum PDF
         </button>
-        {/* <a href="/SoBCurriculumtest.pdf" download>Download PDF new</a> */}
-        <a href="/SoBCurriculumtest.pdf" download="SoBCurriculumtest.pdf">
-        Download PDF komal
-      </a>
       </div>
       <CoursesLocation courses={"School Of Business"}></CoursesLocation>
       <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
@@ -89,4 +87,5 @@ function SchoolOfBusinessPage() {
     </>
   );
 }
+
 export default SchoolOfBusinessPage;
