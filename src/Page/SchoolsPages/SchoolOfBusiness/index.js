@@ -47,7 +47,7 @@ import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 
 // Ensure the PDF file is correctly referenced from the public directory
-const SoBCurriculum = "/Komal-Bapu-Ahire.pdf";
+const SoBCurriculum = "./SoBCurriculum.pdf";
 
 const information = "Our student-led, self-paced business course includes:";
 
@@ -79,7 +79,7 @@ function SchoolOfBusinessPage() {
       <CourseDetail data={topics} information={information}></CourseDetail>
       <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
         <button onClick={downloadPDF} className="btn btn-primary">
-          Download Curriculum
+          Download Shivansh
         </button>
       </div>
       <CoursesLocation courses={"School Of Business"}></CoursesLocation>
