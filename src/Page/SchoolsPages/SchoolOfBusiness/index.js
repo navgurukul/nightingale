@@ -65,7 +65,7 @@ function SchoolOfBusinessPage() {
           type="application/pdf"
           className="btn btn-primary"
         >
-          Download Curriculum PDF
+          Download Curriculum 
         </a>
       </div>
       <CoursesLocation courses={"School Of Business"}></CoursesLocation>
