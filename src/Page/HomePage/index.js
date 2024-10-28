@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <>
-      <div className="row align-items-center centered-container">
+      {/* <div className="row align-items-center centered-container">
         <div className="d-none d-md-flex justify-content-end">
           <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
         </div>
@@ -62,7 +62,8 @@ function Home() {
           </button>
 
         </div>
-      </div>
+      </div> */}
+      
       <div className="navgurukul-homepage">
         <div className="container" style={{ marginTop: "80px" }}>
           <div className="row">
