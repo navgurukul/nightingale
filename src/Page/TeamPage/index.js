@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import LinkedIn from "../Components/LinkedIn";
 import "./styles.css";
 
 function TeamPage() {
@@ -14,9 +13,6 @@ function TeamPage() {
     axios
       .get("https://navgurukul.github.io/tarabai-shinde/data/ng_team.json")
       .then((res) => {
-        console.log("Fetched team data:", res.data);
-        console.log("object team data", Object.values(res.data)[0]);
-
         setTeam(res.data);
         setLoading(false);
       })
@@ -27,25 +23,11 @@ function TeamPage() {
 
   }, []);
 
-
   const filterTeam = (team) => {
-    console.log("Filtering team with team data:", team);
-    if (!team || Object.keys(team).length === 0) {
-      console.warn("Team data is empty or not an object");
-
-      return [];
-    }
-
-    const filtered = Object.keys(team)
-      .filter(
-        (key) =>
-          team[key].Association !== "Volunteer" &&
-          team[key].Team === selectedTeam
-      )
-      .map((key) => team[key]);
-
-    console.log("Filtered team members:", filtered);
-    return filtered;
+    if (!team) return [];
+    return Object.values(team).filter(
+      (member) => member.Association !== "Volunteer" && member.Team === selectedTeam
+    );
   };
 
   const filteredMembers = filterTeam(team);
@@ -96,8 +78,6 @@ function TeamPage() {
                         const memberName = member['name'] || member['Abhinav Prakash Rai'] || "Awaiting Member's Name";
                         const memberDesignation = member['Teaching Fellow'] || "Awaiting description from team member";
                         const memberPhoto = member[''] || member['Photo'];
-                        // const memberLinkedIn = member[''] || member['LinkedIn']; // Adjust as necessary
-
                         return (
                           <div key={index} className="col-lg-4 col-md-6">
                             <div className="team-info-card">
