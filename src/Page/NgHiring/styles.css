@@ -27,10 +27,11 @@
 
 .formcontainer {
   background-color: white;
-  padding: 20px;
+  padding: 32px;
   border-radius: 8px;
   max-width: 448px;
   margin-left: "30px";
+  gap: 24px;
 }
 
 
@@ -105,9 +106,16 @@
 
 .banner-img {
   width: 100%;
-  height: 420px;
+  /* height: 420px; */
+  height: auto;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.image-class {
+  width: 100%;
+  height: 300px; /* Set a consistent height */
+  object-fit: cover; /* Ensures images are cropped to fill without distortion */
 }
 
 .position-relative {
@@ -146,9 +154,9 @@
   border: 1px solid #b6b5b5;
   outline: none;
   width: 100%;
-  gap: 8px;
-
+  margin-bottom: 10px;
 }
+
 
 .paragraph-box {
   margin-top: 70px;
@@ -346,16 +354,20 @@
 
 .media-font {
   font-family: 'Lato', sans-serif;
-  /* Ensure that Lato is loaded */
   font-size: 32px;
-  /* Set font size */
   font-weight: 700;
-  /* Set font weight */
   line-height: 41.6px;
-  /* Set line height */
   text-align: center;
-  /* Center text alignment */
 }
+.heddinghireformus {
+  font-family: 'Lato', sans-serif; 
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  text-align: left; 
+  margin-left: 13px;
+}
+
 
 .main_container_box {
   background-image: url('../NgHiring/assets/Rectangle.png');
@@ -370,6 +382,64 @@
   width: 100%;
   margin: 0 auto;
 }
+
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+
+
+
+
+/* Default styling for larger screens */
+.hire-container {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout by default */
+  gap: 20px; /* Optional spacing between columns */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .hire-container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+  }
+
+  .hire-container .col-lg-6,
+  .hire-container .col-md-12 {
+    width: 100%; /* Full width for each column on smaller screens */
+  }
+
+  .heddinghireformus {
+    order: -1; /* Move the heading to the top */
+    text-align: center; /* Center align heading */
+    margin-bottom: 1rem; /* Add spacing below the heading */
+  }
+
+  img {
+    width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    margin-bottom: 1rem; /* Add spacing below the image */
+  }
+}
+
 
 
 

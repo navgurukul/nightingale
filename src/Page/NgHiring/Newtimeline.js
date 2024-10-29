@@ -4,9 +4,7 @@ import './timeline.css';
 const Timeline = () => {
     return (
         <div className="container my-5 d-block d-lg-none">
-            <h5 className="media-font text-center mb-5 mt-0 my-0">
-                Timeline of Student Growth
-            </h5>
+         
             <div className="timeline1">
                 <div className="timeline-item1" >
                     <div className="timeline-dot2 red-dot"></div>

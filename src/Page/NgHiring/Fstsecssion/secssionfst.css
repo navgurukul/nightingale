@@ -7,10 +7,15 @@
 }
 
 .mainbox {
-    max-width: 448px;
+    max-width: 386px;
     width: 100%;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+    /* Default padding for smaller screens */
 }
+
 
 /* Default for large screens and above */
 .media-font1 {
@@ -25,14 +30,14 @@
 .bgcolorboxone {
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 30%, #FFF8DB 100%);  }
+    background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 30%, #FFF8DB 100%);
+}
 
 /* Styles for large screens */
 @media (min-width: 992px) {
     .mainbox {
-        padding-left: 0;
-        padding-right: 0;
-        margin: 0;
+        padding: 164px 0;
+
     }
 }
 
@@ -66,7 +71,7 @@
     margin: 0;
 }
 
-.radio-input {
+/* .radio-input {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
@@ -74,4 +79,21 @@
 
 .radio-input input {
     margin-right: 10px;
+} */
+
+.radio-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+
+}
+
+.radio-input input[type="radio"] {
+    margin: 0 0px 0 0;
+    /* Add a small margin to the right of the radio button */
+}
+
+.radio-input label {
+    margin-bottom: 0;
+    /* Removes any default margin at the bottom of the label */
 }
