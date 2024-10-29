@@ -24,7 +24,7 @@
   height: 329px;
   border-radius: 4px;
   overflow: hidden;
-  background: #F7F7F7;
+  /* background: #F7F7F7; */
   display: flex;
   flex-direction: column;
   align-items: center;
