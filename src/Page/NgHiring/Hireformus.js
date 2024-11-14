@@ -1,6 +1,7 @@
 import React from 'react';
 import hire from './assets/hire.png';
 
+
 const HireFromUs = ({ handleOpenForm }) => {
     return (
         <section className="d-flex flex-column align-items-center our-initiatives px-md-0">
@@ -56,12 +57,6 @@ const HireFromUs = ({ handleOpenForm }) => {
                             <button
                                 type="button"
                                 className="btn fw-bold regular-btn1"
-                                style={{
-                                    width: "280px",
-                                    backgroundColor: "transparent",
-                                    border: "2px solid red",
-                                    color: "red",
-                                }}
                                 onClick={() => handleOpenForm('Download Placement Brief')}>
                                 Download Placement Brief
                             </button>

@@ -81,12 +81,12 @@ export const AnumnusPageData = [
     }
 ]
 
-export const DownloadData=[
-    {
-        id:1,
-        pdfFile:PdfFile
-    }
-]
+// export const DownloadData=[
+//     {
+//         id:1,
+//         pdfFile:PdfFile
+//     }
+// ]
 
 
 // export const DownloadData = [
