@@ -112,11 +112,11 @@
 
 
 .timeline-marker:first-child {
-  background-color: red;
+  background-color: #EB5F42;
 }
 
 .timeline-marker:last-child {
-  background-color: red;
+  background-color:#EB5F42;
 }
 .timeline-marker:not(:first-child):not(:last-child) {
   background-color: rgb(78, 77, 77);
