@@ -61,7 +61,6 @@ function SchoolOfBusinessPage() {
        document.body.removeChild(link);
    };
 
-
    return (
        <>
            <BackgroundImg backgroundData={BackgroundImgData}></BackgroundImg>
