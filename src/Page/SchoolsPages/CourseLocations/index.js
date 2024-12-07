@@ -25,8 +25,13 @@ function CoursesLocation({ courses }) {
         );
     }
 
-    const programmingCampuses = Object.values(data).filter(campus => campus["Courses offered"] && campus["Courses offered"].includes(courses));
-
+    // const programmingCampuses = Object.values(data).filter(campus => campus["Courses offered"] && campus["Courses offered"].includes(courses));
+    const programmingCampuses = Object.values(data).filter((campus) => {
+        const isCourseMatched = campus["Courses offered"] && campus["Courses offered"].includes(courses);
+        const excludePuneForSod = courses === "School of Design" ? campus.Name !== "Pune Campus" : true;
+        return isCourseMatched && excludePuneForSod;
+    });
+    
     return (
         <div className="shared-container partners-data w-100 mb-0 mb-4 d-flex align-items-center flex-column" style={{ marginTop: "80px" }}>
             <h3 className="text-center mb-4" >
