@@ -33,17 +33,6 @@
     background: linear-gradient(to bottom, #f1f1f1 0%, #f1f1f1 30%, #FFF8DB 100%);
 }
 
-
-
-/* Style for the radio button and label to show pointer cursor */
-.radio-input input[type="radio"] + label {
-    cursor: pointer;
-}
-
-.radio-input input[type="radio"] {
-    cursor: pointer;
-}
-
 /* Styles for large screens */
 @media (min-width: 992px) {
     .mainbox {

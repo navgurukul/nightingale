@@ -42,7 +42,7 @@ const Timeline = () => {
                   className="timeline-marker"
                   style={{
                     top: `${topPosition}px`,
-                    backgroundColor: index === 0 || index === 6 ? '#EB5F42' : 'rgb(101, 101, 101)' // Set color conditionally
+                    backgroundColor: index === 0 || index === 6 ? 'red' : 'rgb(101, 101, 101)' // Set color conditionally
                   }}
                 ></div>
               );
