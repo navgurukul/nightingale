@@ -127,7 +127,6 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                             </form>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div >

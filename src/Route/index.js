@@ -22,7 +22,6 @@ import SchoolProgramming from "../Page/SchoolsPages/Programing";
 import SchoolOfDesignPage from "../Page/SchoolsPages/SchoolsOfDesign";
 import SchoolOfBusinessPage from "../Page/SchoolsPages/SchoolOfBusiness";
 import SchoolOfFinancePage from "../Page/SchoolsPages/SchoolOfFinance"
-import SchoolOfSecondChances from "../Page/SchoolsPages/SchoolOfSecondchances"
 import BCA from "../Page/SchoolsPages/BCAProgram";
 import Careers from "../Page/Careers";
 import Thankyou from "../Page/NgHiring/Thankyou";
@@ -51,8 +50,6 @@ function Routing() {
         <Route exact path="/school-design" component={SchoolOfDesignPage}></Route>
         <Route exact path="/school-busines" component={SchoolOfBusinessPage}></Route>
         <Route exact path="/school-finance" component={SchoolOfFinancePage}></Route>
-        <Route exact path="/school-secondchance" component={SchoolOfSecondChances}></Route>
-
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/donate" component={Donate} />
         <Route exact path="/hiring" component={NgHiring} />
