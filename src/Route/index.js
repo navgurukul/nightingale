@@ -23,6 +23,7 @@ import SchoolOfDesignPage from "../Page/SchoolsPages/SchoolsOfDesign";
 import SchoolOfBusinessPage from "../Page/SchoolsPages/SchoolOfBusiness";
 import SchoolOfFinancePage from "../Page/SchoolsPages/SchoolOfFinance"
 import SchoolOfSecondChances from "../Page/SchoolsPages/SchoolOfSecondchances"
+
 import BCA from "../Page/SchoolsPages/BCAProgram";
 import Careers from "../Page/Careers";
 import Thankyou from "../Page/NgHiring/Thankyou";
