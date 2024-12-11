@@ -1,5 +1,6 @@
 import baneer from '../SchoolOfSecondchances/assets/baneer.png'
 
+
 export const LongTermVision = [
     {
         point: "To enroll women from marginalized groups like shelter home residents, sex workers, HIV positive women, reformed prisoners, and more. Reaching deeper into the blind spots and boundaries of our society with every new student."

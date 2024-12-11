@@ -43,7 +43,6 @@ function SchoolOfSecondchances() {
         <>
             <BackgroundImg backgroundData={BgroundImg}></BackgroundImg>
             <Programmefor />
-
             <div className="container courseDetail">
                 <h3 className="text-center mb-4 headingcolore">
                     What You  <span className="BackColor">Will Learn</span>
