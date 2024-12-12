@@ -69,7 +69,6 @@ function Routing() {
         <Route exact path="/campus" component={OurCampus} />
         <Route exact path="/campus/:campusName" component={CampusPages} />
         <Route exact path="/thankyou" component={Thankyou} />
-
         <Route exact path="*/" component={PageNotFound} />
 
 

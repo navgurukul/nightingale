@@ -1,4 +1,4 @@
-import baneer from '../SchoolOfSecondchances/assets/baneer.png'
+import baneer from "../SchoolOfSecondchances/assets/baneer.png"
 
 export const LongTermVision = [
     {

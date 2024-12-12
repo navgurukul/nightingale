@@ -2,7 +2,7 @@
 const Residential = () => {
     return (
         <>
-
+          
             <div className="container programDetails">
                 <h3 className="text-center mb-4 headingcolore ">
                     Why Residential Mode  <span className="BackColor"> at Our Campuses?</span>

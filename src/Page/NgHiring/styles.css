@@ -352,25 +352,6 @@
   height: auto;
 }
 
-
-/* Styles for the button */
-.regular-btn1 {
-  width: 280px;
-  background-color: transparent;
-  border: 1px solid #EB5F42;
-  color: #EB5F42;
-  font-weight: bold;
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.regular-btn1:hover {
-  background-color: #EB5F42; /* Change background color on hover */
-  color: #fff; /* Change text color on hover */
-  border-color: #EB5F42;
-}
-
-
-
 .media-font {
   font-family: 'Lato', sans-serif;
   font-size: 32px;

@@ -15,6 +15,7 @@ function Header() {
       <a className="navbar-brand mr-4 ml-4" href="/">
         <img
           src={require("./assets/logo.png").default}
+
         />
       </a>
 
@@ -98,7 +99,7 @@ function Header() {
               <a className="dropdown-item" href="/school-finance">
                 School of Finance
               </a>
-
+              {/* school-secondchance */}
               <a className="dropdown-item" href="/school-secondchance">
                 School of Second Chances
               </a>
