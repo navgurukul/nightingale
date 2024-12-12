@@ -11,16 +11,22 @@
     border-radius: 8px;
 }
 
+.subtitle-container {
+    margin-top: -29px;
+    margin-bottom: 32px;
+}
+
+
 .pra-subtitle {
     line-height: 30.6px;
 }
 .pra-subtitle {
     font-weight: bold;
 }
-.subtitle-container{
+/* .subtitle-container{
     margin-top: 32px;
     margin-bottom: 32px;
-}
+} */
 .test-title{
     margin-bottom:"32px";
 }
