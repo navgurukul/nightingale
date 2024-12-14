@@ -6,6 +6,9 @@ import "keen-slider/keen-slider.min.css";
 
 function Arrow(props) {
   const disabeld = props.disabled ? " arrow--disabled" : "";
+
+
+  
   return (
     <svg
       onClick={props.onClick}
