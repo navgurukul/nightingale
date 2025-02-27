@@ -151,7 +151,7 @@ function Home() {
 
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="textlink" >
-                  <a href="/school-secondchance" target="_blank">
+                  <a href="/school-secondchance" target="">
                     <img src={img2} className="card-image " alt="Placeholder Image" />
                     <div className="card-body text-black ">
                       <h4 className="card-title mt-4">School of Second Chances</h4>
