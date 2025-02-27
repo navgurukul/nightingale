@@ -20,10 +20,10 @@ function TeamPage() {
       });
   }, []);
 
-  const filterTeam = (teamData: any) => {
+  const filterTeam = (teamData) => {
     if (!teamData) return [];
 
-    return Object.values(teamData).filter((member: any) => {
+    return Object.values(teamData).filter((member) => {
       const hasEssentialData =
         member.Name?.trim() &&
         member["Teaching Fellow"]?.trim() &&
@@ -49,15 +49,15 @@ function TeamPage() {
                   <h5 className="team-heading">Team</h5>
                   <ul className="nav nav-tabs flex-column">
                     {[
-                      "Core Team",
-                      "Ghar",
-                      "Residential Programme",
-                      "People and Culture",
-                      "Placements",
-                      "Operations",
-                      "Academics",
-                      "Admissions",
-                      "LXD & ETC",
+                      "Core Team", 
+                      "Ghar", 
+                      "Residential Programme", 
+                      "People and Culture", 
+                      "Placements", 
+                      "Operations", 
+                      "Academics", 
+                      "Admissions", 
+                      "LXD & ETC"
                     ].map((teamName) => (
                       <li
                         key={teamName}
@@ -92,9 +92,7 @@ function TeamPage() {
                             />
                           </div>
                           <p className="team-info-card-title body">{member.Name}</p>
-                          <p className="team-info-card-designation">
-                            {member["Teaching Fellow"]}
-                          </p>
+                          <p className="team-info-card-designation">{member["Teaching Fellow"]}</p>
                         </div>
                       </div>
                     ))
@@ -110,6 +108,3 @@ function TeamPage() {
 }
 
 export default TeamPage;
-
-
-
