@@ -90,9 +90,9 @@ function Header() {
               <a className="dropdown-item" href="/school-programing">
                 School of Programming
               </a>
-              <a className="dropdown-item" href="/school-design">
+              {/* <a className="dropdown-item" href="/school-design">
                 School of Design
-              </a>
+              </a> */}
               <a className="dropdown-item" href="/school-busines">
                 School of Business
               </a>

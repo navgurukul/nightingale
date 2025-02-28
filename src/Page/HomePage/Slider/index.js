@@ -109,25 +109,28 @@ function Slider() {
                 <div className="partners-carousal-cards ">
                   {Object.keys(mediaData).map((item) => {
                     return (
-                      <div>
-                        <div className="keen-slider__slide number-slide d-flex align-items-start col-md-3">
-                          <div className="" >
+                      <div key={item}>
+                        <a
+                          href={mediaData[item].Website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="keen-slider__slide number-slide d-flex align-items-start col-md-3"
+                          style={{ display: "block", textDecoration: "none", color: "inherit" }}
+                        >
+                          <div>
                             <img
                               className="w-100"
                               src={mediaData[item].Logo}
-                              alt={mediaData[item].Name.substring(
-                                0,
-                                mediaData[item].Name.indexOf(" ")
-                              )}
+                              alt={mediaData[item].Name.substring(0, mediaData[item].Name.indexOf(" "))}
                             />
                             <div className="partition-carousal-content-name" style={{ marginTop: "16px" }}>
-                              <div className="mb-3 " color="white" >
+                              <div className="mb-3 " color="white">
                                 <p className="para body1 font">{mediaData[item].Name}</p>
                               </div>
                               <p color="white"> {mediaData[item].Content}</p>
                             </div>
                           </div>
-                        </div>
+                        </a>
                       </div>
                     );
                   })}

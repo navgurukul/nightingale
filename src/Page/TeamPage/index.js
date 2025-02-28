@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./styles.css";
@@ -20,14 +18,22 @@ function TeamPage() {
         console.error("Error fetching team data:", error);
         setLoading(false);
       });
-
   }, []);
 
-  const filterTeam = (team) => {
-    if (!team) return [];
-    return Object.values(team).filter(
-      (member) => member.Association !== "Volunteer" && member.Team === selectedTeam
-    );
+  const filterTeam = (teamData) => {
+    if (!teamData) return [];
+
+    return Object.values(teamData).filter((member) => {
+      const hasEssentialData =
+        member.Name?.trim() &&
+        member["Teaching Fellow"]?.trim() &&
+        member[""]?.trim(); // Image field
+
+      const isInSelectedTeam =
+        member.Team === selectedTeam && member.Association !== "Volunteer";
+
+      return hasEssentialData && isInSelectedTeam;
+    });
   };
 
   const filteredMembers = filterTeam(team);
@@ -41,17 +47,17 @@ function TeamPage() {
               <div>
                 <div className="tabs mb-4 text-left">
                   <h5 className="team-heading">Team</h5>
-                  <ul className="nav nav-tabs  flex-column">
+                  <ul className="nav nav-tabs flex-column">
                     {[
-                      "Core Team",
-                      "Ghar",
-                      "Residential Programme",
-                      "People and Culture",
-                      "Placements",
-                      "Operations",
-                      "Academics",
-                      "Admissions",
-                      "LXD & ETC",
+                      "Core Team", 
+                      "Ghar", 
+                      "Residential Programme", 
+                      "People and Culture", 
+                      "Placements", 
+                      "Operations", 
+                      "Academics", 
+                      "Admissions", 
+                      "LXD & ETC"
                     ].map((teamName) => (
                       <li
                         key={teamName}
@@ -65,46 +71,33 @@ function TeamPage() {
                 </div>
               </div>
               <div className="container-fluid w-100 mt-4">
-                <h5 className="team-heading mb-2" style={{ position: "relative", bottom: "30px" }}>{selectedTeam}</h5>
+                <h5 className="team-heading mb-2" style={{ position: "relative", bottom: "30px" }}>
+                  {selectedTeam}
+                </h5>
 
                 <div className="row g-5">
                   {loading ? (
                     <p>Loading...</p>
+                  ) : filteredMembers.length === 0 ? (
+                    <p>No team members found for {selectedTeam}.</p>
                   ) : (
-                    filteredMembers.length === 0 ? (
-                      <p>No team members found for {selectedTeam}.</p>
-                    ) : (
-                      filteredMembers.map((member, index) => {
-                        const memberName = member['name'] || member['Abhinav Prakash Rai'] || "Awaiting Member's Name";
-                        const memberDesignation = member['Teaching Fellow'] || "Awaiting description from team member";
-                        const memberPhoto = member[''] || member['Photo'];
-                        return (
-                          <div key={index} className="col-lg-4 col-md-6">
-                            <div className="team-info-card">
-
-                              <div className="d-flex justify-content-center">
-                                {memberPhoto ? (
-                                  <img
-                                    className="team-info-card-img"
-                                    src={memberPhoto}
-                                    alt={memberName}
-                                  />
-                                ) : (
-                                  <p className="team-info-card-title body" style={{ color: memberName ? "inherit" : "grey" }}>
-                                    {/* {memberName || "Awaiting Member's Name"} */}
-                                  </p>
-                                )}
-                              </div>
-                              <p className="team-info-card-title body">{memberName}</p>
-                              <p className="team-info-card-designation">{memberDesignation}</p>
-                            </div>
+                    filteredMembers.map((member, index) => (
+                      <div key={index} className="col-lg-4 col-md-6">
+                        <div className="team-info-card">
+                          <div className="d-flex justify-content-center">
+                            <img
+                              className="team-info-card-img"
+                              src={member[""]}
+                              alt={member.Name}
+                            />
                           </div>
-                        );
-                      })
-                    )
+                          <p className="team-info-card-title body">{member.Name}</p>
+                          <p className="team-info-card-designation">{member["Teaching Fellow"]}</p>
+                        </div>
+                      </div>
+                    ))
                   )}
                 </div>
-
               </div>
             </div>
           </div>
@@ -115,10 +108,3 @@ function TeamPage() {
 }
 
 export default TeamPage;
-
-
-
-
-
-
-
