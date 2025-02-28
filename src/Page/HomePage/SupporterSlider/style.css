@@ -1,45 +1,70 @@
-.supporter-carousal-cards {
+.logo-strip-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 0;
+}
+
+.logo-strip {
   display: flex;
+  animation: scroll 40s linear infinite;
+  width: max-content;
 }
-.supporter-carousal-arrow--left {
-  left: -5%;
+
+.logo-item {
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
-.supporter-carousal-arrow--right {
-  left: auto;
-  right: -5%;
+
+.logo-item:hover {
+  transform: scale(1.1);
 }
-.supporter-carousal-cards .logo-img {
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  max-width: 180px;
   object-fit: contain;
-  height: 120px;
-  width: 220px;
- 
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .logo-strip {
+    animation-duration: 30s;
+  }
   
- 
-}
-@media screen and (max-width: 1200px) {
-  .supporter-carousal-arrow--left {
-    left: -1%;
+  .logo-item {
+    margin: 0 20px;
   }
-  .supporter-carousal-arrow--right {
-    right: -1%;
-  }
-}
-@media screen and (max-width: 770px) {
-  .supporter-carousal-arrow--left {
-    left: -10%;
-  }
-  .supporter-carousal-arrow--right {
-    right: -10%;
+  
+  .logo-img {
+    height: 40px;
+    max-width: 120px;
   }
 }
-@media screen and (max-width: 660px) {
-  .supporter-carousal-arrow--left {
-    left: 0%;
+
+@media (max-width: 480px) {
+  .logo-strip {
+    animation-duration: 25s;
   }
-  .supporter-carousal-arrow--right {
-    right: -1;
+  
+  .logo-item {
+    margin: 0 15px;
   }
-  .supporter-carousal-cards .logo-img {
-    width: 200px;
+  
+  .logo-img {
+    height: 35px;
+    max-width: 100px;
   }
 }
