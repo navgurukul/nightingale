@@ -38,7 +38,9 @@ import ScreeningTestPage from "../ScreningTest";
 import { whoForPoints, topics, JobAssistanceData, program2Data, BgroundImg } from "../SchoolsOfDesign/data";
 
 const information = "Our teacher-led, 18-months design course Includes:"
-const SoDCurriculum = "/Pdfs/SoDCurriculum.pdf"; 
+// const SoDCurriculum = "/Pdfs/SoDCurriculum.pdf"; 
+const SoDCurriculum = `${window.location.origin}/Pdfs/SoDCurriculum.pdf`;
+
 
 
 function SchoolOfDesignPage() {

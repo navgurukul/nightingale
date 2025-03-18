@@ -41,7 +41,9 @@ import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 
-const SoBCurriculum = "/Pdfs/SoBCurriculum.pdf"; 
+// const SoBCurriculum = "/Pdfs/SoBCurriculum.pdf"; 
+const SoBCurriculum = `${window.location.origin}/Pdfs/SoBCurriculum.pdf`;
+
 const information = "Our student led, self-paced business course includes:";
 
 function SchoolOfBusinessPage() {
