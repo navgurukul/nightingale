@@ -38,22 +38,40 @@ import ScreeningTestPage from "../ScreningTest";
 import { whoForPoints, topics, JobAssistanceData, program2Data, BgroundImg } from "../SchoolsOfDesign/data";
 
 const information = "Our teacher-led, 18-months design course Includes:"
-const SoDCurriculum = "/pdfs/SoDCurriculum.pdf"; 
-// const SoDCurriculum = `${window.location.origin}/Pdfs/SoDCurriculum.pdf`;
-
+// const SoDCurriculum = "/pdfs/SoDCurriculum.pdf"; 
+const SoDCurriculum = process.env.PUBLIC_URL + "/pdfs/SoDCurriculum.pdf";
 
 
 function SchoolOfDesignPage() {
 
-    const onButtonClick = (pdfFile, fileName) => {
-        console.log("PDF file path:", pdfFile);
-        const link = document.createElement("a");
-        link.href = pdfFile;
-        link.download = fileName;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+    // const onButtonClick = (pdfFile, fileName) => {
+    //     console.log("PDF file path:", pdfFile);
+    //     const link = document.createElement("a");
+    //     link.href = pdfFile;
+    //     link.download = fileName;
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // };
+    const onButtonClick = async () => {
+        try {
+          const response = await fetch(SoDCurriculum);
+          const blob = await response.blob();
+          
+          // Create download link
+          const url = window.URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = "SoDCurriculum.pdf";
+          
+          document.body.appendChild(link);
+          link.click();
+          window.URL.revokeObjectURL(url);
+          document.body.removeChild(link);
+        } catch (error) {
+          console.error("Download failed:", error);
+        }
+      };
 
     return (
         <>
