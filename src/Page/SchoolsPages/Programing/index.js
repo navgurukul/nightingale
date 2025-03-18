@@ -53,8 +53,8 @@ import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
-import SoPCurriculum from '../../../Pdf/SoPCurriculum.pdf';
 
+const SoPCurriculum = "/Pdfs/SoPCurriculum.pdf"; 
 const information = "Our student-led, self-paced 18-months programming course includes:";
 
 function SchoolProgramming() {

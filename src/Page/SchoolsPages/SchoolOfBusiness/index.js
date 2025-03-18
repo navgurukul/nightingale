@@ -41,16 +41,10 @@ import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 
-
-import SoBCurriculum from '../../../Pdf/SoBCurriculum.pdf';
-
-
+const SoBCurriculum = "/Pdfs/SoBCurriculum.pdf"; 
 const information = "Our student led, self-paced business course includes:";
 
-
 function SchoolOfBusinessPage() {
-
-
    const onButtonClick = (pdfFile, fileName) => {
        console.log("PDF file path:", pdfFile);
        const link = document.createElement("a");
@@ -60,8 +54,6 @@ function SchoolOfBusinessPage() {
        link.click();
        document.body.removeChild(link);
    };
-
-
    return (
        <>
            <BackgroundImg backgroundData={BackgroundImgData}></BackgroundImg>
@@ -90,8 +82,6 @@ function SchoolOfBusinessPage() {
            <AlumnusPage AnumnusPageData={AnumnusPageData}></AlumnusPage>
        </>
    )
-
-
 }
 export default SchoolOfBusinessPage;
 

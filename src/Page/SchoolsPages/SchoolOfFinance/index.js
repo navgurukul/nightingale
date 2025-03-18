@@ -40,7 +40,8 @@ import BackgroundImg from "../BgroundImg";
 import CoursesLocation from "../CourseLocations";
 import AdmissionProcess from "../AdmissionProcess";
 import ScreeningTestPage from "../ScreningTest";
-import SoFCurriculum from '../../../Pdf/SoFCurriculum.pdf';
+
+const SoFCurriculum = "/Pdfs/SoFCurriculum.pdf"; 
 const information = "Our student-led, self-paced finance course includes:";
 
 function SchoolOfFinancePage() {
