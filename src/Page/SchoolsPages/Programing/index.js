@@ -54,22 +54,54 @@ import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 
-const SoPCurriculum = "/pdfs/SoPCurriculum.pdf"; 
+// const SoPCurriculum = "/pdfs/SoPCurriculum.pdf"; 
 // const SoPCurriculum = `${window.location.origin}/Pdfs/SoPCurriculum.pdf`;
+const SoPCurriculum = process.env.PUBLIC_URL + "/pdfs/SoPCurriculum.pdf";
 
 const information = "Our student-led, self-paced 18-months programming course includes:";
 
 function SchoolProgramming() {
 
-   const onButtonClick = (pdfFile, fileName) => {
-       console.log("PDF file path:", pdfFile);
-       const link = document.createElement("a");
-       link.href = pdfFile;
-       link.download = fileName;
-       document.body.appendChild(link);
-       link.click();
-       document.body.removeChild(link);
-   };
+//    const onButtonClick = (pdfFile, fileName) => {
+//        console.log("PDF file path:", pdfFile);
+//        const link = document.createElement("a");
+//        link.href = pdfFile;
+//        link.download = fileName;
+//        document.body.appendChild(link);
+//        link.click();
+//        document.body.removeChild(link);
+//    };
+const onButtonClick = async () => {
+    try {
+      // 1. Fetch PDF with error handling
+      const response = await fetch(SoPCurriculum);
+      if (!response.ok) throw new Error(`HTTP error! ${response.status}`);
+      
+      // 2. Create Blob with proper MIME type
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(new Blob([blob], { 
+        type: 'application/pdf' 
+      }));
+      
+      // 3. Create temporary link
+      const link = document.createElement("a");
+      link.href = blobUrl;
+      link.download = "SoPCurriculum.pdf";
+      link.style.display = "none";
+      
+      // 4. Trigger download
+      document.body.appendChild(link);
+      link.click();
+      
+      // 5. Cleanup
+      window.URL.revokeObjectURL(blobUrl);
+      document.body.removeChild(link);
+      
+    } catch (error) {
+      console.error("Download failed:", error);
+      alert("Failed to download curriculum. Please try again.");
+    }
+  };
 
 
    return (
@@ -89,7 +121,7 @@ function SchoolProgramming() {
                    type="button"
                    className="btn regular-btn"
                    style={{ height: "48px", width: "208px", margin: "10px" }}
-                   onClick={() => onButtonClick(SoPCurriculum, "SoPCurriculum.pdf")}
+                   onClick={() => onButtonClick()}
                >
                    Download Curriculum
                </button>
