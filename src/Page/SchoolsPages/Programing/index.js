@@ -157,29 +157,41 @@ const information = "Our student-led, self-paced 18-months programming course in
 function SchoolProgramming() {
     const onButtonClick = async () => {
         try {
-            const pdfUrl = `${window.location.origin}${SOP_CURRICULUM_PATH}`;
-            const response = await fetch(pdfUrl);
+            // Use fetch with appropriate headers
+            const response = await fetch(SOP_CURRICULUM_PATH, {
+                headers: {
+                    'Content-Type': 'application/pdf',
+                    'Accept': 'application/pdf'
+                },
+                cache: 'no-cache'
+            });
             
             if (!response.ok) {
                 throw new Error(`Failed to fetch PDF (${response.status})`);
             }
 
-            const blob = await response.blob();
-            const blobUrl = window.URL.createObjectURL(
-                new Blob([blob], { type: 'application/pdf' })
-            );
+            // Get the filename from the Content-Disposition header if available
+            const contentDisposition = response.headers.get('Content-Disposition');
+            const fileName = contentDisposition 
+                ? contentDisposition.split('filename=')[1].replace(/["']/g, '')
+                : 'SoPCurriculum.pdf';
 
+            const blob = await response.blob();
+            
+            // Create download link
+            const blobUrl = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
+            link.style.display = 'none';
             link.href = blobUrl;
-            link.download = 'SoPCurriculum.pdf';
+            link.download = fileName;
+            
+            // Trigger download
             document.body.appendChild(link);
             link.click();
             
             // Cleanup
-            setTimeout(() => {
-                window.URL.revokeObjectURL(blobUrl);
-                document.body.removeChild(link);
-            }, 100);
+            window.URL.revokeObjectURL(blobUrl);
+            document.body.removeChild(link);
 
         } catch (error) {
             console.error('Error downloading PDF:', error);
