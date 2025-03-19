@@ -151,20 +151,38 @@ import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
 import AlumnusPage from "../AlumnusPage";
 
-const SOP_CURRICULUM_PATH = '/pdfs/SoPCurriculum.pdf';
+const SOP_CURRICULUM_PATH = process.env.PUBLIC_URL + '/pdfs/SoPCurriculum.pdf';
 const information = "Our student-led, self-paced 18-months programming course includes:";
 
 function SchoolProgramming() {
-    const onButtonClick = () => {
-        // Open PDF in new tab and trigger browser's download dialog
-        const link = document.createElement('a');
-        link.href = SOP_CURRICULUM_PATH;
-        link.setAttribute('download', 'SoPCurriculum.pdf');
-        link.setAttribute('target', '_blank');
-        link.setAttribute('rel', 'noopener noreferrer');
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+    const handleViewPdf = () => {
+        const pdfUrl = window.location.origin + SOP_CURRICULUM_PATH;
+        window.open(pdfUrl, '_blank');
+    };
+
+    const handleDownloadPdf = () => {
+        const pdfUrl = window.location.origin + SOP_CURRICULUM_PATH;
+        fetch(pdfUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = 'SoPCurriculum.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => {
+                console.error('Error downloading PDF:', error);
+                alert('Failed to download the curriculum. Please try again later.');
+            });
     };
 
     return (
@@ -179,12 +197,20 @@ function SchoolProgramming() {
                 </div>
             </div>
 
-            <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
+            <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer gap-3">
                 <button
                     type="button"
                     className="btn regular-btn"
                     style={{ height: "48px", width: "208px", margin: "10px" }}
-                    onClick={onButtonClick}
+                    onClick={handleViewPdf}
+                >
+                    View Curriculum
+                </button>
+                <button
+                    type="button"
+                    className="btn regular-btn"
+                    style={{ height: "48px", width: "208px", margin: "10px" }}
+                    onClick={handleDownloadPdf}
                 >
                     Download Curriculum
                 </button>
