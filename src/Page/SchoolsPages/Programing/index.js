@@ -41,14 +41,7 @@ import JobAssistance from "../JobAssistance";
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import BackgroundImg from "../BgroundImg";
-import { 
-    program1Data, 
-    whoForPoints, 
-    JobAssistanceData, 
-    whatLearnPoints, 
-    backgroundData, 
-    AnumnusPageData 
-} from "./data";
+import { program1Data, whoForPoints, JobAssistanceData, whatLearnPoints, backgroundData, AnumnusPageData } from "./data";
 import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
@@ -58,16 +51,17 @@ const information = "Our student-led, self-paced 18-months programming course in
 
 function SchoolProgramming() {
     const handleDownloadPdf = () => {
-        const pdfUrl = process.env.PUBLIC_URL + "/pdfs/sample-curriculum.pdf";
+        const pdfUrl = `${process.env.PUBLIC_URL}/pdfs/sample-curriculum.pdf`;
 
-        console.log("Attempting to download PDF from:", pdfUrl);
+        console.log("PDF URL:", pdfUrl);
 
-        // Create a link element
-        const link = document.createElement('a');
+        // Open PDF in new tab (ensures it loads correctly)
+        window.open(pdfUrl, "_blank");
+
+        // Create a link to trigger download
+        const link = document.createElement("a");
         link.href = pdfUrl;
-        link.setAttribute('download', 'sample-curriculum.pdf');  // Ensure download attribute is set
-
-        // Append to the document and trigger download
+        link.setAttribute("download", "sample-curriculum.pdf"); // Ensures download works
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
