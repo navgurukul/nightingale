@@ -155,48 +155,16 @@ const SOP_CURRICULUM_PATH = '/pdfs/SoPCurriculum.pdf';
 const information = "Our student-led, self-paced 18-months programming course includes:";
 
 function SchoolProgramming() {
-    const onButtonClick = async () => {
-        try {
-            // Use fetch with appropriate headers
-            const response = await fetch(SOP_CURRICULUM_PATH, {
-                headers: {
-                    'Content-Type': 'application/pdf',
-                    'Accept': 'application/pdf'
-                },
-                cache: 'no-cache'
-            });
-            
-            if (!response.ok) {
-                throw new Error(`Failed to fetch PDF (${response.status})`);
-            }
-
-            // Get the filename from the Content-Disposition header if available
-            const contentDisposition = response.headers.get('Content-Disposition');
-            const fileName = contentDisposition 
-                ? contentDisposition.split('filename=')[1].replace(/["']/g, '')
-                : 'SoPCurriculum.pdf';
-
-            const blob = await response.blob();
-            
-            // Create download link
-            const blobUrl = window.URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.style.display = 'none';
-            link.href = blobUrl;
-            link.download = fileName;
-            
-            // Trigger download
-            document.body.appendChild(link);
-            link.click();
-            
-            // Cleanup
-            window.URL.revokeObjectURL(blobUrl);
-            document.body.removeChild(link);
-
-        } catch (error) {
-            console.error('Error downloading PDF:', error);
-            alert('Failed to download the curriculum. Please try again.');
-        }
+    const onButtonClick = () => {
+        // Open PDF in new tab and trigger browser's download dialog
+        const link = document.createElement('a');
+        link.href = SOP_CURRICULUM_PATH;
+        link.setAttribute('download', 'SoPCurriculum.pdf');
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     return (
