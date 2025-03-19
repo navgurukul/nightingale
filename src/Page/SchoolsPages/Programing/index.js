@@ -36,7 +36,6 @@
 
 
 
-
 import "./style.css";
 import JobAssistance from "../JobAssistance";
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
@@ -53,16 +52,20 @@ const information = "Our student-led, self-paced 18-months programming course in
 function SchoolProgramming() {
     const handleDownloadPdf = () => {
         const pdfUrl = '/pdfs/sample-curriculum.pdf';
-        
+
         // Create a link element
         const link = document.createElement('a');
         link.href = pdfUrl;
-        
-        // Then trigger download
         link.download = 'sample-curriculum.pdf';
+        
+        console.log("PDF Download Started:", pdfUrl); // Log when download starts
+
+        // Trigger download
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+
+        console.log("PDF should now be downloading.");
     };
 
     return (
@@ -98,4 +101,3 @@ function SchoolProgramming() {
 }
 
 export default SchoolProgramming;
-
