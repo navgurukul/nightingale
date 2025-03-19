@@ -41,7 +41,14 @@ import JobAssistance from "../JobAssistance";
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
 import CourseDetail from "../ProgramDetails/CourseDetail";
 import BackgroundImg from "../BgroundImg";
-import { program1Data, whoForPoints, JobAssistanceData, whatLearnPoints, backgroundData, AnumnusPageData} from "./data";
+import { 
+    program1Data, 
+    whoForPoints, 
+    JobAssistanceData, 
+    whatLearnPoints, 
+    backgroundData, 
+    AnumnusPageData 
+} from "./data";
 import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest";
 import AdmissionProcess from "../AdmissionProcess";
@@ -51,21 +58,21 @@ const information = "Our student-led, self-paced 18-months programming course in
 
 function SchoolProgramming() {
     const handleDownloadPdf = () => {
-        const pdfUrl = '/pdfs/sample-curriculum.pdf';
+        const pdfUrl = process.env.PUBLIC_URL + "/pdfs/sample-curriculum.pdf";
+
+        console.log("Attempting to download PDF from:", pdfUrl);
 
         // Create a link element
         const link = document.createElement('a');
         link.href = pdfUrl;
-        link.download = 'sample-curriculum.pdf';
-        
-        console.log("PDF Download Started:", pdfUrl); // Log when download starts
+        link.setAttribute('download', 'sample-curriculum.pdf');  // Ensure download attribute is set
 
-        // Trigger download
+        // Append to the document and trigger download
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
 
-        console.log("PDF should now be downloading.");
+        console.log("Download triggered successfully.");
     };
 
     return (
