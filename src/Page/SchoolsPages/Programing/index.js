@@ -56,7 +56,7 @@ function SchoolProgramming() {
         console.log("PDF URL:", pdfUrl);
 
         // Open PDF in new tab (ensures it loads correctly)
-        window.open(pdfUrl, "_blank");
+        // window.open(pdfUrl, "_blank");
 
         // Create a link to trigger download
         const link = document.createElement("a");
