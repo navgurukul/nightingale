@@ -9,7 +9,7 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                             <h5 className="media-font1">
                                 You are a vital piece in the puzzle of Diversity, Equality, and Inclusion
                             </h5>
-                            <p className="section-para body1 newsecsion">
+                            <p className="body1 newsecsion">
                                 Committed to providing learning pathways for marginalized communities. Bridge the gap where skills meet opportunity
                             </p>
                         </div>
@@ -115,7 +115,7 @@ const Secssionfst = ({ handleSubmit, formData, handleChange, errors, setFormData
                                     {errors.number && <div className="error_message">{errors.number}</div>}
                                 </div>
 
-                                <div className="form-group" style={{ width: "100%" }}>
+                                <div style={{ width: "100%" }}>
                                     <button
                                         type="submit"
                                         className="btn regular-btn"

@@ -82,7 +82,7 @@ function SchoolProgramming() {
                </div>
            </div>
 
-           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
+           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer mt-3">
                <button
                    type="button"
                    className="btn regular-btn"

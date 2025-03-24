@@ -69,7 +69,7 @@ function SchoolOfBusinessPage() {
            <CourseDetail data={topics} information={information}></CourseDetail>
 
 
-           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
+           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer mt-3">
                <button
                    type="button"
                    className="btn regular-btn"

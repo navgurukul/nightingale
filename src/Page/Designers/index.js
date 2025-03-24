@@ -207,7 +207,7 @@ const Designers = () => {
           Download Curriculum
       </button>
 
-      <h3 className="section-head  " style={{ marginBottom:"32px", marginTop:"80px"  }}>Admission Process</h3>
+      <h3 className="section-head  " style={{ marginBottom:"32px", marginTop:"80px"}}>Admission Process</h3>
       <div className="container "> 
         <div className="row g-6 justify-content-center"  style={{ marginBottom:"32px" }}> 
           <div className="col-lg-2 col-md-4 col-sm-6 mb-4"> 

@@ -48,7 +48,7 @@ function CoursesLocation({ courses }) {
 
     return (
         <div className="shared-container partners-data w-100 mb-0 mb-4 d-flex align-items-center flex-column" style={{ marginTop: "80px" }}>
-            <h3 className="text-center mb-4" >
+            <h3 className="text-center mb-2" >
                 <span className="BackColor">Programme</span> Locations
             </h3>
             {programmingCampuses.length === 1 ? (

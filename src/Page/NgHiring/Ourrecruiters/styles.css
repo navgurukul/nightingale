@@ -44,7 +44,7 @@
     object-fit: contain;
     display: block;
 }
-
+ 
 
 @keyframes scroll-left {
     0% {
@@ -63,7 +63,7 @@
 }
 
 @media (max-width: 992px) {
-    .logo-img {
+    .logo-img1 {
         max-width: 50%;
     }
 

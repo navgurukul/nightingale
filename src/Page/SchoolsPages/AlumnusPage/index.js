@@ -6,10 +6,10 @@ function AlumnusPage({ AnumnusPageData }) {
     };
 
     return (
-        <div className="d-flex justify-content-center   alumnus-container">
+        <div className="d-flex justify-content-center   alumnus-container mb-4">
             <section className="partners-data w-100">
                 <div className="container-fluid">
-                    <div className="all-partners w-100 d-flex flex-column mt-2">
+                    <div className="all-partners w-100 d-flex flex-column" style={{marginTop:"-40px"}}> 
                         <h3 className="text-center ">
                             Hear from the alumnus
                         </h3>

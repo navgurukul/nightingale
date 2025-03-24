@@ -62,7 +62,7 @@ function SchoolOfFinancePage() {
            <EligibilityDetail points={whoForPoints}></EligibilityDetail>
            <CourseDetail data={topics} information={information}></CourseDetail>
 
-           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
+           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer mt-3">
                <button
                    type="button"
                    className="btn regular-btn"
@@ -76,7 +76,9 @@ function SchoolOfFinancePage() {
            <CoursesLocation courses={"School of Finance"}></CoursesLocation>
            <JobAssistance JobAssistance={JobAssistanceData}></JobAssistance>
            <AdmissionProcess stages={program4Data}></AdmissionProcess>
+           <div className="" style={{marginBottom:"60px"}}>
            <ScreeningTestPage programNeme={"SchoolOfFinance"}></ScreeningTestPage>
+           </div>
        </>
    )
 }
