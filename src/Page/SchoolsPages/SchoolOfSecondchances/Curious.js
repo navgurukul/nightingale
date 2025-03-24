@@ -5,7 +5,7 @@ import phone from "./assets/phone.png"
 const Corious = () => {
     return (
         <>
-            <div className="container-fluid curiousuppor mt-4">
+            <div className="container-fluid curiousuppor mt-5">
                 <div className="row">
                     <div className="col-12 col-lg-8 mb-4" style={{ margin: "auto", color: "#EB5F42" }}>
                         <h3 className="text-center mb-4">Curious, Want Support Or Have Questions/Suggestions?</h3>
