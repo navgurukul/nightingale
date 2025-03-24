@@ -9,7 +9,7 @@ import CampusPartners from './assets/campuspartener.png'
 
 function Partners() {
   return (
-    <div className="partners d-flex flex-column justify-content-center w-100">
+    <div className="partners d-flex flex-column justify-content-center w-100 mb-5">
       <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100">
         <h3 className="mt-5 section-head mb-3">Partner Highlights</h3>
         <div className="partner-content-data body1 col-12 p-0 col-md-8 d-flex align-items-center justify-content-center mb-2 mt-3">
