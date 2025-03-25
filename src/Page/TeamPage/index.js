@@ -41,8 +41,10 @@ function TeamPage() {
   return (
     <main className="team-page">
       <div className="text-center mx-auto p-4" style={{ maxWidth: "736px" }}>
-        <h3 className=" mb-4">Our Team</h3>
-        <p className="mb-2" style={{ textAlign: "left" }}>
+        <h3 className="mb-4" >
+          Our Team
+        </h3>
+        <p className="mb-2" style={{ textAlign: "left", fontSize: "18px" }}>
           We are a collective of full-timers and volunteers who form the
           backbone of a movement aiming to bring affordable education to
           underprivileged girl students across India. Our workforce composition
@@ -51,6 +53,7 @@ function TeamPage() {
           those who identify in the gender spectrum as non-binary.
         </p>
       </div>
+
       <div className="team-content">
         <section className="team-section w-100 mt-4 d-flex flex-column justify-center align-items-center">
           <div className="container px-0 team-info-cards-container mt-4">

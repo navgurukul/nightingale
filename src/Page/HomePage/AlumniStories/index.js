@@ -7,8 +7,8 @@ function AlumniStories() {
     <div className="container mb-4">
       <div className="row g-0">
         {data.map((item) => (
-          <div key={item.id} className="col-12 col-md-6 col-lg-4 mb-4 ">
-            <div className="video-container">
+          <div key={item.id} className="col-12 col-md-6 col-lg-4 mb-4  ">
+            <div className="video-container p-4">
               <iframe
                 src={item.video}
                 frameBorder="0"
@@ -17,7 +17,9 @@ function AlumniStories() {
                 title={item.name}
               ></iframe>
             </div>
-            <p className="body1 ml-4 text-left">{item.name}</p>
+            <p className="body1  text-left" style={{ marginLeft: "50px" }}>
+              {item.name}
+            </p>
           </div>
         ))}
       </div>
