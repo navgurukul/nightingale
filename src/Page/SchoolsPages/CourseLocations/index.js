@@ -42,7 +42,8 @@ function CoursesLocation({ courses }) {
         // Include only Pune Campus for School of Second Chances
         const includeOnlyPuneForSosc = courses === "School of Second Chances" ? campus.Name === "Pune Campus" : true;
 
-        return isCourseMatched && excludePuneForSod && includeOnlyPuneForSosc;
+        const excludeBangaloreForProgramming =courses === "School of Programming" ? campus.Name !== "Bangalore Campus" : true;
+        return isCourseMatched && excludePuneForSod && includeOnlyPuneForSosc && excludeBangaloreForProgramming; 
     });
 
 
