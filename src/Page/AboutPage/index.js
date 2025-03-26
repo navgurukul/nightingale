@@ -70,7 +70,7 @@ function AboutPage() {
         </section>
 
         <section className="page-section d-flex flex-column ">
-          <h3 className="section-head mb-4 mt-80">Why do We do the Work?</h3>
+          <h3 className="section-head mb-4 mt-4">Why do We do the Work?</h3>
           <div className="about-page-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 body1 ">
               Despite women comprising nearly half of India's population, only 19.2% of € N
@@ -109,7 +109,7 @@ function AboutPage() {
         </section>
         
         <section className="page-section d-flex flex-column">
-          <h3 className="section-head mb-4 mt-80">Our Vision</h3>
+          <h3 className="section-head mb-2 mt-4">Our Vision</h3>
           <div className="about-content d-flex flex-column justify-content-center mb-0 align-items-center">
             <p className="w-50 body1 ">
               NavGurukul envisions an equitable future where every student has access to quality
@@ -122,7 +122,7 @@ function AboutPage() {
         </section>
 
         <section className="page-section d-flex flex-column ">
-          <h3 className="section-head mb-4 mt-80">Our Values</h3>
+          <h3 className="section-head mb-2">Our Values</h3>
           <div className="about-content d-flex flex-column justify-content-center align-items-center">
             <p className="w-50 body1 mb-0">
               To guide our journey of empowering students from marginalized communities, we have
@@ -130,7 +130,7 @@ function AboutPage() {
               determining. By following our value system we want every student to have the power to
               choose better pathways, hence the acronym stands for:
             </p>
-            <div className="vlu-container">
+            <div className="vlu-container mb-4">
               {
                 ourValues.map((ele) => {
                   return (
