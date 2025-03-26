@@ -45,16 +45,10 @@ const information = "Our student-led, self-paced finance course includes:";
 
 function SchoolOfFinancePage() {
 
-
-   const onButtonClick = (pdfFile, fileName) => {
-       console.log("PDF file path:", pdfFile);
-       const link = document.createElement("a");
-       link.href = pdfFile;
-       link.download = fileName;
-       document.body.appendChild(link);
-       link.click();
-       document.body.removeChild(link);
-   };
+    const onButtonClick = () => {
+        const pdfUrl = "https://ng-webite-pdfs.s3.ap-south-1.amazonaws.com/SoFCurriculum.pdf";
+        window.open(pdfUrl, "_blank");
+    };
 
    return (
        <>
@@ -67,7 +61,7 @@ function SchoolOfFinancePage() {
                    type="button"
                    className="btn regular-btn"
                    style={{ height: "48px", width: "208px", margin: "10px" }}
-                   onClick={() => onButtonClick(SoFCurriculum, "SoFCurriculum.pdf")}
+                   onClick={() => onButtonClick()}
                >
                    Download Curriculum
                </button>
