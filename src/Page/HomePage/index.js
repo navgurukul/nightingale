@@ -115,36 +115,35 @@ function Home() {
         </div>
         <section className="media-scroll-section d-flex flex-column justify-content-center p-4">
           <div className="container">
-            <div className="row w-100 justify-content-center gx-2 gy-3">
-              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-3">
-                <h3>890+</h3>
-                <p className="font body1 text-wrap">
+            <div className="row w-100 justify-content-center gx-4 gy-3">
+              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
+                <h3 className="fs-4">890+</h3>
+                <p className="font-body text-muted small">
                   Students placed across various industries in tech
                 </p>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-3">
-                <h3>₹2.8 LPA</h3>
-                <p className="font body1 text-wrap">
+              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
+                <h3 className="fs-4">₹2.8 LPA</h3>
+                <p className="font-body text-muted small">
                   Avg. salary secured by students, the highest being 8 LPA
                 </p>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-3">
-                <h3>95%</h3>
-                <p className="font body1 text-wrap">
+              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
+                <h3 className="fs-4">95%</h3>
+                <p className="font-body text-muted small">
                   Student strength consists of girls from marginalized
                   communities
                 </p>
               </div>
-              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-3">
-                <h3>₹23+ Crore</h3>
-                <p className="font body1 text-wrap">
+              <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
+                <h3 className="fs-4">₹23+ Crore</h3>
+                <p className="font-body text-muted small">
                   Collectively earned annually by our Alumni
                 </p>
               </div>
             </div>
           </div>
         </section>
-
         <section className=" d-flex flex-column align-items-center our-initiatives">
           <h3 className="text-center media-font ">Our Schools</h3>
 
@@ -172,7 +171,7 @@ function Home() {
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="textlink">
                   <a href="/school-secondchance" target="">
-                 <Image
+                    <Image
                       src={img2}
                       className="card-image w-100"
                       style={{
@@ -264,11 +263,12 @@ function Home() {
             <SupporterSlider />
           </div>
         </section>
-        <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
-          <h3>
-            Alumni <span className="BackColor"> Stories</span>
+        <section className="d-flex flex-column align-items-center justify-content-center pb-5 my-4 ">
+          <h3 className="mb-0">
+            Alumni <span className=" px-2">Stories</span>
           </h3>
-          <div className="container mt-4">
+          <div className="container mt-0
+           p-4">
             <AlumniStories />
           </div>
         </section>

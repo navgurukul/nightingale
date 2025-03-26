@@ -5,9 +5,12 @@ import "./style.css";
 function AlumniStories() {
   return (
     <div className="container mb-4">
-      <div className="row g-0">
+      <div className="row g-0 justify-content-center">
         {data.map((item) => (
-          <div key={item.id} className="col-12 col-md-6 col-lg-4 mb-4  ">
+          <div
+            key={item.id}
+            className="col-12 col-sm-12 col-md-6 col-lg-4 mb-4"
+          >
             <div className="video-container p-4">
               <iframe
                 src={item.video}
@@ -17,7 +20,10 @@ function AlumniStories() {
                 title={item.name}
               ></iframe>
             </div>
-            <p className="body1  text-left" style={{ marginLeft: "50px" }}>
+            <p
+              className="body1 text-left"
+              style={{ marginLeft: window.innerWidth < 768 ? "10px" : "55px" }}
+            >
               {item.name}
             </p>
           </div>
