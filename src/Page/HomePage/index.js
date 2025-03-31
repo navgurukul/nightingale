@@ -76,7 +76,7 @@ function Home() {
                 <span className="d-inline d-md-block">its New Generation</span>
               </h2>
               <p className="font body1">
-                We are a non-profit dedicated to bring affordable tech education
+                We  are a non-profit dedicated to bring affordable tech education
                 to<br></br>
                 underprivileged girls in India.{" "}
               </p>
@@ -263,15 +263,10 @@ function Home() {
             <SupporterSlider />
           </div>
         </section>
-        <section className="d-flex flex-column align-items-center justify-content-center pb-5 my-4 ">
-          <h3 className="mb-0">
-            Alumni <span className=" px-2">Stories</span>
-          </h3>
-          <div className="container mt-0
-           p-4">
-            <AlumniStories />
-          </div>
+        <section className="d-flex flex-column align-items-center justify-content-center ">
+          <h4 className="font-s  ml-2">Alumni Stories</h4>
         </section>
+        <AlumniStories />
       </div>
     </>
   );

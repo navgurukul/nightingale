@@ -13,6 +13,7 @@ function AlumniStories() {
           >
             <div className="video-container p-4">
               <iframe
+                className="video-frame"
                 src={item.video}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

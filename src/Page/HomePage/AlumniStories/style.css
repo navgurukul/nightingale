@@ -100,9 +100,15 @@
   }
   @media (max-width: 768px) {
     .body1 {
-      margin-left: 10px !important; 
+      margin-left: 25px !important; 
     }
   }
+
+  .video-frame {
+    width: 352px;
+    height: 267px;
+  }
+  
   
     
 }
