@@ -72,6 +72,7 @@ function TeamPage() {
                       "Academics",
                       "Admissions",
                       "LXD & ETC",
+                      "Culture"
                     ].map((teamName) => (
                       <li
                         key={teamName}
