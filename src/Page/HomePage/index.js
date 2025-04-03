@@ -76,7 +76,7 @@ function Home() {
                 <span className="d-inline d-md-block">its New Generation</span>
               </h2>
               <p className="font body1">
-                We  are a non-profit dedicated to bring affordable tech education
+                We are a non-profit dedicated to bring affordable tech education
                 to<br></br>
                 underprivileged girls in India.{" "}
               </p>
@@ -118,26 +118,26 @@ function Home() {
             <div className="row w-100 justify-content-center gx-4 gy-3">
               <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
                 <h3 className="fs-4">890+</h3>
-                <p className="font-body text-muted small">
+                <p className="font-body ">
                   Students placed across various industries in tech
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
                 <h3 className="fs-4">₹2.8 LPA</h3>
-                <p className="font-body text-muted small">
+                <p className="font-body ">
                   Avg. salary secured by students, the highest being 8 LPA
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
                 <h3 className="fs-4">95%</h3>
-                <p className="font-body text-muted small">
+                <p className="font-body ">
                   Student strength consists of girls from marginalized
                   communities
                 </p>
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center text-center px-2">
                 <h3 className="fs-4">₹23+ Crore</h3>
-                <p className="font-body text-muted small">
+                <p className="font-body  ">
                   Collectively earned annually by our Alumni
                 </p>
               </div>
@@ -145,7 +145,7 @@ function Home() {
           </div>
         </section>
         <section className=" d-flex flex-column align-items-center our-initiatives">
-          <h3 className="text-center media-font ">Our Schools</h3>
+          <h3 className="text-center media-font  ">Our Schools</h3>
 
           <div className="container mt-4">
             <div className="row gy-4">
@@ -154,7 +154,12 @@ function Home() {
                   <Link to="/job-course">
                     <img
                       src={img1}
-                      className="card-image"
+                      className="card-image w-100"
+                      style={{
+                        objectFit: "cover",
+                        height: "310px",
+                        borderRadius: "8px",
+                      }}
                       alt="Placeholder Image"
                     />
                     <div className="card-body text-black">

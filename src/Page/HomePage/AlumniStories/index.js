@@ -21,12 +21,7 @@ function AlumniStories() {
                 title={item.name}
               ></iframe>
             </div>
-            <p
-              className="body1 text-left"
-              style={{ marginLeft: window.innerWidth < 768 ? "10px" : "55px" }}
-            >
-              {item.name}
-            </p>
+            <p className="body1 text-left alumni-name">{item.name}</p>
           </div>
         ))}
       </div>

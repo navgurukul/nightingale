@@ -1,21 +1,6 @@
-.bg-image {
-    position: relative;
-    height: 220px;
-    width: 100%;
-    border-radius: 32px 0px 32px 0px;
-    background-image: url('../assets/bgimg2.png');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 32px 0px;
-}
 
-.spacing{
-    margin-left: 16px;
-}
+
+
 
 .video-container {
     display: flex;
@@ -23,7 +8,13 @@
     margin-top: 5%; 
     position: relative;
     height: 220px; 
+    width: 352;
   
+}
+
+
+.alumni-name {
+  margin-left: 45px;
 }
 
 
@@ -100,14 +91,11 @@
   }
   @media (max-width: 768px) {
     .body1 {
-      margin-left: 25px !important; 
+      margin-left: 10px !important; 
     }
   }
 
-  .video-frame {
-    width: 352px;
-    height: 267px;
-  }
+ 
   
   
     

@@ -1,31 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
 
-
-
 const Footer = () => {
-  const [selectedIcon, setSelectedIcon] = useState('facebook'); 
+  const [selectedIcon, setSelectedIcon] = useState("facebook");
 
   const handleIconClick = (icon) => {
-    setSelectedIcon(icon); 
+    setSelectedIcon(icon);
   };
   return (
     <div className="footer-container">
       <div className="footer-content">
-
-        <div className='footer-contetnt-wrappper'>
+        <div className="footer-contetnt-wrappper">
           <div className="footer-brand">
-          <img src={require("./assets/logo.png").default} className="mb-1 mt-0" alt="Navgurukul Logo" />
+            <img
+              src={require("./assets/logo.png").default}
+              className="mb-1 mt-0"
+              alt="Navgurukul Logo"
+            />
             <div className="social-icons">
               <div className="d-flex align-items-center">
-                
                 {/* Facebook Icon */}
                 <div
-                  className={`facebook ${selectedIcon === 'facebook' ? 'selected' : ''}`}
-                  onClick={() => handleIconClick('facebook')}
+                  className={`facebook ${
+                    selectedIcon === "facebook" ? "selected" : ""
+                  }`}
+                  onClick={() => handleIconClick("facebook")}
                 >
-                  <a href="https://www.facebook.com/navgurukul/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.facebook.com/navgurukul/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <svg
                       width="32"
                       height="32"
@@ -65,10 +71,16 @@ const Footer = () => {
 
                 {/* LinkedIn Icon */}
                 <div
-                  className={`linkedin ${selectedIcon === 'linkedin' ? 'selected' : ''}`}
-                  onClick={() => handleIconClick('linkedin')}
+                  className={`linkedin ${
+                    selectedIcon === "linkedin" ? "selected" : ""
+                  }`}
+                  onClick={() => handleIconClick("linkedin")}
                 >
-                  <a href="https://www.linkedin.com/company/navgurukul/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://www.linkedin.com/company/navgurukul/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <svg
                       width="32"
                       height="32"
@@ -108,10 +120,16 @@ const Footer = () => {
 
                 {/* Twitter Icon */}
                 <div
-                  className={`twitter ${selectedIcon === 'twitter' ? 'selected' : ''}`}
-                  onClick={() => handleIconClick('twitter')}
+                  className={`twitter ${
+                    selectedIcon === "twitter" ? "selected" : ""
+                  }`}
+                  onClick={() => handleIconClick("twitter")}
                 >
-                  <a href="https://twitter.com/navgurukul" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://twitter.com/navgurukul"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <svg
                       width="32"
                       height="32"
@@ -149,38 +167,35 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-          
             </div>
-            <div className=' w-90'>
+            <div className=" ">
               <p className="title fw-bold lw-1">
                 Registered as Navgurukul Foundation for Social Welfare
               </p>
               <p className="sub-title mt-1">CIN : U85300HR2016NPL066468</p>
               <p className="sub-title m-0 mb-4 mt-1">
                 Let’s talk at{" "}
-                <a href="mailto:hi@navgurukul.org" style={{ color: '#EB5F42' }} className='fw-bold email'>
+                <a
+                  href="mailto:hi@navgurukul.org"
+                  style={{ color: "#EB5F42" }}
+                  className="fw-bold email"
+                >
                   hi@navgurukul.org
                 </a>
               </p>
             </div>
-
           </div>
           <div className="footer-section about-us">
             <h6>ABOUT US</h6>
             <ul>
               <li>
-                <a
-                  href='/about'
-                >
-                  Who We Are
-                </a>
+                <a href="/about">Who We Are</a>
               </li>
-              <li><a href="/team">Team</a></li>
               <li>
-                <a
-                  href="https://medium.com/navgurukul"
-                  target="_blank"
-                >
+                <a href="/team">Team</a>
+              </li>
+              <li>
+                <a href="https://medium.com/navgurukul" target="_blank">
                   Blog
                 </a>
               </li>
@@ -189,38 +204,38 @@ const Footer = () => {
           <div className="footer-section schools">
             <h6>SCHOOLS</h6>
             <ul>
-              <li><a href="/school-programing">School of Programming</a></li>
-              <li><a href="/school-design">School of Design</a></li>
-              <li><a href="/school-busines">School of Business</a></li>
-              <li><a href="/school-finance">School of Finance</a></li>
-              <li><a href="/school-secondchance">School of Second Chances</a></li>
-
+              <li>
+                <a href="/school-programing">School of Programming</a>
+              </li>
+              <li>
+                <a href="/school-design">School of Design</a>
+              </li>
+              <li>
+                <a href="/school-busines">School of Business</a>
+              </li>
+              <li>
+                <a href="/school-finance">School of Finance</a>
+              </li>
+              <li>
+                <a href="/school-secondchance">School of Second Chances</a>
+              </li>
             </ul>
           </div>
           <div className="footer-section digital-initiatives">
             <h6>DIGITAL INITIATIVES</h6>
             <ul>
               <li>
-                <a
-                  href="https://zuvy.org"
-                  target="_blank"
-                >
+                <a href="https://zuvy.org" target="_blank">
                   Zuvy
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.merakilearn.org"
-                  target="_blank"
-                >
+                <a href="https://www.merakilearn.org" target="_blank">
                   Meraki
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.codeindiafellowship.org"
-                  target="_blank"
-                >
+                <a href="https://www.codeindiafellowship.org" target="_blank">
                   Code India Fellowship
                 </a>
               </li>
@@ -230,17 +245,10 @@ const Footer = () => {
             <h6>GET INVOLVED</h6>
             <ul>
               <li>
-                <a
-                  href="/partners"
-                >
-                  Be a Partner
-                </a>
+                <a href="/partners">Be a Partner</a>
               </li>
               <li>
-                <a
-                  href="/careers"
-                  target="_blank"
-                >
+                <a href="/careers" target="_blank">
                   Careers
                 </a>
               </li>
@@ -255,38 +263,45 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-section our-campuses">
-
             <h6>
-              <a href='https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform' target="_blank"
-             
-                style={{ textDecoration: 'none' }}
-                onMouseOver={(e) => e.currentTarget.style.textDecoration = 'none'}
-                onMouseOut={(e) => e.currentTarget.style.textDecoration = 'none'}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform"
+                target="_blank"
+                style={{ textDecoration: "none" }}
+                onMouseOver={(e) =>
+                  (e.currentTarget.style.textDecoration = "none")
+                }
+                onMouseOut={(e) =>
+                  (e.currentTarget.style.textDecoration = "none")
+                }
               >
-                <span className='row-title'>
-                  CSR ENQUIRIES
-                </span>
+                <span className="row-title">CSR ENQUIRIES</span>
               </a>
             </h6>
             <ul>
-              <li><a href="/hiring" className='fw-bold mb-1'>HIRE FROM US</a></li>
-              <li><a href="/donate" className='fw-bold'>DONATE</a></li>
+              <li>
+                <a href="/hiring" className="fw-bold mb-1">
+                  HIRE FROM US
+                </a>
+              </li>
+              <li>
+                <a href="/donate" className="fw-bold">
+                  DONATE
+                </a>
+              </li>
             </ul>
           </div>
         </div>
         <div className="details mt-3">
           <div className="policy">
-            <Link to="/privacy" style={{color: '#4A4A4A'}}>
-              <span style={{ color: '#4A4A4A' }} >Legal & Privacy Policy</span>
+            <Link to="/privacy" style={{ color: "#4A4A4A" }}>
+              <span style={{ color: "#4A4A4A" }}>Legal & Privacy Policy</span>
             </Link>
           </div>
 
-          <div className="copyright">
-            © 2022 Navgurukul
-          </div>
+          <div className="copyright">© 2022 Navgurukul</div>
         </div>
       </div>
-
     </div>
   );
 };
