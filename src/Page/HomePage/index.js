@@ -66,25 +66,26 @@ function Home() {
       </div> */}
 
       <div className="navgurukul-homepage">
-        <div className="container" style={{ marginTop: "80px" }}>
+        <div className="container px-0" style={{ marginTop: "60px" }}>
           <div className="row">
             <div className="col-md-12" style={{ textAlign: "center" }}>
-              <h2 className="heading-line d-block w-100">
+              <h2
+                className="heading-line d-block w-100"
+                style={{ fontSize: "32px" }}
+              >
                 The <span className="text-primary">Gurukul</span> for the{" "}
                 <span className="BgColor"> New Age India </span>
                 and{" "}
                 <span className="d-inline d-md-block">its New Generation</span>
               </h2>
-              <p className="font body1">
+              <p className="font body1" style={{ fontSize: "20px" }}>
                 We are a non-profit dedicated to bring affordable tech education
-                to<br></br>
-                underprivileged girls in India.{" "}
+                to
+                <br />
+                underprivileged girls in India.
               </p>
             </div>
-            <div
-              className="col-md-12"
-              style={{ padding: screenWidth > 932 && "0px" }}
-            >
+            <div className="col-md-12">
               {!showVideo ? (
                 <div
                   className="custom-bg-image"
@@ -113,6 +114,7 @@ function Home() {
             </div>
           </div>
         </div>
+
         <section className="media-scroll-section d-flex flex-column justify-content-center p-4">
           <div className="container">
             <div className="row w-100 justify-content-center gx-4 gy-3">
