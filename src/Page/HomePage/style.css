@@ -477,5 +477,25 @@
 
 
 
+@media (max-width: 575.98px) {
+  .video-container {
+    padding: 8px !important; 
+  }
+
+  .col-12 {
+    margin-bottom: 12px !important; 
+  }
+
+  .alumni-name {
+
+    font-size: 14px; 
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 
 }

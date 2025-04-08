@@ -244,17 +244,28 @@ function Home() {
           </div>
         </section>
 
-        <section className=" d-flex flex-column align-items-center our-initiatives">
-          <h3 className="text-center media-font ">Digital Initiatives</h3>
+        <section className=" d-flex flex-column align-items-center our-initiatives ">
+          <h3
+            className="text-center media-font mt-4 pt-5 heading-gap"
+            style={{ marginRight: "40px" }}
+          >
+            Digital Initiatives
+          </h3>
           <Digitallnitiatives />
         </section>
 
-        <section className=" d-flex flex-column align-items-center our-initiatives">
+        <section
+          className=" d-flex flex-column align-items-center our-initiatives "
+          style={{ marginRight: "40px" }}
+        >
           <OurCampuses />
         </section>
 
-        <section className=" d-flex flex-column align-items-center our-initiatives">
-          <h3 className="text-center media-font mt-4">
+        <section
+          className=" d-flex flex-column align-items-center our-initiatives"
+          style={{ marginRight: "40px" }}
+        >
+          <h3 className="text-center media-font mt-4 heading-gap">
             Key Facilities at NavGurukul
           </h3>
           <KeyFacilities />
@@ -262,16 +273,22 @@ function Home() {
 
         <Slider />
 
-        <section className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 ">
+        <section
+          className="d-flex home-page-supporters flex-column align-items-center pb-5 justify-content-center mar-3 "
+          style={{ marginRight: "40px" }}
+        >
           <h3>
-            Our <span className="BackColor">Supporters</span>
+            Our <span className="BackColor heading-gap ">Supporters</span>
           </h3>
           <div className="container ">
             <SupporterSlider />
           </div>
         </section>
-        <section className="d-flex flex-column align-items-center justify-content-center ">
-          <h4 className="font-s  ml-2">Alumni Stories</h4>
+        <section
+          className="d-flex flex-column align-items-center justify-content-center "
+          style={{ marginRight: "40px" }}
+        >
+          <h4 className="font-s  ml-2  heading-gap">Alumni Stories</h4>
         </section>
         <AlumniStories />
       </div>
