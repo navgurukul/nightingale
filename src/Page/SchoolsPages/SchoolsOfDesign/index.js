@@ -62,7 +62,7 @@ function SchoolOfDesignPage() {
                 <button
                     type="button"
                     className="btn regular-btn"
-                    style={{ height: "48px", width: "208px", margin: "10px" }}
+                    style={{ height: "48px", width: "208px", margin: "30px" }}
                     onClick={() => onButtonClick(SoDCurriculum, "SoDCurriculum.pdf")}
                 >
                     Download Curriculum

@@ -25,11 +25,31 @@ function CoursesLocation({ courses }) {
         );
     }
 
-    const programmingCampuses = Object.values(data).filter(campus => campus["Courses offered"] && campus["Courses offered"].includes(courses));
+    // const programmingCampuses = Object.values(data).filter(campus => campus["Courses offered"] && campus["Courses offered"].includes(courses));
+
+    // const programmingCampuses = Object.values(data).filter((campus) => {
+    //     const isCourseMatched = campus["Courses offered"] && campus["Courses offered"].includes(courses);
+    //     const excludePuneForSod = courses === "School of Design" ? campus.Name !== "Pune Campus" : true;
+    //     return isCourseMatched && excludePuneForSod;
+    // });
+
+    const programmingCampuses = Object.values(data).filter((campus) => {
+        const isCourseMatched = campus["Courses offered"] && campus["Courses offered"].includes(courses);
+
+        // Exclude Pune Campus for School of Design
+        const excludePuneForSod = courses === "School of Design" ? campus.Name !== "Pune Campus" : true;
+
+        // Include only Pune Campus for School of Second Chances
+        const includeOnlyPuneForSosc = courses === "School of Second Chances" ? campus.Name === "Pune Campus" : true;
+
+        const excludeBangaloreForProgramming =courses === "School of Programming" ? campus.Name !== "Bangalore Campus" : true;
+        return isCourseMatched && excludePuneForSod && includeOnlyPuneForSosc && excludeBangaloreForProgramming; 
+    });
+
 
     return (
         <div className="shared-container partners-data w-100 mb-0 mb-4 d-flex align-items-center flex-column" style={{ marginTop: "80px" }}>
-            <h3 className="text-center mb-4" >
+            <h3 className="text-center mb-2" >
                 <span className="BackColor">Programme</span> Locations
             </h3>
             {programmingCampuses.length === 1 ? (
@@ -98,6 +118,8 @@ function CoursesLocation({ courses }) {
                 </div>
             )}
         </div>
+
+        
     );
 }
 

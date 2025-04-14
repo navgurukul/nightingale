@@ -3,7 +3,7 @@ function EligibilityDetail({ title, points }) {
     return (
         <>
             <div className="container programDetails">
-                <h3 className="text-center mb-4 ">
+                <h3 className="text-center mb-4">
                     Who this <span className="BackColor" >Programme</span> is for
                 </h3>
                 <div className="row custom-row">

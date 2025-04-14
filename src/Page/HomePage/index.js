@@ -5,7 +5,7 @@ import Slider from "./Slider";
 import PartnerSlider from "./PartnerSlider";
 import SupporterSlider from "./SupporterSlider";
 import img1 from "./assets/image1.svg";
-import img2 from "./assets/image2.svg";
+import img2 from "./assets/image2.png";
 import img3 from "./assets/image3.jpg";
 import img4 from "./assets/image4.png";
 import KeyFacilities from "./KeyFacilities";
@@ -29,7 +29,7 @@ function Home() {
 
   return (
     <>
-      <div className="row align-items-center centered-container">
+      {/* <div className="row align-items-center centered-container">
         <div className="d-none d-md-flex justify-content-end">
           <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
         </div>
@@ -62,7 +62,8 @@ function Home() {
           </button>
 
         </div>
-      </div>
+      </div> */}
+
       <div className="navgurukul-homepage">
         <div className="container" style={{ marginTop: "80px" }}>
           <div className="row">
@@ -150,12 +151,12 @@ function Home() {
 
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="textlink" >
-                  <a href="/designer" target="_blank">
+                  <a href="/school-secondchance" target="">
                     <img src={img2} className="card-image " alt="Placeholder Image" />
                     <div className="card-body text-black ">
-                      <h4 className="card-title mt-4">School of Design</h4>
+                      <h4 className="card-title mt-4">School of Second Chances</h4>
                       <p className="card-text mb-3">
-                        Fully-funded course in graphic design with guaranteed jobs
+                        Fully funded courses for trauma-survivors
                       </p>
                     </div>
                   </a>

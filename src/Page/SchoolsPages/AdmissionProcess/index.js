@@ -20,8 +20,8 @@ const AdmissionProcess = ({ stages }) => {
   };
 
   return (
-    <div className=" shared-container partners-data w-100 mb-0  d-flex align-items-center flex-column " style={{marginTop:"40px"}}>
-       <h3 className="text-center mb-4" >
+    <div className=" shared-container partners-data w-100 mb-0  d-flex align-items-center flex-column " style={{marginTop:"60px"}}>
+       <h3 className="text-center mb-0" >
                 <span className="BackColor">Admission</span>  Process
             </h3>
       <div className="all-partners w-75 d-flex flex-column">

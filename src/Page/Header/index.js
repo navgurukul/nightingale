@@ -6,7 +6,7 @@ import "../../Global.css";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
-   const openLinkInNewTab = (url) => {
+  const openLinkInNewTab = (url) => {
     window.open(url, "_blank", "noopener noreferrer");
   };
 
@@ -90,14 +90,18 @@ function Header() {
               <a className="dropdown-item" href="/school-programing">
                 School of Programming
               </a>
-              <a className="dropdown-item" href="/school-design">
+              {/* <a className="dropdown-item" href="/school-design">
                 School of Design
-              </a>
+              </a> */}
               <a className="dropdown-item" href="/school-busines">
                 School of Business
               </a>
               <a className="dropdown-item" href="/school-finance">
                 School of Finance
+              </a>
+              {/* school-secondchance */}
+              <a className="dropdown-item" href="/school-secondchance">
+                School of Second Chances
               </a>
             </div>
           </li>
@@ -176,7 +180,7 @@ function Header() {
                 className="dropdown-item"
                 href="/careers"
               >
-                Careers 
+                Careers
               </a>
             </div>
           </li>
@@ -192,13 +196,13 @@ function Header() {
           >
             Hire from Us
           </button>
-            <button
+          <button
             type="button"
             className="btn custom-outline-button btn-width"
             onClick={(e) => {
-                openLinkInNewTab(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform"
-                )
+              openLinkInNewTab(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdehRy3gDHgkj4bC-0AehiCNrk1_WgP39Zm7-l0YXowREupdw/viewform"
+              )
             }}
           >
             CSR Enquiries

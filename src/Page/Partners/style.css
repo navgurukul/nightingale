@@ -16,6 +16,8 @@
   justify-content: center; 
 }
 
+
+
 .card:hover, .card:focus, .card:active {
   transform: none !important; 
   box-shadow: none !important; 
@@ -67,6 +69,8 @@
   overflow: hidden; 
 }
 
+
+
 .custom-img-1 {
   height: 240px;
   width: 480px;
@@ -77,6 +81,11 @@
   width: 480px;
   height: 144px;
 }
+
+
+.custom-img-2 {
+  width: 480px;
+  height: 251px;}
 
 .custom-img-4{
   width: 480px;
