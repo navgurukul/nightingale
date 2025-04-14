@@ -1,7 +1,7 @@
 const Jobopportunities = () => {
     return (
         <>
-            <div className="job-assistance-container container-fluid">
+            <div className="job-assistance-container container-fluid courseDetail">
                 <div className="row card-content">
                     <div className="col-12 col-lg-6 card-container" style={{ padding: "15px", margin: "auto" }}>
                         <h3 className="text-center mb-2 headingcolore">

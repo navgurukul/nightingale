@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 function Careers() {
     const openLinkInNewTab = (url) => {
     window.open(url, "_blank", "noopener noreferrer");
@@ -50,7 +49,7 @@ function Careers() {
         </div>
         
         
-        <ul className="d-flex flex-wrap gap-responsive list-unstyled mt-3 mb-6 ">
+        <ul className="d-flex flex-wrap gap-responsive list-unstyled mt-3 mb-0">
             <li className="col-12 col-md-auto mb-2">
             <button
                 type="button"
@@ -82,7 +81,7 @@ function Careers() {
         </ul>
           
          
-        </section>    
+        </section>  
     </main>
   );
 }

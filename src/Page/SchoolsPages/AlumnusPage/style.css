@@ -16,3 +16,25 @@
 .alumnus-grid-item {
     padding: 16px;
 }
+
+.read-more-btn {
+    color: #EB5F42;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 4px;
+    outline:none;
+    text-decoration: none;
+    box-shadow: none;
+  }
+  
+  .read-more-btn:hover {
+    text-decoration: none;
+    border: none;
+  } 
+  .read-more-btn:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }

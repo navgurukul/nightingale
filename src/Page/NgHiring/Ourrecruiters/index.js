@@ -4,7 +4,7 @@ import tata from '../assets/Tata.png';
 import microsoft from '../assets/microsoft.png';
 import amazon from '../assets/amazon.png';
 import infosys from '../assets/infosys.png';
-
+import ebene from '../assets/Ebene.png';
 const Ourrecruiters = ({ handleOpenForm }) => {
     return (
         <section className="d-flex flex-column align-items-center our-initiatives">
@@ -12,7 +12,7 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                 <div className="row"
                 // style={{ border: "2px solid black" }}
                 >
-                    <h5 className="section-head media-font body1 w-100 mb-3 mt-5">Our recruiters</h5>
+                    <h5 className="section-head media-font body1 w-100 mb-3 mt-3">Our recruiters</h5>
                     <div className="col-12 d-flex justify-content-center flex-wrap">
                         {/* Displaying only 5 logos */}
                         <div className="logo-item mx-2">
@@ -22,13 +22,16 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                             <img src={tata} alt="Tata Logo" className="logo-img1" />
                         </div>
                         <div className="logo-item logosize mx-2">
-                            <img src={microsoft} alt="Microsoft Logo" className="logo-img" />
+                            <img src={microsoft} alt="Microsoft Logo" className="logo-img1" />
                         </div>
                         <div className="logo-item mx-2">
-                            <img src={amazon} alt="Amazon Logo" className="logo-img" />
+                            <img src={amazon} alt="Amazon Logo" className="logo-img1" />
                         </div>
                         <div className="logo-item mx-2">
-                            <img src={infosys} alt="Infosys Logo" className="logo-img" />
+                            <img src={infosys} alt="Infosys Logo" className="logo-img1" />
+                        </div>
+                        <div className="logo-item mx-2">
+                            <img src={ebene} alt="Ebene Logo" className="logo-img1" />
                         </div>
 
                     </div>
@@ -67,11 +70,10 @@ const Ourrecruiters = ({ handleOpenForm }) => {
                         </div>
                     </div>
                 </div>
+                <p className=" body1 w-100 text-center mb-5 mt-4 p-2"> For any queries, please contact us at
+                    <span className='link'>+91 9987609708</span>
+                </p>
             </div>
-
-            <p className="section-para body1 w-100 text-center  mb-5 mt-3 p-2 "> For any queries, please contact us at
-                <span className='link'>+91 9987609708</span>
-            </p>
         </section>
     );
 };

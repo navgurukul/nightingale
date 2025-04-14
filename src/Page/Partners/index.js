@@ -9,10 +9,10 @@ import CampusPartners from './assets/campuspartener.png'
 
 function Partners() {
   return (
-    <div className="partners d-flex flex-column justify-content-center w-100">
+    <div className="partners d-flex flex-column justify-content-center w-100 mb-5">
       <div className="container partnerInfo align-items-center d-flex flex-column  justify-content-center w-100">
         <h3 className="mt-5 section-head mb-3">Partner Highlights</h3>
-        <div className="partner-content-data body1 col-12 p-0 col-md-8 section-para d-flex align-items-center justify-content-center mb-2 mt-3">
+        <div className="partner-content-data body1 col-12 p-0 col-md-8 d-flex align-items-center justify-content-center mb-2 mt-3">
           Our partners help us give access to aspirational careers to youth who want to grow but don’t have means to do so. Our partnerships
           are the backbone of our operations. Our partners share our values,
           our partners share our impact.
@@ -28,7 +28,7 @@ function Partners() {
           Partner With Us
         </button>
 
-        <h3 className="mt-3 section-head mb-4 mr-4">Our Partners</h3>
+        <h3 className="mt-5 section-head mb-2 mr-4">Our Partners</h3>
       </div>
       <div className="w-100 mb-0  md-5 d-flex align-items-center flex-column">
         <div className="row  mb-4">
