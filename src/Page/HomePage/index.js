@@ -16,6 +16,7 @@ import { useState } from "react";
 import OurCampuses from "./OurCampuses";
 import AlumniStories from "./AlumniStories";
 import PlayBtn from "./assets/playicon.png";
+import Banner from "./Banner";
 
 function Home() {
   const [showVideo, setShowVideo] = useState(false);
@@ -29,6 +30,8 @@ function Home() {
 
   return (
     <>
+      <Banner />
+
       {/* <div className="row align-items-center centered-container">
         <div className="d-none d-md-flex justify-content-end">
           <img src={bannerimg1} alt="banner img1" className="bannerimg1" />
