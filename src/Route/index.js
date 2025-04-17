@@ -17,7 +17,6 @@ import Designers from "../Page/Designers"
 import Privacy from "../Page/Privacy";
 import CampusPages from "../Page/CampusPages";
 import PageNotFound from "../Page/PageNotFound";
-import OurCampus from "../Page/OurCampus";
 import SchoolProgramming from "../Page/SchoolsPages/Programing";
 import SchoolOfDesignPage from "../Page/SchoolsPages/SchoolsOfDesign";
 import SchoolOfBusinessPage from "../Page/SchoolsPages/SchoolOfBusiness";
@@ -66,7 +65,6 @@ function Routing() {
         <Route exact path="/bca-programme" component={BCA} />
         <Route exact path="/careers" component={Careers} />
         <Route exact path="/privacy" component={Privacy} />
-        <Route exact path="/campus" component={OurCampus} />
         <Route exact path="/campus/:campusName" component={CampusPages} />
         <Route exact path="/thankyou" component={Thankyou} />
         <Route exact path="*/" component={PageNotFound} />
