@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch,Redirect } from "react-router-dom";
 import { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
@@ -22,6 +22,7 @@ import SchoolOfDesignPage from "../Page/SchoolsPages/SchoolsOfDesign";
 import SchoolOfBusinessPage from "../Page/SchoolsPages/SchoolOfBusiness";
 import SchoolOfFinancePage from "../Page/SchoolsPages/SchoolOfFinance"
 import SchoolOfSecondChances from "../Page/SchoolsPages/SchoolOfSecondchances"
+import OurCampus from "../Page/OurCampus";
 
 import BCA from "../Page/SchoolsPages/BCAProgram";
 import Careers from "../Page/Careers";
@@ -65,11 +66,10 @@ function Routing() {
         <Route exact path="/bca-programme" component={BCA} />
         <Route exact path="/careers" component={Careers} />
         <Route exact path="/privacy" component={Privacy} />
+        <Route exact path="/campus" render={() => <Redirect to="/" />} />
         <Route exact path="/campus/:campusName" component={CampusPages} />
         <Route exact path="/thankyou" component={Thankyou} />
         <Route exact path="*/" component={PageNotFound} />
-
-
       </Switch>
       <Footer />
     </>

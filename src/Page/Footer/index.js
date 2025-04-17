@@ -16,7 +16,7 @@ const Footer = () => {
 
         <div className='footer-contetnt-wrappper'>
           <div className="footer-brand">
-          <img src={require("./assets/logo.png").default} className="mb-1 mt-0" alt="Navgurukul Logo" />
+          <img src={require("./assets/logo.png").default} className="mb-1 mt-0 ngfooter-logo" alt="Navgurukul Logo" />
             <div className="social-icons">
               <div className="d-flex align-items-center">
                 
