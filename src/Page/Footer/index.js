@@ -190,7 +190,6 @@ const Footer = () => {
             <h6>SCHOOLS</h6>
             <ul>
               <li><a href="/school-programing">School of Programming</a></li>
-              <li><a href="/school-design">School of Design</a></li>
               <li><a href="/school-busines">School of Business</a></li>
               <li><a href="/school-finance">School of Finance</a></li>
               <li><a href="/school-secondchance">School of Second Chances</a></li>
