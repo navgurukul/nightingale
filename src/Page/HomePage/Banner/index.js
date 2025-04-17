@@ -31,7 +31,7 @@ const AdmissionsAlert = () => {
             School of Programming (SOP) & School of Business (SOB)
           </p>
           
-          <p className="card-text">Join the Whatsapp group today!</p>
+          <p className="card-text" style={{paddingTop:"15px"}}>Join the Whatsapp group today!</p>
           
           <button className="apply-button" onClick={handleSOPButtonClick}>
             Get Info & Apply
