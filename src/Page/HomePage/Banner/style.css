@@ -1,0 +1,131 @@
+/* AdmissionsAlert.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.admissions-container {
+  background-color: #fce8e6;
+  padding: 2rem 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.admissions-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admissions-header h2 {
+  color: #555;
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.admissions-cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admissions-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.card-heading {
+  color: #f05f40;
+  margin-bottom: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.card-text strong, .flex-row strong {
+  font-weight: 700;
+}
+
+.card-text, .flex-row div {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 170%;
+  margin-bottom: 1rem;
+  color: #333;
+  padding-left: 0;
+}
+
+.apply-button {
+  background-color: #f05f40;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  bottom: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #e54d2e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.flex-row div {
+  padding-left: 0;
+}
+
+.icon-container {
+  width: 48px;
+  height: 48px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.icon-container span {
+  font-size: 24px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 1.5rem;
+  object-fit: contain;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .admissions-cards-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
