@@ -234,3 +234,8 @@
 .twitter:hover .socialmedia-icon {
   fill: white;
 }
+@media (max-width: 768px) {
+  .ngfooter-logo {
+    width: 150px; 
+  }
+}

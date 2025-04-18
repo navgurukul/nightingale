@@ -16,7 +16,7 @@ const Footer = () => {
 
         <div className='footer-contetnt-wrappper'>
           <div className="footer-brand">
-          <img src={require("./assets/logo.png").default} className="mb-1 mt-0" alt="Navgurukul Logo" />
+          <img src={require("./assets/logo.png").default} className="mb-1 mt-0 ngfooter-logo" alt="Navgurukul Logo" />
             <div className="social-icons">
               <div className="d-flex align-items-center">
                 
@@ -190,7 +190,6 @@ const Footer = () => {
             <h6>SCHOOLS</h6>
             <ul>
               <li><a href="/school-programing">School of Programming</a></li>
-              <li><a href="/school-design">School of Design</a></li>
               <li><a href="/school-busines">School of Business</a></li>
               <li><a href="/school-finance">School of Finance</a></li>
               <li><a href="/school-secondchance">School of Second Chances</a></li>
