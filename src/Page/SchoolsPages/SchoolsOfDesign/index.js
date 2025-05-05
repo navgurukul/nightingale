@@ -35,10 +35,10 @@ import AdmissionProcess from "../AdmissionProcess";
 import BackgroundImg from "../BgroundImg";
 import CoursesLocation from "../CourseLocations";
 import ScreeningTestPage from "../ScreningTest";
-import SoDCurriculum from '../../../Pdf/SoDCurriculum.pdf';
 import { whoForPoints, topics, JobAssistanceData, program2Data, BgroundImg } from "../SchoolsOfDesign/data";
-const information = "Our teacher-led, 18-months design course Includes:"
 
+const information = "Our teacher-led, 18-months design course Includes:"
+const SoDCurriculum = "/pdfs/SoDCurriculum.pdf"; 
 
 function SchoolOfDesignPage() {
 

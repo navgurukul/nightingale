@@ -36,13 +36,6 @@
 
 
 
-
-
-
-
-
-
-
 import "./style.css";
 import JobAssistance from "../JobAssistance";
 import EligibilityDetail from "../ProgramDetails/EligibilityDetail";
@@ -59,16 +52,20 @@ const information = "Our student-led, self-paced 18-months programming course in
 
 function SchoolProgramming() {
 
-   const onButtonClick = (pdfFile, fileName) => {
-       console.log("PDF file path:", pdfFile);
-       const link = document.createElement("a");
-       link.href = pdfFile;
-       link.download = fileName;
-       document.body.appendChild(link);
-       link.click();
-       document.body.removeChild(link);
-   };
+//    const onButtonClick = (pdfFile, fileName) => {
+//        console.log("PDF file path:", pdfFile);
+//        const link = document.createElement("a");
+//        link.href = pdfFile;
+//        link.download = fileName;
+//        document.body.appendChild(link);
+//        link.click();
+//        document.body.removeChild(link);
+//    };
 
+const onButtonClick = () => {
+    const pdfUrl = "https://ng-webite-pdfs.s3.ap-south-1.amazonaws.com/SoPCurriculum+(3).pdf";
+    window.open(pdfUrl, "_blank"); // Opens PDF in a new tab
+};
 
    return (
        <>
@@ -82,12 +79,12 @@ function SchoolProgramming() {
                </div>
            </div>
 
-           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
+           <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer mt-3">
                <button
                    type="button"
                    className="btn regular-btn"
                    style={{ height: "48px", width: "208px", margin: "10px" }}
-                   onClick={() => onButtonClick(SoPCurriculum, "SoPCurriculum.pdf")}
+                   onClick={() => onButtonClick()}
                >
                    Download Curriculum
                </button>
