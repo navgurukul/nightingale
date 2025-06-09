@@ -11,6 +11,7 @@ function CoursesLocation({ courses }) {
         axios.get("https://navgurukul.github.io/tarabai-shinde/data/campuses.json")
             .then((res) => {
                 setData(res.data);
+                console.log("Campus data fetched successfully:", res.data);
             })
             .catch((error) => {
                 console.error("Error fetching campus data:", error);
@@ -33,23 +34,40 @@ function CoursesLocation({ courses }) {
     //     return isCourseMatched && excludePuneForSod;
     // });
 
+    // const programmingCampuses = Object.values(data).filter((campus) => {
+    //     const isCourseMatched = campus["Courses offered"] && campus["Courses offered"].includes(courses);
+
+    //     // Exclude Pune Campus for School of Design
+    //     const excludePuneForSod = courses === "School of Design" ? campus.Name !== "Pune Campus" : true;
+
+    //     // Include only Pune Campus for School of Second Chances
+    //     const includeOnlyPuneForSosc = courses === "School of Second Chances" ? campus.Name === "Pune Campus" : true;
+
+    //     return isCourseMatched && excludePuneForSod && includeOnlyPuneForSosc;
+    // });
+
+
     const programmingCampuses = Object.values(data).filter((campus) => {
-        const isCourseMatched = campus["Courses offered"] && campus["Courses offered"].includes(courses);
+    // Check if the campus offers the selected course OR if it's BCA and user selected Programming
+    const isCourseMatched = campus["Courses offered"] && (
+        campus["Courses offered"].includes(courses) ||
+        (courses === "School of Programming" && campus["Courses offered"].includes("BCA 3 Years Course"))
+    );
 
-        // Exclude Pune Campus for School of Design
-        const excludePuneForSod = courses === "School of Design" ? campus.Name !== "Pune Campus" : true;
+    // Exclude Pune Campus for School of Design
+    const excludePuneForSod = courses === "School of Design" ? campus.Name !== "Pune Campus" : true;
 
-        // Include only Pune Campus for School of Second Chances
-        const includeOnlyPuneForSosc = courses === "School of Second Chances" ? campus.Name === "Pune Campus" : true;
+    // Include only Pune Campus for School of Second Chances
+    const includeOnlyPuneForSosc = courses === "School of Second Chances" ? campus.Name === "Pune Campus" : true;
 
-        return isCourseMatched && excludePuneForSod && includeOnlyPuneForSosc;
-    });
+    return isCourseMatched && excludePuneForSod && includeOnlyPuneForSosc;
+});
 
 
     return (
         <div className="shared-container partners-data w-100 mb-0 mb-4 d-flex align-items-center flex-column" style={{ marginTop: "80px" }}>
             <h3 className="text-center mb-4" >
-                <span className="BackColor">Programme</span> Locations
+                <span className="BackColor">Programme</span> Locations 
             </h3>
             {programmingCampuses.length === 1 ? (
                 <div className="single-partner w-50 d-flex flex-column align-items-center">
