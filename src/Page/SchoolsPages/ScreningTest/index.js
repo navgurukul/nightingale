@@ -8,7 +8,7 @@ function ScreeningTestPage({ programNeme }) {
     return (
         <div className="container-fluid">
             <div className="row">
-                <div className="col-lg-12 col-sm-12 col-md-12 mt-4">
+                <div className="col-lg-12 col-sm-12 col-md-12 mt-3 ">
                     <div className="next-step mt-2 mt-sm-3 d-flex flex-column align-items-center">
                         {
                             programNeme === "SchoolOfDesign" ? (

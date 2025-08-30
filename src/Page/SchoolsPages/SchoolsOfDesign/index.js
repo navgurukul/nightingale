@@ -61,8 +61,8 @@ function SchoolOfDesignPage() {
             <div className="container d-flex justify-content-sm-center DownloadCurriculumContainer">
                 <button
                     type="button"
-                    className="btn regular-btn"
-                    style={{ height: "48px", width: "208px", margin: "30px" }}
+                    className="btn regular-btn mt-5"
+                    style={{ height: "48px", width: "208px", margin: "0px" }}
                     onClick={() => onButtonClick(SoDCurriculum, "SoDCurriculum.pdf")}
                 >
                     Download Curriculum
