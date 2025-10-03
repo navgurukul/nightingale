@@ -139,7 +139,7 @@ function Home() {
             <div className="row gy-4">
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="textlink">
-                  <Link to="/job-course">
+                  <Link to="/school-programing">
                     <img src={img1} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Programming</h4>
@@ -170,7 +170,7 @@ function Home() {
             <div className="row gy-4 mt-4">
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="textlink">
-                  <a href="https://www.merakilearn.org/" target="_blank">
+                  <a href="/school-busines" target="">
                     <img src={img3} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Business</h4>
@@ -184,7 +184,7 @@ function Home() {
 
               <div className="col-lg-6 col-md-6 col-sm-12">
                 <div className="textlink">
-                  <a href="https://www.codeindiafellowship.org/" target="_blank">
+                  <a href="school-finance" target="">
                     <img src={img4} className="card-image" alt="Placeholder Image" />
                     <div className="card-body text-black">
                       <h4 className="card-title mt-4">School of Finance</h4>
